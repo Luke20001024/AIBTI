@@ -10,7 +10,11 @@ export type AnalyticsEvent =
 
 export const track = (event: AnalyticsEvent, properties: Record<string, string | number | boolean> = {}) => {
   if (typeof window === "undefined") return;
-  window.dispatchEvent(new CustomEvent("aibti:analytics", {
-    detail: { event, properties, at: Date.now() },
-  }));
+  try {
+    window.dispatchEvent(new CustomEvent("aibti:analytics", {
+      detail: { event, properties, at: Date.now() },
+    }));
+  } catch {
+    // Analytics must never block the quiz in restricted or older WebViews.
+  }
 };

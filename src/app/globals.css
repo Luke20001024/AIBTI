@@ -149,6 +149,7 @@ button { color: inherit; }
 .quiz-option:hover { border-color: var(--ink); }
 .quiz-option:active { transform: translateY(1px); }
 .quiz-option.selected { border-color: var(--accent); background: var(--accent-soft); }
+.quiz-option:disabled { cursor: wait; opacity: 0.72; }
 .option-letter { width: 28px; height: 28px; display: grid; place-items: center; border: 1px solid currentColor; border-radius: 50%; font-size: 11px; font-weight: 800; }
 .option-content { min-width: 0; }
 .option-label { display: block; font-size: 14px; line-height: 1.35; font-weight: 650; }
@@ -156,6 +157,8 @@ button { color: inherit; }
 .aesthetic-visual { height: 54px; border: 1px solid var(--line); overflow: hidden; background: #e7e3da; position: relative; }
 .quiz-footer { display: flex; justify-content: space-between; align-items: center; min-height: 54px; border-top: 1px solid var(--line); }
 .quiz-note { font-size: 11px; color: var(--muted); }
+.quiz-completion-error { display: grid; gap: 7px; margin: 12px 0 0; padding: 10px 12px; border-left: 3px solid var(--accent); background: var(--accent-soft); font-size: 12px; }
+.quiz-completion-error a { width: fit-content; color: var(--accent); font-weight: 800; text-decoration: underline; text-underline-offset: 3px; }
 
 .visual-grid { background: repeating-linear-gradient(90deg, #24364a 0 2px, transparent 2px 16px), repeating-linear-gradient(#24364a 0 2px, #d9e2eb 2px 16px); }
 .visual-mass { background: linear-gradient(135deg, #747575 50%, #a9aaa7 50%); }
@@ -183,6 +186,7 @@ button { color: inherit; }
 .calculation-mark::after { transform: rotate(90deg); animation-direction: reverse; opacity: 0.45; }
 .calculation-title { margin: 0; font-size: clamp(25px, 8vw, 38px); letter-spacing: -0.05em; }
 .calculation-note { max-width: 28em; margin: 10px auto 0; color: var(--muted); font-size: 12px; }
+.calculation-fallback { display: inline-block; margin-top: 16px; color: var(--accent); font-size: 12px; font-weight: 800; text-decoration: underline; text-underline-offset: 4px; }
 @keyframes scan { to { background-position: 20px 0; } }
 
 .result-page { --accent: #245aa6; --accent-soft: #dfe9f7; --result-ink: #14181d; }
