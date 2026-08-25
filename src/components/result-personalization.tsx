@@ -1,242 +1,401 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import {
   DIMENSIONS,
   DIMENSION_IDS,
-  QUESTIONS,
   RESULT_BY_CODE,
-  type DimensionVector,
+  type Architect,
+  type Building,
   type ResultType,
 } from "../content";
-import { decodeAnswers, scoreQuiz, type QuizResult } from "../domain/scoring";
 import { track } from "../domain/analytics";
+import { readLocalResult } from "../domain/local-result";
 import { withBasePath } from "../domain/paths";
-import { clearQuizSession } from "../domain/session";
+import {
+  buildPublicResultUrl,
+  buildResultPath,
+  parseResultEntry,
+  resolveResultView,
+  type ResultView,
+} from "../domain/result-view";
+import { createShareCard } from "./share-card";
 
-type Props = { result: ResultType };
-
-const EMPTY_SCORES = Object.fromEntries(DIMENSION_IDS.map((id) => [id, 0])) as DimensionVector;
-
-const loadImage = (src: string) => new Promise<HTMLImageElement>((resolve, reject) => {
-  const image = new Image();
-  image.onload = () => resolve(image);
-  image.onerror = reject;
-  image.src = src;
-});
-
-const roundedRect = (context: CanvasRenderingContext2D, x: number, y: number, width: number, height: number, radius: number) => {
-  const safeRadius = Math.min(radius, width / 2, height / 2);
-  context.beginPath();
-  context.moveTo(x + safeRadius, y);
-  context.lineTo(x + width - safeRadius, y);
-  context.quadraticCurveTo(x + width, y, x + width, y + safeRadius);
-  context.lineTo(x + width, y + height - safeRadius);
-  context.quadraticCurveTo(x + width, y + height, x + width - safeRadius, y + height);
-  context.lineTo(x + safeRadius, y + height);
-  context.quadraticCurveTo(x, y + height, x, y + height - safeRadius);
-  context.lineTo(x, y + safeRadius);
-  context.quadraticCurveTo(x, y, x + safeRadius, y);
-  context.closePath();
-  context.fill();
+type Props = {
+  result: ResultType;
+  architect: Architect;
+  primaryBuilding: Building;
 };
 
-const createShareCard = async (result: ResultType, secondaryName: string) => {
-  const canvas = document.createElement("canvas");
-  canvas.width = 1080;
-  canvas.height = 1350;
-  const context = canvas.getContext("2d");
-  if (!context) throw new Error("Canvas is unavailable");
+const CLARITY_LABEL = {
+  clear: "倾向很清晰",
+  balanced: "双重倾向",
+  mixed: "混合型人格",
+} as const;
 
-  context.fillStyle = "#f2efe7";
-  context.fillRect(0, 0, canvas.width, canvas.height);
-  context.fillStyle = result.accent;
-  context.fillRect(0, 0, 28, canvas.height);
+const publicUrl = (slug: string, source: "share" | "card") =>
+  buildPublicResultUrl({ origin: window.location.origin, slug, source });
 
-  context.fillStyle = result.accent;
-  context.font = '900 66px "Arial Narrow", Arial, sans-serif';
-  context.fillText("AIBTI", 80, 106);
-  context.fillStyle = result.ink;
-  context.font = '900 156px "Arial Narrow", Arial, sans-serif';
-  context.fillText(result.code, 72, 270);
-  context.font = '900 76px "PingFang SC", "Microsoft YaHei", sans-serif';
-  context.fillText(result.name, 76, 360);
-  context.font = '600 32px "PingFang SC", "Microsoft YaHei", sans-serif';
-  context.fillText(result.tagline, 78, 416);
-
-  context.fillStyle = result.accentSoft;
-  roundedRect(context, 62, 462, 956, 610, 12);
-
-  try {
-    const image = await loadImage(withBasePath(result.characterImage));
-    const scale = Math.min(900 / image.width, 580 / image.height);
-    const width = image.width * scale;
-    const height = image.height * scale;
-    context.drawImage(image, 540 - width / 2, 478 + 580 - height, width, height);
-  } catch {
-    context.fillStyle = result.accent;
-    context.beginPath();
-    context.arc(540, 650, 94, 0, Math.PI * 2);
-    context.fill();
-    context.fillRect(402, 752, 276, 248);
-    context.fillStyle = result.ink;
-    context.font = '900 34px "PingFang SC", "Microsoft YaHei", sans-serif';
-    context.fillText("人物形象施工中", 410, 1030);
-  }
-
-  context.fillStyle = result.ink;
-  context.font = '800 28px "PingFang SC", "Microsoft YaHei", sans-serif';
-  context.fillText(result.school, 76, 1135);
-  context.font = '500 25px "PingFang SC", "Microsoft YaHei", sans-serif';
-  context.fillStyle = "#56595a";
-  context.fillText(`你的相邻人格：${secondaryName}`, 76, 1186);
-  context.fillText(result.keywords.map((item) => `#${item}`).join("  "), 76, 1230);
-  context.font = '600 22px "PingFang SC", "Microsoft YaHei", sans-serif';
-  context.fillText("18 道题，找到与你同频的建筑师和代表建筑", 76, 1294);
-  context.textAlign = "right";
-  context.fillStyle = result.accent;
-  context.fillText("分享时记得附上结果链接", 1004, 1294);
-
-  return canvas.toDataURL("image/jpeg", 0.9);
-};
-
-export function ResultPersonalization({ result }: Props) {
+export function ResultPersonalization({ result, architect, primaryBuilding }: Props) {
   const searchParams = useSearchParams();
-  const encoded = searchParams.get("a");
-  const [scored, setScored] = useState<QuizResult | null>(null);
-  const [shareImage, setShareImage] = useState<string | null>(null);
+  const query = searchParams.toString();
+  const [view, setView] = useState<ResultView | null>(null);
+  const [cardUrl, setCardUrl] = useState<string | null>(null);
+  const [cardBlob, setCardBlob] = useState<Blob | null>(null);
+  const [shareHref, setShareHref] = useState("");
   const [busy, setBusy] = useState(false);
   const [notice, setNotice] = useState("");
+  const [showFallbackLink, setShowFallbackLink] = useState(false);
+  const shareTrigger = useRef<HTMLButtonElement | null>(null);
+  const shareDialog = useRef<HTMLDivElement | null>(null);
+  const closeShareButton = useRef<HTMLButtonElement | null>(null);
 
   useEffect(() => {
-    track("result_view", { resultCode: result.code });
-    try {
-      if (!encoded) return;
-      const value = scoreQuiz(decodeAnswers(encoded));
-      if (value.primaryTypeId === result.code) setScored(value);
-    } catch {
-      setScored(null);
-    }
-  }, [encoded, result.code]);
+    const entry = parseResultEntry(new URLSearchParams(query));
+    const resolved = resolveResultView({
+      entry,
+      expectedType: result.code,
+      localResult: readLocalResult(),
+    });
+    setView(resolved);
+    track("result_view", { resultCode: result.code, view: resolved.kind });
+  }, [query, result.code]);
 
-  const secondary = RESULT_BY_CODE[scored?.secondaryTypeId ?? result.code];
-  const scores = scored?.dimensionScores ?? EMPTY_SCORES;
-  const evidence = useMemo(
-    () => (scored?.evidenceQuestionIds ?? []).map((id) => QUESTIONS.find((question) => question.id === id)).filter(Boolean),
-    [scored],
-  );
+  useEffect(() => () => {
+    if (cardUrl) URL.revokeObjectURL(cardUrl);
+  }, [cardUrl]);
+
+  const owner = view?.kind === "owner" ? view.localResult : null;
+  const secondary = owner ? RESULT_BY_CODE[owner.secondaryTypeId] : null;
+  const strongestDimensions = useMemo(() => {
+    if (!owner) return [];
+    return [...DIMENSION_IDS]
+      .sort((left, right) => Math.abs(owner.dimensionScores[right]) - Math.abs(owner.dimensionScores[left]))
+      .slice(0, 3);
+  }, [owner]);
+
+  const copyLink = async () => {
+    track("share_click", { method: "copy_link", resultCode: result.code });
+    const href = publicUrl(result.slug, "share");
+    setShareHref(href);
+    try {
+      await navigator.clipboard.writeText(href);
+      setNotice("公开结果链接已复制，不包含你的答案");
+      setShowFallbackLink(false);
+    } catch {
+      setNotice(cardUrl
+        ? "浏览器无法自动复制，请长按上方公开链接"
+        : "浏览器无法自动复制，请长按下方公开链接");
+      setShowFallbackLink(true);
+    }
+  };
 
   const openShare = async () => {
     track("share_click", { method: "card_preview", resultCode: result.code });
+    const href = publicUrl(result.slug, "share");
+    setShareHref(href);
     setBusy(true);
     setNotice("");
     try {
-      const dataUrl = await createShareCard(result, scored ? secondary.name : "完成测试后揭晓");
-      setShareImage(dataUrl);
-    } catch (error) {
-      if ((error as Error).name !== "AbortError") setNotice("分享卡生成失败，请稍后重试。此结果链接仍可直接复制。 ");
+      const card = await createShareCard({
+        result,
+        architect,
+        building: primaryBuilding,
+        publicUrl: publicUrl(result.slug, "card"),
+      });
+      if (cardUrl) URL.revokeObjectURL(cardUrl);
+      setCardBlob(card.blob);
+      setCardUrl(URL.createObjectURL(card.blob));
+    } catch {
+      setNotice("分享卡没有生成成功，公开链接仍然可以复制");
     } finally {
       setBusy(false);
     }
   };
 
-  const copyLink = async () => {
-    track("share_click", { method: "copy_link", resultCode: result.code });
-    try {
-      await navigator.clipboard.writeText(window.location.href);
-      setNotice("结果链接已复制。");
-    } catch {
-      setNotice("请使用浏览器菜单复制当前链接。");
-    }
-  };
-
   const downloadCard = () => {
-    if (!shareImage) return;
+    if (!cardUrl) return;
     track("card_save", { method: "download", resultCode: result.code });
     const anchor = document.createElement("a");
     anchor.download = `AIBTI-${result.code}.jpg`;
-    anchor.href = shareImage;
+    anchor.href = cardUrl;
     anchor.click();
   };
 
   const nativeShare = async () => {
-    if (!shareImage) return;
+    if (!cardBlob) return;
+    const shareUrl = publicUrl(result.slug, "share");
     try {
-      const response = await fetch(shareImage);
-      const blob = await response.blob();
-      const file = new File([blob], `AIBTI-${result.code}.jpg`, { type: "image/jpeg" });
-      if (navigator.share && navigator.canShare?.({ files: [file] })) {
-        track("share_click", { method: "native", resultCode: result.code });
-        await navigator.share({ title: `我的建筑人格是 ${result.name}`, text: result.tagline, files: [file], url: window.location.href });
+      if (navigator.share) {
+        let file: File | null = null;
+        if (typeof File === "function") {
+          try {
+            file = new File([cardBlob], `AIBTI-${result.code}.jpg`, { type: "image/jpeg" });
+          } catch {
+            file = null;
+          }
+        }
+        const canShareFile = Boolean(file && navigator.canShare?.({ files: [file] }));
+        track("share_click", {
+          method: canShareFile ? "native_file" : "native_link",
+          resultCode: result.code,
+        });
+        await navigator.share(canShareFile && file
+          ? {
+              title: `建筑人格 ${result.code} · ${result.name}`,
+              text: result.tagline,
+              files: [file],
+              url: shareUrl,
+            }
+          : {
+              title: `建筑人格 ${result.code} · ${result.name}`,
+              text: result.tagline,
+              url: shareUrl,
+            });
       } else {
         downloadCard();
       }
     } catch (error) {
-      if ((error as Error).name !== "AbortError") setNotice("系统分享没有打开，请长按图片保存，或直接下载。 ");
+      if ((error as Error).name !== "AbortError") {
+        setNotice("系统分享没有打开，可以长按图片保存或复制公开链接");
+        setShowFallbackLink(true);
+      }
     }
   };
 
+  const closeCard = useCallback(() => {
+    if (cardUrl) URL.revokeObjectURL(cardUrl);
+    setCardUrl(null);
+    setCardBlob(null);
+    window.setTimeout(() => shareTrigger.current?.focus(), 0);
+  }, [cardUrl]);
+
+  useEffect(() => {
+    if (!cardUrl) return;
+
+    const page = document.querySelector("main");
+    const previousBodyOverflow = document.body.style.overflow;
+    const previousPageInert = page?.inert ?? false;
+    document.body.style.overflow = "hidden";
+    if (page) page.inert = true;
+    window.setTimeout(() => closeShareButton.current?.focus(), 0);
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        closeCard();
+        return;
+      }
+      if (event.key !== "Tab" || !shareDialog.current) return;
+
+      const focusable = [...shareDialog.current.querySelectorAll<HTMLElement>(
+        'a[href], button:not([disabled]), input:not([disabled]), [tabindex]:not([tabindex="-1"])',
+      )].filter((element) => !element.hasAttribute("hidden"));
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    };
+
+    document.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.body.style.overflow = previousBodyOverflow;
+      if (page) page.inert = previousPageInert;
+    };
+  }, [cardUrl, closeCard]);
+
   return (
     <>
-      <section className="section" id="result-coordinates">
-        <p className="section-kicker">你的建筑坐标</p>
-        <h2 className="section-title">不是一个孤岛，<br />你旁边还站着谁？</h2>
-        {scored ? (
-          <div className="sidewing">
-            <b>{scored.clarity === "clear" ? "倾向清晰" : scored.clarity === "balanced" ? "双重倾向" : "混合型人格"}</b>
-            <p>主型是 {result.code}，最接近的相邻人格是 <a href={withBasePath(`/result/${secondary.slug}/`)}>{secondary.code} · {secondary.name}</a>。人格不是诊断，也不代表你必须喜欢该建筑师的全部作品。</p>
+      <section
+        className="result-proof"
+        data-result-view={view?.kind ?? "loading"}
+        aria-busy={view === null}
+      >
+        {view === null ? (
+          <div className="result-proof-loading" role="status">
+            <p className="section-kicker">正在读取本机结果</p>
+            <h2>把刚才的选择装进这张档案</h2>
+            <div aria-hidden="true"><i /><i /><i /></div>
           </div>
+        ) : owner ? (
+          <>
+            <div className="result-proof-heading">
+              <div>
+                <p className="section-kicker">为什么是你</p>
+                <h2 className="section-title">这三次选择<br />最影响结果</h2>
+              </div>
+              <div className="identity-stamp">
+                <span>八型匹配</span>
+                <strong>#1 / 8</strong>
+                <small>{CLARITY_LABEL[owner.clarity]} · 仅本机保存</small>
+              </div>
+            </div>
+
+            <ol className="evidence-list" aria-label="影响结果最大的三次选择">
+              {owner.evidence.map((item, index) => (
+                <li key={item.questionId}>
+                  <span>0{index + 1}</span>
+                  <div>
+                    <b>{item.choiceLabel}</b>
+                    <p>{item.interpretation}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+
+            {secondary && (
+              <div className="identity-sidecar">
+                <span>第二接近的人格</span>
+                <a href={withBasePath(buildResultPath(secondary.slug))}>
+                  {secondary.code} · {secondary.name} ↗
+                </a>
+              </div>
+            )}
+
+            <div className="dominant-dimensions" aria-label="最鲜明的三项建筑倾向">
+              {strongestDimensions.map((id) => {
+                const dimension = DIMENSIONS[id];
+                const value = owner.dimensionScores[id];
+                return (
+                  <div key={id}>
+                    <span>{dimension.name}</span>
+                    <b>{value < 0 ? dimension.negative : dimension.positive}</b>
+                  </div>
+                );
+              })}
+            </div>
+
+            <details className="dimension-disclosure">
+              <summary>展开八维建筑倾向</summary>
+              <div className="dimension-list">
+                {DIMENSION_IDS.map((id) => {
+                  const dimension = DIMENSIONS[id];
+                  const value = owner.dimensionScores[id];
+                  return (
+                    <div className="dimension-row" key={id}>
+                      <span>{dimension.negative}</span>
+                      <div
+                        className="dimension-track"
+                        role="meter"
+                        aria-label={dimension.name}
+                        aria-valuemin={-1}
+                        aria-valuemax={1}
+                        aria-valuenow={Number(value.toFixed(2))}
+                        aria-valuetext={`${dimension.name}偏向${value < 0 ? dimension.negative : dimension.positive}`}
+                        title={`${dimension.negative} ↔ ${dimension.positive}`}
+                      >
+                        <i style={{ left: `${(value + 1) * 50}%` }} />
+                      </div>
+                      <span>{dimension.positive}</span>
+                    </div>
+                  );
+                })}
+              </div>
+            </details>
+          </>
         ) : (
-          <div className="sidewing"><b>结果样本页</b><p>这个链接没有附带完整答案，所以只展示 {result.code} 的标准画像。完成测试后会出现你的个人维度与相邻人格。</p></div>
+          <div className="public-result-note">
+            <p className="section-kicker">
+              {view?.kind === "shared" && view.source !== "owner-missing" ? "朋友发来的建筑人格" : "公开人格档案"}
+            </p>
+            <h2>
+              {view?.kind === "shared" && view.source === "owner-missing"
+                ? "私人结果留在原来的设备里"
+                : `这是 ${result.code} 的公开人格设定`}
+            </h2>
+            <p>
+              {view?.kind === "explore" && view.legacyAnswerUrl
+                ? "旧版答案链接已安全转为公开档案，不会继续读取其中的答案"
+                : "公开页面只展示人格设定，完成 18 道题后可以查看属于你的匹配依据"}
+            </p>
+            <a className="primary-button" href={withBasePath("/quiz/")}>测测我是谁 →</a>
+          </div>
         )}
 
-        <div className="dimension-list" aria-label="八维建筑倾向">
-          {DIMENSION_IDS.map((id) => {
-            const dimension = DIMENSIONS[id];
-            const value = scores[id];
-            const left = value < 0 ? 50 + value * 50 : 50;
-            const width = Math.abs(value) * 50;
-            return (
-              <div className="dimension-row" key={id}>
-                <span>{dimension.name}</span>
-                <div className="dimension-track" title={`${dimension.negative} ↔ ${dimension.positive}`}>
-                  <span className="dimension-value" style={{ left: `${left}%`, width: `${width}%` }} />
-                </div>
-                <span className="dimension-pole">{value < 0 ? dimension.negative : value > 0 ? dimension.positive : "中间"}</span>
-              </div>
-            );
-          })}
-        </div>
-
-        {evidence.length > 0 && (
-          <div className="evidence-box">
-            <b>把你推到这里的三次直觉</b>
-            <ol>{evidence.map((question) => <li key={question!.id}>{question!.prompt}</li>)}</ol>
+        {view && (
+          <div className="result-share-actions" data-testid="result-share-actions">
+            <div>
+              <p className="section-kicker">把人格带走</p>
+              <h3>卡片负责吸睛<br />建筑负责留下来</h3>
+            </div>
+            <div className="button-row">
+              <button
+                className="primary-button"
+                type="button"
+                ref={shareTrigger}
+                onClick={openShare}
+                disabled={busy}
+              >
+                {busy ? "正在出图…" : "生成分享卡"}
+              </button>
+              <button className="secondary-button" type="button" onClick={copyLink}>复制公开链接</button>
+            </div>
+            {notice && <p className="action-notice" role="status">{notice}</p>}
+            {showFallbackLink && !cardUrl && (
+              <label className="result-public-link">
+                <span>公开链接</span>
+                <input
+                  readOnly
+                  value={shareHref}
+                  aria-label="可选择的公开结果链接"
+                  onFocus={(event) => event.currentTarget.select()}
+                />
+              </label>
+            )}
           </div>
         )}
       </section>
 
-      <div className="sticky-actions">
-        <div className="button-row">
-          <button className="primary-button" type="button" onClick={openShare} disabled={busy}>{busy ? "正在出图…" : "生成分享卡"}</button>
-          <button className="secondary-button" type="button" onClick={copyLink}>复制结果链接</button>
-        </div>
-        {notice && <p className="action-notice" role="status">{notice}</p>}
-      </div>
-
-      {shareImage && (
-        <div className="share-preview-backdrop" role="dialog" aria-modal="true" aria-label="分享卡预览">
-          <div className="share-preview-head"><span>微信内请长按图片保存</span><button type="button" onClick={() => setShareImage(null)}>关闭 ×</button></div>
-          <img className="share-preview-image" src={shareImage} alt={`${result.name} AIBTI 分享卡`} />
-          <div className="share-preview-actions">
-            <button className="secondary-button" type="button" onClick={nativeShare}>系统分享 / 下载</button>
-            <button className="secondary-button" type="button" onClick={copyLink}>复制链接</button>
+      {cardUrl && typeof document !== "undefined" && createPortal(
+        <div
+          className="share-preview-backdrop"
+          role="presentation"
+          onMouseDown={(event) => {
+            if (event.currentTarget === event.target) closeCard();
+          }}
+        >
+          <div
+            className="share-preview-panel"
+            ref={shareDialog}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="share-preview-title"
+            aria-describedby="share-preview-help"
+          >
+            <div className="share-preview-head">
+              <span id="share-preview-title">AIBTI 分享卡</span>
+              <button ref={closeShareButton} type="button" onClick={closeCard}>关闭 ×</button>
+            </div>
+            <img className="share-preview-image" src={cardUrl} alt={`${result.name} AIBTI 分享卡`} />
+            <p className="share-preview-help" id="share-preview-help">长按图片即可保存</p>
+            <label className="share-public-link">
+              <span>公开链接</span>
+              <input
+                readOnly
+                value={shareHref}
+                aria-label="可选择的公开结果链接"
+                onFocus={(event) => event.currentTarget.select()}
+              />
+            </label>
+            <div className="share-preview-actions">
+              <button className="primary-button" type="button" onClick={nativeShare}>分享或保存图片</button>
+              <button className="secondary-button" type="button" onClick={copyLink}>复制公开链接</button>
+            </div>
+            {notice && <p className="share-preview-notice" role="status">{notice}</p>}
           </div>
-        </div>
+        </div>,
+        document.body,
       )}
 
-      <a className="restart-link" href={withBasePath("/quiz/")} onClick={() => { track("retest_click", { resultCode: result.code }); clearQuizSession(); }}>重新测试</a>
     </>
   );
 }

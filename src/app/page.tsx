@@ -4,36 +4,43 @@ import { MediaImage } from "../components/media-image";
 
 export default function HomePage() {
   return (
-    <main className="narrow-shell">
+    <main className="home-page">
       <section className="home-hero" aria-labelledby="home-title">
-        <div>
+        <div className="home-copy">
           <p className="section-kicker">Architecture Identity Type Indicator</p>
           <p className="hero-code" aria-hidden="true"><span>AI</span>BTI</p>
           <h1 className="hero-title" id="home-title">测测你的<br />建筑人格</h1>
-          <p className="hero-subtitle">几道看似玄乎的问题，把你锚定到一种建筑性格、一位建筑师和三座真正值得看的建筑。</p>
+          <p className="hero-subtitle">18 次第一反应，找到一种建筑人格、一位同频建筑师和三座真正值得看的建筑</p>
         </div>
 
-        <div className="hero-stage" aria-label="网格秩序者人物预览">
-          <MediaImage
-            className="hero-character-preview"
-            src="/images/characters/grid.webp"
-            alt="网格秩序者站在现代主义建筑近景中"
-            fallbackLabel="人物原型载入中"
-          />
-          <span className="hero-caption">示例人格 · GRID 网格秩序者</span>
+        <div className="hero-range" aria-label="克制、温和与癫狂三种建筑人格预览">
+          <figure className="hero-range-item is-grid">
+            <MediaImage src="/images/characters-v2/grid-scene-v2.webp" alt="冷静的网格秩序者站在巴塞罗那馆近景中" fallbackLabel="GRID" fetchPriority="high" />
+            <figcaption><b>GRID</b><span>克制</span></figcaption>
+          </figure>
+          <figure className="hero-range-item is-root">
+            <MediaImage src="/images/characters-v2/root-scene-v2.webp" alt="温和的场所生长者站在流水别墅近景中" fallbackLabel="ROOT" fetchPriority="high" />
+            <figcaption><b>ROOT</b><span>温和</span></figcaption>
+          </figure>
+          <figure className="hero-range-item is-flow">
+            <MediaImage src="/images/characters-v2/flow-scene-v2.webp" alt="兴奋的直线逃犯站在连续曲面建筑近景中" fallbackLabel="FLOW" />
+            <figcaption><b>FLOW</b><span>癫狂</span></figcaption>
+          </figure>
         </div>
 
-        <HomeActions />
+        <div className="home-conversion"><HomeActions /></div>
       </section>
 
-      <section className="section home-manifesto">
-        <p className="section-kicker">不是给你贴标签</p>
-        <h2 className="section-title">先被结果逗笑，<br />再真正看懂一栋楼。</h2>
+      <section className="home-manifesto">
+        <div>
+          <p className="section-kicker">不是给你贴标签</p>
+          <h2 className="section-title">先被结果逗笑<br />再被建筑打动</h2>
+        </div>
         <div className="manifesto-grid">
-          <p><b>潜意识</b><br />半夜多出的门、末日前的房间，以及你会不会和一块旧砖聊天。</p>
-          <p><b>人格</b><br />秩序、冒险、社交、表达；建筑偏好背后也藏着你处理世界的方法。</p>
-          <p><b>建筑直觉</b><br />光、材料、几何和时间。没有专业术语，凭第一反应就够了。</p>
-          <p><b>结果资料</b><br />原创人格形象、建筑师轶事和三座代表建筑，一张卡可以带走。</p>
+          <p><b>先凭直觉</b><br />潜意识、日常人格与建筑审美混在一起，不考专业知识</p>
+          <p><b>再看证据</b><br />结果会告诉你，刚才哪三个选择把你推到了这里</p>
+          <p><b>认领人格</b><br />八种角色从安静、温和一路延伸到兴奋和癫狂</p>
+          <p><b>看懂建筑</b><br />从一位建筑师和一座主建筑开始，不把资料堆成百科</p>
         </div>
         <Link className="text-link" href="/about/">查看方法、边界与图片来源 →</Link>
       </section>

@@ -4,6 +4,10 @@ out/
 design/
 .env*.local
 coverage/
+artifacts/design/source/
+artifacts/playwright/
+artifacts/playwright-report/
+artifacts/qa/**/*.png
 *.tsbuildinfo
 *.log
 .DS_Store

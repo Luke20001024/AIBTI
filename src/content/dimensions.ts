@@ -15,12 +15,12 @@ export const DIMENSIONS: Record<
 };
 
 export const QUESTION_GROUP_WEIGHTS: Record<QuestionKind, number> = {
-  projective: 0.25,
+  projective: 0.3,
   personality: 0.35,
-  aesthetic: 0.4,
+  aesthetic: 0.35,
 };
 
-export const QUIZ_VERSION = "1.0.0";
-export const SCORING_VERSION = "1.0.0";
-export const CONTENT_VERSION = "1.0.0";
-export const ART_VERSION = "0.1.0";
+export const QUIZ_VERSION = "2.0.0";
+export const SCORING_VERSION = "2.0.0";
+export const CONTENT_VERSION = "2.0.0";
+export const ART_VERSION = "2.0.0";

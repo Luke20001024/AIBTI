@@ -1,4 +1,5 @@
 import {
+  DIMENSIONS,
   DIMENSION_IDS,
   QUESTION_GROUP_WEIGHTS,
   QUESTIONS,
@@ -19,6 +20,19 @@ export type ScoredCandidate = {
   similarity: number;
 };
 
+export type EvidenceQuestion = {
+  questionId: string;
+  optionId: OptionId;
+  prompt: string;
+  label: string;
+  dominantDimension: DimensionId;
+  dimensions: DimensionId[];
+  drop: number;
+  similarityDrop: number;
+  marginDrop: number;
+  interpretation: string;
+};
+
 export type QuizResult = {
   primaryTypeId: ResultCode;
   secondaryTypeId: ResultCode;
@@ -26,6 +40,8 @@ export type QuizResult = {
   clarity: "clear" | "balanced" | "mixed";
   gap: number;
   dimensionScores: DimensionVector;
+  evidence: EvidenceQuestion[];
+  evidenceQuestions: EvidenceQuestion[];
   evidenceQuestionIds: string[];
   candidates: ScoredCandidate[];
   quizVersion: string;
@@ -46,6 +62,11 @@ const emptyVector = (): DimensionVector => ({
 const clamp = (value: number, min: number, max: number) =>
   Math.min(max, Math.max(min, value));
 
+const stableNumber = (value: number) => {
+  const rounded = Number(value.toFixed(6));
+  return Object.is(rounded, -0) ? 0 : rounded;
+};
+
 const dot = (left: DimensionVector, right: DimensionVector) =>
   DIMENSION_IDS.reduce((sum, dimension) => sum + left[dimension] * right[dimension], 0);
 
@@ -60,65 +81,57 @@ const questionFactor = (question: Question) =>
   QUESTION_GROUP_WEIGHTS[question.kind] /
   QUESTIONS.filter((item) => item.kind === question.kind).length;
 
+const dimensionMaximums = (() => {
+  const maximums = emptyVector();
+  for (const question of QUESTIONS) {
+    const factor = questionFactor(question);
+    for (const dimension of DIMENSION_IDS) {
+      maximums[dimension] += Math.max(
+        ...question.options.map((item) => Math.abs(item.weights[dimension] ?? 0)),
+      ) * factor;
+    }
+  }
+  return maximums;
+})();
+
 const getQuestionOption = (question: Question, optionId: OptionId) => {
   const option = question.options.find((item) => item.id === optionId);
   if (!option) throw new Error(`Unknown option ${optionId} for ${question.id}`);
   return option;
 };
 
-export const calculateDimensionScores = (answers: AnswerMap): DimensionVector => {
+const calculateDimensionScoresInternal = (
+  answers: AnswerMap,
+  excludedQuestionId?: string,
+): DimensionVector => {
   const totals = emptyVector();
-  const maximums = emptyVector();
 
   for (const question of QUESTIONS) {
     const answerId = answers[question.id];
     if (!answerId) throw new Error(`Missing answer for ${question.id}`);
+    if (question.id === excludedQuestionId) continue;
     const option = getQuestionOption(question, answerId);
     const factor = questionFactor(question);
 
     for (const dimension of DIMENSION_IDS) {
       totals[dimension] += (option.weights[dimension] ?? 0) * factor;
-      const theoreticalQuestionMax = Math.max(
-        ...question.options.map((item) => Math.abs(item.weights[dimension] ?? 0)),
-      );
-      maximums[dimension] += theoreticalQuestionMax * factor;
     }
   }
 
   for (const dimension of DIMENSION_IDS) {
-    totals[dimension] = maximums[dimension]
-      ? clamp(totals[dimension] / maximums[dimension], -1, 1)
+    totals[dimension] = dimensionMaximums[dimension]
+      ? clamp(totals[dimension] / dimensionMaximums[dimension], -1, 1)
       : 0;
   }
 
   return totals;
 };
 
-const getEvidenceQuestions = (
-  answers: AnswerMap,
-  resultVector: DimensionVector,
-): string[] =>
-  QUESTIONS.map((question) => {
-    const option = getQuestionOption(question, answers[question.id]);
-    const contribution = DIMENSION_IDS.reduce(
-      (sum, dimension) =>
-        sum + (option.weights[dimension] ?? 0) * resultVector[dimension],
-      0,
-    ) * questionFactor(question);
-    return { id: question.id, contribution };
-  })
-    .filter((item) => item.contribution > 0)
-    .sort((left, right) => right.contribution - left.contribution)
-    .slice(0, 3)
-    .map((item) => item.id);
+export const calculateDimensionScores = (answers: AnswerMap): DimensionVector =>
+  calculateDimensionScoresInternal(answers);
 
-export const scoreQuiz = (answers: AnswerMap): QuizResult => {
-  if (Object.keys(answers).length !== QUESTIONS.length) {
-    throw new Error(`Expected ${QUESTIONS.length} answers.`);
-  }
-
-  const dimensionScores = calculateDimensionScores(answers);
-  const candidates = RESULT_TYPES.map((result) => ({
+const rankCandidates = (dimensionScores: DimensionVector): ScoredCandidate[] =>
+  RESULT_TYPES.map((result) => ({
     code: result.code,
     similarity: cosineSimilarity(dimensionScores, result.vector),
   })).sort((left, right) => {
@@ -127,11 +140,106 @@ export const scoreQuiz = (answers: AnswerMap): QuizResult => {
       RESULT_TYPES.findIndex((item) => item.code === right.code);
   });
 
+const getEvidenceQuestions = (
+  answers: AnswerMap,
+  primaryCode: ResultCode,
+  resultVector: DimensionVector,
+  fullCandidates: ScoredCandidate[],
+): EvidenceQuestion[] => {
+  const fullPrimarySimilarity = fullCandidates.find(
+    (candidate) => candidate.code === primaryCode,
+  )!.similarity;
+  const fullCompetitorSimilarity = Math.max(
+    ...fullCandidates
+      .filter((candidate) => candidate.code !== primaryCode)
+      .map((candidate) => candidate.similarity),
+  );
+  const fullMargin = fullPrimarySimilarity - fullCompetitorSimilarity;
+
+  return QUESTIONS.map((question) => {
+    const option = getQuestionOption(question, answers[question.id]);
+    const withoutCandidates = rankCandidates(
+      calculateDimensionScoresInternal(answers, question.id),
+    );
+    const withoutPrimarySimilarity = withoutCandidates.find(
+      (candidate) => candidate.code === primaryCode,
+    )!.similarity;
+    const withoutCompetitorSimilarity = Math.max(
+      ...withoutCandidates
+        .filter((candidate) => candidate.code !== primaryCode)
+        .map((candidate) => candidate.similarity),
+    );
+    const withoutMargin = withoutPrimarySimilarity - withoutCompetitorSimilarity;
+    const similarityDrop = fullPrimarySimilarity - withoutPrimarySimilarity;
+    const marginDrop = fullMargin - withoutMargin;
+    const dimensions = DIMENSION_IDS
+      .filter((dimension) => (option.weights[dimension] ?? 0) !== 0)
+      .sort((left, right) => {
+        const rightContribution = Math.abs(
+          (option.weights[right] ?? 0) * resultVector[right],
+        );
+        const leftContribution = Math.abs(
+          (option.weights[left] ?? 0) * resultVector[left],
+        );
+        if (rightContribution !== leftContribution) {
+          return rightContribution - leftContribution;
+        }
+        return DIMENSION_IDS.indexOf(left) - DIMENSION_IDS.indexOf(right);
+      })
+      .slice(0, 3);
+    const tendencyLabels = dimensions.slice(0, 2).map((dimension) => {
+      const pole = (option.weights[dimension] ?? 0) >= 0 ? "positive" : "negative";
+      return DIMENSIONS[dimension][pole];
+    });
+
+    return {
+      questionId: question.id,
+      optionId: option.id,
+      prompt: question.prompt,
+      label: option.label,
+      dominantDimension: dimensions[0] ?? DIMENSION_IDS[0],
+      dimensions,
+      drop: stableNumber(Math.max(0, marginDrop)),
+      similarityDrop: stableNumber(similarityDrop),
+      marginDrop: stableNumber(marginDrop),
+      interpretation: `你选了「${option.label}」，最明显地指向${tendencyLabels.join("与")}`,
+    };
+  })
+    .sort((left, right) => {
+      if (right.drop !== left.drop) return right.drop - left.drop;
+      if (right.similarityDrop !== left.similarityDrop) {
+        return right.similarityDrop - left.similarityDrop;
+      }
+      return left.questionId.localeCompare(right.questionId);
+    })
+    .slice(0, 3);
+};
+
+export const scoreQuiz = (answers: AnswerMap): QuizResult => {
+  const answerKeys = Object.keys(answers);
+  if (
+    answerKeys.length !== QUESTIONS.length ||
+    answerKeys.some((questionId) =>
+      !QUESTIONS.some((question) => question.id === questionId),
+    )
+  ) {
+    throw new Error(`Expected ${QUESTIONS.length} answers.`);
+  }
+
+  const dimensionScores = calculateDimensionScores(answers);
+  const candidates = rankCandidates(dimensionScores);
+
   const primary = candidates[0];
   const secondary = candidates[1];
   const gap = Math.max(0, primary.similarity - secondary.similarity);
   const clarity = gap >= 0.16 ? "clear" : gap >= 0.08 ? "balanced" : "mixed";
   const resultVector = RESULT_TYPES.find((item) => item.code === primary.code)!.vector;
+  const evidenceQuestions = getEvidenceQuestions(
+    answers,
+    primary.code,
+    resultVector,
+    candidates,
+  );
 
   return {
     primaryTypeId: primary.code,
@@ -140,7 +248,9 @@ export const scoreQuiz = (answers: AnswerMap): QuizResult => {
     clarity,
     gap,
     dimensionScores,
-    evidenceQuestionIds: getEvidenceQuestions(answers, resultVector),
+    evidence: evidenceQuestions,
+    evidenceQuestions,
+    evidenceQuestionIds: evidenceQuestions.map((evidence) => evidence.questionId),
     candidates,
     quizVersion: QUIZ_VERSION,
     scoringVersion: SCORING_VERSION,
@@ -186,9 +296,10 @@ const decodeBytes = (encoded: string): Uint8Array => {
 export const encodeAnswers = (answers: AnswerMap): string => {
   const bytes = new Uint8Array(Math.ceil((QUESTIONS.length * 2) / 8));
   QUESTIONS.forEach((question, index) => {
-    const option = answers[question.id];
-    if (!option) throw new Error(`Missing answer for ${question.id}`);
-    const value = option === "A" ? 0 : option === "B" ? 1 : 2;
+    const optionId = answers[question.id];
+    if (!optionId) throw new Error(`Missing answer for ${question.id}`);
+    const option = getQuestionOption(question, optionId);
+    const value = option.id === "A" ? 0 : option.id === "B" ? 1 : 2;
     const bitOffset = index * 2;
     bytes[Math.floor(bitOffset / 8)] |= value << (bitOffset % 8);
   });

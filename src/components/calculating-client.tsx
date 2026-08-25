@@ -1,54 +1,78 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { RESULT_BY_CODE } from "../content";
+import { parseCalculationTransfer } from "../domain/calculation-transfer";
+import { createLocalResult, writeLocalResult } from "../domain/local-result";
+import { startHardNavigation, type HardNavigationHandle } from "../domain/navigation";
 import { withBasePath } from "../domain/paths";
-import { decodeAnswers, scoreQuiz } from "../domain/scoring";
+import { buildResultPath } from "../domain/result-view";
+import { scoreQuiz } from "../domain/scoring";
 
-const MESSAGES = ["测量你的精神承重墙…", "检查曲线是否蓄意逃跑…", "正在匹配建筑人格…"];
+const MESSAGES = ["测量你的精神承重墙…", "检查曲线有没有蓄意逃跑…", "正在匹配同频建筑师…"];
 
 export function CalculatingClient() {
-  const searchParams = useSearchParams();
-  const encoded = searchParams.get("a");
   const [messageIndex, setMessageIndex] = useState(0);
   const [fallbackHref, setFallbackHref] = useState<string | null>(null);
+  const [status, setStatus] = useState<"working" | "stalled" | "invalid">("working");
+  const navigation = useRef<HardNavigationHandle | null>(null);
 
   useEffect(() => {
-    const messageTimer = window.setInterval(() => setMessageIndex((value) => Math.min(value + 1, MESSAGES.length - 1)), 430);
+    const messageTimer = window.setInterval(
+      () => setMessageIndex((value) => Math.min(value + 1, MESSAGES.length - 1)),
+      360,
+    );
+
     const routeTimer = window.setTimeout(() => {
-      let target = withBasePath("/quiz/");
-      try {
-        if (!encoded) throw new Error("No answers");
-        const scored = scoreQuiz(decodeAnswers(encoded));
-        const result = RESULT_BY_CODE[scored.primaryTypeId];
-        target = withBasePath(`/result/${result.slug}/?a=${encoded}&q=1&s=1`);
-      } catch {
-        // Invalid or incomplete answer codes restart the quiz with a full load.
+      const transfer = parseCalculationTransfer(new URLSearchParams(window.location.hash.replace(/^#/, "")));
+      if (!transfer.ok) {
+        const target = withBasePath("/quiz/");
+        setStatus("invalid");
+        setFallbackHref(target);
+        return;
       }
 
+      const scored = scoreQuiz(transfer.answers);
+      const result = RESULT_BY_CODE[scored.primaryTypeId];
+      const localResult = createLocalResult(transfer.answers, scored);
+      const storage = writeLocalResult(localResult);
+      const target = withBasePath(buildResultPath(result.slug, storage ? "mine" : "share"));
       setFallbackHref(target);
-      try {
-        window.location.replace(target);
-      } catch {
-        // The rendered anchor is the user-operated fallback for restricted hosts.
-      }
-    }, 1320);
+
+      navigation.current = startHardNavigation({
+        href: target,
+        mode: "replace",
+        timeoutMs: 1500,
+        onStalled: () => setStatus("stalled"),
+        onError: () => setStatus("stalled"),
+      });
+    }, 1120);
 
     return () => {
       window.clearInterval(messageTimer);
       window.clearTimeout(routeTimer);
+      navigation.current?.cancel();
     };
-  }, [encoded]);
+  }, []);
 
   return (
-    <main className="calculating-shell" aria-live="polite" aria-busy="true">
+    <main className="calculating-shell" aria-live="polite" aria-busy={status === "working"}>
       <div>
         <div className="calculation-mark" aria-hidden="true" />
         <p className="section-kicker">AIBTI 正在施工</p>
-        <h1 className="calculation-title">{MESSAGES[messageIndex]}</h1>
-        <p className="calculation-note">不会上传你的答案。这里只有一点浏览器内计算，和适量玄学。</p>
-        {fallbackHref && <a className="calculation-fallback" href={fallbackHref}>没有自动跳转？点这里继续 →</a>}
+        <h1 className="calculation-title">
+          {status === "invalid" ? "这组答案已经过期" : MESSAGES[messageIndex]}
+        </h1>
+        <p className="calculation-note">
+          {status === "invalid"
+            ? "题库已经更新，重新作答才能得到可信结果"
+            : "答案只在这台设备里计算，不会上传"}
+        </p>
+        {fallbackHref && status !== "working" && (
+          <a className="calculation-fallback" href={fallbackHref}>
+            {status === "invalid" ? "重新开始测试 →" : "浏览器没跳转，点这里继续 →"}
+          </a>
+        )}
       </div>
     </main>
   );

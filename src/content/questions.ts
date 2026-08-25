@@ -6,11 +6,11 @@ export const QUESTIONS: readonly Question[] = [
     order: 1,
     kind: "projective",
     eyebrow: "潜意识施工 · 01",
-    prompt: "半夜醒来，墙上多了一扇门。你觉得门后是？",
+    prompt: "半夜醒来，家里多出一道楼梯，你觉得它通向哪里？",
     options: [
-      { id: "A", label: "一条灯亮得过分整齐的长廊", weights: { ORDER: 1, GEOMETRY: 0.9, EXPRESS: -0.4 } },
-      { id: "B", label: "一座刚下过雨的野花园", weights: { GEOMETRY: -1, CONTEXT: 0.9 } },
-      { id: "C", label: "正在非法加班的机器核心", weights: { RISK: 0.9, MAKING: -0.8, TIME: -1 } },
+      { id: "A", label: "只亮着一盏灯的空房间", weights: { EXPRESS: -0.8, SOCIAL: -0.8, GEOMETRY: 0.3 } },
+      { id: "B", label: "屋顶上正在长大的花园", weights: { EXPRESS: -0.1, SOCIAL: 0.5, GEOMETRY: -1, CONTEXT: 0.9 } },
+      { id: "C", label: "一座还没通电的未来车站", weights: { EXPRESS: 0.9, SOCIAL: 0.3, GEOMETRY: 0.7, CONTEXT: -0.9 } },
     ],
   },
   {
@@ -18,11 +18,11 @@ export const QUESTIONS: readonly Question[] = [
     order: 2,
     kind: "projective",
     eyebrow: "潜意识施工 · 02",
-    prompt: "一块空地借你一下午，你会？",
+    prompt: "一块空地借你一个下午，你会留下什么？",
     options: [
-      { id: "A", label: "先画网格，空地也得讲规矩", weights: { ORDER: 1, GEOMETRY: 1 } },
-      { id: "B", label: "躺到树影移动完再说", weights: { GEOMETRY: -0.8, CONTEXT: 1, EXPRESS: -0.4 } },
-      { id: "C", label: "捡废料搭个不知道干嘛的东西", weights: { MAKING: 1, TIME: 0.8, RISK: 0.6 } },
+      { id: "A", label: "一张谁路过都能坐的大桌", weights: { ORDER: 0.6, GEOMETRY: 0.7, EXPRESS: 0.1, SOCIAL: 1, RISK: -0.4 } },
+      { id: "B", label: "一架用途不明但会转的装置", weights: { ORDER: -1, GEOMETRY: -1, EXPRESS: 0.8, SOCIAL: -0.3, RISK: 0.5 } },
+      { id: "C", label: "一条只在四点钟出现的影子", weights: { ORDER: 0.7, GEOMETRY: 0.7, EXPRESS: -0.7, SOCIAL: -0.6, RISK: -0.3 } },
     ],
   },
   {
@@ -30,11 +30,11 @@ export const QUESTIONS: readonly Question[] = [
     order: 3,
     kind: "projective",
     eyebrow: "潜意识施工 · 03",
-    prompt: "梦里的城市只剩一种声音。",
+    prompt: "梦里的城市只剩一种声音，你选哪个？",
     options: [
-      { id: "A", label: "节拍器。谁乱拍谁出局", weights: { ORDER: 1, EXPRESS: -0.8 } },
-      { id: "B", label: "水声和树叶，路自己会长出来", weights: { GEOMETRY: -0.9, CONTEXT: 0.9 } },
-      { id: "C", label: "电机升频，感觉马上要起飞", weights: { RISK: 0.8, EXPRESS: 0.7, TIME: -1 } },
+      { id: "A", label: "瓷片、铜铃和人声叠在一起", weights: { MAKING: 0.6, EXPRESS: 0.9, SOCIAL: 0.5, CONTEXT: 0.3, RISK: 0.3 } },
+      { id: "B", label: "雨落在旧瓦上，偶尔混进鸟叫", weights: { TIME: 0.8, MAKING: 0.7, EXPRESS: -0.3, SOCIAL: -0.1, CONTEXT: 0.7, RISK: -0.4 } },
+      { id: "C", label: "电梯、风机和轨道一起低鸣", weights: { TIME: -0.7, MAKING: -0.8, EXPRESS: -0.6, SOCIAL: -0.4, CONTEXT: -0.7, RISK: 0.1 } },
     ],
   },
   {
@@ -42,11 +42,11 @@ export const QUESTIONS: readonly Question[] = [
     order: 4,
     kind: "projective",
     eyebrow: "潜意识施工 · 04",
-    prompt: "陌生聚会，你先找到什么？",
+    prompt: "陌生聚会里，哪处空间先把你吸过去？",
     options: [
-      { id: "A", label: "最安静的边角，顺便观察动线", weights: { SOCIAL: -1, EXPRESS: -0.8, ORDER: 0.4 } },
-      { id: "B", label: "一张能把散人拢起来的大桌", weights: { SOCIAL: 1, CONTEXT: 0.7 } },
-      { id: "C", label: "话筒。没有也可以想办法变出来", weights: { EXPRESS: 1, RISK: 0.6, SOCIAL: 0.8 } },
+      { id: "A", label: "摆满半成品、谁都能搭手的长桌", weights: { SOCIAL: 0.7, MAKING: 0.6, ORDER: -0.5, CONTEXT: 0.4, TIME: 0.4 } },
+      { id: "B", label: "门边刚好能看清全场的暗角", weights: { SOCIAL: -0.8, MAKING: -0.4, EXPRESS: -0.7, ORDER: 0.7 } },
+      { id: "C", label: "正好能把一句话讲给全场的楼梯平台", weights: { SOCIAL: 0.2, EXPRESS: 0.8, ORDER: -0.3, MAKING: 0.4, RISK: 0.5, CONTEXT: 0.2 } },
     ],
   },
   {
@@ -54,11 +54,11 @@ export const QUESTIONS: readonly Question[] = [
     order: 5,
     kind: "projective",
     eyebrow: "潜意识施工 · 05",
-    prompt: "世界末日前，你只留一间房。",
+    prompt: "世界末日前，只准留下一间房，你选哪个？",
     options: [
-      { id: "A", label: "一束光、一面墙。别再加了", weights: { EXPRESS: -1, ORDER: 0.8, SOCIAL: -0.4 } },
-      { id: "B", label: "有厨房和院子的公共客厅", weights: { SOCIAL: 1, CONTEXT: 1, GEOMETRY: -0.5 } },
-      { id: "C", label: "全城最后一间还在运转的控制室", weights: { RISK: 0.8, MAKING: -0.9, TIME: -1 } },
+      { id: "A", label: "把厨房和邻居都装进去的公共客厅", weights: { ORDER: 0.5, GEOMETRY: 0.7, SOCIAL: 0.9, EXPRESS: 0.1, RISK: -0.3, CONTEXT: -0.3 } },
+      { id: "B", label: "墙和地面会跟着情绪改变的房间", weights: { ORDER: -0.8, GEOMETRY: -0.9, SOCIAL: -0.1, EXPRESS: 0.7, RISK: 0.6 } },
+      { id: "C", label: "能看见天空、门却很好关的小房间", weights: { ORDER: 0.3, GEOMETRY: 0.2, SOCIAL: -0.8, EXPRESS: -0.8, RISK: -0.3, CONTEXT: 0.3 } },
     ],
   },
   {
@@ -66,11 +66,11 @@ export const QUESTIONS: readonly Question[] = [
     order: 6,
     kind: "projective",
     eyebrow: "潜意识施工 · 06",
-    prompt: "捡到一块来历不明的材料。",
+    prompt: "捡到一块来历不明的材料，你先做什么？",
     options: [
-      { id: "A", label: "测量、编号、归档", weights: { ORDER: 1, GEOMETRY: 0.7 } },
-      { id: "B", label: "摸摸纹理，猜它以前是谁家屋顶", weights: { MAKING: 1, TIME: 1, CONTEXT: 0.7 } },
-      { id: "C", label: "直接做破坏性试验", weights: { RISK: 1, EXPRESS: 0.6, TIME: -0.7 } },
+      { id: "A", label: "拿去做个小东西，允许它当场变卦", weights: { ORDER: -0.8, GEOMETRY: -0.7, RISK: 0.8, EXPRESS: 0.7, MAKING: 0.2, TIME: -0.4, CONTEXT: -0.3 } },
+      { id: "B", label: "量好尺寸，看看能不能接进现有系统", weights: { TIME: -0.8, CONTEXT: -0.7, MAKING: -0.9, RISK: 0.1, ORDER: 0.8, GEOMETRY: 0.7 } },
+      { id: "C", label: "擦干净，找出它以前待过的地方", weights: { TIME: 0.9, CONTEXT: 0.8, MAKING: 0.8, RISK: -0.5, ORDER: -0.3, GEOMETRY: -0.3 } },
     ],
   },
   {
@@ -78,11 +78,11 @@ export const QUESTIONS: readonly Question[] = [
     order: 7,
     kind: "personality",
     eyebrow: "日常人格 · 07",
-    prompt: "旅行计划突然全变了。",
+    prompt: "旅行计划临时全变了，你会先做什么？",
     options: [
-      { id: "A", label: "原计划是承重墙，不能拆", weights: { ORDER: 1, RISK: -0.7 } },
-      { id: "B", label: "看天气和街道，临时改线", weights: { ORDER: -0.8, CONTEXT: 0.8, RISK: 0.5 } },
-      { id: "C", label: "先问大家谁饿了", weights: { SOCIAL: 1, CONTEXT: 0.6 } },
+      { id: "A", label: "重排顺序，保住最想去的两个地方", weights: { ORDER: 0.8, RISK: -0.4, CONTEXT: -0.7, SOCIAL: -0.5, GEOMETRY: 0.8 } },
+      { id: "B", label: "看天气和街道，把今天交给现场", weights: { ORDER: -1, RISK: 0.6, CONTEXT: 0.9, SOCIAL: -0.2, GEOMETRY: -0.8 } },
+      { id: "C", label: "先定一个大家都能跟上的集合点", weights: { ORDER: 0.5, RISK: -0.4, CONTEXT: -0.3, SOCIAL: 1, GEOMETRY: 0.2 } },
     ],
   },
   {
@@ -90,11 +90,11 @@ export const QUESTIONS: readonly Question[] = [
     order: 8,
     kind: "personality",
     eyebrow: "日常人格 · 08",
-    prompt: "房间乱到找不到桌面。",
+    prompt: "房间乱到找不到桌面，你会怎么处理？",
     options: [
-      { id: "A", label: "立刻归位，最好误差不超过一毫米", weights: { ORDER: 1, GEOMETRY: 0.7 } },
-      { id: "B", label: "乱得挺有生活痕迹，先留着", weights: { ORDER: -0.7, TIME: 0.8, MAKING: 0.5 } },
-      { id: "C", label: "摆得更夸张，命名为《星期二》", weights: { EXPRESS: 1, RISK: 0.7 } },
+      { id: "A", label: "先清出一块能工作的岛，其他明天再说", weights: { ORDER: 0.8, TIME: -0.4, MAKING: -0.9, EXPRESS: -0.5, RISK: -0.2 } },
+      { id: "B", label: "顺着东西的位置，慢慢给它们找新家", weights: { ORDER: 0.1, TIME: 0.8, MAKING: 0.6, EXPRESS: -0.3, RISK: -0.3 } },
+      { id: "C", label: "换个灯，把现场升级成一件装置", weights: { ORDER: -0.9, TIME: -0.4, MAKING: 0.3, EXPRESS: 0.8, RISK: 0.5 } },
     ],
   },
   {
@@ -102,11 +102,11 @@ export const QUESTIONS: readonly Question[] = [
     order: 9,
     kind: "personality",
     eyebrow: "日常人格 · 09",
-    prompt: "观点冲突时，你通常？",
+    prompt: "意见撞在一起时，你通常靠什么推进？",
     options: [
-      { id: "A", label: "上证据、结构和编号", weights: { ORDER: 0.9, EXPRESS: -0.6 } },
-      { id: "B", label: "去现场，听听人到底怎么用", weights: { CONTEXT: 1, SOCIAL: 0.8 } },
-      { id: "C", label: "做个模型，再戏剧性地掀开幕布", weights: { EXPRESS: 1, MAKING: 0.6, SOCIAL: 0.5 } },
+      { id: "A", label: "先说出最激进的版本，让争论有个靶子", weights: { ORDER: -0.8, CONTEXT: -0.2, SOCIAL: -0.3, RISK: 0.6, EXPRESS: 0.8, MAKING: 0.4, TIME: 0.2 } },
+      { id: "B", label: "做一个能被拆解和反驳的模型", weights: { ORDER: 0.8, CONTEXT: -0.6, SOCIAL: -0.3, RISK: 0.1, EXPRESS: -0.4, GEOMETRY: 0.6, MAKING: -0.6, TIME: -0.5 } },
+      { id: "C", label: "把人带到现场，沿真实路线走一遍", weights: { ORDER: -0.1, CONTEXT: 0.9, SOCIAL: 0.6, RISK: -0.4, EXPRESS: -0.3, GEOMETRY: -0.7, MAKING: 0.3, TIME: 0.3 } },
     ],
   },
   {
@@ -114,11 +114,11 @@ export const QUESTIONS: readonly Question[] = [
     order: 10,
     kind: "personality",
     eyebrow: "日常人格 · 10",
-    prompt: "截止日期只剩一天。",
+    prompt: "团队项目只剩一天，你最信哪种救场方式？",
     options: [
-      { id: "A", label: "拆任务、锁版本、按表推进", weights: { ORDER: 1, MAKING: -0.6 } },
-      { id: "B", label: "靠手感慢慢磨准，谁催谁等", weights: { MAKING: 1, TIME: 0.7 } },
-      { id: "C", label: "咖啡、曲线和奇迹", weights: { RISK: 1, EXPRESS: 0.9, TIME: -0.7 } },
+      { id: "A", label: "把所有人拉到一张表上，只保住共同骨架", weights: { ORDER: 0.8, RISK: -0.4, MAKING: -0.3, EXPRESS: -0.3, TIME: -0.2, SOCIAL: 0.4, GEOMETRY: 0.6 } },
+      { id: "B", label: "删掉最安全的一版，押最后一次转弯", weights: { ORDER: -0.8, RISK: 0.7, MAKING: -0.6, EXPRESS: 0.5, TIME: -0.6, SOCIAL: -0.5, GEOMETRY: -0.5 } },
+      { id: "C", label: "守住最关键的手感，让做得最熟的人收尾", weights: { RISK: -0.3, MAKING: 0.9, EXPRESS: -0.2, TIME: 0.8, SOCIAL: 0.1, GEOMETRY: -0.1 } },
     ],
   },
   {
@@ -126,11 +126,11 @@ export const QUESTIONS: readonly Question[] = [
     order: 11,
     kind: "personality",
     eyebrow: "日常人格 · 11",
-    prompt: "社交电量只剩 5%。",
+    prompt: "社交电量只剩 5%，但今晚不能缺席，你会怎么撑完？",
     options: [
-      { id: "A", label: "独处充电，请勿敲门", weights: { SOCIAL: -1, EXPRESS: -0.7 } },
-      { id: "B", label: "三五个人吃顿慢饭", weights: { SOCIAL: 0.8, CONTEXT: 0.8 } },
-      { id: "C", label: "还是去现场，然后突然开始表演", weights: { SOCIAL: 0.7, EXPRESS: 1, RISK: 0.6 } },
+      { id: "A", label: "找两个人躲到阳台，把话慢慢说完", weights: { SOCIAL: 0.1, EXPRESS: -0.7, CONTEXT: 0.8, GEOMETRY: -0.6, MAKING: 0.1, TIME: 0.3, RISK: -0.3 } },
+      { id: "B", label: "负责现场流程，忙起来就不用寒暄", weights: { SOCIAL: 0.4, EXPRESS: -0.2, CONTEXT: -0.6, GEOMETRY: 0.7, MAKING: -0.7, TIME: -0.6, ORDER: 0.8 } },
+      { id: "C", label: "把最后 5% 一次性放完，然后消失", weights: { SOCIAL: -0.5, EXPRESS: 0.9, CONTEXT: -0.2, GEOMETRY: -0.1, MAKING: 0.6, TIME: 0.3, ORDER: -0.8, RISK: 0.3 } },
     ],
   },
   {
@@ -138,11 +138,11 @@ export const QUESTIONS: readonly Question[] = [
     order: 12,
     kind: "personality",
     eyebrow: "日常人格 · 12",
-    prompt: "收到哪份礼物最开心？",
+    prompt: "哪份礼物最容易让你舍不得丢？",
     options: [
-      { id: "A", label: "一件精密工具", weights: { ORDER: 0.8, MAKING: -0.8, TIME: -0.6 } },
-      { id: "B", label: "一件有来历的手作旧物", weights: { MAKING: 1, TIME: 1, CONTEXT: 0.6 } },
-      { id: "C", label: "一张去未知地点的票", weights: { RISK: 1, EXPRESS: 0.5, ORDER: -0.6 } },
+      { id: "A", label: "一张目的地还空着的车票", weights: { RISK: 0.8, ORDER: -0.7, MAKING: -0.4, TIME: -0.8, EXPRESS: 0.7, CONTEXT: -0.4, GEOMETRY: -0.5 } },
+      { id: "B", label: "一件尺寸刚好、能用很多年的工具", weights: { RISK: -0.4, ORDER: 0.9, MAKING: -0.6, TIME: -0.1, EXPRESS: -0.6, CONTEXT: -0.4, GEOMETRY: 0.8 } },
+      { id: "C", label: "一件带着修补痕迹的旧物", weights: { RISK: -0.4, ORDER: -0.2, MAKING: 1, TIME: 0.9, EXPRESS: -0.1, CONTEXT: 0.8, GEOMETRY: -0.3 } },
     ],
   },
   {
@@ -150,11 +150,11 @@ export const QUESTIONS: readonly Question[] = [
     order: 13,
     kind: "aesthetic",
     eyebrow: "建筑直觉 · 13",
-    prompt: "哪栋楼最像你今天的精神状态？",
+    prompt: "哪栋建筑最像你今天的精神状态？",
     options: [
-      { id: "A", label: "玻璃、钢和不许插队的网格", visual: "grid", weights: { GEOMETRY: 1, ORDER: 1, MAKING: -0.8 } },
-      { id: "B", label: "一块很重、但很可靠的混凝土", visual: "mass", weights: { GEOMETRY: 0.8, EXPRESS: -0.5, SOCIAL: 0.4 } },
-      { id: "C", label: "像刚从地面逃走的连续曲面", visual: "flow", weights: { GEOMETRY: -0.8, RISK: 1, TIME: -0.9 } },
+      { id: "A", label: "一块沉稳落地、把人稳稳托住的体量", visual: "mass", weights: { GEOMETRY: 0.7, ORDER: 0.6, RISK: -0.5, SOCIAL: 1 } },
+      { id: "B", label: "一条正在加速、几乎不肯停下的曲面", visual: "flow", weights: { GEOMETRY: -1, ORDER: -1, RISK: 0.5, EXPRESS: 0.7, SOCIAL: -0.5 } },
+      { id: "C", label: "一组轻得像能随时升级的结构模块", visual: "module", weights: { GEOMETRY: 0.8, ORDER: 0.7, RISK: 0.1, EXPRESS: -0.6, SOCIAL: -0.2 } },
     ],
   },
   {
@@ -162,11 +162,11 @@ export const QUESTIONS: readonly Question[] = [
     order: 14,
     kind: "aesthetic",
     eyebrow: "建筑直觉 · 14",
-    prompt: "哪个空间让你愿意多待十分钟？",
+    prompt: "哪个空间会让你忘记看时间？",
     options: [
-      { id: "A", label: "一道切进暗室的光", visual: "light", weights: { EXPRESS: -1, ORDER: 0.7, SOCIAL: -0.6 } },
-      { id: "B", label: "大家围着一棵树坐的院子", visual: "courtyard", weights: { GEOMETRY: -0.8, CONTEXT: 1, SOCIAL: 0.9 } },
-      { id: "C", label: "彩砖、旋转楼梯和一点失控", visual: "ornament", weights: { EXPRESS: 1, MAKING: 0.8, RISK: 0.4 } },
+      { id: "A", label: "暗处只有一道光，脚步也跟着慢下来", visual: "light", weights: { EXPRESS: -0.9, SOCIAL: -0.8, GEOMETRY: 0.4, MAKING: -0.7, RISK: -0.4 } },
+      { id: "B", label: "树、风和座位围成一座没有主持人的院子", visual: "courtyard", weights: { EXPRESS: -0.1, SOCIAL: 0.6, GEOMETRY: -0.8, CONTEXT: 0.7, RISK: -0.2 } },
+      { id: "C", label: "彩砖沿着楼梯一路爬到天花板", visual: "ornament", weights: { EXPRESS: 1, SOCIAL: 0.2, GEOMETRY: -0.5, CONTEXT: 0.3, MAKING: 0.7, RISK: 0.6 } },
     ],
   },
   {
@@ -174,11 +174,11 @@ export const QUESTIONS: readonly Question[] = [
     order: 15,
     kind: "aesthetic",
     eyebrow: "建筑直觉 · 15",
-    prompt: "伸手摸墙，你希望摸到？",
+    prompt: "伸手摸墙，你更想碰到哪种触感？",
     options: [
-      { id: "A", label: "冷静到能反光的钢和玻璃", visual: "steel", weights: { MAKING: -1, TIME: -1, ORDER: 0.6 } },
-      { id: "B", label: "边缘不齐的旧砖和夯土", visual: "earth", weights: { MAKING: 1, TIME: 1, CONTEXT: 0.8 } },
-      { id: "C", label: "还留着模板缝的混凝土", visual: "concrete", weights: { GEOMETRY: 0.7, ORDER: 0.8, EXPRESS: -0.5 } },
+      { id: "A", label: "带着阳光温度、边缘微微不齐的旧砖", visual: "earth", weights: { MAKING: 0.8, TIME: 0.7, ORDER: -0.7, GEOMETRY: -0.7, CONTEXT: 0.7 } },
+      { id: "B", label: "粗粝厚实、还留着模板纹的混凝土", visual: "concrete", weights: { ORDER: 0.8, GEOMETRY: 1, RISK: -0.5, EXPRESS: 0.3, CONTEXT: -0.2 } },
+      { id: "C", label: "冷而精准、接缝几乎消失的金属", visual: "steel", weights: { MAKING: -0.8, TIME: -0.7, ORDER: 0.8, GEOMETRY: 0.7, CONTEXT: -0.6, EXPRESS: -0.4 } },
     ],
   },
   {
@@ -186,11 +186,11 @@ export const QUESTIONS: readonly Question[] = [
     order: 16,
     kind: "aesthetic",
     eyebrow: "建筑直觉 · 16",
-    prompt: "你会留下哪扇窗？",
+    prompt: "如果只能留下一个开口，你选哪个？",
     options: [
-      { id: "A", label: "一条连续、水平、很守纪律的窗", visual: "ribbon", weights: { ORDER: 1, GEOMETRY: 0.9 } },
-      { id: "B", label: "几扇专门框住树和屋顶的窗", visual: "framed", weights: { CONTEXT: 1, GEOMETRY: -0.7 } },
-      { id: "C", label: "一整面让天气闯进来的巨窗", visual: "giant", weights: { EXPRESS: 0.9, RISK: 0.8 } },
+      { id: "A", label: "一面把云和天气整幅放进来的巨窗", visual: "giant", weights: { GEOMETRY: -0.4, ORDER: -0.7, CONTEXT: -0.5, EXPRESS: 0.8, RISK: 0.6 } },
+      { id: "B", label: "几扇只框住树梢、屋顶和人的小窗", visual: "framed", weights: { GEOMETRY: -0.6, ORDER: -0.1, CONTEXT: 0.9, EXPRESS: -0.1, RISK: -0.2 } },
+      { id: "C", label: "一条连续水平、让房间稳定下来的长窗", visual: "ribbon", weights: { GEOMETRY: 1, ORDER: 0.8, CONTEXT: -0.4, EXPRESS: -0.7, RISK: -0.4 } },
     ],
   },
   {
@@ -198,11 +198,11 @@ export const QUESTIONS: readonly Question[] = [
     order: 17,
     kind: "aesthetic",
     eyebrow: "建筑直觉 · 17",
-    prompt: "城市送你一块地，你先做？",
+    prompt: "城市给你一块地，你更愿意先兑现什么？",
     options: [
-      { id: "A", label: "一座能复制、升级、维护的模块塔", visual: "module", weights: { ORDER: 0.9, GEOMETRY: 0.9, MAKING: -0.9, TIME: -0.7 } },
-      { id: "B", label: "先修补旧巷、院落和邻里关系", visual: "repair", weights: { CONTEXT: 1, MAKING: 0.9, TIME: 1, SOCIAL: 1 } },
-      { id: "C", label: "把屋顶和地面卷成一座公园", visual: "landscape", weights: { GEOMETRY: -0.8, RISK: 0.9, SOCIAL: 0.7 } },
+      { id: "A", label: "一条把旧巷、院落和新生活接起来的路径", visual: "repair", weights: { RISK: -0.6, GEOMETRY: -0.3, CONTEXT: 0.9, MAKING: 0.8, TIME: 0.8, EXPRESS: -0.2 } },
+      { id: "B", label: "一片从地面一路翻上屋顶的开放公园", visual: "landscape", weights: { ORDER: -0.9, RISK: 0.7, GEOMETRY: -0.7, CONTEXT: -0.4, MAKING: -0.2, TIME: -0.5, EXPRESS: 0.8 } },
+      { id: "C", label: "一套能不断加层、拆换和升级的公共骨架", visual: "module", weights: { ORDER: 0.8, RISK: 0.2, GEOMETRY: 0.7, CONTEXT: -0.6, MAKING: -0.8, TIME: -0.7, EXPRESS: -0.4 } },
     ],
   },
   {
@@ -210,15 +210,15 @@ export const QUESTIONS: readonly Question[] = [
     order: 18,
     kind: "aesthetic",
     eyebrow: "建筑直觉 · 18",
-    prompt: "哪种“不完美”最能忍？",
+    prompt: "哪种不完美，你反而愿意保留？",
     options: [
-      { id: "A", label: "网格歪了一毫米——等等，我不能忍", visual: "misalign", weights: { ORDER: 1, GEOMETRY: 0.9 } },
-      { id: "B", label: "旧材料继续开裂、长苔、变颜色", visual: "weather", weights: { MAKING: 1, TIME: 1, CONTEXT: 0.7 } },
-      { id: "C", label: "曲面暂时造不出来，但概念先飞", visual: "impossible", weights: { RISK: 1, EXPRESS: 0.8, TIME: -0.9 } },
+      { id: "A", label: "网格里故意空出来的一格", visual: "grid-gap", weights: { ORDER: 0.7, GEOMETRY: 0.7, MAKING: -0.2, RISK: -0.4, EXPRESS: -0.5, CONTEXT: -0.3 } },
+      { id: "B", label: "材料慢慢开裂、长苔、变颜色", visual: "weather", weights: { ORDER: -0.2, GEOMETRY: -0.5, TIME: 0.9, MAKING: 0.8, RISK: -0.3, EXPRESS: -0.1, CONTEXT: 0.8 } },
+      { id: "C", label: "一段现在还造不出来的悬空曲面", visual: "impossible", weights: { ORDER: -0.5, GEOMETRY: -0.2, TIME: -0.9, MAKING: -0.6, RISK: 0.7, EXPRESS: 0.6, CONTEXT: -0.5 } },
     ],
   },
 ] as const;
 
 if (QUESTIONS.length !== 18) {
-  throw new Error("The MVP contract requires exactly 18 questions.");
+  throw new Error("The product contract requires exactly 18 questions.");
 }
