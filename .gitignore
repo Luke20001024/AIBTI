@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+design/
+.env*.local
+coverage/
+*.tsbuildinfo
+*.log
+.DS_Store
+AGENTS.md
+CLAUDE.md
