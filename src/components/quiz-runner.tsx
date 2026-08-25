@@ -127,7 +127,34 @@ export function QuizRunner() {
     setFallbackHref(null);
   };
 
-  if (!ready) return <main className="narrow-shell quiz-shell" aria-busy="true" />;
+  if (!ready) {
+    return (
+      <main className="narrow-shell quiz-shell quiz-shell-loading" aria-busy="true">
+        <div className="quiz-progress" aria-hidden="true">
+          <div className="quiz-progress-line">
+            <div className="quiz-progress-value" style={{ width: `${100 / QUESTIONS.length}%` }} />
+          </div>
+          <div className="quiz-progress-meta">
+            <span>AIBTI</span>
+            <span>— / {QUESTIONS.length}</span>
+          </div>
+        </div>
+        <section className="quiz-loading" role="status" aria-live="polite">
+          <span className="quiz-loading-mark" aria-hidden="true" />
+          <p>正在读取测试进度</p>
+          <div aria-hidden="true">
+            <i />
+            <i />
+            <i />
+          </div>
+        </section>
+        <footer className="quiz-footer quiz-loading-footer" aria-hidden="true">
+          <span>18 道短题</span>
+          <span>准备交互</span>
+        </footer>
+      </main>
+    );
+  }
 
   return (
     <main className="narrow-shell quiz-shell" aria-busy={finishing}>

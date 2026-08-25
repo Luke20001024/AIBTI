@@ -22,6 +22,8 @@ test("18 题需显式提交并生成无答案的 Owner 结果", async ({ page },
     sessionStorage.clear();
   });
   await page.goto(appPath("/quiz/"), { waitUntil: "domcontentloaded" });
+  await expect(page.locator(".quiz-shell")).toHaveAttribute("aria-busy", "false", { timeout: 20_000 });
+  await expect(page.getByRole("radio").first()).toBeVisible();
 
   for (let index = 1; index < 18; index += 1) {
     await page.getByRole("radio").first().click();
