@@ -72,5 +72,5 @@ const server = createServer((request, response) => {
 });
 
 server.listen(port, host, () => {
-  process.stdout.write(`AIBTI Pages smoke server: http://${host}:${port}${basePath}/\n`);
+  process.stdout.write(`ArcBTI Pages smoke server: http://${host}:${port}${basePath}/\n`);
 });

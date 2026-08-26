@@ -6,7 +6,7 @@ param(
 $ErrorActionPreference = "Stop"
 $sourceRoot = Join-Path $WorkspaceRoot "design\reference-source"
 $publicRoot = Join-Path $WorkspaceRoot "public\images"
-$headers = @{ "User-Agent" = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 AIBTI-Research-Prototype/1.0" }
+$headers = @{ "User-Agent" = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 ArcBTI-Research-Prototype/1.0" }
 
 New-Item -ItemType Directory -Force -Path (Join-Path $sourceRoot "buildings"), (Join-Path $sourceRoot "architects"), (Join-Path $publicRoot "buildings"), (Join-Path $publicRoot "architects") | Out-Null
 

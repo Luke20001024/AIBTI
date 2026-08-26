@@ -5,7 +5,7 @@ param(
 
 $ErrorActionPreference = "Stop"
 $sourceRoot = Join-Path $WorkspaceRoot "design\reference-source"
-$headers = @{ "User-Agent" = "AIBTI-Research-Prototype/1.0 (educational mobile web prototype)" }
+$headers = @{ "User-Agent" = "ArcBTI-Research-Prototype/1.0 (educational mobile web prototype)" }
 
 $assets = @(
   @{ Kind = "buildings"; File = "farnsworth-house"; Title = "Farnsworth House" },
