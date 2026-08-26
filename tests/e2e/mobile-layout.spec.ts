@@ -82,6 +82,14 @@ test("建筑资料卡在手机上锁定背景、恢复焦点且可由返回键�
   await expect(dialog.getByRole("button", { name: "关闭", exact: true })).toBeFocused();
   await expect(page.locator("body")).toHaveCSS("overflow", "hidden");
 
+  await expect.poll(async () => {
+    const dialogBottom = await dialog.evaluate(
+      (element) => element.getBoundingClientRect().bottom,
+    );
+    const viewportHeight = await page.evaluate(() => innerHeight);
+    return Math.abs(dialogBottom - viewportHeight);
+  }, { timeout: 3_000 }).toBeLessThanOrEqual(12);
+
   const sheetGeometry = await dialog.evaluate((element) => {
     const box = element.getBoundingClientRect();
     return { width: box.width, height: box.height, bottom: box.bottom };
