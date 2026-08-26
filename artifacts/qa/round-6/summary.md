@@ -2,7 +2,7 @@
 
 日期：2026-08-26
 
-状态：本地候选通过；等待 GitHub Pages 统一部署与公网冒烟
+状态：已部署；本地候选、GitHub Actions 与 GitHub Pages 公网冒烟通过
 
 ## 本轮范围
 
@@ -44,4 +44,13 @@
 - 首页引用 CSS：26,765 B 原始／6,357 B gzip；首页引用 JavaScript：653,297 B 原始／207,644 B gzip
 - `public/images` 总量：10,460,164 B；其中八张 V3 人格图合计 562,062 B
 
-模拟 WebKit 与 Chromium 不替代真实 iPhone Safari、微信、Android 微信与 HarmonyOS 百度浏览器。GitHub Pages 部署成功并完成公网路由、静态资源、八结果与分享链路冒烟之前，本轮只能标记为本地候选通过。
+## 公网部署
+
+- 产品提交：`d1df500858e33906cd3e6c79b9fb066360b7a0c0`
+- GitHub Actions：Run `32932967440` completed successfully
+- 正式地址：`https://luke20001024.github.io/AIBTI/`
+- 页面部署时间戳：2026-08-26 05:11:13 UTC
+- 公网 Android 393 冒烟：8 项全部通过，覆盖纯文字首页、建筑图像题、公开结果、Owner 首帧、完整 18 题、分享降级、八型长页和八张真实分享卡
+- 公网八型检查直接断言 `characters-v3/*-scene-v3.webp` 已加载，排除旧 V2 图片缓存假通过
+
+模拟 WebKit 与 Chromium 不替代真实 iPhone Safari、微信、Android 微信与 HarmonyOS 百度浏览器；上述真实设备仍保留为正式推广门槛。
