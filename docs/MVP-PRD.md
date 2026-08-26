@@ -2,10 +2,10 @@
 
 > 用户可见品牌：ArcBTI
 > 技术遗留标识：GitHub 仓库 `AIBTI`、Pages 子路径 `/AIBTI/` 暂时保留，避免破坏现有公开链接
-> 文档版本：v2.1 ArcBTI Architecture Language Rebuild 本地候选版
-> 文档状态：G0—G7 已完成；候选提交、GitHub Pages 部署、线上冒烟与真实设备验收待完成
+> 文档版本：v2.2 ArcBTI Architecture Language Rebuild 公网候选版
+> 文档状态：G0—G8 已完成；线上自动 iPhone／Android／HarmonyOS 代理验收通过，G9 原设备验收待完成
 > 更新日期：2026-08-27
-> 当前线上产品基线：`d1df500`（V2 前序回退点：`48d9b92`；v1 回退基线：`39ff956`）
+> 当前线上产品基线：`c794208`（ArcBTI 3.0 主实现：`6bc1777`；V2 前序回退点：`d1df500`；v1 回退基线：`39ff956`）
 > 主要终端：iPhone、Android、HarmonyOS 手机 Web
 
 ---
@@ -573,8 +573,8 @@ ArcBTI · VOID
 | G5 样板实现 | 先实现 ArcBTI 品牌、一道题和 VOID 结果全链路 | 浏览器样板 | `[已完成]` |
 | G6 全量实现 | 扩展至 18 题与其余七型 | 本地 Release Candidate | `[已完成]` |
 | G7 自动与视觉 QA | 单测、构建、静态产物、设备矩阵、多轮截图 | Fidelity Ledger 与 QA 证据 | `[已通过]` |
-| G8 候选提交与部署 | 整理并行资产、统一提交、推送、Actions 部署 | GitHub Pages 候选版 | 线上八型和完整答题冒烟通过 |
-| G9 真机验收与收口 | iPhone、Android、微信、HarmonyOS 原设备检查 | 最终验收记录与 PRD 回写 | 才能标记正式完成 |
+| G8 候选提交与部署 | 整理并行资产、统一提交、推送、Actions 部署 | GitHub Pages 候选版 | `[已完成：Run #11]` |
+| G9 真机验收与收口 | iPhone、Android、微信、HarmonyOS 原设备检查 | 最终验收记录与 PRD 回写 | `[自动代理已完成；原设备待执行]` |
 
 ### A11 自动与真机验收
 
@@ -627,9 +627,12 @@ ArcBTI · VOID
 - `[已完成]` 分享卡改为 ArcBTI 品牌和建筑母语，人物角色只保留在分享传播资产中
 - `[已通过]` TypeScript、52 项单元测试与八项目动态版自动设备矩阵
 - `[已完成]` 14 个页面静态导出、`/AIBTI/` 子路径、三类代表设备静态闭环与多轮视觉收口
-- `[待执行]` 统一候选提交、推送、GitHub Pages 部署、线上冒烟与真实设备验收
+- `[已完成]` 主实现提交 `6bc1777` 与交互就绪修复 `c794208` 已推送至功能分支和 `main`
+- `[已完成]` GitHub Actions Run `33000683192` 成功生成 11.4 MB Pages artifact 并部署正式地址
+- `[已通过]` 正式 Pages 的 iPhone 390 WebKit、Android 393 Chromium 与 HarmonyOS 4 User-Agent 代理共 21 个关键槽位：19 通过，2 按分享卡单引擎职责跳过，0 失败
+- `[待执行]` iPhone Safari／微信、Android Chrome／微信、HarmonyOS 百度浏览器／系统浏览器原设备验收、实测性能与逐图授权复核
 
-### A13 本地候选实现与验收台账
+### A13 公网候选实现与验收台账
 
 #### A13.1 已落地的内容与交互
 
@@ -678,7 +681,18 @@ ArcBTI · VOID
 
 自动代理不能替代 iPhone、微信、HarmonyOS 百度浏览器和系统浏览器真机结论
 静态 Pages 产物已在 iPhone 390 WebKit、Android 393 Chromium 与 HarmonyOS 代理复跑 27 个项目槽位；最终为 21 通过、6 按项目职责跳过、0 未解决失败
-GitHub Pages 线上结果仍必须在 G8 部署后独立冒烟，不能用本地静态服务代替
+
+#### A13.5 GitHub Pages 部署与线上复核
+
+- ArcBTI 3.0 主实现提交：`6bc1777`
+- 冷启动交互就绪修复：`c794208`
+- GitHub Actions：Run `33000683192`，状态 Success，总时长 2m13s，Pages artifact 11.4 MB
+- 正式地址：`https://luke20001024.github.io/AIBTI/`
+- 首页、测试、方法页与八个结果路由共 11 个公开路由全部返回 HTTP 200
+- 正式 Pages 在线自动复核覆盖 iPhone 390 WebKit、Android 393 Chromium 和 HarmonyOS 4 User-Agent 代理；21 个关键槽位中 19 通过，2 个分享卡用例按“只在 Android 代表引擎生成一次”的职责跳过，0 失败
+- 在线完整链路包含首页、Q13—Q18 三张独立 1200 × 800 生成图、18 题显式提交、Owner／Shared 隔离、移动资料卡、返回键、焦点恢复、分享链接和 1080 × 1350 分享卡
+- 冷启动复核发现并修复“服务端按钮已显示、React 尚未接管”的短暂点击窗口；所有资料卡入口在 `data-interactive=true` 前保持禁用，正式站点复测不再出现点击无响应
+- 上述结果完成 G8 候选部署门，不替代 G9 的真实手机、微信和 HarmonyOS 原设备结论
 
 ---
 
@@ -2768,7 +2782,7 @@ pnpm verify:pages
 
 ### 15.9 GitHub 仓库与 Pages 部署
 
-`[V2 候选版已上线并验证；三平台真机待验]`
+`[ArcBTI 3.0 公网候选已上线并验证；三平台原设备待验]`
 
 - 独立公开仓库：`https://github.com/Luke20001024/AIBTI`；默认分支使用 `main`；
 - GitHub Pages 正式预览地址：`https://luke20001024.github.io/AIBTI/`；
@@ -2777,6 +2791,8 @@ pnpm verify:pages
 - `NEXT_PUBLIC_SITE_URL` 在工作流中设为 Pages 正式地址，用于生成正确的 OG 图片绝对 URL；
 - `public/.nojekyll` 防止 `_next` 静态资源被 Jekyll 规则忽略；
 - v1 在 2026-08-26 已将 Pages Source 设为 GitHub Actions，`39ff956` 保留为当前可回退基线
+- ArcBTI 3.0 主实现 `6bc1777` 与冷启动资料卡修复 `c794208` 已部署；Run `33000683192` 成功完成类型检查、52 项单元测试、代表性 Android 393 静态产物 E2E、11.4 MB Pages artifact 上传和发布，记录地址为 `https://github.com/Luke20001024/AIBTI/actions/runs/33000683192`
+- ArcBTI 3.0 正式站点在线自动复核覆盖 iPhone 390 WebKit、Android 393 Chromium 与 HarmonyOS 4 User-Agent 代理，21 个关键槽位中 19 通过、2 按项目职责跳过、0 失败；首页、测试、方法页与八个结果路由全部返回 HTTP 200
 - V2 主实现提交 `3e2434a` 由 Actions run `32900585639` 首次成功部署；线上 iPhone 冷启动验收随后暴露空白等待反馈，修复提交 `48d9b92` 增加可见加载状态与确定性交互就绪门禁
 - `48d9b92` 由 Actions run `32902411954` 完成类型检查、52 项单元测试、代表性 Android 393 静态产物 E2E、Pages artifact 上传与部署，记录地址为 `https://github.com/Luke20001024/AIBTI/actions/runs/32902411954`
 - 带缓存参数的线上验收确认首页、测试、计算、资料页、八结果路由与八张 V2 人物图均 HTTP 200；线上 iPhone 390 WebKit、Android 393 Chromium 与 HarmonyOS User-Agent 代理共 24 个用例槽位，18 通过、6 按项目职责跳过
@@ -2855,9 +2871,18 @@ P0 浏览器优先级：
 - 人物形象一致性审核；
 - 可访问性检查。
 
-### 16.4 当前验证记录（2026-08-26）
+### 16.4 当前验证记录（2026-08-27）
 
-`[V2 Deployed Candidate 本地与线上验证完成；待真机、实测性能与授权复核]`
+`[ArcBTI 3.0 Deployed Candidate 本地与线上自动验证完成；待原设备、实测性能与授权复核]`
+
+#### ArcBTI 3.0 公网候选证据
+
+- TypeScript、52 项 Vitest、14 页静态导出和 Android 393 Pages 产物 9 项 E2E 全部通过
+- 固定种子 100,000 组均匀随机答案中，八型命中比例为 8.308%—17.343%，不存在不可达类型或单型塌缩
+- Q13—Q18 使用 18 张真实生成的独立 WebP；每张 1200 × 800，总体约 682 KiB，网页验收等待自然尺寸与解码完成后再检查三图唯一性
+- Run `33000683192` 成功部署提交 `c794208`，正式站点 11 个核心公开路由全部返回 HTTP 200
+- 正式站点在线自动复核：iPhone 390 WebKit、Android 393 Chromium、HarmonyOS 4 User-Agent 代理共 21 个关键槽位，19 通过、2 按项目职责跳过、0 失败
+- 原设备 iPhone Safari／微信、Android Chrome／微信、HarmonyOS 百度浏览器／系统浏览器仍是发布后人工验收门，自动结果不得替代或冒充
 
 #### V2.1 + V3 本地候选证据
 
@@ -3083,5 +3108,6 @@ P0 浏览器优先级：
 | 2026-08-26 | v1.6 | 部署 V2.1 + V3 产品提交 `d1df500`：Actions run `32932967440` 成功，正式 Pages 的 Android 393 八项冒烟通过并直接确认八张 V3 资产；真实三平台浏览器、实测性能与逐图授权继续保持未完成 |
 | 2026-08-27 | v2.0 | 锁定 ArcBTI 用户可见品牌与 Architecture Language Rebuild：结果页改为建筑母语、真实建筑谱系、代表建筑师和作品的渐进式结构；移除传统人格报告中心；18 题进入全量重构；后六题改用与 `characters-v3` 同世界观的真实生成式位图；写入八型总表、VOID 完整样例、移动资料卡合同、视觉硬门和三平台执行计划 |
 | 2026-08-27 | v2.1 | 完成 ArcBTI 3.0 本地候选：纯文字首页、18 题与 54 条人工证据、题内中心化计分、六张生成式题图母版与 18 张 WebP、建筑主视觉结果页、八型建筑师和三座核心作品、谱系与作品资料卡、ArcBTI 分享卡；52 项单测、100,000 组评分模拟、72 槽动态设备矩阵、14 页静态导出和三类代表设备 Pages 子路径复核通过；候选提交、线上部署和真机验收待完成 |
+| 2026-08-27 | v2.2 | 部署 ArcBTI 3.0 公网候选：主实现 `6bc1777`、冷启动交互修复 `c794208` 与 Actions Run `33000683192` 成功上线；11 个核心路由全部返回 200，正式 Pages 的 iPhone 390、Android 393 与 HarmonyOS 代理 21 个关键槽位为 19 通过、2 按职责跳过、0 失败；G8 完成，G9 原设备、实测性能和授权复核保持待执行 |
 
 ---
