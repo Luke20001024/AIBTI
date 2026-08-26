@@ -76,33 +76,40 @@ export async function createShareCard({ result, architect, building, publicUrl }
   context.fillStyle = result.accent;
   context.fillRect(0, 0, 24, canvas.height);
 
-  context.fillStyle = result.accent;
-  context.font = '900 54px "Barlow Condensed", "Arial Narrow", sans-serif';
-  context.fillText("AI", 64, 86);
-  const aiWidth = context.measureText("AI").width;
   context.fillStyle = "#121313";
-  context.fillText("BTI", 64 + aiWidth, 86);
+  context.font = '900 54px "Barlow Condensed", "Arial Narrow", sans-serif';
+  context.fillText("Arc", 64, 86);
+  const arcWidth = context.measureText("Arc").width;
+  context.fillStyle = result.accent;
+  context.fillText("B", 64 + arcWidth, 86);
+  const bWidth = context.measureText("B").width;
+  context.fillStyle = "#121313";
+  context.fillText("TI", 64 + arcWidth + bWidth, 86);
 
-  context.font = '900 190px "Barlow Condensed", "Arial Narrow", sans-serif';
-  context.fillText(result.code, 58, 265);
-  context.font = '800 66px "PingFang SC", "Microsoft YaHei", sans-serif';
-  context.fillText(result.name, 64, 345);
+  context.fillStyle = result.accent;
+  context.font = '800 25px "PingFang SC", "Microsoft YaHei", sans-serif';
+  context.fillText("我的建筑母语", 66, 142);
+  context.fillStyle = "#121313";
+  context.font = '900 176px "Barlow Condensed", "Arial Narrow", sans-serif';
+  context.fillText(result.code, 58, 300);
+  context.font = '800 72px "PingFang SC", "Microsoft YaHei", sans-serif';
+  context.fillText(result.architectureLanguage, 64, 384);
 
-  context.font = '650 31px "PingFang SC", "Microsoft YaHei", sans-serif';
-  const taglineLines = wrapText(context, result.tagline, 880).slice(0, 2);
-  taglineLines.forEach((line, index) => context.fillText(line, 66, 399 + index * 43));
+  context.font = '650 29px "PingFang SC", "Microsoft YaHei", sans-serif';
+  const summaryLines = wrapText(context, result.languageSummary, 900).slice(0, 2);
+  summaryLines.forEach((line, index) => context.fillText(line, 66, 430 + index * 40));
 
   try {
     const image = await loadImage(withBasePath(result.characterImage));
-    drawImageCover(context, image, 24, 472, 1056, 596);
+    drawImageCover(context, image, 24, 510, 1056, 558);
   } catch {
     context.fillStyle = result.accentSoft;
-    context.fillRect(24, 472, 1056, 596);
+    context.fillRect(24, 510, 1056, 558);
     context.strokeStyle = result.accent;
     context.lineWidth = 2;
     for (let x = 24; x <= 1080; x += 80) {
       context.beginPath();
-      context.moveTo(x, 472);
+      context.moveTo(x, 510);
       context.lineTo(x, 1068);
       context.stroke();
     }
@@ -112,7 +119,7 @@ export async function createShareCard({ result, architect, building, publicUrl }
   context.fillRect(52, 994, 560, 50);
   context.fillStyle = "#121313";
   context.font = '900 28px "Barlow Condensed", "Arial Narrow", sans-serif';
-  context.fillText(`${result.code} / ${result.school}`, 68, 1029);
+  context.fillText(`${result.code} / ${result.name}`, 68, 1029);
 
   context.strokeStyle = "#bbb6aa";
   context.lineWidth = 2;
@@ -131,7 +138,7 @@ export async function createShareCard({ result, architect, building, publicUrl }
   context.fillText(result.keywords.map((keyword) => `#${keyword}`).join("   "), 64, 1262);
   context.fillStyle = result.accent;
   context.font = '800 27px "PingFang SC", "Microsoft YaHei", sans-serif';
-  context.fillText("测测你的建筑人格", 64, 1312);
+  context.fillText("测测你的建筑直觉", 64, 1312);
 
   const qrCanvas = document.createElement("canvas");
   const { toCanvas } = await import("qrcode");

@@ -1,4 +1,4 @@
-name: Deploy AIBTI to GitHub Pages
+name: Deploy ArcBTI to GitHub Pages
 
 on:
   push:

@@ -20,7 +20,7 @@ export const QUESTION_GROUP_WEIGHTS: Record<QuestionKind, number> = {
   aesthetic: 0.35,
 };
 
-export const QUIZ_VERSION = "2.0.0";
-export const SCORING_VERSION = "2.0.0";
-export const CONTENT_VERSION = "2.0.0";
-export const ART_VERSION = "2.0.0";
+export const QUIZ_VERSION = "3.0.0";
+export const SCORING_VERSION = "3.0.0";
+export const CONTENT_VERSION = "3.0.0";
+export const ART_VERSION = "3.0.0";

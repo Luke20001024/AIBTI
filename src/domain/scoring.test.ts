@@ -71,13 +71,22 @@ const kindCounts = Object.fromEntries(
   ]),
 ) as Record<keyof typeof QUESTION_GROUP_WEIGHTS, number>;
 
+const centeredWeight = (
+  question: (typeof QUESTIONS)[number],
+  option: (typeof QUESTIONS)[number]["options"][number],
+  dimension: (typeof DIMENSION_IDS)[number],
+) => (option.weights[dimension] ?? 0) - question.options.reduce(
+  (sum, item) => sum + (item.weights[dimension] ?? 0),
+  0,
+) / question.options.length;
+
 const dimensionMaximums = Object.fromEntries(
   DIMENSION_IDS.map((dimension) => [
     dimension,
     QUESTIONS.reduce((maximum, question) => {
       const factor = QUESTION_GROUP_WEIGHTS[question.kind] / kindCounts[question.kind];
       return maximum + Math.max(
-        ...question.options.map((option) => Math.abs(option.weights[dimension] ?? 0)),
+        ...question.options.map((option) => Math.abs(centeredWeight(question, option, dimension))),
       ) * factor;
     }, 0),
   ]),
@@ -93,7 +102,7 @@ const scoresWithoutQuestion = (
     const option = question.options.find((item) => item.id === answers[question.id])!;
     const factor = QUESTION_GROUP_WEIGHTS[question.kind] / kindCounts[question.kind];
     for (const dimension of DIMENSION_IDS) {
-      totals[dimension] += (option.weights[dimension] ?? 0) * factor;
+      totals[dimension] += centeredWeight(question, option, dimension) * factor;
     }
   }
   for (const dimension of DIMENSION_IDS) {
@@ -103,7 +112,7 @@ const scoresWithoutQuestion = (
 };
 
 describe("scoring", () => {
-  it("keeps the balanced 18-question V2 contract", () => {
+  it("keeps the balanced 18-question V3 contract", () => {
     expect(QUESTIONS).toHaveLength(18);
     expect(new Set(QUESTIONS.map((question) => question.id)).size).toBe(18);
     expect(
@@ -121,7 +130,7 @@ describe("scoring", () => {
     }
   });
 
-  it("uses the V2 group weights and versions", () => {
+  it("uses the V3 group weights and versions", () => {
     expect(QUESTION_GROUP_WEIGHTS).toEqual({
       projective: 0.3,
       personality: 0.35,
@@ -129,9 +138,9 @@ describe("scoring", () => {
     });
     expect(Object.values(QUESTION_GROUP_WEIGHTS).reduce((sum, value) => sum + value, 0))
       .toBeCloseTo(1, 12);
-    expect(QUIZ_VERSION).toBe("2.0.0");
-    expect(SCORING_VERSION).toBe("2.0.0");
-    expect(CONTENT_VERSION).toBe("2.0.0");
+    expect(QUIZ_VERSION).toBe("3.0.0");
+    expect(SCORING_VERSION).toBe("3.0.0");
+    expect(CONTENT_VERSION).toBe("3.0.0");
   });
 
   it("keeps option scoring strength comparable and copy free of terminal periods", () => {
@@ -140,6 +149,8 @@ describe("scoring", () => {
       expect(question.prompt).not.toMatch(/[。.]\s*$/u);
       const magnitudes = question.options.map((option) => {
         expect(option.label).not.toMatch(/[。.]\s*$/u);
+        expect(option.evidence).not.toMatch(/[。.]\s*$/u);
+        expect(option.evidence.length).toBeGreaterThanOrEqual(12);
         const values = Object.values(option.weights);
         expect(values.length).toBeGreaterThanOrEqual(2);
         values.forEach((value) => {
@@ -152,21 +163,15 @@ describe("scoring", () => {
     }
   });
 
-  it("keeps the equal-choice expected vector near neutral", () => {
-    for (const dimension of DIMENSION_IDS) {
-      let expected = 0;
-      let maximum = 0;
-      for (const question of QUESTIONS) {
-        const factor = QUESTION_GROUP_WEIGHTS[question.kind] / kindCounts[question.kind];
-        expected += question.options.reduce(
-          (sum, option) => sum + (option.weights[dimension] ?? 0),
+  it("centers every question so equal option frequency is neutral", () => {
+    for (const question of QUESTIONS) {
+      for (const dimension of DIMENSION_IDS) {
+        const expected = question.options.reduce(
+          (sum, option) => sum + centeredWeight(question, option, dimension),
           0,
-        ) / question.options.length * factor;
-        maximum += Math.max(
-          ...question.options.map((option) => Math.abs(option.weights[dimension] ?? 0)),
-        ) * factor;
+        ) / question.options.length;
+        expect(expected, `${question.id} ${dimension}`).toBeCloseTo(0, 12);
       }
-      expect(Math.abs(expected / maximum), dimension).toBeLessThanOrEqual(0.08);
     }
   });
 
@@ -195,7 +200,7 @@ describe("scoring", () => {
       expect(evidence.dominantDimension).toBe(evidence.dimensions[0]);
       expect(evidence.drop).toBeGreaterThanOrEqual(0);
       expect(evidence.drop).toBe(Number(evidence.drop.toFixed(6)));
-      expect(evidence.interpretation).toContain(evidence.label);
+      expect(evidence.interpretation).toBe(option.evidence);
       expect(evidence.interpretation).not.toMatch(/[。.]\s*$/u);
 
       const withoutCandidates = rankForVector(

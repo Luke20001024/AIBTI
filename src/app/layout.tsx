@@ -5,19 +5,19 @@ import { SiteHeader } from "../components/site-header";
 import { withBasePath } from "../domain/paths";
 import "./globals.css";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://aibti.example.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://arcbti.example.com";
 const metadataOrigin = new URL(siteUrl).origin;
 
 export const metadata: Metadata = {
   metadataBase: new URL(metadataOrigin),
   title: {
-    default: "AIBTI 建筑人格测试",
-    template: "%s · AIBTI",
+    default: "ArcBTI 建筑直觉测试",
+    template: "%s · ArcBTI",
   },
-  description: "18 道题，找到你的建筑人格、代表建筑师与建筑作品",
+  description: "18 道直觉题，找到你的建筑语言、代表建筑师与建筑作品",
   openGraph: {
-    title: "AIBTI 建筑人格测试",
-    description: "18 道题，匹配一种建筑人格、一位代表建筑师和三座建筑",
+    title: "ArcBTI 建筑直觉测试",
+    description: "18 道题，找到你的建筑语言、一位代表建筑师和三座建筑",
     type: "website",
     locale: "zh_CN",
     images: [{ url: withBasePath("/images/og/default.jpg"), width: 1200, height: 630 }],

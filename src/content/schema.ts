@@ -27,6 +27,7 @@ export type ResultCode =
 export type QuestionOption = {
   id: OptionId;
   label: string;
+  evidence: string;
   note?: string;
   weights: SparseVector;
   visual?: string;
@@ -90,6 +91,8 @@ export type ResultType = {
   slug: string;
   name: string;
   englishName: string;
+  architectureLanguage: string;
+  languageSummary: string;
   school: string;
   schoolSummary: string;
   relatedArchitects: readonly [string, string];

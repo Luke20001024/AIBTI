@@ -23,7 +23,7 @@ export function HomeActions() {
   const result = resultCode ? RESULT_BY_CODE[resultCode] : null;
   const href = result ? buildResultPath(result.slug, "mine") : "/quiz/";
   const label = result
-    ? `查看我的 ${result.code} 结果`
+    ? `查看我的 ${result.architectureLanguage}`
     : progress === QUESTIONS.length
       ? `继续生成结果 · ${QUESTIONS.length} / ${QUESTIONS.length}`
       : progress > 0

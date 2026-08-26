@@ -1,40 +1,44 @@
-import type { CSSProperties } from "react";
 import { withBasePath } from "../domain/paths";
 
-const QUESTION_IMAGE_BY_ID = {
-  Q13: "/images/questions-generated/q13-form.jpg",
-  Q14: "/images/questions-generated/q14-atmosphere.jpg",
-  Q15: "/images/questions-generated/q15-material.jpg",
-  Q16: "/images/questions-generated/q16-window.jpg",
-  Q17: "/images/questions-generated/q17-public-space.jpg",
-  Q18: "/images/questions-generated/q18-imperfection.jpg",
+const QUESTION_IMAGES_BY_ID = {
+  Q13: ["q13-a.webp", "q13-b.webp", "q13-c.webp"],
+  Q14: ["q14-a.webp", "q14-b.webp", "q14-c.webp"],
+  Q15: ["q15-a.webp", "q15-b.webp", "q15-c.webp"],
+  Q16: ["q16-a.webp", "q16-b.webp", "q16-c.webp"],
+  Q17: ["q17-a.webp", "q17-b.webp", "q17-c.webp"],
+  Q18: ["q18-a.webp", "q18-b.webp", "q18-c.webp"],
 } as const;
 
-type GeneratedQuestionId = keyof typeof QUESTION_IMAGE_BY_ID;
+type GeneratedQuestionId = keyof typeof QUESTION_IMAGES_BY_ID;
 
 type QuestionVisualProps = {
   questionId: string;
   optionIndex: number;
-  label: string;
 };
 
 export const hasGeneratedQuestionVisual = (questionId: string): questionId is GeneratedQuestionId =>
-  questionId in QUESTION_IMAGE_BY_ID;
+  questionId in QUESTION_IMAGES_BY_ID;
 
-export function QuestionVisual({ questionId, optionIndex, label }: QuestionVisualProps) {
-  if (!hasGeneratedQuestionVisual(questionId)) return null;
+export const getQuestionVisualSources = (questionId: string): readonly string[] => {
+  if (!hasGeneratedQuestionVisual(questionId)) return [];
+  return QUESTION_IMAGES_BY_ID[questionId].map((filename) =>
+    withBasePath(`/images/questions-v3/${filename}`),
+  );
+};
 
-  const style = {
-    "--question-image": `url(${withBasePath(QUESTION_IMAGE_BY_ID[questionId])})`,
-    "--question-image-position": `${optionIndex * 50}% center`,
-  } as CSSProperties;
+export function QuestionVisual({ questionId, optionIndex }: QuestionVisualProps) {
+  const source = getQuestionVisualSources(questionId)[optionIndex];
+  if (!source) return null;
 
   return (
-    <span
+    <img
       className="generated-question-visual"
-      style={style}
-      role="img"
-      aria-label={label}
+      src={source}
+      width={1200}
+      height={800}
+      alt=""
+      loading="eager"
+      decoding="async"
     />
   );
 }

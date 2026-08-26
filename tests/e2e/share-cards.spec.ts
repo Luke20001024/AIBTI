@@ -13,9 +13,10 @@ test("八型分享卡都保留人物动作并输出公开二维码入口", async
     const hero = page.locator(".result-stage img");
     await expect(hero).toBeVisible();
     await expect.poll(async () => hero.evaluate((item: HTMLImageElement) => item.naturalWidth)).toBeGreaterThan(0);
+    await expect(hero).toHaveAttribute("src", /\/images\/buildings\//);
     await expect(page.locator(".result-stage .media-fallback")).toHaveCount(0);
     await page.getByRole("button", { name: "生成分享卡" }).click();
-    const dialog = page.getByRole("dialog", { name: "AIBTI 分享卡" });
+    const dialog = page.getByRole("dialog", { name: "ArcBTI 分享卡" });
     await expect(dialog).toBeVisible({ timeout: 12_000 });
     const image = dialog.locator("img");
     await expect(image).toBeVisible();

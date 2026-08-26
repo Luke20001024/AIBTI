@@ -131,4 +131,4 @@ Photorealism, semi-realistic painted face, 3D render, CGI, PBR, glossy clay, rea
 
 ## 下一轮决策
 
-先在 `zaha-v1` 与 `zaha-v2` 中确定“资料肖像型”还是“角色演出型”为建筑师统一方向。方向确认后，再决定是否扩展 Mies、Wright、Le Corbusier、Ando、Foster、Gaudí 与 Wang Shu × Lu Wenyu，而不是直接批量生成。
+`[已确认：2026-08-26]` 用户选择 Zaha A（`zaha-v1`）与 Mies A（`mies-v1`）作为全量建筑师的资料肖像型母版。后续 Wright、Le Corbusier、Ando、Foster、Gaudí 与 Wang Shu × Lu Wenyu 按 `architect-portrait-production-plan.md` 执行“逐人提示词 → 逐张生成 → 单图 review → 全量联系人总览 review”，不再以 `zaha-v2` 的全身动作型作为系列基线。

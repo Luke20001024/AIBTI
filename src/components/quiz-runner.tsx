@@ -8,11 +8,15 @@ import { buildCalculationHref } from "../domain/calculation-transfer";
 import { startHardNavigation, type HardNavigationHandle } from "../domain/navigation";
 import type { AnswerMap } from "../domain/scoring";
 import { readQuizSession, writeQuizSession } from "../domain/session";
-import { hasGeneratedQuestionVisual, QuestionVisual } from "./question-visual";
+import {
+  getQuestionVisualSources,
+  hasGeneratedQuestionVisual,
+  QuestionVisual,
+} from "./question-visual";
 
 const GROUP_LABELS = {
-  projective: "潜意识施工",
-  personality: "日常人格",
+  projective: "空间本能",
+  personality: "空间价值",
   aesthetic: "建筑直觉",
 } as const;
 
@@ -43,6 +47,15 @@ export function QuizRunner() {
       navigation.current?.cancel();
     };
   }, []);
+
+  useEffect(() => {
+    const nextQuestion = QUESTIONS[index + 1];
+    if (!nextQuestion) return;
+    getQuestionVisualSources(nextQuestion.id).forEach((source) => {
+      const image = new Image();
+      image.src = source;
+    });
+  }, [index]);
 
   const answeredCount = useMemo(() => Object.keys(answers).length, [answers]);
   const progress = ((index + 1) / QUESTIONS.length) * 100;
@@ -128,7 +141,7 @@ export function QuizRunner() {
             <div className="quiz-progress-value" style={{ width: `${100 / QUESTIONS.length}%` }} />
           </div>
           <div className="quiz-progress-meta">
-            <span>AIBTI</span>
+            <span>ArcBTI</span>
             <span>— / {QUESTIONS.length}</span>
           </div>
         </div>
@@ -151,8 +164,8 @@ export function QuizRunner() {
 
   return (
     <main className="narrow-shell quiz-shell" aria-busy={finishing}>
-      <header className="quiz-brand" aria-label="AIBTI 建筑人格">
-        <span><b>AI</b>BTI</span>
+      <header className="quiz-brand" aria-label="ArcBTI 建筑直觉">
+        <span>Arc<b>B</b>TI</span>
         <i aria-hidden="true" />
         <strong>{GROUP_LABELS[question.kind]}</strong>
       </header>
@@ -189,7 +202,7 @@ export function QuizRunner() {
                 <span className="option-letter">{option.id}</span>
                 {hasGeneratedQuestionVisual(question.id) && (
                   <span className="question-visual-wrap">
-                    <QuestionVisual questionId={question.id} optionIndex={optionIndex} label={option.label} />
+                    <QuestionVisual questionId={question.id} optionIndex={optionIndex} />
                   </span>
                 )}
                 <span className="option-content">
@@ -207,7 +220,7 @@ export function QuizRunner() {
             disabled={!selected || finishing}
             onClick={finish}
           >
-            {finishing ? "正在打开结果…" : "确认这就是我 →"}
+            {finishing ? "正在打开结果…" : "查看结果 →"}
           </button>
         )}
 

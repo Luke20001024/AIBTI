@@ -13,8 +13,8 @@ export const ARCHITECTS: readonly Architect[] = [
     story: "1929 年巴塞罗那德国馆在博览会结束后被拆除，却在建筑史中持续放大，最终于 1986 年在原址重建。展馆与 Barcelona Chair 的设计都应同时看到 Lilly Reich 的合作贡献；这个结果不把现代主义重新讲成单一男性天才神话。",
     creditNote: "巴塞罗那馆与家具须注明 Lilly Reich；西格拉姆大厦注明 Philip Johnson 等合作。",
     portrait: {
-      src: "/images/architects/mies.webp",
-      alt: "戴圆框眼镜、身着深色西装的密斯·凡·德·罗经典肖像",
+      src: "/images/architects-v2/mies.webp",
+      alt: "密斯·凡·德·罗风格化肖像：白发、深色西装，坐在巴塞罗那馆抽象背景前",
       source: { label: "Wikimedia Commons · Ludwig Mies van der Rohe", url: "https://commons.wikimedia.org/wiki/File:Ludwig_Mies_van_der_Rohe_in_Arts_%26_Architecture,_June_1960_issue.jpg", status: "prototype-source-noted" },
     },
     sources: [
@@ -34,8 +34,8 @@ export const ARCHITECTS: readonly Architect[] = [
     story: "流水别墅最容易被记住的不是一张森林照片，而是一个激进决定：住宅的混凝土平台直接从岩石与水流上方伸出。住户不是远远观看瀑布，而是一直听见它、走在它上面。",
     creditNote: "作品说明应区分 Wright 个人设计、Taliesin Fellowship 与后续保存团队。",
     portrait: {
-      src: "/images/architects/wright.webp",
-      alt: "戴宽檐帽和披风、神情自信的弗兰克·劳埃德·赖特肖像",
+      src: "/images/architects-v2/wright.webp",
+      alt: "弗兰克·劳埃德·赖特风格化肖像：白发、深色西装，一手托住太阳穴，背后是抽象流水别墅",
       source: { label: "Frank Lloyd Wright Foundation", url: "https://franklloydwright.org/frank-lloyd-wright/", status: "prototype-source-noted" },
     },
     sources: [
@@ -55,8 +55,8 @@ export const ARCHITECTS: readonly Architect[] = [
     story: "马赛公寓把复式住宅、内部商业街、托儿与屋顶设施叠在同一体量中，被构想为一座垂直城市。它不是孤身完成的英雄作品：André Wogenscky 领导的工作室与 ATBAT 团队都参与了实现。",
     creditNote: "马赛公寓注明 Atelier Le Corbusier、André Wogenscky 与 ATBAT；昌迪加尔注明项目团队与当地合作者。",
     portrait: {
-      src: "/images/architects/le-corbusier.webp",
-      alt: "戴黑框圆眼镜、领结醒目的勒·柯布西耶肖像",
+      src: "/images/architects-v2/le-corbusier.webp",
+      alt: "勒·柯布西耶风格化肖像：光头、黑色圆框眼镜与深色领结，背后是抽象马赛公寓",
       source: { label: "Fondation Le Corbusier · 1939–1946", url: "https://www.fondationlecorbusier.fr/en/biography/1939-1946/", credit: "Portrait © Bodé / Fondation Le Corbusier", status: "prototype-source-noted" },
     },
     sources: [
@@ -75,8 +75,8 @@ export const ARCHITECTS: readonly Architect[] = [
     storyTitle: "先绕路，再看到光",
     story: "安藤的空间经常拒绝最短路线：人要绕过墙、向下走或穿过水面，才抵达核心。光之教堂把十字形开口切进混凝土墙，最简单的几何因此成为最强烈的感受。",
     portrait: {
-      src: "/images/architects/ando.webp",
-      alt: "短发、神情专注的安藤忠雄黑白肖像",
+      src: "/images/architects-v2/ando.webp",
+      alt: "安藤忠雄风格化肖像：黑色直发、深色外套与高白领，背后是光之教堂的十字形开口",
       source: { label: "Wikimedia Commons · Tadao Ando", url: "https://commons.wikimedia.org/wiki/File:Tadao_Ando_2004_(4x5_cropped).jpg", status: "prototype-source-noted" },
     },
     sources: [
@@ -96,8 +96,8 @@ export const ARCHITECTS: readonly Architect[] = [
     story: "香港汇丰总行几乎所有部件都为项目专门设计并在外地制造后运到香港装配。项目还纳入了风水顾问：真正的系统思维不是只信技术，而是知道技术必须进入具体城市文化。",
     creditNote: "所有作品使用 Foster + Partners 团队署名，不简化成 Foster 独立完成。",
     portrait: {
-      src: "/images/architects/foster.webp",
-      alt: "银白短发、双臂交叠看向镜头的诺曼·福斯特肖像",
+      src: "/images/architects-v2/foster.webp",
+      alt: "诺曼·福斯特风格化肖像：银灰短发、浅蓝衬衫，双臂交叠站在汇丰总行抽象桁架前",
       source: { label: "The Pritzker Architecture Prize · Norman Foster", url: "https://www.pritzkerprize.com/laureates/1999", status: "prototype-source-noted" },
     },
     sources: [
@@ -117,8 +117,8 @@ export const ARCHITECTS: readonly Architect[] = [
     story: "她早期许多激进方案主要通过竞赛图与绘画被认识，长期被称作难以建成的“纸上建筑师”。随着数字设计、工程与制造能力变化，那些倾斜、流动与连续的空间才逐渐成为城市中的真实建筑。",
     creditNote: "2016 年后的作品与大型项目均使用 Zaha Hadid Architects 团队署名。",
     portrait: {
-      src: "/images/architects/zaha.webp",
-      alt: "短发、眼神锐利、佩戴醒目首饰的扎哈·哈迪德肖像",
+      src: "/images/architects-v2/zaha.webp",
+      alt: "扎哈·哈迪德风格化肖像：深色长发与黑色外套，背后是海达尔·阿利耶夫中心的抽象曲线",
       source: { label: "Wikimedia Commons · Zaha Hadid", url: "https://commons.wikimedia.org/wiki/File:Zaha_Hadid_in_Heydar_Aliyev_Cultural_center_in_Baku_nov_2013.jpg", status: "prototype-source-noted" },
     },
     sources: [
@@ -138,8 +138,8 @@ export const ARCHITECTS: readonly Architect[] = [
     story: "Park Güell 原本是受英国花园城市启发的高端住宅开发，但销售困难，最终只建成两栋住宅。失败的地产计划后来变成公共公园，曲线长椅、碎瓷拼贴与基础设施反而获得了更长的城市生命。",
     creditNote: "圣家堂持续由多代建筑师、工匠和工程团队推进，不能写成高迪独自完成。",
     portrait: {
-      src: "/images/architects/gaudi.webp",
-      alt: "留着整齐胡须、身着深色西装的安东尼·高迪历史肖像",
+      src: "/images/architects-v2/gaudi.webp",
+      alt: "安东尼·高迪风格化肖像：侧分深发、浓密胡须与深色历史西装，背后是巴特罗之家抽象立面",
       source: { label: "Wikimedia Commons · Antoni Gaudí", url: "https://commons.wikimedia.org/wiki/File:Antoni_Gaudi_1878.jpg", status: "prototype-source-noted" },
     },
     sources: [
@@ -159,8 +159,8 @@ export const ARCHITECTS: readonly Architect[] = [
     story: "“业余建筑工作室”这个名字并非不专业，而是对只剩生产效率的职业系统保持距离。宁波历史博物馆的旧砖瓦来自周边拆迁地区，材料以新的墙体重新出现，也把消失村落的一部分时间带回城市。",
     creditNote: "人物与项目内容必须同时呈现陆文宇、王澍、业余建筑工作室和建造团队，避免单一获奖者叙事。",
     portrait: {
-      src: "/images/architects/wang-lu.webp",
-      alt: "王澍与陆文宇并肩站立的工作室合影，两人神态自然",
+      src: "/images/architects-v2/wang-lu.webp",
+      alt: "王澍与陆文宇的双人风格化肖像：两人等距并肩站立，背后是宁波历史博物馆的抽象墙面",
       source: { label: "Wallpaper* · Wang Shu and Lu Wenyu", url: "https://www.wallpaper.com/architecture/wang-shu-and-lu-wenyu-curators-2027-venice-architecture-biennale", credit: "La Biennale di Venezia / ASAC / Matteo Losurdo", status: "prototype-source-noted" },
     },
     sources: [

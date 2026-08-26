@@ -7,6 +7,31 @@ const fullFlowProjects = new Set([
   "harmony-proxy-chromium",
 ]);
 
+const expectGeneratedQuestion = async (
+  page: import("@playwright/test").Page,
+  questionNumber: number,
+) => {
+  const images = page.locator(".generated-question-visual");
+  await expect(images).toHaveCount(3);
+  const sources = await images.evaluateAll((items) => items.map((item) => {
+    const image = item as HTMLImageElement;
+    return {
+      src: image.currentSrc,
+      width: image.naturalWidth,
+      height: image.naturalHeight,
+      renderedWidth: image.getBoundingClientRect().width,
+      renderedHeight: image.getBoundingClientRect().height,
+    };
+  }));
+  expect(new Set(sources.map((item) => item.src)).size).toBe(3);
+  for (const source of sources) {
+    expect(source.src).toMatch(new RegExp(`/images/questions-v3/q${questionNumber}-[abc]\\.webp$`));
+    expect([source.width, source.height]).toEqual([1200, 800]);
+    expect(source.renderedWidth).toBeGreaterThanOrEqual(115);
+    expect(source.renderedHeight).toBeGreaterThanOrEqual(75);
+  }
+};
+
 test("18 题需显式提交并生成无答案的 Owner 结果", async ({ page }, testInfo) => {
   test.skip(!fullFlowProjects.has(testInfo.project.name), "完整链路在 iPhone、Android 与 HarmonyOS 代理各跑一次");
   const calculationRequests: string[] = [];
@@ -26,14 +51,17 @@ test("18 题需显式提交并生成无答案的 Owner 结果", async ({ page },
   await expect(page.getByRole("radio").first()).toBeVisible();
 
   for (let index = 1; index < 18; index += 1) {
-    await page.getByRole("radio").first().click();
+    if (index >= 13) await expectGeneratedQuestion(page, index);
+    await page.getByRole("radio").first().click({ force: true });
     await expect(page.locator(".quiz-progress-count strong")).toHaveText(String(index + 1));
     await page.waitForTimeout(80);
   }
 
-  const submit = page.getByRole("button", { name: "确认这就是我 →" });
+  await expectGeneratedQuestion(page, 18);
+
+  const submit = page.getByRole("button", { name: "查看结果 →" });
   await expect(submit).toBeDisabled();
-  await page.getByRole("radio").nth(1).click();
+  await page.getByRole("radio").nth(1).click({ force: true });
   await expect(page).toHaveURL(/\/quiz\/$/);
   await expect(submit).toBeEnabled();
   await submit.click();
@@ -50,7 +78,9 @@ test("18 题需显式提交并生成无答案的 Owner 结果", async ({ page },
   }
   await expect(page.locator(".result-proof")).toHaveAttribute("data-result-view", "owner");
   await expect(page.locator(".evidence-list li")).toHaveCount(3);
-  await expect(page.getByText("展开八维建筑倾向", { exact: true })).toBeVisible();
+  await expect(page.getByText("展开八维建筑倾向", { exact: true })).toHaveCount(0);
+  await expect(page.locator(".result-language")).toBeVisible();
+  await expect(page.locator(".featured-work")).toHaveCount(3);
 
   await page.evaluate(() => {
     Object.defineProperty(navigator, "clipboard", {
@@ -70,7 +100,7 @@ test("18 题需显式提交并生成无答案的 Owner 结果", async ({ page },
   const ownerPath = resultUrl.pathname;
   await page.goto(`${ownerPath}?from=share`, { waitUntil: "domcontentloaded" });
   await expect(page.locator(".result-proof")).toHaveAttribute("data-result-view", "shared");
-  await expect(page.getByRole("heading", { name: "测出你的建筑人格" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "测出你的建筑母语 →" })).toBeVisible();
   await expect(page.locator(".evidence-list")).toHaveCount(0);
 });
 
@@ -94,7 +124,7 @@ test("分享卡可生成 1080×1350 图像、公开入口与受限浏览器后�
   await page.goto(appPath("/result/grid/?from=share"), { waitUntil: "domcontentloaded" });
   const trigger = page.getByRole("button", { name: "生成分享卡" });
   await trigger.click();
-  const dialog = page.getByRole("dialog", { name: "AIBTI 分享卡" });
+  const dialog = page.getByRole("dialog", { name: "ArcBTI 分享卡" });
   await expect(dialog).toBeVisible({ timeout: 12_000 });
   await expect(dialog.getByRole("button", { name: "关闭 ×" })).toBeFocused();
   const card = dialog.locator("img");

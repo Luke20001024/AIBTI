@@ -1,0 +1,68 @@
+{
+  "version": "AIBTI-architect-portrait-v1",
+  "status": "complete-local-main-task-integrated-not-deployed",
+  "onlineIntegration": false,
+  "mainTaskIntegration": true,
+  "generationMode": "built-in image_gen",
+  "promptPlan": "docs/design/v3/architect-portrait-production-plan.md",
+  "styleReferences": [
+    "artifacts/design/architect-character-exploration/zaha-v1.png",
+    "artifacts/design/architect-character-exploration/mies-v1.png"
+  ],
+  "combinedStyleReference": "artifacts/design/architect-character-exploration/portrait-style-anchor-pair.jpg",
+  "transportNote": "The combined reference is a low-size side-by-side board of the two approved masters; it changes transport only, not the design baseline.",
+  "contactSheet": "artifacts/design/architect-character-exploration/architect-portraits-all.png",
+  "mobilePreview": "artifacts/design/architect-character-exploration/architect-portraits-mobile-390.png",
+  "seriesReview": "reviewed-pass",
+  "production": {
+    "directory": "public/images/architects-v2",
+    "format": "webp",
+    "dimensions": [1200, 1000],
+    "quality": 82,
+    "maximumTargetBytes": 256000,
+    "files": [
+      {"name": "mies.webp", "bytes": 50018},
+      {"name": "wright.webp", "bytes": 45162},
+      {"name": "le-corbusier.webp", "bytes": 31130},
+      {"name": "ando.webp", "bytes": 35344},
+      {"name": "foster.webp", "bytes": 46482},
+      {"name": "zaha.webp", "bytes": 39976},
+      {"name": "gaudi.webp", "bytes": 54338},
+      {"name": "wang-lu.webp", "bytes": 40820}
+    ],
+    "legacyIdentityReferencesPreserved": "public/images/architects"
+  },
+  "integration": {
+    "dataSource": "src/content/architects.ts",
+    "consumer": "src/components/result-detail-sheets.tsx",
+    "styles": "src/app/globals.css",
+    "portraitPathsReplaced": 8,
+    "altTextsUpdated": 8,
+    "oldRuntimePathReferences": 0,
+    "mainCardAspectRatio": "6/5",
+    "detailSheetAspectRatio": "6/5",
+    "grayscaleFilter": false,
+    "identityReferenceLabels": true
+  },
+  "verification": {
+    "jsonParse": "pass",
+    "portraitAssetTest": "pass",
+    "typecheck": "pass",
+    "productionBuildWithBasePathAIBTI": "pass",
+    "browserDesktopRoutes": "8/8 pass",
+    "browser390pxRoutes": "8/8 pass",
+    "browserArchitectDetailSheets": "8/8 pass",
+    "browserConsoleWarningsOrErrors": 0,
+    "fullTestSuite": "52/52 pass"
+  },
+  "assets": [
+    {"code": "zaha-v1", "subject": "Zaha Hadid", "identityReference": "public/images/architects/zaha.webp", "output": "artifacts/design/architect-character-exploration/zaha-v1.png", "originalOutput": "artifacts/design/architect-character-exploration/zaha-v1-raw.png", "status": "reviewed-pass-selected-master", "score": 92, "attempts": 1, "hardFailures": []},
+    {"code": "mies-v1", "subject": "Ludwig Mies van der Rohe", "identityReference": "public/images/architects/mies.webp", "output": "artifacts/design/architect-character-exploration/mies-v1.png", "originalOutput": "artifacts/design/architect-character-exploration/mies-v1-raw.png", "status": "reviewed-pass-selected-master", "score": 96, "attempts": 1, "hardFailures": []},
+    {"code": "wright-v1", "subject": "Frank Lloyd Wright", "identityReference": "public/images/architects/wright.webp", "output": "artifacts/design/architect-character-exploration/wright-v1.png", "originalOutput": "artifacts/design/architect-character-exploration/wright-v1-raw.png", "status": "reviewed-pass", "score": 95, "attempts": 4, "networkFailures": 3, "hardFailures": [], "review": "Strong identity and approved portrait grammar. Facial plane density is slightly higher than the masters; recheck only at full contact-sheet stage."},
+    {"code": "le-corbusier-v2", "subject": "Le Corbusier", "identityReference": "public/images/architects/le-corbusier.webp", "output": "artifacts/design/architect-character-exploration/le-corbusier-v2.png", "originalOutput": "artifacts/design/architect-character-exploration/le-corbusier-v2-raw.png", "status": "reviewed-pass", "score": 98, "attempts": 2, "hardFailures": [], "replacesFailedDraft": "artifacts/design/architect-character-exploration/le-corbusier-v1.png", "review": "Targeted simplification preserved identity and reduced the face, suit, and Unite to the approved broad-plane grammar. Recheck the bow-tie dots and left building mass only in the full contact sheet."},
+    {"code": "ando-v1", "subject": "Tadao Ando", "identityReference": "public/images/architects/ando.webp", "output": "artifacts/design/architect-character-exploration/ando-v1.png", "originalOutput": "artifacts/design/architect-character-exploration/ando-v1-raw.png", "status": "reviewed-pass", "score": 97, "attempts": 1, "hardFailures": [], "review": "Strong identity, restrained dark silhouette, and a clean Church of the Light cue. Facial planes are a little denser than the written target but remain within the masters' actual density; recheck only in the contact sheet."},
+    {"code": "foster-v1", "subject": "Norman Foster", "identityReference": "public/images/architects/foster.webp", "output": "artifacts/design/architect-character-exploration/foster-v1.png", "originalOutput": "artifacts/design/architect-character-exploration/foster-v1-raw.png", "status": "reviewed-pass", "score": 95, "attempts": 1, "hardFailures": [], "review": "Strong identity and crossed-arm silhouette; pale blue gives useful series variety. Recheck only the low-contrast truss count and hand-line density in the contact sheet."},
+    {"code": "gaudi-v1", "subject": "Antoni Gaudi", "identityReference": "public/images/architects/gaudi.webp", "output": "artifacts/design/architect-character-exploration/gaudi-v1.png", "originalOutput": "artifacts/design/architect-character-exploration/gaudi-v1-raw.png", "status": "reviewed-pass", "score": 96, "attempts": 1, "hardFailures": [], "review": "Recognizable historical identity with a strong continuous beard silhouette and restrained Casa Batllo cue. Recheck only internal beard planes and background scale in the contact sheet."},
+    {"code": "wang-lu-v3", "subject": "Wang Shu x Lu Wenyu", "identityReference": "public/images/architects/wang-lu.webp", "output": "artifacts/design/architect-character-exploration/wang-lu-v3.png", "originalOutput": "artifacts/design/architect-character-exploration/wang-lu-v3-raw.png", "status": "reviewed-pass", "score": 97, "attempts": 3, "hardFailures": [], "replacesFailedDrafts": ["artifacts/design/architect-character-exploration/wang-lu-v1.png", "artifacts/design/architect-character-exploration/wang-lu-v2.png"], "review": "Equal eye line, comparable face scale, equal frame share, correct identity differentiation, and a shared quiet architectural field. Recheck only center spacing at 390px."}
+  ]
+}

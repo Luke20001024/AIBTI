@@ -1,5 +1,4 @@
 import {
-  DIMENSIONS,
   DIMENSION_IDS,
   QUESTION_GROUP_WEIGHTS,
   QUESTIONS,
@@ -81,13 +80,29 @@ const questionFactor = (question: Question) =>
   QUESTION_GROUP_WEIGHTS[question.kind] /
   QUESTIONS.filter((item) => item.kind === question.kind).length;
 
+const centeredOptionWeight = (
+  question: Question,
+  optionId: OptionId,
+  dimension: DimensionId,
+) => {
+  const option = question.options.find((item) => item.id === optionId);
+  if (!option) throw new Error(`Unknown option ${optionId} for ${question.id}`);
+  const mean = question.options.reduce(
+    (sum, item) => sum + (item.weights[dimension] ?? 0),
+    0,
+  ) / question.options.length;
+  return (option.weights[dimension] ?? 0) - mean;
+};
+
 const dimensionMaximums = (() => {
   const maximums = emptyVector();
   for (const question of QUESTIONS) {
     const factor = questionFactor(question);
     for (const dimension of DIMENSION_IDS) {
       maximums[dimension] += Math.max(
-        ...question.options.map((item) => Math.abs(item.weights[dimension] ?? 0)),
+        ...question.options.map((item) => Math.abs(
+          centeredOptionWeight(question, item.id, dimension),
+        )),
       ) * factor;
     }
   }
@@ -114,7 +129,7 @@ const calculateDimensionScoresInternal = (
     const factor = questionFactor(question);
 
     for (const dimension of DIMENSION_IDS) {
-      totals[dimension] += (option.weights[dimension] ?? 0) * factor;
+      totals[dimension] += centeredOptionWeight(question, option.id, dimension) * factor;
     }
   }
 
@@ -173,13 +188,13 @@ const getEvidenceQuestions = (
     const similarityDrop = fullPrimarySimilarity - withoutPrimarySimilarity;
     const marginDrop = fullMargin - withoutMargin;
     const dimensions = DIMENSION_IDS
-      .filter((dimension) => (option.weights[dimension] ?? 0) !== 0)
+      .filter((dimension) => centeredOptionWeight(question, option.id, dimension) !== 0)
       .sort((left, right) => {
         const rightContribution = Math.abs(
-          (option.weights[right] ?? 0) * resultVector[right],
+          centeredOptionWeight(question, option.id, right) * resultVector[right],
         );
         const leftContribution = Math.abs(
-          (option.weights[left] ?? 0) * resultVector[left],
+          centeredOptionWeight(question, option.id, left) * resultVector[left],
         );
         if (rightContribution !== leftContribution) {
           return rightContribution - leftContribution;
@@ -187,11 +202,6 @@ const getEvidenceQuestions = (
         return DIMENSION_IDS.indexOf(left) - DIMENSION_IDS.indexOf(right);
       })
       .slice(0, 3);
-    const tendencyLabels = dimensions.slice(0, 2).map((dimension) => {
-      const pole = (option.weights[dimension] ?? 0) >= 0 ? "positive" : "negative";
-      return DIMENSIONS[dimension][pole];
-    });
-
     return {
       questionId: question.id,
       optionId: option.id,
@@ -202,7 +212,7 @@ const getEvidenceQuestions = (
       drop: stableNumber(Math.max(0, marginDrop)),
       similarityDrop: stableNumber(similarityDrop),
       marginDrop: stableNumber(marginDrop),
-      interpretation: `你选了「${option.label}」，最明显地指向${tendencyLabels.join("与")}`,
+      interpretation: option.evidence,
     };
   })
     .sort((left, right) => {

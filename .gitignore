@@ -6,6 +6,7 @@ out/
 coverage/
 artifacts/design/source/
 artifacts/design/**/*.png
+artifacts/design/**/*.jpg
 artifacts/playwright/
 artifacts/playwright-report/
 artifacts/qa/**/*.png

@@ -1,22 +1,14 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import {
-  DIMENSIONS,
-  DIMENSION_IDS,
-  RESULT_BY_CODE,
-  type Architect,
-  type Building,
-  type ResultType,
-} from "../content";
+import type { Architect, Building, ResultType } from "../content";
 import { track } from "../domain/analytics";
 import { readLocalResult } from "../domain/local-result";
 import { withBasePath } from "../domain/paths";
 import {
   buildPublicResultUrl,
-  buildResultPath,
   parseResultEntry,
   resolveResultView,
   type ResultView,
@@ -28,12 +20,6 @@ type Props = {
   architect: Architect;
   primaryBuilding: Building;
 };
-
-const CLARITY_LABEL = {
-  clear: "倾向很清晰",
-  balanced: "双重倾向",
-  mixed: "混合型人格",
-} as const;
 
 const publicUrl = (slug: string, source: "share" | "card") =>
   buildPublicResultUrl({ origin: window.location.origin, slug, source });
@@ -68,13 +54,6 @@ export function ResultPersonalization({ result, architect, primaryBuilding }: Pr
   }, [cardUrl]);
 
   const owner = view?.kind === "owner" ? view.localResult : null;
-  const secondary = owner ? RESULT_BY_CODE[owner.secondaryTypeId] : null;
-  const strongestDimensions = useMemo(() => {
-    if (!owner) return [];
-    return [...DIMENSION_IDS]
-      .sort((left, right) => Math.abs(owner.dimensionScores[right]) - Math.abs(owner.dimensionScores[left]))
-      .slice(0, 3);
-  }, [owner]);
 
   const copyLink = async () => {
     track("share_click", { method: "copy_link", resultCode: result.code });
@@ -119,7 +98,7 @@ export function ResultPersonalization({ result, architect, primaryBuilding }: Pr
     if (!cardUrl) return;
     track("card_save", { method: "download", resultCode: result.code });
     const anchor = document.createElement("a");
-    anchor.download = `AIBTI-${result.code}.jpg`;
+    anchor.download = `ArcBTI-${result.code}.jpg`;
     anchor.href = cardUrl;
     anchor.click();
   };
@@ -132,7 +111,7 @@ export function ResultPersonalization({ result, architect, primaryBuilding }: Pr
         let file: File | null = null;
         if (typeof File === "function") {
           try {
-            file = new File([cardBlob], `AIBTI-${result.code}.jpg`, { type: "image/jpeg" });
+            file = new File([cardBlob], `ArcBTI-${result.code}.jpg`, { type: "image/jpeg" });
           } catch {
             file = null;
           }
@@ -144,14 +123,14 @@ export function ResultPersonalization({ result, architect, primaryBuilding }: Pr
         });
         await navigator.share(canShareFile && file
           ? {
-              title: `建筑人格 ${result.code} · ${result.name}`,
-              text: result.tagline,
+              title: `ArcBTI ${result.code} · ${result.architectureLanguage}`,
+              text: result.languageSummary,
               files: [file],
               url: shareUrl,
             }
           : {
-              title: `建筑人格 ${result.code} · ${result.name}`,
-              text: result.tagline,
+              title: `ArcBTI ${result.code} · ${result.architectureLanguage}`,
+              text: result.languageSummary,
               url: shareUrl,
             });
       } else {
@@ -222,28 +201,20 @@ export function ResultPersonalization({ result, architect, primaryBuilding }: Pr
       >
         {view === null ? (
           <div className="result-proof-loading" role="status">
-            <p className="section-kicker">AIBTI 建筑人格</p>
-            <h2>正在读取测试结果</h2>
+            <p className="section-kicker">ArcBTI</p>
+            <h2>正在读取结果</h2>
             <div aria-hidden="true"><i /><i /><i /></div>
           </div>
         ) : owner ? (
           <>
             <div className="result-proof-heading">
-              <div>
-                <p className="section-kicker">匹配依据</p>
-                <h2 className="section-title">你的三个关键选择</h2>
-              </div>
-              <div className="identity-stamp">
-                <span>八型匹配</span>
-                <strong>#1 / 8</strong>
-                <small>{CLARITY_LABEL[owner.clarity]} · 仅本机保存</small>
-              </div>
+              <p className="section-kicker">结果依据</p>
+              <h2>这三次选择，把你带到这里</h2>
             </div>
-
             <ol className="evidence-list" aria-label="影响结果最大的三次选择">
-              {owner.evidence.map((item, index) => (
+              {owner.evidence.map((item) => (
                 <li key={item.questionId}>
-                  <span>0{index + 1}</span>
+                  <span>{item.questionId}</span>
                   <div>
                     <b>{item.choiceLabel}</b>
                     <p>{item.interpretation}</p>
@@ -251,62 +222,12 @@ export function ResultPersonalization({ result, architect, primaryBuilding }: Pr
                 </li>
               ))}
             </ol>
-
-            {secondary && (
-              <div className="identity-sidecar">
-                <span>第二接近的人格</span>
-                <a href={withBasePath(buildResultPath(secondary.slug))}>
-                  {secondary.code} · {secondary.name} ↗
-                </a>
-              </div>
-            )}
-
-            <div className="dominant-dimensions" aria-label="最鲜明的三项建筑倾向">
-              {strongestDimensions.map((id) => {
-                const dimension = DIMENSIONS[id];
-                const value = owner.dimensionScores[id];
-                return (
-                  <div key={id}>
-                    <span>{dimension.name}</span>
-                    <b>{value < 0 ? dimension.negative : dimension.positive}</b>
-                  </div>
-                );
-              })}
-            </div>
-
-            <details className="dimension-disclosure">
-              <summary>展开八维建筑倾向</summary>
-              <div className="dimension-list">
-                {DIMENSION_IDS.map((id) => {
-                  const dimension = DIMENSIONS[id];
-                  const value = owner.dimensionScores[id];
-                  return (
-                    <div className="dimension-row" key={id}>
-                      <span>{dimension.negative}</span>
-                      <div
-                        className="dimension-track"
-                        role="meter"
-                        aria-label={dimension.name}
-                        aria-valuemin={-1}
-                        aria-valuemax={1}
-                        aria-valuenow={Number(value.toFixed(2))}
-                        aria-valuetext={`${dimension.name}偏向${value < 0 ? dimension.negative : dimension.positive}`}
-                        title={`${dimension.negative} ↔ ${dimension.positive}`}
-                      >
-                        <i style={{ left: `${(value + 1) * 50}%` }} />
-                      </div>
-                      <span>{dimension.positive}</span>
-                    </div>
-                  );
-                })}
-              </div>
-            </details>
           </>
         ) : (
           <div className="public-result-note">
-            <p className="section-kicker">公开人格档案</p>
-            <h2>测出你的建筑人格</h2>
-            <a className="primary-button" href={withBasePath("/quiz/")}>开始测试 →</a>
+            <p className="section-kicker">ArcBTI 公开结果</p>
+            <h2>{result.code} · {result.architectureLanguage}</h2>
+            <a className="primary-button" href={withBasePath("/quiz/")}>测出你的建筑母语 →</a>
           </div>
         )}
 
@@ -322,7 +243,9 @@ export function ResultPersonalization({ result, architect, primaryBuilding }: Pr
               >
                 {busy ? "正在出图…" : "生成分享卡"}
               </button>
-              <button className="secondary-button" type="button" onClick={copyLink}>复制公开链接</button>
+              <button className="secondary-button" type="button" onClick={copyLink}>
+                复制公开链接
+              </button>
             </div>
             {notice && <p className="action-notice" role="status">{notice}</p>}
             {showFallbackLink && !cardUrl && (
@@ -357,10 +280,10 @@ export function ResultPersonalization({ result, architect, primaryBuilding }: Pr
             aria-describedby="share-preview-help"
           >
             <div className="share-preview-head">
-              <span id="share-preview-title">AIBTI 分享卡</span>
+              <span id="share-preview-title">ArcBTI 分享卡</span>
               <button ref={closeShareButton} type="button" onClick={closeCard}>关闭 ×</button>
             </div>
-            <img className="share-preview-image" src={cardUrl} alt={`${result.name} AIBTI 分享卡`} />
+            <img className="share-preview-image" src={cardUrl} alt={`${result.architectureLanguage} ArcBTI 分享卡`} />
             <p className="share-preview-help" id="share-preview-help">长按图片即可保存</p>
             <label className="share-public-link">
               <span>公开链接</span>
@@ -380,7 +303,6 @@ export function ResultPersonalization({ result, architect, primaryBuilding }: Pr
         </div>,
         document.body,
       )}
-
     </>
   );
 }

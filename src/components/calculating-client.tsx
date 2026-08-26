@@ -9,7 +9,7 @@ import { withBasePath } from "../domain/paths";
 import { buildResultPath } from "../domain/result-view";
 import { scoreQuiz } from "../domain/scoring";
 
-const MESSAGES = ["测量你的精神承重墙…", "检查曲线有没有蓄意逃跑…", "正在匹配代表建筑师…"];
+const MESSAGES = ["读取你的空间本能…", "校准你对光和材料的反应…", "正在匹配建筑语言…"];
 
 export function CalculatingClient() {
   const [messageIndex, setMessageIndex] = useState(0);
@@ -59,7 +59,7 @@ export function CalculatingClient() {
     <main className="calculating-shell" aria-live="polite" aria-busy={status === "working"}>
       <div>
         <div className="calculation-mark" aria-hidden="true" />
-        <p className="section-kicker">AIBTI 正在施工</p>
+        <p className="section-kicker">ArcBTI 正在匹配</p>
         <h1 className="calculation-title">
           {status === "invalid" ? "这组答案已经过期" : MESSAGES[messageIndex]}
         </h1>
