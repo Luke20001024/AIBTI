@@ -13,6 +13,13 @@ const expectGeneratedQuestion = async (
 ) => {
   const images = page.locator(".generated-question-visual");
   await expect(images).toHaveCount(3);
+  await expect.poll(
+    () => images.evaluateAll((items) => items.map((item) => {
+      const image = item as HTMLImageElement;
+      return [image.naturalWidth, image.naturalHeight];
+    })),
+    { timeout: 20_000 },
+  ).toEqual([[1200, 800], [1200, 800], [1200, 800]]);
   const sources = await images.evaluateAll((items) => items.map((item) => {
     const image = item as HTMLImageElement;
     return {

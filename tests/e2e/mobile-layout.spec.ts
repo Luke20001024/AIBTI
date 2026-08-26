@@ -69,6 +69,11 @@ test("建筑资料卡在手机上锁定背景、恢复焦点且可由返回键�
     "交互资料卡在三类代表性手机环境各跑一次",
   );
   await page.goto(appPath("/result/void/?from=share"), { waitUntil: "domcontentloaded" });
+  await expect(page.locator(".result-story")).toHaveAttribute(
+    "data-interactive",
+    "true",
+    { timeout: 20_000 },
+  );
 
   const trigger = page.getByRole("button", { name: "查看空间细节" }).first();
   await trigger.click();

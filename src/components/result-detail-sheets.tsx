@@ -25,6 +25,7 @@ export function ResultDetailSheets({
   featuredBuildings,
   recommendedBuildings,
 }: Props) {
+  const [interactive, setInteractive] = useState(false);
   const [target, setTarget] = useState<DetailTarget | null>(null);
   const trigger = useRef<HTMLElement | null>(null);
   const dialog = useRef<HTMLDivElement | null>(null);
@@ -36,6 +37,10 @@ export function ResultDetailSheets({
   const activeBuilding = target?.kind === "building"
     ? buildings.find((building) => building.id === target.id) ?? null
     : null;
+
+  useEffect(() => {
+    setInteractive(true);
+  }, []);
 
   const openSheet = (next: DetailTarget, source: HTMLElement) => {
     trigger.current = source;
@@ -99,7 +104,11 @@ export function ResultDetailSheets({
 
   return (
     <>
-      <section className="result-story" aria-labelledby="architect-title">
+      <section
+        className="result-story"
+        aria-labelledby="architect-title"
+        data-interactive={interactive}
+      >
         <div className="architect-intro">
           <div className="architect-intro-copy">
             <p className="section-kicker">代表建筑师</p>
@@ -109,6 +118,7 @@ export function ResultDetailSheets({
             <button
               className="inline-detail-button"
               type="button"
+              disabled={!interactive}
               onClick={(event) => openSheet({ kind: "architect" }, event.currentTarget)}
             >
               了解这位建筑师 <span aria-hidden="true">↗</span>
@@ -153,6 +163,7 @@ export function ResultDetailSheets({
                 <button
                   className="inline-detail-button"
                   type="button"
+                  disabled={!interactive}
                   onClick={(event) => openSheet(
                     { kind: "building", id: building.id },
                     event.currentTarget,
@@ -172,6 +183,7 @@ export function ResultDetailSheets({
           <button
             className="inline-detail-button"
             type="button"
+            disabled={!interactive}
             onClick={(event) => openSheet({ kind: "lineage" }, event.currentTarget)}
           >
             展开学派与相关建筑师 <span aria-hidden="true">↗</span>
@@ -198,6 +210,7 @@ export function ResultDetailSheets({
                   <p>{building.originalName}</p>
                   <button
                     type="button"
+                    disabled={!interactive}
                     onClick={(event) => openSheet(
                       { kind: "building", id: building.id },
                       event.currentTarget,

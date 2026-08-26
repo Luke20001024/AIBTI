@@ -405,6 +405,8 @@ button { color: inherit; }
 .recommended-work h3 { margin: 0; font-size: 14px; line-height: 1.18; }
 .recommended-work p { margin: 4px 0 0; overflow: hidden; color: var(--muted); font-size: 9px; text-overflow: ellipsis; white-space: nowrap; }
 .recommended-work button { min-height: 38px; margin-top: 5px; padding: 0; border: 0; background: transparent; color: var(--accent); font-size: 10px; font-weight: 800; cursor: pointer; }
+.inline-detail-button:disabled,
+.recommended-work button:disabled { cursor: wait; opacity: .42; }
 .result-footer { display: grid; gap: 12px; padding: 23px 0 var(--safe-bottom); border-top: 1px solid var(--ink); }
 .result-method-link { width: fit-content; color: var(--accent); font-size: 11px; font-weight: 800; text-decoration: underline; text-underline-offset: 4px; }
 .restart-link { width: fit-content; color: var(--ink); font-size: 12px; font-weight: 750; text-decoration: underline; text-underline-offset: 4px; }
