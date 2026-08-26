@@ -222,16 +222,16 @@ export function ResultPersonalization({ result, architect, primaryBuilding }: Pr
       >
         {view === null ? (
           <div className="result-proof-loading" role="status">
-            <p className="section-kicker">正在读取本机结果</p>
-            <h2>把刚才的选择装进这张档案</h2>
+            <p className="section-kicker">AIBTI 建筑人格</p>
+            <h2>正在读取测试结果</h2>
             <div aria-hidden="true"><i /><i /><i /></div>
           </div>
         ) : owner ? (
           <>
             <div className="result-proof-heading">
               <div>
-                <p className="section-kicker">为什么是你</p>
-                <h2 className="section-title">这三次选择<br />最影响结果</h2>
+                <p className="section-kicker">匹配依据</p>
+                <h2 className="section-title">你的三个关键选择</h2>
               </div>
               <div className="identity-stamp">
                 <span>八型匹配</span>
@@ -304,29 +304,14 @@ export function ResultPersonalization({ result, architect, primaryBuilding }: Pr
           </>
         ) : (
           <div className="public-result-note">
-            <p className="section-kicker">
-              {view?.kind === "shared" && view.source !== "owner-missing" ? "朋友发来的建筑人格" : "公开人格档案"}
-            </p>
-            <h2>
-              {view?.kind === "shared" && view.source === "owner-missing"
-                ? "私人结果留在原来的设备里"
-                : `这是 ${result.code} 的公开人格设定`}
-            </h2>
-            <p>
-              {view?.kind === "explore" && view.legacyAnswerUrl
-                ? "旧版答案链接已安全转为公开档案，不会继续读取其中的答案"
-                : "公开页面只展示人格设定，完成 18 道题后可以查看属于你的匹配依据"}
-            </p>
-            <a className="primary-button" href={withBasePath("/quiz/")}>测测我是谁 →</a>
+            <p className="section-kicker">公开人格档案</p>
+            <h2>测出你的建筑人格</h2>
+            <a className="primary-button" href={withBasePath("/quiz/")}>开始测试 →</a>
           </div>
         )}
 
         {view && (
           <div className="result-share-actions" data-testid="result-share-actions">
-            <div>
-              <p className="section-kicker">把人格带走</p>
-              <h3>卡片负责吸睛<br />建筑负责留下来</h3>
-            </div>
             <div className="button-row">
               <button
                 className="primary-button"

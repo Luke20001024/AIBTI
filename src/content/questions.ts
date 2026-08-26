@@ -21,8 +21,8 @@ export const QUESTIONS: readonly Question[] = [
     prompt: "一块空地借你一个下午，你会留下什么？",
     options: [
       { id: "A", label: "一张谁路过都能坐的大桌", weights: { ORDER: 0.6, GEOMETRY: 0.7, EXPRESS: 0.1, SOCIAL: 1, RISK: -0.4 } },
-      { id: "B", label: "一架用途不明但会转的装置", weights: { ORDER: -1, GEOMETRY: -1, EXPRESS: 0.8, SOCIAL: -0.3, RISK: 0.5 } },
-      { id: "C", label: "一条只在四点钟出现的影子", weights: { ORDER: 0.7, GEOMETRY: 0.7, EXPRESS: -0.7, SOCIAL: -0.6, RISK: -0.3 } },
+      { id: "B", label: "一架会随风转、谁都能碰一下的装置", weights: { ORDER: -1, GEOMETRY: -1, EXPRESS: 0.8, SOCIAL: -0.3, RISK: 0.5 } },
+      { id: "C", label: "一条下午四点才出现的光影刻度", weights: { ORDER: 0.7, GEOMETRY: 0.7, EXPRESS: -0.7, SOCIAL: -0.6, RISK: -0.3 } },
     ],
   },
   {
@@ -34,7 +34,7 @@ export const QUESTIONS: readonly Question[] = [
     options: [
       { id: "A", label: "瓷片、铜铃和人声叠在一起", weights: { MAKING: 0.6, EXPRESS: 0.9, SOCIAL: 0.5, CONTEXT: 0.3, RISK: 0.3 } },
       { id: "B", label: "雨落在旧瓦上，偶尔混进鸟叫", weights: { TIME: 0.8, MAKING: 0.7, EXPRESS: -0.3, SOCIAL: -0.1, CONTEXT: 0.7, RISK: -0.4 } },
-      { id: "C", label: "电梯、风机和轨道一起低鸣", weights: { TIME: -0.7, MAKING: -0.8, EXPRESS: -0.6, SOCIAL: -0.4, CONTEXT: -0.7, RISK: 0.1 } },
+      { id: "C", label: "夜里的电梯、风机和轨道低声合奏", weights: { TIME: -0.7, MAKING: -0.8, EXPRESS: -0.6, SOCIAL: -0.4, CONTEXT: -0.7, RISK: 0.1 } },
     ],
   },
   {
@@ -117,7 +117,7 @@ export const QUESTIONS: readonly Question[] = [
     prompt: "团队项目只剩一天，你最信哪种救场方式？",
     options: [
       { id: "A", label: "把所有人拉到一张表上，只保住共同骨架", weights: { ORDER: 0.8, RISK: -0.4, MAKING: -0.3, EXPRESS: -0.3, TIME: -0.2, SOCIAL: 0.4, GEOMETRY: 0.6 } },
-      { id: "B", label: "删掉最安全的一版，押最后一次转弯", weights: { ORDER: -0.8, RISK: 0.7, MAKING: -0.6, EXPRESS: 0.5, TIME: -0.6, SOCIAL: -0.5, GEOMETRY: -0.5 } },
+      { id: "B", label: "删掉最平庸的折中，保住最有劲的一版", weights: { ORDER: -0.8, RISK: 0.7, MAKING: -0.6, EXPRESS: 0.5, TIME: -0.6, SOCIAL: -0.5, GEOMETRY: -0.5 } },
       { id: "C", label: "守住最关键的手感，让做得最熟的人收尾", weights: { RISK: -0.3, MAKING: 0.9, EXPRESS: -0.2, TIME: 0.8, SOCIAL: 0.1, GEOMETRY: -0.1 } },
     ],
   },
@@ -186,11 +186,11 @@ export const QUESTIONS: readonly Question[] = [
     order: 16,
     kind: "aesthetic",
     eyebrow: "建筑直觉 · 16",
-    prompt: "如果只能留下一个开口，你选哪个？",
+    prompt: "你会留下哪一种窗？",
     options: [
-      { id: "A", label: "一面把云和天气整幅放进来的巨窗", visual: "giant", weights: { GEOMETRY: -0.4, ORDER: -0.7, CONTEXT: -0.5, EXPRESS: 0.8, RISK: 0.6 } },
+      { id: "A", label: "一条连续、水平、很守纪律的长窗", visual: "ribbon", weights: { GEOMETRY: 1, ORDER: 0.8, CONTEXT: -0.4, EXPRESS: -0.7, RISK: -0.4 } },
       { id: "B", label: "几扇只框住树梢、屋顶和人的小窗", visual: "framed", weights: { GEOMETRY: -0.6, ORDER: -0.1, CONTEXT: 0.9, EXPRESS: -0.1, RISK: -0.2 } },
-      { id: "C", label: "一条连续水平、让房间稳定下来的长窗", visual: "ribbon", weights: { GEOMETRY: 1, ORDER: 0.8, CONTEXT: -0.4, EXPRESS: -0.7, RISK: -0.4 } },
+      { id: "C", label: "一整面让天气闯进来的巨窗", visual: "giant", weights: { GEOMETRY: -0.4, ORDER: -0.7, CONTEXT: -0.5, EXPRESS: 0.8, RISK: 0.6 } },
     ],
   },
   {

@@ -91,11 +91,14 @@ export type ResultType = {
   name: string;
   englishName: string;
   school: string;
+  schoolSummary: string;
+  relatedArchitects: readonly [string, string];
   tagline: string;
   keywords: readonly string[];
   vector: DimensionVector;
   architectId: string;
   buildingIds: readonly [string, string, string];
+  recommendedBuildingIds: readonly [string, string];
   publicSide: string;
   hiddenSide: string;
   stressResponse: string;

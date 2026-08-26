@@ -123,8 +123,8 @@ export async function createShareCard({ result, architect, building, publicUrl }
 
   context.font = '800 27px "PingFang SC", "Microsoft YaHei", sans-serif';
   context.fillStyle = "#121313";
-  context.fillText(`同频建筑师  ${architect.name}`, 64, 1160);
-  context.fillText(`第一座本命建筑  ${building.name}`, 64, 1206);
+  context.fillText(`代表建筑师  ${architect.name}`, 64, 1160);
+  context.fillText(`代表建筑  ${building.name}`, 64, 1206);
 
   context.font = '650 24px "PingFang SC", "Microsoft YaHei", sans-serif';
   context.fillStyle = "#66645f";

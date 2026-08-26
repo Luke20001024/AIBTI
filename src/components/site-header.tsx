@@ -16,7 +16,6 @@ export function SiteHeader() {
         <span className="brand-word">BTI</span>
         <span className="brand-cn">建筑人格</span>
       </Link>
-      <Link className="header-link" href="/about/">方法与图源</Link>
     </header>
   );
 }

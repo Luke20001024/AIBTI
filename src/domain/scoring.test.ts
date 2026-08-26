@@ -277,8 +277,9 @@ describe("scoring", () => {
   it("keeps the MVP content graph complete and all local media present", () => {
     expect(RESULT_TYPES).toHaveLength(8);
     expect(ARCHITECTS).toHaveLength(8);
-    expect(BUILDINGS).toHaveLength(24);
+    expect(BUILDINGS).toHaveLength(40);
     expect(new Set(RESULT_TYPES.flatMap((result) => result.buildingIds)).size).toBe(24);
+    expect(new Set(RESULT_TYPES.flatMap((result) => result.recommendedBuildingIds)).size).toBe(16);
 
     const media = [
       ...RESULT_TYPES.map((result) => result.characterImage),

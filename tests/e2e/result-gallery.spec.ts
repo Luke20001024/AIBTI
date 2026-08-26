@@ -33,30 +33,34 @@ test("八型结果页的身份映射、图片资源与布局均完整", async ({
     await expect(page.locator(".result-code")).toHaveText(persona.code);
     await expect(page.locator(".result-name")).toHaveText(persona.name);
     await expect(page.locator(".architect-name")).toHaveText(persona.architect);
-    await expect(page.locator(".building-title")).toHaveText(persona.buildings[0]);
-    await expect(page.locator(".extension-building h3")).toHaveText([persona.buildings[1], persona.buildings[2]]);
+    await expect(page.locator(".building-title")).toHaveText([...persona.buildings]);
+    await expect(page.locator(".more-building h3")).toHaveCount(2);
+    await expect(page.locator(".school-context")).toBeVisible();
 
     const images = page.locator("main img");
-    await expect(images).toHaveCount(5);
+    await expect(images).toHaveCount(7);
     const hero = page.locator(".result-stage img");
-    await expect(hero).toHaveAttribute("src", new RegExp(`/characters-v2/${slug}-scene-v2\\.webp$`));
+    await expect(hero).toHaveAttribute("src", new RegExp(`/characters-v3/${slug}-scene-v3\\.webp$`));
     await expect.poll(async () => hero.evaluate((image: HTMLImageElement) => [image.naturalWidth, image.naturalHeight])).toEqual([1200, 1000]);
     await expectRenderedImage(hero, 390, 320);
     await expectRenderedImage(page.locator(".architect-portrait"), 110, 135);
-    await expectRenderedImage(page.locator(".building-image"), 390, 230);
-    await expect(page.locator(".extension-building-image")).toHaveCount(2);
-    await expectRenderedImage(page.locator(".extension-building-image").nth(0), 110, 80);
-    await expectRenderedImage(page.locator(".extension-building-image").nth(1), 110, 80);
+    await expect(page.locator(".building-image")).toHaveCount(3);
+    for (let index = 0; index < 3; index += 1) {
+      await expectRenderedImage(page.locator(".building-image").nth(index), 390, 230);
+    }
+    await expect(page.locator(".more-building-image")).toHaveCount(2);
+    await expectRenderedImage(page.locator(".more-building-image").nth(0), 110, 80);
+    await expectRenderedImage(page.locator(".more-building-image").nth(1), 110, 80);
 
     const imageSources = await images.evaluateAll((items) => items.map((image) => (image as HTMLImageElement).currentSrc));
-    expect(new Set(imageSources).size).toBe(5);
+    expect(new Set(imageSources).size).toBe(7);
 
     await expect(page.locator("main .media-fallback")).toHaveCount(0);
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
     expect(overflow).toBeLessThanOrEqual(1);
 
     await page.screenshot({
-      path: `artifacts/qa/round-3/result-${slug}-393x873.png`,
+      path: `artifacts/qa/round-6/result-${slug}-393x873.png`,
       fullPage: true,
     });
   }

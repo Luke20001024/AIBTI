@@ -9,7 +9,7 @@ import { withBasePath } from "../domain/paths";
 import { buildResultPath } from "../domain/result-view";
 import { scoreQuiz } from "../domain/scoring";
 
-const MESSAGES = ["测量你的精神承重墙…", "检查曲线有没有蓄意逃跑…", "正在匹配同频建筑师…"];
+const MESSAGES = ["测量你的精神承重墙…", "检查曲线有没有蓄意逃跑…", "正在匹配代表建筑师…"];
 
 export function CalculatingClient() {
   const [messageIndex, setMessageIndex] = useState(0);

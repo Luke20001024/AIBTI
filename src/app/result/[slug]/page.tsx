@@ -1,5 +1,5 @@
-import type { CSSProperties } from "react";
 import type { Metadata } from "next";
+import type { CSSProperties } from "react";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { MediaImage } from "../../../components/media-image";
@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!result) return {};
   return {
     title: `${result.code} · ${result.name}`,
-    description: `${result.tagline}｜${result.school}建筑人格、同频建筑师与代表建筑`,
+    description: `${result.tagline}｜${result.school}建筑人格、代表建筑师与建筑作品`,
     openGraph: {
       title: `${result.code} · ${result.name}｜AIBTI 建筑人格`,
       description: result.tagline,
@@ -32,8 +32,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function ResultPage({ params }: PageProps) {
   const result = RESULT_BY_SLUG[(await params).slug];
   if (!result) notFound();
+
   const architect = ARCHITECT_BY_ID[result.architectId];
-  const [primaryBuilding, ...extensionBuildings] = result.buildingIds.map((id) => BUILDING_BY_ID[id]);
+  const featuredBuildings = result.buildingIds.map((id) => BUILDING_BY_ID[id]);
+  const recommendedBuildings = result.recommendedBuildingIds.map((id) => BUILDING_BY_ID[id]);
   const style = {
     "--accent": result.accent,
     "--accent-soft": result.accentSoft,
@@ -71,44 +73,33 @@ export default async function ResultPage({ params }: PageProps) {
         </section>
 
         <Suspense fallback={<section className="result-proof" aria-busy="true" />}>
-          <ResultPersonalization result={result} architect={architect} primaryBuilding={primaryBuilding} />
+          <ResultPersonalization result={result} architect={architect} primaryBuilding={featuredBuildings[0]} />
         </Suspense>
 
         <section className="section personality-section" id="personality">
-          <p className="section-kicker">人格剖面</p>
-          <h2 className="section-title">你不是一栋楼<br />但很像这种建法</h2>
+          <h2 className="section-title">这种人格通常是这样</h2>
           <div className="result-grid">
             <div className="result-copy-block result-copy-lead">
-              <span>01 / 外显</span>
               <h3>别人眼中的你</h3>
               <p>{noTerminalPeriod(result.publicSide)}</p>
             </div>
             <div className="result-copy-block">
-              <span>02 / 隐藏</span>
               <h3>你不太展示的一面</h3>
               <p>{noTerminalPeriod(result.hiddenSide)}</p>
             </div>
             <div className="result-copy-block">
-              <span>03 / 超载</span>
               <h3>压力一来</h3>
               <p>{noTerminalPeriod(result.stressResponse)}</p>
             </div>
             <div className="result-copy-block">
-              <span>04 / 审美</span>
-              <h3>什么建筑会击中你</h3>
+              <h3>偏爱的建筑</h3>
               <p>{noTerminalPeriod(result.architectureLogic)}</p>
             </div>
           </div>
         </section>
 
-        <section className="section architect-section" id="architect">
-          <div className="section-heading-row">
-            <div>
-              <p className="section-kicker">同频建筑师 / 不是本人复刻</p>
-              <h2 className="section-title">先认识这个人<br />再理解他的建筑</h2>
-            </div>
-            <span className="section-index">02</span>
-          </div>
+        <section className="section architecture-profile" id="architect">
+          <h2 className="section-title">该人格代表建筑师</h2>
 
           <div className="architect-layout">
             {architect.portrait ? (
@@ -138,7 +129,7 @@ export default async function ResultPage({ params }: PageProps) {
           </div>
 
           <div className="story-box">
-            <p className="story-label">一件值得记住的事</p>
+            <p className="story-label">建筑师经历</p>
             <h3>{architect.storyTitle}</h3>
             <p>{noTerminalPeriod(architect.story)}</p>
           </div>
@@ -148,79 +139,85 @@ export default async function ResultPage({ params }: PageProps) {
               <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a>
             ))}
           </div>
-        </section>
 
-        <section className="section buildings-section" id="buildings">
-          <div className="section-heading-row">
-            <div>
-              <p className="section-kicker">第一座本命建筑</p>
-              <h2 className="section-title">别急着说喜欢<br />先看这里</h2>
-            </div>
-            <span className="section-index">03</span>
-          </div>
-
-          <article className="primary-building">
-            {primaryBuilding.image && (
-              <div className="primary-building-media">
-                <MediaImage
-                  className="building-image"
-                  src={primaryBuilding.image.src}
-                  alt={primaryBuilding.image.alt}
-                  fallbackLabel="建筑图片整理中"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <span>01 / {primaryBuilding.location}</span>
-              </div>
-            )}
-            <div className="primary-building-copy">
-              <h3 className="building-title">{primaryBuilding.name}</h3>
-              <p className="building-original">{primaryBuilding.originalName} · {primaryBuilding.years}</p>
-              <p className="building-hook">{noTerminalPeriod(primaryBuilding.hook)}</p>
-              <ul className="look-list">
-                {primaryBuilding.lookFor.map((item) => <li key={item}>{noTerminalPeriod(item)}</li>)}
-              </ul>
-              <p className="building-story">{noTerminalPeriod(primaryBuilding.story)}</p>
-              {primaryBuilding.image && (
-                <p className="image-credit">
-                  图源 {primaryBuilding.image.source.credit ?? primaryBuilding.image.source.label} · <a href={primaryBuilding.image.source.url} target="_blank" rel="noreferrer">查看原页 ↗</a>
-                </p>
-              )}
-              <div className="source-links">
-                {primaryBuilding.sources.map((source) => (
-                  <a key={source.url} href={source.url} target="_blank" rel="noreferrer">专业资料 ↗</a>
-                ))}
-              </div>
-            </div>
-          </article>
-
-          <div className="building-extensions">
-            <p className="section-kicker">再看两座 / 验证你的品味</p>
-            {extensionBuildings.map((building, index) => (
-              <article className="extension-building" key={building.id}>
+          <div className="featured-buildings" id="buildings">
+            <h2 className="section-title">从这三座建筑开始</h2>
+            {featuredBuildings.map((building) => (
+              <article className="featured-building" key={building.id}>
                 {building.image && (
-                  <MediaImage
-                    className="extension-building-image"
-                    src={building.image.src}
-                    alt={building.image.alt}
-                    fallbackLabel="建筑图片整理中"
-                    loading="lazy"
-                    decoding="async"
-                  />
+                  <div className="featured-building-media">
+                    <MediaImage
+                      className="building-image"
+                      src={building.image.src}
+                      alt={building.image.alt}
+                      fallbackLabel="建筑图片整理中"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span>{building.location}</span>
+                  </div>
                 )}
-                <div>
-                  <span>0{index + 2}</span>
-                  <h3>{building.name}</h3>
-                  <p>{noTerminalPeriod(building.hook)}</p>
-                  <a href={building.sources[0]?.url} target="_blank" rel="noreferrer">查看建筑资料 ↗</a>
+                <div className="featured-building-copy">
+                  <h3 className="building-title">{building.name}</h3>
+                  <p className="building-original">{building.originalName} · {building.years}</p>
+                  <p className="building-hook">{noTerminalPeriod(building.hook)}</p>
+                  <ul className="look-list">
+                    {building.lookFor.map((item) => <li key={item}>{noTerminalPeriod(item)}</li>)}
+                  </ul>
+                  <p className="building-story">{noTerminalPeriod(building.story)}</p>
+                  {building.image && (
+                    <p className="image-credit">
+                      图源 {building.image.source.credit ?? building.image.source.label} · <a href={building.image.source.url} target="_blank" rel="noreferrer">查看原页 ↗</a>
+                    </p>
+                  )}
+                  <div className="source-links">
+                    {building.sources.map((source) => (
+                      <a key={source.url} href={source.url} target="_blank" rel="noreferrer">建筑资料 ↗</a>
+                    ))}
+                  </div>
                 </div>
               </article>
             ))}
           </div>
+
+          <aside className="school-context" aria-labelledby="school-context-title">
+            <p className="section-kicker">建筑风格坐标</p>
+            <h2 id="school-context-title">{result.school}</h2>
+            <p>{result.schoolSummary}</p>
+            <div>
+              <span>可以继续认识</span>
+              <strong>{result.relatedArchitects.join(" · ")}</strong>
+            </div>
+          </aside>
+
+          <div className="more-buildings">
+            <h2>更多作品</h2>
+            <div className="more-building-grid">
+              {recommendedBuildings.map((building) => (
+                <article className="more-building" key={building.id}>
+                  {building.image && (
+                    <MediaImage
+                      className="more-building-image"
+                      src={building.image.src}
+                      alt={building.image.alt}
+                      fallbackLabel="建筑图片整理中"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  )}
+                  <div>
+                    <h3>{building.name}</h3>
+                    <p>{building.originalName}</p>
+                    <a href={building.sources[0]?.url} target="_blank" rel="noreferrer">查看建筑资料 ↗</a>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
         </section>
 
         <footer className="result-footer">
-          <p>人格不是诊断，建筑也不需要站队</p>
+          <a className="result-method-link" href={withBasePath("/about/")}>查看测试方法、边界与图片来源 →</a>
           <RetestLink resultCode={result.code} />
         </footer>
       </div>

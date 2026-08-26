@@ -1,13 +1,16 @@
 node_modules/
 .next/
 out/
-design/
+/design/
 .env*.local
 coverage/
 artifacts/design/source/
+artifacts/design/**/*.png
 artifacts/playwright/
 artifacts/playwright-report/
 artifacts/qa/**/*.png
+artifacts/qa/**/*.jpg
+artifacts/review/
 *.tsbuildinfo
 *.log
 .DS_Store

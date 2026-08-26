@@ -14,10 +14,10 @@ export const metadata: Metadata = {
     default: "AIBTI 建筑人格测试",
     template: "%s · AIBTI",
   },
-  description: "18 道题，找到与你同频的建筑人格、建筑师与代表建筑",
+  description: "18 道题，找到你的建筑人格、代表建筑师与建筑作品",
   openGraph: {
     title: "AIBTI 建筑人格测试",
-    description: "先被结果逗笑，再真正看懂一种建筑",
+    description: "18 道题，匹配一种建筑人格、一位代表建筑师和三座建筑",
     type: "website",
     locale: "zh_CN",
     images: [{ url: withBasePath("/images/og/default.jpg"), width: 1200, height: 630 }],

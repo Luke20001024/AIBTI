@@ -1,0 +1,21 @@
+{
+  "version": "AIBTI-persona-v3.0",
+  "status": "visual-qa-passed",
+  "canvas": "6:5 landscape, target 1200x1000",
+  "styleSpec": "docs/design/v3/persona-image-direction.md",
+  "referenceImages": {
+    "characterWorldAnchor": "design/demos/grid-adult-cartoon-pavilion-v3.png",
+    "abstractionBenchmark": "C:/Users/Admin/AppData/Local/Temp/codex-clipboard-bf99e20b-5a84-4637-a2cc-cc134ca33fae.png",
+    "roleNote": "References control only abstraction, shape grammar, simplicity and persona content; no specific third-party character, layout or trade dress may be copied."
+  },
+  "assets": [
+    { "code": "GRID", "personaReference": "public/images/characters/grid.webp", "sourceGeneratedImage": "exec-74b07a1e-618c-49c5-968b-f8b500967d79.png", "output": "public/images/characters-v3/grid-scene-v3.webp", "bytes": 69810, "status": "passed", "score": 95, "hardFailures": [] },
+    { "code": "ROOT", "personaReference": "public/images/characters/root.webp", "sourceGeneratedImage": "exec-5ce86e72-d611-47e1-a174-83a1f8a3fd96.png", "output": "public/images/characters-v3/root-scene-v3.webp", "bytes": 50074, "status": "passed-after-simplification-edit", "score": 93, "hardFailures": [] },
+    { "code": "MASS", "personaReference": "public/images/characters/mass.webp", "sourceGeneratedImage": "exec-7aa8345b-5cb1-4114-a08d-9945281d25f4.png", "output": "public/images/characters-v3/mass-scene-v3.webp", "bytes": 56338, "status": "passed", "score": 96, "hardFailures": [] },
+    { "code": "VOID", "personaReference": "public/images/characters/void.webp", "sourceGeneratedImage": "exec-90eaa84a-d6d3-4132-b703-7b80e112593d.png", "output": "public/images/characters-v3/void-scene-v3.webp", "bytes": 67804, "status": "passed", "score": 96, "hardFailures": [] },
+    { "code": "TECH", "personaReference": "public/images/characters/tech.webp", "sourceGeneratedImage": "exec-5068742d-f6cf-4269-bea3-2e9dfe156fd2.png", "output": "public/images/characters-v3/tech-scene-v3.webp", "bytes": 90472, "status": "passed", "score": 94, "hardFailures": [] },
+    { "code": "FLOW", "personaReference": "public/images/characters/flow.webp", "sourceGeneratedImage": "exec-31352d35-5dba-4dc3-b29e-21cd63938e84.png", "output": "public/images/characters-v3/flow-scene-v3.webp", "bytes": 52084, "status": "passed", "score": 94, "hardFailures": [] },
+    { "code": "ORNA", "personaReference": "public/images/characters/orna.webp", "sourceGeneratedImage": "exec-60c5d509-f717-426c-926b-11fb23386b5a.png", "output": "public/images/characters-v3/orna-scene-v3.webp", "bytes": 74032, "status": "passed-after-ornament-reduction-edit", "score": 94, "hardFailures": [] },
+    { "code": "HAND", "personaReference": "public/images/characters/hand.webp", "sourceGeneratedImage": "exec-df755e16-a290-48cc-bea6-a97200174660.png", "output": "public/images/characters-v3/hand-scene-v3.webp", "bytes": 101448, "status": "passed", "score": 95, "hardFailures": [] }
+  ]
+}

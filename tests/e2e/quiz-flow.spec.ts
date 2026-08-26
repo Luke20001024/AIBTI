@@ -27,7 +27,7 @@ test("18 题需显式提交并生成无答案的 Owner 结果", async ({ page },
 
   for (let index = 1; index < 18; index += 1) {
     await page.getByRole("radio").first().click();
-    await expect(page.locator(".quiz-progress-meta")).toContainText(`${String(index + 1).padStart(2, "0")} / 18`);
+    await expect(page.locator(".quiz-progress-count strong")).toHaveText(String(index + 1));
     await page.waitForTimeout(80);
   }
 
@@ -70,7 +70,7 @@ test("18 题需显式提交并生成无答案的 Owner 结果", async ({ page },
   const ownerPath = resultUrl.pathname;
   await page.goto(`${ownerPath}?from=share`, { waitUntil: "domcontentloaded" });
   await expect(page.locator(".result-proof")).toHaveAttribute("data-result-view", "shared");
-  await expect(page.getByText(/这是 .* 的公开人格设定/)).toBeVisible();
+  await expect(page.getByRole("heading", { name: "测出你的建筑人格" })).toBeVisible();
   await expect(page.locator(".evidence-list")).toHaveCount(0);
 });
 

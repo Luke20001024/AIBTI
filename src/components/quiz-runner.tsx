@@ -8,20 +8,13 @@ import { buildCalculationHref } from "../domain/calculation-transfer";
 import { startHardNavigation, type HardNavigationHandle } from "../domain/navigation";
 import type { AnswerMap } from "../domain/scoring";
 import { readQuizSession, writeQuizSession } from "../domain/session";
-import {
-  QUESTION_VISUAL_KINDS,
-  QuestionVisual,
-  type QuestionVisualKind,
-} from "./question-visual";
+import { hasGeneratedQuestionVisual, QuestionVisual } from "./question-visual";
 
 const GROUP_LABELS = {
   projective: "潜意识施工",
   personality: "日常人格",
   aesthetic: "建筑直觉",
 } as const;
-
-const isQuestionVisual = (value: string | undefined): value is QuestionVisualKind =>
-  Boolean(value && QUESTION_VISUAL_KINDS.includes(value as QuestionVisualKind));
 
 export function QuizRunner() {
   const router = useRouter();
@@ -158,25 +151,30 @@ export function QuizRunner() {
 
   return (
     <main className="narrow-shell quiz-shell" aria-busy={finishing}>
+      <header className="quiz-brand" aria-label="AIBTI 建筑人格">
+        <span><b>AI</b>BTI</span>
+        <i aria-hidden="true" />
+        <strong>{GROUP_LABELS[question.kind]}</strong>
+      </header>
+
       <div className="quiz-progress">
+        <div className="quiz-progress-count">
+          <strong>{index + 1}</strong>
+          <span>/ {QUESTIONS.length}</span>
+        </div>
         <div className="quiz-progress-line" aria-hidden="true">
           <div className="quiz-progress-value" style={{ width: `${progress}%` }} />
-        </div>
-        <div className="quiz-progress-meta">
-          <span>{GROUP_LABELS[question.kind]}</span>
-          <span>{String(index + 1).padStart(2, "0")} / {QUESTIONS.length}</span>
         </div>
       </div>
 
       <section className="question-block" aria-labelledby="question-title" key={question.id}>
-        <p className="question-eyebrow">{question.eyebrow}</p>
         <h1 className="question-title" id="question-title">{question.prompt}</h1>
         <div
           className={`option-list ${question.kind === "aesthetic" ? "option-list-visual" : ""}`}
           role="radiogroup"
           aria-label={question.prompt}
         >
-          {question.options.map((option) => {
+          {question.options.map((option, optionIndex) => {
             const optionSelected = selected === option.id;
             return (
               <button
@@ -189,9 +187,9 @@ export function QuizRunner() {
                 onClick={() => select(option.id)}
               >
                 <span className="option-letter">{option.id}</span>
-                {isQuestionVisual(option.visual) && (
+                {hasGeneratedQuestionVisual(question.id) && (
                   <span className="question-visual-wrap">
-                    <QuestionVisual kind={option.visual} selected={optionSelected} />
+                    <QuestionVisual questionId={question.id} optionIndex={optionIndex} label={option.label} />
                   </span>
                 )}
                 <span className="option-content">

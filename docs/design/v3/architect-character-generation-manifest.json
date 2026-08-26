@@ -1,0 +1,56 @@
+{
+  "version": "AIBTI-architect-character-exploration-v1",
+  "status": "partial-complete-three-reviewed-one-network-pending",
+  "onlineIntegration": false,
+  "generationMode": "built-in image_gen",
+  "styleSpec": "docs/design/v3/architect-character-exploration.md",
+  "styleReference": "public/images/characters-v3/grid-scene-v3.png",
+  "rightsNote": "Prototype identity references only. Review source-photo copyright, likeness context and crediting before any public or commercial use.",
+  "assets": [
+    {
+      "code": "zaha-v1",
+      "subject": "Zaha Hadid",
+      "identityReference": "public/images/architects/zaha.webp",
+      "output": "artifacts/design/architect-character-exploration/zaha-v1.png",
+      "originalOutput": "artifacts/design/architect-character-exploration/zaha-v1-raw.png",
+      "status": "reviewed-pass",
+      "score": 92,
+      "hardFailures": [],
+      "review": "Strongest identity-first portrait; suitable for a factual architect profile. Slightly denser facial planes than the persona-character baseline."
+    },
+    {
+      "code": "zaha-v2",
+      "subject": "Zaha Hadid",
+      "identityReference": "public/images/architects/zaha.webp",
+      "output": "artifacts/design/architect-character-exploration/zaha-v2.png",
+      "originalOutput": "artifacts/design/architect-character-exploration/zaha-v2-raw.png",
+      "status": "reviewed-pass-recommended-direction",
+      "score": 95,
+      "hardFailures": [],
+      "review": "Recommended architect-character direction: respectful likeness plus controlled action, clear negative space and secondary architecture."
+    },
+    {
+      "code": "mies-v1",
+      "subject": "Ludwig Mies van der Rohe",
+      "identityReference": "public/images/architects/mies.webp",
+      "output": "artifacts/design/architect-character-exploration/mies-v1.png",
+      "originalOutput": "artifacts/design/architect-character-exploration/mies-v1-raw.png",
+      "status": "reviewed-pass",
+      "score": 96,
+      "hardFailures": [],
+      "review": "Recognizable older identity without skin texture or wrinkle dependence; architecture remains legible and secondary. Cigar context must remain documentary, not promotional."
+    },
+    {
+      "code": "wang-lu-v1",
+      "subject": "Wang Shu x Lu Wenyu",
+      "identityReference": "public/images/architects/wang-lu.webp",
+      "output": "artifacts/design/architect-character-exploration/wang-lu-v1.png",
+      "status": "pending-network-error-after-three-built-in-attempts",
+      "score": null,
+      "hardFailures": [],
+      "error": "Built-in image edit service returned a network error on all three attempts. CLI/API fallback was not used because it requires explicit user approval and OPENAI_API_KEY."
+    }
+  ],
+  "reviewSheet": "artifacts/design/architect-character-exploration/contact-sheet.png",
+  "mobile390Preview": "artifacts/design/architect-character-exploration/mobile-390-preview.png"
+}

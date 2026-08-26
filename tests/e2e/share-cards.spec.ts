@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { writeFile } from "node:fs/promises";
 import { appPath } from "./paths";
 
 const PERSONAS = ["grid", "root", "mass", "void", "tech", "flow", "orna", "hand"] as const;
@@ -20,7 +21,20 @@ test("八型分享卡都保留人物动作并输出公开二维码入口", async
     await expect(image).toBeVisible();
     await expect.poll(async () => image.evaluate((item: HTMLImageElement) => item.naturalWidth)).toBe(1080);
     await expect.poll(async () => image.evaluate((item: HTMLImageElement) => item.naturalHeight)).toBe(1350);
-    await image.screenshot({ path: `artifacts/qa/round-2/share-card-${slug}.png` });
+    const dataUrl = await image.evaluate(async (item: HTMLImageElement) => {
+      const blob = await fetch(item.src).then((response) => response.blob());
+      return await new Promise<string>((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onerror = () => reject(reader.error);
+        reader.onload = () => resolve(String(reader.result));
+        reader.readAsDataURL(blob);
+      });
+    });
+    expect(dataUrl).toMatch(/^data:image\/jpeg;base64,/);
+    await writeFile(
+      `artifacts/qa/round-6/share-card-${slug}-1080x1350.jpg`,
+      Buffer.from(dataUrl!.split(",")[1], "base64"),
+    );
 
     const publicLink = new URL(await dialog.getByRole("textbox", { name: "可选择的公开结果链接" }).inputValue());
     expect(publicLink.pathname).toMatch(new RegExp(`/result/${slug}/$`));

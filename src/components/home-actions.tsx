@@ -41,7 +41,6 @@ export function HomeActions() {
         <span>约 3 分钟</span>
         <span>不用登录</span>
       </div>
-      <p className="home-trust">不是心理诊断 · 建筑资料是认真的</p>
     </div>
   );
 }
