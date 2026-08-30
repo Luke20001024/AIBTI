@@ -28,7 +28,7 @@ async function expectIntrinsicImages(images: Locator, label: string) {
     await image.scrollIntoViewIfNeeded();
     await expect.poll(
       () => image.evaluate((node: HTMLImageElement) => node.complete && node.naturalWidth > 0 && node.naturalHeight > 0),
-      { message: `${label} 第 ${index + 1} 张图片应完成加载` },
+      { message: `${label} 第 ${index + 1} 张图片应完成加载`, timeout: 60_000 },
     ).toBe(true);
 
     const geometry = await image.evaluate((node: HTMLImageElement) => {

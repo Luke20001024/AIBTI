@@ -61,6 +61,14 @@ test("390 × 844 下逐一打开 16 个人格的 96 个建筑师与建筑档案"
           expect(imageCount, `${slug} building ${index} image count`).toBeLessThanOrEqual(3);
         }
 
+        await expect.poll(
+          () => images.evaluateAll((items) => items.every((item) => {
+            const image = item as HTMLImageElement;
+            return image.complete && image.naturalWidth > 0 && image.naturalHeight > 0;
+          })),
+          { message: `${slug} dialog ${index} images complete`, timeout: 60_000 },
+        ).toBe(true);
+
         const imageData = await images.evaluateAll((items) => items.map((item) => {
           const image = item as HTMLImageElement;
           return {
