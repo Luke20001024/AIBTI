@@ -1,5 +1,7 @@
 import {
   DIMENSION_IDS,
+  DISCRIMINATOR_BY_ID,
+  DISCRIMINATOR_QUESTIONS,
   QUESTION_GROUP_WEIGHTS,
   QUESTIONS,
   RESULT_TYPES,
@@ -142,8 +144,37 @@ const calculateDimensionScoresInternal = (
   return totals;
 };
 
+const discriminatorAnswerIds = (answers: AnswerMap) =>
+  DISCRIMINATOR_QUESTIONS.filter((question) => answers[question.id]).map((question) => question.id);
+
+const applyDiscriminatorLayer = (
+  coreScores: DimensionVector,
+  answers: AnswerMap,
+): DimensionVector => {
+  const ids = discriminatorAnswerIds(answers).slice(0, 2);
+  if (!ids.length) return coreScores;
+  const layer = emptyVector();
+  for (const id of ids) {
+    const question = DISCRIMINATOR_BY_ID[id];
+    const optionId = answers[id];
+    if (!question || !optionId) continue;
+    for (const dimension of DIMENSION_IDS) {
+      const mean = question.options.reduce((sum, option) => sum + (option.weights[dimension] ?? 0), 0) / question.options.length;
+      const selected = (getQuestionOption(question, optionId).weights[dimension] ?? 0) - mean;
+      const maximum = Math.max(...question.options.map((option) => Math.abs((option.weights[dimension] ?? 0) - mean)));
+      layer[dimension] += maximum ? selected / maximum : 0;
+    }
+  }
+  const influence = 0.12 / ids.length;
+  const output = emptyVector();
+  for (const dimension of DIMENSION_IDS) {
+    output[dimension] = clamp(coreScores[dimension] + layer[dimension] * influence, -1, 1);
+  }
+  return output;
+};
+
 export const calculateDimensionScores = (answers: AnswerMap): DimensionVector =>
-  calculateDimensionScoresInternal(answers);
+  applyDiscriminatorLayer(calculateDimensionScoresInternal(answers), answers);
 
 const rankCandidates = (dimensionScores: DimensionVector): ScoredCandidate[] =>
   RESULT_TYPES.map((result) => ({
@@ -154,6 +185,52 @@ const rankCandidates = (dimensionScores: DimensionVector): ScoredCandidate[] =>
     return RESULT_TYPES.findIndex((item) => item.code === left.code) -
       RESULT_TYPES.findIndex((item) => item.code === right.code);
   });
+
+const COLLISION_GROUPS: readonly { id: string; codes: readonly ResultCode[] }[] = [
+  { id: "T01", codes: ["ROOT", "HAND"] },
+  { id: "T02", codes: ["MASS", "TECH"] },
+  { id: "T03", codes: ["VOID", "RUIN"] },
+  { id: "T04", codes: ["ORNA", "SIGN"] },
+  { id: "T05", codes: ["ROOT", "EAVE", "TIDE"] },
+  { id: "T06", codes: ["TECH", "SPAN"] },
+  { id: "T07", codes: ["HAND", "PLUS"] },
+  { id: "T08", codes: ["FLOW", "MIX", "VEIL"] },
+];
+
+export const shouldAskDiscriminator = (
+  scored: Pick<QuizResult, "gap" | "candidates">,
+  usedIds: readonly string[] = [],
+) => {
+  if (usedIds.length >= 2) return false;
+  if (usedIds.length === 1) return scored.gap < 0.055;
+  const pair = scored.candidates.slice(0, 2).map((candidate) => candidate.code);
+  const knownCollision = COLLISION_GROUPS.some((group) => pair.every((code) => group.codes.includes(code)));
+  return knownCollision || scored.gap < 0.14;
+};
+
+export const selectDiscriminatorQuestion = (
+  scored: Pick<QuizResult, "gap" | "candidates">,
+  usedIds: readonly string[] = [],
+): Question | null => {
+  if (!shouldAskDiscriminator(scored, usedIds)) return null;
+  const pair = scored.candidates.slice(0, 2).map((candidate) => candidate.code);
+  const direct = COLLISION_GROUPS.find((group) => !usedIds.includes(group.id) && pair.every((code) => group.codes.includes(code)));
+  if (direct) return DISCRIMINATOR_BY_ID[direct.id] ?? null;
+  const first = RESULT_TYPES.find((result) => result.code === pair[0]);
+  const second = RESULT_TYPES.find((result) => result.code === pair[1]);
+  if (!first || !second) return null;
+  const ranked = DISCRIMINATOR_QUESTIONS
+    .filter((question) => !usedIds.includes(question.id))
+    .map((question) => {
+      const projections = question.options.map((option) => DIMENSION_IDS.reduce(
+        (sum, dimension) => sum + (option.weights[dimension] ?? 0) * (first.vector[dimension] - second.vector[dimension]),
+        0,
+      ));
+      return { question, separation: Math.max(...projections) - Math.min(...projections) };
+    })
+    .sort((left, right) => right.separation - left.separation || left.question.id.localeCompare(right.question.id));
+  return ranked[0]?.question ?? null;
+};
 
 const getEvidenceQuestions = (
   answers: AnswerMap,
@@ -174,7 +251,7 @@ const getEvidenceQuestions = (
   return QUESTIONS.map((question) => {
     const option = getQuestionOption(question, answers[question.id]);
     const withoutCandidates = rankCandidates(
-      calculateDimensionScoresInternal(answers, question.id),
+      applyDiscriminatorLayer(calculateDimensionScoresInternal(answers, question.id), answers),
     );
     const withoutPrimarySimilarity = withoutCandidates.find(
       (candidate) => candidate.code === primaryCode,
@@ -227,14 +304,16 @@ const getEvidenceQuestions = (
 
 export const scoreQuiz = (answers: AnswerMap): QuizResult => {
   const answerKeys = Object.keys(answers);
+  const knownIds = new Set([...QUESTIONS, ...DISCRIMINATOR_QUESTIONS].map((question) => question.id));
+  const discriminatorIds = discriminatorAnswerIds(answers);
   if (
-    answerKeys.length !== QUESTIONS.length ||
-    answerKeys.some((questionId) =>
-      !QUESTIONS.some((question) => question.id === questionId),
-    )
+    QUESTIONS.some((question) => !answers[question.id]) ||
+    answerKeys.some((questionId) => !knownIds.has(questionId)) ||
+    discriminatorIds.length > 2
   ) {
-    throw new Error(`Expected ${QUESTIONS.length} answers.`);
+    throw new Error(`Expected ${QUESTIONS.length} core answers and at most 2 discriminator answers.`);
   }
+  for (const questionId of answerKeys) getQuestionOption(QUESTIONS.find((question) => question.id === questionId) ?? DISCRIMINATOR_BY_ID[questionId], answers[questionId]);
 
   const dimensionScores = calculateDimensionScores(answers);
   const candidates = rankCandidates(dimensionScores);
@@ -242,7 +321,7 @@ export const scoreQuiz = (answers: AnswerMap): QuizResult => {
   const primary = candidates[0];
   const secondary = candidates[1];
   const gap = Math.max(0, primary.similarity - secondary.similarity);
-  const clarity = gap >= 0.16 ? "clear" : gap >= 0.08 ? "balanced" : "mixed";
+  const clarity = gap >= 0.105 ? "clear" : gap >= 0.045 ? "balanced" : "mixed";
   const resultVector = RESULT_TYPES.find((item) => item.code === primary.code)!.vector;
   const evidenceQuestions = getEvidenceQuestions(
     answers,
@@ -254,7 +333,7 @@ export const scoreQuiz = (answers: AnswerMap): QuizResult => {
   return {
     primaryTypeId: primary.code,
     secondaryTypeId: secondary.code,
-    confidence: clamp(gap / 0.24, 0, 1),
+    confidence: clamp(gap / 0.18, 0, 1),
     clarity,
     gap,
     dimensionScores,
@@ -265,6 +344,29 @@ export const scoreQuiz = (answers: AnswerMap): QuizResult => {
     quizVersion: QUIZ_VERSION,
     scoringVersion: SCORING_VERSION,
   };
+};
+
+export const deriveDiscriminatorSequence = (answers: AnswerMap): Question[] => {
+  if (QUESTIONS.some((question) => !answers[question.id])) return [];
+  const activeAnswers: AnswerMap = Object.fromEntries(
+    QUESTIONS.map((question) => [question.id, answers[question.id]]),
+  );
+  const sequence: Question[] = [];
+  for (let index = 0; index < 2; index += 1) {
+    const dimensionScores = calculateDimensionScores(activeAnswers);
+    const candidates = rankCandidates(dimensionScores);
+    const scored = {
+      candidates,
+      gap: Math.max(0, candidates[0].similarity - candidates[1].similarity),
+    };
+    const next = selectDiscriminatorQuestion(scored, sequence.map((question) => question.id));
+    if (!next) break;
+    sequence.push(next);
+    const answer = answers[next.id];
+    if (!answer) break;
+    activeAnswers[next.id] = answer;
+  }
+  return sequence;
 };
 
 const BASE64_URL_ALPHABET =

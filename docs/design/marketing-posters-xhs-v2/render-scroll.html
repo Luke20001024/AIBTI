@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ArcBTI — Endless Type Scroll</title>
+    <style>
+      @font-face {
+        font-family: "Noto Sans SC Local";
+        src: url("file:///C:/Windows/Fonts/NotoSansSC-VF.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 100 900;
+      }
+
+      @font-face {
+        font-family: "Noto Serif SC Local";
+        src: url("file:///C:/Windows/Fonts/NotoSerifSC-VF.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 100 900;
+      }
+
+      @font-face {
+        font-family: "Arial Narrow Local";
+        src: url("file:///C:/Windows/Fonts/ARIALN.TTF") format("truetype");
+        font-style: normal;
+        font-weight: 400;
+      }
+
+      @font-face {
+        font-family: "Impact Local";
+        src: url("file:///C:/Windows/Fonts/impact.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 400;
+      }
+
+      :root {
+        --paper: #efe4cf;
+        --ink: #11110f;
+        --red: #e44a31;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 1080px;
+        height: 1440px;
+        margin: 0;
+        overflow: hidden;
+        background: var(--ink);
+      }
+
+      .poster {
+        position: relative;
+        width: 1080px;
+        height: 1440px;
+        overflow: hidden;
+        isolation: isolate;
+        background: var(--ink);
+        color: var(--paper);
+      }
+
+      .key-art {
+        position: absolute;
+        top: 0;
+        left: 60px;
+        width: 960px;
+        height: 1440px;
+        object-fit: fill;
+        z-index: -3;
+      }
+
+      .side-rail {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 60px;
+        background: var(--ink);
+        color: rgba(239, 228, 207, 0.76);
+        font-family: "Arial Narrow Local", sans-serif;
+        font-size: 10px;
+        line-height: 1;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .side-rail.left {
+        left: 0;
+        border-right: 1px solid rgba(239, 228, 207, 0.25);
+      }
+
+      .side-rail.right {
+        right: 0;
+        border-left: 1px solid rgba(239, 228, 207, 0.25);
+      }
+
+      .side-rail span {
+        writing-mode: vertical-rl;
+        white-space: nowrap;
+      }
+
+      .side-rail.left span {
+        transform: rotate(180deg);
+      }
+
+      .rail-cap {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 8px;
+        height: 8px;
+        background: var(--red);
+      }
+
+      .rail-cap.top {
+        top: 24px;
+      }
+
+      .rail-cap.bottom {
+        bottom: 24px;
+      }
+
+      .title-band {
+        position: absolute;
+        top: 610px;
+        left: 0;
+        right: 0;
+        height: 188px;
+        padding: 22px 82px 18px;
+        background: rgba(15, 15, 14, 0.985);
+        border-top: 1px solid rgba(239, 228, 207, 0.42);
+        border-bottom: 1px solid rgba(239, 228, 207, 0.42);
+      }
+
+      .eyebrow {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        font-family: "Arial Narrow Local", "Noto Sans SC Local", sans-serif;
+        font-size: 11px;
+        line-height: 1;
+        letter-spacing: 2.65px;
+        text-transform: uppercase;
+        color: rgba(239, 228, 207, 0.78);
+      }
+
+      .eyebrow .edition {
+        color: var(--red);
+      }
+
+      .main-title {
+        height: 83px;
+        margin-top: 8px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        white-space: nowrap;
+      }
+
+      .brand {
+        font-family: "Impact Local", sans-serif;
+        font-size: 74px;
+        line-height: 1;
+        letter-spacing: 1px;
+      }
+
+      .divider {
+        width: 6px;
+        height: 61px;
+        background: var(--red);
+        transform: skewX(-10deg);
+      }
+
+      h1 {
+        margin: 0;
+        font-family: "Noto Serif SC Local", serif;
+        font-size: 60px;
+        font-weight: 900;
+        line-height: 1;
+        letter-spacing: -3px;
+        color: var(--red);
+      }
+
+      .count {
+        margin-left: auto;
+        display: flex;
+        align-items: baseline;
+        gap: 6px;
+        font-family: "Arial Narrow Local", sans-serif;
+        transform: translateY(4px);
+      }
+
+      .count strong {
+        font-family: "Impact Local", sans-serif;
+        font-size: 55px;
+        line-height: 1;
+        color: var(--paper);
+      }
+
+      .count span {
+        font-size: 10px;
+        line-height: 1.15;
+        letter-spacing: 1.6px;
+      }
+
+      .band-footer {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: end;
+        gap: 24px;
+        padding-top: 10px;
+        border-top: 1px solid rgba(239, 228, 207, 0.25);
+      }
+
+      .subtitle {
+        font-family: "Arial Narrow Local", sans-serif;
+        font-size: 12px;
+        line-height: 1;
+        letter-spacing: 2.2px;
+        text-transform: uppercase;
+      }
+
+      .hook {
+        font-family: "Noto Serif SC Local", serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -0.3px;
+        color: var(--paper);
+      }
+
+      .hook em {
+        color: var(--red);
+        font-style: normal;
+      }
+
+      .corner-note {
+        position: absolute;
+        left: 76px;
+        bottom: 18px;
+        z-index: 2;
+        padding: 6px 8px 5px;
+        background: rgba(15, 15, 14, 0.9);
+        color: var(--paper);
+        font-family: "Arial Narrow Local", sans-serif;
+        font-size: 10px;
+        line-height: 1;
+        letter-spacing: 1.7px;
+        text-transform: uppercase;
+      }
+
+      .corner-note .red {
+        color: var(--red);
+      }
+    </style>
+  </head>
+  <body>
+    <main id="poster-scroll-v2" class="poster" aria-label="ArcBTI 人格卷轴宣传海报">
+      <img
+        class="key-art"
+        src="../../../public/images/campaign/xhs-posters-v2/01-endless-type-scroll-art-v2.png"
+        alt=""
+      />
+
+      <aside class="side-rail left">
+        <i class="rail-cap top"></i>
+        <span>ArcBTI · Architecture Intuition Archive · Scroll 01</span>
+        <i class="rail-cap bottom"></i>
+      </aside>
+      <aside class="side-rail right">
+        <i class="rail-cap top"></i>
+        <span>Produced by Luke · Sixteen Types · Keep Scrolling</span>
+        <i class="rail-cap bottom"></i>
+      </aside>
+
+      <section class="title-band">
+        <div class="eyebrow">
+          <span>Architecture Intuition Test · Personality Archive</span>
+          <span class="edition">01 / 03 · Original Series</span>
+        </div>
+        <div class="main-title">
+          <div class="brand">ArcBTI</div>
+          <span class="divider"></span>
+          <h1>人格卷轴</h1>
+          <div class="count"><strong>16</strong><span>TYPES<br />ON A ROLL</span></div>
+        </div>
+        <div class="band-footer">
+          <div class="subtitle">Endless Type Scroll · Every Type Builds Differently</div>
+          <div class="hook">别急着划走，<em>你的人格还在下一格。</em></div>
+        </div>
+      </section>
+
+      <div class="corner-note"><span class="red">Swipe</span> to find your architectural mother tongue</div>
+    </main>
+    <script>
+      window.__POSTER_READY__ = true;
+    </script>
+  </body>
+</html>

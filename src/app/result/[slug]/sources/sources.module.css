@@ -1,0 +1,119 @@
+.page {
+  --paper: #f1eee5;
+  width: min(100%, 760px);
+  min-height: 100vh;
+  margin: 0 auto;
+  background: var(--paper);
+  color: #111318;
+}
+
+.hero,
+.section,
+.footer {
+  padding-inline: 20px;
+}
+
+.hero {
+  padding-block: 42px 38px;
+  border-top: 8px solid var(--source-accent);
+  background: #e8e4da;
+}
+
+.hero > p:first-child,
+.kicker,
+.work > p {
+  margin: 0;
+  color: var(--source-accent);
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: .08em;
+}
+
+.hero h1 {
+  margin: 18px 0 0;
+  font-size: clamp(42px, 14vw, 70px);
+  line-height: .88;
+  letter-spacing: -.07em;
+}
+
+.hero h1 span {
+  display: block;
+  margin-top: 13px;
+  font-size: .42em;
+  line-height: 1.08;
+  letter-spacing: -.045em;
+}
+
+.hero > p:last-child {
+  margin: 22px 0 0;
+  color: #494945;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.section {
+  padding-block: 34px;
+}
+
+.section + .section {
+  background: #e8e4da;
+}
+
+.section > h2,
+.work h2 {
+  margin: 8px 0 0;
+  font-size: 24px;
+  line-height: 1.12;
+  letter-spacing: -.045em;
+}
+
+.sourceCard,
+.work {
+  display: grid;
+  gap: 6px;
+  margin-top: 20px;
+}
+
+.sourceCard strong,
+.work small {
+  color: #66635d;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.sourceCard a,
+.work a {
+  color: var(--source-accent);
+  font-size: 13px;
+  font-weight: 760;
+  line-height: 1.35;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.sourceCard small {
+  font-size: 11px;
+}
+
+.workList {
+  display: grid;
+  gap: 30px;
+  margin-top: 22px;
+}
+
+.work h2 {
+  font-size: 20px;
+}
+
+.footer {
+  padding-block: 28px max(32px, env(safe-area-inset-bottom));
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.footer a {
+  color: #111318;
+  font-size: 13px;
+  font-weight: 800;
+}

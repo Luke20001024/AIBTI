@@ -1,0 +1,2212 @@
+[
+  {
+    "dialogs": [
+      {
+        "index": 0,
+        "imageCount": 1,
+        "images": [
+          {
+            "alt": "密斯·凡·德·罗风格化肖像：白发、深色西装，坐在巴塞罗那馆抽象背景前",
+            "height": 1000,
+            "src": "/AIBTI/images/architects-v2/mies.webp",
+            "width": 1200
+          }
+        ],
+        "title": "密斯·凡·德·罗",
+        "trigger": "打开人物档案，看方法怎么长出来\n＋"
+      },
+      {
+        "index": 1,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "巴塞罗那馆建筑摄影",
+            "height": 913,
+            "src": "/AIBTI/images/buildings/barcelona-pavilion.webp",
+            "width": 1440
+          },
+          {
+            "alt": "巴塞罗那馆补充建筑摄影视角 1",
+            "height": 576,
+            "src": "/AIBTI/images/buildings/gallery/bld-pavilion-02.webp",
+            "width": 921
+          },
+          {
+            "alt": "巴塞罗那馆补充建筑摄影视角 2",
+            "height": 565,
+            "src": "/AIBTI/images/buildings/gallery/bld-pavilion-03.webp",
+            "width": 960
+          }
+        ],
+        "title": "巴塞罗那馆",
+        "trigger": "看墙为什么不肯站成房间\n＋"
+      },
+      {
+        "index": 2,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "范斯沃斯住宅建筑摄影",
+            "height": 853,
+            "src": "/AIBTI/images/buildings/farnsworth-house.webp",
+            "width": 1280
+          },
+          {
+            "alt": "范斯沃斯住宅补充建筑摄影",
+            "height": 1135,
+            "src": "/AIBTI/images/buildings/gallery/bld-farnsworth-02.webp",
+            "width": 1600
+          }
+        ],
+        "title": "范斯沃斯住宅",
+        "trigger": "看透明房子怎样离开地面\n＋"
+      },
+      {
+        "index": 3,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "西格拉姆大厦建筑摄影",
+            "height": 1000,
+            "src": "/AIBTI/images/buildings/seagram-building.webp",
+            "width": 1000
+          },
+          {
+            "alt": "西格拉姆大厦补充建筑摄影视角 1",
+            "height": 679,
+            "src": "/AIBTI/images/buildings/gallery/bld-seagram-02.webp",
+            "width": 992
+          }
+        ],
+        "title": "西格拉姆大厦",
+        "trigger": "看塔楼为什么先让出一块地\n＋"
+      },
+      {
+        "index": 4,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "新国家美术馆建筑摄影",
+            "height": 375,
+            "src": "/AIBTI/images/buildings/neue-nationalgalerie.jpg",
+            "width": 960
+          },
+          {
+            "alt": "新国家美术馆补充建筑摄影视角 1",
+            "height": 550,
+            "src": "/AIBTI/images/buildings/gallery/bld-neue-nationalgalerie-02.webp",
+            "width": 825
+          },
+          {
+            "alt": "新国家美术馆补充建筑摄影视角 2",
+            "height": 496,
+            "src": "/AIBTI/images/buildings/gallery/bld-neue-nationalgalerie-03.webp",
+            "width": 992
+          }
+        ],
+        "title": "新国家美术馆",
+        "trigger": "打开建筑档案 ＋"
+      },
+      {
+        "index": 5,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "克朗楼建筑摄影",
+            "height": 648,
+            "src": "/AIBTI/images/buildings/crown-hall.jpg",
+            "width": 960
+          },
+          {
+            "alt": "克朗楼补充建筑摄影视角 1",
+            "height": 666,
+            "src": "/AIBTI/images/buildings/gallery/bld-crown-hall-02.webp",
+            "width": 1000
+          },
+          {
+            "alt": "克朗楼补充建筑摄影视角 2",
+            "height": 579,
+            "src": "/AIBTI/images/buildings/gallery/bld-crown-hall-03.webp",
+            "width": 870
+          }
+        ],
+        "title": "克朗楼",
+        "trigger": "打开建筑档案 ＋"
+      }
+    ],
+    "slug": "grid"
+  },
+  {
+    "dialogs": [
+      {
+        "index": 0,
+        "imageCount": 1,
+        "images": [
+          {
+            "alt": "弗莱·奥托低多边形风格化肖像，完整头肩与轻型张拉结构背景",
+            "height": 1568,
+            "src": "/AIBTI/images/architects-v7-illustrated/frei-otto-illustrated-v1.webp",
+            "width": 1003
+          }
+        ],
+        "title": "弗莱·奥托",
+        "trigger": "打开人物档案，看方法怎么长出来\n＋"
+      },
+      {
+        "index": 1,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "德国馆 Expo 67建筑摄影",
+            "height": 1000,
+            "src": "/AIBTI/images/buildings/expo67-german-pavilion.webp",
+            "width": 1483
+          },
+          {
+            "alt": "德国馆 Expo 67补充建筑摄影视角 1",
+            "height": 435,
+            "src": "/AIBTI/images/buildings/gallery/bld-expo67-german-02.webp",
+            "width": 640
+          }
+        ],
+        "title": "德国馆 Expo 67",
+        "trigger": "看一块布怎样跨成国家展馆\n＋"
+      },
+      {
+        "index": 2,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "慕尼黑奥林匹克公园屋顶建筑摄影",
+            "height": 1067,
+            "src": "/AIBTI/images/buildings/munich-olympic-roof.webp",
+            "width": 1600
+          },
+          {
+            "alt": "慕尼黑奥林匹克公园屋顶补充建筑摄影视角 1",
+            "height": 560,
+            "src": "/AIBTI/images/buildings/gallery/bld-munich-olympic-02.webp",
+            "width": 784
+          },
+          {
+            "alt": "慕尼黑奥林匹克公园屋顶补充建筑摄影视角 2",
+            "height": 629,
+            "src": "/AIBTI/images/buildings/gallery/bld-munich-olympic-03.webp",
+            "width": 472
+          }
+        ],
+        "title": "慕尼黑奥林匹克公园屋顶",
+        "trigger": "看屋顶怎样覆盖一整片地形\n＋"
+      },
+      {
+        "index": 3,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "曼海姆多功能厅建筑摄影",
+            "height": 1169,
+            "src": "/AIBTI/images/buildings/multihalle-mannheim.webp",
+            "width": 1600
+          },
+          {
+            "alt": "曼海姆多功能厅补充建筑摄影视角 1",
+            "height": 1200,
+            "src": "/AIBTI/images/buildings/gallery/bld-multihalle-02.webp",
+            "width": 1370
+          }
+        ],
+        "title": "曼海姆多功能厅",
+        "trigger": "看细木条怎样组成巨大壳体\n＋"
+      },
+      {
+        "index": 4,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "日本馆 Expo 2000建筑摄影",
+            "height": 600,
+            "src": "/AIBTI/images/buildings/japan-pavilion-2000.webp",
+            "width": 800
+          },
+          {
+            "alt": "日本馆 Expo 2000补充建筑摄影视角 1",
+            "height": 1000,
+            "src": "/AIBTI/images/buildings/gallery/bld-japan-pavilion-2000-02.webp",
+            "width": 1481
+          },
+          {
+            "alt": "日本馆 Expo 2000补充建筑摄影视角 2",
+            "height": 1000,
+            "src": "/AIBTI/images/buildings/gallery/bld-japan-pavilion-2000-03.webp",
+            "width": 1481
+          }
+        ],
+        "title": "日本馆 Expo 2000",
+        "trigger": "打开建筑档案 ＋"
+      },
+      {
+        "index": 5,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "图瓦伊克宫建筑摄影",
+            "height": 960,
+            "src": "/AIBTI/images/buildings/tuwaiq-palace.webp",
+            "width": 1280
+          },
+          {
+            "alt": "图瓦伊克宫补充建筑摄影视角 1",
+            "height": 617,
+            "src": "/AIBTI/images/buildings/gallery/bld-tuwaiq-palace-02.webp",
+            "width": 1600
+          },
+          {
+            "alt": "图瓦伊克宫补充建筑摄影视角 2",
+            "height": 900,
+            "src": "/AIBTI/images/buildings/gallery/bld-tuwaiq-palace-03.webp",
+            "width": 1500
+          }
+        ],
+        "title": "图瓦伊克宫",
+        "trigger": "打开建筑档案 ＋"
+      }
+    ],
+    "slug": "span"
+  },
+  {
+    "dialogs": [
+      {
+        "index": 0,
+        "imageCount": 1,
+        "images": [
+          {
+            "alt": "弗兰克·劳埃德·赖特风格化肖像：白发、深色西装，一手托住太阳穴，背后是抽象流水别墅",
+            "height": 1000,
+            "src": "/AIBTI/images/architects-v2/wright.webp",
+            "width": 1200
+          }
+        ],
+        "title": "弗兰克·劳埃德·赖特",
+        "trigger": "打开人物档案，看方法怎么长出来\n＋"
+      },
+      {
+        "index": 1,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "流水别墅建筑摄影",
+            "height": 788,
+            "src": "/AIBTI/images/buildings/fallingwater.webp",
+            "width": 1200
+          },
+          {
+            "alt": "流水别墅补充建筑摄影视角 1",
+            "height": 1200,
+            "src": "/AIBTI/images/buildings/gallery/bld-fallingwater-02.webp",
+            "width": 1143
+          }
+        ],
+        "title": "流水别墅",
+        "trigger": "看房子为什么直接压在瀑布上\n＋"
+      },
+      {
+        "index": 2,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "罗比住宅建筑摄影",
+            "height": 1000,
+            "src": "/AIBTI/images/buildings/robie-house.webp",
+            "width": 1285
+          },
+          {
+            "alt": "罗比住宅补充建筑摄影视角 1",
+            "height": 508,
+            "src": "/AIBTI/images/buildings/gallery/bld-robie-02.webp",
+            "width": 1440
+          }
+        ],
+        "title": "罗比住宅",
+        "trigger": "看屋檐怎样把生活拉向草原\n＋"
+      },
+      {
+        "index": 3,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "西塔里埃森建筑摄影",
+            "height": 700,
+            "src": "/AIBTI/images/buildings/taliesin-west.webp",
+            "width": 1440
+          },
+          {
+            "alt": "西塔里埃森补充建筑摄影视角 1",
+            "height": 949,
+            "src": "/AIBTI/images/buildings/gallery/bld-taliesin-west-02.webp",
+            "width": 1440
+          }
+        ],
+        "title": "西塔里埃森",
+        "trigger": "看建筑怎样接受沙漠条件\n＋"
+      },
+      {
+        "index": 4,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "古根海姆博物馆建筑摄影",
+            "height": 540,
+            "src": "/AIBTI/images/buildings/guggenheim-new-york.jpg",
+            "width": 960
+          },
+          {
+            "alt": "古根海姆博物馆补充建筑摄影视角 1",
+            "height": 900,
+            "src": "/AIBTI/images/buildings/gallery/bld-guggenheim-02.webp",
+            "width": 1600
+          }
+        ],
+        "title": "古根海姆博物馆",
+        "trigger": "打开建筑档案 ＋"
+      },
+      {
+        "index": 5,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "约翰逊制蜡公司总部建筑摄影",
+            "height": 2044,
+            "src": "/AIBTI/images/buildings/johnson-wax.jpg",
+            "width": 3000
+          },
+          {
+            "alt": "约翰逊制蜡公司总部补充建筑摄影视角 1",
+            "height": 907,
+            "src": "/AIBTI/images/buildings/gallery/bld-johnson-wax-02.webp",
+            "width": 1440
+          }
+        ],
+        "title": "约翰逊制蜡公司总部",
+        "trigger": "打开建筑档案 ＋"
+      }
+    ],
+    "slug": "root"
+  },
+  {
+    "dialogs": [
+      {
+        "index": 0,
+        "imageCount": 1,
+        "images": [
+          {
+            "alt": "弗朗西斯·凯雷低多边形风格化肖像，完整头肩与双层屋顶背景",
+            "height": 1568,
+            "src": "/AIBTI/images/architects-v7-illustrated/francis-kere-illustrated-v1.webp",
+            "width": 1003
+          }
+        ],
+        "title": "弗朗西斯·凯雷",
+        "trigger": "打开人物档案，看方法怎么长出来\n＋"
+      },
+      {
+        "index": 1,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "甘多小学建筑摄影",
+            "height": 470,
+            "src": "/AIBTI/images/buildings/gando-primary-school.webp",
+            "width": 900
+          },
+          {
+            "alt": "甘多小学补充建筑摄影视角 1",
+            "height": 604,
+            "src": "/AIBTI/images/buildings/gallery/bld-gando-school-02.webp",
+            "width": 980
+          },
+          {
+            "alt": "甘多小学补充建筑摄影视角 2",
+            "height": 656,
+            "src": "/AIBTI/images/buildings/gallery/bld-gando-school-03.webp",
+            "width": 980
+          }
+        ],
+        "title": "甘多小学",
+        "trigger": "看两层屋顶怎样给教室降温\n＋"
+      },
+      {
+        "index": 2,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "施奥尔盖中学建筑摄影",
+            "height": 840,
+            "src": "/AIBTI/images/buildings/lycee-schorge.webp",
+            "width": 1121
+          },
+          {
+            "alt": "施奥尔盖中学补充建筑摄影视角 1",
+            "height": 1067,
+            "src": "/AIBTI/images/buildings/gallery/bld-lycee-schorge-02.webp",
+            "width": 1600
+          },
+          {
+            "alt": "施奥尔盖中学补充建筑摄影视角 2",
+            "height": 1066,
+            "src": "/AIBTI/images/buildings/gallery/bld-lycee-schorge-03.webp",
+            "width": 1600
+          }
+        ],
+        "title": "施奥尔盖中学",
+        "trigger": "看砖墙和风怎样一起上课\n＋"
+      },
+      {
+        "index": 3,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "蛇形画廊展亭 2017建筑摄影",
+            "height": 1066,
+            "src": "/AIBTI/images/buildings/serpentine-kere-2017.webp",
+            "width": 1600
+          },
+          {
+            "alt": "蛇形画廊展亭 2017补充建筑摄影视角 1",
+            "height": 1066,
+            "src": "/AIBTI/images/buildings/gallery/bld-serpentine-kere-02.webp",
+            "width": 1600
+          }
+        ],
+        "title": "蛇形画廊展亭 2017",
+        "trigger": "看临时展亭怎样像一棵公共树\n＋"
+      },
+      {
+        "index": 4,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "拉昂戈歌剧村建筑摄影",
+            "height": 480,
+            "src": "/AIBTI/images/buildings/opera-village-laongo.webp",
+            "width": 723
+          },
+          {
+            "alt": "拉昂戈歌剧村补充建筑摄影视角 1",
+            "height": 653,
+            "src": "/AIBTI/images/buildings/gallery/bld-opera-village-02.webp",
+            "width": 980
+          },
+          {
+            "alt": "拉昂戈歌剧村补充建筑摄影视角 2",
+            "height": 653,
+            "src": "/AIBTI/images/buildings/gallery/bld-opera-village-03.webp",
+            "width": 980
+          }
+        ],
+        "title": "拉昂戈歌剧村",
+        "trigger": "打开建筑档案 ＋"
+      },
+      {
+        "index": 5,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "Startup Lions 创业园建筑摄影",
+            "height": 470,
+            "src": "/AIBTI/images/buildings/startup-lions-campus.webp",
+            "width": 900
+          },
+          {
+            "alt": "Startup Lions 创业园补充建筑摄影视角 1",
+            "height": 1200,
+            "src": "/AIBTI/images/buildings/gallery/bld-startup-lions-02.webp",
+            "width": 901
+          },
+          {
+            "alt": "Startup Lions 创业园补充建筑摄影视角 2",
+            "height": 900,
+            "src": "/AIBTI/images/buildings/gallery/bld-startup-lions-03.webp",
+            "width": 1600
+          }
+        ],
+        "title": "Startup Lions 创业园",
+        "trigger": "打开建筑档案 ＋"
+      }
+    ],
+    "slug": "eave"
+  },
+  {
+    "dialogs": [
+      {
+        "index": 0,
+        "imageCount": 1,
+        "images": [
+          {
+            "alt": "俞孔坚低多边形风格化肖像，完整头肩与湿地水网背景",
+            "height": 1568,
+            "src": "/AIBTI/images/architects-v7-illustrated/kongjian-yu-illustrated-v1.webp",
+            "width": 1003
+          }
+        ],
+        "title": "俞孔坚 × 土人设计",
+        "trigger": "打开人物档案，看方法怎么长出来\n＋"
+      },
+      {
+        "index": 1,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "永宁江公园建筑摄影",
+            "height": 700,
+            "src": "/AIBTI/images/buildings/yongning-river-park.webp",
+            "width": 1050
+          },
+          {
+            "alt": "永宁江公园补充建筑摄影视角 1",
+            "height": 700,
+            "src": "/AIBTI/images/buildings/gallery/bld-yongning-river-02.webp",
+            "width": 1050
+          },
+          {
+            "alt": "永宁江公园补充建筑摄影视角 2",
+            "height": 700,
+            "src": "/AIBTI/images/buildings/gallery/bld-yongning-river-03.webp",
+            "width": 1050
+          }
+        ],
+        "title": "永宁江公园",
+        "trigger": "看公园怎样给洪水让路\n＋"
+      },
+      {
+        "index": 2,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "上海后滩公园建筑摄影",
+            "height": 700,
+            "src": "/AIBTI/images/buildings/shanghai-houtan-park.webp",
+            "width": 1048
+          },
+          {
+            "alt": "上海后滩公园补充建筑摄影视角 1",
+            "height": 700,
+            "src": "/AIBTI/images/buildings/gallery/bld-houtan-park-02.webp",
+            "width": 1050
+          },
+          {
+            "alt": "上海后滩公园补充建筑摄影视角 2",
+            "height": 499,
+            "src": "/AIBTI/images/buildings/gallery/bld-houtan-park-03.webp",
+            "width": 750
+          }
+        ],
+        "title": "上海后滩公园",
+        "trigger": "看工业岸线怎样变成净水系统\n＋"
+      },
+      {
+        "index": 3,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "群力雨洪公园建筑摄影",
+            "height": 700,
+            "src": "/AIBTI/images/buildings/qunli-stormwater-park.webp",
+            "width": 1050
+          },
+          {
+            "alt": "群力雨洪公园补充建筑摄影视角 1",
+            "height": 675,
+            "src": "/AIBTI/images/buildings/gallery/bld-qunli-park-02.webp",
+            "width": 1200
+          }
+        ],
+        "title": "群力雨洪公园",
+        "trigger": "看城市低地怎样变成雨洪公园\n＋"
+      },
+      {
+        "index": 4,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "燕尾洲公园建筑摄影",
+            "height": 632,
+            "src": "/AIBTI/images/buildings/yanweizhou-park.webp",
+            "width": 1280
+          },
+          {
+            "alt": "燕尾洲公园补充建筑摄影视角 1",
+            "height": 708,
+            "src": "/AIBTI/images/buildings/gallery/bld-yanweizhou-02.webp",
+            "width": 1200
+          },
+          {
+            "alt": "燕尾洲公园补充建筑摄影视角 2",
+            "height": 640,
+            "src": "/AIBTI/images/buildings/gallery/bld-yanweizhou-03.webp",
+            "width": 960
+          }
+        ],
+        "title": "燕尾洲公园",
+        "trigger": "打开建筑档案 ＋"
+      },
+      {
+        "index": 5,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "中山岐江公园建筑摄影",
+            "height": 960,
+            "src": "/AIBTI/images/buildings/zhongshan-shipyard-park.webp",
+            "width": 1280
+          },
+          {
+            "alt": "中山岐江公园补充建筑摄影视角 1",
+            "height": 675,
+            "src": "/AIBTI/images/buildings/gallery/bld-zhongshan-shipyard-02.webp",
+            "width": 1200
+          },
+          {
+            "alt": "中山岐江公园补充建筑摄影视角 2",
+            "height": 1046,
+            "src": "/AIBTI/images/buildings/gallery/bld-zhongshan-shipyard-03.webp",
+            "width": 1600
+          }
+        ],
+        "title": "中山岐江公园",
+        "trigger": "打开建筑档案 ＋"
+      }
+    ],
+    "slug": "tide"
+  },
+  {
+    "dialogs": [
+      {
+        "index": 0,
+        "imageCount": 1,
+        "images": [
+          {
+            "alt": "勒·柯布西耶风格化肖像：光头、黑色圆框眼镜与深色领结，背后是抽象马赛公寓",
+            "height": 1000,
+            "src": "/AIBTI/images/architects-v2/le-corbusier.webp",
+            "width": 1200
+          }
+        ],
+        "title": "勒·柯布西耶",
+        "trigger": "打开人物档案，看方法怎么长出来\n＋"
+      },
+      {
+        "index": 1,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "马赛公寓建筑摄影",
+            "height": 400,
+            "src": "/AIBTI/images/buildings/unite-habitation.webp",
+            "width": 400
+          },
+          {
+            "alt": "马赛公寓补充建筑摄影视角 1",
+            "height": 800,
+            "src": "/AIBTI/images/buildings/gallery/bld-unite-02.webp",
+            "width": 600
+          },
+          {
+            "alt": "马赛公寓补充建筑摄影视角 2",
+            "height": 800,
+            "src": "/AIBTI/images/buildings/gallery/bld-unite-03.webp",
+            "width": 1200
+          }
+        ],
+        "title": "马赛公寓",
+        "trigger": "看一栋楼怎样装下一座城\n＋"
+      },
+      {
+        "index": 2,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "拉图雷特修道院建筑摄影",
+            "height": 400,
+            "src": "/AIBTI/images/buildings/la-tourette.webp",
+            "width": 400
+          },
+          {
+            "alt": "拉图雷特修道院补充建筑摄影视角 1",
+            "height": 596,
+            "src": "/AIBTI/images/buildings/gallery/bld-la-tourette-02.webp",
+            "width": 900
+          },
+          {
+            "alt": "拉图雷特修道院补充建筑摄影视角 2",
+            "height": 599,
+            "src": "/AIBTI/images/buildings/gallery/bld-la-tourette-03.webp",
+            "width": 900
+          }
+        ],
+        "title": "拉图雷特修道院",
+        "trigger": "看修道院怎样把光压进墙里\n＋"
+      },
+      {
+        "index": 3,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "昌迪加尔议会建筑群建筑摄影",
+            "height": 602,
+            "src": "/AIBTI/images/buildings/chandigarh.webp",
+            "width": 1440
+          },
+          {
+            "alt": "昌迪加尔议会建筑群补充建筑摄影视角 1",
+            "height": 720,
+            "src": "/AIBTI/images/buildings/gallery/bld-chandigarh-02.webp",
+            "width": 1280
+          },
+          {
+            "alt": "昌迪加尔议会建筑群补充建筑摄影视角 2",
+            "height": 900,
+            "src": "/AIBTI/images/buildings/gallery/bld-chandigarh-03.webp",
+            "width": 1600
+          }
+        ],
+        "title": "昌迪加尔议会建筑群",
+        "trigger": "看巨大几何怎样组织国家空间\n＋"
+      },
+      {
+        "index": 4,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "萨伏伊别墅建筑摄影",
+            "height": 1080,
+            "src": "/AIBTI/images/buildings/villa-savoye.jpg",
+            "width": 1920
+          },
+          {
+            "alt": "萨伏伊别墅补充建筑摄影视角 1",
+            "height": 800,
+            "src": "/AIBTI/images/buildings/gallery/bld-villa-savoye-02.webp",
+            "width": 600
+          },
+          {
+            "alt": "萨伏伊别墅补充建筑摄影视角 2",
+            "height": 800,
+            "src": "/AIBTI/images/buildings/gallery/bld-villa-savoye-03.webp",
+            "width": 600
+          }
+        ],
+        "title": "萨伏伊别墅",
+        "trigger": "打开建筑档案 ＋"
+      },
+      {
+        "index": 5,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "朗香教堂建筑摄影",
+            "height": 720,
+            "src": "/AIBTI/images/buildings/ronchamp.jpg",
+            "width": 1280
+          },
+          {
+            "alt": "朗香教堂补充建筑摄影视角 1",
+            "height": 720,
+            "src": "/AIBTI/images/buildings/gallery/bld-ronchamp-02.webp",
+            "width": 1280
+          },
+          {
+            "alt": "朗香教堂补充建筑摄影视角 2",
+            "height": 798,
+            "src": "/AIBTI/images/buildings/gallery/bld-ronchamp-03.webp",
+            "width": 1064
+          }
+        ],
+        "title": "朗香教堂",
+        "trigger": "打开建筑档案 ＋"
+      }
+    ],
+    "slug": "mass"
+  },
+  {
+    "dialogs": [
+      {
+        "index": 0,
+        "imageCount": 1,
+        "images": [
+          {
+            "alt": "安藤忠雄风格化肖像：黑色直发、深色外套与高白领，背后是光之教堂的十字形开口",
+            "height": 1000,
+            "src": "/AIBTI/images/architects-v2/ando.webp",
+            "width": 1200
+          }
+        ],
+        "title": "安藤忠雄",
+        "trigger": "打开人物档案，看方法怎么长出来\n＋"
+      },
+      {
+        "index": 1,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "光之教堂建筑摄影",
+            "height": 803,
+            "src": "/AIBTI/images/buildings/church-light.webp",
+            "width": 1070
+          },
+          {
+            "alt": "光之教堂内部十字形开口把自然光切入混凝土空间",
+            "height": 1280,
+            "src": "/AIBTI/images/void-v2/works/details/church-light-detail-cross.webp",
+            "width": 960
+          },
+          {
+            "alt": "光之教堂外部清水混凝土墙与十字形开口",
+            "height": 600,
+            "src": "/AIBTI/images/void-v2/works/details/church-light-exterior.webp",
+            "width": 800
+          }
+        ],
+        "title": "光之教堂",
+        "trigger": "看光怎么接管整个空间\n＋"
+      },
+      {
+        "index": 2,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "地中美术馆建筑摄影",
+            "height": 550,
+            "src": "/AIBTI/images/buildings/chichu-art-museum.webp",
+            "width": 1366
+          },
+          {
+            "alt": "地中美术馆被树木与地形遮蔽的入口路径",
+            "height": 640,
+            "src": "/AIBTI/images/void-v2/works/details/chichu-entry.webp",
+            "width": 960
+          },
+          {
+            "alt": "地中美术馆的地下几何空间与自然光",
+            "height": 550,
+            "src": "/AIBTI/images/void-v2/works/details/chichu-art-museum.webp",
+            "width": 1366
+          }
+        ],
+        "title": "地中美术馆",
+        "trigger": "看建筑怎么靠藏起来出场\n＋"
+      },
+      {
+        "index": 3,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "水御堂建筑摄影",
+            "height": 960,
+            "src": "/AIBTI/images/buildings/water-temple.webp",
+            "width": 1440
+          },
+          {
+            "alt": "水御堂椭圆荷花池与水面边界",
+            "height": 741,
+            "src": "/AIBTI/images/void-v2/works/details/water-temple-pond.webp",
+            "width": 1120
+          },
+          {
+            "alt": "水御堂地下朱红礼拜空间",
+            "height": 795,
+            "src": "/AIBTI/images/void-v2/works/details/water-temple-interior.webp",
+            "width": 1120
+          }
+        ],
+        "title": "水御堂",
+        "trigger": "看入口为什么藏在水下\n＋"
+      },
+      {
+        "index": 4,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "沃思堡现代艺术博物馆建筑摄影",
+            "height": 529,
+            "src": "/AIBTI/images/buildings/modern-fort-worth.jpg",
+            "width": 960
+          },
+          {
+            "alt": "沃思堡现代艺术博物馆补充建筑摄影视角 1",
+            "height": 900,
+            "src": "/AIBTI/images/buildings/gallery/bld-modern-fort-worth-02.webp",
+            "width": 1600
+          }
+        ],
+        "title": "沃思堡现代艺术博物馆",
+        "trigger": "打开建筑档案 ＋"
+      },
+      {
+        "index": 5,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "21_21 DESIGN SIGHT建筑摄影",
+            "height": 320,
+            "src": "/AIBTI/images/buildings/2121-design-sight.jpg",
+            "width": 1280
+          },
+          {
+            "alt": "21_21 DESIGN SIGHT补充建筑摄影视角 1",
+            "height": 989,
+            "src": "/AIBTI/images/buildings/gallery/bld-2121-02.webp",
+            "width": 1600
+          },
+          {
+            "alt": "21_21 DESIGN SIGHT补充建筑摄影视角 2",
+            "height": 857,
+            "src": "/AIBTI/images/buildings/gallery/bld-2121-03.webp",
+            "width": 1600
+          }
+        ],
+        "title": "21_21 DESIGN SIGHT",
+        "trigger": "打开建筑档案 ＋"
+      }
+    ],
+    "slug": "void"
+  },
+  {
+    "dialogs": [
+      {
+        "index": 0,
+        "imageCount": 1,
+        "images": [
+          {
+            "alt": "路易斯·康低多边形风格化肖像，完整头肩与圆形开口背景",
+            "height": 1402,
+            "src": "/AIBTI/images/architects-v7-illustrated/louis-kahn-illustrated-v1.webp",
+            "width": 1122
+          }
+        ],
+        "title": "路易斯·康",
+        "trigger": "打开人物档案，看方法怎么长出来\n＋"
+      },
+      {
+        "index": 1,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "索尔克研究所建筑摄影",
+            "height": 767,
+            "src": "/AIBTI/images/buildings/salk-institute.webp",
+            "width": 767
+          },
+          {
+            "alt": "索尔克研究所补充建筑摄影视角 1",
+            "height": 821,
+            "src": "/AIBTI/images/buildings/gallery/bld-salk-02.webp",
+            "width": 1024
+          },
+          {
+            "alt": "索尔克研究所补充建筑摄影视角 2",
+            "height": 618,
+            "src": "/AIBTI/images/buildings/gallery/bld-salk-03.webp",
+            "width": 800
+          }
+        ],
+        "title": "索尔克研究所",
+        "trigger": "看一条水线怎样把研究所刻进海岸\n＋"
+      },
+      {
+        "index": 2,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "金贝尔艺术博物馆建筑摄影",
+            "height": 578,
+            "src": "/AIBTI/images/buildings/kimbell-art-museum.webp",
+            "width": 1140
+          },
+          {
+            "alt": "金贝尔艺术博物馆补充建筑摄影视角 1",
+            "height": 647,
+            "src": "/AIBTI/images/buildings/gallery/bld-kimbell-02.webp",
+            "width": 1600
+          },
+          {
+            "alt": "金贝尔艺术博物馆补充建筑摄影视角 2",
+            "height": 1068,
+            "src": "/AIBTI/images/buildings/gallery/bld-kimbell-03.webp",
+            "width": 1600
+          }
+        ],
+        "title": "金贝尔艺术博物馆",
+        "trigger": "看自然光怎样在拱顶里慢慢铺开\n＋"
+      },
+      {
+        "index": 3,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "孟加拉国国民议会大厦建筑摄影",
+            "height": 1155,
+            "src": "/AIBTI/images/buildings/bangladesh-parliament.webp",
+            "width": 1540
+          },
+          {
+            "alt": "孟加拉国国民议会大厦补充建筑摄影视角 1",
+            "height": 566,
+            "src": "/AIBTI/images/buildings/gallery/bld-bangladesh-parliament-02.webp",
+            "width": 850
+          }
+        ],
+        "title": "孟加拉国国民议会大厦",
+        "trigger": "看巨大几何怎样围出国家中心\n＋"
+      },
+      {
+        "index": 4,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "菲利普斯埃克塞特图书馆建筑摄影",
+            "height": 788,
+            "src": "/AIBTI/images/buildings/exeter-library.webp",
+            "width": 1280
+          },
+          {
+            "alt": "菲利普斯埃克塞特图书馆补充建筑摄影视角 1",
+            "height": 950,
+            "src": "/AIBTI/images/buildings/gallery/bld-exeter-library-02.webp",
+            "width": 712
+          },
+          {
+            "alt": "菲利普斯埃克塞特图书馆补充建筑摄影视角 2",
+            "height": 1000,
+            "src": "/AIBTI/images/buildings/gallery/bld-exeter-library-03.webp",
+            "width": 800
+          }
+        ],
+        "title": "菲利普斯埃克塞特图书馆",
+        "trigger": "打开建筑档案 ＋"
+      },
+      {
+        "index": 5,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "印度管理学院艾哈迈达巴德校区建筑摄影",
+            "height": 720,
+            "src": "/AIBTI/images/buildings/iim-ahmedabad.webp",
+            "width": 1280
+          },
+          {
+            "alt": "印度管理学院艾哈迈达巴德校区补充建筑摄影视角 1",
+            "height": 531,
+            "src": "/AIBTI/images/buildings/gallery/bld-iim-ahmedabad-02.webp",
+            "width": 1600
+          },
+          {
+            "alt": "印度管理学院艾哈迈达巴德校区补充建筑摄影视角 2",
+            "height": 800,
+            "src": "/AIBTI/images/buildings/gallery/bld-iim-ahmedabad-03.webp",
+            "width": 1200
+          }
+        ],
+        "title": "印度管理学院艾哈迈达巴德校区",
+        "trigger": "打开建筑档案 ＋"
+      }
+    ],
+    "slug": "ruin"
+  },
+  {
+    "dialogs": [
+      {
+        "index": 0,
+        "imageCount": 1,
+        "images": [
+          {
+            "alt": "丹尼斯·斯科特·布朗与罗伯特·文丘里低多边形双人肖像，两人完整并列入镜",
+            "height": 1568,
+            "src": "/AIBTI/images/architects-v7-illustrated/venturi-scott-brown-illustrated-v1.webp",
+            "width": 1003
+          }
+        ],
+        "title": "文丘里 × 斯科特·布朗",
+        "trigger": "打开人物档案，看方法怎么长出来\n＋"
+      },
+      {
+        "index": 1,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "范娜·文丘里住宅建筑摄影",
+            "height": 1200,
+            "src": "/AIBTI/images/buildings/vanna-venturi-house.webp",
+            "width": 1535
+          },
+          {
+            "alt": "范娜·文丘里住宅补充建筑摄影视角 1",
+            "height": 800,
+            "src": "/AIBTI/images/buildings/gallery/bld-vanna-venturi-02.webp",
+            "width": 1200
+          },
+          {
+            "alt": "范娜·文丘里住宅补充建筑摄影视角 2",
+            "height": 1000,
+            "src": "/AIBTI/images/buildings/gallery/bld-vanna-venturi-03.webp",
+            "width": 1500
+          }
+        ],
+        "title": "范娜·文丘里住宅",
+        "trigger": "看普通房子哪里开始唱反调\n＋"
+      },
+      {
+        "index": 2,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "吉尔德之家建筑摄影",
+            "height": 401,
+            "src": "/AIBTI/images/buildings/guild-house.webp",
+            "width": 535
+          },
+          {
+            "alt": "吉尔德之家补充建筑摄影视角 1",
+            "height": 483,
+            "src": "/AIBTI/images/buildings/gallery/bld-guild-house-02.webp",
+            "width": 800
+          },
+          {
+            "alt": "吉尔德之家补充建筑摄影视角 2",
+            "height": 590,
+            "src": "/AIBTI/images/buildings/gallery/bld-guild-house-03.webp",
+            "width": 800
+          }
+        ],
+        "title": "吉尔德之家",
+        "trigger": "看养老住宅为什么认真举起电视天线\n＋"
+      },
+      {
+        "index": 3,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "国家美术馆塞恩斯伯里翼建筑摄影",
+            "height": 1100,
+            "src": "/AIBTI/images/buildings/sainsbury-wing.webp",
+            "width": 1432
+          },
+          {
+            "alt": "国家美术馆塞恩斯伯里翼补充建筑摄影视角 1",
+            "height": 566,
+            "src": "/AIBTI/images/buildings/gallery/bld-sainsbury-wing-02.webp",
+            "width": 533
+          },
+          {
+            "alt": "国家美术馆塞恩斯伯里翼补充建筑摄影视角 2",
+            "height": 536,
+            "src": "/AIBTI/images/buildings/gallery/bld-sainsbury-wing-03.webp",
+            "width": 1024
+          }
+        ],
+        "title": "国家美术馆塞恩斯伯里翼",
+        "trigger": "看新馆怎样先向老馆打招呼\n＋"
+      },
+      {
+        "index": 4,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "圣迭戈当代艺术博物馆扩建建筑摄影",
+            "height": 960,
+            "src": "/AIBTI/images/buildings/mcasd-la-jolla.webp",
+            "width": 1280
+          },
+          {
+            "alt": "圣迭戈当代艺术博物馆扩建补充建筑摄影视角 1",
+            "height": 1022,
+            "src": "/AIBTI/images/buildings/gallery/bld-mcasd-02.webp",
+            "width": 1600
+          }
+        ],
+        "title": "圣迭戈当代艺术博物馆扩建",
+        "trigger": "打开建筑档案 ＋"
+      },
+      {
+        "index": 5,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "艾伦纪念艺术博物馆扩建建筑摄影",
+            "height": 960,
+            "src": "/AIBTI/images/buildings/allen-memorial-museum.webp",
+            "width": 1280
+          },
+          {
+            "alt": "艾伦纪念艺术博物馆扩建补充建筑摄影视角 1",
+            "height": 598,
+            "src": "/AIBTI/images/buildings/gallery/bld-allen-memorial-02.webp",
+            "width": 900
+          }
+        ],
+        "title": "艾伦纪念艺术博物馆扩建",
+        "trigger": "打开建筑档案 ＋"
+      }
+    ],
+    "slug": "sign"
+  },
+  {
+    "dialogs": [
+      {
+        "index": 0,
+        "imageCount": 1,
+        "images": [
+          {
+            "alt": "诺曼·福斯特风格化肖像：银灰短发、浅蓝衬衫，双臂交叠站在汇丰总行抽象桁架前",
+            "height": 1000,
+            "src": "/AIBTI/images/architects-v2/foster.webp",
+            "width": 1200
+          }
+        ],
+        "title": "诺曼·福斯特",
+        "trigger": "打开人物档案，看方法怎么长出来\n＋"
+      },
+      {
+        "index": 1,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "香港汇丰总行大厦建筑摄影",
+            "height": 1000,
+            "src": "/AIBTI/images/buildings/hsbc-hong-kong.webp",
+            "width": 811
+          },
+          {
+            "alt": "香港汇丰总行大厦补充建筑摄影视角 1",
+            "height": 1200,
+            "src": "/AIBTI/images/buildings/gallery/bld-hsbc-02.webp",
+            "width": 829
+          }
+        ],
+        "title": "香港汇丰总行大厦",
+        "trigger": "看楼层为什么从桁架上吊下来\n＋"
+      },
+      {
+        "index": 2,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "德国国会大厦改造建筑摄影",
+            "height": 641,
+            "src": "/AIBTI/images/buildings/reichstag.webp",
+            "width": 1440
+          },
+          {
+            "alt": "德国国会大厦改造补充建筑摄影视角 1",
+            "height": 1200,
+            "src": "/AIBTI/images/buildings/gallery/bld-reichstag-02.webp",
+            "width": 1600
+          }
+        ],
+        "title": "德国国会大厦改造",
+        "trigger": "看玻璃穹顶怎样接回旧建筑\n＋"
+      },
+      {
+        "index": 3,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "赫斯特大厦建筑摄影",
+            "height": 1000,
+            "src": "/AIBTI/images/buildings/hearst-tower.webp",
+            "width": 750
+          },
+          {
+            "alt": "赫斯特大厦补充建筑摄影视角 1",
+            "height": 680,
+            "src": "/AIBTI/images/buildings/gallery/bld-hearst-02.webp",
+            "width": 1020
+          },
+          {
+            "alt": "赫斯特大厦补充建筑摄影视角 2",
+            "height": 1016,
+            "src": "/AIBTI/images/buildings/gallery/bld-hearst-03.webp",
+            "width": 780
+          }
+        ],
+        "title": "赫斯特大厦",
+        "trigger": "看新塔怎样从旧楼里长出来\n＋"
+      },
+      {
+        "index": 4,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "圣玛丽斧街 30 号建筑摄影",
+            "height": 1800,
+            "src": "/AIBTI/images/buildings/30-st-mary-axe.jpg",
+            "width": 1800
+          },
+          {
+            "alt": "圣玛丽斧街 30 号补充建筑摄影视角 1",
+            "height": 1000,
+            "src": "/AIBTI/images/buildings/gallery/bld-30-st-mary-02.webp",
+            "width": 562
+          }
+        ],
+        "title": "圣玛丽斧街 30 号",
+        "trigger": "打开建筑档案 ＋"
+      },
+      {
+        "index": 5,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "米约高架桥建筑摄影",
+            "height": 681,
+            "src": "/AIBTI/images/buildings/millau-viaduct.jpg",
+            "width": 1024
+          },
+          {
+            "alt": "米约高架桥补充建筑摄影视角 1",
+            "height": 1070,
+            "src": "/AIBTI/images/buildings/gallery/bld-millau-02.webp",
+            "width": 1600
+          },
+          {
+            "alt": "米约高架桥补充建筑摄影视角 2",
+            "height": 565,
+            "src": "/AIBTI/images/buildings/gallery/bld-millau-03.webp",
+            "width": 810
+          }
+        ],
+        "title": "米约高架桥",
+        "trigger": "打开建筑档案 ＋"
+      }
+    ],
+    "slug": "tech"
+  },
+  {
+    "dialogs": [
+      {
+        "index": 0,
+        "imageCount": 1,
+        "images": [
+          {
+            "alt": "妹岛和世与西泽立卫低多边形双人肖像，两人完整并列入镜",
+            "height": 1568,
+            "src": "/AIBTI/images/architects-v7-illustrated/sanaa-illustrated-v1.webp",
+            "width": 1003
+          }
+        ],
+        "title": "妹岛和世 × 西泽立卫",
+        "trigger": "打开人物档案，看方法怎么长出来\n＋"
+      },
+      {
+        "index": 1,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "金泽 21 世纪美术馆建筑摄影",
+            "height": 900,
+            "src": "/AIBTI/images/buildings/kanazawa-21.webp",
+            "width": 1600
+          },
+          {
+            "alt": "金泽 21 世纪美术馆补充建筑摄影视角 1",
+            "height": 600,
+            "src": "/AIBTI/images/buildings/gallery/bld-kanazawa-21-02.webp",
+            "width": 916
+          }
+        ],
+        "title": "金泽 21 世纪美术馆",
+        "trigger": "看圆形美术馆为什么没有唯一正门\n＋"
+      },
+      {
+        "index": 2,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "劳力士学习中心建筑摄影",
+            "height": 789,
+            "src": "/AIBTI/images/buildings/rolex-learning-center.webp",
+            "width": 1000
+          },
+          {
+            "alt": "劳力士学习中心补充建筑摄影视角 1",
+            "height": 900,
+            "src": "/AIBTI/images/buildings/gallery/bld-rolex-learning-02.webp",
+            "width": 1600
+          },
+          {
+            "alt": "劳力士学习中心补充建筑摄影视角 2",
+            "height": 900,
+            "src": "/AIBTI/images/buildings/gallery/bld-rolex-learning-03.webp",
+            "width": 1600
+          }
+        ],
+        "title": "劳力士学习中心",
+        "trigger": "看连续曲面怎样容纳学习生活\n＋"
+      },
+      {
+        "index": 3,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "卢浮宫朗斯分馆建筑摄影",
+            "height": 550,
+            "src": "/AIBTI/images/buildings/louvre-lens.webp",
+            "width": 1100
+          },
+          {
+            "alt": "卢浮宫朗斯分馆补充建筑摄影视角 1",
+            "height": 481,
+            "src": "/AIBTI/images/buildings/gallery/bld-louvre-lens-02.webp",
+            "width": 961
+          },
+          {
+            "alt": "卢浮宫朗斯分馆补充建筑摄影视角 2",
+            "height": 619,
+            "src": "/AIBTI/images/buildings/gallery/bld-louvre-lens-03.webp",
+            "width": 1024
+          }
+        ],
+        "title": "卢浮宫朗斯分馆",
+        "trigger": "看低矮体量怎样把公园带进美术馆\n＋"
+      },
+      {
+        "index": 4,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "纽约新当代艺术博物馆建筑摄影",
+            "height": 1600,
+            "src": "/AIBTI/images/buildings/new-museum-nyc.webp",
+            "width": 1200
+          },
+          {
+            "alt": "纽约新当代艺术博物馆补充建筑摄影视角 1",
+            "height": 682,
+            "src": "/AIBTI/images/buildings/gallery/bld-new-museum-02.webp",
+            "width": 800
+          }
+        ],
+        "title": "纽约新当代艺术博物馆",
+        "trigger": "打开建筑档案 ＋"
+      },
+      {
+        "index": 5,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "蛇形画廊展亭 2009建筑摄影",
+            "height": 960,
+            "src": "/AIBTI/images/buildings/serpentine-sanaa-2009.webp",
+            "width": 1280
+          },
+          {
+            "alt": "蛇形画廊展亭 2009补充建筑摄影视角 1",
+            "height": 599,
+            "src": "/AIBTI/images/buildings/gallery/bld-serpentine-sanaa-02.webp",
+            "width": 900
+          },
+          {
+            "alt": "蛇形画廊展亭 2009补充建筑摄影视角 2",
+            "height": 599,
+            "src": "/AIBTI/images/buildings/gallery/bld-serpentine-sanaa-03.webp",
+            "width": 900
+          }
+        ],
+        "title": "蛇形画廊展亭 2009",
+        "trigger": "打开建筑档案 ＋"
+      }
+    ],
+    "slug": "veil"
+  },
+  {
+    "dialogs": [
+      {
+        "index": 0,
+        "imageCount": 1,
+        "images": [
+          {
+            "alt": "扎哈·哈迪德风格化肖像：深色长发与黑色外套，背后是海达尔·阿利耶夫中心的抽象曲线",
+            "height": 1000,
+            "src": "/AIBTI/images/architects-v2/zaha.webp",
+            "width": 1200
+          }
+        ],
+        "title": "扎哈·哈迪德",
+        "trigger": "打开人物档案，看方法怎么长出来\n＋"
+      },
+      {
+        "index": 1,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "盖达尔·阿利耶夫中心建筑摄影",
+            "height": 848,
+            "src": "/AIBTI/images/buildings/heydar-aliyev-centre.webp",
+            "width": 1440
+          },
+          {
+            "alt": "盖达尔·阿利耶夫中心补充建筑摄影视角 1",
+            "height": 809,
+            "src": "/AIBTI/images/buildings/gallery/bld-heydar-02.webp",
+            "width": 1600
+          },
+          {
+            "alt": "盖达尔·阿利耶夫中心补充建筑摄影视角 2",
+            "height": 1200,
+            "src": "/AIBTI/images/buildings/gallery/bld-heydar-03.webp",
+            "width": 1516
+          }
+        ],
+        "title": "盖达尔·阿利耶夫中心",
+        "trigger": "看建筑怎样从广场连续长起\n＋"
+      },
+      {
+        "index": 2,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "MAXXI 国立二十一世纪艺术博物馆建筑摄影",
+            "height": 1000,
+            "src": "/AIBTI/images/buildings/maxxi.webp",
+            "width": 1371
+          },
+          {
+            "alt": "MAXXI 国立二十一世纪艺术博物馆补充建筑摄影视角 1",
+            "height": 1200,
+            "src": "/AIBTI/images/buildings/gallery/bld-maxxi-02.webp",
+            "width": 800
+          },
+          {
+            "alt": "MAXXI 国立二十一世纪艺术博物馆补充建筑摄影视角 2",
+            "height": 1200,
+            "src": "/AIBTI/images/buildings/gallery/bld-maxxi-03.webp",
+            "width": 800
+          }
+        ],
+        "title": "MAXXI 国立二十一世纪艺术博物馆",
+        "trigger": "看黑色路径怎样穿过美术馆\n＋"
+      },
+      {
+        "index": 3,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "北京大兴国际机场建筑摄影",
+            "height": 960,
+            "src": "/AIBTI/images/buildings/beijing-daxing.webp",
+            "width": 1440
+          },
+          {
+            "alt": "北京大兴国际机场补充建筑摄影视角 1",
+            "height": 667,
+            "src": "/AIBTI/images/buildings/gallery/bld-daxing-02.webp",
+            "width": 700
+          },
+          {
+            "alt": "北京大兴国际机场补充建筑摄影视角 2",
+            "height": 1200,
+            "src": "/AIBTI/images/buildings/gallery/bld-daxing-03.webp",
+            "width": 1441
+          }
+        ],
+        "title": "北京大兴国际机场",
+        "trigger": "看机场怎样把巨大人流压缩成一个中心\n＋"
+      },
+      {
+        "index": 4,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "伦敦水上运动中心建筑摄影",
+            "height": 900,
+            "src": "/AIBTI/images/buildings/london-aquatics-centre.jpg",
+            "width": 1280
+          },
+          {
+            "alt": "伦敦水上运动中心补充建筑摄影视角 1",
+            "height": 539,
+            "src": "/AIBTI/images/buildings/gallery/bld-london-aquatics-02.webp",
+            "width": 959
+          }
+        ],
+        "title": "伦敦水上运动中心",
+        "trigger": "打开建筑档案 ＋"
+      },
+      {
+        "index": 5,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "广州大剧院建筑摄影",
+            "height": 680,
+            "src": "/AIBTI/images/buildings/guangzhou-opera-house.jpg",
+            "width": 1314
+          },
+          {
+            "alt": "广州大剧院补充建筑摄影视角 1",
+            "height": 708,
+            "src": "/AIBTI/images/buildings/gallery/bld-guangzhou-opera-02.webp",
+            "width": 1600
+          },
+          {
+            "alt": "广州大剧院补充建筑摄影视角 2",
+            "height": 459,
+            "src": "/AIBTI/images/buildings/gallery/bld-guangzhou-opera-03.webp",
+            "width": 818
+          }
+        ],
+        "title": "广州大剧院",
+        "trigger": "打开建筑档案 ＋"
+      }
+    ],
+    "slug": "flow"
+  },
+  {
+    "dialogs": [
+      {
+        "index": 0,
+        "imageCount": 1,
+        "images": [
+          {
+            "alt": "安妮·拉卡通与让-菲利普·瓦萨尔低多边形双人肖像，两人完整并列入镜",
+            "height": 1402,
+            "src": "/AIBTI/images/architects-v7-illustrated/lacaton-vassal-illustrated-v1.webp",
+            "width": 1122
+          }
+        ],
+        "title": "拉卡通 × 瓦萨尔",
+        "trigger": "打开人物档案，看方法怎么长出来\n＋"
+      },
+      {
+        "index": 1,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "Bois-le-Prêtre 塔楼改造建筑摄影",
+            "height": 1063,
+            "src": "/AIBTI/images/buildings/tour-bois-le-pretre.webp",
+            "width": 1600
+          },
+          {
+            "alt": "Bois-le-Prêtre 塔楼改造补充建筑摄影视角 1",
+            "height": 724,
+            "src": "/AIBTI/images/buildings/gallery/bld-tour-bois-02.webp",
+            "width": 1024
+          }
+        ],
+        "title": "Bois-le-Prêtre 塔楼改造",
+        "trigger": "看旧塔楼怎样多出一层生活\n＋"
+      },
+      {
+        "index": 2,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "波尔多大公园住宅改造建筑摄影",
+            "height": 1049,
+            "src": "/AIBTI/images/buildings/grand-parc-bordeaux.webp",
+            "width": 1600
+          },
+          {
+            "alt": "波尔多大公园住宅改造补充建筑摄影视角 1",
+            "height": 667,
+            "src": "/AIBTI/images/buildings/gallery/bld-grand-parc-02.webp",
+            "width": 1000
+          }
+        ],
+        "title": "波尔多大公园住宅改造",
+        "trigger": "看五百多户怎样在不拆除中升级\n＋"
+      },
+      {
+        "index": 3,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "巴黎东京宫改造建筑摄影",
+            "height": 811,
+            "src": "/AIBTI/images/buildings/palais-de-tokyo.webp",
+            "width": 1024
+          },
+          {
+            "alt": "巴黎东京宫改造补充建筑摄影视角 1",
+            "height": 697,
+            "src": "/AIBTI/images/buildings/gallery/bld-palais-tokyo-02.webp",
+            "width": 1200
+          }
+        ],
+        "title": "巴黎东京宫改造",
+        "trigger": "看美术馆为什么保留粗糙和未完成\n＋"
+      },
+      {
+        "index": 4,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "敦刻尔克 FRAC建筑摄影",
+            "height": 1067,
+            "src": "/AIBTI/images/buildings/frac-dunkirk.webp",
+            "width": 1600
+          },
+          {
+            "alt": "敦刻尔克 FRAC补充建筑摄影视角 1",
+            "height": 800,
+            "src": "/AIBTI/images/buildings/gallery/bld-frac-dunkirk-02.webp",
+            "width": 1200
+          }
+        ],
+        "title": "敦刻尔克 FRAC",
+        "trigger": "打开建筑档案 ＋"
+      },
+      {
+        "index": 5,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "南特建筑学院建筑摄影",
+            "height": 854,
+            "src": "/AIBTI/images/buildings/nantes-school-architecture.webp",
+            "width": 1280
+          },
+          {
+            "alt": "南特建筑学院补充建筑摄影视角 1",
+            "height": 680,
+            "src": "/AIBTI/images/buildings/gallery/bld-nantes-arch-02.webp",
+            "width": 1024
+          }
+        ],
+        "title": "南特建筑学院",
+        "trigger": "打开建筑档案 ＋"
+      }
+    ],
+    "slug": "plus"
+  },
+  {
+    "dialogs": [
+      {
+        "index": 0,
+        "imageCount": 1,
+        "images": [
+          {
+            "alt": "雷姆·库哈斯低多边形风格化肖像，完整头肩与叠合剖面背景",
+            "height": 1568,
+            "src": "/AIBTI/images/architects-v7-illustrated/rem-koolhaas-illustrated-v1.webp",
+            "width": 1003
+          }
+        ],
+        "title": "雷姆·库哈斯 × OMA",
+        "trigger": "打开人物档案，看方法怎么长出来\n＋"
+      },
+      {
+        "index": 1,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "西雅图中央图书馆建筑摄影",
+            "height": 1200,
+            "src": "/AIBTI/images/buildings/seattle-central-library.webp",
+            "width": 1510
+          },
+          {
+            "alt": "西雅图中央图书馆补充建筑摄影视角 1",
+            "height": 1200,
+            "src": "/AIBTI/images/buildings/gallery/bld-seattle-library-02.webp",
+            "width": 1506
+          },
+          {
+            "alt": "西雅图中央图书馆补充建筑摄影视角 2",
+            "height": 1200,
+            "src": "/AIBTI/images/buildings/gallery/bld-seattle-library-03.webp",
+            "width": 1511
+          }
+        ],
+        "title": "西雅图中央图书馆",
+        "trigger": "看图书馆怎样叠成一座内部城市\n＋"
+      },
+      {
+        "index": 2,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "波尔图音乐厅建筑摄影",
+            "height": 836,
+            "src": "/AIBTI/images/buildings/casa-da-musica.webp",
+            "width": 1254
+          },
+          {
+            "alt": "波尔图音乐厅补充建筑摄影视角 1",
+            "height": 1066,
+            "src": "/AIBTI/images/buildings/gallery/bld-casa-musica-02.webp",
+            "width": 1600
+          }
+        ],
+        "title": "波尔图音乐厅",
+        "trigger": "看音乐厅怎样把城市切进内部\n＋"
+      },
+      {
+        "index": 3,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "中央电视台总部大楼建筑摄影",
+            "height": 1200,
+            "src": "/AIBTI/images/buildings/cctv-headquarters.webp",
+            "width": 800
+          },
+          {
+            "alt": "中央电视台总部大楼补充建筑摄影视角 1",
+            "height": 1067,
+            "src": "/AIBTI/images/buildings/gallery/bld-cctv-02.webp",
+            "width": 1600
+          },
+          {
+            "alt": "中央电视台总部大楼补充建筑摄影视角 2",
+            "height": 1200,
+            "src": "/AIBTI/images/buildings/gallery/bld-cctv-03.webp",
+            "width": 800
+          }
+        ],
+        "title": "中央电视台总部大楼",
+        "trigger": "看两座塔怎样被接成一条连续回路\n＋"
+      },
+      {
+        "index": 4,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "鹿特丹美术馆建筑摄影",
+            "height": 853,
+            "src": "/AIBTI/images/buildings/kunsthal-rotterdam.webp",
+            "width": 1280
+          },
+          {
+            "alt": "鹿特丹美术馆补充建筑摄影视角 1",
+            "height": 502,
+            "src": "/AIBTI/images/buildings/gallery/bld-kunsthal-02.webp",
+            "width": 912
+          },
+          {
+            "alt": "鹿特丹美术馆补充建筑摄影视角 2",
+            "height": 1068,
+            "src": "/AIBTI/images/buildings/gallery/bld-kunsthal-03.webp",
+            "width": 1600
+          }
+        ],
+        "title": "鹿特丹美术馆",
+        "trigger": "打开建筑档案 ＋"
+      },
+      {
+        "index": 5,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "鹿特丹大厦建筑摄影",
+            "height": 1600,
+            "src": "/AIBTI/images/buildings/de-rotterdam.webp",
+            "width": 1067
+          },
+          {
+            "alt": "鹿特丹大厦补充建筑摄影视角 1",
+            "height": 1200,
+            "src": "/AIBTI/images/buildings/gallery/bld-de-rotterdam-02.webp",
+            "width": 797
+          },
+          {
+            "alt": "鹿特丹大厦补充建筑摄影视角 2",
+            "height": 1062,
+            "src": "/AIBTI/images/buildings/gallery/bld-de-rotterdam-03.webp",
+            "width": 1600
+          }
+        ],
+        "title": "鹿特丹大厦",
+        "trigger": "打开建筑档案 ＋"
+      }
+    ],
+    "slug": "mix"
+  },
+  {
+    "dialogs": [
+      {
+        "index": 0,
+        "imageCount": 1,
+        "images": [
+          {
+            "alt": "安东尼·高迪风格化肖像：侧分深发、浓密胡须与深色历史西装，背后是巴特罗之家抽象立面",
+            "height": 1000,
+            "src": "/AIBTI/images/architects-v2/gaudi.webp",
+            "width": 1200
+          }
+        ],
+        "title": "安东尼·高迪",
+        "trigger": "打开人物档案，看方法怎么长出来\n＋"
+      },
+      {
+        "index": 1,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "巴特罗之家建筑摄影",
+            "height": 750,
+            "src": "/AIBTI/images/buildings/casa-batllo.webp",
+            "width": 750
+          },
+          {
+            "alt": "巴特罗之家补充建筑摄影视角 1",
+            "height": 750,
+            "src": "/AIBTI/images/buildings/gallery/bld-casa-batllo-02.webp",
+            "width": 750
+          },
+          {
+            "alt": "巴特罗之家补充建筑摄影视角 2",
+            "height": 750,
+            "src": "/AIBTI/images/buildings/gallery/bld-casa-batllo-03.webp",
+            "width": 750
+          }
+        ],
+        "title": "巴特罗之家",
+        "trigger": "看一栋住宅怎样长出自己的生态\n＋"
+      },
+      {
+        "index": 2,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "圣家堂建筑摄影",
+            "height": 1000,
+            "src": "/AIBTI/images/buildings/sagrada-familia.webp",
+            "width": 687
+          },
+          {
+            "alt": "圣家堂补充建筑摄影视角 1",
+            "height": 648,
+            "src": "/AIBTI/images/buildings/gallery/bld-sagrada-02.webp",
+            "width": 1152
+          },
+          {
+            "alt": "圣家堂补充建筑摄影视角 2",
+            "height": 715,
+            "src": "/AIBTI/images/buildings/gallery/bld-sagrada-03.webp",
+            "width": 1360
+          }
+        ],
+        "title": "圣家堂",
+        "trigger": "看一座教堂怎样用几何慢慢长大\n＋"
+      },
+      {
+        "index": 3,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "桂尔公园建筑摄影",
+            "height": 1000,
+            "src": "/AIBTI/images/buildings/park-guell.webp",
+            "width": 1339
+          },
+          {
+            "alt": "桂尔公园补充建筑摄影视角 1",
+            "height": 854,
+            "src": "/AIBTI/images/buildings/gallery/bld-park-guell-02.webp",
+            "width": 800
+          },
+          {
+            "alt": "桂尔公园补充建筑摄影视角 2",
+            "height": 600,
+            "src": "/AIBTI/images/buildings/gallery/bld-park-guell-03.webp",
+            "width": 800
+          }
+        ],
+        "title": "桂尔公园",
+        "trigger": "看失败住宅区怎样变成城市乐园\n＋"
+      },
+      {
+        "index": 4,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "米拉之家建筑摄影",
+            "height": 748,
+            "src": "/AIBTI/images/buildings/casa-mila.jpg",
+            "width": 960
+          },
+          {
+            "alt": "米拉之家补充建筑摄影视角 1",
+            "height": 938,
+            "src": "/AIBTI/images/buildings/gallery/bld-casa-mila-02.webp",
+            "width": 750
+          },
+          {
+            "alt": "米拉之家补充建筑摄影视角 2",
+            "height": 771,
+            "src": "/AIBTI/images/buildings/gallery/bld-casa-mila-03.webp",
+            "width": 960
+          }
+        ],
+        "title": "米拉之家",
+        "trigger": "打开建筑档案 ＋"
+      },
+      {
+        "index": 5,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "桂尔宫建筑摄影",
+            "height": 1440,
+            "src": "/AIBTI/images/buildings/palau-guell.jpg",
+            "width": 960
+          },
+          {
+            "alt": "桂尔宫补充建筑摄影视角 1",
+            "height": 450,
+            "src": "/AIBTI/images/buildings/gallery/bld-palau-guell-02.webp",
+            "width": 630
+          },
+          {
+            "alt": "桂尔宫补充建筑摄影视角 2",
+            "height": 800,
+            "src": "/AIBTI/images/buildings/gallery/bld-palau-guell-03.webp",
+            "width": 1200
+          }
+        ],
+        "title": "桂尔宫",
+        "trigger": "打开建筑档案 ＋"
+      }
+    ],
+    "slug": "orna"
+  },
+  {
+    "dialogs": [
+      {
+        "index": 0,
+        "imageCount": 1,
+        "images": [
+          {
+            "alt": "王澍与陆文宇的双人风格化肖像：两人等距并肩站立，背后是宁波历史博物馆的抽象墙面",
+            "height": 1000,
+            "src": "/AIBTI/images/architects-v2/wang-lu.webp",
+            "width": 1200
+          }
+        ],
+        "title": "王澍 × 陆文宇",
+        "trigger": "打开人物档案，看方法怎么长出来\n＋"
+      },
+      {
+        "index": 1,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "宁波历史博物馆建筑摄影",
+            "height": 960,
+            "src": "/AIBTI/images/buildings/ningbo-history-museum.webp",
+            "width": 1440
+          },
+          {
+            "alt": "宁波历史博物馆补充建筑摄影视角 1",
+            "height": 800,
+            "src": "/AIBTI/images/buildings/gallery/bld-ningbo-02.webp",
+            "width": 1600
+          },
+          {
+            "alt": "宁波历史博物馆补充建筑摄影视角 2",
+            "height": 387,
+            "src": "/AIBTI/images/buildings/gallery/bld-ningbo-03.webp",
+            "width": 580
+          }
+        ],
+        "title": "宁波历史博物馆",
+        "trigger": "看拆迁材料怎样变成一面新墙\n＋"
+      },
+      {
+        "index": 2,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "中国美术学院象山校区建筑摄影",
+            "height": 520,
+            "src": "/AIBTI/images/buildings/xiangshan-campus.webp",
+            "width": 1300
+          },
+          {
+            "alt": "中国美术学院象山校区补充建筑摄影视角 1",
+            "height": 555,
+            "src": "/AIBTI/images/buildings/gallery/bld-xiangshan-02.webp",
+            "width": 741
+          }
+        ],
+        "title": "中国美术学院象山校区",
+        "trigger": "看校园怎样重新长出街巷\n＋"
+      },
+      {
+        "index": 3,
+        "imageCount": 2,
+        "images": [
+          {
+            "alt": "富阳文村村落改造建筑摄影",
+            "height": 960,
+            "src": "/AIBTI/images/buildings/wencun-village.webp",
+            "width": 1440
+          },
+          {
+            "alt": "富阳文村村落改造补充建筑摄影视角 1",
+            "height": 1066,
+            "src": "/AIBTI/images/buildings/gallery/bld-wencun-02.webp",
+            "width": 1600
+          }
+        ],
+        "title": "富阳文村村落改造",
+        "trigger": "看新建筑怎样进入仍在生活的村子\n＋"
+      },
+      {
+        "index": 4,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "金华瓷屋建筑摄影",
+            "height": 994,
+            "src": "/AIBTI/images/buildings/ceramic-house.jpg",
+            "width": 1300
+          },
+          {
+            "alt": "金华瓷屋补充建筑摄影视角 1",
+            "height": 460,
+            "src": "/AIBTI/images/buildings/gallery/bld-ceramic-house-02.webp",
+            "width": 689
+          },
+          {
+            "alt": "金华瓷屋补充建筑摄影视角 2",
+            "height": 460,
+            "src": "/AIBTI/images/buildings/gallery/bld-ceramic-house-03.webp",
+            "width": 689
+          }
+        ],
+        "title": "金华瓷屋",
+        "trigger": "打开建筑档案 ＋"
+      },
+      {
+        "index": 5,
+        "imageCount": 3,
+        "images": [
+          {
+            "alt": "文正学院图书馆建筑摄影",
+            "height": 919,
+            "src": "/AIBTI/images/buildings/wenzheng-library.jpg",
+            "width": 1300
+          },
+          {
+            "alt": "文正学院图书馆补充建筑摄影视角 1",
+            "height": 672,
+            "src": "/AIBTI/images/buildings/gallery/bld-wenzheng-library-02.webp",
+            "width": 950
+          },
+          {
+            "alt": "文正学院图书馆补充建筑摄影视角 2",
+            "height": 1000,
+            "src": "/AIBTI/images/buildings/gallery/bld-wenzheng-library-03.webp",
+            "width": 1500
+          }
+        ],
+        "title": "文正学院图书馆",
+        "trigger": "打开建筑档案 ＋"
+      }
+    ],
+    "slug": "hand"
+  }
+]

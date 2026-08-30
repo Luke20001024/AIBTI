@@ -8,12 +8,13 @@ const allowedDevOrigins = (process.env.NEXT_ALLOWED_DEV_ORIGINS ?? "")
   .split(",")
   .map((origin) => origin.trim())
   .filter(Boolean);
+const localDevOrigins = ["127.0.0.1", "localhost"];
 
 const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
   basePath,
-  allowedDevOrigins: allowedDevOrigins.length ? allowedDevOrigins : undefined,
+  allowedDevOrigins: [...new Set([...localDevOrigins, ...allowedDevOrigins])],
   images: {
     unoptimized: true,
   },

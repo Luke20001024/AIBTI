@@ -37,7 +37,7 @@ export function HomeActions() {
         <span aria-hidden="true">→</span>
       </Link>
       <div className="home-facts" aria-label="测试信息">
-        <span>18 题</span>
+        <span>18 + 最多 2 题</span>
         <span>约 3 分钟</span>
         <span>不用登录</span>
       </div>

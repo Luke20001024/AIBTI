@@ -1,50 +1,43 @@
 import { expect, test } from "@playwright/test";
-import { writeFile } from "node:fs/promises";
 import { appPath } from "./paths";
 
-const PERSONAS = ["grid", "root", "mass", "void", "tech", "flow", "orna", "hand"] as const;
+const SLUGS = [
+  "grid", "span", "mass", "tech", "void", "root", "eave", "tide",
+  "ruin", "hand", "sign", "orna", "veil", "flow", "plus", "mix",
+] as const;
 
-test("八型分享卡都保留人物动作并输出公开二维码入口", async ({ page }, testInfo) => {
-  test.skip(testInfo.project.name !== "android-393-chromium", "八型出图只在代表性高 DPR 手机执行一次");
-  test.setTimeout(120_000);
+test("16 张人格首屏均以单张扁平海报铺满手机内容宽度", async ({ page }, testInfo) => {
+  test.skip(testInfo.project.name !== "iphone-390-webkit", "首屏全量视觉合同在 390×844 iPhone 视口执行");
+  test.setTimeout(180_000);
 
-  for (const slug of PERSONAS) {
-    await page.goto(appPath(`/result/${slug}/?from=share`), { waitUntil: "domcontentloaded" });
-    const hero = page.locator(".result-stage img");
-    await expect(hero).toBeVisible();
-    await expect.poll(async () => hero.evaluate((item: HTMLImageElement) => item.naturalWidth)).toBeGreaterThan(0);
-    await expect(hero).toHaveAttribute("src", /\/images\/buildings\//);
-    await expect(page.locator(".result-stage .media-fallback")).toHaveCount(0);
-    await page.getByRole("button", { name: "生成分享卡" }).click();
-    const dialog = page.getByRole("dialog", { name: "ArcBTI 分享卡" });
-    await expect(dialog).toBeVisible({ timeout: 12_000 });
-    const image = dialog.locator("img");
-    await expect(image).toBeVisible();
-    await expect.poll(async () => image.evaluate((item: HTMLImageElement) => item.naturalWidth)).toBe(1080);
-    await expect.poll(async () => image.evaluate((item: HTMLImageElement) => item.naturalHeight)).toBe(1350);
-    const dataUrl = await image.evaluate(async (item: HTMLImageElement) => {
-      const blob = await fetch(item.src).then((response) => response.blob());
-      return await new Promise<string>((resolve, reject) => {
-        const reader = new FileReader();
-        reader.onerror = () => reject(reader.error);
-        reader.onload = () => resolve(String(reader.result));
-        reader.readAsDataURL(blob);
-      });
+  for (const slug of SLUGS) {
+    await page.goto(appPath(`/result/${slug}/`), { waitUntil: "domcontentloaded" });
+    const resultPage = page.locator("[data-result-v7-page]");
+    const hero = resultPage.locator(":scope > section").first();
+    const poster = hero.locator("img");
+    await expect(poster).toHaveCount(1);
+    await expect(hero.getByRole("button")).toHaveCount(0);
+    await expect(hero.getByRole("link")).toHaveCount(0);
+
+    const geometry = await poster.evaluate((image: HTMLImageElement) => {
+      const box = image.getBoundingClientRect();
+      return {
+      naturalWidth: image.naturalWidth,
+      naturalHeight: image.naturalHeight,
+      renderedWidth: box.width,
+      renderedHeight: box.height,
+      heroHeight: image.parentElement!.getBoundingClientRect().height,
+      pageWidth: image.closest("[data-result-v7-page]")!.getBoundingClientRect().width,
+    };
     });
-    expect(dataUrl).toMatch(/^data:image\/jpeg;base64,/);
-    await writeFile(
-      `artifacts/qa/round-6/share-card-${slug}-1080x1350.jpg`,
-      Buffer.from(dataUrl!.split(",")[1], "base64"),
-    );
-
-    const publicLink = new URL(await dialog.getByRole("textbox", { name: "可选择的公开结果链接" }).inputValue());
-    expect(publicLink.pathname).toMatch(new RegExp(`/result/${slug}/$`));
-    expect(publicLink.searchParams.get("from")).toBe("share");
-    for (const privateKey of ["mine", "a", "q", "s", "u"]) {
-      expect(publicLink.searchParams.has(privateKey)).toBe(false);
-    }
-
-    await dialog.getByRole("button", { name: "关闭 ×" }).click();
-    await expect(dialog).toBeHidden();
+    expect(geometry.naturalWidth, slug).toBeGreaterThanOrEqual(780);
+    expect(geometry.naturalHeight, slug).toBeGreaterThanOrEqual(1564);
+    expect(Math.abs(geometry.renderedWidth - geometry.pageWidth), slug).toBeLessThanOrEqual(1);
+    expect(Math.abs(geometry.renderedHeight - geometry.heroHeight), slug).toBeLessThanOrEqual(1);
+    expect(Math.abs(
+      (geometry.renderedWidth / geometry.renderedHeight) - (geometry.naturalWidth / geometry.naturalHeight),
+    ), slug).toBeLessThanOrEqual(0.002);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth), slug)
+      .toBeLessThanOrEqual(1);
   }
 });

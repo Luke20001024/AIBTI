@@ -1,0 +1,61 @@
+{
+  "architects": [
+    { "file": "frei-otto.webp", "query": "Frei Otto portrait", "label": "Frei Otto" },
+    { "file": "francis-kere.webp", "query": "Diébédo Francis Kéré portrait", "label": "Francis Kéré" },
+    { "file": "kongjian-yu.webp", "query": "Kongjian Yu portrait", "label": "Kongjian Yu" },
+    { "file": "louis-kahn.webp", "query": "Louis Kahn architect portrait", "label": "Louis Kahn" },
+    { "file": "venturi-scott-brown.webp", "query": "Robert Venturi Denise Scott Brown", "label": "Venturi × Scott Brown" },
+    { "file": "sanaa.webp", "query": "Kazuyo Sejima Ryue Nishizawa SANAA", "label": "SANAA" },
+    { "file": "lacaton-vassal.webp", "query": "Anne Lacaton Jean-Philippe Vassal", "label": "Lacaton & Vassal" },
+    { "file": "oma.webp", "query": "Rem Koolhaas portrait", "label": "Rem Koolhaas / OMA" }
+  ],
+  "buildings": [
+    { "file": "expo67-german-pavilion.webp", "query": "German Pavilion Expo 67 Montreal Frei Otto", "label": "German Pavilion Expo 67" },
+    { "file": "munich-olympic-roof.webp", "query": "Munich Olympic Stadium roof Frei Otto", "label": "Munich Olympic Roof" },
+    { "file": "multihalle-mannheim.webp", "query": "Multihalle Mannheim Frei Otto", "label": "Multihalle Mannheim" },
+    { "file": "japan-pavilion-2000.webp", "query": "Japan Pavilion Expo 2000 Hanover Shigeru Ban", "label": "Japan Pavilion Expo 2000" },
+    { "file": "tuwaiq-palace.webp", "query": "Tuwaiq Palace Riyadh", "label": "Tuwaiq Palace" },
+
+    { "file": "gando-primary-school.webp", "query": "Gando Primary School Francis Kere", "label": "Gando Primary School" },
+    { "file": "lycee-schorge.webp", "query": "Lycee Schorge Koudougou Kere", "label": "Lycée Schorge" },
+    { "file": "serpentine-kere-2017.webp", "query": "Serpentine Pavilion 2017 Francis Kere", "label": "Serpentine Pavilion 2017" },
+    { "file": "opera-village-laongo.webp", "query": "Opera Village Laongo Burkina Faso Kere", "label": "Opera Village Laongo" },
+    { "file": "startup-lions-campus.webp", "query": "Startup Lions Campus Kenya Kere", "label": "Startup Lions Campus" },
+
+    { "file": "yongning-river-park.webp", "query": "Yongning River Park Taizhou Turenscape", "label": "Yongning River Park" },
+    { "file": "shanghai-houtan-park.webp", "query": "Shanghai Houtan Park Turenscape", "label": "Shanghai Houtan Park" },
+    { "file": "qunli-stormwater-park.webp", "query": "Qunli Stormwater Park Harbin", "label": "Qunli Stormwater Park" },
+    { "file": "yanweizhou-park.webp", "query": "Yanweizhou Park Jinhua Turenscape", "label": "Yanweizhou Park" },
+    { "file": "zhongshan-shipyard-park.webp", "query": "Zhongshan Shipyard Park Turenscape", "label": "Zhongshan Shipyard Park" },
+
+    { "file": "salk-institute.webp", "query": "Salk Institute courtyard Louis Kahn", "label": "Salk Institute" },
+    { "file": "kimbell-art-museum.webp", "query": "Kimbell Art Museum Kahn exterior", "label": "Kimbell Art Museum" },
+    { "file": "bangladesh-parliament.webp", "query": "Jatiya Sangsad Bhaban Louis Kahn", "label": "Bangladesh Parliament" },
+    { "file": "exeter-library.webp", "query": "Phillips Exeter Academy Library Kahn", "label": "Exeter Library" },
+    { "file": "iim-ahmedabad.webp", "query": "IIM Ahmedabad Louis Kahn campus", "label": "IIM Ahmedabad" },
+
+    { "file": "vanna-venturi-house.webp", "query": "Vanna Venturi House", "label": "Vanna Venturi House" },
+    { "file": "guild-house.webp", "query": "Guild House Philadelphia Venturi", "label": "Guild House" },
+    { "file": "sainsbury-wing.webp", "query": "Sainsbury Wing National Gallery London", "label": "Sainsbury Wing" },
+    { "file": "mcasd-la-jolla.webp", "query": "Museum Contemporary Art San Diego La Jolla Venturi", "label": "MCASD La Jolla" },
+    { "file": "allen-memorial-museum.webp", "query": "Allen Memorial Art Museum Oberlin Venturi", "label": "Allen Memorial Museum" },
+
+    { "file": "kanazawa-21.webp", "query": "21st Century Museum Kanazawa SANAA", "label": "21st Century Museum Kanazawa" },
+    { "file": "rolex-learning-center.webp", "query": "Rolex Learning Center SANAA", "label": "Rolex Learning Center" },
+    { "file": "louvre-lens.webp", "query": "Louvre Lens SANAA", "label": "Louvre-Lens" },
+    { "file": "new-museum-nyc.webp", "query": "New Museum New York SANAA building", "label": "New Museum New York" },
+    { "file": "serpentine-sanaa-2009.webp", "query": "Serpentine Pavilion 2009 SANAA", "label": "Serpentine Pavilion 2009" },
+
+    { "file": "tour-bois-le-pretre.webp", "query": "Tour Bois le Pretre Lacaton Vassal", "label": "Tour Bois-le-Prêtre" },
+    { "file": "grand-parc-bordeaux.webp", "query": "Grand Parc Bordeaux Lacaton Vassal", "label": "Grand Parc Bordeaux" },
+    { "file": "palais-de-tokyo.webp", "query": "Palais de Tokyo Paris building", "label": "Palais de Tokyo" },
+    { "file": "frac-dunkirk.webp", "query": "FRAC Dunkerque Lacaton Vassal", "label": "FRAC Dunkirk" },
+    { "file": "nantes-school-architecture.webp", "query": "Nantes School Architecture Lacaton Vassal", "label": "Nantes Architecture School" },
+
+    { "file": "seattle-central-library.webp", "query": "Seattle Central Library OMA", "label": "Seattle Central Library" },
+    { "file": "casa-da-musica.webp", "query": "Casa da Musica Porto OMA", "label": "Casa da Música" },
+    { "file": "cctv-headquarters.webp", "query": "CCTV Headquarters Beijing OMA", "label": "CCTV Headquarters" },
+    { "file": "kunsthal-rotterdam.webp", "query": "Kunsthal Rotterdam OMA", "label": "Kunsthal Rotterdam" },
+    { "file": "de-rotterdam.webp", "query": "De Rotterdam OMA building", "label": "De Rotterdam" }
+  ]
+}

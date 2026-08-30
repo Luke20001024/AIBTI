@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { QUESTIONS, QUIZ_VERSION } from "../content";
-import type { AnswerMap } from "./scoring";
+import { deriveDiscriminatorSequence, type AnswerMap } from "./scoring";
 import {
   CURRENT_QUESTION_IDS,
   QUIZ_SESSION_SCHEMA_VERSION,
@@ -42,7 +42,7 @@ const createStorage = ({ failWrites = false } = {}) => {
 
 afterEach(() => vi.unstubAllGlobals());
 
-describe("quiz session V2 normalization", () => {
+describe("quiz session V4 normalization", () => {
   it("preserves a valid versioned session, including intentional backwards navigation", () => {
     expect(normalizeQuizSession(validSession())).toEqual(validSession());
   });
@@ -86,10 +86,35 @@ describe("quiz session V2 normalization", () => {
     expect(normalizeQuizSession(validSession({ index: Number.NaN }))).toBeNull();
     expect(normalizeQuizSession(validSession({ updatedAt: "123" }))).toBeNull();
   });
+
+  it("keeps only the discriminator sequence implied by the completed core answers", () => {
+    const complete = answersThrough(QUESTIONS.length - 1);
+    const first = deriveDiscriminatorSequence(complete)[0];
+    expect(first).toBeDefined();
+    const withActive = { ...complete, [first!.id]: "B", T04: "A" } as AnswerMap;
+    const normalized = normalizeQuizSession(validSession({
+      answers: withActive,
+      index: 99,
+    }));
+    const activeIds = deriveDiscriminatorSequence(withActive).map((question) => question.id);
+    expect(Object.keys(normalized!.answers).filter((id) => id.startsWith("T")))
+      .toEqual(activeIds.filter((id) => withActive[id]));
+    expect(normalized!.answers.T04).toBe(activeIds.includes("T04") ? "A" : undefined);
+    expect(normalized!.index).toBeLessThanOrEqual(QUESTIONS.length + activeIds.length - 1);
+  });
+
+  it("drops discriminator answers while the core questionnaire is incomplete", () => {
+    const normalized = normalizeQuizSession(validSession({
+      answers: { ...answersThrough(5), T01: "A" },
+      index: 6,
+    }));
+    expect(normalized?.answers.T01).toBeUndefined();
+    expect(normalized?.index).toBe(6);
+  });
 });
 
-describe("quiz session V2 storage", () => {
-  it("always writes the V2 envelope even when callers provide only progress fields", () => {
+describe("quiz session V4 storage", () => {
+  it("always writes the V4 envelope even when callers provide only progress fields", () => {
     const local = createStorage();
     const session = createStorage();
     vi.stubGlobal("window", { localStorage: local.storage, sessionStorage: session.storage });
@@ -101,7 +126,7 @@ describe("quiz session V2 storage", () => {
     expect(saved.questionIds).toEqual(CURRENT_QUESTION_IDS);
   });
 
-  it("reads only the V2 key and safely handles storage failures", () => {
+  it("reads only the V4 key and safely handles storage failures", () => {
     const session = createQuizSession({ answers: answersThrough(0), index: 0, updatedAt: 1 });
     const local = createStorage();
     const sameTab = createStorage();

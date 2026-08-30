@@ -1,10 +1,11 @@
-import { QUESTIONS, QUIZ_VERSION, type OptionId } from "../content";
-import type { AnswerMap } from "./scoring";
+import { DISCRIMINATOR_QUESTIONS, QUESTIONS, QUIZ_VERSION, type OptionId } from "../content";
+import { deriveDiscriminatorSequence, type AnswerMap } from "./scoring";
 
-export const QUIZ_STORAGE_KEY = "aibti.quiz.v2";
-export const QUIZ_SESSION_SCHEMA_VERSION = 2 as const;
+export const QUIZ_STORAGE_KEY = "aibti.quiz.v4";
+export const QUIZ_SESSION_SCHEMA_VERSION = 3 as const;
 
-export const CURRENT_QUESTION_IDS = QUESTIONS.map((question) => question.id);
+const ALL_QUESTIONS = [...QUESTIONS, ...DISCRIMINATOR_QUESTIONS];
+export const CURRENT_QUESTION_IDS = ALL_QUESTIONS.map((question) => question.id);
 
 export type QuizSessionInput = {
   answers: AnswerMap;
@@ -55,15 +56,24 @@ export const normalizeQuizSession = (value: unknown): QuizSession | null => {
   if (Object.keys(value.answers).some((id) => !isKnownAnswerKey(id))) return null;
 
   const answers: AnswerMap = {};
-  for (const question of QUESTIONS) {
+  for (const question of ALL_QUESTIONS) {
     const answer = value.answers[question.id];
     if (answer === undefined) continue;
     if (!question.options.some((option) => option.id === answer)) return null;
     answers[question.id] = answer as OptionId;
   }
 
+  const coreComplete = QUESTIONS.every((question) => answers[question.id]);
+  const activeDynamicIds = new Set(
+    coreComplete ? deriveDiscriminatorSequence(answers).map((question) => question.id) : [],
+  );
+  for (const question of DISCRIMINATOR_QUESTIONS) {
+    if (!activeDynamicIds.has(question.id)) delete answers[question.id];
+  }
+
   const requestedIndex = Math.trunc(value.index);
-  const clampedIndex = Math.min(Math.max(requestedIndex, 0), QUESTIONS.length - 1);
+  const maximumIndex = Math.max(0, QUESTIONS.length + activeDynamicIds.size - 1);
+  const clampedIndex = Math.min(Math.max(requestedIndex, 0), maximumIndex);
   const firstMissingIndex = QUESTIONS.findIndex((question) => !answers[question.id]);
   const safeIndex = firstMissingIndex === -1
     ? clampedIndex

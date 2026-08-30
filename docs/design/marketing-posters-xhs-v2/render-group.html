@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ArcBTI — The Complete Cast</title>
+    <style>
+      @font-face {
+        font-family: "Noto Sans SC Local";
+        src: url("file:///C:/Windows/Fonts/NotoSansSC-VF.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 100 900;
+      }
+
+      @font-face {
+        font-family: "Noto Serif SC Local";
+        src: url("file:///C:/Windows/Fonts/NotoSerifSC-VF.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 100 900;
+      }
+
+      @font-face {
+        font-family: "Arial Narrow Local";
+        src: url("file:///C:/Windows/Fonts/ARIALN.TTF") format("truetype");
+        font-style: normal;
+        font-weight: 400;
+      }
+
+      @font-face {
+        font-family: "Impact Local";
+        src: url("file:///C:/Windows/Fonts/impact.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 400;
+      }
+
+      :root {
+        --paper: #f2e8d5;
+        --ink: #11100e;
+        --red: #e24a31;
+        --cream: #f4ead7;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 1080px;
+        height: 1440px;
+        margin: 0;
+        overflow: hidden;
+        background: var(--ink);
+      }
+
+      .poster {
+        position: relative;
+        width: 1080px;
+        height: 1440px;
+        overflow: hidden;
+        isolation: isolate;
+        background: var(--ink);
+        color: var(--ink);
+      }
+
+      .key-art {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        z-index: -4;
+      }
+
+      .top-veil {
+        position: absolute;
+        inset: 0 0 auto;
+        height: 245px;
+        z-index: -3;
+        background: linear-gradient(
+          to bottom,
+          rgba(244, 235, 218, 0.88) 0%,
+          rgba(244, 235, 218, 0.48) 70%,
+          rgba(244, 235, 218, 0) 100%
+        );
+      }
+
+      .bottom-veil {
+        position: absolute;
+        inset: auto 0 0;
+        height: 250px;
+        z-index: -3;
+        background: linear-gradient(
+          to bottom,
+          rgba(13, 13, 12, 0) 0%,
+          rgba(13, 13, 12, 0.82) 36%,
+          rgba(13, 13, 12, 0.98) 74%,
+          #0d0d0c 100%
+        );
+      }
+
+      .topbar {
+        position: absolute;
+        top: 24px;
+        left: 42px;
+        right: 42px;
+        height: 50px;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        gap: 18px;
+        border-bottom: 2px solid rgba(17, 16, 14, 0.82);
+        padding-bottom: 8px;
+        font-family: "Arial Narrow Local", "Noto Sans SC Local", sans-serif;
+        text-transform: uppercase;
+      }
+
+      .brand {
+        display: flex;
+        align-items: baseline;
+        gap: 11px;
+        white-space: nowrap;
+      }
+
+      .brand-name {
+        font-family: "Impact Local", sans-serif;
+        font-size: 34px;
+        line-height: 1;
+        letter-spacing: 0.3px;
+      }
+
+      .brand-chip {
+        padding: 4px 7px 3px;
+        background: var(--red);
+        color: var(--cream);
+        font-size: 12px;
+        line-height: 1;
+        letter-spacing: 1.4px;
+      }
+
+      .edition {
+        justify-self: center;
+        font-size: 12px;
+        letter-spacing: 2.1px;
+      }
+
+      .credit-top {
+        justify-self: end;
+        text-align: right;
+        font-size: 11px;
+        line-height: 1.25;
+        letter-spacing: 1.7px;
+      }
+
+      .hero-title {
+        position: absolute;
+        top: 88px;
+        left: 42px;
+        right: 42px;
+        display: grid;
+        grid-template-columns: 8px minmax(0, 1fr) auto;
+        gap: 16px;
+        align-items: start;
+      }
+
+      .red-rail {
+        width: 8px;
+        height: 102px;
+        margin-top: 2px;
+        background: var(--red);
+      }
+
+      .title-copy {
+        min-width: 0;
+      }
+
+      h1 {
+        margin: 0;
+        white-space: nowrap;
+        font-family: "Noto Serif SC Local", serif;
+        font-size: 78px;
+        font-weight: 900;
+        line-height: 0.98;
+        letter-spacing: -5px;
+      }
+
+      h1 .red {
+        color: var(--red);
+      }
+
+      .subtitle {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        margin-top: 11px;
+        font-family: "Arial Narrow Local", "Noto Sans SC Local", sans-serif;
+        font-size: 15px;
+        line-height: 1;
+        letter-spacing: 3.35px;
+        text-transform: uppercase;
+      }
+
+      .subtitle .slash {
+        color: var(--red);
+        font-size: 23px;
+        line-height: 0;
+        font-weight: 900;
+        transform: translateY(-1px);
+      }
+
+      .cast-count {
+        position: relative;
+        width: 92px;
+        height: 92px;
+        margin-top: 0;
+        border: 2px solid var(--ink);
+        border-radius: 50%;
+        transform: rotate(6deg);
+        font-family: "Arial Narrow Local", "Noto Sans SC Local", sans-serif;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        line-height: 1;
+      }
+
+      .cast-count strong {
+        display: block;
+        font-family: "Impact Local", sans-serif;
+        font-size: 38px;
+        letter-spacing: 1px;
+      }
+
+      .cast-count span {
+        display: block;
+        margin-top: 3px;
+        font-size: 9px;
+        letter-spacing: 1.4px;
+      }
+
+      .cast-count::after {
+        content: "ALL HERE";
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        transform: translateX(-50%) rotate(-2deg);
+        padding: 3px 8px 2px;
+        background: var(--red);
+        color: var(--cream);
+        white-space: nowrap;
+        font-size: 10px;
+        letter-spacing: 1.2px;
+      }
+
+      .bottom-copy {
+        position: absolute;
+        left: 42px;
+        right: 42px;
+        bottom: 26px;
+        height: 158px;
+        color: var(--cream);
+        border-top: 2px solid rgba(244, 234, 215, 0.78);
+        padding-top: 16px;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 290px;
+        grid-template-rows: 1fr auto;
+        column-gap: 24px;
+      }
+
+      .hook {
+        margin: 0;
+        font-family: "Noto Serif SC Local", serif;
+        font-size: 35px;
+        font-weight: 800;
+        line-height: 1.24;
+        letter-spacing: -1.2px;
+      }
+
+      .hook .red {
+        color: var(--red);
+      }
+
+      .cta {
+        align-self: start;
+        padding-left: 17px;
+        border-left: 5px solid var(--red);
+        font-family: "Noto Sans SC Local", sans-serif;
+      }
+
+      .cta-en {
+        font-family: "Impact Local", sans-serif;
+        font-size: 25px;
+        line-height: 1;
+        letter-spacing: 1.3px;
+      }
+
+      .cta-cn {
+        margin-top: 7px;
+        font-family: "Noto Serif SC Local", serif;
+        font-size: 21px;
+        font-weight: 750;
+        line-height: 1;
+      }
+
+      .producer {
+        margin-top: 11px;
+        color: var(--red);
+        font-family: "Arial Narrow Local", sans-serif;
+        font-size: 11px;
+        letter-spacing: 2.2px;
+        text-transform: uppercase;
+      }
+
+      .type-index {
+        grid-column: 1 / -1;
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 10px;
+        padding-top: 7px;
+        border-top: 1px solid rgba(244, 234, 215, 0.24);
+        font-family: "Arial Narrow Local", sans-serif;
+        font-size: 9px;
+        line-height: 1;
+        letter-spacing: 1.08px;
+        white-space: nowrap;
+        color: rgba(244, 234, 215, 0.74);
+      }
+
+      .type-index .mark {
+        color: var(--red);
+      }
+    </style>
+  </head>
+  <body>
+    <main id="poster-cast-v2" class="poster" aria-label="ArcBTI 建筑人格全员到齐宣传海报">
+      <img
+        class="key-art"
+        src="../../../public/images/campaign/xhs-posters-v2/02-whole-cast-ensemble-art-v2.png"
+        alt=""
+      />
+      <div class="top-veil"></div>
+      <div class="bottom-veil"></div>
+
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-name">ArcBTI</span>
+          <span class="brand-chip">Original</span>
+        </div>
+        <div class="edition">Architecture Intuition Test · The Complete Cast</div>
+        <div class="credit-top">An ArcBTI Original<br />2026 · Vol. 01</div>
+      </header>
+
+      <section class="hero-title">
+        <span class="red-rail"></span>
+        <div class="title-copy">
+          <h1>建筑人格<span class="red">全员到齐</span></h1>
+          <div class="subtitle">
+            <span>16 Types</span>
+            <span class="slash">/</span>
+            <span>One Impossible City</span>
+          </div>
+        </div>
+        <div class="cast-count">
+          <div><strong>16</strong><span>CHARACTERS</span></div>
+        </div>
+      </section>
+
+      <footer class="bottom-copy">
+        <p class="hook">有人拯救世界，<br />有人只想<span class="red">把缝对齐。</span></p>
+        <div class="cta">
+          <div class="cta-en">TAKE THE TEST</div>
+          <div class="cta-cn">测出你的建筑母语</div>
+          <div class="producer">Produced by Luke</div>
+        </div>
+        <div class="type-index">
+          <span class="mark">ARCBTI / 16</span>
+          <span>GRID</span><span>SPAN</span><span>MASS</span><span>TECH</span><span>VOID</span>
+          <span>ROOT</span><span>EAVE</span><span>TIDE</span><span>RUIN</span><span>HAND</span>
+          <span>SIGN</span><span>ORNA</span><span>VEIL</span><span>FLOW</span><span>PLUS</span><span>MIX</span>
+        </div>
+      </footer>
+    </main>
+    <script>
+      window.__POSTER_READY__ = true;
+    </script>
+  </body>
+</html>

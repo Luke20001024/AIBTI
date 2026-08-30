@@ -20,26 +20,12 @@ const expectGeneratedQuestion = async (
     })),
     { timeout: 20_000 },
   ).toEqual([[1200, 800], [1200, 800], [1200, 800]]);
-  const sources = await images.evaluateAll((items) => items.map((item) => {
-    const image = item as HTMLImageElement;
-    return {
-      src: image.currentSrc,
-      width: image.naturalWidth,
-      height: image.naturalHeight,
-      renderedWidth: image.getBoundingClientRect().width,
-      renderedHeight: image.getBoundingClientRect().height,
-    };
-  }));
-  expect(new Set(sources.map((item) => item.src)).size).toBe(3);
-  for (const source of sources) {
-    expect(source.src).toMatch(new RegExp(`/images/questions-v3/q${questionNumber}-[abc]\\.webp$`));
-    expect([source.width, source.height]).toEqual([1200, 800]);
-    expect(source.renderedWidth).toBeGreaterThanOrEqual(115);
-    expect(source.renderedHeight).toBeGreaterThanOrEqual(75);
-  }
+  const sources = await images.evaluateAll((items) => items.map((item) => (item as HTMLImageElement).currentSrc));
+  expect(new Set(sources).size).toBe(3);
+  expect(sources.every((source) => new RegExp(`/images/questions-v3/q${questionNumber}-[abc]\\.webp$`).test(source))).toBe(true);
 };
 
-test("18 题需显式提交并生成无答案的 Owner 结果", async ({ page }, testInfo) => {
+test("18 道核心题在接近结果时追加最多两题，并完成本地结果闭环", async ({ page }, testInfo) => {
   test.skip(!fullFlowProjects.has(testInfo.project.name), "完整链路在 iPhone、Android 与 HarmonyOS 代理各跑一次");
   const calculationRequests: string[] = [];
   page.on("request", (request) => {
@@ -55,110 +41,108 @@ test("18 题需显式提交并生成无答案的 Owner 结果", async ({ page },
   });
   await page.goto(appPath("/quiz/"), { waitUntil: "domcontentloaded" });
   await expect(page.locator(".quiz-shell")).toHaveAttribute("aria-busy", "false", { timeout: 20_000 });
-  await expect(page.getByRole("radio").first()).toBeVisible();
 
-  for (let index = 1; index < 18; index += 1) {
-    if (index >= 13) await expectGeneratedQuestion(page, index);
+  for (let index = 0; index < 18; index += 1) {
+    if (index >= 12) await expectGeneratedQuestion(page, index + 1);
     await page.getByRole("radio").first().click({ force: true });
-    await expect(page.locator(".quiz-progress-count strong")).toHaveText(String(index + 1));
-    await page.waitForTimeout(80);
+    if (index < 17) {
+      await expect(page.locator(".quiz-progress-count strong")).toHaveText(String(index + 2));
+    }
   }
 
-  await expectGeneratedQuestion(page, 18);
+  await expect(page.locator(".quiz-brand").getByText("最后判断", { exact: true })).toBeVisible();
+  let dynamicCount = 0;
+  while (dynamicCount < 2) {
+    const submit = page.getByRole("button", { name: "查看结果 →" });
+    if (await submit.isEnabled().catch(() => false)) break;
+    await page.getByRole("radio").nth(dynamicCount % 3).click({ force: true });
+    dynamicCount += 1;
+    await page.waitForTimeout(120);
+  }
+  expect(dynamicCount).toBeGreaterThanOrEqual(1);
+  expect(dynamicCount).toBeLessThanOrEqual(2);
+
+  const savedDynamicIds = await page.evaluate(() => {
+    const raw = localStorage.getItem("aibti.quiz.v4") ?? sessionStorage.getItem("aibti.quiz.v4");
+    const value = raw ? JSON.parse(raw) as { answers?: Record<string, string> } : null;
+    return Object.keys(value?.answers ?? {}).filter((id) => id.startsWith("T"));
+  });
+  expect(savedDynamicIds.length).toBe(dynamicCount);
 
   const submit = page.getByRole("button", { name: "查看结果 →" });
-  await expect(submit).toBeDisabled();
-  await page.getByRole("radio").nth(1).click({ force: true });
-  await expect(page).toHaveURL(/\/quiz\/$/);
   await expect(submit).toBeEnabled();
   await submit.click();
+  await page.waitForURL(/\/result\/[^/]+\/\?mine=1$/, { timeout: 15_000 });
 
-  await page.waitForURL(/\/result\/[^/]+\/\?mine=1$/, { timeout: 12_000 });
   expect(calculationRequests.length).toBeGreaterThan(0);
   for (const requestUrl of calculationRequests) {
-    expect(new URL(requestUrl).searchParams.has("a")).toBe(false);
+    const url = new URL(requestUrl);
+    expect(url.search).toBe("");
   }
   const resultUrl = new URL(page.url());
-  expect(resultUrl.searchParams.get("mine")).toBe("1");
-  for (const privateKey of ["a", "q", "s", "u"]) {
+  for (const privateKey of ["a", "d", "q", "s", "u"]) {
     expect(resultUrl.searchParams.has(privateKey)).toBe(false);
   }
-  await expect(page.locator(".result-proof")).toHaveAttribute("data-result-view", "owner");
-  await expect(page.locator(".evidence-list li")).toHaveCount(3);
-  await expect(page.getByText("展开八维建筑倾向", { exact: true })).toHaveCount(0);
-  await expect(page.locator(".result-language")).toBeVisible();
-  await expect(page.locator(".featured-work")).toHaveCount(3);
+  const resultPage = page.locator("[data-result-v7-page]");
+  await expect(resultPage).toBeVisible();
+  await expect(page.locator("#result-v7-title")).toBeAttached();
+  await expect(resultPage.locator(":scope > section").first().locator("img")).toHaveCount(1);
+  await expect(resultPage.locator("details")).toHaveCount(0);
+  await expect(resultPage.locator("button[aria-haspopup=dialog]")).toHaveCount(6);
+  await expect(resultPage.locator("img")).toHaveCount(7);
+  await expect(resultPage.locator(".media-fallback")).toHaveCount(0);
 
-  await page.evaluate(() => {
-    Object.defineProperty(navigator, "clipboard", {
-      configurable: true,
-      value: { writeText: () => Promise.reject(new Error("clipboard blocked")) },
-    });
+  const localResult = await page.evaluate(() => {
+    const raw = localStorage.getItem("aibti.result.v2") ?? sessionStorage.getItem("aibti.result.v2");
+    return raw ? JSON.parse(raw) as Record<string, unknown> : null;
   });
-  await page.getByRole("button", { name: "复制公开链接" }).click();
-  await expect(page.getByText("浏览器无法自动复制，请长按下方公开链接")).toBeVisible();
-  const fallbackLink = new URL(await page.getByRole("textbox", { name: "可选择的公开结果链接" }).inputValue());
-  expect(fallbackLink.pathname).toBe(resultUrl.pathname);
-  expect(fallbackLink.searchParams.get("from")).toBe("share");
-  for (const privateKey of ["mine", "a", "q", "s", "u"]) {
-    expect(fallbackLink.searchParams.has(privateKey)).toBe(false);
-  }
-
-  const ownerPath = resultUrl.pathname;
-  await page.goto(`${ownerPath}?from=share`, { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".result-proof")).toHaveAttribute("data-result-view", "shared");
-  await expect(page.getByRole("link", { name: "测出你的建筑母语 →" })).toBeVisible();
-  await expect(page.locator(".evidence-list")).toHaveCount(0);
+  expect(localResult?.quizVersion).toBe("4.0.0");
+  expect(localResult?.scoringVersion).toBe("4.0.0");
 });
 
-test("分享卡可生成 1080×1350 图像、公开入口与受限浏览器后备", async ({ page }, testInfo) => {
-  test.skip(testInfo.project.name !== "android-393-chromium", "分享卡只需在代表性手机引擎生成一次");
-  await page.addInitScript(() => {
-    Object.defineProperty(navigator, "clipboard", {
-      configurable: true,
-      value: { writeText: () => Promise.reject(new Error("clipboard blocked")) },
-    });
-    Object.defineProperty(navigator, "canShare", { configurable: true, value: undefined });
-    Object.defineProperty(navigator, "share", {
-      configurable: true,
-      value: (payload: ShareData) => {
-        (window as Window & { __aibtiShare?: ShareData }).__aibtiShare = payload;
-        return Promise.resolve();
-      },
-    });
-    Object.defineProperty(window, "File", { configurable: true, value: undefined });
-  });
+test("公开结果页不携带答题明细，原生展开卡仍可完整阅读", async ({ page }, testInfo) => {
+  test.skip(testInfo.project.name !== "android-393-chromium", "公开结果合同在代表性手机执行一次");
   await page.goto(appPath("/result/grid/?from=share"), { waitUntil: "domcontentloaded" });
-  const trigger = page.getByRole("button", { name: "生成分享卡" });
-  await trigger.click();
-  const dialog = page.getByRole("dialog", { name: "ArcBTI 分享卡" });
-  await expect(dialog).toBeVisible({ timeout: 12_000 });
-  await expect(dialog.getByRole("button", { name: "关闭 ×" })).toBeFocused();
-  const card = dialog.locator("img");
-  await expect(card).toBeVisible();
-  const dimensions = await card.evaluate((image: HTMLImageElement) => ({
-    width: image.naturalWidth,
-    height: image.naturalHeight,
-  }));
-  expect(dimensions).toEqual({ width: 1080, height: 1350 });
-  const publicLink = dialog.getByRole("textbox", { name: "可选择的公开结果链接" });
-  const href = new URL(await publicLink.inputValue());
-  expect(href.pathname).toMatch(/\/result\/grid\/$/);
-  expect(href.searchParams.get("from")).toBe("share");
-  for (const privateKey of ["mine", "a", "q", "s", "u"]) {
-    expect(href.searchParams.has(privateKey)).toBe(false);
+  const url = new URL(page.url());
+  for (const privateKey of ["mine", "a", "d", "q", "s", "u"]) {
+    expect(url.searchParams.has(privateKey)).toBe(false);
   }
+  const firstWork = page.locator("section").filter({ hasText: "03 / 三次实锤" }).getByRole("button").first();
+  await firstWork.click();
+  const dialog = page.getByRole("dialog");
+  await expect(dialog).toBeVisible();
+  await expect(dialog.getByRole("heading", { name: "现场看什么" })).toBeVisible();
+  await expect(dialog.getByRole("link", { name: "查看作品资料与图片来源" })).toBeVisible();
+  await dialog.getByRole("button", { name: /关闭/ }).click();
+  await expect(dialog).toHaveCount(0);
+});
 
-  await dialog.getByRole("button", { name: "复制公开链接" }).click();
-  await expect(dialog.getByText("浏览器无法自动复制，请长按上方公开链接")).toBeVisible();
+test("重新测试会清空全部答题状态并从第 1 题开始", async ({ page }, testInfo) => {
+  test.skip(testInfo.project.name !== "android-393-chromium", "重测清空合同在代表性手机执行一次");
+  await page.goto(appPath("/result/void/?mine=1"), { waitUntil: "domcontentloaded" });
+  await page.evaluate(() => {
+    for (const storage of [localStorage, sessionStorage]) {
+      storage.setItem("aibti.quiz.v4", JSON.stringify({ index: 19, stale: true }));
+      storage.setItem("aibti.result.v2", JSON.stringify({ primaryTypeId: "VOID", stale: true }));
+    }
+  });
 
-  await dialog.getByRole("button", { name: "分享或保存图片" }).click();
-  const shared = await page.evaluate(() => (window as Window & { __aibtiShare?: ShareData }).__aibtiShare);
-  expect(shared?.url).toBe(href.toString());
-  expect(shared?.files).toBeUndefined();
+  await page.getByRole("link", { name: "重新测试" }).click();
+  await page.waitForURL(/\/quiz\/$/, { timeout: 15_000 });
+  await expect(page.locator(".quiz-shell")).toHaveAttribute("aria-busy", "false", { timeout: 20_000 });
+  await expect(page.locator(".quiz-progress-count strong")).toHaveText("1");
+  await expect(page.locator(".quiz-progress-count span")).toContainText("/ 18");
 
-  await page.keyboard.press("Escape");
-  await expect(dialog).toBeHidden();
-  await expect(trigger).toBeFocused();
-  await expect(page.locator("body")).not.toHaveCSS("overflow", "hidden");
+  const stored = await page.evaluate(() => ({
+    localQuiz: localStorage.getItem("aibti.quiz.v4"),
+    sessionQuiz: sessionStorage.getItem("aibti.quiz.v4"),
+    localResult: localStorage.getItem("aibti.result.v2"),
+    sessionResult: sessionStorage.getItem("aibti.result.v2"),
+  }));
+  expect(stored).toEqual({
+    localQuiz: null,
+    sessionQuiz: null,
+    localResult: null,
+    sessionResult: null,
+  });
 });

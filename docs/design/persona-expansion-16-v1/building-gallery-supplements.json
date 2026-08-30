@@ -1,0 +1,266 @@
+{
+  "reviewedAt": "2026-08-30",
+  "policy": "Every building archive must contain at least two distinct real photographs including the primary image. Main works use three images when two reliable supplemental views are available.",
+  "records": [
+    {
+      "id": "BLD-CHANDIGARH",
+      "images": [
+        {
+          "url": "https://s7ap1.scene7.com/is/image/incredibleindia/capitol-complex-chandigarh-chandigarh-tri-hero?qlt=82&ts=1727163008878",
+          "sourceLabel": "Incredible India · Chandigarh Capitol Complex",
+          "sourceUrl": "https://www.incredibleindia.gov.in/en/trips/trip-listing/chandigarh-s-culture-nature-spirituality-gardens-and-arts"
+        },
+        {
+          "url": "https://i0.wp.com/archeyes.com/wp-content/uploads/2024/06/Palace-of-the-Assembly-in-Chandigarh-by-Le-Corbusier-Cemal-4.jpg?ssl=1",
+          "sourceLabel": "ArchEyes · Palace of the Assembly Chandigarh",
+          "sourceUrl": "https://archeyes.com/palace-of-the-assembly-in-chandigarh-by-le-corbusier/"
+        }
+      ]
+    },
+    {
+      "id": "BLD-NINGBO",
+      "images": [
+        {
+          "url": "https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/3N4SY4eH/uploads/media/image/20241017123259000000_north_facet_of_nbm.JPG",
+          "sourceLabel": "Bibliothèque nationale de France · Ningbo History Museum",
+          "sourceUrl": "https://passerelles.essentiels.bnf.fr/fr/chronologie/construction/a508f840-bb7f-42fd-94d9-dea0017d97cd-musee-histoire-ningbo"
+        },
+        {
+          "url": "https://forgemind.net/images/w/WangShu-Ningbo_Museum_14.jpg",
+          "sourceLabel": "FAM · Ningbo History Museum courtyard",
+          "sourceUrl": "https://forgemind.net/media/%E4%B8%AD%E5%9C%8B%E5%BB%BA%E7%AF%89%E5%B8%AB%E7%8E%8B%E6%BE%8D%E8%A8%AD%E8%A8%88-%E5%AF%A7%E6%B3%A2%E6%AD%B7%E5%8F%B2%E5%8D%9A%E7%89%A9%E9%A4%A8-ningbo-history-museum/"
+        }
+      ]
+    },
+    {
+      "id": "BLD-EXPO67-GERMAN",
+      "images": [
+        {
+          "url": "https://expo67.ncf.ca/germanyinner_nae000990885.jpg",
+          "sourceLabel": "Expo 67 archival project · German Pavilion interior",
+          "sourceUrl": "https://expo67.ncf.ca/expo_german_p3.html"
+        }
+      ]
+    },
+    {
+      "id": "BLD-MUNICH-OLYMPIC",
+      "images": [
+        {
+          "url": "https://static.dezeen.com/uploads/2015/03/Frei-Otto_Pritzker-Prize-laureate-2015_dezeen_784_24.jpg",
+          "sourceLabel": "Dezeen · Munich Olympic tensile roof",
+          "sourceUrl": "https://www.dezeen.com/2015/03/10/frei-otto-pritzker-prize-2015/"
+        },
+        {
+          "url": "https://cdn.archilovers.com/projects/c_383_22db7390-988a-4b3e-a1d7-eb16b9d5e5a6.jpg",
+          "sourceLabel": "Archilovers · Munich Olympic Park tensile roof",
+          "sourceUrl": "https://www.archilovers.com/projects/151385/roofing-for-main-sports-facilities-in-the-munich-olympic-park.html"
+        }
+      ]
+    },
+    {
+      "id": "BLD-LYCEE-SCHORGE",
+      "images": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/61730a042480154946b9ae05/79138cf1-2652-4bfe-bf7d-d01a45a34392/079_Lyc%C3%A9e%2BSchorge_night_image%2Bby%2BIwan%2BBaan.jpg",
+          "sourceLabel": "BUILD · Lycée Schorge · photo Iwan Baan",
+          "sourceUrl": "https://www.buildporto.com/blog/lyce-schorge"
+        },
+        {
+          "url": "https://toposmagazine.com/wp-content/uploads/2022/04/LycCe-Schorge-%40-Francis-Kere11-scaled.jpeg",
+          "sourceLabel": "Topos Magazine · Lycée Schorge",
+          "sourceUrl": "https://toposmagazine.com/pritzker-prize/"
+        }
+      ]
+    },
+    {
+      "id": "BLD-YONGNING-RIVER",
+      "images": [
+        {
+          "url": "https://www.turenscape.com/upload/project/202505/61922d0fa2a526d3aa8763b050026a15.jpg",
+          "sourceLabel": "Turenscape · Taizhou Yongning River Park",
+          "sourceUrl": "https://www.turenscape.com/en/project/detail/323.html"
+        },
+        {
+          "url": "https://www.turenscape.com/upload/project/202505/a63abe68617af47332b81e44850644c6.jpg",
+          "sourceLabel": "Turenscape · Taizhou Yongning River Park",
+          "sourceUrl": "https://www.turenscape.com/en/project/detail/323.html"
+        }
+      ]
+    },
+    {
+      "id": "BLD-HOUTAN-PARK",
+      "images": [
+        {
+          "url": "https://cdn.homedsgn.com/wp-content/uploads/2011/05/Shangai-Houtan-Park-26-3.jpg",
+          "sourceLabel": "HomeDSGN · Shanghai Houtan Park · photo courtesy Turenscape",
+          "sourceUrl": "https://www.homedsgn.com/2011/05/02/shanghai-houtan-park-by-turenscape/"
+        },
+        {
+          "url": "https://cdn.homedsgn.com/wp-content/uploads/2011/05/Shangai-Houtan-Park-22-750x499.jpg",
+          "sourceLabel": "HomeDSGN · Shanghai Houtan Park · photo courtesy Turenscape",
+          "sourceUrl": "https://www.homedsgn.com/2011/05/02/shanghai-houtan-park-by-turenscape/"
+        }
+      ]
+    },
+    {
+      "id": "BLD-KIMBELL",
+      "images": [
+        {
+          "url": "https://docomomo-us.org/resource/desktop/medias/image/image_147sfftrj0l3h61f.jpg",
+          "sourceLabel": "Docomomo US · Kimbell Art Museum",
+          "sourceUrl": "https://www.docomomo-us.org/register/kimbell-art-museum"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/51bf94dbe4b03b777468bec4/1585344945531-6J7HGG7P9IKRGHC4K35O/DSC_0045.jpeg",
+          "sourceLabel": "Appitecture · Contemplating the Kimbell",
+          "sourceUrl": "https://www.appitecture.net/place-and-perspectives/2020/14/4/contemplating-the-kimbell"
+        }
+      ]
+    },
+    {
+      "id": "BLD-SAINSBURY-WING",
+      "images": [
+        {
+          "url": "https://dt565gqrz3z7y.cloudfront.net/ce/image/C6y35u_JPw57NBdXKGCFLQ.jpg",
+          "sourceLabel": "ELLE Decoration UK · Sainsbury Wing",
+          "sourceUrl": "https://gb.readly.com/magazines/elle-decoration-uk/2022-09-29/632f5091423f5e51c69db08b"
+        },
+        {
+          "url": "https://d3rcx32iafnn0o.cloudfront.net/Pictures/1024x536/0/6/5/2003065_thenat2_494887.jpg",
+          "sourceLabel": "Building Design · original Sainsbury Wing interior",
+          "sourceUrl": "https://www.bdonline.co.uk/buildings/from-complexity-to-clarity-the-sainsbury-wing-transformed/5135802.article"
+        }
+      ]
+    },
+    {
+      "id": "BLD-GUILD-HOUSE",
+      "images": [
+        {
+          "url": "https://homepages.bluffton.edu/~sullivanm/pennsylvania/philadelphia/venturiguild/0088.jpg",
+          "sourceLabel": "Bluffton Digital Imaging Project · Guild House",
+          "sourceUrl": "https://homepages.bluffton.edu/~sullivanm/pennsylvania/philadelphia/venturiguild/guild.html"
+        },
+        {
+          "url": "https://homepages.bluffton.edu/~sullivanm/pennsylvania/philadelphia/venturiguild/0086.jpg",
+          "sourceLabel": "Bluffton Digital Imaging Project · Guild House",
+          "sourceUrl": "https://homepages.bluffton.edu/~sullivanm/pennsylvania/philadelphia/venturiguild/guild.html"
+        }
+      ]
+    },
+    {
+      "id": "BLD-CERAMIC-HOUSE",
+      "images": [
+        {
+          "url": "https://images.adsttc.com/media/images/55e7/88bc/2347/5ddd/1700/1c22/large_jpg/jinhua-3976.jpg?1441237175",
+          "sourceLabel": "ArchDaily · Ceramic House in Jinhua · photo Iwan Baan",
+          "sourceUrl": "https://www.archdaily.com/212042/more-photos-of-wang-shus-work-by-iwan-baan/jinhua-3976"
+        },
+        {
+          "url": "https://images.adsttc.com/media/images/55e7/88e7/2347/5ddd/1700/1c27/large_jpg/jinhua-3958.jpg?1441237217",
+          "sourceLabel": "ArchDaily · Ceramic House in Jinhua · photo Iwan Baan",
+          "sourceUrl": "https://www.archdaily.com/212042/more-photos-of-wang-shus-work-by-iwan-baan/jinhua-3976"
+        }
+      ]
+    },
+    {
+      "id": "BLD-JAPAN-PAVILION-2000",
+      "images": [
+        {
+          "url": "https://shigerubanarchitects.com/wp-content/uploads/2022/09/shigeru-ban-japan-pavillon2.jpg",
+          "sourceLabel": "Shigeru Ban Architects · Japan Pavilion Expo 2000",
+          "sourceUrl": "https://shigerubanarchitects.com/works/exhibitions/japan-pavilion-expo-2000/"
+        },
+        {
+          "url": "https://shigerubanarchitects.com/wp-content/uploads/2022/09/shigeru-ban-japan-pavillon4.jpg",
+          "sourceLabel": "Shigeru Ban Architects · Japan Pavilion Expo 2000",
+          "sourceUrl": "https://shigerubanarchitects.com/works/exhibitions/japan-pavilion-expo-2000/"
+        }
+      ]
+    },
+    {
+      "id": "BLD-OPERA-VILLAGE",
+      "images": [
+        {
+          "url": "https://kerearchitecture-17f76.kxcdn.com/./5cd3c1d2-360f-43b7-a6d6-c3267ebe70f8/StudentsinfrontoftheschoolattheOperaVillage_KereArchitecture_PhotobyDanielSchwartz.jpg?w=980&h=700&fm=jpg&q=70&fit=max&crop=4000%2C2667%2C0%2C0",
+          "sourceLabel": "Kéré Architecture · Opera Village school · photo Daniel Schwartz",
+          "sourceUrl": "https://www.kerearchitecture.com/work/building/opera-village"
+        },
+        {
+          "url": "https://kerearchitecture-17f76.kxcdn.com/./5cd3c1d2-360f-43b7-a6d6-c3267ebe70f8/ClassroomattheOperaVillageschool_PhotobyKereArchitecture.jpg?w=980&h=700&fm=jpg&q=70&fit=max&crop=5845%2C3897%2C0%2C0",
+          "sourceLabel": "Kéré Architecture · Opera Village classroom",
+          "sourceUrl": "https://www.kerearchitecture.com/work/building/opera-village"
+        }
+      ]
+    },
+    {
+      "id": "BLD-YANWEIZHOU",
+      "images": [
+        {
+          "url": "https://www.designindaba.com/sites/default/files/node/news/22412/gallery/yanweizhou-park-jinhua-city-turenscape-14.jpg",
+          "sourceLabel": "Design Indaba · Jinhua Yanweizhou Park",
+          "sourceUrl": "https://www.designindaba.com/articles/creative-work/yanweizhou-park-harnessing-nature-benefit-itself"
+        },
+        {
+          "url": "https://oss.gooood.cn/uploads/2016/09/08a-960x640.jpg",
+          "sourceLabel": "Gooood · Jinhua Yanweizhou Park terraces",
+          "sourceUrl": "https://www.gooood.cn/a-resilient-landscape-jinhua-yanweizhou-park-by-turenscape.htm?lang=en_US"
+        }
+      ]
+    },
+    {
+      "id": "BLD-MCASD",
+      "images": [
+        {
+          "url": "https://media.architecturaldigest.com/photos/5bbcb003cf791c2db61a49c7/master/w_1600%2Cc_limit/mcasdaxlinecourt%2520.jpg",
+          "sourceLabel": "Architectural Digest · MCASD Axline Court by Venturi Scott Brown",
+          "sourceUrl": "https://www.architecturaldigest.com/story/mcasd-la-jolla-design"
+        }
+      ]
+    },
+    {
+      "id": "BLD-ALLEN-MEMORIAL",
+      "images": [
+        {
+          "url": "https://amam.oberlin.edu/files/galleries/venturiliebermanmed.jpg",
+          "sourceLabel": "Allen Memorial Art Museum · Venturi wing · photo Ralph Lieberman",
+          "sourceUrl": "https://amam.oberlin.edu/about/our-buildings"
+        }
+      ]
+    },
+    {
+      "id": "BLD-FRAC-DUNKIRK",
+      "images": [
+        {
+          "url": "https://images.divisare.com/image/upload/c_fit%2Cf_jpg%2Cq_80%2Cw_1200/v1/project_images/4308040/Lacaton-_-Vassal_FRAC_4.jpg",
+          "sourceLabel": "Divisare · FRAC Nord-Pas-de-Calais · photo Philippe Ruault",
+          "sourceUrl": "https://divisare.com/projects/251178-lacaton-vassal-architectes-philippe-ruault-frac-nord-pas-de-calais-dunkerque-france"
+        }
+      ]
+    },
+    {
+      "id": "BLD-PALAU-GUELL",
+      "images": [
+        {
+          "url": "https://media.traveler.es/photos/613781ac86b46eac7cf5ba07/master/w_1600%2Cc_limit/73057.jpg",
+          "sourceLabel": "Condé Nast Traveler · Palau Güell rooftop",
+          "sourceUrl": "https://www.traveler.es/viajes-urbanos/articulos/cinco-motivos-para-visitar-el-palau-guell/4776"
+        },
+        {
+          "url": "https://www.earthtrekkers.com/wp-content/uploads/2016/10/Palau-Guell-Roof.jpg.optimal.jpg",
+          "sourceLabel": "Earth Trekkers · Palau Güell chimney terrace",
+          "sourceUrl": "https://www.earthtrekkers.com/best-things-to-do-barcelona-spain/"
+        }
+      ]
+    },
+    {
+      "id": "BLD-NANTES-ARCH",
+      "images": [
+        {
+          "url": "https://www.lacatonvassal.com/data/images/full/20090506-004127-z762.jpg",
+          "sourceLabel": "Lacaton & Vassal · Nantes School of Architecture walkway",
+          "sourceUrl": "https://www.lacatonvassal.com/index.php?idp=55"
+        }
+      ]
+    }
+  ]
+}

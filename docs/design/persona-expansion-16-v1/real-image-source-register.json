@@ -1,0 +1,367 @@
+{
+  "generatedAt": "2026-08-28T17:49:46+0800",
+  "records": [
+    {
+      "kind": "architects",
+      "label": "Frei Otto",
+      "query": "Frei Otto portrait",
+      "localPath": "public/images/architects-v2/frei-otto.webp",
+      "dimensions": [
+        1200,
+        1468
+      ],
+      "commonsTitle": "File:2015-12 Otto Schily SPD Bundesparteitag by Olaf Kosinsky-144 (cropped).jpg",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:2015-12_Otto_Schily_SPD_Bundesparteitag_by_Olaf_Kosinsky-144_(cropped).jpg",
+      "artist": "Olaf Kosinsky",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+    },
+    {
+      "kind": "architects",
+      "label": "Venturi × Scott Brown",
+      "query": "Robert Venturi Denise Scott Brown",
+      "localPath": "public/images/architects-v2/venturi-scott-brown.webp",
+      "dimensions": [
+        1036,
+        1500
+      ],
+      "commonsTitle": "File:Robert venturi e denise scott brown per knoll international inc., sedia sheraton (mod. 664), 1979-83 (1984-90).jpg",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Robert_venturi_e_denise_scott_brown_per_knoll_international_inc.,_sedia_sheraton_(mod._664),_1979-83_(1984-90).jpg",
+      "artist": "Sailko",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+    },
+    {
+      "kind": "architects",
+      "label": "SANAA",
+      "query": "Kazuyo Sejima Ryue Nishizawa SANAA",
+      "localPath": "public/images/architects-v2/sanaa.webp",
+      "dimensions": [
+        480,
+        640
+      ],
+      "commonsTitle": "File:Serpentine Gallery Pavilion 2009 by Kazuyo Sejima and Ryue Nishizawa - geograph.org.uk - 1397297.jpg",
+      "commonsPage": "https://commons.wikimedia.org/wiki/File:Serpentine_Gallery_Pavilion_2009_by_Kazuyo_Sejima_and_Ryue_Nishizawa_-_geograph.org.uk_-_1397297.jpg",
+      "artist": "David Hawgood",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    }
+  ],
+  "failures": [
+    {
+      "kind": "architects",
+      "file": "francis-kere.webp",
+      "query": "Diébédo Francis Kéré portrait",
+      "label": "Francis Kéré",
+      "error": "no usable Wikimedia raster result"
+    },
+    {
+      "kind": "architects",
+      "file": "kongjian-yu.webp",
+      "query": "Kongjian Yu portrait",
+      "label": "Kongjian Yu",
+      "error": "no usable Wikimedia raster result"
+    },
+    {
+      "kind": "architects",
+      "file": "louis-kahn.webp",
+      "query": "Louis Kahn architect portrait",
+      "label": "Louis Kahn",
+      "error": "no usable Wikimedia raster result"
+    },
+    {
+      "kind": "architects",
+      "file": "lacaton-vassal.webp",
+      "query": "Anne Lacaton Jean-Philippe Vassal",
+      "label": "Lacaton & Vassal",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "architects",
+      "file": "oma.webp",
+      "query": "Rem Koolhaas portrait",
+      "label": "Rem Koolhaas / OMA",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "expo67-german-pavilion.webp",
+      "query": "German Pavilion Expo 67 Montreal Frei Otto",
+      "label": "German Pavilion Expo 67",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "munich-olympic-roof.webp",
+      "query": "Munich Olympic Stadium roof Frei Otto",
+      "label": "Munich Olympic Roof",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "multihalle-mannheim.webp",
+      "query": "Multihalle Mannheim Frei Otto",
+      "label": "Multihalle Mannheim",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "japan-pavilion-2000.webp",
+      "query": "Japan Pavilion Expo 2000 Hanover Shigeru Ban",
+      "label": "Japan Pavilion Expo 2000",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "tuwaiq-palace.webp",
+      "query": "Tuwaiq Palace Riyadh",
+      "label": "Tuwaiq Palace",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "gando-primary-school.webp",
+      "query": "Gando Primary School Francis Kere",
+      "label": "Gando Primary School",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "lycee-schorge.webp",
+      "query": "Lycee Schorge Koudougou Kere",
+      "label": "Lycée Schorge",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "serpentine-kere-2017.webp",
+      "query": "Serpentine Pavilion 2017 Francis Kere",
+      "label": "Serpentine Pavilion 2017",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "opera-village-laongo.webp",
+      "query": "Opera Village Laongo Burkina Faso Kere",
+      "label": "Opera Village Laongo",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "startup-lions-campus.webp",
+      "query": "Startup Lions Campus Kenya Kere",
+      "label": "Startup Lions Campus",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "yongning-river-park.webp",
+      "query": "Yongning River Park Taizhou Turenscape",
+      "label": "Yongning River Park",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "shanghai-houtan-park.webp",
+      "query": "Shanghai Houtan Park Turenscape",
+      "label": "Shanghai Houtan Park",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "qunli-stormwater-park.webp",
+      "query": "Qunli Stormwater Park Harbin",
+      "label": "Qunli Stormwater Park",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "yanweizhou-park.webp",
+      "query": "Yanweizhou Park Jinhua Turenscape",
+      "label": "Yanweizhou Park",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "zhongshan-shipyard-park.webp",
+      "query": "Zhongshan Shipyard Park Turenscape",
+      "label": "Zhongshan Shipyard Park",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "salk-institute.webp",
+      "query": "Salk Institute courtyard Louis Kahn",
+      "label": "Salk Institute",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "kimbell-art-museum.webp",
+      "query": "Kimbell Art Museum Kahn exterior",
+      "label": "Kimbell Art Museum",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "bangladesh-parliament.webp",
+      "query": "Jatiya Sangsad Bhaban Louis Kahn",
+      "label": "Bangladesh Parliament",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "exeter-library.webp",
+      "query": "Phillips Exeter Academy Library Kahn",
+      "label": "Exeter Library",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "iim-ahmedabad.webp",
+      "query": "IIM Ahmedabad Louis Kahn campus",
+      "label": "IIM Ahmedabad",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "vanna-venturi-house.webp",
+      "query": "Vanna Venturi House",
+      "label": "Vanna Venturi House",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "guild-house.webp",
+      "query": "Guild House Philadelphia Venturi",
+      "label": "Guild House",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "sainsbury-wing.webp",
+      "query": "Sainsbury Wing National Gallery London",
+      "label": "Sainsbury Wing",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "mcasd-la-jolla.webp",
+      "query": "Museum Contemporary Art San Diego La Jolla Venturi",
+      "label": "MCASD La Jolla",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "allen-memorial-museum.webp",
+      "query": "Allen Memorial Art Museum Oberlin Venturi",
+      "label": "Allen Memorial Museum",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "kanazawa-21.webp",
+      "query": "21st Century Museum Kanazawa SANAA",
+      "label": "21st Century Museum Kanazawa",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "rolex-learning-center.webp",
+      "query": "Rolex Learning Center SANAA",
+      "label": "Rolex Learning Center",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "louvre-lens.webp",
+      "query": "Louvre Lens SANAA",
+      "label": "Louvre-Lens",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "new-museum-nyc.webp",
+      "query": "New Museum New York SANAA building",
+      "label": "New Museum New York",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "serpentine-sanaa-2009.webp",
+      "query": "Serpentine Pavilion 2009 SANAA",
+      "label": "Serpentine Pavilion 2009",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "tour-bois-le-pretre.webp",
+      "query": "Tour Bois le Pretre Lacaton Vassal",
+      "label": "Tour Bois-le-Prêtre",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "grand-parc-bordeaux.webp",
+      "query": "Grand Parc Bordeaux Lacaton Vassal",
+      "label": "Grand Parc Bordeaux",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "palais-de-tokyo.webp",
+      "query": "Palais de Tokyo Paris building",
+      "label": "Palais de Tokyo",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "frac-dunkirk.webp",
+      "query": "FRAC Dunkerque Lacaton Vassal",
+      "label": "FRAC Dunkirk",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "nantes-school-architecture.webp",
+      "query": "Nantes School Architecture Lacaton Vassal",
+      "label": "Nantes Architecture School",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "seattle-central-library.webp",
+      "query": "Seattle Central Library OMA",
+      "label": "Seattle Central Library",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "casa-da-musica.webp",
+      "query": "Casa da Musica Porto OMA",
+      "label": "Casa da Música",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "cctv-headquarters.webp",
+      "query": "CCTV Headquarters Beijing OMA",
+      "label": "CCTV Headquarters",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "kunsthal-rotterdam.webp",
+      "query": "Kunsthal Rotterdam OMA",
+      "label": "Kunsthal Rotterdam",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "kind": "buildings",
+      "file": "de-rotterdam.webp",
+      "query": "De Rotterdam OMA building",
+      "label": "De Rotterdam",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    }
+  ]
+}

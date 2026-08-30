@@ -1,0 +1,53 @@
+{
+  "reviewedAt": "2026-08-29",
+  "method": "Visual review of search candidate sheets against the named building and architect. Omitted candidates are rejected or unavailable.",
+  "selections": {
+    "BLD-2121": [1, 2],
+    "BLD-30-ST-MARY": [3],
+    "BLD-BANGLADESH-PARLIAMENT": [1],
+    "BLD-CASA-MILA": [1, 4],
+    "BLD-CROWN-HALL": [1, 2],
+    "BLD-DAXING": [1, 4],
+    "BLD-EXETER-LIBRARY": [2, 3],
+    "BLD-GRAND-PARC": [2],
+    "BLD-GUANGZHOU-OPERA": [1, 2],
+    "BLD-HEARST": [1, 3],
+    "BLD-HSBC": [3],
+    "BLD-IIM-AHMEDABAD": [2, 4],
+    "BLD-KANAZAWA-21": [1],
+    "BLD-KUNSTHAL": [1, 2],
+    "BLD-LONDON-AQUATICS": [3],
+    "BLD-LOUVRE-LENS": [1, 2],
+    "BLD-MILLAU": [1, 3],
+    "BLD-MODERN-FORT-WORTH": [1],
+    "BLD-MULTIHALLE": [1],
+    "BLD-NEUE-NATIONALGALERIE": [2, 3],
+    "BLD-NEW-MUSEUM": [3],
+    "BLD-PALAIS-TOKYO": [4],
+    "BLD-PAVILION": [1, 2],
+    "BLD-QUNLI-PARK": [2],
+    "BLD-REICHSTAG": [2],
+    "BLD-RONCHAMP": [1, 2],
+    "BLD-SAGRADA": [1, 3],
+    "BLD-SALK": [1, 3],
+    "BLD-SEAGRAM": [2],
+    "BLD-SERPENTINE-SANAA": [2, 4],
+    "BLD-STARTUP-LIONS": [1, 2],
+    "BLD-TOUR-BOIS": [2],
+    "BLD-TUWAIQ-PALACE": [2, 3],
+    "BLD-VANNA-VENTURI": [1, 3],
+    "BLD-WENZHENG-LIBRARY": [1, 4],
+    "BLD-XIANGSHAN": [1],
+    "BLD-ZHONGSHAN-SHIPYARD": [1, 4]
+  },
+  "withdrawn": [
+    "BLD-CHANDIGARH",
+    "BLD-HOUTAN-PARK",
+    "BLD-JAPAN-PAVILION-2000",
+    "BLD-KIMBELL",
+    "BLD-SAINSBURY-WING"
+  ],
+  "primaryReplacements": {
+    "BLD-FRAC-DUNKIRK": 2
+  }
+}

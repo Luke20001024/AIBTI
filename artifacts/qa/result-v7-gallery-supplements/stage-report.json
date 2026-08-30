@@ -1,0 +1,520 @@
+{
+  "records": [
+    {
+      "id": "BLD-CHANDIGARH",
+      "name": "昌迪加尔议会建筑群",
+      "originalName": "Capitol Complex",
+      "primaryPath": "public/images/buildings/chandigarh.webp",
+      "images": [
+        {
+          "url": "https://s7ap1.scene7.com/is/image/incredibleindia/capitol-complex-chandigarh-chandigarh-tri-hero?qlt=82&ts=1727163008878",
+          "sourceLabel": "Incredible India · Chandigarh Capitol Complex",
+          "sourceUrl": "https://www.incredibleindia.gov.in/en/trips/trip-listing/chandigarh-s-culture-nature-spirituality-gardens-and-arts",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-chandigarh-candidate-01.webp",
+          "dimensions": [
+            1280,
+            720
+          ],
+          "visualDistance": 62.64
+        },
+        {
+          "url": "https://i0.wp.com/archeyes.com/wp-content/uploads/2024/06/Palace-of-the-Assembly-in-Chandigarh-by-Le-Corbusier-Cemal-4.jpg?ssl=1",
+          "sourceLabel": "ArchEyes · Palace of the Assembly Chandigarh",
+          "sourceUrl": "https://archeyes.com/palace-of-the-assembly-in-chandigarh-by-le-corbusier/",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-chandigarh-candidate-02.webp",
+          "dimensions": [
+            1600,
+            900
+          ],
+          "visualDistance": 62.45
+        }
+      ]
+    },
+    {
+      "id": "BLD-NINGBO",
+      "name": "宁波历史博物馆",
+      "originalName": "Ningbo History Museum",
+      "primaryPath": "public/images/buildings/ningbo-history-museum.webp",
+      "images": [
+        {
+          "url": "https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/3N4SY4eH/uploads/media/image/20241017123259000000_north_facet_of_nbm.JPG",
+          "sourceLabel": "Bibliothèque nationale de France · Ningbo History Museum",
+          "sourceUrl": "https://passerelles.essentiels.bnf.fr/fr/chronologie/construction/a508f840-bb7f-42fd-94d9-dea0017d97cd-musee-histoire-ningbo",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-ningbo-candidate-01.webp",
+          "dimensions": [
+            1600,
+            800
+          ],
+          "visualDistance": 51.43
+        },
+        {
+          "url": "https://forgemind.net/images/w/WangShu-Ningbo_Museum_14.jpg",
+          "sourceLabel": "FAM · Ningbo History Museum courtyard",
+          "sourceUrl": "https://forgemind.net/media/%E4%B8%AD%E5%9C%8B%E5%BB%BA%E7%AF%89%E5%B8%AB%E7%8E%8B%E6%BE%8D%E8%A8%AD%E8%A8%88-%E5%AF%A7%E6%B3%A2%E6%AD%B7%E5%8F%B2%E5%8D%9A%E7%89%A9%E9%A4%A8-ningbo-history-museum/",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-ningbo-candidate-02.webp",
+          "dimensions": [
+            580,
+            387
+          ],
+          "visualDistance": 66.4
+        }
+      ]
+    },
+    {
+      "id": "BLD-EXPO67-GERMAN",
+      "name": "德国馆 Expo 67",
+      "originalName": "German Pavilion, Expo 67",
+      "primaryPath": "public/images/buildings/expo67-german-pavilion.webp",
+      "images": [
+        {
+          "url": "https://expo67.ncf.ca/germanyinner_nae000990885.jpg",
+          "sourceLabel": "Expo 67 archival project · German Pavilion interior",
+          "sourceUrl": "https://expo67.ncf.ca/expo_german_p3.html",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-expo67-german-candidate-01.webp",
+          "dimensions": [
+            640,
+            435
+          ],
+          "visualDistance": 79.0
+        }
+      ]
+    },
+    {
+      "id": "BLD-MUNICH-OLYMPIC",
+      "name": "慕尼黑奥林匹克公园屋顶",
+      "originalName": "Munich Olympic Stadium Roof",
+      "primaryPath": "public/images/buildings/munich-olympic-roof.webp",
+      "images": [
+        {
+          "url": "https://static.dezeen.com/uploads/2015/03/Frei-Otto_Pritzker-Prize-laureate-2015_dezeen_784_24.jpg",
+          "sourceLabel": "Dezeen · Munich Olympic tensile roof",
+          "sourceUrl": "https://www.dezeen.com/2015/03/10/frei-otto-pritzker-prize-2015/",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-munich-olympic-candidate-01.webp",
+          "dimensions": [
+            784,
+            560
+          ],
+          "visualDistance": 51.4
+        },
+        {
+          "url": "https://cdn.archilovers.com/projects/c_383_22db7390-988a-4b3e-a1d7-eb16b9d5e5a6.jpg",
+          "sourceLabel": "Archilovers · Munich Olympic Park tensile roof",
+          "sourceUrl": "https://www.archilovers.com/projects/151385/roofing-for-main-sports-facilities-in-the-munich-olympic-park.html",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-munich-olympic-candidate-02.webp",
+          "dimensions": [
+            472,
+            629
+          ],
+          "visualDistance": 54.36
+        }
+      ]
+    },
+    {
+      "id": "BLD-LYCEE-SCHORGE",
+      "name": "施奥尔盖中学",
+      "originalName": "Lycée Schorge Secondary School",
+      "primaryPath": "public/images/buildings/lycee-schorge.webp",
+      "images": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/61730a042480154946b9ae05/79138cf1-2652-4bfe-bf7d-d01a45a34392/079_Lyc%C3%A9e%2BSchorge_night_image%2Bby%2BIwan%2BBaan.jpg",
+          "sourceLabel": "BUILD · Lycée Schorge · photo Iwan Baan",
+          "sourceUrl": "https://www.buildporto.com/blog/lyce-schorge",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-lycee-schorge-candidate-01.webp",
+          "dimensions": [
+            1600,
+            1067
+          ],
+          "visualDistance": 114.77
+        },
+        {
+          "url": "https://toposmagazine.com/wp-content/uploads/2022/04/LycCe-Schorge-%40-Francis-Kere11-scaled.jpeg",
+          "sourceLabel": "Topos Magazine · Lycée Schorge",
+          "sourceUrl": "https://toposmagazine.com/pritzker-prize/",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-lycee-schorge-candidate-02.webp",
+          "dimensions": [
+            1600,
+            1066
+          ],
+          "visualDistance": 58.52
+        }
+      ]
+    },
+    {
+      "id": "BLD-YONGNING-RIVER",
+      "name": "永宁江公园",
+      "originalName": "Yongning River Park",
+      "primaryPath": "public/images/buildings/yongning-river-park.webp",
+      "images": [
+        {
+          "url": "https://www.turenscape.com/upload/project/202505/61922d0fa2a526d3aa8763b050026a15.jpg",
+          "sourceLabel": "Turenscape · Taizhou Yongning River Park",
+          "sourceUrl": "https://www.turenscape.com/en/project/detail/323.html",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-yongning-river-candidate-01.webp",
+          "dimensions": [
+            1050,
+            700
+          ],
+          "visualDistance": 40.74
+        },
+        {
+          "url": "https://www.turenscape.com/upload/project/202505/a63abe68617af47332b81e44850644c6.jpg",
+          "sourceLabel": "Turenscape · Taizhou Yongning River Park",
+          "sourceUrl": "https://www.turenscape.com/en/project/detail/323.html",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-yongning-river-candidate-02.webp",
+          "dimensions": [
+            1050,
+            700
+          ],
+          "visualDistance": 66.48
+        }
+      ]
+    },
+    {
+      "id": "BLD-HOUTAN-PARK",
+      "name": "上海后滩公园",
+      "originalName": "Shanghai Houtan Park",
+      "primaryPath": "public/images/buildings/shanghai-houtan-park.webp",
+      "images": [
+        {
+          "url": "https://cdn.homedsgn.com/wp-content/uploads/2011/05/Shangai-Houtan-Park-26-3.jpg",
+          "sourceLabel": "HomeDSGN · Shanghai Houtan Park · photo courtesy Turenscape",
+          "sourceUrl": "https://www.homedsgn.com/2011/05/02/shanghai-houtan-park-by-turenscape/",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-houtan-park-candidate-01.webp",
+          "dimensions": [
+            1050,
+            700
+          ],
+          "visualDistance": 49.66
+        },
+        {
+          "url": "https://cdn.homedsgn.com/wp-content/uploads/2011/05/Shangai-Houtan-Park-22-750x499.jpg",
+          "sourceLabel": "HomeDSGN · Shanghai Houtan Park · photo courtesy Turenscape",
+          "sourceUrl": "https://www.homedsgn.com/2011/05/02/shanghai-houtan-park-by-turenscape/",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-houtan-park-candidate-02.webp",
+          "dimensions": [
+            750,
+            499
+          ],
+          "visualDistance": 71.08
+        }
+      ]
+    },
+    {
+      "id": "BLD-KIMBELL",
+      "name": "金贝尔艺术博物馆",
+      "originalName": "Kimbell Art Museum",
+      "primaryPath": "public/images/buildings/kimbell-art-museum.webp",
+      "images": [
+        {
+          "url": "https://docomomo-us.org/resource/desktop/medias/image/image_147sfftrj0l3h61f.jpg",
+          "sourceLabel": "Docomomo US · Kimbell Art Museum",
+          "sourceUrl": "https://www.docomomo-us.org/register/kimbell-art-museum",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-kimbell-candidate-01.webp",
+          "dimensions": [
+            1600,
+            647
+          ],
+          "visualDistance": 82.19
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/51bf94dbe4b03b777468bec4/1585344945531-6J7HGG7P9IKRGHC4K35O/DSC_0045.jpeg",
+          "sourceLabel": "Appitecture · Contemplating the Kimbell",
+          "sourceUrl": "https://www.appitecture.net/place-and-perspectives/2020/14/4/contemplating-the-kimbell",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-kimbell-candidate-02.webp",
+          "dimensions": [
+            1600,
+            1068
+          ],
+          "visualDistance": 87.64
+        }
+      ]
+    },
+    {
+      "id": "BLD-SAINSBURY-WING",
+      "name": "国家美术馆塞恩斯伯里翼",
+      "originalName": "Sainsbury Wing, National Gallery",
+      "primaryPath": "public/images/buildings/sainsbury-wing.webp",
+      "images": [
+        {
+          "url": "https://dt565gqrz3z7y.cloudfront.net/ce/image/C6y35u_JPw57NBdXKGCFLQ.jpg",
+          "sourceLabel": "ELLE Decoration UK · Sainsbury Wing",
+          "sourceUrl": "https://gb.readly.com/magazines/elle-decoration-uk/2022-09-29/632f5091423f5e51c69db08b",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-sainsbury-wing-candidate-01.webp",
+          "dimensions": [
+            533,
+            566
+          ],
+          "visualDistance": 65.39
+        },
+        {
+          "url": "https://d3rcx32iafnn0o.cloudfront.net/Pictures/1024x536/0/6/5/2003065_thenat2_494887.jpg",
+          "sourceLabel": "Building Design · original Sainsbury Wing interior",
+          "sourceUrl": "https://www.bdonline.co.uk/buildings/from-complexity-to-clarity-the-sainsbury-wing-transformed/5135802.article",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-sainsbury-wing-candidate-02.webp",
+          "dimensions": [
+            1024,
+            536
+          ],
+          "visualDistance": 77.68
+        }
+      ]
+    },
+    {
+      "id": "BLD-GUILD-HOUSE",
+      "name": "吉尔德之家",
+      "originalName": "Guild House",
+      "primaryPath": "public/images/buildings/guild-house.webp",
+      "images": [
+        {
+          "url": "https://homepages.bluffton.edu/~sullivanm/pennsylvania/philadelphia/venturiguild/0088.jpg",
+          "sourceLabel": "Bluffton Digital Imaging Project · Guild House",
+          "sourceUrl": "https://homepages.bluffton.edu/~sullivanm/pennsylvania/philadelphia/venturiguild/guild.html",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-guild-house-candidate-01.webp",
+          "dimensions": [
+            800,
+            483
+          ],
+          "visualDistance": 88.33
+        },
+        {
+          "url": "https://homepages.bluffton.edu/~sullivanm/pennsylvania/philadelphia/venturiguild/0086.jpg",
+          "sourceLabel": "Bluffton Digital Imaging Project · Guild House",
+          "sourceUrl": "https://homepages.bluffton.edu/~sullivanm/pennsylvania/philadelphia/venturiguild/guild.html",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-guild-house-candidate-02.webp",
+          "dimensions": [
+            800,
+            590
+          ],
+          "visualDistance": 86.51
+        }
+      ]
+    },
+    {
+      "id": "BLD-CERAMIC-HOUSE",
+      "name": "金华瓷屋",
+      "originalName": "Ceramic House",
+      "primaryPath": "public/images/buildings/ceramic-house.jpg",
+      "images": [
+        {
+          "url": "https://images.adsttc.com/media/images/55e7/88bc/2347/5ddd/1700/1c22/large_jpg/jinhua-3976.jpg?1441237175",
+          "sourceLabel": "ArchDaily · Ceramic House in Jinhua · photo Iwan Baan",
+          "sourceUrl": "https://www.archdaily.com/212042/more-photos-of-wang-shus-work-by-iwan-baan/jinhua-3976",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-ceramic-house-candidate-01.webp",
+          "dimensions": [
+            689,
+            460
+          ],
+          "visualDistance": 62.69
+        },
+        {
+          "url": "https://images.adsttc.com/media/images/55e7/88e7/2347/5ddd/1700/1c27/large_jpg/jinhua-3958.jpg?1441237217",
+          "sourceLabel": "ArchDaily · Ceramic House in Jinhua · photo Iwan Baan",
+          "sourceUrl": "https://www.archdaily.com/212042/more-photos-of-wang-shus-work-by-iwan-baan/jinhua-3976",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-ceramic-house-candidate-02.webp",
+          "dimensions": [
+            689,
+            460
+          ],
+          "visualDistance": 88.1
+        }
+      ]
+    },
+    {
+      "id": "BLD-JAPAN-PAVILION-2000",
+      "name": "日本馆 Expo 2000",
+      "originalName": "Japan Pavilion, Expo 2000",
+      "primaryPath": "public/images/buildings/japan-pavilion-2000.webp",
+      "images": [
+        {
+          "url": "https://shigerubanarchitects.com/wp-content/uploads/2022/09/shigeru-ban-japan-pavillon2.jpg",
+          "sourceLabel": "Shigeru Ban Architects · Japan Pavilion Expo 2000",
+          "sourceUrl": "https://shigerubanarchitects.com/works/exhibitions/japan-pavilion-expo-2000/",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-japan-pavilion-2000-candidate-01.webp",
+          "dimensions": [
+            1481,
+            1000
+          ],
+          "visualDistance": 66.35
+        },
+        {
+          "url": "https://shigerubanarchitects.com/wp-content/uploads/2022/09/shigeru-ban-japan-pavillon4.jpg",
+          "sourceLabel": "Shigeru Ban Architects · Japan Pavilion Expo 2000",
+          "sourceUrl": "https://shigerubanarchitects.com/works/exhibitions/japan-pavilion-expo-2000/",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-japan-pavilion-2000-candidate-02.webp",
+          "dimensions": [
+            1481,
+            1000
+          ],
+          "visualDistance": 56.56
+        }
+      ]
+    },
+    {
+      "id": "BLD-OPERA-VILLAGE",
+      "name": "拉昂戈歌剧村",
+      "originalName": "Opera Village Laongo",
+      "primaryPath": "public/images/buildings/opera-village-laongo.webp",
+      "images": [
+        {
+          "url": "https://kerearchitecture-17f76.kxcdn.com/./5cd3c1d2-360f-43b7-a6d6-c3267ebe70f8/StudentsinfrontoftheschoolattheOperaVillage_KereArchitecture_PhotobyDanielSchwartz.jpg?w=980&h=700&fm=jpg&q=70&fit=max&crop=4000%2C2667%2C0%2C0",
+          "sourceLabel": "Kéré Architecture · Opera Village school · photo Daniel Schwartz",
+          "sourceUrl": "https://www.kerearchitecture.com/work/building/opera-village",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-opera-village-candidate-01.webp",
+          "dimensions": [
+            980,
+            653
+          ],
+          "visualDistance": 44.8
+        },
+        {
+          "url": "https://kerearchitecture-17f76.kxcdn.com/./5cd3c1d2-360f-43b7-a6d6-c3267ebe70f8/ClassroomattheOperaVillageschool_PhotobyKereArchitecture.jpg?w=980&h=700&fm=jpg&q=70&fit=max&crop=5845%2C3897%2C0%2C0",
+          "sourceLabel": "Kéré Architecture · Opera Village classroom",
+          "sourceUrl": "https://www.kerearchitecture.com/work/building/opera-village",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-opera-village-candidate-02.webp",
+          "dimensions": [
+            980,
+            653
+          ],
+          "visualDistance": 61.72
+        }
+      ]
+    },
+    {
+      "id": "BLD-YANWEIZHOU",
+      "name": "燕尾洲公园",
+      "originalName": "Yanweizhou Park",
+      "primaryPath": "public/images/buildings/yanweizhou-park.webp",
+      "images": [
+        {
+          "url": "https://www.designindaba.com/sites/default/files/node/news/22412/gallery/yanweizhou-park-jinhua-city-turenscape-14.jpg",
+          "sourceLabel": "Design Indaba · Jinhua Yanweizhou Park",
+          "sourceUrl": "https://www.designindaba.com/articles/creative-work/yanweizhou-park-harnessing-nature-benefit-itself",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-yanweizhou-candidate-01.webp",
+          "dimensions": [
+            1200,
+            708
+          ],
+          "visualDistance": 45.31
+        },
+        {
+          "url": "https://oss.gooood.cn/uploads/2016/09/08a-960x640.jpg",
+          "sourceLabel": "Gooood · Jinhua Yanweizhou Park terraces",
+          "sourceUrl": "https://www.gooood.cn/a-resilient-landscape-jinhua-yanweizhou-park-by-turenscape.htm?lang=en_US",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-yanweizhou-candidate-02.webp",
+          "dimensions": [
+            960,
+            640
+          ],
+          "visualDistance": 59.86
+        }
+      ]
+    },
+    {
+      "id": "BLD-MCASD",
+      "name": "圣迭戈当代艺术博物馆扩建",
+      "originalName": "Museum of Contemporary Art San Diego",
+      "primaryPath": "public/images/buildings/mcasd-la-jolla.webp",
+      "images": [
+        {
+          "url": "https://media.architecturaldigest.com/photos/5bbcb003cf791c2db61a49c7/master/w_1600%2Cc_limit/mcasdaxlinecourt%2520.jpg",
+          "sourceLabel": "Architectural Digest · MCASD Axline Court by Venturi Scott Brown",
+          "sourceUrl": "https://www.architecturaldigest.com/story/mcasd-la-jolla-design",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-mcasd-candidate-01.webp",
+          "dimensions": [
+            1600,
+            1022
+          ],
+          "visualDistance": 80.62
+        }
+      ]
+    },
+    {
+      "id": "BLD-ALLEN-MEMORIAL",
+      "name": "艾伦纪念艺术博物馆扩建",
+      "originalName": "Allen Memorial Art Museum Addition",
+      "primaryPath": "public/images/buildings/allen-memorial-museum.webp",
+      "images": [
+        {
+          "url": "https://amam.oberlin.edu/files/galleries/venturiliebermanmed.jpg",
+          "sourceLabel": "Allen Memorial Art Museum · Venturi wing · photo Ralph Lieberman",
+          "sourceUrl": "https://amam.oberlin.edu/about/our-buildings",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-allen-memorial-candidate-01.webp",
+          "dimensions": [
+            900,
+            598
+          ],
+          "visualDistance": 75.6
+        }
+      ]
+    },
+    {
+      "id": "BLD-FRAC-DUNKIRK",
+      "name": "敦刻尔克 FRAC",
+      "originalName": "FRAC Nord-Pas de Calais",
+      "primaryPath": "public/images/buildings/frac-dunkirk.webp",
+      "images": [
+        {
+          "url": "https://images.divisare.com/image/upload/c_fit%2Cf_jpg%2Cq_80%2Cw_1200/v1/project_images/4308040/Lacaton-_-Vassal_FRAC_4.jpg",
+          "sourceLabel": "Divisare · FRAC Nord-Pas-de-Calais · photo Philippe Ruault",
+          "sourceUrl": "https://divisare.com/projects/251178-lacaton-vassal-architectes-philippe-ruault-frac-nord-pas-de-calais-dunkerque-france",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-frac-dunkirk-candidate-01.webp",
+          "dimensions": [
+            1200,
+            800
+          ],
+          "visualDistance": 31.94
+        }
+      ]
+    },
+    {
+      "id": "BLD-PALAU-GUELL",
+      "name": "桂尔宫",
+      "originalName": "Palau Güell",
+      "primaryPath": "public/images/buildings/palau-guell.jpg",
+      "images": [
+        {
+          "url": "https://media.traveler.es/photos/613781ac86b46eac7cf5ba07/master/w_1600%2Cc_limit/73057.jpg",
+          "sourceLabel": "Condé Nast Traveler · Palau Güell rooftop",
+          "sourceUrl": "https://www.traveler.es/viajes-urbanos/articulos/cinco-motivos-para-visitar-el-palau-guell/4776",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-palau-guell-candidate-01.webp",
+          "dimensions": [
+            630,
+            450
+          ],
+          "visualDistance": 72.74
+        },
+        {
+          "url": "https://www.earthtrekkers.com/wp-content/uploads/2016/10/Palau-Guell-Roof.jpg.optimal.jpg",
+          "sourceLabel": "Earth Trekkers · Palau Güell chimney terrace",
+          "sourceUrl": "https://www.earthtrekkers.com/best-things-to-do-barcelona-spain/",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-palau-guell-candidate-02.webp",
+          "dimensions": [
+            1200,
+            800
+          ],
+          "visualDistance": 54.04
+        }
+      ]
+    },
+    {
+      "id": "BLD-NANTES-ARCH",
+      "name": "南特建筑学院",
+      "originalName": "Nantes School of Architecture",
+      "primaryPath": "public/images/buildings/nantes-school-architecture.webp",
+      "images": [
+        {
+          "url": "https://www.lacatonvassal.com/data/images/full/20090506-004127-z762.jpg",
+          "sourceLabel": "Lacaton & Vassal · Nantes School of Architecture walkway",
+          "sourceUrl": "https://www.lacatonvassal.com/index.php?idp=55",
+          "cachePath": "artifacts/source-cache/building-gallery-supplements/bld-nantes-arch-candidate-01.webp",
+          "dimensions": [
+            1024,
+            680
+          ],
+          "visualDistance": 58.48
+        }
+      ]
+    }
+  ],
+  "failures": []
+}

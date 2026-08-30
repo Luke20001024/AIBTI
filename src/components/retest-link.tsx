@@ -1,23 +1,34 @@
 "use client";
 
+import type { ReactNode } from "react";
 import type { ResultCode } from "../content";
 import { track } from "../domain/analytics";
 import { clearLocalResult } from "../domain/local-result";
 import { withBasePath } from "../domain/paths";
 import { clearQuizSession } from "../domain/session";
 
-export function RetestLink({ resultCode }: { resultCode: ResultCode }) {
+type RetestLinkProps = {
+  resultCode: ResultCode;
+  children?: ReactNode;
+  className?: string;
+};
+
+export function RetestLink({
+  resultCode,
+  children = "清空并重新测试 →",
+  className = "restart-link",
+}: RetestLinkProps) {
   return (
     <a
-      className="restart-link"
-      href={withBasePath("/quiz/")}
+      className={className || undefined}
+      href={withBasePath("/quiz/?reset=1")}
       onClick={() => {
         track("retest_click", { resultCode });
         clearQuizSession();
         clearLocalResult();
       }}
     >
-      清空并重新测试 →
+      {children}
     </a>
   );
 }

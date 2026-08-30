@@ -2,12 +2,13 @@
 
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { QUESTIONS, type OptionId } from "../content";
+import { DISCRIMINATOR_BY_ID, QUESTIONS, type OptionId } from "../content";
 import { track } from "../domain/analytics";
 import { buildCalculationHref } from "../domain/calculation-transfer";
+import { clearLocalResult } from "../domain/local-result";
 import { startHardNavigation, type HardNavigationHandle } from "../domain/navigation";
-import type { AnswerMap } from "../domain/scoring";
-import { readQuizSession, writeQuizSession } from "../domain/session";
+import { deriveDiscriminatorSequence, type AnswerMap } from "../domain/scoring";
+import { clearQuizSession, readQuizSession, writeQuizSession } from "../domain/session";
 import {
   getQuestionVisualSources,
   hasGeneratedQuestionVisual,
@@ -24,22 +25,37 @@ export function QuizRunner() {
   const router = useRouter();
   const [index, setIndex] = useState(0);
   const [answers, setAnswers] = useState<AnswerMap>({});
+  const [dynamicIds, setDynamicIds] = useState<string[]>([]);
   const [ready, setReady] = useState(false);
   const [finishing, setFinishing] = useState(false);
   const [completionError, setCompletionError] = useState<string | null>(null);
   const [fallbackHref, setFallbackHref] = useState<string | null>(null);
   const [storageAvailable, setStorageAvailable] = useState(true);
   const navigation = useRef<HardNavigationHandle | null>(null);
-  const question = QUESTIONS[index];
+  const sequence = useMemo(
+    () => [...QUESTIONS, ...dynamicIds.map((id) => DISCRIMINATOR_BY_ID[id]).filter(Boolean)],
+    [dynamicIds],
+  );
+  const question = sequence[index] ?? sequence[sequence.length - 1];
   const selected = answers[question.id];
-  const isFinalQuestion = index === QUESTIONS.length - 1;
+  const isFinalQuestion = index === sequence.length - 1;
 
   useEffect(() => {
     track("quiz_start");
-    const session = readQuizSession();
+    const url = new URL(window.location.href);
+    const resetRequested = url.searchParams.get("reset") === "1";
+    if (resetRequested) {
+      clearQuizSession();
+      clearLocalResult();
+      url.searchParams.delete("reset");
+      window.history.replaceState(null, "", `${url.pathname}${url.search}${url.hash}`);
+    }
+    const session = resetRequested ? null : readQuizSession();
     if (session) {
+      const restoredDynamic = deriveDiscriminatorSequence(session.answers).map((item) => item.id);
       setAnswers(session.answers);
-      setIndex(session.index);
+      setDynamicIds(restoredDynamic);
+      setIndex(Math.min(session.index, QUESTIONS.length + restoredDynamic.length - 1));
       setStorageAvailable(Boolean(writeQuizSession(session)));
     }
     setReady(true);
@@ -49,16 +65,16 @@ export function QuizRunner() {
   }, []);
 
   useEffect(() => {
-    const nextQuestion = QUESTIONS[index + 1];
+    const nextQuestion = sequence[index + 1];
     if (!nextQuestion) return;
     getQuestionVisualSources(nextQuestion.id).forEach((source) => {
       const image = new Image();
       image.src = source;
     });
-  }, [index]);
+  }, [index, sequence]);
 
   const answeredCount = useMemo(() => Object.keys(answers).length, [answers]);
-  const progress = ((index + 1) / QUESTIONS.length) * 100;
+  const progress = ((index + 1) / sequence.length) * 100;
 
   const persist = (nextAnswers: AnswerMap, nextIndex: number) => {
     const stored = writeQuizSession({ answers: nextAnswers, index: nextIndex, updatedAt: Date.now() });
@@ -86,7 +102,11 @@ export function QuizRunner() {
     setFinishing(true);
     setFallbackHref(target);
     setCompletionError(null);
-    track("quiz_complete", { questionCount: QUESTIONS.length });
+    track("quiz_complete", {
+      coreQuestionCount: QUESTIONS.length,
+      discriminatorQuestionCount: dynamicIds.length,
+      questionCount: sequence.length,
+    });
     navigation.current = startHardNavigation({
       href: target,
       mode: "assign",
@@ -106,12 +126,23 @@ export function QuizRunner() {
     if (finishing) return;
     setCompletionError(null);
     setFallbackHref(null);
-    const nextAnswers = { ...answers, [question.id]: optionId };
+    const nextAnswers = question.id.startsWith("Q")
+      ? { ...Object.fromEntries(Object.entries(answers).filter(([id]) => id.startsWith("Q"))), [question.id]: optionId }
+      : { ...answers, [question.id]: optionId };
     track("question_answer", { questionId: question.id, position: question.order });
     setAnswers(nextAnswers);
 
-    if (isFinalQuestion) {
-      persist(nextAnswers, index);
+    if (index >= QUESTIONS.length - 1) {
+      const nextDynamic = deriveDiscriminatorSequence(nextAnswers).map((item) => item.id);
+      setDynamicIds(nextDynamic);
+      const nextLength = QUESTIONS.length + nextDynamic.length;
+      if (nextLength > sequence.length) {
+        const nextIndex = sequence.length;
+        persist(nextAnswers, nextIndex);
+        setIndex(nextIndex);
+      } else {
+        persist(nextAnswers, index);
+      }
       return;
     }
 
@@ -155,8 +186,8 @@ export function QuizRunner() {
           </div>
         </section>
         <footer className="quiz-footer quiz-loading-footer" aria-hidden="true">
-          <span>18 道短题</span>
-          <span>准备交互</span>
+          <span>18 道核心题</span>
+          <span>接近时加问</span>
         </footer>
       </main>
     );
@@ -167,13 +198,13 @@ export function QuizRunner() {
       <header className="quiz-brand" aria-label="ArcBTI 建筑直觉">
         <span>Arc<b>B</b>TI</span>
         <i aria-hidden="true" />
-        <strong>{GROUP_LABELS[question.kind]}</strong>
+        <strong>{question.id.startsWith("T") ? "最后判断" : GROUP_LABELS[question.kind]}</strong>
       </header>
 
       <div className="quiz-progress">
         <div className="quiz-progress-count">
           <strong>{index + 1}</strong>
-          <span>/ {QUESTIONS.length}</span>
+          <span>/ {sequence.length}</span>
         </div>
         <div className="quiz-progress-line" aria-hidden="true">
           <div className="quiz-progress-value" style={{ width: `${progress}%` }} />

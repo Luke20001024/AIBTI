@@ -1,9 +1,10 @@
-import { QUIZ_VERSION, SCORING_VERSION } from "../content";
+import { DISCRIMINATOR_BY_ID, QUIZ_VERSION, SCORING_VERSION } from "../content";
+import type { OptionId } from "../content";
 import { decodeAnswers, encodeAnswers, type AnswerMap } from "./scoring";
 import { withBasePath } from "./paths";
 import type { SearchParamsReader } from "./result-view";
 
-export const CALCULATION_TRANSFER_VERSION = "3";
+export const CALCULATION_TRANSFER_VERSION = "4";
 
 export type CalculationTransferError =
   | "missing-parameters"
@@ -23,6 +24,12 @@ export const buildCalculationPath = (answers: AnswerMap) => {
     q: QUIZ_VERSION,
     s: SCORING_VERSION,
   });
+  const discriminator = Object.keys(answers)
+    .filter((id) => DISCRIMINATOR_BY_ID[id])
+    .sort()
+    .map((id) => `${id}${answers[id]}`)
+    .join("-");
+  if (discriminator) params.set("d", discriminator);
   return `/calculating/#${params.toString()}`;
 };
 
@@ -54,6 +61,20 @@ export const parseCalculationTransfer = (
     const answers = decodeAnswers(encoded);
     if (encodeAnswers(answers) !== encoded) {
       return { ok: false, reason: "invalid-answers" };
+    }
+    const discriminator = searchParams.get("d");
+    if (discriminator) {
+      const tokens = discriminator.split("-");
+      if (tokens.length > 2) return { ok: false, reason: "invalid-answers" };
+      const seen = new Set<string>();
+      for (const token of tokens) {
+        const match = /^(T\d{2})([ABC])$/u.exec(token);
+        if (!match || !DISCRIMINATOR_BY_ID[match[1]] || seen.has(match[1])) {
+          return { ok: false, reason: "invalid-answers" };
+        }
+        seen.add(match[1]);
+        answers[match[1]] = match[2] as OptionId;
+      }
     }
     return { ok: true, answers };
   } catch {

@@ -6,9 +6,11 @@ import {
   BUILDINGS,
   CONTENT_VERSION,
   DIMENSION_IDS,
+  DISCRIMINATOR_QUESTIONS,
   QUESTION_GROUP_WEIGHTS,
   QUESTIONS,
   QUIZ_VERSION,
+  RESULT_STORIES,
   RESULT_TYPES,
   SCORING_VERSION,
   type DimensionVector,
@@ -17,7 +19,9 @@ import {
 import {
   calculateDimensionScores,
   decodeAnswers,
+  deriveDiscriminatorSequence,
   encodeAnswers,
+  selectDiscriminatorQuestion,
   scoreQuiz,
   type AnswerMap,
 } from "./scoring";
@@ -112,7 +116,7 @@ const scoresWithoutQuestion = (
 };
 
 describe("scoring", () => {
-  it("keeps the balanced 18-question V3 contract", () => {
+  it("keeps the balanced 18-question V4 core contract", () => {
     expect(QUESTIONS).toHaveLength(18);
     expect(new Set(QUESTIONS.map((question) => question.id)).size).toBe(18);
     expect(
@@ -130,7 +134,7 @@ describe("scoring", () => {
     }
   });
 
-  it("uses the V3 group weights and versions", () => {
+  it("uses the V4 group weights and versions", () => {
     expect(QUESTION_GROUP_WEIGHTS).toEqual({
       projective: 0.3,
       personality: 0.35,
@@ -138,9 +142,59 @@ describe("scoring", () => {
     });
     expect(Object.values(QUESTION_GROUP_WEIGHTS).reduce((sum, value) => sum + value, 0))
       .toBeCloseTo(1, 12);
-    expect(QUIZ_VERSION).toBe("3.0.0");
-    expect(SCORING_VERSION).toBe("3.0.0");
-    expect(CONTENT_VERSION).toBe("3.0.0");
+    expect(QUIZ_VERSION).toBe("4.0.0");
+    expect(SCORING_VERSION).toBe("4.0.0");
+    expect(CONTENT_VERSION).toBe("4.0.0");
+  });
+
+  it("keeps eight readable discriminator questions with a strict two-question ceiling", () => {
+    expect(DISCRIMINATOR_QUESTIONS).toHaveLength(8);
+    expect(new Set(DISCRIMINATOR_QUESTIONS.map((question) => question.id)).size).toBe(8);
+    for (const question of DISCRIMINATOR_QUESTIONS) {
+      expect(question.id).toMatch(/^T\d{2}$/u);
+      expect(question.options.map((option) => option.id)).toEqual(optionIds);
+      expect(question.prompt).not.toMatch(/[。.]\s*$/u);
+      for (const option of question.options) {
+        expect(option.label).not.toMatch(/[。.]\s*$/u);
+        expect(option.evidence).not.toMatch(/[。.]\s*$/u);
+      }
+    }
+
+    const coreAnswers = answerPattern("A", "C", "B");
+    const firstSequence = deriveDiscriminatorSequence(coreAnswers);
+    expect(firstSequence.length).toBeLessThanOrEqual(1);
+    if (firstSequence[0]) {
+      const withFirst = { ...coreAnswers, [firstSequence[0].id]: "B" } as AnswerMap;
+      expect(deriveDiscriminatorSequence(withFirst).length).toBeLessThanOrEqual(2);
+    }
+  });
+
+  it("uses the known collision question before a generic discriminator", () => {
+    const selected = selectDiscriminatorQuestion({
+      gap: 0.2,
+      candidates: [
+        { code: "ROOT", similarity: 0.81 },
+        { code: "HAND", similarity: 0.61 },
+      ],
+    });
+    expect(selected?.id).toBe("T01");
+  });
+
+  it("caps the entire discriminator layer at 0.12 per dimension", () => {
+    const coreAnswers = answerPattern("A", "B", "C");
+    const baseline = calculateDimensionScores(coreAnswers);
+    for (const question of DISCRIMINATOR_QUESTIONS) {
+      for (const option of question.options) {
+        const adjusted = calculateDimensionScores({
+          ...coreAnswers,
+          [question.id]: option.id,
+        });
+        for (const dimension of DIMENSION_IDS) {
+          expect(Math.abs(adjusted[dimension] - baseline[dimension]))
+            .toBeLessThanOrEqual(0.120001);
+        }
+      }
+    }
   });
 
   it("keeps option scoring strength comparable and copy free of terminal periods", () => {
@@ -243,12 +297,12 @@ describe("scoring", () => {
     const unknownQuestion = { ...answers, Q19: "A" } as AnswerMap;
     const unknownOption = { ...answers, Q01: "Z" } as unknown as AnswerMap;
 
-    expect(() => scoreQuiz(unknownQuestion)).toThrow(/Expected 18 answers/u);
+    expect(() => scoreQuiz(unknownQuestion)).toThrow(/Expected 18 core answers/u);
     expect(() => scoreQuiz(unknownOption)).toThrow(/Unknown option Z for Q01/u);
     expect(() => encodeAnswers(unknownOption)).toThrow(/Unknown option Z for Q01/u);
   });
 
-  it("keeps every archetype within the fixed-seed distribution envelope", () => {
+  it("keeps all sixteen archetypes reachable within the fixed-seed V4 distribution envelope", () => {
     let seed = 0xA1B71;
     const random = () => {
       seed ^= seed << 13;
@@ -267,32 +321,83 @@ describe("scoring", () => {
           question.id,
           optionIds[Math.floor(random() * optionIds.length)],
         ]),
-      );
+      ) as AnswerMap;
+      const first = deriveDiscriminatorSequence(answers)[0];
+      if (first) answers[first.id] = optionIds[Math.floor(random() * optionIds.length)];
+      const second = deriveDiscriminatorSequence(answers)[1];
+      if (second) answers[second.id] = optionIds[Math.floor(random() * optionIds.length)];
       counts[primaryForAnswers(answers)] += 1;
     }
 
-    const shares = Object.values(counts).map((count) => count / sampleCount);
-    shares.forEach((share) => {
-      expect(share).toBeGreaterThanOrEqual(0.06);
-      expect(share).toBeLessThanOrEqual(0.2);
+    const shares = Object.entries(counts).map(([code, count]) => ({ code, share: count / sampleCount }));
+    shares.forEach(({ code, share }) => {
+      expect(share, code).toBeGreaterThanOrEqual(0.018);
+      expect(share, code).toBeLessThanOrEqual(0.15);
     });
-    expect(Math.max(...shares) / Math.min(...shares)).toBeLessThanOrEqual(3);
-  });
+    expect(
+      Math.max(...shares.map((item) => item.share)) /
+      Math.min(...shares.map((item) => item.share)),
+    ).toBeLessThanOrEqual(7);
+  }, 15_000);
 
-  it("keeps the MVP content graph complete and all local media present", () => {
-    expect(RESULT_TYPES).toHaveLength(8);
-    expect(ARCHITECTS).toHaveLength(8);
-    expect(BUILDINGS).toHaveLength(40);
-    expect(new Set(RESULT_TYPES.flatMap((result) => result.buildingIds)).size).toBe(24);
-    expect(new Set(RESULT_TYPES.flatMap((result) => result.recommendedBuildingIds)).size).toBe(16);
+  it("keeps the sixteen-persona content graph complete and all visible local media present", () => {
+    expect(RESULT_TYPES).toHaveLength(16);
+    expect(RESULT_STORIES).toHaveLength(16);
+    expect(ARCHITECTS).toHaveLength(16);
+    expect(BUILDINGS).toHaveLength(80);
+    expect(new Set(RESULT_TYPES.flatMap((result) => result.buildingIds)).size).toBe(48);
+    expect(new Set(RESULT_TYPES.flatMap((result) => result.recommendedBuildingIds)).size).toBe(32);
+
+    const architectIds = new Set(ARCHITECTS.map((architect) => architect.id));
+    const buildingIds = new Set(BUILDINGS.map((building) => building.id));
+    const storyCodes = new Set(RESULT_STORIES.map((story) => story.code));
+    for (const result of RESULT_TYPES) {
+      expect(architectIds.has(result.architectId), `${result.code} architect`).toBe(true);
+      expect(storyCodes.has(result.code), `${result.code} story`).toBe(true);
+      for (const id of [...result.buildingIds, ...result.recommendedBuildingIds]) {
+        expect(buildingIds.has(id), `${result.code} ${id}`).toBe(true);
+      }
+    }
 
     const media = [
       ...RESULT_TYPES.map((result) => result.characterImage),
       ...ARCHITECTS.flatMap((architect) => architect.portrait ? [architect.portrait.src] : []),
-      ...BUILDINGS.flatMap((building) => building.image ? [building.image.src] : []),
+      ...RESULT_TYPES.flatMap((result) => result.buildingIds.map((id) => {
+        const image = BUILDINGS.find((building) => building.id === id)?.image;
+        expect(image, `${result.code} ${id} visible image`).toBeDefined();
+        return image!.src;
+      })),
     ];
     for (const src of media) {
       expect(existsSync(join(process.cwd(), "public", src.replace(/^\//, ""))), src).toBe(true);
     }
+  });
+
+  it("limits contrast-definition phrasing so each result reads directly", () => {
+    const offenders: string[] = [];
+    for (const result of RESULT_TYPES) {
+      const story = RESULT_STORIES.find((item) => item.code === result.code)!;
+      const architect = ARCHITECTS.find((item) => item.id === result.architectId)!;
+      const buildings = [...result.buildingIds, ...result.recommendedBuildingIds]
+        .map((id) => BUILDINGS.find((item) => item.id === id)!);
+      const visibleStrings = [
+        result.publicSide,
+        result.hiddenSide,
+        result.stressResponse,
+        result.architectureLogic,
+        story.plainLead,
+        ...story.instincts,
+        story.architectHook,
+        story.architectFocus,
+        story.closing,
+        architect.summary,
+        architect.storyTitle,
+        architect.story,
+        ...buildings.flatMap((building) => [building.hook, building.story, ...building.lookFor]),
+      ];
+      const indirect = visibleStrings.filter((value) => /(?:不是|并非).{0,55}(?:而是|，是|、是)|而不是/u.test(value));
+      if (indirect.length > 3) offenders.push(`${result.code} (${indirect.length}): ${indirect.join(" | ")}`);
+    }
+    expect(offenders).toEqual([]);
   });
 });

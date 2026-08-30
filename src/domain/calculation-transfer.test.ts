@@ -21,7 +21,7 @@ const currentParams = (overrides: Record<string, string | null> = {}) => {
   return params;
 };
 
-describe("calculation transfer V2", () => {
+describe("calculation transfer V4", () => {
   it("round-trips the complete answer map with explicit URL, quiz, and scoring versions", () => {
     const path = buildCalculationPath(answers);
     expect(path).not.toContain("?");
@@ -30,6 +30,14 @@ describe("calculation transfer V2", () => {
     expect(params.get("q")).toBe(QUIZ_VERSION);
     expect(params.get("s")).toBe(SCORING_VERSION);
     expect(parseCalculationTransfer(params)).toEqual({ ok: true, answers });
+  });
+
+  it("round-trips one or two discriminator answers separately from the compact core payload", () => {
+    const dynamicAnswers = { ...answers, T06: "B", T08: "C" } as AnswerMap;
+    const path = buildCalculationPath(dynamicAnswers);
+    const params = new URLSearchParams(path.split("#")[1]);
+    expect(params.get("d")).toBe("T06B-T08C");
+    expect(parseCalculationTransfer(params)).toEqual({ ok: true, answers: dynamicAnswers });
   });
 
   it("rejects missing and legacy unversioned parameters before decoding", () => {
@@ -70,6 +78,25 @@ describe("calculation transfer V2", () => {
 
     const reservedOptionPayload = Buffer.from([3, 0, 0, 0, 0]).toString("base64url");
     expect(parseCalculationTransfer(currentParams({ a: reservedOptionPayload }))).toEqual({
+      ok: false,
+      reason: "invalid-answers",
+    });
+  });
+
+  it("rejects unknown, duplicate, invalid, and over-limit discriminator payloads", () => {
+    expect(parseCalculationTransfer(currentParams({ d: "T99A" }))).toEqual({
+      ok: false,
+      reason: "invalid-answers",
+    });
+    expect(parseCalculationTransfer(currentParams({ d: "T01A-T01B" }))).toEqual({
+      ok: false,
+      reason: "invalid-answers",
+    });
+    expect(parseCalculationTransfer(currentParams({ d: "T01Z" }))).toEqual({
+      ok: false,
+      reason: "invalid-answers",
+    });
+    expect(parseCalculationTransfer(currentParams({ d: "T01A-T02B-T03C" }))).toEqual({
       ok: false,
       reason: "invalid-answers",
     });

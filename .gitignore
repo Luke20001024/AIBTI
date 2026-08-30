@@ -12,6 +12,9 @@ artifacts/playwright-report/
 artifacts/qa/**/*.png
 artifacts/qa/**/*.jpg
 artifacts/review/
+artifacts/source-cache/
+scripts/__pycache__/
+tmp/
 *.tsbuildinfo
 *.log
 .DS_Store

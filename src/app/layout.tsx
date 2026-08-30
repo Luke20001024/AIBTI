@@ -14,10 +14,10 @@ export const metadata: Metadata = {
     default: "ArcBTI 建筑直觉测试",
     template: "%s · ArcBTI",
   },
-  description: "18 道直觉题，找到你的建筑语言、代表建筑师与建筑作品",
+  description: "18 道核心直觉题，匹配 16 种建筑人格、代表建筑师与真实建筑作品",
   openGraph: {
     title: "ArcBTI 建筑直觉测试",
-    description: "18 道题，找到你的建筑语言、一位代表建筑师和三座建筑",
+    description: "18 道核心题，找到你的建筑人格、一位代表建筑师和三座真实建筑",
     type: "website",
     locale: "zh_CN",
     images: [{ url: withBasePath("/images/og/default.jpg"), width: 1200, height: 630 }],

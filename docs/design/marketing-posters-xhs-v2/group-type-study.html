@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ArcBTI Group Poster — Mobile Feed Type Study</title>
+    <style>
+      @font-face { font-family: "Noto Sans SC"; src: url("file:///C:/Windows/Fonts/NotoSansSC-VF.ttf"); }
+      @font-face { font-family: "Noto Serif SC"; src: url("file:///C:/Windows/Fonts/NotoSerifSC-VF.ttf"); }
+      @font-face { font-family: "Impact Local"; src: url("file:///C:/Windows/Fonts/impact.ttf"); }
+      * { box-sizing: border-box; }
+      html, body { width: 1600px; height: 720px; margin: 0; overflow: hidden; background: #171715; }
+      body { color: #f2e8d5; font-family: "Noto Sans SC", sans-serif; }
+      .board { width: 1600px; height: 720px; padding: 28px 40px 26px; }
+      header { height: 74px; display: flex; align-items: start; justify-content: space-between; border-bottom: 1px solid #5a574f; }
+      h1 { margin: 0; font-size: 27px; line-height: 1; letter-spacing: -.5px; }
+      header p { margin: 7px 0 0; color: #aaa59b; font-size: 12px; letter-spacing: .8px; }
+      .meta { color: #e44a31; font: 15px/1 "Impact Local"; letter-spacing: 1.5px; text-align: right; }
+      .studies { display: grid; grid-template-columns: repeat(4, 330px); gap: 43px; padding-top: 24px; }
+      figure { width: 330px; margin: 0; }
+      .poster { position: relative; width: 300px; height: 400px; margin: 0 auto; overflow: hidden; background: #efe4cf; box-shadow: 0 12px 30px rgba(0,0,0,.33); }
+      .poster img { position: absolute; width: 100%; height: 100%; object-fit: cover; }
+      .current img { width: 100%; height: 100%; object-fit: cover; }
+      .variant .paper-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+      .variant .art-window { position: absolute; top: 76px; left: 0; right: 0; bottom: 0; overflow: hidden; z-index: 1; }
+      .variant .art-window img { position: absolute; top: -50px; width: 100%; height: 400px; object-fit: cover; }
+      .variant-a .top { position: absolute; z-index: 3; top: 10px; left: 12px; right: 12px; color: #12110f; }
+      .variant-a .brand { font: 10px/1 "Impact Local"; letter-spacing: .8px; }
+      .variant-a .line1 { margin-top: 6px; font: 900 28px/.95 "Noto Serif SC"; letter-spacing: -1.4px; }
+      .variant-a .line2 { font: 900 36px/.95 "Noto Serif SC"; letter-spacing: -2px; color: #e44a31; }
+      .variant-a .sticker { position: absolute; z-index: 4; top: 51px; right: 13px; transform: rotate(3deg); background: #151411; color: #f3e8d3; padding: 5px 7px 4px; font: 800 9px/1 "Noto Sans SC"; }
+      .variant-a .cta { position: absolute; z-index: 4; left: 10px; right: 10px; bottom: 8px; padding: 8px 10px; background: rgba(17,16,14,.95); color: #f3e8d3; font: 850 12px/1 "Noto Sans SC"; border-left: 4px solid #e44a31; }
+      .variant-a .cta span { color: #e44a31; }
+      .variant-b .art-window { top: 0; }
+      .variant-b .art-window img { top: 0; }
+      .variant-b .wash { position: absolute; z-index: 2; inset: 0; background: linear-gradient(#f2e8d5 0 17%, transparent 33% 73%, rgba(13,13,12,.88) 100%); }
+      .variant-b .chip { position: absolute; z-index: 3; padding: 5px 8px 4px; font-weight: 900; line-height: 1; box-shadow: 2px 2px 0 #12110f; }
+      .variant-b .c1 { top: 12px; left: 12px; background: #12110f; color: #f2e8d5; font-size: 16px; transform: rotate(-2deg); }
+      .variant-b .c2 { top: 36px; left: 36px; background: #e44a31; color: #f2e8d5; font: 900 27px/1 "Noto Serif SC"; transform: rotate(1deg); }
+      .variant-b .c3 { top: 69px; left: 18px; background: #f2e8d5; color: #12110f; font-size: 13px; transform: rotate(-1deg); }
+      .variant-b .question { position: absolute; z-index: 3; left: 14px; bottom: 14px; color: #f2e8d5; font: 900 19px/1.05 "Noto Serif SC"; }
+      .variant-b .question em { color: #e44a31; font-style: normal; }
+      .variant-c { background: #12110f; }
+      .variant-c .art-window { top: 104px; bottom: 0; }
+      .variant-c .art-window img { top: -47px; height: 400px; }
+      .variant-c .cinema { position: absolute; z-index: 3; top: 0; left: 0; right: 0; height: 107px; padding: 10px 13px; background: #12110f; color: #f2e8d5; }
+      .variant-c .kicker { font: 8px/1 "Noto Sans SC"; letter-spacing: 1.4px; color: #e44a31; }
+      .variant-c .big { margin-top: 6px; font: 900 31px/.95 "Noto Serif SC"; letter-spacing: -1.7px; }
+      .variant-c .big span { color: #e44a31; }
+      .variant-c .sub { margin-top: 6px; font-size: 9px; letter-spacing: .4px; }
+      .variant-c .stamp { position: absolute; right: 12px; bottom: 10px; padding: 4px 6px; border: 1px solid #e44a31; color: #e44a31; font-size: 8px; transform: rotate(3deg); }
+      figcaption { margin-top: 13px; padding: 0 15px; }
+      .label { display: flex; align-items: center; gap: 7px; font-size: 15px; font-weight: 800; }
+      .tag { padding: 3px 6px 2px; background: #e44a31; color: #fff; font-size: 9px; line-height: 1; letter-spacing: .7px; }
+      figcaption p { margin: 6px 0 0; color: #aaa59b; font-size: 11px; line-height: 1.5; }
+      .score { margin-top: 8px; display: flex; gap: 4px; }
+      .score i { width: 22px; height: 3px; background: #3d3b36; }
+      .score i.on { background: #e44a31; }
+    </style>
+  </head>
+  <body>
+    <main class="board">
+      <header>
+        <div><h1>ArcBTI · 小红书信息流缩略图测试</h1><p>以下均按接近 300 × 400 的手机 feed 视觉尺寸呈现；先看两秒内能读到什么。</p></div>
+        <div class="meta">MOBILE FIRST<br />TYPE STUDY / 01</div>
+      </header>
+      <section class="studies">
+        <figure>
+          <div class="poster current"><img src="../../../public/images/campaign/xhs-posters-v2/02-whole-cast-ensemble-v2.png" /></div>
+          <figcaption><div class="label">当前版</div><p>群像很强，但标题更像展览信息；CTA 与笑点在 feed 中消失。</p><div class="score"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div></figcaption>
+        </figure>
+        <figure>
+          <div class="poster variant variant-a">
+            <img class="paper-bg" src="../../../public/images/campaign/xhs-posters-v2/02-whole-cast-ensemble-art-v2.png" />
+            <div class="art-window"><img src="../../../public/images/campaign/xhs-posters-v2/02-whole-cast-ensemble-art-v2.png" /></div>
+            <div class="top"><div class="brand">ArcBTI · LUKE 出品</div><div class="line1">16种建筑人格</div><div class="line2">全员到齐！</div></div>
+            <div class="sticker">你是哪种建筑脑？</div>
+            <div class="cta">来测测你的<span>建筑母语 →</span></div>
+          </div>
+          <figcaption><div class="label">A · 大字提问型 <span class="tag">推荐</span></div><p>一眼读完“16种 + 全员到齐”，再用问题把人拉进来；兼顾产品感和亲和力。</p><div class="score"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div></figcaption>
+        </figure>
+        <figure>
+          <div class="poster variant variant-b">
+            <div class="art-window"><img src="../../../public/images/campaign/xhs-posters-v2/02-whole-cast-ensemble-art-v2.png" /></div><div class="wash"></div>
+            <div class="chip c1">16种</div><div class="chip c2">建筑人格</div><div class="chip c3">今天全来齐了！</div>
+            <div class="question">所以，<br /><em>你是哪一挂？</em></div>
+          </div>
+          <figcaption><div class="label">B · 贴纸拆词型</div><p>网感最强、最像社交内容，但会牺牲一点 ArcBTI 的高级编辑气质。</p><div class="score"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div></figcaption>
+        </figure>
+        <figure>
+          <div class="poster variant variant-c">
+            <div class="cinema"><div class="kicker">ARCBTI ORIGINAL · THE COMPLETE CAST</div><div class="big">16种建筑人格<br /><span>全员到齐</span></div><div class="sub">你是哪种建筑脑？</div><div class="stamp">PRODUCED BY LUKE</div></div>
+            <div class="art-window"><img src="../../../public/images/campaign/xhs-posters-v2/02-whole-cast-ensemble-art-v2.png" /></div>
+          </div>
+          <figcaption><div class="label">C · 电影标题型</div><p>最有大片感，标题也够大；但语气仍偏“发布会”，互动感弱于 A。</p><div class="score"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div></figcaption>
+        </figure>
+      </section>
+    </main>
+    <script>window.__POSTER_READY__ = true;</script>
+  </body>
+</html>

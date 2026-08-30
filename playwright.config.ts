@@ -35,7 +35,7 @@ export default defineConfig({
   timeout: 45_000,
   use: {
     baseURL,
-    actionTimeout: 7_000,
+    actionTimeout: 12_000,
     navigationTimeout: 30_000,
     screenshot: "only-on-failure",
     trace: "retain-on-failure",

@@ -1,0 +1,834 @@
+[
+  {
+    "buttons": {
+      "count": 7,
+      "disabled": 0
+    },
+    "header": {
+      "bottom": 62,
+      "height": 62,
+      "left": 0,
+      "right": 430,
+      "top": 0,
+      "width": 430
+    },
+    "hero": {
+      "bottom": 932,
+      "height": 870,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "heroImage": {
+      "complete": true,
+      "naturalHeight": 1774,
+      "naturalWidth": 887,
+      "rect": {
+        "bottom": 931.3,
+        "height": 869.3,
+        "left": 0,
+        "right": 430,
+        "top": 62,
+        "width": 430
+      },
+      "src": "/AIBTI/images/personas/grid/hero-poster-v1.png"
+    },
+    "page": {
+      "bottom": 4186.5,
+      "height": 4124.5,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "slug": "grid",
+    "title": "GRID · 网格秩序者 · ArcBTI",
+    "viewport": {
+      "clientWidth": 430,
+      "innerHeight": 932,
+      "innerWidth": 430,
+      "scrollWidth": 430
+    }
+  },
+  {
+    "buttons": {
+      "count": 7,
+      "disabled": 0
+    },
+    "header": {
+      "bottom": 62,
+      "height": 62,
+      "left": 0,
+      "right": 430,
+      "top": 0,
+      "width": 430
+    },
+    "hero": {
+      "bottom": 932,
+      "height": 870,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "heroImage": {
+      "complete": true,
+      "naturalHeight": 1564,
+      "naturalWidth": 780,
+      "rect": {
+        "bottom": 931.3,
+        "height": 869.3,
+        "left": 0,
+        "right": 430,
+        "top": 62,
+        "width": 430
+      },
+      "src": "/AIBTI/images/personas/span/hero-poster-v1.png"
+    },
+    "page": {
+      "bottom": 4137.6,
+      "height": 4075.6,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "slug": "span",
+    "title": "SPAN · 轻量撑场者 · ArcBTI",
+    "viewport": {
+      "clientWidth": 430,
+      "innerHeight": 932,
+      "innerWidth": 430,
+      "scrollWidth": 430
+    }
+  },
+  {
+    "buttons": {
+      "count": 7,
+      "disabled": 0
+    },
+    "header": {
+      "bottom": 62,
+      "height": 62,
+      "left": 0,
+      "right": 430,
+      "top": 0,
+      "width": 430
+    },
+    "hero": {
+      "bottom": 932,
+      "height": 870,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "heroImage": {
+      "complete": true,
+      "naturalHeight": 1774,
+      "naturalWidth": 887,
+      "rect": {
+        "bottom": 931.3,
+        "height": 869.3,
+        "left": 0,
+        "right": 430,
+        "top": 62,
+        "width": 430
+      },
+      "src": "/AIBTI/images/personas/root/hero-poster-v1.png"
+    },
+    "page": {
+      "bottom": 4155.1,
+      "height": 4093.1,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "slug": "root",
+    "title": "ROOT · 场所生长者 · ArcBTI",
+    "viewport": {
+      "clientWidth": 430,
+      "innerHeight": 932,
+      "innerWidth": 430,
+      "scrollWidth": 430
+    }
+  },
+  {
+    "buttons": {
+      "count": 7,
+      "disabled": 0
+    },
+    "header": {
+      "bottom": 62,
+      "height": 62,
+      "left": 0,
+      "right": 430,
+      "top": 0,
+      "width": 430
+    },
+    "hero": {
+      "bottom": 932,
+      "height": 870,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "heroImage": {
+      "complete": true,
+      "naturalHeight": 1564,
+      "naturalWidth": 780,
+      "rect": {
+        "bottom": 931.3,
+        "height": 869.3,
+        "left": 0,
+        "right": 430,
+        "top": 62,
+        "width": 430
+      },
+      "src": "/AIBTI/images/personas/eave/hero-poster-v1.png"
+    },
+    "page": {
+      "bottom": 4175.8,
+      "height": 4113.8,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "slug": "eave",
+    "title": "EAVE · 屋檐召集者 · ArcBTI",
+    "viewport": {
+      "clientWidth": 430,
+      "innerHeight": 932,
+      "innerWidth": 430,
+      "scrollWidth": 430
+    }
+  },
+  {
+    "buttons": {
+      "count": 7,
+      "disabled": 0
+    },
+    "header": {
+      "bottom": 62,
+      "height": 62,
+      "left": 0,
+      "right": 430,
+      "top": 0,
+      "width": 430
+    },
+    "hero": {
+      "bottom": 932,
+      "height": 870,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "heroImage": {
+      "complete": true,
+      "naturalHeight": 1564,
+      "naturalWidth": 780,
+      "rect": {
+        "bottom": 931.3,
+        "height": 869.3,
+        "left": 0,
+        "right": 430,
+        "top": 62,
+        "width": 430
+      },
+      "src": "/AIBTI/images/personas/tide/hero-poster-v1.png"
+    },
+    "page": {
+      "bottom": 4175.8,
+      "height": 4113.8,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "slug": "tide",
+    "title": "TIDE · 雨水驯兽师 · ArcBTI",
+    "viewport": {
+      "clientWidth": 430,
+      "innerHeight": 932,
+      "innerWidth": 430,
+      "scrollWidth": 430
+    }
+  },
+  {
+    "buttons": {
+      "count": 7,
+      "disabled": 0
+    },
+    "header": {
+      "bottom": 62,
+      "height": 62,
+      "left": 0,
+      "right": 430,
+      "top": 0,
+      "width": 430
+    },
+    "hero": {
+      "bottom": 932,
+      "height": 870,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "heroImage": {
+      "complete": true,
+      "naturalHeight": 1774,
+      "naturalWidth": 887,
+      "rect": {
+        "bottom": 931.3,
+        "height": 869.3,
+        "left": 0,
+        "right": 430,
+        "top": 62,
+        "width": 430
+      },
+      "src": "/AIBTI/images/personas/mass/hero-poster-v1.png"
+    },
+    "page": {
+      "bottom": 4186.5,
+      "height": 4124.5,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "slug": "mass",
+    "title": "MASS · 混凝土嘴硬者 · ArcBTI",
+    "viewport": {
+      "clientWidth": 430,
+      "innerHeight": 932,
+      "innerWidth": 430,
+      "scrollWidth": 430
+    }
+  },
+  {
+    "buttons": {
+      "count": 7,
+      "disabled": 0
+    },
+    "header": {
+      "bottom": 62,
+      "height": 62,
+      "left": 0,
+      "right": 430,
+      "top": 0,
+      "width": 430
+    },
+    "hero": {
+      "bottom": 932,
+      "height": 870,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "heroImage": {
+      "complete": true,
+      "naturalHeight": 1564,
+      "naturalWidth": 780,
+      "rect": {
+        "bottom": 931.3,
+        "height": 869.3,
+        "left": 0,
+        "right": 430,
+        "top": 62,
+        "width": 430
+      },
+      "src": "/AIBTI/images/personas/void/hero-poster-v1.png"
+    },
+    "page": {
+      "bottom": 4164.9,
+      "height": 4102.9,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "slug": "void",
+    "title": "VOID · 光影留白者 · ArcBTI",
+    "viewport": {
+      "clientWidth": 430,
+      "innerHeight": 932,
+      "innerWidth": 430,
+      "scrollWidth": 430
+    }
+  },
+  {
+    "buttons": {
+      "count": 7,
+      "disabled": 0
+    },
+    "header": {
+      "bottom": 62,
+      "height": 62,
+      "left": 0,
+      "right": 430,
+      "top": 0,
+      "width": 430
+    },
+    "hero": {
+      "bottom": 932,
+      "height": 870,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "heroImage": {
+      "complete": true,
+      "naturalHeight": 1564,
+      "naturalWidth": 780,
+      "rect": {
+        "bottom": 931.3,
+        "height": 869.3,
+        "left": 0,
+        "right": 430,
+        "top": 62,
+        "width": 430
+      },
+      "src": "/AIBTI/images/personas/ruin/hero-poster-v1.png"
+    },
+    "page": {
+      "bottom": 4210.1,
+      "height": 4148.1,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "slug": "ruin",
+    "title": "RUIN · 永恒预演者 · ArcBTI",
+    "viewport": {
+      "clientWidth": 430,
+      "innerHeight": 932,
+      "innerWidth": 430,
+      "scrollWidth": 430
+    }
+  },
+  {
+    "buttons": {
+      "count": 7,
+      "disabled": 0
+    },
+    "header": {
+      "bottom": 62,
+      "height": 62,
+      "left": 0,
+      "right": 430,
+      "top": 0,
+      "width": 430
+    },
+    "hero": {
+      "bottom": 932,
+      "height": 870,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "heroImage": {
+      "complete": true,
+      "naturalHeight": 1564,
+      "naturalWidth": 780,
+      "rect": {
+        "bottom": 931.3,
+        "height": 869.3,
+        "left": 0,
+        "right": 430,
+        "top": 62,
+        "width": 430
+      },
+      "src": "/AIBTI/images/personas/sign/hero-poster-v1.png"
+    },
+    "page": {
+      "bottom": 4195.9,
+      "height": 4133.9,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "slug": "sign",
+    "title": "SIGN · 建筑玩梗者 · ArcBTI",
+    "viewport": {
+      "clientWidth": 430,
+      "innerHeight": 932,
+      "innerWidth": 430,
+      "scrollWidth": 430
+    }
+  },
+  {
+    "buttons": {
+      "count": 7,
+      "disabled": 0
+    },
+    "header": {
+      "bottom": 62,
+      "height": 62,
+      "left": 0,
+      "right": 430,
+      "top": 0,
+      "width": 430
+    },
+    "hero": {
+      "bottom": 932,
+      "height": 870,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "heroImage": {
+      "complete": true,
+      "naturalHeight": 1774,
+      "naturalWidth": 887,
+      "rect": {
+        "bottom": 931.3,
+        "height": 869.3,
+        "left": 0,
+        "right": 430,
+        "top": 62,
+        "width": 430
+      },
+      "src": "/AIBTI/images/personas/tech/hero-poster-v1.png"
+    },
+    "page": {
+      "bottom": 4159.2,
+      "height": 4097.2,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "slug": "tech",
+    "title": "TECH · 系统外挂者 · ArcBTI",
+    "viewport": {
+      "clientWidth": 430,
+      "innerHeight": 932,
+      "innerWidth": 430,
+      "scrollWidth": 430
+    }
+  },
+  {
+    "buttons": {
+      "count": 7,
+      "disabled": 0
+    },
+    "header": {
+      "bottom": 62,
+      "height": 62,
+      "left": 0,
+      "right": 430,
+      "top": 0,
+      "width": 430
+    },
+    "hero": {
+      "bottom": 932,
+      "height": 870,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "heroImage": {
+      "complete": true,
+      "naturalHeight": 1564,
+      "naturalWidth": 780,
+      "rect": {
+        "bottom": 931.3,
+        "height": 869.3,
+        "left": 0,
+        "right": 430,
+        "top": 62,
+        "width": 430
+      },
+      "src": "/AIBTI/images/personas/veil/hero-poster-v1.png"
+    },
+    "page": {
+      "bottom": 4159.2,
+      "height": 4097.2,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "slug": "veil",
+    "title": "VEIL · 边界蒸发者 · ArcBTI",
+    "viewport": {
+      "clientWidth": 430,
+      "innerHeight": 932,
+      "innerWidth": 430,
+      "scrollWidth": 430
+    }
+  },
+  {
+    "buttons": {
+      "count": 7,
+      "disabled": 0
+    },
+    "header": {
+      "bottom": 62,
+      "height": 62,
+      "left": 0,
+      "right": 430,
+      "top": 0,
+      "width": 430
+    },
+    "hero": {
+      "bottom": 932,
+      "height": 870,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "heroImage": {
+      "complete": true,
+      "naturalHeight": 1774,
+      "naturalWidth": 887,
+      "rect": {
+        "bottom": 931.3,
+        "height": 869.3,
+        "left": 0,
+        "right": 430,
+        "top": 62,
+        "width": 430
+      },
+      "src": "/AIBTI/images/personas/flow/hero-poster-v1.png"
+    },
+    "page": {
+      "bottom": 4133.5,
+      "height": 4071.5,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "slug": "flow",
+    "title": "FLOW · 直线逃犯 · ArcBTI",
+    "viewport": {
+      "clientWidth": 430,
+      "innerHeight": 932,
+      "innerWidth": 430,
+      "scrollWidth": 430
+    }
+  },
+  {
+    "buttons": {
+      "count": 7,
+      "disabled": 0
+    },
+    "header": {
+      "bottom": 62,
+      "height": 62,
+      "left": 0,
+      "right": 430,
+      "top": 0,
+      "width": 430
+    },
+    "hero": {
+      "bottom": 932,
+      "height": 870,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "heroImage": {
+      "complete": true,
+      "naturalHeight": 1564,
+      "naturalWidth": 780,
+      "rect": {
+        "bottom": 931.3,
+        "height": 869.3,
+        "left": 0,
+        "right": 430,
+        "top": 62,
+        "width": 430
+      },
+      "src": "/AIBTI/images/personas/plus/hero-poster-v1.png"
+    },
+    "page": {
+      "bottom": 4207.3,
+      "height": 4145.3,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "slug": "plus",
+    "title": "PLUS · 拒绝拆除者 · ArcBTI",
+    "viewport": {
+      "clientWidth": 430,
+      "innerHeight": 932,
+      "innerWidth": 430,
+      "scrollWidth": 430
+    }
+  },
+  {
+    "buttons": {
+      "count": 7,
+      "disabled": 0
+    },
+    "header": {
+      "bottom": 62,
+      "height": 62,
+      "left": 0,
+      "right": 430,
+      "top": 0,
+      "width": 430
+    },
+    "hero": {
+      "bottom": 932,
+      "height": 870,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "heroImage": {
+      "complete": true,
+      "naturalHeight": 1564,
+      "naturalWidth": 780,
+      "rect": {
+        "bottom": 931.3,
+        "height": 869.3,
+        "left": 0,
+        "right": 430,
+        "top": 62,
+        "width": 430
+      },
+      "src": "/AIBTI/images/personas/mix/hero-poster-v1.png"
+    },
+    "page": {
+      "bottom": 4175.8,
+      "height": 4113.8,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "slug": "mix",
+    "title": "MIX · 功能串台者 · ArcBTI",
+    "viewport": {
+      "clientWidth": 430,
+      "innerHeight": 932,
+      "innerWidth": 430,
+      "scrollWidth": 430
+    }
+  },
+  {
+    "buttons": {
+      "count": 7,
+      "disabled": 0
+    },
+    "header": {
+      "bottom": 62,
+      "height": 62,
+      "left": 0,
+      "right": 430,
+      "top": 0,
+      "width": 430
+    },
+    "hero": {
+      "bottom": 932,
+      "height": 870,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "heroImage": {
+      "complete": true,
+      "naturalHeight": 1774,
+      "naturalWidth": 887,
+      "rect": {
+        "bottom": 931.3,
+        "height": 869.3,
+        "left": 0,
+        "right": 430,
+        "top": 62,
+        "width": 430
+      },
+      "src": "/AIBTI/images/personas/orna/hero-poster-v1.png"
+    },
+    "page": {
+      "bottom": 4148.4,
+      "height": 4086.4,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "slug": "orna",
+    "title": "ORNA · 装饰上头者 · ArcBTI",
+    "viewport": {
+      "clientWidth": 430,
+      "innerHeight": 932,
+      "innerWidth": 430,
+      "scrollWidth": 430
+    }
+  },
+  {
+    "buttons": {
+      "count": 7,
+      "disabled": 0
+    },
+    "header": {
+      "bottom": 62,
+      "height": 62,
+      "left": 0,
+      "right": 430,
+      "top": 0,
+      "width": 430
+    },
+    "hero": {
+      "bottom": 932,
+      "height": 870,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "heroImage": {
+      "complete": true,
+      "naturalHeight": 1774,
+      "naturalWidth": 887,
+      "rect": {
+        "bottom": 931.3,
+        "height": 869.3,
+        "left": 0,
+        "right": 430,
+        "top": 62,
+        "width": 430
+      },
+      "src": "/AIBTI/images/personas/hand/hero-poster-v1.png"
+    },
+    "page": {
+      "bottom": 4155.1,
+      "height": 4093.1,
+      "left": 0,
+      "right": 430,
+      "top": 62,
+      "width": 430
+    },
+    "slug": "hand",
+    "title": "HAND · 旧料收藏者 · ArcBTI",
+    "viewport": {
+      "clientWidth": 430,
+      "innerHeight": 932,
+      "innerWidth": 430,
+      "scrollWidth": 430
+    }
+  }
+]

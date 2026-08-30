@@ -1,0 +1,2665 @@
+{
+  "records": [
+    {
+      "id": "BLD-2121",
+      "name": "21_21 DESIGN SIGHT",
+      "originalName": "21_21 DESIGN SIGHT",
+      "sourcePage": "https://moderni.co/21-21-design-sight-museum-tadao-ando/",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-2121-02.webp",
+          "alt": "21_21 DESIGN SIGHT补充建筑摄影视角 1",
+          "sourceLabel": "21 21 Design Sight Museum | Tadao Ando",
+          "sourceUrl": "https://moderni.co/21-21-design-sight-museum-tadao-ando/",
+          "imageUrl": "https://moderni.co/wp-content/plugins/wp_auto_grid/galleries/news-gallery/21%2021%20Design%20Sight%20Museum-Tadao%20Ando/F-21%2021%20Design%20Sight.jpg",
+          "dimensions": [
+            1600,
+            989
+          ],
+          "visualDistance": 65.36,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-2121-03.webp",
+          "alt": "21_21 DESIGN SIGHT补充建筑摄影视角 2",
+          "sourceLabel": "21_21 Design Sight (21_21デザインサイト) - Tokyo",
+          "sourceUrl": "https://tokyo.com/guide/see-do/design-sight/",
+          "imageUrl": "https://tokyo.com/wp-content/uploads/2016/12/21_21-Design.jpg",
+          "dimensions": [
+            1600,
+            857
+          ],
+          "visualDistance": 73.51,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-30-ST-MARY",
+      "name": "圣玛丽斧街 30 号",
+      "originalName": "30 St Mary Axe",
+      "sourcePage": "https://topgid.net/2090-neboskreb-mjeri-jeks-30.html",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-30-st-mary-02.webp",
+          "alt": "圣玛丽斧街 30 号补充建筑摄影视角 1",
+          "sourceLabel": "Небоскреб Мэри Экс 30 в Лондоне (Великобритания) с фото и отзывами",
+          "sourceUrl": "https://topgid.net/2090-neboskreb-mjeri-jeks-30.html",
+          "imageUrl": "https://topgid.net/uploads/posts/2019-07/2090-5d3e0b0dd6b2c.jpeg",
+          "dimensions": [
+            562,
+            1000
+          ],
+          "visualDistance": 64.48,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-ALLEN-MEMORIAL",
+      "name": "艾伦纪念艺术博物馆扩建",
+      "originalName": "Allen Memorial Art Museum Addition",
+      "sourcePage": "https://amam.oberlin.edu/about/our-buildings",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-allen-memorial-02.webp",
+          "alt": "艾伦纪念艺术博物馆扩建补充建筑摄影视角 1",
+          "sourceLabel": "Allen Memorial Art Museum · Venturi wing · photo Ralph Lieberman",
+          "sourceUrl": "https://amam.oberlin.edu/about/our-buildings",
+          "imageUrl": "https://amam.oberlin.edu/files/galleries/venturiliebermanmed.jpg",
+          "dimensions": [
+            900,
+            598
+          ],
+          "visualDistance": 75.6,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Identity-checked real photographs; primary plus supplemental views reviewed in contact sheets"
+    },
+    {
+      "id": "BLD-BANGLADESH-PARLIAMENT",
+      "name": "孟加拉国国民议会大厦",
+      "originalName": "Jatiya Sangsad Bhaban",
+      "sourcePage": "https://www.ipu.org/news/case-studies/2023-07/buildings-fit-parliament-politics-parliamentary-architecture",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-bangladesh-parliament-02.webp",
+          "alt": "孟加拉国国民议会大厦补充建筑摄影视角 1",
+          "sourceLabel": "Buildings fit for a parliament: The politics of parliamentary architecture | Inter-Parliamentary Union",
+          "sourceUrl": "https://www.ipu.org/news/case-studies/2023-07/buildings-fit-parliament-politics-parliamentary-architecture",
+          "imageUrl": "https://www.ipu.org/sites/default/files/styles/large/public/2023-08/bangladesh_parliament.jpg?itok=9E95SlGB",
+          "dimensions": [
+            850,
+            566
+          ],
+          "visualDistance": 44.82,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-CASA-BATLLO",
+      "name": "巴特罗之家",
+      "originalName": "Casa Batlló",
+      "sourcePage": "https://www.casabatllo.es/en/antoni-gaudi/casa-batllo/facade/",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-casa-batllo-02.webp",
+          "alt": "巴特罗之家补充建筑摄影视角 1",
+          "sourceLabel": "Casa Batlló · 项目页补充摄影",
+          "sourceUrl": "https://www.casabatllo.es/en/antoni-gaudi/casa-batllo/facade/",
+          "imageUrl": "https://www.casabatllo.es/wp-content/uploads/2025/06/Web_Facana-1.jpg.webp",
+          "context": "",
+          "priority": 140,
+          "dimensions": [
+            750,
+            750
+          ],
+          "visualDistance": 48.77,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-casa-batllo-03.webp",
+          "alt": "巴特罗之家补充建筑摄影视角 2",
+          "sourceLabel": "Casa Batlló · 项目页补充摄影",
+          "sourceUrl": "https://www.casabatllo.es/en/antoni-gaudi/casa-batllo/facade/",
+          "imageUrl": "https://www.casabatllo.es/wp-content/uploads/2025/06/Web_Facana-2.jpg.webp",
+          "context": "",
+          "priority": 140,
+          "dimensions": [
+            750,
+            750
+          ],
+          "visualDistance": 65.62,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Two distinct façade/details"
+    },
+    {
+      "id": "BLD-CASA-MILA",
+      "name": "米拉之家",
+      "originalName": "Casa Milà / La Pedrera",
+      "sourcePage": "https://designchat.com/architects/arhitekturnyj-gid-po-barselone-23-samyh-interesnyh-obekta.html",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-casa-mila-02.webp",
+          "alt": "米拉之家补充建筑摄影视角 1",
+          "sourceLabel": "Архитектурный гид по Барселоне: 24 достопримечательности — designchat.com",
+          "sourceUrl": "https://designchat.com/architects/arhitekturnyj-gid-po-barselone-23-samyh-interesnyh-obekta.html",
+          "imageUrl": "https://designchat.com/wp-content/uploads/2019/07/Barcelona_Architecture-Virginia_Duran-8-Casa_Mila.jpg",
+          "dimensions": [
+            750,
+            938
+          ],
+          "visualDistance": 49.27,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-casa-mila-03.webp",
+          "alt": "米拉之家补充建筑摄影视角 2",
+          "sourceLabel": "10 of Antoni Gaudí's best works in Barcelona",
+          "sourceUrl": "https://www.speakeasybcn.com/en/blog/10-of-antoni-gaudis-best-works-in-barcelona",
+          "imageUrl": "https://www.speakeasybcn.com/img/containers/assets/blog/lapedrerabarcelona-la-pedrera-casa-mila.jpg/5d66c1bd88207a01adcc62175ae7867f/lapedrerabarcelona-la-pedrera-casa-mila.jpg",
+          "dimensions": [
+            960,
+            771
+          ],
+          "visualDistance": 40.07,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-CASA-MUSICA",
+      "name": "波尔图音乐厅",
+      "originalName": "Casa da Música",
+      "sourcePage": "https://www.oma.com/projects/casa-da-musica",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-casa-musica-02.webp",
+          "alt": "波尔图音乐厅补充建筑摄影视角 1",
+          "sourceLabel": "OMA · Casa da Música · 项目页补充摄影",
+          "sourceUrl": "https://www.oma.com/projects/casa-da-musica",
+          "imageUrl": "https://cdn.sanity.io/images/5azy6oei/production/fed2788504f9c66eb08712e6e9b339fb9d468e34-1133x755.jpg?w=2500&q=80&auto=format",
+          "context": "lazyload blurUp",
+          "priority": 70,
+          "dimensions": [
+            1600,
+            1066
+          ],
+          "visualDistance": 57.47,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Keep aerial building view; reject physical study models"
+    },
+    {
+      "id": "BLD-CCTV",
+      "name": "中央电视台总部大楼",
+      "originalName": "CCTV Headquarters",
+      "sourcePage": "https://www.oma.com/projects/cctv-headquarters",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-cctv-02.webp",
+          "alt": "中央电视台总部大楼补充建筑摄影视角 1",
+          "sourceLabel": "OMA · CCTV Headquarters · 项目页补充摄影",
+          "sourceUrl": "https://www.oma.com/projects/cctv-headquarters",
+          "imageUrl": "https://cdn.sanity.io/images/5azy6oei/production/739285bc2385dc17112b94f6c0534ef05c825b14-3543x2362.jpg?w=2500&q=80&auto=format",
+          "context": "lazyload blurUp",
+          "priority": 70,
+          "dimensions": [
+            1600,
+            1067
+          ],
+          "visualDistance": 65.47,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-cctv-03.webp",
+          "alt": "中央电视台总部大楼补充建筑摄影视角 2",
+          "sourceLabel": "OMA · CCTV Headquarters · 项目页补充摄影",
+          "sourceUrl": "https://www.oma.com/projects/cctv-headquarters",
+          "imageUrl": "https://cdn.sanity.io/images/5azy6oei/production/c291ae106ed850844b63927f524279f4599919a7-3648x5472.jpg?w=2500&q=80&auto=format",
+          "context": "lazyload blurUp",
+          "priority": 70,
+          "dimensions": [
+            800,
+            1200
+          ],
+          "visualDistance": 105.63,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Day aerial and night city view"
+    },
+    {
+      "id": "BLD-CERAMIC-HOUSE",
+      "name": "金华瓷屋",
+      "originalName": "Ceramic House",
+      "sourcePage": "https://www.archdaily.com/212042/more-photos-of-wang-shus-work-by-iwan-baan/jinhua-3976",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-ceramic-house-02.webp",
+          "alt": "金华瓷屋补充建筑摄影视角 1",
+          "sourceLabel": "ArchDaily · Ceramic House in Jinhua · photo Iwan Baan",
+          "sourceUrl": "https://www.archdaily.com/212042/more-photos-of-wang-shus-work-by-iwan-baan/jinhua-3976",
+          "imageUrl": "https://images.adsttc.com/media/images/55e7/88bc/2347/5ddd/1700/1c22/large_jpg/jinhua-3976.jpg?1441237175",
+          "dimensions": [
+            689,
+            460
+          ],
+          "visualDistance": 62.69,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-ceramic-house-03.webp",
+          "alt": "金华瓷屋补充建筑摄影视角 2",
+          "sourceLabel": "ArchDaily · Ceramic House in Jinhua · photo Iwan Baan",
+          "sourceUrl": "https://www.archdaily.com/212042/more-photos-of-wang-shus-work-by-iwan-baan/jinhua-3976",
+          "imageUrl": "https://images.adsttc.com/media/images/55e7/88e7/2347/5ddd/1700/1c27/large_jpg/jinhua-3958.jpg?1441237217",
+          "dimensions": [
+            689,
+            460
+          ],
+          "visualDistance": 88.1,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Identity-checked real photographs; primary plus supplemental views reviewed in contact sheets"
+    },
+    {
+      "id": "BLD-CHANDIGARH",
+      "name": "昌迪加尔议会建筑群",
+      "originalName": "Capitol Complex",
+      "sourcePage": "https://www.incredibleindia.gov.in/en/trips/trip-listing/chandigarh-s-culture-nature-spirituality-gardens-and-arts",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-chandigarh-02.webp",
+          "alt": "昌迪加尔议会建筑群补充建筑摄影视角 1",
+          "sourceLabel": "Incredible India · Chandigarh Capitol Complex",
+          "sourceUrl": "https://www.incredibleindia.gov.in/en/trips/trip-listing/chandigarh-s-culture-nature-spirituality-gardens-and-arts",
+          "imageUrl": "https://s7ap1.scene7.com/is/image/incredibleindia/capitol-complex-chandigarh-chandigarh-tri-hero?qlt=82&ts=1727163008878",
+          "dimensions": [
+            1280,
+            720
+          ],
+          "visualDistance": 62.64,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-chandigarh-03.webp",
+          "alt": "昌迪加尔议会建筑群补充建筑摄影视角 2",
+          "sourceLabel": "ArchEyes · Palace of the Assembly Chandigarh",
+          "sourceUrl": "https://archeyes.com/palace-of-the-assembly-in-chandigarh-by-le-corbusier/",
+          "imageUrl": "https://i0.wp.com/archeyes.com/wp-content/uploads/2024/06/Palace-of-the-Assembly-in-Chandigarh-by-Le-Corbusier-Cemal-4.jpg?ssl=1",
+          "dimensions": [
+            1600,
+            900
+          ],
+          "visualDistance": 62.45,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Identity-checked real photographs; primary plus supplemental views reviewed in contact sheets"
+    },
+    {
+      "id": "BLD-CROWN-HALL",
+      "name": "克朗楼",
+      "originalName": "S. R. Crown Hall",
+      "sourcePage": "https://www.docomomo-chicago.org/s-r-crown-hall",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-crown-hall-02.webp",
+          "alt": "克朗楼补充建筑摄影视角 1",
+          "sourceLabel": "S. R. Crown Hall — docomomo-us chicago",
+          "sourceUrl": "https://www.docomomo-chicago.org/s-r-crown-hall",
+          "imageUrl": "https://images.squarespace-cdn.com/content/v1/5a66103cf14aa1a6716a93e6/1517427411970-89OBV4M771EQGHP6QOIT/_64A0390.Z_2.S.jpg",
+          "dimensions": [
+            1000,
+            666
+          ],
+          "visualDistance": 38.55,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-crown-hall-03.webp",
+          "alt": "克朗楼补充建筑摄影视角 2",
+          "sourceLabel": "S.R. Crown Hall, IIT Campus, Chicago - Mies van der Rohe | Inexhibit",
+          "sourceUrl": "https://www.inexhibit.com/mymuseum/s-r-crown-hall-iit-campus-chicago-mies-van-der-rohe/",
+          "imageUrl": "https://www.inexhibit.com/wp-content/uploads/2022/03/S.-R.-Crown-Hall-IIT-Chicago-Mies-van-der-Rohe-exterior-6-1-1.jpg",
+          "dimensions": [
+            870,
+            579
+          ],
+          "visualDistance": 59.77,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-DAXING",
+      "name": "北京大兴国际机场",
+      "originalName": "Beijing Daxing International Airport",
+      "sourcePage": "https://kr.people.com.cn/n3/2020/0616/c203093-9701066.html",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-daxing-02.webp",
+          "alt": "北京大兴国际机场补充建筑摄影视角 1",
+          "sourceLabel": "베이징 다싱국제공항 ‘온라인 사진展’ 서울서 개최",
+          "sourceUrl": "https://kr.people.com.cn/n3/2020/0616/c203093-9701066.html",
+          "imageUrl": "https://kr.people.com.cn/NMediaFile/2020/0616/FOREIGN202006161336000541825282224.jpg",
+          "dimensions": [
+            700,
+            667
+          ],
+          "visualDistance": 68.45,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-daxing-03.webp",
+          "alt": "北京大兴国际机场补充建筑摄影视角 2",
+          "sourceLabel": "Beijing Daxing International Airport – Discover project by Zaha Hadid Architects | Architonic",
+          "sourceUrl": "https://www.architonic.com/en/project/zaha-hadid-architects-beijing-daxing-international-airport/20076267",
+          "imageUrl": "https://image.architonic.com/prj2-3/20076267/zaha-hadid-architects-beijing-daxing-international-airport-architonic-21-zha-beijing-daxing-int-airport-hufton-crow-12-arcit18.jpg",
+          "dimensions": [
+            1441,
+            1200
+          ],
+          "visualDistance": 45.16,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-DE-ROTTERDAM",
+      "name": "鹿特丹大厦",
+      "originalName": "De Rotterdam",
+      "sourcePage": "https://www.oma.com/projects/de-rotterdam",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-de-rotterdam-02.webp",
+          "alt": "鹿特丹大厦补充建筑摄影视角 1",
+          "sourceLabel": "OMA · De Rotterdam · 项目页补充摄影",
+          "sourceUrl": "https://www.oma.com/projects/de-rotterdam",
+          "imageUrl": "https://cdn.sanity.io/images/5azy6oei/production/596914e9f5b4c200d5e00f4cec0484ab252e754b-2136x3216.jpg?w=2500&q=80&auto=format",
+          "context": "lazyload blurUp",
+          "priority": 70,
+          "dimensions": [
+            797,
+            1200
+          ],
+          "visualDistance": 68.59,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-de-rotterdam-03.webp",
+          "alt": "鹿特丹大厦补充建筑摄影视角 2",
+          "sourceLabel": "OMA · De Rotterdam · 项目页补充摄影",
+          "sourceUrl": "https://www.oma.com/projects/de-rotterdam",
+          "imageUrl": "https://cdn.sanity.io/images/5azy6oei/production/eb3d3621af89297fb808724ad8eafeb4fb951549-3216x2136.jpg?w=2500&q=80&auto=format",
+          "context": "lazyload blurUp",
+          "priority": 70,
+          "dimensions": [
+            1600,
+            1062
+          ],
+          "visualDistance": 55.88,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Two valid exterior views"
+    },
+    {
+      "id": "BLD-EXETER-LIBRARY",
+      "name": "菲利普斯埃克塞特图书馆",
+      "originalName": "Phillips Exeter Academy Library",
+      "sourcePage": "https://www.archiweb.cz/en/b/exeter-library",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-exeter-library-02.webp",
+          "alt": "菲利普斯埃克塞特图书馆补充建筑摄影视角 1",
+          "sourceLabel": "archiweb.cz - Phillips Exeter Academy Library",
+          "sourceUrl": "https://www.archiweb.cz/en/b/exeter-library",
+          "imageUrl": "https://cdn.archmedia.eu/cache/images/buildings/gallery/picture_1654_6.jpg-1600x1200-exeter-library.jpg?algorithm=1&mtime=1361032038",
+          "dimensions": [
+            712,
+            950
+          ],
+          "visualDistance": 46.96,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-exeter-library-03.webp",
+          "alt": "菲利普斯埃克塞特图书馆补充建筑摄影视角 2",
+          "sourceLabel": "Poetry in design - New Hampshire Home Magazine",
+          "sourceUrl": "https://www.nhhomemagazine.com/poetry-in-design/",
+          "imageUrl": "https://wpcdn.us-east-1.vip.tn-cloud.net/www.nhhomemagazine.com/content/uploads/data-import/df743971/phillips-exeter-library-2.jpg?etag=%225df6ac02-a2425%22",
+          "dimensions": [
+            800,
+            1000
+          ],
+          "visualDistance": 58.78,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-EXPO67-GERMAN",
+      "name": "德国馆 Expo 67",
+      "originalName": "German Pavilion, Expo 67",
+      "sourcePage": "https://expo67.ncf.ca/expo_german_p3.html",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-expo67-german-02.webp",
+          "alt": "德国馆 Expo 67补充建筑摄影视角 1",
+          "sourceLabel": "Expo 67 archival project · German Pavilion interior",
+          "sourceUrl": "https://expo67.ncf.ca/expo_german_p3.html",
+          "imageUrl": "https://expo67.ncf.ca/germanyinner_nae000990885.jpg",
+          "dimensions": [
+            640,
+            435
+          ],
+          "visualDistance": 79.0,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Identity-checked real photographs; primary plus supplemental views reviewed in contact sheets"
+    },
+    {
+      "id": "BLD-FALLINGWATER",
+      "name": "流水别墅",
+      "originalName": "Fallingwater",
+      "sourcePage": "https://franklloydwright.org/site/fallingwater/",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-fallingwater-02.webp",
+          "alt": "流水别墅补充建筑摄影视角 1",
+          "sourceLabel": "Frank Lloyd Wright Foundation · Fallingwater · 项目页补充摄影",
+          "sourceUrl": "https://franklloydwright.org/site/fallingwater/",
+          "imageUrl": "https://franklloydwright.org/wp-content/uploads/2017/02/fallingwater.jpg",
+          "context": "og:image",
+          "priority": 118,
+          "dimensions": [
+            1143,
+            1200
+          ],
+          "visualDistance": 39.46,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Keep alternate waterfall view; reject E. E. Boynton House"
+    },
+    {
+      "id": "BLD-FARNSWORTH",
+      "name": "范斯沃斯住宅",
+      "originalName": "Edith Farnsworth House",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mies_van_der_Rohe_photo_Farnsworth_House_Plano_USA_9.jpg",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-farnsworth-02.webp",
+          "alt": "范斯沃斯住宅补充建筑摄影",
+          "sourceLabel": "Wikimedia Commons · Mies van der Rohe photo Farnsworth House Plano USA 9.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mies_van_der_Rohe_photo_Farnsworth_House_Plano_USA_9.jpg",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Mies_van_der_Rohe_photo_Farnsworth_House_Plano_USA_9.jpg/1920px-Mies_van_der_Rohe_photo_Farnsworth_House_Plano_USA_9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "context": "migrated Commons record",
+          "priority": 0,
+          "dimensions": [
+            1600,
+            1135
+          ],
+          "visualDistance": 61.41,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Valid archival exterior view"
+    },
+    {
+      "id": "BLD-FRAC-DUNKIRK",
+      "name": "敦刻尔克 FRAC",
+      "originalName": "FRAC Nord-Pas de Calais",
+      "sourcePage": "https://divisare.com/projects/251178-lacaton-vassal-architectes-philippe-ruault-frac-nord-pas-de-calais-dunkerque-france",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-frac-dunkirk-02.webp",
+          "alt": "敦刻尔克 FRAC补充建筑摄影视角 1",
+          "sourceLabel": "Divisare · FRAC Nord-Pas-de-Calais · photo Philippe Ruault",
+          "sourceUrl": "https://divisare.com/projects/251178-lacaton-vassal-architectes-philippe-ruault-frac-nord-pas-de-calais-dunkerque-france",
+          "imageUrl": "https://images.divisare.com/image/upload/c_fit%2Cf_jpg%2Cq_80%2Cw_1200/v1/project_images/4308040/Lacaton-_-Vassal_FRAC_4.jpg",
+          "dimensions": [
+            1200,
+            800
+          ],
+          "visualDistance": 31.94,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Identity-checked real photographs; primary plus supplemental views reviewed in contact sheets"
+    },
+    {
+      "id": "BLD-GANDO-SCHOOL",
+      "name": "甘多小学",
+      "originalName": "Gando Primary School",
+      "sourcePage": "https://www.kerearchitecture.com/work/building/gando-primary-school-3",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-gando-school-02.webp",
+          "alt": "甘多小学补充建筑摄影视角 1",
+          "sourceLabel": "Kéré Architecture · Gando Primary School · 项目页补充摄影",
+          "sourceUrl": "https://www.kerearchitecture.com/work/building/gando-primary-school-3",
+          "imageUrl": "https://kerearchitecture-17f76.kxcdn.com/./0ed440d7-cd56-4b75-9059-6e129c76c829/PerspectiveGandoPrimarySchool_KereArchitecture_ImageBySimeonDuchoud.jpg?w=980&h=700&fm=jpg&q=70&fit=max&crop=2480%2C1528%2C0%2C0",
+          "context": "",
+          "priority": 81,
+          "dimensions": [
+            980,
+            604
+          ],
+          "visualDistance": 72.39,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-gando-school-03.webp",
+          "alt": "甘多小学补充建筑摄影视角 2",
+          "sourceLabel": "Kéré Architecture · Gando Primary School · 项目页补充摄影",
+          "sourceUrl": "https://www.kerearchitecture.com/work/building/gando-primary-school-3",
+          "imageUrl": "https://kerearchitecture-17f76.kxcdn.com/./eddec88d-1506-4f61-8841-77d1b5aa370a/GandoPrimarySchool_KereArchitecture_ImageByErik-JanOuwerkerk.jpg?w=980&h=700&fm=jpg&q=70&fit=max&crop=4256%2C2849%2C0%2C0",
+          "context": "",
+          "priority": 81,
+          "dimensions": [
+            980,
+            656
+          ],
+          "visualDistance": 73.61,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Two valid school views"
+    },
+    {
+      "id": "BLD-GRAND-PARC",
+      "name": "波尔多大公园住宅改造",
+      "originalName": "Transformation of 530 Dwellings, Grand Parc",
+      "sourcePage": "https://www.e-architect.com/bordeaux/bordeaux-architecture-news",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-grand-parc-02.webp",
+          "alt": "波尔多大公园住宅改造补充建筑摄影视角 1",
+          "sourceLabel": "Bordeaux architecture news, building designs – e-architect",
+          "sourceUrl": "https://www.e-architect.com/bordeaux/bordeaux-architecture-news",
+          "imageUrl": "https://www.e-architect.com/wp-content/uploads/2018/08/grand-parc-bordeaux-building-france-m100419-pr2.jpg",
+          "dimensions": [
+            1000,
+            667
+          ],
+          "visualDistance": 64.61,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-GUANGZHOU-OPERA",
+      "name": "广州大剧院",
+      "originalName": "Guangzhou Opera House",
+      "sourcePage": "https://www.metalocus.es/en/news/guangzhou-opera-house-a-chinese-gem-elevates-its-context",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-guangzhou-opera-02.webp",
+          "alt": "广州大剧院补充建筑摄影视角 1",
+          "sourceLabel": "Guangzhou Opera House. Is this a Chinese Gem that elevates its context? | METALOCUS",
+          "sourceUrl": "https://www.metalocus.es/en/news/guangzhou-opera-house-a-chinese-gem-elevates-its-context",
+          "imageUrl": "https://www.metalocus.es/sites/default/files/styles/mopis_fullslider_desktop/public/lead-images/metalocus_guangzhou-opera-zha_01_p.jpg?itok=-tjmvCXu",
+          "dimensions": [
+            1600,
+            708
+          ],
+          "visualDistance": 80.95,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-guangzhou-opera-03.webp",
+          "alt": "广州大剧院补充建筑摄影视角 2",
+          "sourceLabel": "zaha hadid architects: guangzhou opera house",
+          "sourceUrl": "https://www.designboom.com/architecture/zaha-hadid-architects-guangzhou-opera-house/",
+          "imageUrl": "https://www.designboom.com/cms/images/erica/----guangzhou/guangzhou13.jpg",
+          "dimensions": [
+            818,
+            459
+          ],
+          "visualDistance": 76.39,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-GUGGENHEIM",
+      "name": "古根海姆博物馆",
+      "originalName": "Solomon R. Guggenheim Museum",
+      "sourcePage": "https://www.guggenheim.org/the-frank-lloyd-wright-building",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-guggenheim-02.webp",
+          "alt": "古根海姆博物馆补充建筑摄影视角 1",
+          "sourceLabel": "Solomon R. Guggenheim Museum · 项目页补充摄影",
+          "sourceUrl": "https://www.guggenheim.org/the-frank-lloyd-wright-building",
+          "imageUrl": "https://www.guggenheim.org/wp-content/uploads/2016/04/architecture-srgm-exterior-flavin-16-9-ratio-web.jpg",
+          "context": "og:image",
+          "priority": 118,
+          "dimensions": [
+            1600,
+            900
+          ],
+          "visualDistance": 71.77,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Valid evening exterior"
+    },
+    {
+      "id": "BLD-GUILD-HOUSE",
+      "name": "吉尔德之家",
+      "originalName": "Guild House",
+      "sourcePage": "https://homepages.bluffton.edu/~sullivanm/pennsylvania/philadelphia/venturiguild/guild.html",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-guild-house-02.webp",
+          "alt": "吉尔德之家补充建筑摄影视角 1",
+          "sourceLabel": "Bluffton Digital Imaging Project · Guild House",
+          "sourceUrl": "https://homepages.bluffton.edu/~sullivanm/pennsylvania/philadelphia/venturiguild/guild.html",
+          "imageUrl": "https://homepages.bluffton.edu/~sullivanm/pennsylvania/philadelphia/venturiguild/0088.jpg",
+          "dimensions": [
+            800,
+            483
+          ],
+          "visualDistance": 88.33,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-guild-house-03.webp",
+          "alt": "吉尔德之家补充建筑摄影视角 2",
+          "sourceLabel": "Bluffton Digital Imaging Project · Guild House",
+          "sourceUrl": "https://homepages.bluffton.edu/~sullivanm/pennsylvania/philadelphia/venturiguild/guild.html",
+          "imageUrl": "https://homepages.bluffton.edu/~sullivanm/pennsylvania/philadelphia/venturiguild/0086.jpg",
+          "dimensions": [
+            800,
+            590
+          ],
+          "visualDistance": 86.51,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Identity-checked real photographs; primary plus supplemental views reviewed in contact sheets"
+    },
+    {
+      "id": "BLD-HEARST",
+      "name": "赫斯特大厦",
+      "originalName": "Hearst Tower",
+      "sourcePage": "https://www.the-village.ru/business/cloud/154737-neboskreby",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-hearst-02.webp",
+          "alt": "赫斯特大厦补充建筑摄影视角 1",
+          "sourceLabel": "Продажи вверх: 10 самых дорогих небоскрёбов корпораций",
+          "sourceUrl": "https://www.the-village.ru/business/cloud/154737-neboskreby",
+          "imageUrl": "https://cdn.the-village.ru/the-village.ru/post_image-image/ZWSV_X_DN05seX0KqlE8pQ-wide.jpg",
+          "dimensions": [
+            1020,
+            680
+          ],
+          "visualDistance": 50.41,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-hearst-03.webp",
+          "alt": "赫斯特大厦补充建筑摄影视角 2",
+          "sourceLabel": "Hearst Tower - Picture gallery 2",
+          "sourceUrl": "https://www.archilovers.com/projects/1744/hearst-tower-gallery?6169",
+          "imageUrl": "https://cdn.archilovers.com/projects/b_730_4627431c-e769-452a-9bc9-1469b6a79672.jpg",
+          "dimensions": [
+            780,
+            1016
+          ],
+          "visualDistance": 58.37,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-HEYDAR",
+      "name": "盖达尔·阿利耶夫中心",
+      "originalName": "Heydar Aliyev Centre",
+      "sourcePage": "https://www.zaha-hadid.com/architecture/heydar-aliyev-centre/",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-heydar-02.webp",
+          "alt": "盖达尔·阿利耶夫中心补充建筑摄影视角 1",
+          "sourceLabel": "Zaha Hadid Architects · 项目页补充摄影",
+          "sourceUrl": "https://www.zaha-hadid.com/architecture/heydar-aliyev-centre/",
+          "imageUrl": "https://media-prod.zha.com/zhweb-prod-media/media/nugjiy0t/01290_cp_hc_nov13_n89103.jpg?w=3840&g=0.5300582500784752x0.6560854375750038&fm=webp",
+          "context": "",
+          "priority": 88,
+          "dimensions": [
+            1600,
+            809
+          ],
+          "visualDistance": 50.48,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-heydar-03.webp",
+          "alt": "盖达尔·阿利耶夫中心补充建筑摄影视角 2",
+          "sourceLabel": "Zaha Hadid Architects · 项目页补充摄影",
+          "sourceUrl": "https://www.zaha-hadid.com/architecture/heydar-aliyev-centre/",
+          "imageUrl": "https://media-prod.zha.com/zhweb-prod-media/media/1lick2pa/01290_cp_hb_may13_n88955.jpg?w=3840&g=0.5x0.5&fm=webp",
+          "context": "",
+          "priority": 88,
+          "dimensions": [
+            1516,
+            1200
+          ],
+          "visualDistance": 64.55,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Two valid exterior/detail views"
+    },
+    {
+      "id": "BLD-HOUTAN-PARK",
+      "name": "上海后滩公园",
+      "originalName": "Shanghai Houtan Park",
+      "sourcePage": "https://www.homedsgn.com/2011/05/02/shanghai-houtan-park-by-turenscape/",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-houtan-park-02.webp",
+          "alt": "上海后滩公园补充建筑摄影视角 1",
+          "sourceLabel": "HomeDSGN · Shanghai Houtan Park · photo courtesy Turenscape",
+          "sourceUrl": "https://www.homedsgn.com/2011/05/02/shanghai-houtan-park-by-turenscape/",
+          "imageUrl": "https://cdn.homedsgn.com/wp-content/uploads/2011/05/Shangai-Houtan-Park-26-3.jpg",
+          "dimensions": [
+            1050,
+            700
+          ],
+          "visualDistance": 49.66,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-houtan-park-03.webp",
+          "alt": "上海后滩公园补充建筑摄影视角 2",
+          "sourceLabel": "HomeDSGN · Shanghai Houtan Park · photo courtesy Turenscape",
+          "sourceUrl": "https://www.homedsgn.com/2011/05/02/shanghai-houtan-park-by-turenscape/",
+          "imageUrl": "https://cdn.homedsgn.com/wp-content/uploads/2011/05/Shangai-Houtan-Park-22-750x499.jpg",
+          "dimensions": [
+            750,
+            499
+          ],
+          "visualDistance": 71.08,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Identity-checked real photographs; primary plus supplemental views reviewed in contact sheets"
+    },
+    {
+      "id": "BLD-HSBC",
+      "name": "香港汇丰总行大厦",
+      "originalName": "Hongkong and Shanghai Bank Headquarters",
+      "sourcePage": "https://www.modernliving.jp/architecture-design/architecture/g61909755/norman-foster-10architectures/",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-hsbc-02.webp",
+          "alt": "香港汇丰总行大厦补充建筑摄影视角 1",
+          "sourceLabel": "現代建築の巨匠、ノーマン・フォスターの代表作10選。美とハイテク技術が融合した建築は圧巻！",
+          "sourceUrl": "https://www.modernliving.jp/architecture-design/architecture/g61909755/norman-foster-10architectures/",
+          "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/aflo-9641139-66c44b5f1e7b3.jpg?crop=1xw%3A1xh%3Bcenter%2Ctop",
+          "dimensions": [
+            829,
+            1200
+          ],
+          "visualDistance": 64.06,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-IIM-AHMEDABAD",
+      "name": "印度管理学院艾哈迈达巴德校区",
+      "originalName": "Indian Institute of Management Ahmedabad",
+      "sourcePage": "https://www.archiweb.cz/en/b/indicky-institut-managementu",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-iim-ahmedabad-02.webp",
+          "alt": "印度管理学院艾哈迈达巴德校区补充建筑摄影视角 1",
+          "sourceLabel": "archiweb.cz - Indian Institute of Management Ahmedabad",
+          "sourceUrl": "https://www.archiweb.cz/en/b/indicky-institut-managementu",
+          "imageUrl": "https://cdn.archmedia.eu/cache/images/buildings/mainlogo_1570.jpg-1920x450.jpg?algorithm=4&t=1642329754",
+          "dimensions": [
+            1600,
+            531
+          ],
+          "visualDistance": 61.16,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-iim-ahmedabad-03.webp",
+          "alt": "印度管理学院艾哈迈达巴德校区补充建筑摄影视角 2",
+          "sourceLabel": "Indian Institute of Management Ahmedabad - Global Spaces",
+          "sourceUrl": "https://globalspaces.eu/2023/12/30/indian-institute-of-management-ahmedabad/",
+          "imageUrl": "https://globalspaces.eu/wp-content/uploads/2023/12/LK_GS3.jpg",
+          "dimensions": [
+            1200,
+            800
+          ],
+          "visualDistance": 66.19,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-JAPAN-PAVILION-2000",
+      "name": "日本馆 Expo 2000",
+      "originalName": "Japan Pavilion, Expo 2000",
+      "sourcePage": "https://shigerubanarchitects.com/works/exhibitions/japan-pavilion-expo-2000/",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-japan-pavilion-2000-02.webp",
+          "alt": "日本馆 Expo 2000补充建筑摄影视角 1",
+          "sourceLabel": "Shigeru Ban Architects · Japan Pavilion Expo 2000",
+          "sourceUrl": "https://shigerubanarchitects.com/works/exhibitions/japan-pavilion-expo-2000/",
+          "imageUrl": "https://shigerubanarchitects.com/wp-content/uploads/2022/09/shigeru-ban-japan-pavillon2.jpg",
+          "dimensions": [
+            1481,
+            1000
+          ],
+          "visualDistance": 66.35,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-japan-pavilion-2000-03.webp",
+          "alt": "日本馆 Expo 2000补充建筑摄影视角 2",
+          "sourceLabel": "Shigeru Ban Architects · Japan Pavilion Expo 2000",
+          "sourceUrl": "https://shigerubanarchitects.com/works/exhibitions/japan-pavilion-expo-2000/",
+          "imageUrl": "https://shigerubanarchitects.com/wp-content/uploads/2022/09/shigeru-ban-japan-pavillon4.jpg",
+          "dimensions": [
+            1481,
+            1000
+          ],
+          "visualDistance": 56.56,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Identity-checked real photographs; primary plus supplemental views reviewed in contact sheets"
+    },
+    {
+      "id": "BLD-JOHNSON-WAX",
+      "name": "约翰逊制蜡公司总部",
+      "originalName": "S. C. Johnson Administrative Complex",
+      "sourcePage": "https://franklloydwright.org/site/s-c-johnson-administrative-complex/",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-johnson-wax-02.webp",
+          "alt": "约翰逊制蜡公司总部补充建筑摄影视角 1",
+          "sourceLabel": "Frank Lloyd Wright Foundation · 项目页补充摄影",
+          "sourceUrl": "https://franklloydwright.org/site/s-c-johnson-administrative-complex/",
+          "imageUrl": "https://franklloydwright.org/wp-content/uploads/2017/02/s-c-johnson-administrative-complex.jpg",
+          "context": "og:image",
+          "priority": 154,
+          "dimensions": [
+            1440,
+            907
+          ],
+          "visualDistance": 54.93,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Valid campus aerial"
+    },
+    {
+      "id": "BLD-KANAZAWA-21",
+      "name": "金泽 21 世纪美术馆",
+      "originalName": "21st Century Museum of Contemporary Art, Kanazawa",
+      "sourcePage": "https://www.michelenastasi.com/portfolio/21st-century-museum-of-contemporary-art-kanazawa-japan/",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-kanazawa-21-02.webp",
+          "alt": "金泽 21 世纪美术馆补充建筑摄影视角 1",
+          "sourceLabel": "21st Century Museum of Contemporary Art, Kanazawa - Michele Nastasi",
+          "sourceUrl": "https://www.michelenastasi.com/portfolio/21st-century-museum-of-contemporary-art-kanazawa-japan/",
+          "imageUrl": "https://www.michelenastasi.com/wp-content/uploads/2020/04/20_michelenastasi.com_DSC_0773.jpg",
+          "dimensions": [
+            916,
+            600
+          ],
+          "visualDistance": 64.85,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-KIMBELL",
+      "name": "金贝尔艺术博物馆",
+      "originalName": "Kimbell Art Museum",
+      "sourcePage": "https://www.docomomo-us.org/register/kimbell-art-museum",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-kimbell-02.webp",
+          "alt": "金贝尔艺术博物馆补充建筑摄影视角 1",
+          "sourceLabel": "Docomomo US · Kimbell Art Museum",
+          "sourceUrl": "https://www.docomomo-us.org/register/kimbell-art-museum",
+          "imageUrl": "https://docomomo-us.org/resource/desktop/medias/image/image_147sfftrj0l3h61f.jpg",
+          "dimensions": [
+            1600,
+            647
+          ],
+          "visualDistance": 82.19,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-kimbell-03.webp",
+          "alt": "金贝尔艺术博物馆补充建筑摄影视角 2",
+          "sourceLabel": "Appitecture · Contemplating the Kimbell",
+          "sourceUrl": "https://www.appitecture.net/place-and-perspectives/2020/14/4/contemplating-the-kimbell",
+          "imageUrl": "https://images.squarespace-cdn.com/content/v1/51bf94dbe4b03b777468bec4/1585344945531-6J7HGG7P9IKRGHC4K35O/DSC_0045.jpeg",
+          "dimensions": [
+            1600,
+            1068
+          ],
+          "visualDistance": 87.64,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Identity-checked real photographs; primary plus supplemental views reviewed in contact sheets"
+    },
+    {
+      "id": "BLD-KUNSTHAL",
+      "name": "鹿特丹美术馆",
+      "originalName": "Kunsthal Rotterdam",
+      "sourcePage": "https://shop.demo.rotterdam.citycardsolutions.com/en/deals/Kunsthal",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-kunsthal-02.webp",
+          "alt": "鹿特丹美术馆补充建筑摄影视角 1",
+          "sourceLabel": "Kunsthal Rotterdam - STG - R'DAM City Card",
+          "sourceUrl": "https://shop.demo.rotterdam.citycardsolutions.com/en/deals/Kunsthal",
+          "imageUrl": "https://api.rotterdam.citycardsolutions.com/storage/location_pictures/1740490914772_F9FLCDQNNPCJK2P4.jpeg",
+          "dimensions": [
+            912,
+            502
+          ],
+          "visualDistance": 62.18,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-kunsthal-03.webp",
+          "alt": "鹿特丹美术馆补充建筑摄影视角 2",
+          "sourceLabel": "The Building - Kunsthal",
+          "sourceUrl": "https://www.kunsthal.nl/en/about-kunsthal/building/",
+          "imageUrl": "https://www.kunsthal.nl/media/filer_public_thumbnails/filer_public/fa/20/fa20a81f-7af2-420b-b75f-1cc53631ce07/006_westzeedijk_aanzicht_kunsthal.jpg__1766.0x1179.0_q85_crop_subsampling-2_upscale.jpg",
+          "dimensions": [
+            1600,
+            1068
+          ],
+          "visualDistance": 67.4,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-LA-TOURETTE",
+      "name": "拉图雷特修道院",
+      "originalName": "Couvent Sainte-Marie de La Tourette",
+      "sourcePage": "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-couvent-sainte-marie-de-la-tourette-eveux-sur-larbresle-france-1953-1960/",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-la-tourette-02.webp",
+          "alt": "拉图雷特修道院补充建筑摄影视角 1",
+          "sourceLabel": "Fondation Le Corbusier · 项目页补充摄影",
+          "sourceUrl": "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-couvent-sainte-marie-de-la-tourette-eveux-sur-larbresle-france-1953-1960/",
+          "imageUrl": "https://www.fondationlecorbusier.fr/wp-content/uploads/2022/04/realisations-couvent-sainte-marie-de-la-tourette-eveux-sur-larbresle-france-1953-1.jpg",
+          "context": "",
+          "priority": 117,
+          "dimensions": [
+            900,
+            596
+          ],
+          "visualDistance": 65.14,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-la-tourette-03.webp",
+          "alt": "拉图雷特修道院补充建筑摄影视角 2",
+          "sourceLabel": "Fondation Le Corbusier · 项目页补充摄影",
+          "sourceUrl": "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-couvent-sainte-marie-de-la-tourette-eveux-sur-larbresle-france-1953-1960/",
+          "imageUrl": "https://www.fondationlecorbusier.fr/wp-content/uploads/2022/04/realisations-couvent-sainte-marie-de-la-tourette-eveux-sur-larbresle-france-1953-3.jpg",
+          "context": "",
+          "priority": 117,
+          "dimensions": [
+            900,
+            599
+          ],
+          "visualDistance": 67.15,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Two valid exterior/detail views"
+    },
+    {
+      "id": "BLD-LONDON-AQUATICS",
+      "name": "伦敦水上运动中心",
+      "originalName": "London Aquatics Centre",
+      "sourcePage": "https://nla.london/exhibitions/closed-olympic-legacy",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-london-aquatics-02.webp",
+          "alt": "伦敦水上运动中心补充建筑摄影视角 1",
+          "sourceLabel": "CLOSED: Olympic Legacy - New London Architecture",
+          "sourceUrl": "https://nla.london/exhibitions/closed-olympic-legacy",
+          "imageUrl": "https://nla-production-media.s3.eu-west-2.amazonaws.com/385/1106_IMAGE_0%2A480%2C0%2C480x270%2C1%3B0%2A480%2C0%2C960x539%2C2%3B480%2A9999%2C0%2C959x539%2C1%3B480%2A9999%2C0%2C1918x1078%2C2_325_.jpg?v=1691673560",
+          "dimensions": [
+            959,
+            539
+          ],
+          "visualDistance": 58.29,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-LOUVRE-LENS",
+      "name": "卢浮宫朗斯分馆",
+      "originalName": "Louvre-Lens",
+      "sourcePage": "https://www.escautpont.fr/louvre-lens-lens.html",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-louvre-lens-02.webp",
+          "alt": "卢浮宫朗斯分馆补充建筑摄影视角 1",
+          "sourceLabel": "Le Louvre-Lens de Lens",
+          "sourceUrl": "https://www.escautpont.fr/louvre-lens-lens.html",
+          "imageUrl": "https://www.escautpont.fr/fichs/25891.jpg",
+          "dimensions": [
+            961,
+            481
+          ],
+          "visualDistance": 37.32,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-louvre-lens-03.webp",
+          "alt": "卢浮宫朗斯分馆补充建筑摄影视角 2",
+          "sourceLabel": "Musée du Louvre-Lens - Your Nature",
+          "sourceUrl": "https://www.yournature.be/places/musee-du-louvre-lens/",
+          "imageUrl": "https://www.yournature.be/wp-content/uploads/sites/263/2021/05/Image3-1024x619.jpg",
+          "dimensions": [
+            1024,
+            619
+          ],
+          "visualDistance": 47.34,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-LYCEE-SCHORGE",
+      "name": "施奥尔盖中学",
+      "originalName": "Lycée Schorge Secondary School",
+      "sourcePage": "https://www.buildporto.com/blog/lyce-schorge",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-lycee-schorge-02.webp",
+          "alt": "施奥尔盖中学补充建筑摄影视角 1",
+          "sourceLabel": "BUILD · Lycée Schorge · photo Iwan Baan",
+          "sourceUrl": "https://www.buildporto.com/blog/lyce-schorge",
+          "imageUrl": "https://images.squarespace-cdn.com/content/v1/61730a042480154946b9ae05/79138cf1-2652-4bfe-bf7d-d01a45a34392/079_Lyc%C3%A9e%2BSchorge_night_image%2Bby%2BIwan%2BBaan.jpg",
+          "dimensions": [
+            1600,
+            1067
+          ],
+          "visualDistance": 114.77,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-lycee-schorge-03.webp",
+          "alt": "施奥尔盖中学补充建筑摄影视角 2",
+          "sourceLabel": "Topos Magazine · Lycée Schorge",
+          "sourceUrl": "https://toposmagazine.com/pritzker-prize/",
+          "imageUrl": "https://toposmagazine.com/wp-content/uploads/2022/04/LycCe-Schorge-%40-Francis-Kere11-scaled.jpeg",
+          "dimensions": [
+            1600,
+            1066
+          ],
+          "visualDistance": 58.52,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Identity-checked real photographs; primary plus supplemental views reviewed in contact sheets"
+    },
+    {
+      "id": "BLD-MAXXI",
+      "name": "MAXXI 国立二十一世纪艺术博物馆",
+      "originalName": "MAXXI",
+      "sourcePage": "https://www.zaha-hadid.com/architecture/maxxi/",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-maxxi-02.webp",
+          "alt": "MAXXI 国立二十一世纪艺术博物馆补充建筑摄影视角 1",
+          "sourceLabel": "Zaha Hadid Architects · 项目页补充摄影",
+          "sourceUrl": "https://www.zaha-hadid.com/architecture/maxxi/",
+          "imageUrl": "https://media-prod.zha.com/zhweb-prod-media/media/0d1cr3fc/00965_cp_ib_nov09_n24.jpg?w=3840&g=0.5099921630094044x0.8383261494252874&fm=webp",
+          "context": "Page 109 MAXXI, Rizzoli 2010\r\nSkira disc 02",
+          "priority": 106,
+          "dimensions": [
+            800,
+            1200
+          ],
+          "visualDistance": 92.36,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-maxxi-03.webp",
+          "alt": "MAXXI 国立二十一世纪艺术博物馆补充建筑摄影视角 2",
+          "sourceLabel": "Zaha Hadid Architects · 项目页补充摄影",
+          "sourceUrl": "https://www.zaha-hadid.com/architecture/maxxi/",
+          "imageUrl": "https://media-prod.zha.com/zhweb-prod-media/media/5sipmhuv/00965_cp_ib_nov09_n15.jpg?w=3840&g=0.5288054657653393x0.3379684078283491&fm=webp",
+          "context": "Page 135 MAXXI, Rizzoli 2010\r\nSkira disc 02",
+          "priority": 106,
+          "dimensions": [
+            800,
+            1200
+          ],
+          "visualDistance": 81.83,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Two valid interior circulation views"
+    },
+    {
+      "id": "BLD-MCASD",
+      "name": "圣迭戈当代艺术博物馆扩建",
+      "originalName": "Museum of Contemporary Art San Diego",
+      "sourcePage": "https://www.architecturaldigest.com/story/mcasd-la-jolla-design",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-mcasd-02.webp",
+          "alt": "圣迭戈当代艺术博物馆扩建补充建筑摄影视角 1",
+          "sourceLabel": "Architectural Digest · MCASD Axline Court by Venturi Scott Brown",
+          "sourceUrl": "https://www.architecturaldigest.com/story/mcasd-la-jolla-design",
+          "imageUrl": "https://media.architecturaldigest.com/photos/5bbcb003cf791c2db61a49c7/master/w_1600%2Cc_limit/mcasdaxlinecourt%2520.jpg",
+          "dimensions": [
+            1600,
+            1022
+          ],
+          "visualDistance": 80.62,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Identity-checked real photographs; primary plus supplemental views reviewed in contact sheets"
+    },
+    {
+      "id": "BLD-MILLAU",
+      "name": "米约高架桥",
+      "originalName": "Millau Viaduct",
+      "sourcePage": "https://divisare.com/projects/286859-foster-partners-nigel-young-millau-viaduct",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-millau-02.webp",
+          "alt": "米约高架桥补充建筑摄影视角 1",
+          "sourceLabel": "Foster + Partners, Nigel Young · Millau Viaduct · Divisare",
+          "sourceUrl": "https://divisare.com/projects/286859-foster-partners-nigel-young-millau-viaduct",
+          "imageUrl": "https://images.divisare.com/images/c_limit%2Cf_auto%2Ch_2000%2Cq_auto%2Cw_3000/v1/project_images/5054672/1158_FP205785_indesign/foster-partners-nigel-young-millau-viaduct.jpg",
+          "dimensions": [
+            1600,
+            1070
+          ],
+          "visualDistance": 45.81,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-millau-03.webp",
+          "alt": "米约高架桥补充建筑摄影视角 2",
+          "sourceLabel": "18 Famous Bridges In France You Must Visit",
+          "sourceUrl": "https://frenchwin.com/famous-bridges-in-france/",
+          "imageUrl": "https://frenchwin.com/wp-content/uploads/famous-bridges-in-france-18-viaducdemillau.jpg",
+          "dimensions": [
+            810,
+            565
+          ],
+          "visualDistance": 41.69,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-MODERN-FORT-WORTH",
+      "name": "沃思堡现代艺术博物馆",
+      "originalName": "Modern Art Museum of Fort Worth",
+      "sourcePage": "https://morgansheffphotography.com/architecture-4",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-modern-fort-worth-02.webp",
+          "alt": "沃思堡现代艺术博物馆补充建筑摄影视角 1",
+          "sourceLabel": "MORGAN SHEFF PHOTOGRAPHY",
+          "sourceUrl": "https://morgansheffphotography.com/architecture-4",
+          "imageUrl": "https://static.livebooks.com/fa6c2209c8bc45b9819a79f6852f46bf/i/f6888300a81b4d62b5e60d664e50b92b/1/GCuCv726vxAVM9sgguVj4g/Modern-Art-Museum-of-Fort-Worth-Exterior-02.jpg",
+          "dimensions": [
+            1600,
+            900
+          ],
+          "visualDistance": 54.28,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-MULTIHALLE",
+      "name": "曼海姆多功能厅",
+      "originalName": "Multihalle Mannheim",
+      "sourcePage": "https://divisare.com/projects/339341-frei-otto-marco-vedana-mannheim-multihalle",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-multihalle-02.webp",
+          "alt": "曼海姆多功能厅补充建筑摄影视角 1",
+          "sourceLabel": "Frei Otto, Marco Vedana ·  Mannheim Multihalle · Divisare",
+          "sourceUrl": "https://divisare.com/projects/339341-frei-otto-marco-vedana-mannheim-multihalle",
+          "imageUrl": "https://images.divisare.com/images/f_auto%2Cq_auto%2Cw_auto/v1488983126/hwiuv6cbwgkhrqtpp7qx/frei-otto-marco-vedana-mannheim-multihalle.jpg",
+          "dimensions": [
+            1370,
+            1200
+          ],
+          "visualDistance": 49.75,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-MUNICH-OLYMPIC",
+      "name": "慕尼黑奥林匹克公园屋顶",
+      "originalName": "Munich Olympic Stadium Roof",
+      "sourcePage": "https://www.dezeen.com/2015/03/10/frei-otto-pritzker-prize-2015/",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-munich-olympic-02.webp",
+          "alt": "慕尼黑奥林匹克公园屋顶补充建筑摄影视角 1",
+          "sourceLabel": "Dezeen · Munich Olympic tensile roof",
+          "sourceUrl": "https://www.dezeen.com/2015/03/10/frei-otto-pritzker-prize-2015/",
+          "imageUrl": "https://static.dezeen.com/uploads/2015/03/Frei-Otto_Pritzker-Prize-laureate-2015_dezeen_784_24.jpg",
+          "dimensions": [
+            784,
+            560
+          ],
+          "visualDistance": 51.4,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-munich-olympic-03.webp",
+          "alt": "慕尼黑奥林匹克公园屋顶补充建筑摄影视角 2",
+          "sourceLabel": "Archilovers · Munich Olympic Park tensile roof",
+          "sourceUrl": "https://www.archilovers.com/projects/151385/roofing-for-main-sports-facilities-in-the-munich-olympic-park.html",
+          "imageUrl": "https://cdn.archilovers.com/projects/c_383_22db7390-988a-4b3e-a1d7-eb16b9d5e5a6.jpg",
+          "dimensions": [
+            472,
+            629
+          ],
+          "visualDistance": 54.36,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Identity-checked real photographs; primary plus supplemental views reviewed in contact sheets"
+    },
+    {
+      "id": "BLD-NANTES-ARCH",
+      "name": "南特建筑学院",
+      "originalName": "Nantes School of Architecture",
+      "sourcePage": "https://www.lacatonvassal.com/index.php?idp=55",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-nantes-arch-02.webp",
+          "alt": "南特建筑学院补充建筑摄影视角 1",
+          "sourceLabel": "Lacaton & Vassal · Nantes School of Architecture walkway",
+          "sourceUrl": "https://www.lacatonvassal.com/index.php?idp=55",
+          "imageUrl": "https://www.lacatonvassal.com/data/images/full/20090506-004127-z762.jpg",
+          "dimensions": [
+            1024,
+            680
+          ],
+          "visualDistance": 58.48,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Identity-checked real photographs; primary plus supplemental views reviewed in contact sheets"
+    },
+    {
+      "id": "BLD-NEUE-NATIONALGALERIE",
+      "name": "新国家美术馆",
+      "originalName": "Neue Nationalgalerie",
+      "sourcePage": "https://www.museum-ticket.info/de/standorte/deutschland/museen-berlin/neue-nationalgalerie-berlin/",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-neue-nationalgalerie-02.webp",
+          "alt": "新国家美术馆补充建筑摄影视角 1",
+          "sourceLabel": "Neue Nationalgalerie in Berlin - Infos, Ausstellungen & Tickets",
+          "sourceUrl": "https://www.museum-ticket.info/de/standorte/deutschland/museen-berlin/neue-nationalgalerie-berlin/",
+          "imageUrl": "https://www.museum-ticket.info/wp-content/uploads/neue-nationalgalerie-berlin-aussenansicht.jpg",
+          "dimensions": [
+            825,
+            550
+          ],
+          "visualDistance": 63.55,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-neue-nationalgalerie-03.webp",
+          "alt": "新国家美术馆补充建筑摄影视角 2",
+          "sourceLabel": "Berlin Neue Nationalgalerie Ticket",
+          "sourceUrl": "https://www.waug.com/en/activities/118804",
+          "imageUrl": "https://d2mgzmtdeipcjp.cloudfront.net/files/good/2024/03/22/17110903994219.jpg?s=992x496",
+          "dimensions": [
+            992,
+            496
+          ],
+          "visualDistance": 50.21,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-NEW-MUSEUM",
+      "name": "纽约新当代艺术博物馆",
+      "originalName": "New Museum",
+      "sourcePage": "https://www.archimagazine.com/anewmuseum.htm",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-new-museum-02.webp",
+          "alt": "纽约新当代艺术博物馆补充建筑摄影视角 1",
+          "sourceLabel": "Un museo in sette scatole",
+          "sourceUrl": "https://www.archimagazine.com/anewmuseum.htm",
+          "imageUrl": "https://www.archimagazine.com/anewmuseum1_max.jpg",
+          "dimensions": [
+            800,
+            682
+          ],
+          "visualDistance": 65.3,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-NINGBO",
+      "name": "宁波历史博物馆",
+      "originalName": "Ningbo History Museum",
+      "sourcePage": "https://passerelles.essentiels.bnf.fr/fr/chronologie/construction/a508f840-bb7f-42fd-94d9-dea0017d97cd-musee-histoire-ningbo",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-ningbo-02.webp",
+          "alt": "宁波历史博物馆补充建筑摄影视角 1",
+          "sourceLabel": "Bibliothèque nationale de France · Ningbo History Museum",
+          "sourceUrl": "https://passerelles.essentiels.bnf.fr/fr/chronologie/construction/a508f840-bb7f-42fd-94d9-dea0017d97cd-musee-histoire-ningbo",
+          "imageUrl": "https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/3N4SY4eH/uploads/media/image/20241017123259000000_north_facet_of_nbm.JPG",
+          "dimensions": [
+            1600,
+            800
+          ],
+          "visualDistance": 51.43,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-ningbo-03.webp",
+          "alt": "宁波历史博物馆补充建筑摄影视角 2",
+          "sourceLabel": "FAM · Ningbo History Museum courtyard",
+          "sourceUrl": "https://forgemind.net/media/%E4%B8%AD%E5%9C%8B%E5%BB%BA%E7%AF%89%E5%B8%AB%E7%8E%8B%E6%BE%8D%E8%A8%AD%E8%A8%88-%E5%AF%A7%E6%B3%A2%E6%AD%B7%E5%8F%B2%E5%8D%9A%E7%89%A9%E9%A4%A8-ningbo-history-museum/",
+          "imageUrl": "https://forgemind.net/images/w/WangShu-Ningbo_Museum_14.jpg",
+          "dimensions": [
+            580,
+            387
+          ],
+          "visualDistance": 66.4,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Identity-checked real photographs; primary plus supplemental views reviewed in contact sheets"
+    },
+    {
+      "id": "BLD-OPERA-VILLAGE",
+      "name": "拉昂戈歌剧村",
+      "originalName": "Opera Village Laongo",
+      "sourcePage": "https://www.kerearchitecture.com/work/building/opera-village",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-opera-village-02.webp",
+          "alt": "拉昂戈歌剧村补充建筑摄影视角 1",
+          "sourceLabel": "Kéré Architecture · Opera Village school · photo Daniel Schwartz",
+          "sourceUrl": "https://www.kerearchitecture.com/work/building/opera-village",
+          "imageUrl": "https://kerearchitecture-17f76.kxcdn.com/./5cd3c1d2-360f-43b7-a6d6-c3267ebe70f8/StudentsinfrontoftheschoolattheOperaVillage_KereArchitecture_PhotobyDanielSchwartz.jpg?w=980&h=700&fm=jpg&q=70&fit=max&crop=4000%2C2667%2C0%2C0",
+          "dimensions": [
+            980,
+            653
+          ],
+          "visualDistance": 44.8,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-opera-village-03.webp",
+          "alt": "拉昂戈歌剧村补充建筑摄影视角 2",
+          "sourceLabel": "Kéré Architecture · Opera Village classroom",
+          "sourceUrl": "https://www.kerearchitecture.com/work/building/opera-village",
+          "imageUrl": "https://kerearchitecture-17f76.kxcdn.com/./5cd3c1d2-360f-43b7-a6d6-c3267ebe70f8/ClassroomattheOperaVillageschool_PhotobyKereArchitecture.jpg?w=980&h=700&fm=jpg&q=70&fit=max&crop=5845%2C3897%2C0%2C0",
+          "dimensions": [
+            980,
+            653
+          ],
+          "visualDistance": 61.72,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Identity-checked real photographs; primary plus supplemental views reviewed in contact sheets"
+    },
+    {
+      "id": "BLD-PALAIS-TOKYO",
+      "name": "巴黎东京宫改造",
+      "originalName": "Palais de Tokyo",
+      "sourcePage": "https://www.lonelyplanetitalia.it/articoli/citta-del-mondo/un-tour-di-parigi-per-gli-amanti-dell-art-deco",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-palais-tokyo-02.webp",
+          "alt": "巴黎东京宫改造补充建筑摄影视角 1",
+          "sourceLabel": "Un tour di Parigi per gli amanti dell'Art Déco - Lonely Planet",
+          "sourceUrl": "https://www.lonelyplanetitalia.it/articoli/citta-del-mondo/un-tour-di-parigi-per-gli-amanti-dell-art-deco",
+          "imageUrl": "https://images.lonelyplanetitalia.it/uploads/oTckVUYwdTF1g0yViNDoRhwyrOub2rpf.jpg?p=slider&q=80&s=46684e71929f4eeac4ec6868b667a18d",
+          "dimensions": [
+            1200,
+            697
+          ],
+          "visualDistance": 52.23,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-PALAU-GUELL",
+      "name": "桂尔宫",
+      "originalName": "Palau Güell",
+      "sourcePage": "https://www.traveler.es/viajes-urbanos/articulos/cinco-motivos-para-visitar-el-palau-guell/4776",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-palau-guell-02.webp",
+          "alt": "桂尔宫补充建筑摄影视角 1",
+          "sourceLabel": "Condé Nast Traveler · Palau Güell rooftop",
+          "sourceUrl": "https://www.traveler.es/viajes-urbanos/articulos/cinco-motivos-para-visitar-el-palau-guell/4776",
+          "imageUrl": "https://media.traveler.es/photos/613781ac86b46eac7cf5ba07/master/w_1600%2Cc_limit/73057.jpg",
+          "dimensions": [
+            630,
+            450
+          ],
+          "visualDistance": 72.74,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-palau-guell-03.webp",
+          "alt": "桂尔宫补充建筑摄影视角 2",
+          "sourceLabel": "Earth Trekkers · Palau Güell chimney terrace",
+          "sourceUrl": "https://www.earthtrekkers.com/best-things-to-do-barcelona-spain/",
+          "imageUrl": "https://www.earthtrekkers.com/wp-content/uploads/2016/10/Palau-Guell-Roof.jpg.optimal.jpg",
+          "dimensions": [
+            1200,
+            800
+          ],
+          "visualDistance": 54.04,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Identity-checked real photographs; primary plus supplemental views reviewed in contact sheets"
+    },
+    {
+      "id": "BLD-PARK-GUELL",
+      "name": "桂尔公园",
+      "originalName": "Park Güell",
+      "sourcePage": "https://www.casabatllo.es/en/antoni-gaudi/park-guell/",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-park-guell-02.webp",
+          "alt": "桂尔公园补充建筑摄影视角 1",
+          "sourceLabel": "Casa Batlló · Park Güell · 项目页补充摄影",
+          "sourceUrl": "https://www.casabatllo.es/en/antoni-gaudi/park-guell/",
+          "imageUrl": "https://www.casabatllo.es/wp-content/uploads/2023/01/parc-guell.jpg.webp",
+          "context": "",
+          "priority": 106,
+          "dimensions": [
+            800,
+            854
+          ],
+          "visualDistance": 57.08,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-park-guell-03.webp",
+          "alt": "桂尔公园补充建筑摄影视角 2",
+          "sourceLabel": "Casa Batlló · Park Güell · 项目页补充摄影",
+          "sourceUrl": "https://www.casabatllo.es/en/antoni-gaudi/park-guell/",
+          "imageUrl": "https://www.casabatllo.es/wp-content/uploads/2023/01/lagarto-03.jpg.webp",
+          "context": "",
+          "priority": 88,
+          "dimensions": [
+            800,
+            600
+          ],
+          "visualDistance": 76.29,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Two valid mosaic details"
+    },
+    {
+      "id": "BLD-PAVILION",
+      "name": "巴塞罗那馆",
+      "originalName": "Barcelona Pavilion",
+      "sourcePage": "https://tour-barcelona.net/pavilon-ljudviga-mis-van-der-roe/",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-pavilion-02.webp",
+          "alt": "巴塞罗那馆补充建筑摄影视角 1",
+          "sourceLabel": "Павильон Германии в Барселоне – Гид по Барселоне и Каталонии Олег Дячок",
+          "sourceUrl": "https://tour-barcelona.net/pavilon-ljudviga-mis-van-der-roe/",
+          "imageUrl": "https://tour-barcelona.net/wp-content/uploads/2023/09/ekskursiya-v-pavilon-ljudviga-mis-van-der-roe-v-barselone.jpg",
+          "dimensions": [
+            921,
+            576
+          ],
+          "visualDistance": 53.95,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-pavilion-03.webp",
+          "alt": "巴塞罗那馆补充建筑摄影视角 2",
+          "sourceLabel": "100 Jahre Bauhaus 1919 - 2019 | SALTO",
+          "sourceUrl": "https://www.salto.bz/de/article/01032019/100-jahre-bauhaus-1919-2019",
+          "imageUrl": "https://salto.bz/sites/default/files/styles/salto_image_for_body_fields/public/thumbnails/image/y_barcelona_mies_v_d_rohe_pavillon_weltausstellung1999_03.jpg?itok=2iFPWZyU",
+          "dimensions": [
+            960,
+            565
+          ],
+          "visualDistance": 54.46,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-QUNLI-PARK",
+      "name": "群力雨洪公园",
+      "originalName": "Qunli Stormwater Park",
+      "sourcePage": "https://www.tclf.org/landscapes/harbin-qunli-stormwater-park",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-qunli-park-02.webp",
+          "alt": "群力雨洪公园补充建筑摄影视角 1",
+          "sourceLabel": "Harbin Qunli Stormwater Park | TCLF",
+          "sourceUrl": "https://www.tclf.org/landscapes/harbin-qunli-stormwater-park",
+          "imageUrl": "https://www.tclf.org/sites/default/files/styles/full_width/public/2023-10/China_Harbin_HarbinQunliStorP-4-123O3235_Adjust1_sig.jpg?itok=VH3FriOS",
+          "dimensions": [
+            1200,
+            675
+          ],
+          "visualDistance": 69.21,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-REICHSTAG",
+      "name": "德国国会大厦改造",
+      "originalName": "Reichstag, New German Parliament",
+      "sourcePage": "https://unsplash.com/de/s/fotos/reichstagsgeb%C3%A4ude",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-reichstag-02.webp",
+          "alt": "德国国会大厦改造补充建筑摄影视角 1",
+          "sourceLabel": "Bilder zum Thema Reichstagsgebäude | Kostenlose Bilder auf Unsplash herunterladen",
+          "sourceUrl": "https://unsplash.com/de/s/fotos/reichstagsgeb%C3%A4ude",
+          "imageUrl": "https://images.unsplash.com/photo-1747196959942-d822620076b0?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHJlaWNoc3RhZ3NnZWIlQzMlQTR1ZGV8ZW58MHx8MHx8fDA%3D&ixlib=rb-4.1.0&q=60&w=3000",
+          "dimensions": [
+            1600,
+            1200
+          ],
+          "visualDistance": 49.67,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-ROBIE",
+      "name": "罗比住宅",
+      "originalName": "Frederick C. Robie House",
+      "sourcePage": "https://franklloydwright.org/site/robie-house/",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-robie-02.webp",
+          "alt": "罗比住宅补充建筑摄影视角 1",
+          "sourceLabel": "Frank Lloyd Wright Foundation · 项目页补充摄影",
+          "sourceUrl": "https://franklloydwright.org/site/robie-house/",
+          "imageUrl": "https://franklloydwright.org/wp-content/uploads/2017/02/robie-house-1440x508.jpg",
+          "context": "attachment-slide-desktop size-slide-desktop wp-post-image",
+          "priority": 63,
+          "dimensions": [
+            1440,
+            508
+          ],
+          "visualDistance": 50.58,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Valid closer exterior view"
+    },
+    {
+      "id": "BLD-ROLEX-LEARNING",
+      "name": "劳力士学习中心",
+      "originalName": "Rolex Learning Center",
+      "sourcePage": "https://www.epfl.ch/campus/visitors/buildings/rolex-learning-center/",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-rolex-learning-02.webp",
+          "alt": "劳力士学习中心补充建筑摄影视角 1",
+          "sourceLabel": "EPFL · Rolex Learning Center · 项目页补充摄影",
+          "sourceUrl": "https://www.epfl.ch/campus/visitors/buildings/rolex-learning-center/",
+          "imageUrl": "https://www.epfl.ch/campus/visitors/wp-content/uploads/2019/03/Rolex-Learning-Center-patio-nuit.jpg",
+          "context": "La cour intérieure du Rolex Learning Center, de nuit © Alain Herzog / EPFL img-fluid",
+          "priority": 106,
+          "dimensions": [
+            1600,
+            900
+          ],
+          "visualDistance": 101.78,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-rolex-learning-03.webp",
+          "alt": "劳力士学习中心补充建筑摄影视角 2",
+          "sourceLabel": "EPFL · Rolex Learning Center · 项目页补充摄影",
+          "sourceUrl": "https://www.epfl.ch/campus/visitors/buildings/rolex-learning-center/",
+          "imageUrl": "https://www.epfl.ch/campus/visitors/wp-content/uploads/2019/03/Visite-Rolex-Learning-Center.jpg",
+          "context": "Visite du Rolex Learning Center © Alain Herzog / EPFL img-fluid",
+          "priority": 106,
+          "dimensions": [
+            1600,
+            900
+          ],
+          "visualDistance": 40.55,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Valid interior and landscape-level exterior"
+    },
+    {
+      "id": "BLD-RONCHAMP",
+      "name": "朗香教堂",
+      "originalName": "Notre-Dame du Haut",
+      "sourcePage": "https://lenta.ru/articles/2023/08/27/le_corbusier/",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-ronchamp-02.webp",
+          "alt": "朗香教堂补充建筑摄影视角 1",
+          "sourceLabel": "Ле Корбюзье: самые известные работы архитектора: Дом: Среда обитания: Lenta.ru",
+          "sourceUrl": "https://lenta.ru/articles/2023/08/27/le_corbusier/",
+          "imageUrl": "https://icdn.lenta.ru/images/2023/08/10/17/20230810174915519/wide_16_9_6d6ec73a673f7cbdf10c5ca6feee0075.jpg",
+          "dimensions": [
+            1280,
+            720
+          ],
+          "visualDistance": 56.27,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-ronchamp-03.webp",
+          "alt": "朗香教堂补充建筑摄影视角 2",
+          "sourceLabel": "El mundo según Le Corbusier | Traveler",
+          "sourceUrl": "https://www.traveler.es/viajes-urbanos/articulos/el-mundo-segun-le-corbusier/5600",
+          "imageUrl": "https://media.traveler.es/photos/6137808c8f298b3a7a5be2e7/4%3A3/w_1064%2Ch_798%2Cc_limit/78065.jpg",
+          "dimensions": [
+            1064,
+            798
+          ],
+          "visualDistance": 66.2,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-SAGRADA",
+      "name": "圣家堂",
+      "originalName": "Basílica de la Sagrada Família",
+      "sourcePage": "https://vanguardia.com.mx/vida/gaudi-del-modernismo-lo-sublime-y-magico-HQVG3227000",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-sagrada-02.webp",
+          "alt": "圣家堂补充建筑摄影视角 1",
+          "sourceLabel": "Gaudí, del modernismo a lo sublime y mágico",
+          "sourceUrl": "https://vanguardia.com.mx/vida/gaudi-del-modernismo-lo-sublime-y-magico-HQVG3227000",
+          "imageUrl": "https://vanguardia.com.mx/binrepository/1152x1530/0c441/1152d648/down-right/11604/GJFD/51104_1_VG3227000_MG3249298.jpg",
+          "dimensions": [
+            1152,
+            648
+          ],
+          "visualDistance": 55.76,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-sagrada-03.webp",
+          "alt": "圣家堂补充建筑摄影视角 2",
+          "sourceLabel": "巴塞隆納必訪！高第五大建築傑作｜聖家堂、米拉之家、巴特羅之家 - Klook 客路部落格",
+          "sourceUrl": "https://www.klook.com/zh-TW/blog/gaudi-building-barcelona-spain/",
+          "imageUrl": "https://res.klook.com/image/upload/fl_lossy.progressive/q_65/c_fill%2Cw_1360/blogtw/2020/03/%E9%AB%98%E7%AC%AC%E4%BA%94%E5%A4%A7%E5%BB%BA%E7%AF%89.jpg",
+          "dimensions": [
+            1360,
+            715
+          ],
+          "visualDistance": 65.03,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-SAINSBURY-WING",
+      "name": "国家美术馆塞恩斯伯里翼",
+      "originalName": "Sainsbury Wing, National Gallery",
+      "sourcePage": "https://gb.readly.com/magazines/elle-decoration-uk/2022-09-29/632f5091423f5e51c69db08b",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-sainsbury-wing-02.webp",
+          "alt": "国家美术馆塞恩斯伯里翼补充建筑摄影视角 1",
+          "sourceLabel": "ELLE Decoration UK · Sainsbury Wing",
+          "sourceUrl": "https://gb.readly.com/magazines/elle-decoration-uk/2022-09-29/632f5091423f5e51c69db08b",
+          "imageUrl": "https://dt565gqrz3z7y.cloudfront.net/ce/image/C6y35u_JPw57NBdXKGCFLQ.jpg",
+          "dimensions": [
+            533,
+            566
+          ],
+          "visualDistance": 65.39,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-sainsbury-wing-03.webp",
+          "alt": "国家美术馆塞恩斯伯里翼补充建筑摄影视角 2",
+          "sourceLabel": "Building Design · original Sainsbury Wing interior",
+          "sourceUrl": "https://www.bdonline.co.uk/buildings/from-complexity-to-clarity-the-sainsbury-wing-transformed/5135802.article",
+          "imageUrl": "https://d3rcx32iafnn0o.cloudfront.net/Pictures/1024x536/0/6/5/2003065_thenat2_494887.jpg",
+          "dimensions": [
+            1024,
+            536
+          ],
+          "visualDistance": 77.68,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Identity-checked real photographs; primary plus supplemental views reviewed in contact sheets"
+    },
+    {
+      "id": "BLD-SALK",
+      "name": "索尔克研究所",
+      "originalName": "Salk Institute",
+      "sourcePage": "https://www.designingbuildings.co.uk/Salk_Institute",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-salk-02.webp",
+          "alt": "索尔克研究所补充建筑摄影视角 1",
+          "sourceLabel": "Salk Institute - Designing Buildings",
+          "sourceUrl": "https://www.designingbuildings.co.uk/Salk_Institute",
+          "imageUrl": "https://www.designingbuildings.co.uk/w/images/9/9e/Salk2.jpg",
+          "dimensions": [
+            1024,
+            821
+          ],
+          "visualDistance": 77.32,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-salk-03.webp",
+          "alt": "索尔克研究所补充建筑摄影视角 2",
+          "sourceLabel": "Salk Institute | Hidden San Diego",
+          "sourceUrl": "https://hiddensandiego.com/things-to-do/places/salk-institute",
+          "imageUrl": "https://hiddensandiego.com/wp-content/uploads/2020/04/Salk-Institute-3.jpg",
+          "dimensions": [
+            800,
+            618
+          ],
+          "visualDistance": 81.79,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-SEAGRAM",
+      "name": "西格拉姆大厦",
+      "originalName": "Seagram Building",
+      "sourcePage": "https://www.stylepark.com/en/news/no-no-no-no-no-the-book-to-go-with-the-seagram-building",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-seagram-02.webp",
+          "alt": "西格拉姆大厦补充建筑摄影视角 1",
+          "sourceLabel": "NO NO NO NO NO The book to go with the Seagram Building | STYLEPARK",
+          "sourceUrl": "https://www.stylepark.com/en/news/no-no-no-no-no-the-book-to-go-with-the-seagram-building",
+          "imageUrl": "https://cdn.stylepark.com/articles/2013/no-no-no-no-no-the-book-to-go-with-the-seagram-building/l2_v342945_958_992_679-3.jpg?focal=none&mtime=20160927124802",
+          "dimensions": [
+            992,
+            679
+          ],
+          "visualDistance": 76.75,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-SEATTLE-LIBRARY",
+      "name": "西雅图中央图书馆",
+      "originalName": "Seattle Central Library",
+      "sourcePage": "https://www.oma.com/projects/seattle-central-library",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-seattle-library-02.webp",
+          "alt": "西雅图中央图书馆补充建筑摄影视角 1",
+          "sourceLabel": "OMA · Seattle Central Library · 项目页补充摄影",
+          "sourceUrl": "https://www.oma.com/projects/seattle-central-library",
+          "imageUrl": "https://cdn.sanity.io/images/5azy6oei/production/22e37adfef6b46169cebc9ff682c16addec8e4ee-2970x2367.jpg?w=2500&q=80&auto=format",
+          "context": "lazyload blurUp",
+          "priority": 70,
+          "dimensions": [
+            1506,
+            1200
+          ],
+          "visualDistance": 60.02,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-seattle-library-03.webp",
+          "alt": "西雅图中央图书馆补充建筑摄影视角 2",
+          "sourceLabel": "OMA · Seattle Central Library · 项目页补充摄影",
+          "sourceUrl": "https://www.oma.com/projects/seattle-central-library",
+          "imageUrl": "https://cdn.sanity.io/images/5azy6oei/production/968511750341721d0a6f0c84eacd91710fbc51cb-2966x2356.jpg?w=2500&q=80&auto=format",
+          "context": "lazyload blurUp",
+          "priority": 70,
+          "dimensions": [
+            1511,
+            1200
+          ],
+          "visualDistance": 66.77,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Valid exterior and interior views"
+    },
+    {
+      "id": "BLD-SERPENTINE-KERE",
+      "name": "蛇形画廊展亭 2017",
+      "originalName": "Serpentine Pavilion 2017",
+      "sourcePage": "https://www.serpentinegalleries.org/whats-on/serpentine-pavilion-2017-designed-francis-kere/",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-serpentine-kere-02.webp",
+          "alt": "蛇形画廊展亭 2017补充建筑摄影视角 1",
+          "sourceLabel": "Serpentine Galleries · Francis Kéré · 项目页补充摄影",
+          "sourceUrl": "https://www.serpentinegalleries.org/whats-on/serpentine-pavilion-2017-designed-francis-kere/",
+          "imageUrl": "https://d37zoqglehb9o7.cloudfront.net/uploads/2020/04/serpentine-fka-4357web.jpg",
+          "context": "og:image",
+          "priority": 118,
+          "dimensions": [
+            1600,
+            1066
+          ],
+          "visualDistance": 64.96,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Keep pavilion detail; reject sponsor board"
+    },
+    {
+      "id": "BLD-SERPENTINE-SANAA",
+      "name": "蛇形画廊展亭 2009",
+      "originalName": "Serpentine Pavilion 2009",
+      "sourcePage": "https://www.e-architect.com/london/serpentine-gallery-2009",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-serpentine-sanaa-02.webp",
+          "alt": "蛇形画廊展亭 2009补充建筑摄影视角 1",
+          "sourceLabel": "Serpentine Pavilion 2009 by SANAA Architects - e-architect",
+          "sourceUrl": "https://www.e-architect.com/london/serpentine-gallery-2009",
+          "imageUrl": "https://www.e-architect.com/images/jpgs/london/serpentine_pavilion_sanaa_nw110709_5.jpg",
+          "dimensions": [
+            900,
+            599
+          ],
+          "visualDistance": 58.81,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-serpentine-sanaa-03.webp",
+          "alt": "蛇形画廊展亭 2009补充建筑摄影视角 2",
+          "sourceLabel": "Serpentine Pavilion 2009 by SANAA Architects - e-architect",
+          "sourceUrl": "https://www.e-architect.com/london/serpentine-gallery-2009",
+          "imageUrl": "https://www.e-architect.com/images/jpgs/london/serpentine_pavilion_sanaa_nw110709_2.jpg",
+          "dimensions": [
+            900,
+            599
+          ],
+          "visualDistance": 60.25,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-STARTUP-LIONS",
+      "name": "Startup Lions 创业园",
+      "originalName": "Startup Lions Campus",
+      "sourcePage": "https://divisare.com/projects/444335-kere-architecture-startup-lions-campus",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-startup-lions-02.webp",
+          "alt": "Startup Lions 创业园补充建筑摄影视角 1",
+          "sourceLabel": "Kéré Architecture · Startup Lions Campus · Divisare",
+          "sourceUrl": "https://divisare.com/projects/444335-kere-architecture-startup-lions-campus",
+          "imageUrl": "https://images.divisare.com/images/c_limit%2Cf_auto%2Ch_2000%2Cq_auto%2Cw_3000/v1624543922/qa28oh7iies3le8rg6lp/kere-architecture-startup-lions-campus.jpg",
+          "dimensions": [
+            901,
+            1200
+          ],
+          "visualDistance": 48.47,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-startup-lions-03.webp",
+          "alt": "Startup Lions 创业园补充建筑摄影视角 2",
+          "sourceLabel": "AD WOW List 2022: Startup Lions Campus | Architectural Digest India",
+          "sourceUrl": "https://www.architecturaldigest.in/gallery/ad-wow-list-2022-startup-lions-campus/",
+          "imageUrl": "https://assets.architecturaldigest.in/photos/61a60b4acaf4a497bea0cc14/16%3A9/w_2580%2Cc_limit/Startup%20Lions%20Campus.jpg",
+          "dimensions": [
+            1600,
+            900
+          ],
+          "visualDistance": 69.7,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-TALIESIN-WEST",
+      "name": "西塔里埃森",
+      "originalName": "Taliesin West",
+      "sourcePage": "https://franklloydwright.org/taliesin-west/",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-taliesin-west-02.webp",
+          "alt": "西塔里埃森补充建筑摄影视角 1",
+          "sourceLabel": "Frank Lloyd Wright Foundation · 项目页补充摄影",
+          "sourceUrl": "https://franklloydwright.org/taliesin-west/",
+          "imageUrl": "https://franklloydwright.org/wp-content/uploads/2019/04/2019-0109-Taliesin-West-0367-F.jpg",
+          "context": "attachment-large size-large",
+          "priority": 106,
+          "dimensions": [
+            1440,
+            949
+          ],
+          "visualDistance": 54.34,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Valid on-site entry detail"
+    },
+    {
+      "id": "BLD-TOUR-BOIS",
+      "name": "Bois-le-Prêtre 塔楼改造",
+      "originalName": "Tour Bois-le-Prêtre Transformation",
+      "sourcePage": "https://eumiesawards.com/heritageobject/transformation-of-tour-bois-le-pretre-housing-block/",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-tour-bois-02.webp",
+          "alt": "Bois-le-Prêtre 塔楼改造补充建筑摄影视角 1",
+          "sourceLabel": "Transformation of Tour Bois-le-Prêtre Housing Block | EUmies Awards",
+          "sourceUrl": "https://eumiesawards.com/heritageobject/transformation-of-tour-bois-le-pretre-housing-block/",
+          "imageUrl": "https://d10ic2gxw9yhll.cloudfront.net/public/DigitalAsset/fc67671ad6879f58bb72e3fe1612202f/fc67671ad6879f58bb72e3fe1612202f/full/original/0/default.jpg",
+          "dimensions": [
+            1024,
+            724
+          ],
+          "visualDistance": 44.77,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-TUWAIQ-PALACE",
+      "name": "图瓦伊克宫",
+      "originalName": "Tuwaiq Palace",
+      "sourcePage": "https://www.saudiarchitecture.org/tuwaiq-palace-riyadh/",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-tuwaiq-palace-02.webp",
+          "alt": "图瓦伊克宫补充建筑摄影视角 1",
+          "sourceLabel": "قصر طويق — Saudi Architecture",
+          "sourceUrl": "https://www.saudiarchitecture.org/tuwaiq-palace-riyadh/",
+          "imageUrl": "https://images.squarespace-cdn.com/content/v1/5defce185e372206518f65c4/1591468468976-NR1SDXGZXI548FIVJE7M/Tamara%2BHamad%2B_%2BOmrania%2B3.jpg",
+          "dimensions": [
+            1600,
+            617
+          ],
+          "visualDistance": 130.74,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-tuwaiq-palace-03.webp",
+          "alt": "图瓦伊克宫补充建筑摄影视角 2",
+          "sourceLabel": "Saudi Ministry of Culture releases mini-documentary on Tuwaiq Palace",
+          "sourceUrl": "https://www.modernarabesque.com/en/news/2388",
+          "imageUrl": "https://www.modernarabesque.com/upload/ZXTTZEBJKH.jpg",
+          "dimensions": [
+            1500,
+            900
+          ],
+          "visualDistance": 111.43,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-UNITE",
+      "name": "马赛公寓",
+      "originalName": "Unité d'Habitation de Marseille",
+      "sourcePage": "https://www.fondationlecorbusier.fr/en/work-architecture/achievements-unite-dhabitation-marseille-france-1945-1952/",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-unite-02.webp",
+          "alt": "马赛公寓补充建筑摄影视角 1",
+          "sourceLabel": "Fondation Le Corbusier · 项目页补充摄影",
+          "sourceUrl": "https://www.fondationlecorbusier.fr/en/work-architecture/achievements-unite-dhabitation-marseille-france-1945-1952/",
+          "imageUrl": "https://www.fondationlecorbusier.fr/wp-content/uploads/2022/04/unite-dhabitation-de-marseille-flc-adagp-timothee-jourdain-2.jpg",
+          "context": "Unité d'Habitation de Marseille © FLC / ADAGP / Timothée Jourdain",
+          "priority": 117,
+          "dimensions": [
+            600,
+            800
+          ],
+          "visualDistance": 80.5,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-unite-03.webp",
+          "alt": "马赛公寓补充建筑摄影视角 2",
+          "sourceLabel": "Fondation Le Corbusier · 项目页补充摄影",
+          "sourceUrl": "https://www.fondationlecorbusier.fr/en/work-architecture/achievements-unite-dhabitation-marseille-france-1945-1952/",
+          "imageUrl": "https://www.fondationlecorbusier.fr/wp-content/uploads/2022/04/unite-dhabitation-de-marseille-flc-adagp-timothee-jourdain-3.jpg",
+          "context": "Unité d'Habitation de Marseille © FLC / ADAGP / Timothée Jourdain",
+          "priority": 117,
+          "dimensions": [
+            1200,
+            800
+          ],
+          "visualDistance": 80.69,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Valid corridor and exterior views"
+    },
+    {
+      "id": "BLD-VANNA-VENTURI",
+      "name": "范娜·文丘里住宅",
+      "originalName": "Vanna Venturi House",
+      "sourcePage": "https://architectureartlessons.wordpress.com/%CE%BC%CE%B1%CE%B8%CE%B7%CE%BC%CE%B1-3/robert-venturi-and-denise-scott-brown_venturi-house-philadelphia-usa-1964/",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-vanna-venturi-02.webp",
+          "alt": "范娜·文丘里住宅补充建筑摄影视角 1",
+          "sourceLabel": "Robert Venturi and Denise Scott Brown_Venturi House, Philadelphia, USA, 1964 – \"ΤΕΧΝΗ ΚΑΙ ΑΡΧΙΤΕΚΤΟΝΙΚΗ\" στο πλαίσιο του Εκπαιδευτικού Προγράμματος του Ιδρύματος Θεοχαράκη",
+          "sourceUrl": "https://architectureartlessons.wordpress.com/%CE%BC%CE%B1%CE%B8%CE%B7%CE%BC%CE%B1-3/robert-venturi-and-denise-scott-brown_venturi-house-philadelphia-usa-1964/",
+          "imageUrl": "https://architectureartlessons.wordpress.com/wp-content/uploads/2017/10/robert-venturi-and-denise-scott-brown_venturi-house-philadelphia-usa-1964.jpg",
+          "dimensions": [
+            1200,
+            800
+          ],
+          "visualDistance": 57.99,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-vanna-venturi-03.webp",
+          "alt": "范娜·文丘里住宅补充建筑摄影视角 2",
+          "sourceLabel": "Muere el arquitecto Robert Venturi",
+          "sourceUrl": "https://www.arquitecturaydiseno.es/arquitectura/robert-venturi-adios-grande_1975",
+          "imageUrl": "https://content.arquitecturaydiseno.es/medio/2018/09/20/robert-venturi_30e3fd4a_1500x1000_2.jpg",
+          "dimensions": [
+            1500,
+            1000
+          ],
+          "visualDistance": 47.25,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-VILLA-SAVOYE",
+      "name": "萨伏伊别墅",
+      "originalName": "Villa Savoye",
+      "sourcePage": "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-villa-savoye-et-loge-du-jardinier-poissy-france-1928-1931/",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-villa-savoye-02.webp",
+          "alt": "萨伏伊别墅补充建筑摄影视角 1",
+          "sourceLabel": "Fondation Le Corbusier · 项目页补充摄影",
+          "sourceUrl": "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-villa-savoye-et-loge-du-jardinier-poissy-france-1928-1931/",
+          "imageUrl": "https://www.fondationlecorbusier.fr/wp-content/uploads/2022/04/villa-savoye-flc-adagp-marc-tulane-dist-centre-des-monuments-nationaux-base-regards.jpg",
+          "context": "Villa Savoye © FLC / ADAGP / © Marc Tulane / Dist. Centre des monuments nationaux (Base Regards)",
+          "priority": 81,
+          "dimensions": [
+            600,
+            800
+          ],
+          "visualDistance": 74.32,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-villa-savoye-03.webp",
+          "alt": "萨伏伊别墅补充建筑摄影视角 2",
+          "sourceLabel": "Fondation Le Corbusier · 项目页补充摄影",
+          "sourceUrl": "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-villa-savoye-et-loge-du-jardinier-poissy-france-1928-1931/",
+          "imageUrl": "https://www.fondationlecorbusier.fr/wp-content/uploads/2022/04/villa-savoye-loge-du-jardinier-flc-adagp-laurent-gueneau-dist-centre-des-monuments-nationaux-base-regards.jpg",
+          "context": "Villa Savoye, loge du jardinier © FLC / ADAGP / © Laurent Gueneau / Dist. Centre des monuments nationaux (Base Regards)",
+          "priority": 81,
+          "dimensions": [
+            600,
+            800
+          ],
+          "visualDistance": 76.06,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Two valid exterior/detail views"
+    },
+    {
+      "id": "BLD-WENCUN",
+      "name": "富阳文村村落改造",
+      "originalName": "Wencun Village",
+      "sourcePage": "https://www.archdaily.com/867419/kenneth-frampton-on-the-work-of-wang-shu-and-lu-wenyu",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-wencun-02.webp",
+          "alt": "富阳文村村落改造补充建筑摄影视角 1",
+          "sourceLabel": "ArchDaily · Kenneth Frampton on Wang Shu and Lu Wenyu · 项目页补充摄影",
+          "sourceUrl": "https://www.archdaily.com/867419/kenneth-frampton-on-the-work-of-wang-shu-and-lu-wenyu",
+          "imageUrl": "https://images.adsttc.com/media/images/58cf/d507/e58e/ceb1/2800/01b4/large_jpg/Wa_Shan_Hangzhou_WSA_3699.jpg?1490015462",
+          "context": "og:image",
+          "priority": 100,
+          "dimensions": [
+            1600,
+            1066
+          ],
+          "visualDistance": 67.57,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Valid village spatial detail"
+    },
+    {
+      "id": "BLD-WENZHENG-LIBRARY",
+      "name": "文正学院图书馆",
+      "originalName": "Library of Wenzheng College",
+      "sourcePage": "https://architektura.info/architektura/polska_i_swiat/pritzker_20125",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-wenzheng-library-02.webp",
+          "alt": "文正学院图书馆补充建筑摄影视角 1",
+          "sourceLabel": "Pritzker 2012 - Wang Shu - Pritzker 2012",
+          "sourceUrl": "https://architektura.info/architektura/polska_i_swiat/pritzker_20125",
+          "imageUrl": "https://architektura.info/var/architektura/storage/images/media/images/pritzker_2012/library/wang_shu_library_wenzhang_college_03_a/794528-1-pol-PL/wang_shu_library_wenzhang_college_03_a.jpg",
+          "dimensions": [
+            950,
+            672
+          ],
+          "visualDistance": 59.48,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-wenzheng-library-03.webp",
+          "alt": "文正学院图书馆补充建筑摄影视角 2",
+          "sourceLabel": "Library of Wenzheng College | Amateur Architecture Studio",
+          "sourceUrl": "https://www.archilovers.com/projects/51060/library-of-wenzheng-college.html",
+          "imageUrl": "https://cdn.archilovers.com/projects/e4d5b987-13c1-4dd4-91de-7af0aaaccecf.jpg",
+          "dimensions": [
+            1500,
+            1000
+          ],
+          "visualDistance": 55.66,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-XIANGSHAN",
+      "name": "中国美术学院象山校区",
+      "originalName": "Xiangshan Campus, China Academy of Art",
+      "sourcePage": "https://m.voc.com.cn/xhn/news/202010/14540522.html",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-xiangshan-02.webp",
+          "alt": "中国美术学院象山校区补充建筑摄影视角 1",
+          "sourceLabel": "王澍：我只是个造房子的",
+          "sourceUrl": "https://m.voc.com.cn/xhn/news/202010/14540522.html",
+          "imageUrl": "https://img2.voc.com.cn/remote/2020/09/16/585_457405cd6a974ac36b3636ef61204f798bf80feb.png",
+          "dimensions": [
+            741,
+            555
+          ],
+          "visualDistance": 79.16,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    },
+    {
+      "id": "BLD-YANWEIZHOU",
+      "name": "燕尾洲公园",
+      "originalName": "Yanweizhou Park",
+      "sourcePage": "https://www.designindaba.com/articles/creative-work/yanweizhou-park-harnessing-nature-benefit-itself",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-yanweizhou-02.webp",
+          "alt": "燕尾洲公园补充建筑摄影视角 1",
+          "sourceLabel": "Design Indaba · Jinhua Yanweizhou Park",
+          "sourceUrl": "https://www.designindaba.com/articles/creative-work/yanweizhou-park-harnessing-nature-benefit-itself",
+          "imageUrl": "https://www.designindaba.com/sites/default/files/node/news/22412/gallery/yanweizhou-park-jinhua-city-turenscape-14.jpg",
+          "dimensions": [
+            1200,
+            708
+          ],
+          "visualDistance": 45.31,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-yanweizhou-03.webp",
+          "alt": "燕尾洲公园补充建筑摄影视角 2",
+          "sourceLabel": "Gooood · Jinhua Yanweizhou Park terraces",
+          "sourceUrl": "https://www.gooood.cn/a-resilient-landscape-jinhua-yanweizhou-park-by-turenscape.htm?lang=en_US",
+          "imageUrl": "https://oss.gooood.cn/uploads/2016/09/08a-960x640.jpg",
+          "dimensions": [
+            960,
+            640
+          ],
+          "visualDistance": 59.86,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Identity-checked real photographs; primary plus supplemental views reviewed in contact sheets"
+    },
+    {
+      "id": "BLD-YONGNING-RIVER",
+      "name": "永宁江公园",
+      "originalName": "Yongning River Park",
+      "sourcePage": "https://www.turenscape.com/en/project/detail/323.html",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-yongning-river-02.webp",
+          "alt": "永宁江公园补充建筑摄影视角 1",
+          "sourceLabel": "Turenscape · Taizhou Yongning River Park",
+          "sourceUrl": "https://www.turenscape.com/en/project/detail/323.html",
+          "imageUrl": "https://www.turenscape.com/upload/project/202505/61922d0fa2a526d3aa8763b050026a15.jpg",
+          "dimensions": [
+            1050,
+            700
+          ],
+          "visualDistance": 40.74,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-yongning-river-03.webp",
+          "alt": "永宁江公园补充建筑摄影视角 2",
+          "sourceLabel": "Turenscape · Taizhou Yongning River Park",
+          "sourceUrl": "https://www.turenscape.com/en/project/detail/323.html",
+          "imageUrl": "https://www.turenscape.com/upload/project/202505/a63abe68617af47332b81e44850644c6.jpg",
+          "dimensions": [
+            1050,
+            700
+          ],
+          "visualDistance": 66.48,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Identity-checked real photographs; primary plus supplemental views reviewed in contact sheets"
+    },
+    {
+      "id": "BLD-ZHONGSHAN-SHIPYARD",
+      "name": "中山岐江公园",
+      "originalName": "Zhongshan Shipyard Park",
+      "sourcePage": "https://www.tclf.org/zhongshan-shipyard-park",
+      "images": [
+        {
+          "localPath": "public/images/buildings/gallery/bld-zhongshan-shipyard-02.webp",
+          "alt": "中山岐江公园补充建筑摄影视角 1",
+          "sourceLabel": "Zhongshan Shipyard Park | TCLF",
+          "sourceUrl": "https://www.tclf.org/zhongshan-shipyard-park",
+          "imageUrl": "https://www.tclf.org/sites/default/files/styles/full_width/public/2023-10/China_Zhongshan_ZhongshanShipyardPark_zhongshan_04e_sig.jpg?itok=klc5TBjr",
+          "dimensions": [
+            1200,
+            675
+          ],
+          "visualDistance": 84.24,
+          "reviewStatus": "visually-approved"
+        },
+        {
+          "localPath": "public/images/buildings/gallery/bld-zhongshan-shipyard-03.webp",
+          "alt": "中山岐江公园补充建筑摄影视角 2",
+          "sourceLabel": "中山岐江公园，广东 / 土人设计 | 谷德设计网 - gooood",
+          "sourceUrl": "https://www.gooood.cn/zhongshan-shipyard-park-china-by-turenscape.htm",
+          "imageUrl": "https://oss.gooood.cn/uploads/2019/10/125-zhongshan-shipyard-park-china-by-turenscape.jpg",
+          "dimensions": [
+            1600,
+            1046
+          ],
+          "visualDistance": 79.6,
+          "reviewStatus": "visually-approved"
+        }
+      ],
+      "reviewStatus": "visually-approved",
+      "curationNote": "Selected from search candidate contact sheets"
+    }
+  ],
+  "failures": [
+    {
+      "id": "BLD-SEAGRAM",
+      "name": "西格拉姆大厦",
+      "sourcePage": "https://www.tclf.org/landscapes/seagram-building",
+      "error": "curl: (22) The requested URL returned error: 404\r\ncurl: (22) The requested URL returned error: 404"
+    },
+    {
+      "id": "BLD-HSBC",
+      "name": "香港汇丰总行大厦",
+      "sourcePage": "https://www.fosterandpartners.com/projects/hongkong-and-shanghai-bank-headquarters/",
+      "error": "curl: (22) The requested URL returned error: 403\r\ncurl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "BLD-REICHSTAG",
+      "name": "德国国会大厦改造",
+      "sourcePage": "https://www.fosterandpartners.com/projects/reichstag-new-german-parliament/",
+      "error": "curl: (22) The requested URL returned error: 403\r\ncurl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "BLD-HEARST",
+      "name": "赫斯特大厦",
+      "sourcePage": "https://www.fosterandpartners.com/projects/hearst-headquarters/",
+      "error": "curl: (22) The requested URL returned error: 403\r\ncurl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "BLD-DAXING",
+      "name": "北京大兴国际机场",
+      "sourcePage": "https://www.zaha-hadid.com/architecture/beijing-daxing-international-airport/",
+      "error": "curl: (22) The requested URL returned error: 404\r\ncurl: (22) The requested URL returned error: 404"
+    },
+    {
+      "id": "BLD-SAGRADA",
+      "name": "圣家堂",
+      "sourcePage": "https://sagradafamilia.org/en/architecture",
+      "error": "curl: (22) The requested URL returned error: 404\r\ncurl: (22) The requested URL returned error: 404"
+    },
+    {
+      "id": "BLD-XIANGSHAN",
+      "name": "中国美术学院象山校区",
+      "sourcePage": "https://www.pritzkerprize.com/sites/default/files/inline-files/2012_Essay_0.pdf",
+      "error": "no distinct project-page photo from 0 candidates"
+    },
+    {
+      "id": "BLD-NEUE-NATIONALGALERIE",
+      "name": "新国家美术馆",
+      "sourcePage": "https://www.smb.museum/en/museums-institutions/neue-nationalgalerie/about-us/the-building/",
+      "error": "no distinct project-page photo from 0 candidates"
+    },
+    {
+      "id": "BLD-CROWN-HALL",
+      "name": "克朗楼",
+      "sourcePage": "https://miessociety.org/crown-hall",
+      "error": "curl: (22) The requested URL returned error: 404\r\ncurl: (22) The requested URL returned error: 404"
+    },
+    {
+      "id": "BLD-RONCHAMP",
+      "name": "朗香教堂",
+      "sourcePage": "https://www.collinenotredameduhaut.com/",
+      "error": "curl: (28) Operation timed out after 45170 milliseconds with 458696 bytes received\r\ncurl: (28) Operation timed out after 45482 milliseconds with 679856 bytes received"
+    },
+    {
+      "id": "BLD-MODERN-FORT-WORTH",
+      "name": "沃思堡现代艺术博物馆",
+      "sourcePage": "https://www.themodern.org/building",
+      "error": "no distinct project-page photo from 8 candidates"
+    },
+    {
+      "id": "BLD-2121",
+      "name": "21_21 DESIGN SIGHT",
+      "sourcePage": "https://www.2121designsight.jp/en/information/",
+      "error": "no distinct project-page photo from 2 candidates; sample errors: curl: (28) Operation timed out after 25005 milliseconds with 32445 out of 395461 bytes received\r\ncurl: (28) Operation timed out after 25014 milliseconds with 32526 out of 395461 bytes received"
+    },
+    {
+      "id": "BLD-30-ST-MARY",
+      "name": "圣玛丽斧街 30 号",
+      "sourcePage": "https://www.fosterandpartners.com/news/30-st-mary-axe-london",
+      "error": "curl: (22) The requested URL returned error: 403\r\ncurl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "BLD-MILLAU",
+      "name": "米约高架桥",
+      "sourcePage": "https://www.fosterandpartners.com/projects/millau-viaduct/",
+      "error": "curl: (22) The requested URL returned error: 403\r\ncurl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "BLD-GUANGZHOU-OPERA",
+      "name": "广州大剧院",
+      "sourcePage": "https://www.zaha-hadid.com/wp-content/uploads/2019/12/guangzhouoperahouse.pdf",
+      "error": "no distinct project-page photo from 0 candidates"
+    },
+    {
+      "id": "BLD-CASA-MILA",
+      "name": "米拉之家",
+      "sourcePage": "https://www.lapedrera.com/en/casa-mila/",
+      "error": "curl: (28) Connection timed out after 12008 milliseconds\r\ncurl: (28) Connection timed out after 12006 milliseconds"
+    },
+    {
+      "id": "BLD-MULTIHALLE",
+      "name": "曼海姆多功能厅",
+      "sourcePage": "https://www.mannheim.de/en/culture-experiencing/multihalle",
+      "error": "no distinct project-page photo from 2 candidates"
+    },
+    {
+      "id": "BLD-TUWAIQ-PALACE",
+      "name": "图瓦伊克宫",
+      "sourcePage": "https://www.archnet.org/sites/159",
+      "error": "curl: (22) The requested URL returned error: 429\r\ncurl: (22) The requested URL returned error: 429"
+    },
+    {
+      "id": "BLD-QUNLI-PARK",
+      "name": "群力雨洪公园",
+      "sourcePage": "https://www.turenscape.com/en/project/detail/466.html",
+      "error": "no distinct project-page photo from 13 candidates"
+    },
+    {
+      "id": "BLD-ZHONGSHAN-SHIPYARD",
+      "name": "中山岐江公园",
+      "sourcePage": "https://www.turenscape.com/en/project/detail/468.html",
+      "error": "no distinct project-page photo from 13 candidates"
+    },
+    {
+      "id": "BLD-SALK",
+      "name": "索尔克研究所",
+      "sourcePage": "https://www.salk.edu/about/architecture/",
+      "error": "curl: (22) The requested URL returned error: 404\r\ncurl: (22) The requested URL returned error: 404"
+    },
+    {
+      "id": "BLD-BANGLADESH-PARLIAMENT",
+      "name": "孟加拉国国民议会大厦",
+      "sourcePage": "https://www.archnet.org/sites/439",
+      "error": "curl: (22) The requested URL returned error: 429\r\ncurl: (22) The requested URL returned error: 429"
+    },
+    {
+      "id": "BLD-EXETER-LIBRARY",
+      "name": "菲利普斯埃克塞特图书馆",
+      "sourcePage": "https://www.exeter.edu/academics/library",
+      "error": "no distinct project-page photo from 8 candidates; sample errors: curl: (7) Failed to connect to d2jv02qf7xgjwx.cloudfront.net:443 after 2065 ms: Could not connect to server\r\ncurl: (7) Failed to connect to d2jv02qf7xgjwx.cloudfront.net:443 after 2034 ms: Could not connect to server | curl: (7) Failed to connect to d2jv02qf7xgjwx.cloudfront.net:443 after 2058 ms: Could not connect to server\r\ncurl: (7) Failed to connect to d2jv02qf7xgjwx.cloudfront.net:443 after 2049 ms: Could not connect to server | curl: (7) Failed to connect to d2jv02qf7xgjwx.cloudfront.net:443 after 2059 ms: Could not connect to server\r\ncurl: (7) Failed to connect to d2jv02qf7xgjwx.cloudfront.net:443 after 2046 ms: Could not connect to server"
+    },
+    {
+      "id": "BLD-IIM-AHMEDABAD",
+      "name": "印度管理学院艾哈迈达巴德校区",
+      "sourcePage": "https://www.iima.ac.in/the-institute/campus/heritage-campus",
+      "error": "curl: (22) The requested URL returned error: 404\r\ncurl: (22) The requested URL returned error: 404"
+    },
+    {
+      "id": "BLD-VANNA-VENTURI",
+      "name": "范娜·文丘里住宅",
+      "sourcePage": "https://venturiscottbrown.org/project/vanna-venturi-house/",
+      "error": "curl: (22) The requested URL returned error: 404\r\ncurl: (22) The requested URL returned error: 404"
+    },
+    {
+      "id": "BLD-KANAZAWA-21",
+      "name": "金泽 21 世纪美术馆",
+      "sourcePage": "https://www.kanazawa21.jp/data_list.php?g=11&d=1&lng=e",
+      "error": "curl: (22) The requested URL returned error: 500\r\ncurl: (22) The requested URL returned error: 500"
+    },
+    {
+      "id": "BLD-LOUVRE-LENS",
+      "name": "卢浮宫朗斯分馆",
+      "sourcePage": "https://www.louvrelens.fr/en/my-visit/architecture/",
+      "error": "no distinct project-page photo from 14 candidates"
+    },
+    {
+      "id": "BLD-NEW-MUSEUM",
+      "name": "纽约新当代艺术博物馆",
+      "sourcePage": "https://www.newmuseum.org/about/building/",
+      "error": "no distinct project-page photo from 0 candidates"
+    },
+    {
+      "id": "BLD-SERPENTINE-SANAA",
+      "name": "蛇形画廊展亭 2009",
+      "sourcePage": "https://www.serpentinegalleries.org/whats-on/serpentine-gallery-pavilion-2009-sanaa/",
+      "error": "curl: (22) The requested URL returned error: 404\r\ncurl: (22) The requested URL returned error: 404"
+    },
+    {
+      "id": "BLD-TOUR-BOIS",
+      "name": "Bois-le-Prêtre 塔楼改造",
+      "sourcePage": "https://www.lacatonvassal.com/index.php?idp=56",
+      "error": "no distinct project-page photo from 0 candidates"
+    },
+    {
+      "id": "BLD-GRAND-PARC",
+      "name": "波尔多大公园住宅改造",
+      "sourcePage": "https://www.lacatonvassal.com/index.php?idp=80",
+      "error": "no distinct project-page photo from 0 candidates"
+    },
+    {
+      "id": "BLD-PALAIS-TOKYO",
+      "name": "巴黎东京宫改造",
+      "sourcePage": "https://www.lacatonvassal.com/index.php?idp=20",
+      "error": "no distinct project-page photo from 0 candidates"
+    },
+    {
+      "id": "BLD-KUNSTHAL",
+      "name": "鹿特丹美术馆",
+      "sourcePage": "https://www.oma.com/projects/kunsthal-rotterdam",
+      "error": "no distinct project-page photo from 0 candidates"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>ArcBTI V7 · 手机验收容器</title>
+    <style>
+      :root { --device-width: 390px; --device-height: 844px; --iframe-width: 390px; color-scheme: light; font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif; background: #d8d4ca; color: #111318 }
+      * { box-sizing: border-box }
+      body { min-width: calc(var(--device-width) + 88px); margin: 0; padding: 24px 44px 48px; background: linear-gradient(rgb(255 255 255 / 35%) 1px, transparent 1px), linear-gradient(90deg, rgb(255 255 255 / 35%) 1px, transparent 1px), #d8d4ca; background-size: 24px 24px }
+      header { width: calc(var(--device-width) + 24px); margin: 0 auto 14px; display: flex; align-items: end; justify-content: space-between; gap: 12px }
+      h1, p { margin: 0 }
+      h1 { font-size: 18px; line-height: 1.1; letter-spacing: -.04em }
+      p { color: #4f514f; font-size: 11px; line-height: 1.35; text-align: right }
+      .controls { display: flex; gap: 6px; margin-top: 7px }
+      select { min-height: 34px; border: 1px solid #111318; border-radius: 0; background: #f3f0e7; color: #111318; font: 750 11px/1 Arial, sans-serif }
+      .device { position: relative; width: calc(var(--device-width) + 24px); margin: 0 auto; padding: 12px; border: 1px solid #111318; background: #111318; box-shadow: 0 24px 70px rgb(22 24 27 / 24%) }
+      .device::before { content: attr(data-width-label); position: absolute; top: -20px; left: 0; color: #111318; font: 700 10px/1 Arial, sans-serif; letter-spacing: .08em }
+      .viewport { display: block; width: var(--device-width); height: var(--device-height); overflow: hidden; background: #f3f0e7 }
+      iframe { display: block; width: var(--iframe-width); height: var(--device-height); border: 0; background: #f3f0e7 }
+      .height-label { position: absolute; top: 12px; right: -52px; height: var(--device-height); display: grid; place-items: center; color: #111318; font: 700 10px/1 Arial, sans-serif; letter-spacing: .08em; writing-mode: vertical-rl }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1><span id="code">VOID</span> 手机验收视图</h1>
+        <div class="controls">
+          <select id="persona" aria-label="选择验收人格"></select>
+          <select id="device-size" aria-label="选择验收尺寸"></select>
+        </div>
+      </div>
+      <p id="spec">iPhone 14 级视口<br />390 × 844 · 可见内容 1:1 · 无缩放</p>
+    </header>
+    <main class="device" id="device" data-width-label="390 CSS px" aria-label="390 × 844 手机页面演示框">
+      <div class="viewport"><iframe id="result" title="ArcBTI 390 × 844 手机端实际页面"></iframe></div>
+      <span class="height-label" id="height-label" aria-hidden="true">844 CSS px</span>
+    </main>
+    <script>
+      const personas = [
+        ["grid", "GRID"], ["span", "SPAN"], ["root", "ROOT"], ["eave", "EAVE"],
+        ["tide", "TIDE"], ["mass", "MASS"], ["void", "VOID"], ["ruin", "RUIN"],
+        ["sign", "SIGN"], ["tech", "TECH"], ["veil", "VEIL"], ["flow", "FLOW"],
+        ["plus", "PLUS"], ["mix", "MIX"], ["orna", "ORNA"], ["hand", "HAND"]
+      ]
+      const devices = {
+        compact: { label: "360 × 800", name: "Compact 手机", width: 360, height: 800 },
+        standard: { label: "390 × 844", name: "iPhone 14 级", width: 390, height: 844 },
+        large: { label: "430 × 932", name: "大屏手机", width: 430, height: 932 },
+      }
+      const params = new URLSearchParams(location.search)
+      const select = document.querySelector("#persona")
+      const sizeSelect = document.querySelector("#device-size")
+      const frame = document.querySelector("#result")
+      const code = document.querySelector("#code")
+      const spec = document.querySelector("#spec")
+      const device = document.querySelector("#device")
+      const heightLabel = document.querySelector("#height-label")
+      const appBase = location.pathname.replace(/\/preview\/result-v7-device\.html$/, "")
+      for (const [slug, label] of personas) select.add(new Option(label, slug))
+      for (const [value, item] of Object.entries(devices)) sizeSelect.add(new Option(item.label, value))
+      const initial = personas.some(([slug]) => slug === params.get("slug")) ? params.get("slug") : "void"
+      const initialSize = Object.hasOwn(devices, params.get("size")) ? params.get("size") : "standard"
+      function syncUrl(slug, size) {
+        history.replaceState(null, "", `?slug=${slug}&size=${size}`)
+      }
+      function applySize(size) {
+        const item = devices[size]
+        sizeSelect.value = size
+        document.documentElement.style.setProperty("--device-width", `${item.width}px`)
+        document.documentElement.style.setProperty("--device-height", `${item.height}px`)
+        document.documentElement.style.setProperty("--iframe-width", `${item.width}px`)
+        device.dataset.widthLabel = `${item.width} CSS px`
+        device.setAttribute("aria-label", `${item.width} × ${item.height} 手机页面演示框`)
+        heightLabel.textContent = `${item.height} CSS px`
+        spec.innerHTML = `${item.name}视口<br>${item.width} × ${item.height} · 可见内容 1:1 · 无缩放`
+        frame.title = `${code.textContent} ${item.width} × ${item.height} 手机端实际页面`
+      }
+      function show(slug, size = sizeSelect.value || initialSize) {
+        const label = personas.find(([value]) => value === slug)[1]
+        select.value = slug
+        code.textContent = label
+        applySize(size)
+        document.title = `${label} · ${devices[size].label} 手机验收视图`
+        frame.src = `${appBase}/result/${slug}/?mine=1`
+        syncUrl(slug, size)
+      }
+      select.addEventListener("change", () => show(select.value, sizeSelect.value))
+      sizeSelect.addEventListener("change", () => show(select.value, sizeSelect.value))
+      show(initial, initialSize)
+    </script>
+  </body>
+</html>

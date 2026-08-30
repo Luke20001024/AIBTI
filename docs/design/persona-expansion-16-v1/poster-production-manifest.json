@@ -1,0 +1,62 @@
+{
+  "SPAN": {
+    "titleLines": ["用最少，撑最大"],
+    "statements": ["你会先看力往哪里走", "材料少一点，空间反而更自由"],
+    "keywords": ["张力", "轻量", "找形"],
+    "lineage": ["轻量结构", "形态生成", "工程实验"],
+    "accent": "#177f98"
+  },
+  "EAVE": {
+    "titleLines": ["先把大家叫到", "阴影里"],
+    "statements": ["你做空间，先看太阳和风", "技术不贵，判断得值钱"],
+    "keywords": ["气候", "共建", "阴影"],
+    "lineage": ["地域现代主义", "社区建造", "被动气候"],
+    "accent": "#c68a24"
+  },
+  "TIDE": {
+    "titleLines": ["把洪水请回地面"],
+    "statements": ["你看见积水，会先找它原来的路", "城市要学会和自然一起呼吸"],
+    "keywords": ["水", "修复", "韧性"],
+    "lineage": ["景观都市主义", "海绵城市", "生态修复"],
+    "accent": "#126f75",
+    "artworkOffsetY": 118,
+    "artworkBackground": "#f3efe6"
+  },
+  "RUIN": {
+    "titleLines": ["让今天看起来", "已经很久"],
+    "statements": ["你相信建筑要经得住沉默", "光落下来，重量才开始说话"],
+    "keywords": ["原型", "重量", "永恒"],
+    "lineage": ["现代纪念性", "原型空间", "光的秩序"],
+    "accent": "#8c5a2f",
+    "artworkOffsetY": 160,
+    "artworkBackground": "#f3efe6"
+  },
+  "SIGN": {
+    "titleLines": ["严肃建筑也能接梗"],
+    "statements": ["你会先问大家看不看得懂", "历史、广告和俗气，都能拿来重新编"],
+    "keywords": ["符号", "反讽", "大众"],
+    "lineage": ["后现代主义", "建筑符号学", "大众文化"],
+    "accent": "#a14737"
+  },
+  "VEIL": {
+    "titleLines": ["墙先别急着站队"],
+    "statements": ["你喜欢空间互相借一点", "人一多，边界反而应该更轻"],
+    "keywords": ["轻", "透明", "无中心"],
+    "lineage": ["极简主义", "非中心空间", "轻盈公共性"],
+    "accent": "#5f7f96"
+  },
+  "PLUS": {
+    "titleLines": ["能不拆，就别手痒"],
+    "statements": ["你会先给旧楼多一点空间", "改造要把生活真正还回去"],
+    "keywords": ["加建", "慷慨", "续命"],
+    "lineage": ["改造伦理", "社会住宅", "空间加法"],
+    "accent": "#79872f"
+  },
+  "MIX": {
+    "titleLines": ["功能别排队，一起上"],
+    "statements": ["你喜欢冲突挤在同一栋楼", "图书馆也可以像城市路口"],
+    "keywords": ["混合", "拥挤", "反常识"],
+    "lineage": ["都市主义", "程序混合", "批判实践"],
+    "accent": "#c94b35"
+  }
+}

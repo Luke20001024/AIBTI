@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ArcBTI Campaign Posters</title>
+  <style>
+    :root {
+      --paper: #f1eadc;
+      --ink: #10161c;
+      --red: #d94832;
+      --blue: #166d93;
+      --cyan: #2e9aa4;
+      --rule: rgba(16, 22, 28, 0.22);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: #777; }
+    body {
+      font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .poster {
+      position: relative;
+      width: 1080px;
+      height: 1440px;
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .poster::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 50;
+      pointer-events: none;
+      opacity: 0.14;
+      mix-blend-mode: multiply;
+      background-image:
+        radial-gradient(circle at 18% 22%, rgba(0,0,0,.18) 0 0.7px, transparent 0.9px),
+        radial-gradient(circle at 72% 61%, rgba(0,0,0,.13) 0 0.6px, transparent 0.85px);
+      background-size: 4px 4px, 5px 5px;
+    }
+
+    .serif { font-family: "Noto Serif SC", SimSun, serif; }
+    .condensed { font-family: Impact, "Arial Narrow", sans-serif; letter-spacing: .02em; }
+    .micro { font: 700 15px/1.2 "Arial Narrow", "Noto Sans SC", sans-serif; letter-spacing: .17em; }
+
+    /* Poster 1: endless scroll */
+    #poster-scroll {
+      background:
+        linear-gradient(90deg, transparent 0 5.6%, rgba(16,22,28,.09) 5.7% 5.9%, transparent 6%),
+        repeating-linear-gradient(0deg, transparent 0 63px, rgba(16,22,28,.035) 63px 64px),
+        var(--paper);
+      color: var(--ink);
+    }
+
+    .scroll-header {
+      position: absolute;
+      z-index: 30;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 142px;
+      padding: 34px 54px 22px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      border-bottom: 5px solid var(--ink);
+      background: rgba(241,234,220,.96);
+    }
+
+    .scroll-brand {
+      font: 700 52px/.86 Impact, "Arial Narrow", sans-serif;
+      letter-spacing: .015em;
+    }
+
+    .scroll-header-right { text-align: right; }
+    .scroll-header-right strong { display: block; font: 700 23px/1 "Arial Narrow", sans-serif; letter-spacing: .12em; }
+    .scroll-header-right span { display: block; margin-top: 12px; color: var(--red); }
+
+    .scroll-stage {
+      position: absolute;
+      z-index: 2;
+      inset: 142px 28px 98px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      overflow: hidden;
+      border-left: 2px solid var(--ink);
+      border-right: 2px solid var(--ink);
+    }
+
+    .scroll-lane {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding: 0 0 20px;
+    }
+
+    .scroll-lane:nth-child(1) { transform: translateY(-68px); }
+    .scroll-lane:nth-child(2) { transform: translateY(38px); }
+    .scroll-lane:nth-child(3) { transform: translateY(-20px); }
+    .scroll-lane:nth-child(4) { transform: translateY(76px); }
+
+    .scroll-card {
+      position: relative;
+      flex: 0 0 320px;
+      overflow: hidden;
+      border: 3px solid var(--ink);
+      background: #ddd;
+      box-shadow: 7px 8px 0 rgba(16,22,28,.18);
+    }
+
+    .scroll-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 49%;
+      filter: saturate(.92) contrast(1.04);
+    }
+
+    .scroll-card::after {
+      content: "";
+      position: absolute;
+      inset: 54% 0 0;
+      background: linear-gradient(transparent, rgba(8,14,18,.86));
+    }
+
+    .scroll-code {
+      position: absolute;
+      z-index: 3;
+      left: 14px;
+      bottom: 12px;
+      color: #fff;
+      font: 700 39px/.86 Impact, "Arial Narrow", sans-serif;
+      letter-spacing: .04em;
+      text-shadow: 0 2px 0 #000;
+    }
+
+    .scroll-spine {
+      position: absolute;
+      z-index: 20;
+      top: 142px;
+      bottom: 98px;
+      left: 475px;
+      width: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--ink);
+      border-left: 9px solid var(--paper);
+      border-right: 9px solid var(--paper);
+      box-shadow: 0 0 0 2px var(--ink), 0 0 35px rgba(0,0,0,.26);
+    }
+
+    .scroll-spine span {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      color: #f7f1e6;
+      font: 700 28px/1 Impact, "Arial Narrow", sans-serif;
+      letter-spacing: .12em;
+      white-space: nowrap;
+    }
+
+    .scroll-hook {
+      position: absolute;
+      z-index: 32;
+      left: 42px;
+      bottom: 102px;
+      width: 468px;
+      padding: 24px 28px 27px;
+      color: #fff;
+      background: var(--ink);
+      border: 4px solid var(--paper);
+      box-shadow: 10px 10px 0 var(--red);
+      transform: rotate(-1.6deg);
+    }
+
+    .scroll-hook .line-1 { font: 900 48px/.95 "Noto Serif SC", SimSun, serif; }
+    .scroll-hook .line-2 { margin-top: 6px; font: 900 60px/.95 "Noto Serif SC", SimSun, serif; }
+    .scroll-hook .line-2 em { color: #f36a4b; font-style: normal; }
+
+    .scroll-footer {
+      position: absolute;
+      z-index: 35;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 98px;
+      padding: 22px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--paper);
+      background: var(--red);
+      border-top: 5px solid var(--ink);
+    }
+
+    .scroll-footer strong { font: 900 25px/1 "Noto Serif SC", SimSun, serif; }
+    .scroll-footer span { font: 700 17px/1 "Arial Narrow", sans-serif; letter-spacing: .17em; }
+
+    /* Poster 2: cinematic triangle */
+    #poster-cast {
+      color: #f5efe5;
+      background:
+        radial-gradient(ellipse at 50% 38%, rgba(44,100,112,.32), transparent 42%),
+        radial-gradient(ellipse at 33% 65%, rgba(190,69,43,.22), transparent 37%),
+        linear-gradient(175deg, #19222a 0%, #0c1116 58%, #06090c 100%);
+    }
+
+    .cast-beam {
+      position: absolute;
+      z-index: 0;
+      top: -240px;
+      left: 401px;
+      width: 270px;
+      height: 1150px;
+      opacity: .22;
+      background: linear-gradient(90deg, transparent, #d7f6f0 45% 55%, transparent);
+      clip-path: polygon(44% 0, 58% 0, 100% 100%, 0 100%);
+    }
+
+    .cast-header {
+      position: absolute;
+      z-index: 30;
+      top: 38px;
+      left: 50px;
+      right: 50px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-bottom: 20px;
+      border-bottom: 2px solid rgba(245,239,229,.55);
+    }
+
+    .cast-header .brand { font: 700 52px/.8 Impact, "Arial Narrow", sans-serif; }
+    .cast-header .original { color: #ef684a; }
+    .cast-header .right { text-align: right; color: rgba(245,239,229,.78); }
+
+    .cast-stage { position: absolute; z-index: 5; inset: 116px 0 260px; }
+
+    .cast-shard {
+      position: absolute;
+      overflow: hidden;
+      border: 2px solid rgba(245,239,229,.72);
+      background: #222;
+      clip-path: polygon(12% 0, 100% 3%, 89% 100%, 0 96%);
+      box-shadow: 0 14px 30px rgba(0,0,0,.5);
+      transform-origin: 50% 100%;
+    }
+
+    .cast-shard img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 53%;
+      filter: saturate(.78) contrast(1.1) brightness(.83);
+    }
+
+    .cast-shard::after {
+      content: "";
+      position: absolute;
+      inset: 45% 0 0;
+      background: linear-gradient(transparent, rgba(3,7,10,.92));
+    }
+
+    .cast-code {
+      position: absolute;
+      z-index: 3;
+      left: 50%;
+      bottom: 15px;
+      transform: translateX(-50%);
+      color: #fff;
+      font: 700 30px/1 Impact, "Arial Narrow", sans-serif;
+      letter-spacing: .08em;
+      text-shadow: 0 2px 0 #000;
+    }
+
+    .cast-title {
+      position: absolute;
+      z-index: 25;
+      left: 0;
+      right: 0;
+      bottom: 92px;
+      padding: 72px 54px 34px;
+      text-align: center;
+      background: linear-gradient(transparent 0%, rgba(6,9,12,.9) 25%, #06090c 61%);
+    }
+
+    .cast-title .cn {
+      font: 900 91px/.91 "Noto Serif SC", SimSun, serif;
+      letter-spacing: -.07em;
+    }
+
+    .cast-title .cn span { color: #ed6648; }
+    .cast-title .en { margin-top: 18px; font: 700 40px/.9 Impact, "Arial Narrow", sans-serif; letter-spacing: .08em; }
+    .cast-title .joke { margin-top: 18px; font: 700 24px/1.2 "Noto Serif SC", SimSun, serif; color: #e8d9c6; }
+
+    .cast-footer {
+      position: absolute;
+      z-index: 31;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 92px;
+      padding: 20px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 2px solid rgba(245,239,229,.45);
+      background: #06090c;
+    }
+
+    .cast-footer strong { font: 800 24px/1 "Noto Serif SC", SimSun, serif; }
+    .cast-footer span { color: #ef684a; }
+
+    /* Poster 3: one site, sixteen opinions */
+    #poster-site {
+      color: var(--ink);
+      background:
+        linear-gradient(rgba(18,24,29,.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(18,24,29,.045) 1px, transparent 1px),
+        var(--paper);
+      background-size: 36px 36px;
+    }
+
+    .site-header {
+      position: absolute;
+      z-index: 30;
+      top: 36px;
+      left: 48px;
+      right: 48px;
+      padding-bottom: 20px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      border-bottom: 3px solid var(--ink);
+    }
+
+    .site-header .brand { font: 700 50px/.84 Impact, "Arial Narrow", sans-serif; }
+    .site-header .report { text-align: right; color: var(--red); }
+
+    .site-title {
+      position: absolute;
+      z-index: 31;
+      top: 122px;
+      left: 48px;
+      width: 670px;
+    }
+
+    .site-title .cn { font: 900 88px/.9 "Noto Serif SC", SimSun, serif; letter-spacing: -.075em; }
+    .site-title .cn span { color: var(--red); }
+    .site-title .en { margin-top: 16px; font: 700 35px/1 Impact, "Arial Narrow", sans-serif; letter-spacing: .08em; }
+
+    .site-stamp {
+      position: absolute;
+      z-index: 32;
+      top: 160px;
+      right: 45px;
+      width: 270px;
+      padding: 16px 18px 18px;
+      text-align: center;
+      color: var(--red);
+      border: 6px double var(--red);
+      transform: rotate(7deg);
+      background: rgba(241,234,220,.8);
+      font: 900 22px/1.25 "Noto Serif SC", SimSun, serif;
+    }
+
+    .site-stage { position: absolute; z-index: 4; inset: 316px 0 154px; }
+
+    .site-model {
+      position: absolute;
+      z-index: 5;
+      top: 166px;
+      left: 275px;
+      width: 530px;
+      height: 600px;
+      filter: drop-shadow(0 28px 20px rgba(16,22,28,.22));
+    }
+
+    .site-model .ground {
+      position: absolute;
+      left: 30px;
+      top: 300px;
+      width: 470px;
+      height: 250px;
+      transform: skewY(-11deg);
+      background: #d9d1c2;
+      border: 5px solid var(--ink);
+      clip-path: polygon(50% 0, 100% 24%, 50% 100%, 0 75%);
+    }
+
+    .model-block { position: absolute; border: 5px solid var(--ink); background: #ede5d8; }
+    .model-a { left: 170px; top: 150px; width: 210px; height: 250px; transform: skewY(-12deg); background: #b9b2a8; }
+    .model-b { left: 70px; top: 250px; width: 180px; height: 170px; transform: skewY(18deg); background: #e06a42; }
+    .model-c { left: 315px; top: 270px; width: 145px; height: 135px; transform: skewY(-16deg); background: #287e88; }
+    .model-d { left: 205px; top: 54px; width: 160px; height: 150px; border-radius: 50% 50% 0 0; background: #d8c18b; }
+    .model-e { left: 145px; top: 375px; width: 250px; height: 70px; transform: rotate(-8deg); background: #11171c; }
+    .model-water { position: absolute; left: 20px; top: 430px; width: 450px; height: 50px; border: 4px solid var(--blue); border-width: 0 0 10px; border-radius: 50%; transform: rotate(-8deg); }
+    .model-loop { position: absolute; left: 78px; top: 122px; width: 378px; height: 360px; border: 18px solid var(--red); border-left-color: transparent; border-radius: 50%; transform: rotate(-17deg); }
+    .model-roof { position: absolute; left: 44px; top: 188px; width: 430px; height: 45px; background: #f2eee3; border: 5px solid var(--ink); transform: rotate(-7deg); }
+    .model-veil { position: absolute; left: 352px; top: 116px; width: 110px; height: 235px; border: 4px solid #78a9b6; background: rgba(145,205,215,.3); transform: skewY(-10deg); }
+    .model-grid { position: absolute; left: 132px; top: 175px; width: 270px; height: 240px; opacity: .45; background: repeating-linear-gradient(90deg, transparent 0 36px, #111 36px 39px), repeating-linear-gradient(0deg, transparent 0 36px, #111 36px 39px); }
+
+    .site-avatar {
+      position: absolute;
+      z-index: 12;
+      width: 150px;
+      height: 122px;
+      overflow: hidden;
+      background: #ddd;
+      border: 4px solid var(--ink);
+      box-shadow: 7px 7px 0 rgba(16,22,28,.17);
+    }
+
+    .site-avatar.left { left: 42px; clip-path: polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%); }
+    .site-avatar.right { right: 42px; clip-path: polygon(8% 0, 100% 0, 100% 100%, 8% 100%, 0 50%); }
+    .site-avatar img { width: 100%; height: 100%; object-fit: cover; object-position: center 52%; filter: saturate(.9) contrast(1.05); }
+    .site-avatar::after { content: ""; position: absolute; inset: 58% 0 0; background: linear-gradient(transparent, rgba(5,9,12,.9)); }
+    .site-avatar .code { position: absolute; z-index: 2; bottom: 9px; left: 14px; color: #fff; font: 700 25px/1 Impact, "Arial Narrow", sans-serif; letter-spacing: .08em; }
+    .site-avatar.right .code { left: auto; right: 14px; }
+
+    .site-lines { position: absolute; z-index: 7; inset: 0; width: 100%; height: 100%; }
+    .site-lines line { stroke: var(--red); stroke-width: 3; stroke-dasharray: 8 8; opacity: .7; }
+    .site-lines circle { fill: var(--red); }
+
+    .site-note {
+      position: absolute;
+      z-index: 20;
+      left: 330px;
+      bottom: 125px;
+      width: 420px;
+      padding: 18px 22px 20px;
+      text-align: center;
+      color: #fff;
+      background: var(--red);
+      border: 4px solid var(--ink);
+      box-shadow: 8px 8px 0 var(--ink);
+      transform: rotate(-2deg);
+      font: 900 27px/1.25 "Noto Serif SC", SimSun, serif;
+    }
+
+    .site-footer {
+      position: absolute;
+      z-index: 35;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 154px;
+      padding: 29px 48px;
+      color: #f4ede1;
+      background: var(--ink);
+      border-top: 8px solid var(--red);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .site-footer strong { display: block; font: 900 28px/1 "Noto Serif SC", SimSun, serif; }
+    .site-footer small { display: block; margin-top: 13px; font: 700 15px/1 "Arial Narrow", sans-serif; letter-spacing: .14em; color: #d6cabb; }
+    .site-footer .producer { text-align: right; color: #ef684a; }
+  </style>
+</head>
+<body>
+  <section class="poster" id="poster-scroll">
+    <header class="scroll-header">
+      <div class="scroll-brand">ArcBTI</div>
+      <div class="scroll-header-right micro">
+        <strong>16 ARCHITECTURE PERSONALITIES</strong>
+        <span>ISSUE 001 / THE TYPE INDEX</span>
+      </div>
+    </header>
+    <div class="scroll-stage" id="scroll-stage"></div>
+    <div class="scroll-spine"><span>ArcBTI / 16 WAYS TO BUILD A WORLD</span></div>
+    <div class="scroll-hook serif">
+      <div class="line-1">别滑了</div>
+      <div class="line-2">你的人格在<em>盖楼</em></div>
+    </div>
+    <footer class="scroll-footer">
+      <strong>测出你的建筑母语</strong>
+      <span>PRODUCED BY LUKE</span>
+    </footer>
+  </section>
+
+  <section class="poster" id="poster-cast">
+    <div class="cast-beam"></div>
+    <header class="cast-header">
+      <div><span class="brand">ArcBTI</span> <span class="micro original">ORIGINAL</span></div>
+      <div class="right micro">THE COMPLETE CAST<br>ARCHITECTURE INTUITION TEST</div>
+    </header>
+    <div class="cast-stage" id="cast-stage"></div>
+    <div class="cast-title">
+      <div class="cn serif">建筑人格<br><span>全员到齐</span></div>
+      <div class="en">16 TYPES. ONE CITY.</div>
+      <div class="joke serif">有人拯救世界，有人只想把缝对齐</div>
+    </div>
+    <footer class="cast-footer">
+      <strong>测出你的建筑母语</strong>
+      <span class="micro">PRODUCED BY LUKE</span>
+    </footer>
+  </section>
+
+  <section class="poster" id="poster-site">
+    <header class="site-header">
+      <div class="brand">ArcBTI</div>
+      <div class="report micro">FIELD REPORT 001<br>ARCHITECTURE INTUITION TEST</div>
+    </header>
+    <div class="site-title">
+      <div class="cn serif">同一块地<br><span>16种不服</span></div>
+      <div class="en">ONE SITE. 16 OPINIONS.</div>
+    </div>
+    <div class="site-stamp serif">会议还没开始<br>方案已经改了16版</div>
+    <div class="site-stage">
+      <svg class="site-lines" viewBox="0 0 1080 970" preserveAspectRatio="none" aria-hidden="true">
+        <line x1="188" y1="84" x2="380" y2="300"/><line x1="188" y1="202" x2="350" y2="365"/>
+        <line x1="188" y1="320" x2="330" y2="430"/><line x1="188" y1="438" x2="345" y2="500"/>
+        <line x1="188" y1="556" x2="360" y2="560"/><line x1="188" y1="674" x2="385" y2="610"/>
+        <line x1="188" y1="792" x2="410" y2="660"/><line x1="188" y1="910" x2="435" y2="705"/>
+        <line x1="892" y1="84" x2="700" y2="300"/><line x1="892" y1="202" x2="730" y2="365"/>
+        <line x1="892" y1="320" x2="750" y2="430"/><line x1="892" y1="438" x2="735" y2="500"/>
+        <line x1="892" y1="556" x2="720" y2="560"/><line x1="892" y1="674" x2="695" y2="610"/>
+        <line x1="892" y1="792" x2="670" y2="660"/><line x1="892" y1="910" x2="645" y2="705"/>
+      </svg>
+      <div class="site-model" aria-hidden="true">
+        <div class="ground"></div><div class="model-grid"></div><div class="model-loop"></div>
+        <div class="model-block model-a"></div><div class="model-block model-b"></div>
+        <div class="model-block model-c"></div><div class="model-block model-d"></div>
+        <div class="model-veil"></div><div class="model-roof"></div><div class="model-water"></div><div class="model-block model-e"></div>
+      </div>
+      <div id="site-avatars"></div>
+      <div class="site-note serif">不是意见多，是建筑母语不同</div>
+    </div>
+    <footer class="site-footer">
+      <div><strong>测出你的建筑母语</strong><small>FIND YOUR ARCHITECTURE LANGUAGE</small></div>
+      <div class="producer micro">PRODUCED<br>BY LUKE</div>
+    </footer>
+  </section>
+
+  <script>
+    const base = "../../../public/images/personas";
+    const personas = [
+      ["GRID", `${base}/grid/hero-poster-v1.png`], ["SPAN", `${base}/span/hero-poster-v1.png`],
+      ["MASS", `${base}/mass/hero-poster-v1.png`], ["TECH", `${base}/tech/hero-poster-v1.png`],
+      ["VOID", `${base}/void/hero-poster-v1.png`], ["ROOT", `${base}/root/hero-poster-v1.png`],
+      ["EAVE", `${base}/eave/hero-poster-v1.png`], ["TIDE", `${base}/tide/hero-poster-v1.png`],
+      ["RUIN", `${base}/ruin/hero-poster-v1.png`], ["HAND", `${base}/hand/hero-poster-v1.png`],
+      ["SIGN", `${base}/sign/hero-poster-v1.png`], ["ORNA", `${base}/orna/hero-poster-v1.png`],
+      ["VEIL", `${base}/veil/hero-poster-v1.png`], ["FLOW", `${base}/flow/hero-poster-v1.png`],
+      ["PLUS", `${base}/plus/hero-poster-v1.png`], ["MIX", `${base}/mix/hero-poster-v1.png`],
+    ];
+
+    const scrollOrder = [
+      [0,4,8,12], [1,5,9,13], [2,6,10,14], [3,7,11,15]
+    ];
+    const scrollStage = document.getElementById("scroll-stage");
+    scrollOrder.forEach(indices => {
+      const lane = document.createElement("div"); lane.className = "scroll-lane";
+      indices.forEach(index => {
+        const [code, src] = personas[index];
+        lane.insertAdjacentHTML("beforeend", `<div class="scroll-card"><img src="${src}" alt="${code}"><span class="scroll-code">${code}</span></div>`);
+      });
+      scrollStage.appendChild(lane);
+    });
+
+    const castLayout = [
+      {i:4,x:450,y:15,w:180,h:350,r:0,z:12},
+      {i:0,x:260,y:175,w:190,h:370,r:-3,z:11},{i:13,x:445,y:165,w:190,h:385,r:1,z:13},{i:11,x:630,y:175,w:190,h:370,r:3,z:11},
+      {i:1,x:78,y:368,w:190,h:400,r:-5,z:9},{i:3,x:255,y:360,w:190,h:420,r:-2,z:10},{i:5,x:438,y:345,w:198,h:430,r:0,z:12},{i:6,x:628,y:360,w:190,h:420,r:2,z:10},{i:7,x:806,y:368,w:190,h:400,r:5,z:9},
+      {i:8,x:8,y:626,w:166,h:410,r:-7,z:6},{i:9,x:158,y:615,w:166,h:430,r:-5,z:7},{i:10,x:308,y:605,w:166,h:445,r:-2,z:8},{i:2,x:457,y:594,w:172,h:462,r:0,z:10},{i:12,x:612,y:605,w:166,h:445,r:2,z:8},{i:14,x:762,y:615,w:166,h:430,r:5,z:7},{i:15,x:912,y:626,w:166,h:410,r:7,z:6},
+    ];
+    const castStage = document.getElementById("cast-stage");
+    castLayout.forEach(({i,x,y,w,h,r,z}) => {
+      const [code, src] = personas[i];
+      castStage.insertAdjacentHTML("beforeend", `<div class="cast-shard" style="left:${x}px;top:${y}px;width:${w}px;height:${h}px;transform:rotate(${r}deg);z-index:${z}"><img src="${src}" alt="${code}"><span class="cast-code">${code}</span></div>`);
+    });
+
+    const siteOrder = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+    const avatars = document.getElementById("site-avatars");
+    siteOrder.forEach((index, pos) => {
+      const side = pos < 8 ? "left" : "right";
+      const row = pos % 8;
+      const [code, src] = personas[index];
+      avatars.insertAdjacentHTML("beforeend", `<div class="site-avatar ${side}" style="top:${22 + row*118}px"><img src="${src}" alt="${code}"><span class="code">${code}</span></div>`);
+    });
+
+    Promise.all([...document.images].map(img => img.complete ? Promise.resolve() : new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(() => {
+      document.fonts.ready.then(() => { window.__POSTERS_READY__ = true; });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,2566 @@
+{
+  "records": [
+    {
+      "id": "BLD-2121",
+      "originalName": "21_21 DESIGN SIGHT",
+      "candidateIndex": 1,
+      "title": "21 21 Design Sight Museum | Tadao Ando",
+      "pageUrl": "https://moderni.co/21-21-design-sight-museum-tadao-ando/",
+      "imageUrl": "https://moderni.co/wp-content/plugins/wp_auto_grid/galleries/news-gallery/21%2021%20Design%20Sight%20Museum-Tadao%20Ando/F-21%2021%20Design%20Sight.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-2121-candidate-01.webp",
+      "dimensions": [
+        1600,
+        989
+      ],
+      "visualDistance": 65.36,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-2121",
+      "originalName": "21_21 DESIGN SIGHT",
+      "candidateIndex": 2,
+      "title": "21_21 Design Sight (21_21デザインサイト) - Tokyo",
+      "pageUrl": "https://tokyo.com/guide/see-do/design-sight/",
+      "imageUrl": "https://tokyo.com/wp-content/uploads/2016/12/21_21-Design.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-2121-candidate-02.webp",
+      "dimensions": [
+        1600,
+        857
+      ],
+      "visualDistance": 73.51,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-2121",
+      "originalName": "21_21 DESIGN SIGHT",
+      "candidateIndex": 3,
+      "title": "| AD Magazine",
+      "pageUrl": "https://www.admagazine.fr/article/tadao-ando-projets-phares",
+      "imageUrl": "https://media.admagazine.fr/photos/647a04b0b9d17e064e09d2ad/master/w_1600%2Cc_limit/976144128",
+      "localPath": "public/images/buildings/gallery-candidates/bld-2121-candidate-03.webp",
+      "dimensions": [
+        1600,
+        1071
+      ],
+      "visualDistance": 67.76,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-2121",
+      "originalName": "21_21 DESIGN SIGHT",
+      "candidateIndex": 4,
+      "title": "設計人方序中的東京探索地圖公開，「瞬間回到昭和的商店街、東京最神秘的大人系酒吧！」",
+      "pageUrl": "https://www.elle.com/tw/life/g29237074/tokyo-design-map/",
+      "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/314844-408614882524125-1434842330-n-1569513056.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-2121-candidate-04.webp",
+      "dimensions": [
+        851,
+        639
+      ],
+      "visualDistance": 74.26,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-30-ST-MARY",
+      "originalName": "30 St Mary Axe",
+      "candidateIndex": 3,
+      "title": "Небоскреб Мэри Экс 30 в Лондоне (Великобритания) с фото и отзывами",
+      "pageUrl": "https://topgid.net/2090-neboskreb-mjeri-jeks-30.html",
+      "imageUrl": "https://topgid.net/uploads/posts/2019-07/2090-5d3e0b0dd6b2c.jpeg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-30-st-mary-candidate-03.webp",
+      "dimensions": [
+        562,
+        1000
+      ],
+      "visualDistance": 64.48,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-ALLEN-MEMORIAL",
+      "originalName": "Allen Memorial Art Museum Addition",
+      "candidateIndex": 2,
+      "title": "The Chazen Museum of Art — Machado Silvetti",
+      "pageUrl": "https://www.machado-silvetti.com/the-chazen-museum-of-art",
+      "imageUrl": "https://images.squarespace-cdn.com/content/v1/6421aade3f8aab29569ae9c0/4502f943-6945-4cb3-a622-36db85a97a79/02.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-allen-memorial-candidate-02.webp",
+      "dimensions": [
+        1600,
+        998
+      ],
+      "visualDistance": 75.85,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-ALLEN-MEMORIAL",
+      "originalName": "Allen Memorial Art Museum Addition",
+      "candidateIndex": 3,
+      "title": "University of Michigan Museum of Art | Allied Works",
+      "pageUrl": "https://alliedworks.com/projects/university-of-michigan-museum-of-art",
+      "imageUrl": "https://alliedworks.com/projects/university-of-michigan-museum-of-art/1.5x_uma_scan003.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-allen-memorial-candidate-03.webp",
+      "dimensions": [
+        1500,
+        846
+      ],
+      "visualDistance": 69.07,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-ALLEN-MEMORIAL",
+      "originalName": "Allen Memorial Art Museum Addition",
+      "candidateIndex": 4,
+      "title": "Chazen Museum of Art - Architect Magazine",
+      "pageUrl": "https://www.architectmagazine.com/project-gallery/chazen-museum-of-art-6348",
+      "imageUrl": "https://cdnassets.hw.net/c4/1e/1bff9ad34d9b80a5d343d1a77572/962836fc-a83f-4262-a4e4-df13ab4ba074.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-allen-memorial-candidate-04.webp",
+      "dimensions": [
+        960,
+        600
+      ],
+      "visualDistance": 83.65,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-BANGLADESH-PARLIAMENT",
+      "originalName": "Jatiya Sangsad Bhaban",
+      "candidateIndex": 1,
+      "title": "Buildings fit for a parliament: The politics of parliamentary architecture | Inter-Parliamentary Union",
+      "pageUrl": "https://www.ipu.org/news/case-studies/2023-07/buildings-fit-parliament-politics-parliamentary-architecture",
+      "imageUrl": "https://www.ipu.org/sites/default/files/styles/large/public/2023-08/bangladesh_parliament.jpg?itok=9E95SlGB",
+      "localPath": "public/images/buildings/gallery-candidates/bld-bangladesh-parliament-candidate-01.webp",
+      "dimensions": [
+        850,
+        566
+      ],
+      "visualDistance": 44.82,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-BANGLADESH-PARLIAMENT",
+      "originalName": "Jatiya Sangsad Bhaban",
+      "candidateIndex": 2,
+      "title": "জ্বালানি পরিস্থিতি মোকাবিলায় বিশেষ কমিটির বৈঠক | আমার দেশ",
+      "pageUrl": "https://www.dailyamardesh.com/national/amdf5l8oijihm",
+      "imageUrl": "https://images.dailyamardesh.com/original_images/bhaban.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-bangladesh-parliament-candidate-02.webp",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "visualDistance": 58.86,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-CASA-MILA",
+      "originalName": "Casa Milà / La Pedrera",
+      "candidateIndex": 1,
+      "title": "Архитектурный гид по Барселоне: 24 достопримечательности — designchat.com",
+      "pageUrl": "https://designchat.com/architects/arhitekturnyj-gid-po-barselone-23-samyh-interesnyh-obekta.html",
+      "imageUrl": "https://designchat.com/wp-content/uploads/2019/07/Barcelona_Architecture-Virginia_Duran-8-Casa_Mila.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-casa-mila-candidate-01.webp",
+      "dimensions": [
+        750,
+        938
+      ],
+      "visualDistance": 49.27,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-CASA-MILA",
+      "originalName": "Casa Milà / La Pedrera",
+      "candidateIndex": 4,
+      "title": "10 of Antoni Gaudí's best works in Barcelona",
+      "pageUrl": "https://www.speakeasybcn.com/en/blog/10-of-antoni-gaudis-best-works-in-barcelona",
+      "imageUrl": "https://www.speakeasybcn.com/img/containers/assets/blog/lapedrerabarcelona-la-pedrera-casa-mila.jpg/5d66c1bd88207a01adcc62175ae7867f/lapedrerabarcelona-la-pedrera-casa-mila.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-casa-mila-candidate-04.webp",
+      "dimensions": [
+        960,
+        771
+      ],
+      "visualDistance": 40.07,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-CERAMIC-HOUSE",
+      "originalName": "Ceramic House",
+      "candidateIndex": 1,
+      "title": "La cerámica protagoniza la historia de esta casa de Tarragona donde entras al exterior y sales al interior (y no es una metáfora) | Architectural Digest España",
+      "pageUrl": "https://www.revistaad.es/decoracion/casas-ad/articulos/casa-diseno-tarragona-ceramica-nua",
+      "imageUrl": "https://media.revistaad.es/photos/629796b96733fc01011bb747/master/w_1600%2Cc_limit/10.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-ceramic-house-candidate-01.webp",
+      "dimensions": [
+        1221,
+        1200
+      ],
+      "visualDistance": 88.82,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-CERAMIC-HOUSE",
+      "originalName": "Ceramic House",
+      "candidateIndex": 2,
+      "title": "La cerámica protagoniza la historia de esta casa de Tarragona donde entras al exterior y sales al interior (y no es una metáfora) | Architectural Digest España",
+      "pageUrl": "https://www.revistaad.es/decoracion/casas-ad/articulos/casa-diseno-tarragona-ceramica-nua",
+      "imageUrl": "https://media.revistaad.es/photos/629796b9efeae979d1b486e5/master/pass/14.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-ceramic-house-candidate-02.webp",
+      "dimensions": [
+        1600,
+        860
+      ],
+      "visualDistance": 98.99,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-CERAMIC-HOUSE",
+      "originalName": "Ceramic House",
+      "candidateIndex": 3,
+      "title": "Dachówki w nowej roli, czyli współczesna interpretacja ceramicznej elewacji",
+      "pageUrl": "https://www.wienerberger.pl/produkty/dachowki-ceramiczne-i-akcesoria-koramic/warto-wiedziec/dachowki-w-nowej-roli-czyli-wspolczesna-interpretacja-ceramicznej-elewacji.html",
+      "imageUrl": "https://www.wienerberger.pl/produkty/dachowki-ceramiczne-i-akcesoria-koramic/warto-wiedziec/dachowki-w-nowej-roli-czyli-wspolczesna-interpretacja-ceramicznej-elewacji/jcr%3Acontent/root/imagegallery/image/image.imgTransformer/crop_web/md-3/1769871930673/dewaco-pascalfrancoisarchitects-photo-cafeine-be-kleur%20%20%281%29.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-ceramic-house-candidate-03.webp",
+      "dimensions": [
+        1600,
+        801
+      ],
+      "visualDistance": 65.34,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-CERAMIC-HOUSE",
+      "originalName": "Ceramic House",
+      "candidateIndex": 4,
+      "title": "Architecture And Design: ‘Pearlescent Ceramic Tile’ | Boomers Daily",
+      "pageUrl": "https://boomers-daily.com/2023/02/03/architecture-and-design-pearlescent-ceramic-tile/",
+      "imageUrl": "https://www.mecanoo.nl/DesktopModules/40fingers/Images/img.ashx?File=%2FPortals%2F_default%2FMecanoo%2FPRProjects%2F306%2F20221215-144830.jpg&Q=70&mode=icon&out=img&w=2500",
+      "localPath": "public/images/buildings/gallery-candidates/bld-ceramic-house-candidate-04.webp",
+      "dimensions": [
+        1500,
+        1060
+      ],
+      "visualDistance": 92.94,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-CHANDIGARH",
+      "originalName": "Capitol Complex",
+      "candidateIndex": 1,
+      "title": "Expert Construction Management Services | Childers Construction",
+      "pageUrl": "https://childers-construction.com/",
+      "imageUrl": "https://img1.wsimg.com/isteam/ip/651d6df7-c3ac-4701-90d3-020b5ec54161/25-061RL%20%28042%29-f5abaf2.JPG",
+      "localPath": "public/images/buildings/gallery-candidates/bld-chandigarh-candidate-01.webp",
+      "dimensions": [
+        1600,
+        1067
+      ],
+      "visualDistance": 66.82,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-CHANDIGARH",
+      "originalName": "Capitol Complex",
+      "candidateIndex": 3,
+      "title": "Contemporary architecture of India – Chandigarh City Planning – Le corbusier – The Archi Blog",
+      "pageUrl": "https://thearchiblog.wordpress.com/2011/06/16/contemporary-architecture-of-india-chandigarh-city-planning-le-corbusier/",
+      "imageUrl": "https://thearchiblog.wordpress.com/wp-content/uploads/2011/06/slide224.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-chandigarh-candidate-03.webp",
+      "dimensions": [
+        960,
+        720
+      ],
+      "visualDistance": 51.13,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-CROWN-HALL",
+      "originalName": "S. R. Crown Hall",
+      "candidateIndex": 1,
+      "title": "S. R. Crown Hall — docomomo-us chicago",
+      "pageUrl": "https://www.docomomo-chicago.org/s-r-crown-hall",
+      "imageUrl": "https://images.squarespace-cdn.com/content/v1/5a66103cf14aa1a6716a93e6/1517427411970-89OBV4M771EQGHP6QOIT/_64A0390.Z_2.S.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-crown-hall-candidate-01.webp",
+      "dimensions": [
+        1000,
+        666
+      ],
+      "visualDistance": 38.55,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-CROWN-HALL",
+      "originalName": "S. R. Crown Hall",
+      "candidateIndex": 2,
+      "title": "S.R. Crown Hall, IIT Campus, Chicago - Mies van der Rohe | Inexhibit",
+      "pageUrl": "https://www.inexhibit.com/mymuseum/s-r-crown-hall-iit-campus-chicago-mies-van-der-rohe/",
+      "imageUrl": "https://www.inexhibit.com/wp-content/uploads/2022/03/S.-R.-Crown-Hall-IIT-Chicago-Mies-van-der-Rohe-exterior-6-1-1.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-crown-hall-candidate-02.webp",
+      "dimensions": [
+        870,
+        579
+      ],
+      "visualDistance": 59.77,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-CROWN-HALL",
+      "originalName": "S. R. Crown Hall",
+      "candidateIndex": 3,
+      "title": "S.R. Crown Hall, IIT Campus, Chicago - Mies van der Rohe | Inexhibit",
+      "pageUrl": "https://www.inexhibit.com/mymuseum/s-r-crown-hall-iit-campus-chicago-mies-van-der-rohe/",
+      "imageUrl": "https://www.inexhibit.com/wp-content/uploads/2022/03/S.-R.-Crown-Hall-IIT-Chicago-Mies-van-der-Rohe-exterior-6.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-crown-hall-candidate-03.webp",
+      "dimensions": [
+        870,
+        665
+      ],
+      "visualDistance": 46.32,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-DAXING",
+      "originalName": "Beijing Daxing International Airport",
+      "candidateIndex": 1,
+      "title": "베이징 다싱국제공항 ‘온라인 사진展’ 서울서 개최",
+      "pageUrl": "https://kr.people.com.cn/n3/2020/0616/c203093-9701066.html",
+      "imageUrl": "https://kr.people.com.cn/NMediaFile/2020/0616/FOREIGN202006161336000541825282224.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-daxing-candidate-01.webp",
+      "dimensions": [
+        700,
+        667
+      ],
+      "visualDistance": 68.45,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-DAXING",
+      "originalName": "Beijing Daxing International Airport",
+      "candidateIndex": 4,
+      "title": "Beijing Daxing International Airport – Discover project by Zaha Hadid Architects | Architonic",
+      "pageUrl": "https://www.architonic.com/en/project/zaha-hadid-architects-beijing-daxing-international-airport/20076267",
+      "imageUrl": "https://image.architonic.com/prj2-3/20076267/zaha-hadid-architects-beijing-daxing-international-airport-architonic-21-zha-beijing-daxing-int-airport-hufton-crow-12-arcit18.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-daxing-candidate-04.webp",
+      "dimensions": [
+        1441,
+        1200
+      ],
+      "visualDistance": 45.16,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-EXETER-LIBRARY",
+      "originalName": "Phillips Exeter Academy Library",
+      "candidateIndex": 1,
+      "title": "Reinhard Görner - Phillips Exeter Academy For Sale at 1stDibs | phillips exeter academy colors, phillips exeter academy dining hall",
+      "pageUrl": "https://www.1stdibs.com/art/photography/landscape-photography/reinhard-gorner-phillips-exeter-academy/id-a_3581202/",
+      "imageUrl": "https://a.1stdibscdn.com/archivesE/upload/a_148/a_35812021542839975367/Phillips_Exeter_Academy_master.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-exeter-library-candidate-01.webp",
+      "dimensions": [
+        1003,
+        1200
+      ],
+      "visualDistance": 55.08,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-EXETER-LIBRARY",
+      "originalName": "Phillips Exeter Academy Library",
+      "candidateIndex": 2,
+      "title": "archiweb.cz - Phillips Exeter Academy Library",
+      "pageUrl": "https://www.archiweb.cz/en/b/exeter-library",
+      "imageUrl": "https://cdn.archmedia.eu/cache/images/buildings/gallery/picture_1654_6.jpg-1600x1200-exeter-library.jpg?algorithm=1&mtime=1361032038",
+      "localPath": "public/images/buildings/gallery-candidates/bld-exeter-library-candidate-02.webp",
+      "dimensions": [
+        712,
+        950
+      ],
+      "visualDistance": 46.96,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-EXETER-LIBRARY",
+      "originalName": "Phillips Exeter Academy Library",
+      "candidateIndex": 3,
+      "title": "Poetry in design - New Hampshire Home Magazine",
+      "pageUrl": "https://www.nhhomemagazine.com/poetry-in-design/",
+      "imageUrl": "https://wpcdn.us-east-1.vip.tn-cloud.net/www.nhhomemagazine.com/content/uploads/data-import/df743971/phillips-exeter-library-2.jpg?etag=%225df6ac02-a2425%22",
+      "localPath": "public/images/buildings/gallery-candidates/bld-exeter-library-candidate-03.webp",
+      "dimensions": [
+        800,
+        1000
+      ],
+      "visualDistance": 58.78,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-FRAC-DUNKIRK",
+      "originalName": "FRAC Nord-Pas de Calais",
+      "candidateIndex": 2,
+      "title": "FRAC Nord-Pas de Calais por Lacaton & Vassal | METALOCUS",
+      "pageUrl": "https://www.metalocus.es/es/noticias/frac-nord-pas-de-calais-por-lacaton-vassal",
+      "imageUrl": "https://www.metalocus.es/sites/default/files/styles/mopis_news_carousel_item_desktop/public/file-images/metalocus_lacatonVassal_frac_16_1024.jpg?itok=SND5hifp",
+      "localPath": "public/images/buildings/gallery-candidates/bld-frac-dunkirk-candidate-02.webp",
+      "dimensions": [
+        1600,
+        1067
+      ],
+      "visualDistance": 63.73,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-FRAC-DUNKIRK",
+      "originalName": "FRAC Nord-Pas de Calais",
+      "candidateIndex": 4,
+      "title": "Entrevista a los arquitectos Lacaton y Vassal",
+      "pageUrl": "https://www.arquitecturaydiseno.es/arquitectura/entrevista-a-lacaton-y-vasal_2568",
+      "imageUrl": "https://content.arquitecturaydiseno.es/medio/2019/04/26/museo-frac-nord-pas-de-calais-en-dunkerque-de-2013_ca024b5f_1500x1000.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-frac-dunkirk-candidate-04.webp",
+      "dimensions": [
+        1500,
+        1000
+      ],
+      "visualDistance": 63.63,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-GRAND-PARC",
+      "originalName": "Transformation of 530 Dwellings, Grand Parc",
+      "candidateIndex": 2,
+      "title": "Bordeaux architecture news, building designs – e-architect",
+      "pageUrl": "https://www.e-architect.com/bordeaux/bordeaux-architecture-news",
+      "imageUrl": "https://www.e-architect.com/wp-content/uploads/2018/08/grand-parc-bordeaux-building-france-m100419-pr2.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-grand-parc-candidate-02.webp",
+      "dimensions": [
+        1000,
+        667
+      ],
+      "visualDistance": 64.61,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-GUANGZHOU-OPERA",
+      "originalName": "Guangzhou Opera House",
+      "candidateIndex": 1,
+      "title": "Guangzhou Opera House. Is this a Chinese Gem that elevates its context? | METALOCUS",
+      "pageUrl": "https://www.metalocus.es/en/news/guangzhou-opera-house-a-chinese-gem-elevates-its-context",
+      "imageUrl": "https://www.metalocus.es/sites/default/files/styles/mopis_fullslider_desktop/public/lead-images/metalocus_guangzhou-opera-zha_01_p.jpg?itok=-tjmvCXu",
+      "localPath": "public/images/buildings/gallery-candidates/bld-guangzhou-opera-candidate-01.webp",
+      "dimensions": [
+        1600,
+        708
+      ],
+      "visualDistance": 80.95,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-GUANGZHOU-OPERA",
+      "originalName": "Guangzhou Opera House",
+      "candidateIndex": 2,
+      "title": "zaha hadid architects: guangzhou opera house",
+      "pageUrl": "https://www.designboom.com/architecture/zaha-hadid-architects-guangzhou-opera-house/",
+      "imageUrl": "https://www.designboom.com/cms/images/erica/----guangzhou/guangzhou13.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-guangzhou-opera-candidate-02.webp",
+      "dimensions": [
+        818,
+        459
+      ],
+      "visualDistance": 76.39,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-GUANGZHOU-OPERA",
+      "originalName": "Guangzhou Opera House",
+      "candidateIndex": 4,
+      "title": "Guangzhou Opera House. Is this a Chinese Gem that elevates its context? | METALOCUS",
+      "pageUrl": "https://www.metalocus.es/en/news/guangzhou-opera-house-a-chinese-gem-elevates-its-context",
+      "imageUrl": "https://www.metalocus.es/sites/default/files/metalocus_guangzhou-opera-zha_01.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-guangzhou-opera-candidate-04.webp",
+      "dimensions": [
+        1600,
+        1088
+      ],
+      "visualDistance": 84.66,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-GUILD-HOUSE",
+      "originalName": "Guild House",
+      "candidateIndex": 1,
+      "title": "冒険者#30｜アオメダカ",
+      "pageUrl": "https://note.com/hamham868686/n/nc9f0db2cf4d9",
+      "imageUrl": "https://assets.st-note.com/img/1738069754-KXrPEt5ZyaOoFLBm0beWpHfQ.png",
+      "localPath": "public/images/buildings/gallery-candidates/bld-guild-house-candidate-01.webp",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "visualDistance": 75.18,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-GUILD-HOUSE",
+      "originalName": "Guild House",
+      "candidateIndex": 2,
+      "title": "Entrer dans la guilde des Guerriers Oblivion Remastered : Comment rejoindre cette faction ? - Millenium",
+      "pageUrl": "https://www.millenium.org/guide/423859.html",
+      "imageUrl": "https://static1.millenium.org/articles/9/42/38/59/%40/1838411-warrior-article_cover_bd-1.png",
+      "localPath": "public/images/buildings/gallery-candidates/bld-guild-house-candidate-02.webp",
+      "dimensions": [
+        1200,
+        675
+      ],
+      "visualDistance": 91.9,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-HEARST",
+      "originalName": "Hearst Tower",
+      "candidateIndex": 1,
+      "title": "Продажи вверх: 10 самых дорогих небоскрёбов корпораций",
+      "pageUrl": "https://www.the-village.ru/business/cloud/154737-neboskreby",
+      "imageUrl": "https://cdn.the-village.ru/the-village.ru/post_image-image/ZWSV_X_DN05seX0KqlE8pQ-wide.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-hearst-candidate-01.webp",
+      "dimensions": [
+        1020,
+        680
+      ],
+      "visualDistance": 50.41,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-HEARST",
+      "originalName": "Hearst Tower",
+      "candidateIndex": 3,
+      "title": "Hearst Tower - Picture gallery 2",
+      "pageUrl": "https://www.archilovers.com/projects/1744/hearst-tower-gallery?6169",
+      "imageUrl": "https://cdn.archilovers.com/projects/b_730_4627431c-e769-452a-9bc9-1469b6a79672.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-hearst-candidate-03.webp",
+      "dimensions": [
+        780,
+        1016
+      ],
+      "visualDistance": 58.37,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-HEARST",
+      "originalName": "Hearst Tower",
+      "candidateIndex": 4,
+      "title": "Hearst Corporation celebrates 10th anniversary of Hearst Tower",
+      "pageUrl": "https://www.ctpost.com/business/article/Hearst-Corporation-celebrates-10th-anniversary-of-6004886.php",
+      "imageUrl": "https://s.hdnux.com/photos/21/05/61/4480104/9/1920x0.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-hearst-candidate-04.webp",
+      "dimensions": [
+        579,
+        1200
+      ],
+      "visualDistance": 50.78,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-HOUTAN-PARK",
+      "originalName": "Shanghai Houtan Park",
+      "candidateIndex": 1,
+      "title": "Park today",
+      "pageUrl": "https://intpik.ru/park/today/",
+      "imageUrl": "https://www.metalocus.es/sites/default/files/files/metalocus_kongjian-yu_zhongshan-shipyard-park_01_0.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-houtan-park-candidate-01.webp",
+      "dimensions": [
+        1480,
+        1200
+      ],
+      "visualDistance": 69.75,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-HOUTAN-PARK",
+      "originalName": "Shanghai Houtan Park",
+      "candidateIndex": 2,
+      "title": "上海黄浦东岸望江驿_新浪新闻",
+      "pageUrl": "https://k.sina.com.cn/article_3483741641_pcfa5adc902700gf46.html",
+      "imageUrl": "https://n.sinaimg.cn/sinacn20116/99/w1499h1000/20190118/10f3-hrvcwnk2928848.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-houtan-park-candidate-02.webp",
+      "dimensions": [
+        1499,
+        1000
+      ],
+      "visualDistance": 61.83,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-HSBC",
+      "originalName": "Hongkong and Shanghai Bank Headquarters",
+      "candidateIndex": 3,
+      "title": "現代建築の巨匠、ノーマン・フォスターの代表作10選。美とハイテク技術が融合した建築は圧巻！",
+      "pageUrl": "https://www.modernliving.jp/architecture-design/architecture/g61909755/norman-foster-10architectures/",
+      "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/aflo-9641139-66c44b5f1e7b3.jpg?crop=1xw%3A1xh%3Bcenter%2Ctop",
+      "localPath": "public/images/buildings/gallery-candidates/bld-hsbc-candidate-03.webp",
+      "dimensions": [
+        829,
+        1200
+      ],
+      "visualDistance": 64.06,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-IIM-AHMEDABAD",
+      "originalName": "Indian Institute of Management Ahmedabad",
+      "candidateIndex": 1,
+      "title": "IIM Ahmedabad: Top Management institutes in India, Fees",
+      "pageUrl": "https://www.pgdm.college/indian-institute-management-ahmedabad/",
+      "imageUrl": "https://www.pgdm.college/wp-content/uploads/2019/01/IIM_Ahmedabad_Top_PGDM_college.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-iim-ahmedabad-candidate-01.webp",
+      "dimensions": [
+        800,
+        450
+      ],
+      "visualDistance": 10.84,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-IIM-AHMEDABAD",
+      "originalName": "Indian Institute of Management Ahmedabad",
+      "candidateIndex": 2,
+      "title": "archiweb.cz - Indian Institute of Management Ahmedabad",
+      "pageUrl": "https://www.archiweb.cz/en/b/indicky-institut-managementu",
+      "imageUrl": "https://cdn.archmedia.eu/cache/images/buildings/mainlogo_1570.jpg-1920x450.jpg?algorithm=4&t=1642329754",
+      "localPath": "public/images/buildings/gallery-candidates/bld-iim-ahmedabad-candidate-02.webp",
+      "dimensions": [
+        1600,
+        531
+      ],
+      "visualDistance": 61.16,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-IIM-AHMEDABAD",
+      "originalName": "Indian Institute of Management Ahmedabad",
+      "candidateIndex": 3,
+      "title": "Louis Kahn’s Indian Institute Of Management In Ahmedabad Is An Architectural Classic - IGNANT",
+      "pageUrl": "https://www.ignant.com/2020/01/02/louis-kahns-indian-institute-of-management-in-ahmedabad-is-an-architectural-classic/",
+      "imageUrl": "https://www.ignant.com/wp-content/uploads/2019/12/ignant-photography-louis-kahn-jeroen-verrecht-indian-institute-management-ahmedabad-01-1440x960.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-iim-ahmedabad-candidate-03.webp",
+      "dimensions": [
+        1440,
+        960
+      ],
+      "visualDistance": 67.11,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-IIM-AHMEDABAD",
+      "originalName": "Indian Institute of Management Ahmedabad",
+      "candidateIndex": 4,
+      "title": "Indian Institute of Management Ahmedabad - Global Spaces",
+      "pageUrl": "https://globalspaces.eu/2023/12/30/indian-institute-of-management-ahmedabad/",
+      "imageUrl": "https://globalspaces.eu/wp-content/uploads/2023/12/LK_GS3.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-iim-ahmedabad-candidate-04.webp",
+      "dimensions": [
+        1200,
+        800
+      ],
+      "visualDistance": 66.19,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-JAPAN-PAVILION-2000",
+      "originalName": "Japan Pavilion, Expo 2000",
+      "candidateIndex": 2,
+      "title": "Buscador de Arquitectura - Pabellón de Francia -",
+      "pageUrl": "https://seearch.es/obra/pabellon-de-francia",
+      "imageUrl": "https://seearch.es/photos/obras/8389_01_Sitomon.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-japan-pavilion-2000-candidate-02.webp",
+      "dimensions": [
+        1000,
+        665
+      ],
+      "visualDistance": 68.18,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-KANAZAWA-21",
+      "originalName": "21st Century Museum of Contemporary Art, Kanazawa",
+      "candidateIndex": 1,
+      "title": "21st Century Museum of Contemporary Art, Kanazawa - Michele Nastasi",
+      "pageUrl": "https://www.michelenastasi.com/portfolio/21st-century-museum-of-contemporary-art-kanazawa-japan/",
+      "imageUrl": "https://www.michelenastasi.com/wp-content/uploads/2020/04/20_michelenastasi.com_DSC_0773.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-kanazawa-21-candidate-01.webp",
+      "dimensions": [
+        916,
+        600
+      ],
+      "visualDistance": 64.85,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-KANAZAWA-21",
+      "originalName": "21st Century Museum of Contemporary Art, Kanazawa",
+      "candidateIndex": 3,
+      "title": "金沢21世紀美術館 | 石川県の美術館 | 美術館・展覧会情報サイト アートアジェンダ",
+      "pageUrl": "https://www.artagenda.jp/museum/detail/166",
+      "imageUrl": "https://www.artagenda.jp/img/spot/166/thumb_big.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-kanazawa-21-candidate-03.webp",
+      "dimensions": [
+        1000,
+        600
+      ],
+      "visualDistance": 29.61,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-KIMBELL",
+      "originalName": "Kimbell Art Museum",
+      "candidateIndex": 1,
+      "title": "RPBW · Kimbell Art Museum Pavilion · Divisare",
+      "pageUrl": "https://divisare.com/projects/244325-rpbw-kimbell-art-museum-pavilion",
+      "imageUrl": "https://images.divisare.com/images/c_limit%2Cf_auto%2Ch_2000%2Cq_auto%2Cw_3000/v1/project_images/4162061/Renzo-Piano-Kimbell-Art-Museum-Pavilion-9/rpbw-kimbell-art-museum-pavilion.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-kimbell-candidate-01.webp",
+      "dimensions": [
+        1200,
+        797
+      ],
+      "visualDistance": 88.91,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-KIMBELL",
+      "originalName": "Kimbell Art Museum",
+      "candidateIndex": 2,
+      "title": "Kimbell Art Museum Expansion by Renzo Piano Building Workshop - Architizer",
+      "pageUrl": "https://architizer.com/projects/kimbell-art-museum-expansion/",
+      "imageUrl": "https://acdn.architizer.com/thumbnails-PRODUCTION/34/4d/344dedafb97a4d3a85e24b09969b0a65.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-kimbell-candidate-02.webp",
+      "dimensions": [
+        1600,
+        1067
+      ],
+      "visualDistance": 109.48,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-KIMBELL",
+      "originalName": "Kimbell Art Museum",
+      "candidateIndex": 3,
+      "title": "MY VILLA — Italian-Designed Luxury Villas in Los Angeles | Fire-Resilient Concrete Homes",
+      "pageUrl": "https://myvilla.la/",
+      "imageUrl": "https://myvilla.la/img/kimbell.webp",
+      "localPath": "public/images/buildings/gallery-candidates/bld-kimbell-candidate-03.webp",
+      "dimensions": [
+        1024,
+        683
+      ],
+      "visualDistance": 92.14,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-KUNSTHAL",
+      "originalName": "Kunsthal Rotterdam",
+      "candidateIndex": 1,
+      "title": "Kunsthal Rotterdam - STG - R'DAM City Card",
+      "pageUrl": "https://shop.demo.rotterdam.citycardsolutions.com/en/deals/Kunsthal",
+      "imageUrl": "https://api.rotterdam.citycardsolutions.com/storage/location_pictures/1740490914772_F9FLCDQNNPCJK2P4.jpeg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-kunsthal-candidate-01.webp",
+      "dimensions": [
+        912,
+        502
+      ],
+      "visualDistance": 62.18,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-KUNSTHAL",
+      "originalName": "Kunsthal Rotterdam",
+      "candidateIndex": 2,
+      "title": "The Building - Kunsthal",
+      "pageUrl": "https://www.kunsthal.nl/en/about-kunsthal/building/",
+      "imageUrl": "https://www.kunsthal.nl/media/filer_public_thumbnails/filer_public/fa/20/fa20a81f-7af2-420b-b75f-1cc53631ce07/006_westzeedijk_aanzicht_kunsthal.jpg__1766.0x1179.0_q85_crop_subsampling-2_upscale.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-kunsthal-candidate-02.webp",
+      "dimensions": [
+        1600,
+        1068
+      ],
+      "visualDistance": 67.4,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-KUNSTHAL",
+      "originalName": "Kunsthal Rotterdam",
+      "candidateIndex": 3,
+      "title": "Inexhibit | art, architecture, and design",
+      "pageUrl": "https://www.inexhibit.com/mymuseum/kunsthal-rotterdam/",
+      "imageUrl": "https://www.inexhibit.com/wp-content/uploads/2016/04/kunsthal-rotterdam-exterior-south-view-photo-jeroen-musch.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-kunsthal-candidate-03.webp",
+      "dimensions": [
+        870,
+        504
+      ],
+      "visualDistance": 66.57,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-LONDON-AQUATICS",
+      "originalName": "London Aquatics Centre",
+      "candidateIndex": 3,
+      "title": "CLOSED: Olympic Legacy - New London Architecture",
+      "pageUrl": "https://nla.london/exhibitions/closed-olympic-legacy",
+      "imageUrl": "https://nla-production-media.s3.eu-west-2.amazonaws.com/385/1106_IMAGE_0%2A480%2C0%2C480x270%2C1%3B0%2A480%2C0%2C960x539%2C2%3B480%2A9999%2C0%2C959x539%2C1%3B480%2A9999%2C0%2C1918x1078%2C2_325_.jpg?v=1691673560",
+      "localPath": "public/images/buildings/gallery-candidates/bld-london-aquatics-candidate-03.webp",
+      "dimensions": [
+        959,
+        539
+      ],
+      "visualDistance": 58.29,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-LOUVRE-LENS",
+      "originalName": "Louvre-Lens",
+      "candidateIndex": 1,
+      "title": "Le Louvre-Lens de Lens",
+      "pageUrl": "https://www.escautpont.fr/louvre-lens-lens.html",
+      "imageUrl": "https://www.escautpont.fr/fichs/25891.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-louvre-lens-candidate-01.webp",
+      "dimensions": [
+        961,
+        481
+      ],
+      "visualDistance": 37.32,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-LOUVRE-LENS",
+      "originalName": "Louvre-Lens",
+      "candidateIndex": 2,
+      "title": "Musée du Louvre-Lens - Your Nature",
+      "pageUrl": "https://www.yournature.be/places/musee-du-louvre-lens/",
+      "imageUrl": "https://www.yournature.be/wp-content/uploads/sites/263/2021/05/Image3-1024x619.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-louvre-lens-candidate-02.webp",
+      "dimensions": [
+        1024,
+        619
+      ],
+      "visualDistance": 47.34,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-LYCEE-SCHORGE",
+      "originalName": "Lycée Schorge Secondary School",
+      "candidateIndex": 2,
+      "title": "Several weeks ago, we officially revealed plans to build a new extension next to current headquarters of Skyro in… | Veronika Petran Radobicka",
+      "pageUrl": "https://www.linkedin.com/posts/veronica-radobicka_skyro-ai-it-high-school-new-extension-activity-7406291538634424320-Kezb",
+      "imageUrl": "https://media.licdn.com/dms/image/v2/D4D22AQEwzzQ2ysYQIg/feedshare-shrink_800/B4DZshj8J5KsAg-/0/1765794628865?e=2147483647&t=Dfm90pnNsmEiZrk_1vU-_twSb1zBkE_Hu6t3L7nXpFg&v=beta",
+      "localPath": "public/images/buildings/gallery-candidates/bld-lycee-schorge-candidate-02.webp",
+      "dimensions": [
+        800,
+        533
+      ],
+      "visualDistance": 67.14,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-LYCEE-SCHORGE",
+      "originalName": "Lycée Schorge Secondary School",
+      "candidateIndex": 4,
+      "title": "Vie Lycéenne",
+      "pageUrl": "https://liep.fr/vie-lyceenne/",
+      "imageUrl": "https://liep.fr/wp-content/uploads/2022/02/LI_NOISY-034.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-lycee-schorge-candidate-04.webp",
+      "dimensions": [
+        1364,
+        974
+      ],
+      "visualDistance": 78.55,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-MCASD",
+      "originalName": "Museum of Contemporary Art San Diego",
+      "candidateIndex": 2,
+      "title": "Museum of Contemporary Art San Diego - LPA",
+      "pageUrl": "https://lpadesignstudios.com/projects/museum-of-contemporary-art-san-diego",
+      "imageUrl": "https://lpa-design-studios.imgix.net/content/heros/Projects/Civic/MCASD_Selldorf_Nicholas-Venezia_01.jpg?auto=format&crop=focalpoint&domain=lpa-design-studios.imgix.net&fit=crop&fp-x=0.5&fp-y=0.5&h=1121&ixlib=php-3.3.0&q=60&w=1920",
+      "localPath": "public/images/buildings/gallery-candidates/bld-mcasd-candidate-02.webp",
+      "dimensions": [
+        1600,
+        934
+      ],
+      "visualDistance": 102.96,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-MCASD",
+      "originalName": "Museum of Contemporary Art San Diego",
+      "candidateIndex": 3,
+      "title": "Schaefer Branch Library - LPA",
+      "pageUrl": "https://lpadesignstudios.com/projects/schaefer-branch-library",
+      "imageUrl": "https://lpa-design-studios.imgix.net/content/heros/Projects/Civic/MCASD_Selldorf_Nicholas-Venezia_01.jpg?crop=focalpoint&domain=lpa-design-studios.imgix.net&fit=crop&fm=pjpg&fp-x=0.5&fp-y=0.5&h=768&ixlib=php-3.3.0&q=60&w=768",
+      "localPath": "public/images/buildings/gallery-candidates/bld-mcasd-candidate-03.webp",
+      "dimensions": [
+        768,
+        768
+      ],
+      "visualDistance": 93.85,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-MCASD",
+      "originalName": "Museum of Contemporary Art San Diego",
+      "candidateIndex": 4,
+      "title": "Museum of Contemporary Art San Diego - Selldorf Architects - New York",
+      "pageUrl": "https://www.selldorf.com/projects/museum-contemporary-art-san-diego-2",
+      "imageUrl": "https://www.selldorf.com/wp-content/uploads/2022/03/mcasd-nicholas-venezia-entrance-01-e1762288531757.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-mcasd-candidate-04.webp",
+      "dimensions": [
+        1600,
+        1066
+      ],
+      "visualDistance": 65.31,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-MILLAU",
+      "originalName": "Millau Viaduct",
+      "candidateIndex": 1,
+      "title": "Foster + Partners, Nigel Young · Millau Viaduct · Divisare",
+      "pageUrl": "https://divisare.com/projects/286859-foster-partners-nigel-young-millau-viaduct",
+      "imageUrl": "https://images.divisare.com/images/c_limit%2Cf_auto%2Ch_2000%2Cq_auto%2Cw_3000/v1/project_images/5054672/1158_FP205785_indesign/foster-partners-nigel-young-millau-viaduct.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-millau-candidate-01.webp",
+      "dimensions": [
+        1600,
+        1070
+      ],
+      "visualDistance": 45.81,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-MILLAU",
+      "originalName": "Millau Viaduct",
+      "candidateIndex": 3,
+      "title": "18 Famous Bridges In France You Must Visit",
+      "pageUrl": "https://frenchwin.com/famous-bridges-in-france/",
+      "imageUrl": "https://frenchwin.com/wp-content/uploads/famous-bridges-in-france-18-viaducdemillau.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-millau-candidate-03.webp",
+      "dimensions": [
+        810,
+        565
+      ],
+      "visualDistance": 41.69,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-MILLAU",
+      "originalName": "Millau Viaduct",
+      "candidateIndex": 4,
+      "title": "VIADUC DE MILLAU – Susanne und Peter unterwegs",
+      "pageUrl": "https://susanne-und-peter.com/2022/04/23/viaduc-de-millau/",
+      "imageUrl": "https://susanne-und-peter.com/wp-content/uploads/2022/04/20220419_061_1616.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-millau-candidate-04.webp",
+      "dimensions": [
+        1600,
+        650
+      ],
+      "visualDistance": 52.33,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-MODERN-FORT-WORTH",
+      "originalName": "Modern Art Museum of Fort Worth",
+      "candidateIndex": 1,
+      "title": "MORGAN SHEFF PHOTOGRAPHY",
+      "pageUrl": "https://morgansheffphotography.com/architecture-4",
+      "imageUrl": "https://static.livebooks.com/fa6c2209c8bc45b9819a79f6852f46bf/i/f6888300a81b4d62b5e60d664e50b92b/1/GCuCv726vxAVM9sgguVj4g/Modern-Art-Museum-of-Fort-Worth-Exterior-02.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-modern-fort-worth-candidate-01.webp",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "visualDistance": 54.28,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-MODERN-FORT-WORTH",
+      "originalName": "Modern Art Museum of Fort Worth",
+      "candidateIndex": 2,
+      "title": "New York City Local Law 11 FISP Inspections and Filing — Yamada Architecture & Design",
+      "pageUrl": "https://yamada-architecture.com/projects",
+      "imageUrl": "https://images.squarespace-cdn.com/content/v1/56d66b0262cd949fd4229c30/a03b3d37-ac9a-4a6c-a208-6b3c118054a6/Modern%2BZahner%2B1.jpeg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-modern-fort-worth-candidate-02.webp",
+      "dimensions": [
+        1500,
+        1000
+      ],
+      "visualDistance": 58.34,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-MODERN-FORT-WORTH",
+      "originalName": "Modern Art Museum of Fort Worth",
+      "candidateIndex": 3,
+      "title": "Modern Art Museum of Fort Worth | Thornton Tomasetti",
+      "pageUrl": "https://www.thorntontomasetti.com/project/modern-art-museum-fort-worth",
+      "imageUrl": "https://www.thorntontomasetti.com/sites/default/files/styles/paragraph_slideshow/public/fw_2.jpg?itok=PA54Pwug",
+      "localPath": "public/images/buildings/gallery-candidates/bld-modern-fort-worth-candidate-03.webp",
+      "dimensions": [
+        1489,
+        1000
+      ],
+      "visualDistance": 83.1,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-MULTIHALLE",
+      "originalName": "Multihalle Mannheim",
+      "candidateIndex": 1,
+      "title": "Frei Otto, Marco Vedana ·  Mannheim Multihalle · Divisare",
+      "pageUrl": "https://divisare.com/projects/339341-frei-otto-marco-vedana-mannheim-multihalle",
+      "imageUrl": "https://images.divisare.com/images/f_auto%2Cq_auto%2Cw_auto/v1488983126/hwiuv6cbwgkhrqtpp7qx/frei-otto-marco-vedana-mannheim-multihalle.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-multihalle-candidate-01.webp",
+      "dimensions": [
+        1370,
+        1200
+      ],
+      "visualDistance": 49.75,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-NEUE-NATIONALGALERIE",
+      "originalName": "Neue Nationalgalerie",
+      "candidateIndex": 2,
+      "title": "Neue Nationalgalerie in Berlin - Infos, Ausstellungen & Tickets",
+      "pageUrl": "https://www.museum-ticket.info/de/standorte/deutschland/museen-berlin/neue-nationalgalerie-berlin/",
+      "imageUrl": "https://www.museum-ticket.info/wp-content/uploads/neue-nationalgalerie-berlin-aussenansicht.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-neue-nationalgalerie-candidate-02.webp",
+      "dimensions": [
+        825,
+        550
+      ],
+      "visualDistance": 63.55,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-NEUE-NATIONALGALERIE",
+      "originalName": "Neue Nationalgalerie",
+      "candidateIndex": 3,
+      "title": "Berlin Neue Nationalgalerie Ticket",
+      "pageUrl": "https://www.waug.com/en/activities/118804",
+      "imageUrl": "https://d2mgzmtdeipcjp.cloudfront.net/files/good/2024/03/22/17110903994219.jpg?s=992x496",
+      "localPath": "public/images/buildings/gallery-candidates/bld-neue-nationalgalerie-candidate-03.webp",
+      "dimensions": [
+        992,
+        496
+      ],
+      "visualDistance": 50.21,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-NEUE-NATIONALGALERIE",
+      "originalName": "Neue Nationalgalerie",
+      "candidateIndex": 4,
+      "title": "A respectful repair. The refurbishment of the Neue Nationalgalerie by David Chipperfield | METALOCUS",
+      "pageUrl": "https://www.metalocus.es/en/news/a-respectful-repair-refurbishment-neue-nationalgalerie-david-chipperfield",
+      "imageUrl": "https://www.metalocus.es/sites/default/files/metalocus_chipperfield_miesvanderrohe_neue_nationalgalerie_06.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-neue-nationalgalerie-candidate-04.webp",
+      "dimensions": [
+        1529,
+        1200
+      ],
+      "visualDistance": 63.97,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-NEW-MUSEUM",
+      "originalName": "New Museum",
+      "candidateIndex": 3,
+      "title": "Un museo in sette scatole",
+      "pageUrl": "https://www.archimagazine.com/anewmuseum.htm",
+      "imageUrl": "https://www.archimagazine.com/anewmuseum1_max.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-new-museum-candidate-03.webp",
+      "dimensions": [
+        800,
+        682
+      ],
+      "visualDistance": 65.3,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-OPERA-VILLAGE",
+      "originalName": "Opera Village Laongo",
+      "candidateIndex": 1,
+      "title": "Homegrown Hero | Architectural Digest",
+      "pageUrl": "https://www.architecturaldigest.com/gallery/diebedo-francis-kere-opera-village-burkina-faso-slideshow",
+      "imageUrl": "https://media.architecturaldigest.com/photos/55e76514302ba71f30164e0a/4%3A3/w_800%2Ch_600%2Cc_limit/dam-images-architecture-2014-11-opera-village-opera-village-burkina-faso-02-medical-center.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-opera-village-candidate-01.webp",
+      "dimensions": [
+        800,
+        600
+      ],
+      "visualDistance": 79.29,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-OPERA-VILLAGE",
+      "originalName": "Opera Village Laongo",
+      "candidateIndex": 4,
+      "title": "Marie-Pierre Forsans  · Divisare",
+      "pageUrl": "https://divisare.com/authors/2144775480-marie-pierre-forsans",
+      "imageUrl": "https://images.divisare.com/images/dpr_auto%2Cf_auto%2Cq_auto%2Cw_auto/v1458050840/twmo95ymccknpbta4bmi/marie-pierre-forsans-massimo-crotti-antonio-de-rossi-cultural-center-lou-pourtoun-ostana-po-valley-italy.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-opera-village-candidate-04.webp",
+      "dimensions": [
+        1357,
+        1200
+      ],
+      "visualDistance": 57.93,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-PALAIS-TOKYO",
+      "originalName": "Palais de Tokyo",
+      "candidateIndex": 4,
+      "title": "Un tour di Parigi per gli amanti dell'Art Déco - Lonely Planet",
+      "pageUrl": "https://www.lonelyplanetitalia.it/articoli/citta-del-mondo/un-tour-di-parigi-per-gli-amanti-dell-art-deco",
+      "imageUrl": "https://images.lonelyplanetitalia.it/uploads/oTckVUYwdTF1g0yViNDoRhwyrOub2rpf.jpg?p=slider&q=80&s=46684e71929f4eeac4ec6868b667a18d",
+      "localPath": "public/images/buildings/gallery-candidates/bld-palais-tokyo-candidate-04.webp",
+      "dimensions": [
+        1200,
+        697
+      ],
+      "visualDistance": 52.23,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-PALAU-GUELL",
+      "originalName": "Palau Güell",
+      "candidateIndex": 1,
+      "title": "Photographing heritage. The Palau Güell — David Cardelús Architectural Photography",
+      "pageUrl": "https://www.davidcardelus.com/blog/photographing-heritage-the-palau-guell",
+      "imageUrl": "https://images.squarespace-cdn.com/content/v1/579869fd725e25e0248edbd0/1611309757140-VZ29W1Z479B48WZH58L0/david-cardelus-barcelona-palau-guell-0022.jpg?format=1000w",
+      "localPath": "public/images/buildings/gallery-candidates/bld-palau-guell-candidate-01.webp",
+      "dimensions": [
+        800,
+        1200
+      ],
+      "visualDistance": 73.03,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-PALAU-GUELL",
+      "originalName": "Palau Güell",
+      "candidateIndex": 2,
+      "title": "Palau de la Música Catalana - Concert hall - barcelona",
+      "pageUrl": "https://www.elfest.es/en/barcelona/places/palau-de-la-musica-catalana/palau-de-la-musica-catalana",
+      "imageUrl": "https://www.elfest.es/files/places/3/image_308_1_large.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-palau-guell-candidate-02.webp",
+      "dimensions": [
+        611,
+        800
+      ],
+      "visualDistance": 60.89,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-PALAU-GUELL",
+      "originalName": "Palau Güell",
+      "candidateIndex": 3,
+      "title": "Palau Güell | Casa Batlló",
+      "pageUrl": "https://www.casabatllo.es/it/antoni-gaudi/palau-guell/",
+      "imageUrl": "https://www.casabatllo.es/wp-content/uploads/2023/01/fachada-palau-guell-gaudi.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-palau-guell-candidate-03.webp",
+      "dimensions": [
+        960,
+        1200
+      ],
+      "visualDistance": 66.47,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-PALAU-GUELL",
+      "originalName": "Palau Güell",
+      "candidateIndex": 4,
+      "title": "EL PALAU DE LA MÚSICA CATALANA – Dr. Estalella  i Graells",
+      "pageUrl": "https://agora.xtec.cat/ceipestalella/general/primaria/4t/el-palau-de-la-musica-catalana/",
+      "imageUrl": "https://www.palaumusica.cat/images/41103/image_gallery_close_up.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-palau-guell-candidate-04.webp",
+      "dimensions": [
+        900,
+        699
+      ],
+      "visualDistance": 45.99,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-PAVILION",
+      "originalName": "Barcelona Pavilion",
+      "candidateIndex": 1,
+      "title": "Павильон Германии в Барселоне – Гид по Барселоне и Каталонии Олег Дячок",
+      "pageUrl": "https://tour-barcelona.net/pavilon-ljudviga-mis-van-der-roe/",
+      "imageUrl": "https://tour-barcelona.net/wp-content/uploads/2023/09/ekskursiya-v-pavilon-ljudviga-mis-van-der-roe-v-barselone.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-pavilion-candidate-01.webp",
+      "dimensions": [
+        921,
+        576
+      ],
+      "visualDistance": 53.95,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-PAVILION",
+      "originalName": "Barcelona Pavilion",
+      "candidateIndex": 2,
+      "title": "100 Jahre Bauhaus 1919 - 2019 | SALTO",
+      "pageUrl": "https://www.salto.bz/de/article/01032019/100-jahre-bauhaus-1919-2019",
+      "imageUrl": "https://salto.bz/sites/default/files/styles/salto_image_for_body_fields/public/thumbnails/image/y_barcelona_mies_v_d_rohe_pavillon_weltausstellung1999_03.jpg?itok=2iFPWZyU",
+      "localPath": "public/images/buildings/gallery-candidates/bld-pavilion-candidate-02.webp",
+      "dimensions": [
+        960,
+        565
+      ],
+      "visualDistance": 54.46,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-PAVILION",
+      "originalName": "Barcelona Pavilion",
+      "candidateIndex": 3,
+      "title": "Il modernismo di Marcio Kogan - Interni Magazine",
+      "pageUrl": "https://www.internimagazine.it/architettura/edifici/pastorale-brasiliana/",
+      "imageUrl": "https://www.internimagazine.it/content/uploads/2019/03/Mies-van-der-Rohe-Pavilion_Barcellona-1200x680.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-pavilion-candidate-03.webp",
+      "dimensions": [
+        1200,
+        680
+      ],
+      "visualDistance": 46.56,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-PAVILION",
+      "originalName": "Barcelona Pavilion",
+      "candidateIndex": 4,
+      "title": "The Bauhaus and Rise of Modern Design — David Baker Design",
+      "pageUrl": "https://dbdesignspace.com/blog/bauhaus-and-rise-of-modern-design",
+      "imageUrl": "https://images.squarespace-cdn.com/content/v1/5be47aec266c071e25bcd8a0/1578466839914-ZYJ4RWFTUX000DUN7R4Q/Barcelona%2BPavillion%2B3.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-pavilion-candidate-04.webp",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "visualDistance": 50.91,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-QUNLI-PARK",
+      "originalName": "Qunli Stormwater Park",
+      "candidateIndex": 2,
+      "title": "Harbin Qunli Stormwater Park | TCLF",
+      "pageUrl": "https://www.tclf.org/landscapes/harbin-qunli-stormwater-park",
+      "imageUrl": "https://www.tclf.org/sites/default/files/styles/full_width/public/2023-10/China_Harbin_HarbinQunliStorP-4-123O3235_Adjust1_sig.jpg?itok=VH3FriOS",
+      "localPath": "public/images/buildings/gallery-candidates/bld-qunli-park-candidate-02.webp",
+      "dimensions": [
+        1200,
+        675
+      ],
+      "visualDistance": 69.21,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-REICHSTAG",
+      "originalName": "Reichstag, New German Parliament",
+      "candidateIndex": 2,
+      "title": "Bilder zum Thema Reichstagsgebäude | Kostenlose Bilder auf Unsplash herunterladen",
+      "pageUrl": "https://unsplash.com/de/s/fotos/reichstagsgeb%C3%A4ude",
+      "imageUrl": "https://images.unsplash.com/photo-1747196959942-d822620076b0?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHJlaWNoc3RhZ3NnZWIlQzMlQTR1ZGV8ZW58MHx8MHx8fDA%3D&ixlib=rb-4.1.0&q=60&w=3000",
+      "localPath": "public/images/buildings/gallery-candidates/bld-reichstag-candidate-02.webp",
+      "dimensions": [
+        1600,
+        1200
+      ],
+      "visualDistance": 49.67,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-REICHSTAG",
+      "originalName": "Reichstag, New German Parliament",
+      "candidateIndex": 3,
+      "title": "Deutscher Bundestag - Das Paul-Löbe-Haus",
+      "pageUrl": "https://www.bundestag.de/leichte_sprache/wo-ist-inhalt/plh-index",
+      "imageUrl": "https://www.bundestag.de/resource/image/962142/16x9/2340/1318/2e8a2e778bd1a5d2eb47d149d9a18b73/6024D6C040662B15B4964BEC74022DC5/plh_bild.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-reichstag-candidate-03.webp",
+      "dimensions": [
+        1600,
+        901
+      ],
+      "visualDistance": 57.05,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-RONCHAMP",
+      "originalName": "Notre-Dame du Haut",
+      "candidateIndex": 1,
+      "title": "Ле Корбюзье: самые известные работы архитектора: Дом: Среда обитания: Lenta.ru",
+      "pageUrl": "https://lenta.ru/articles/2023/08/27/le_corbusier/",
+      "imageUrl": "https://icdn.lenta.ru/images/2023/08/10/17/20230810174915519/wide_16_9_6d6ec73a673f7cbdf10c5ca6feee0075.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-ronchamp-candidate-01.webp",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "visualDistance": 56.27,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-RONCHAMP",
+      "originalName": "Notre-Dame du Haut",
+      "candidateIndex": 2,
+      "title": "El mundo según Le Corbusier | Traveler",
+      "pageUrl": "https://www.traveler.es/viajes-urbanos/articulos/el-mundo-segun-le-corbusier/5600",
+      "imageUrl": "https://media.traveler.es/photos/6137808c8f298b3a7a5be2e7/4%3A3/w_1064%2Ch_798%2Cc_limit/78065.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-ronchamp-candidate-02.webp",
+      "dimensions": [
+        1064,
+        798
+      ],
+      "visualDistance": 66.2,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-RONCHAMP",
+      "originalName": "Notre-Dame du Haut",
+      "candidateIndex": 3,
+      "title": "Ле Корбюзье: самые известные работы архитектора: Дом: Среда обитания: Lenta.ru",
+      "pageUrl": "https://lenta.ru/articles/2023/08/27/le_corbusier/",
+      "imageUrl": "https://icdn.lenta.ru/images/2023/08/10/17/20230810174915266/square_1280_7f06af23fafafcded2c186d672b1cc72.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-ronchamp-candidate-03.webp",
+      "dimensions": [
+        1200,
+        1200
+      ],
+      "visualDistance": 56.36,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-RONCHAMP",
+      "originalName": "Notre-Dame du Haut",
+      "candidateIndex": 4,
+      "title": "Ле Корбюзье: самые известные работы архитектора: Дом: Среда обитания: Lenta.ru",
+      "pageUrl": "https://lenta.ru/articles/2023/08/27/le_corbusier/",
+      "imageUrl": "https://icdn.lenta.ru/images/2023/08/10/17/20230810171943870/preview_7c2f27f3e182ba822a4b2530ca0bb6ba.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-ronchamp-candidate-04.webp",
+      "dimensions": [
+        940,
+        627
+      ],
+      "visualDistance": 56.1,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-SAGRADA",
+      "originalName": "Basílica de la Sagrada Família",
+      "candidateIndex": 1,
+      "title": "Gaudí, del modernismo a lo sublime y mágico",
+      "pageUrl": "https://vanguardia.com.mx/vida/gaudi-del-modernismo-lo-sublime-y-magico-HQVG3227000",
+      "imageUrl": "https://vanguardia.com.mx/binrepository/1152x1530/0c441/1152d648/down-right/11604/GJFD/51104_1_VG3227000_MG3249298.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-sagrada-candidate-01.webp",
+      "dimensions": [
+        1152,
+        648
+      ],
+      "visualDistance": 55.76,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-SAGRADA",
+      "originalName": "Basílica de la Sagrada Família",
+      "candidateIndex": 3,
+      "title": "巴塞隆納必訪！高第五大建築傑作｜聖家堂、米拉之家、巴特羅之家 - Klook 客路部落格",
+      "pageUrl": "https://www.klook.com/zh-TW/blog/gaudi-building-barcelona-spain/",
+      "imageUrl": "https://res.klook.com/image/upload/fl_lossy.progressive/q_65/c_fill%2Cw_1360/blogtw/2020/03/%E9%AB%98%E7%AC%AC%E4%BA%94%E5%A4%A7%E5%BB%BA%E7%AF%89.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-sagrada-candidate-03.webp",
+      "dimensions": [
+        1360,
+        715
+      ],
+      "visualDistance": 65.03,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-SAINSBURY-WING",
+      "originalName": "Sainsbury Wing, National Gallery",
+      "candidateIndex": 2,
+      "title": "La National Gallery di Londra presenta la “nuova” Sainsbury Wing ripensata da Selldorf Architects | Artribune",
+      "pageUrl": "https://www.artribune.com/progettazione/architettura/2025/05/national-gallery-londra-restyling-sainsbury-wing/",
+      "imageUrl": "https://www.artribune.com/wp-content/uploads/2025/05/c-the-national-gallery-london-photo-edmund-sumnerview-of-the-grand-staircase-with-the-rotunda-and-jubilee-walk038b-scaled.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-sainsbury-wing-candidate-02.webp",
+      "dimensions": [
+        1600,
+        1101
+      ],
+      "visualDistance": 80.54,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-SAINSBURY-WING",
+      "originalName": "Sainsbury Wing, National Gallery",
+      "candidateIndex": 3,
+      "title": "From complexity to clarity: The Sainsbury Wing transformed | Building Study | Building Design",
+      "pageUrl": "https://www.bdonline.co.uk/buildings/from-complexity-to-clarity-the-sainsbury-wing-transformed/5135802.article",
+      "imageUrl": "https://d3rcx32iafnn0o.cloudfront.net/Pictures/1024x536/0/6/5/2003065_thenat2_494887.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-sainsbury-wing-candidate-03.webp",
+      "dimensions": [
+        1024,
+        536
+      ],
+      "visualDistance": 77.68,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-SALK",
+      "originalName": "Salk Institute",
+      "candidateIndex": 1,
+      "title": "Salk Institute - Designing Buildings",
+      "pageUrl": "https://www.designingbuildings.co.uk/Salk_Institute",
+      "imageUrl": "https://www.designingbuildings.co.uk/w/images/9/9e/Salk2.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-salk-candidate-01.webp",
+      "dimensions": [
+        1024,
+        821
+      ],
+      "visualDistance": 77.32,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-SALK",
+      "originalName": "Salk Institute",
+      "candidateIndex": 2,
+      "title": "Site Visit / Louis Kahn's Salk Institute — Form + Field — San Francisco Bay Area Interior Design Firm",
+      "pageUrl": "https://formandfield.com/field-notes/site-visit-louis-kahns-salk-institute",
+      "imageUrl": "https://images.squarespace-cdn.com/content/v1/611a7915ca162d48b461c6e5/d35abcb5-1423-425f-adb1-3f4d0723e56c/image-asset%2B%2811%29.jpeg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-salk-candidate-02.webp",
+      "dimensions": [
+        667,
+        1000
+      ],
+      "visualDistance": 65.55,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-SALK",
+      "originalName": "Salk Institute",
+      "candidateIndex": 3,
+      "title": "Salk Institute | Hidden San Diego",
+      "pageUrl": "https://hiddensandiego.com/things-to-do/places/salk-institute",
+      "imageUrl": "https://hiddensandiego.com/wp-content/uploads/2020/04/Salk-Institute-3.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-salk-candidate-03.webp",
+      "dimensions": [
+        800,
+        618
+      ],
+      "visualDistance": 81.79,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-SEAGRAM",
+      "originalName": "Seagram Building",
+      "candidateIndex": 2,
+      "title": "NO NO NO NO NO The book to go with the Seagram Building | STYLEPARK",
+      "pageUrl": "https://www.stylepark.com/en/news/no-no-no-no-no-the-book-to-go-with-the-seagram-building",
+      "imageUrl": "https://cdn.stylepark.com/articles/2013/no-no-no-no-no-the-book-to-go-with-the-seagram-building/l2_v342945_958_992_679-3.jpg?focal=none&mtime=20160927124802",
+      "localPath": "public/images/buildings/gallery-candidates/bld-seagram-candidate-02.webp",
+      "dimensions": [
+        992,
+        679
+      ],
+      "visualDistance": 76.75,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-SERPENTINE-SANAA",
+      "originalName": "Serpentine Pavilion 2009",
+      "candidateIndex": 2,
+      "title": "Serpentine Pavilion 2009 by SANAA Architects - e-architect",
+      "pageUrl": "https://www.e-architect.com/london/serpentine-gallery-2009",
+      "imageUrl": "https://www.e-architect.com/images/jpgs/london/serpentine_pavilion_sanaa_nw110709_5.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-serpentine-sanaa-candidate-02.webp",
+      "dimensions": [
+        900,
+        599
+      ],
+      "visualDistance": 58.81,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-SERPENTINE-SANAA",
+      "originalName": "Serpentine Pavilion 2009",
+      "candidateIndex": 4,
+      "title": "Serpentine Pavilion 2009 by SANAA Architects - e-architect",
+      "pageUrl": "https://www.e-architect.com/london/serpentine-gallery-2009",
+      "imageUrl": "https://www.e-architect.com/images/jpgs/london/serpentine_pavilion_sanaa_nw110709_2.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-serpentine-sanaa-candidate-04.webp",
+      "dimensions": [
+        900,
+        599
+      ],
+      "visualDistance": 60.25,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-STARTUP-LIONS",
+      "originalName": "Startup Lions Campus",
+      "candidateIndex": 1,
+      "title": "Kéré Architecture · Startup Lions Campus · Divisare",
+      "pageUrl": "https://divisare.com/projects/444335-kere-architecture-startup-lions-campus",
+      "imageUrl": "https://images.divisare.com/images/c_limit%2Cf_auto%2Ch_2000%2Cq_auto%2Cw_3000/v1624543922/qa28oh7iies3le8rg6lp/kere-architecture-startup-lions-campus.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-startup-lions-candidate-01.webp",
+      "dimensions": [
+        901,
+        1200
+      ],
+      "visualDistance": 48.47,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-STARTUP-LIONS",
+      "originalName": "Startup Lions Campus",
+      "candidateIndex": 2,
+      "title": "AD WOW List 2022: Startup Lions Campus | Architectural Digest India",
+      "pageUrl": "https://www.architecturaldigest.in/gallery/ad-wow-list-2022-startup-lions-campus/",
+      "imageUrl": "https://assets.architecturaldigest.in/photos/61a60b4acaf4a497bea0cc14/16%3A9/w_2580%2Cc_limit/Startup%20Lions%20Campus.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-startup-lions-candidate-02.webp",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "visualDistance": 69.7,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-STARTUP-LIONS",
+      "originalName": "Startup Lions Campus",
+      "candidateIndex": 4,
+      "title": "Kéré Architecture · Startup Lions Campus · Divisare",
+      "pageUrl": "https://divisare.com/projects/444335-kere-architecture-startup-lions-campus",
+      "imageUrl": "https://images.divisare.com/images/f_auto%2Cq_auto%2Cw_auto/v1624543938/nzlzbeugatyv0iabsiwz/kere-architecture-startup-lions-campus.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-startup-lions-candidate-04.webp",
+      "dimensions": [
+        1598,
+        1200
+      ],
+      "visualDistance": 56.11,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-TOUR-BOIS",
+      "originalName": "Tour Bois-le-Prêtre Transformation",
+      "candidateIndex": 2,
+      "title": "Transformation of Tour Bois-le-Prêtre Housing Block | EUmies Awards",
+      "pageUrl": "https://eumiesawards.com/heritageobject/transformation-of-tour-bois-le-pretre-housing-block/",
+      "imageUrl": "https://d10ic2gxw9yhll.cloudfront.net/public/DigitalAsset/fc67671ad6879f58bb72e3fe1612202f/fc67671ad6879f58bb72e3fe1612202f/full/original/0/default.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-tour-bois-candidate-02.webp",
+      "dimensions": [
+        1024,
+        724
+      ],
+      "visualDistance": 44.77,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-TOUR-BOIS",
+      "originalName": "Tour Bois-le-Prêtre Transformation",
+      "candidateIndex": 3,
+      "title": "Deutsche BauZeitschrift – die Architekturfachzeitschrift",
+      "pageUrl": "https://www.dbz.de/artikel/dbz_Wohnhochhaus_im_Wandel_der_Zeiten_Tour_Bois-le_Pretre_Paris_FR_-1578152.html",
+      "imageUrl": "https://www.dbz.de/imgs/102427613_5922b4ad65.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-tour-bois-candidate-03.webp",
+      "dimensions": [
+        800,
+        695
+      ],
+      "visualDistance": 46.46,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-TUWAIQ-PALACE",
+      "originalName": "Tuwaiq Palace",
+      "candidateIndex": 2,
+      "title": "قصر طويق — Saudi Architecture",
+      "pageUrl": "https://www.saudiarchitecture.org/tuwaiq-palace-riyadh/",
+      "imageUrl": "https://images.squarespace-cdn.com/content/v1/5defce185e372206518f65c4/1591468468976-NR1SDXGZXI548FIVJE7M/Tamara%2BHamad%2B_%2BOmrania%2B3.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-tuwaiq-palace-candidate-02.webp",
+      "dimensions": [
+        1600,
+        617
+      ],
+      "visualDistance": 130.74,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-TUWAIQ-PALACE",
+      "originalName": "Tuwaiq Palace",
+      "candidateIndex": 3,
+      "title": "Saudi Ministry of Culture releases mini-documentary on Tuwaiq Palace",
+      "pageUrl": "https://www.modernarabesque.com/en/news/2388",
+      "imageUrl": "https://www.modernarabesque.com/upload/ZXTTZEBJKH.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-tuwaiq-palace-candidate-03.webp",
+      "dimensions": [
+        1500,
+        900
+      ],
+      "visualDistance": 111.43,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-VANNA-VENTURI",
+      "originalName": "Vanna Venturi House",
+      "candidateIndex": 1,
+      "title": "Robert Venturi and Denise Scott Brown_Venturi House, Philadelphia, USA, 1964 – \"ΤΕΧΝΗ ΚΑΙ ΑΡΧΙΤΕΚΤΟΝΙΚΗ\" στο πλαίσιο του Εκπαιδευτικού Προγράμματος του Ιδρύματος Θεοχαράκη",
+      "pageUrl": "https://architectureartlessons.wordpress.com/%CE%BC%CE%B1%CE%B8%CE%B7%CE%BC%CE%B1-3/robert-venturi-and-denise-scott-brown_venturi-house-philadelphia-usa-1964/",
+      "imageUrl": "https://architectureartlessons.wordpress.com/wp-content/uploads/2017/10/robert-venturi-and-denise-scott-brown_venturi-house-philadelphia-usa-1964.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-vanna-venturi-candidate-01.webp",
+      "dimensions": [
+        1200,
+        800
+      ],
+      "visualDistance": 57.99,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-VANNA-VENTURI",
+      "originalName": "Vanna Venturi House",
+      "candidateIndex": 3,
+      "title": "Muere el arquitecto Robert Venturi",
+      "pageUrl": "https://www.arquitecturaydiseno.es/arquitectura/robert-venturi-adios-grande_1975",
+      "imageUrl": "https://content.arquitecturaydiseno.es/medio/2018/09/20/robert-venturi_30e3fd4a_1500x1000_2.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-vanna-venturi-candidate-03.webp",
+      "dimensions": [
+        1500,
+        1000
+      ],
+      "visualDistance": 47.25,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-WENZHENG-LIBRARY",
+      "originalName": "Library of Wenzheng College",
+      "candidateIndex": 1,
+      "title": "Pritzker 2012 - Wang Shu - Pritzker 2012",
+      "pageUrl": "https://architektura.info/architektura/polska_i_swiat/pritzker_20125",
+      "imageUrl": "https://architektura.info/var/architektura/storage/images/media/images/pritzker_2012/library/wang_shu_library_wenzhang_college_03_a/794528-1-pol-PL/wang_shu_library_wenzhang_college_03_a.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-wenzheng-library-candidate-01.webp",
+      "dimensions": [
+        950,
+        672
+      ],
+      "visualDistance": 59.48,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-WENZHENG-LIBRARY",
+      "originalName": "Library of Wenzheng College",
+      "candidateIndex": 2,
+      "title": "Library of Wenzheng College | Amateur Architecture Studio",
+      "pageUrl": "https://www.archilovers.com/projects/51060/library-of-wenzheng-college.html",
+      "imageUrl": "https://cdn.archilovers.com/projects/586bd7c4-685d-4d18-af0f-9b247c607269.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-wenzheng-library-candidate-02.webp",
+      "dimensions": [
+        1500,
+        1000
+      ],
+      "visualDistance": 57.09,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-WENZHENG-LIBRARY",
+      "originalName": "Library of Wenzheng College",
+      "candidateIndex": 4,
+      "title": "Library of Wenzheng College | Amateur Architecture Studio",
+      "pageUrl": "https://www.archilovers.com/projects/51060/library-of-wenzheng-college.html",
+      "imageUrl": "https://cdn.archilovers.com/projects/e4d5b987-13c1-4dd4-91de-7af0aaaccecf.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-wenzheng-library-candidate-04.webp",
+      "dimensions": [
+        1500,
+        1000
+      ],
+      "visualDistance": 55.66,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-XIANGSHAN",
+      "originalName": "Xiangshan Campus, China Academy of Art",
+      "candidateIndex": 1,
+      "title": "王澍：我只是个造房子的",
+      "pageUrl": "https://m.voc.com.cn/xhn/news/202010/14540522.html",
+      "imageUrl": "https://img2.voc.com.cn/remote/2020/09/16/585_457405cd6a974ac36b3636ef61204f798bf80feb.png",
+      "localPath": "public/images/buildings/gallery-candidates/bld-xiangshan-candidate-01.webp",
+      "dimensions": [
+        741,
+        555
+      ],
+      "visualDistance": 79.16,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-YANWEIZHOU",
+      "originalName": "Yanweizhou Park",
+      "candidateIndex": 1,
+      "title": "һ����ƽ�ߣ���̨��ɳ̲������ѯ���ģ��˽��壩-��Ƽ�",
+      "pageUrl": "https://www.mydesignplus.cn/work_detail.asp?ID=3476",
+      "imageUrl": "https://www.mydesignplus.cn/UploadFile/202512/956/2025120412313022302218.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-yanweizhou-candidate-01.webp",
+      "dimensions": [
+        914,
+        1200
+      ],
+      "visualDistance": 63.22,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-YANWEIZHOU",
+      "originalName": "Yanweizhou Park",
+      "candidateIndex": 2,
+      "title": "如海岸卵石般的圓弧建築！中國海口西秀公園遊客中心呼應自然景觀的流線開放設計 | La Vie",
+      "pageUrl": "https://www.wowlavie.com/article/ae2301037",
+      "imageUrl": "https://wowlavie-aws.hmgcdn.com/files/article/a2/23800/atl_230023800_648.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-yanweizhou-candidate-02.webp",
+      "dimensions": [
+        940,
+        626
+      ],
+      "visualDistance": 67.44,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-YANWEIZHOU",
+      "originalName": "Yanweizhou Park",
+      "candidateIndex": 3,
+      "title": "公園を構成する曲線で描かれた逆勾配屋根 | 地域の伝統的な藁葺き屋根を反転した立体的な屋根が公園の景観と調和する〈西秀海灘公園ビジターセンター〉MUDAアーキテクツ、中国 - TECTURE MAG（テクチャーマガジン） | 空間デザイン・建築メディア",
+      "pageUrl": "https://mag.tecture.jp/culture/20230904-haikou-xixiu-park-visitor-center/",
+      "imageUrl": "https://magazine-asset.tecture.jp/wpcms/wp-content/uploads/2023/09/01144814/2dfb44351a2a1be946a72060006a2af1-scaled.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-yanweizhou-candidate-03.webp",
+      "dimensions": [
+        1600,
+        1067
+      ],
+      "visualDistance": 81.22,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-YANWEIZHOU",
+      "originalName": "Yanweizhou Park",
+      "candidateIndex": 4,
+      "title": "三亚红树林生态公园 / 土人设计 | 谷德设计网 - gooood",
+      "pageUrl": "https://www.gooood.cn/sanya-mangrove-park-china-by-turenscape.htm",
+      "imageUrl": "https://oss.gooood.cn/uploads/2019/07/001-sanya-mangrove-park-china-by-turenscape-960x640.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-yanweizhou-candidate-04.webp",
+      "dimensions": [
+        960,
+        640
+      ],
+      "visualDistance": 58.95,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-YONGNING-RIVER",
+      "originalName": "Yongning River Park",
+      "candidateIndex": 1,
+      "title": "The sponge cities of Kongjian Yu | Josephine Condemi",
+      "pageUrl": "https://mangrovia.info/en/the-sponge-cities-of-kongjian-yu/",
+      "imageUrl": "https://mangrovia.info/wp-content/uploads/2024/03/yongning-river-park-kongjian-yu-2.jpeg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-yongning-river-candidate-01.webp",
+      "dimensions": [
+        866,
+        700
+      ],
+      "visualDistance": 81.67,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-YONGNING-RIVER",
+      "originalName": "Yongning River Park",
+      "candidateIndex": 2,
+      "title": "Yangjia River Greening Enhancement - Buildings No.4 - Architectures - Jidipi",
+      "pageUrl": "https://architectures.jidipi.com/j00109155/en/yangjia-river-greening-enhancement-buildings-no4",
+      "imageUrl": "https://upload.jidipi.com/posts/j00109155/yangjia-river-greening-enhancement-project-buildings-n-yiiie-4-CQV.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-yongning-river-candidate-02.webp",
+      "dimensions": [
+        1500,
+        1000
+      ],
+      "visualDistance": 83.29,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-YONGNING-RIVER",
+      "originalName": "Yongning River Park",
+      "candidateIndex": 3,
+      "title": "gooood archive: Green Roof (2021-2024) -  谷德设计网",
+      "pageUrl": "https://www.gooood.cn/gooood-archive-green-roof-2021-2024.htm",
+      "imageUrl": "https://oss.gooood.cn/uploads/2024/12/09-wuhan-sponge-park-research-tourist-center-by-uao-960x719.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-yongning-river-candidate-03.webp",
+      "dimensions": [
+        960,
+        719
+      ],
+      "visualDistance": 53.0,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-YONGNING-RIVER",
+      "originalName": "Yongning River Park",
+      "candidateIndex": 4,
+      "title": "yiiie | 济南杨家河绿化提升工程项目_4号建筑 Yangjia River Greening Enhancement - Buildings NO.4",
+      "pageUrl": "https://www.yiiie.co/yangjiarivergreeningenhancement-buildingsno-4",
+      "imageUrl": "https://static.wixstatic.com/media/8d05c8_eef5d92aae994d23a65a454cf03ddc8f~mv2.jpg/v1/fill/w_980%2Ch_731%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/yangjia-river-greening-enhancement-project-buildings-n-yiiie-architects_30.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-yongning-river-candidate-04.webp",
+      "dimensions": [
+        980,
+        731
+      ],
+      "visualDistance": 66.24,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-ZHONGSHAN-SHIPYARD",
+      "originalName": "Zhongshan Shipyard Park",
+      "candidateIndex": 1,
+      "title": "Zhongshan Shipyard Park | TCLF",
+      "pageUrl": "https://www.tclf.org/zhongshan-shipyard-park",
+      "imageUrl": "https://www.tclf.org/sites/default/files/styles/full_width/public/2023-10/China_Zhongshan_ZhongshanShipyardPark_zhongshan_04e_sig.jpg?itok=klc5TBjr",
+      "localPath": "public/images/buildings/gallery-candidates/bld-zhongshan-shipyard-candidate-01.webp",
+      "dimensions": [
+        1200,
+        675
+      ],
+      "visualDistance": 84.24,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-ZHONGSHAN-SHIPYARD",
+      "originalName": "Zhongshan Shipyard Park",
+      "candidateIndex": 2,
+      "title": "Kongjian Yu, author of the \"Sponge Cities\" concept, wins the Global Oberlander Award | METALOCUS",
+      "pageUrl": "https://www.metalocus.es/en/news/kongjian-yu-author-sponge-cities-concept-wins-global-oberlander-award",
+      "imageUrl": "https://www.metalocus.es/sites/default/files/metalocus_kongjian-yu_zhongshan-shipyard-park_01.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-zhongshan-shipyard-candidate-02.webp",
+      "dimensions": [
+        1480,
+        1200
+      ],
+      "visualDistance": 86.73,
+      "reviewStatus": "needs-visual-review"
+    },
+    {
+      "id": "BLD-ZHONGSHAN-SHIPYARD",
+      "originalName": "Zhongshan Shipyard Park",
+      "candidateIndex": 4,
+      "title": "中山岐江公园，广东 / 土人设计 | 谷德设计网 - gooood",
+      "pageUrl": "https://www.gooood.cn/zhongshan-shipyard-park-china-by-turenscape.htm",
+      "imageUrl": "https://oss.gooood.cn/uploads/2019/10/125-zhongshan-shipyard-park-china-by-turenscape.jpg",
+      "localPath": "public/images/buildings/gallery-candidates/bld-zhongshan-shipyard-candidate-04.webp",
+      "dimensions": [
+        1600,
+        1046
+      ],
+      "visualDistance": 79.6,
+      "reviewStatus": "needs-visual-review"
+    }
+  ],
+  "failures": [
+    {
+      "id": "BLD-30-ST-MARY",
+      "candidateIndex": 1,
+      "pageUrl": "https://archkite.ir/gherkin/",
+      "imageUrl": "https://archkite.ir/wp-content/uploads/2021/09/Gherkin_archkite.ir-3.jpg",
+      "error": "curl: (28) Operation timed out after 40004 milliseconds with 360130 out of 371277 bytes received\r\ncurl: (28) Operation timed out after 40008 milliseconds with 310978 out of 371277 bytes received"
+    },
+    {
+      "id": "BLD-30-ST-MARY",
+      "candidateIndex": 2,
+      "pageUrl": "https://tourismplacesworld.blogspot.com/2011/10/30-st-mary-axe.html",
+      "imageUrl": "https://2.bp.blogspot.com/-_LRv16kkrnY/TpKOwpwvoDI/AAAAAAAACUw/unFmGrna35E/s640/30%2BSt%2BMary%2BAxe_3_tour.jpg",
+      "error": "curl: (28) Connection timed out after 12015 milliseconds\r\ncurl: (28) Connection timed out after 12012 milliseconds"
+    },
+    {
+      "id": "BLD-30-ST-MARY",
+      "candidateIndex": 4,
+      "pageUrl": "https://www.loopnet.co.uk/Listing/30-St-Mary-Axe-London/15578325/",
+      "imageUrl": "https://images.loopnet.co.uk/i2/_ZcQ9jd3wepoMg6dlTY4ipjT6HzI_2nzXgwvHgMqA0w/110/30-St-Mary-Axe-London-LND-Lobby-3-Large.jpg",
+      "error": "curl: (22) The requested URL returned error: 403\r\ncurl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "BLD-ALLEN-MEMORIAL",
+      "candidateIndex": 1,
+      "pageUrl": "https://albertanorweg.blogspot.com/2011/02/university-of-michigan-museum-of-art.html",
+      "imageUrl": "https://1.bp.blogspot.com/-tEb4PWJsdTc/TrO-BhQqLbI/AAAAAAAABAk/AjRLWyPsfFE/s1600/14.jpg",
+      "error": "curl: (28) Connection timed out after 12005 milliseconds\r\ncurl: (28) Connection timed out after 12002 milliseconds"
+    },
+    {
+      "id": "BLD-BANGLADESH-PARLIAMENT",
+      "candidateIndex": 3,
+      "pageUrl": "https://www.kalbela.com/national/269027",
+      "imageUrl": "https://www.kalbela.com/assets/news_photos/2026/02/24/image_269027_1771892711.webp",
+      "error": "curl: (22) The requested URL returned error: 403\r\ncurl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "BLD-BANGLADESH-PARLIAMENT",
+      "candidateIndex": 4,
+      "pageUrl": "https://www.dhakastream.net/bangladesh/traffic-restrictions-parts-dhaka-today-over-parliament-session-192312",
+      "imageUrl": "https://www.dhakastream.net/sites/default/files/styles/social_share/public/images/2026/03/12/jatiya_shangsad.jpg?itok=gdSWgz3Z",
+      "error": "image too small: 750x393"
+    },
+    {
+      "id": "BLD-CASA-MILA",
+      "candidateIndex": 2,
+      "pageUrl": "https://lacamaradelarte.com/obra/la-pedrera/",
+      "imageUrl": "https://lacamaradelarte.com/wp-content/uploads/2024/03/LA-PEDRERA-INTERIOR.jpg",
+      "error": "curl: (28) Connection timed out after 12003 milliseconds\r\ncurl: (28) Connection timed out after 12011 milliseconds"
+    },
+    {
+      "id": "BLD-CASA-MILA",
+      "candidateIndex": 3,
+      "pageUrl": "https://www.newayer.com/?id=678",
+      "imageUrl": "https://www.newayer.com/zb_users/upload/2025/08/202508141755181218194681.jpg",
+      "error": "curl: (22) The requested URL returned error: 404\r\ncurl: (22) The requested URL returned error: 404"
+    },
+    {
+      "id": "BLD-CHANDIGARH",
+      "candidateIndex": 2,
+      "pageUrl": "https://archieurb.blogspot.com/2010/03/neoclassicismo.html",
+      "imageUrl": "https://1.bp.blogspot.com/_CsQ02cqLZ1Q/S6vy2qLVSyI/AAAAAAAAAKQ/GnaE7SQGNHk/s1600/page.jpg",
+      "error": "curl: (28) Connection timed out after 12016 milliseconds\r\ncurl: (28) Connection timed out after 12009 milliseconds"
+    },
+    {
+      "id": "BLD-CHANDIGARH",
+      "candidateIndex": 4,
+      "pageUrl": "https://www.aoc.gov/about-us/history/architects-of-the-capitol/george-m-white",
+      "imageUrl": "https://www.aoc.gov/sites/default/files/styles/standard_lg/public/7165705176_a9e1394a02_o_0.jpg.webp?h=51baab04&itok=u-CvZkT4",
+      "error": "curl: (22) The requested URL returned error: 403\r\ncurl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "BLD-CROWN-HALL",
+      "candidateIndex": 4,
+      "pageUrl": "https://www.planradar.com/de/einflussreiche-architekten/",
+      "imageUrl": "https://planradar-website.s3.amazonaws.com/production/uploads/2023/01/S.R.-Crown-Hall-Chicago.jpg",
+      "error": "broken data stream when reading image file"
+    },
+    {
+      "id": "BLD-DAXING",
+      "candidateIndex": 2,
+      "pageUrl": "https://www.yicaiglobal.com/news/starbucks-luckin-coffee-open-seven-stores-at-beijing-new-airport",
+      "imageUrl": "https://img.yicaiglobal.com/cdn/news/starbucks-luckin-coffee-open-seven-stores-at-beijing-new-airport/top.jpg",
+      "error": "image too small: 720x480"
+    },
+    {
+      "id": "BLD-DAXING",
+      "candidateIndex": 3,
+      "pageUrl": "https://twitter.com/parametricarch/status/1541863884239290370",
+      "imageUrl": "https://pbs.twimg.com/media/FWXNBPzXEAIS_WU?format=jpg&name=large",
+      "error": "curl: (28) Connection timed out after 12011 milliseconds\r\ncurl: (28) Connection timed out after 12015 milliseconds"
+    },
+    {
+      "id": "BLD-EXETER-LIBRARY",
+      "candidateIndex": 4,
+      "pageUrl": "https://sladenfeinstein.com/index.php/projects/details/phillips-exeter-academy",
+      "imageUrl": "https://sladenfeinstein.com/images/uploads/sfil-phillips-exeter-academy-class-of-1945-library-exeter-nh-01-min.jpg",
+      "error": "curl: (28) Operation timed out after 40012 milliseconds with 442036 out of 558222 bytes received\r\ncurl: (28) Operation timed out after 40010 milliseconds with 507572 out of 558222 bytes received"
+    },
+    {
+      "id": "BLD-EXPO67-GERMAN",
+      "candidateIndex": 1,
+      "pageUrl": "https://architecture-history.org/architects/architects/OTTO/OBJ/1967%2C%20German%20Pavilion%2C%20Expo%20%2767%2C%20Montreal%2C%20Canada.html",
+      "imageUrl": "https://architecture-history.org/architects/architects/OTTO/PIC/EQ02.png",
+      "error": "curl: (28) Operation timed out after 40013 milliseconds with 442123 out of 5181278 bytes received\r\ncurl: (28) Operation timed out after 40013 milliseconds with 524043 out of 5181278 bytes received"
+    },
+    {
+      "id": "BLD-EXPO67-GERMAN",
+      "candidateIndex": 2,
+      "pageUrl": "https://expo67.ncf.ca/expo_german_p3.html",
+      "imageUrl": "https://expo67.ncf.ca/germanyinner_nae000990885.jpg",
+      "error": "image too small: 640x435"
+    },
+    {
+      "id": "BLD-EXPO67-GERMAN",
+      "candidateIndex": 3,
+      "pageUrl": "https://archcompute.com/en/strategies/form-finding/minimal-surface/",
+      "imageUrl": "https://archcompute.com/_astro/Frei-Otto-The-1967-International-and-Universal-Exposition-01.Cy9WYNzx_ZIaeVp.webp",
+      "error": "near duplicate of primary: distance=0.17"
+    },
+    {
+      "id": "BLD-EXPO67-GERMAN",
+      "candidateIndex": 4,
+      "pageUrl": "https://expolounge.blogspot.com/2006/11/revisit-german-pavilion.html",
+      "imageUrl": "https://photos1.blogger.com/blogger2/900/3153/1600/GermanyInterior1.jpg",
+      "error": "curl: (28) Connection timed out after 12012 milliseconds\r\ncurl: (28) Connection timed out after 12001 milliseconds"
+    },
+    {
+      "id": "BLD-FRAC-DUNKIRK",
+      "candidateIndex": 1,
+      "pageUrl": "https://www.architectural-review.com/today/frac-nord-pas-de-calais-dunkirk-france-lacaton-vassal",
+      "imageUrl": "https://cdn.ca.emap.com/wp-content/uploads/sites/12/2014/01/slide_12_235972980.jpg",
+      "error": "image too small: 606x422"
+    },
+    {
+      "id": "BLD-FRAC-DUNKIRK",
+      "candidateIndex": 3,
+      "pageUrl": "https://arquitecturaviva.com/works/frac-nord-pas-de-calais-6",
+      "imageUrl": "https://arquitecturaviva.com/assets/uploads/obras/40185/av_94948.webp?h=4c2e8d43",
+      "error": "curl: (22) The requested URL returned error: 403\r\ncurl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "BLD-GRAND-PARC",
+      "candidateIndex": 1,
+      "pageUrl": "https://arquitecturaviva.com/obras/transformacion-de-530-viviendas-burdeos",
+      "imageUrl": "https://arquitecturaviva.com/assets/uploads/obras/39280/av_imagen.webp",
+      "error": "curl: (22) The requested URL returned error: 403\r\ncurl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "BLD-GRAND-PARC",
+      "candidateIndex": 3,
+      "pageUrl": "https://www.lacatonvassal.com/index.php?idp=80",
+      "imageUrl": "https://www.lacatonvassal.com/data/images/full/20181214-103211-z744.jpg",
+      "error": "curl: (28) Operation timed out after 40013 milliseconds with 225766 out of 640070 bytes received\r\ncurl: (28) Operation timed out after 40007 milliseconds with 70694 out of 640070 bytes received"
+    },
+    {
+      "id": "BLD-GRAND-PARC",
+      "candidateIndex": 4,
+      "pageUrl": "https://www.eldiario.es/cultura/arquitectura-futuro-demoler-transformar_1_8376307.html",
+      "imageUrl": "https://static.eldiario.es/clip/b9dccd57-4a73-4c89-970b-651d562ee69c_source-aspect-ratio_default_0.jpg",
+      "error": "broken data stream when reading image file"
+    },
+    {
+      "id": "BLD-GUANGZHOU-OPERA",
+      "candidateIndex": 3,
+      "pageUrl": "https://archidea.com.ua/rarity/heritage/359445-opernyy-teatr-guanchzhou-ot-zahi-hadid",
+      "imageUrl": "https://archidea.com.ua/i/35/94/45/359445/03032129d821d4d89242b4bada4c5896-quality_80Xresize_crop_1Xallow_enlarge_0Xw_780Xh_478.jpg",
+      "error": "curl: (35) schannel: next InitializeSecurityContext failed: SEC_E_CERT_EXPIRED (0x80090328) - յ֤ѹڡ\r\ncurl: (35) schannel: next InitializeSecurityContext failed: SEC_E_CERT_EXPIRED (0x80090328) - յ֤ѹڡ"
+    },
+    {
+      "id": "BLD-GUILD-HOUSE",
+      "candidateIndex": 3,
+      "pageUrl": "https://www.deviantart.com/pixel-pulse-studio/art/Guild-Hall-1238982760",
+      "imageUrl": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/039caa3e-002e-49b0-b448-0bb67e6f6870/dkhnp7s-d2cf2088-d3a3-4b85-ae81-d242ec1a7643.jpg/v1/fill/w_600%2Ch_400%2Cq_75%2Cstrp/guild_hall_by_pixel_pulse_studio_dkhnp7s-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8wMzljYWEzZS0wMDJlLTQ5YjAtYjQ0OC0wYmI2N2U2ZjY4NzAvZGtobnA3cy1kMmNmMjA4OC1kM2EzLTRiODUtYWU4MS1kMjQyZWMxYTc2NDMuanBnIiwiaGVpZ2h0IjoiPD00MDAiLCJ3aWR0aCI6Ijw9NjAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLndhdGVybWFyayJdLCJ3bWsiOnsicGF0aCI6Ii93bS8wMzljYWEzZS0wMDJlLTQ5YjAtYjQ0OC0wYmI2N2U2ZjY4NzAvcGl4ZWwtcHVsc2Utc3R1ZGlvLTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.mqDfhOJALiiJleLeXh0IvN6ZwfY4xbd0wfQaCcmC0y8",
+      "error": "image too small: 600x400"
+    },
+    {
+      "id": "BLD-GUILD-HOUSE",
+      "candidateIndex": 4,
+      "pageUrl": "https://eso.mmo-fashion.com/gardner-house/",
+      "imageUrl": "https://eso.mmo-fashion.com/gardner-house/gardner-house-unfurnished/",
+      "error": "curl: (22) The requested URL returned error: 403\r\ncurl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "BLD-HEARST",
+      "candidateIndex": 2,
+      "pageUrl": "https://x.com/theArchersToday/status/2027075107047325786",
+      "imageUrl": "https://pbs.twimg.com/media/HCGaDH_W4AE-B1m.jpg",
+      "error": "curl: (28) Connection timed out after 12011 milliseconds\r\ncurl: (28) Connection timed out after 12013 milliseconds"
+    },
+    {
+      "id": "BLD-HOUTAN-PARK",
+      "candidateIndex": 3,
+      "pageUrl": "https://land8.com/houtan-park-%E5%90%8E%E6%BB%A9%E5%85%AC%E5%9B%AD-shanghai-china/",
+      "imageUrl": "https://farm9.staticflickr.com/8244/8484885784_68a2458d3d_z.jpg?width=650",
+      "error": "image too small: 639x425"
+    },
+    {
+      "id": "BLD-HOUTAN-PARK",
+      "candidateIndex": 4,
+      "pageUrl": "https://you.ctrip.com/sight/shanghai2/136060642.html",
+      "imageUrl": "https://dimg04.c-ctrip.com/images/1mh3k12000g3d8nqv6552_W_640_10000.jpg?proc=autoorient",
+      "error": "image too small: 640x485"
+    },
+    {
+      "id": "BLD-HSBC",
+      "candidateIndex": 1,
+      "pageUrl": "https://scielo.org.za/scielo.php?pid=S2415-04872020000100006&script=sci_arttext",
+      "imageUrl": "https://scielo.org.za/img/revistas/as/v27n1/06f12.jpg",
+      "error": "image too small: 531x574"
+    },
+    {
+      "id": "BLD-HSBC",
+      "candidateIndex": 2,
+      "pageUrl": "https://www.archilovers.com/projects/165/hong-kong-shanghai-banking-headquarters.html",
+      "imageUrl": "https://cdn.archilovers.com/projects/c_383_37a6111c-9fe7-4204-b439-e44e4ce86b6e.jpg",
+      "error": "image too small: 472x595"
+    },
+    {
+      "id": "BLD-HSBC",
+      "candidateIndex": 4,
+      "pageUrl": "https://architizer.com/blog/inspiration/industry/awards-gala-foster-partners-sustainability-design/",
+      "imageUrl": "https://blog.architizer.com/wp-content/uploads/hongkong.jpg",
+      "error": "curl: (22) The requested URL returned error: 403\r\ncurl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "BLD-JAPAN-PAVILION-2000",
+      "candidateIndex": 1,
+      "pageUrl": "https://shigerubanarchitects.com/works/exhibitions/japan-pavilion-expo-2000/",
+      "imageUrl": "https://shigerubanarchitects.com/wp-content/uploads/2022/09/shigeru-ban-japan-pavillon2.jpg",
+      "error": "broken data stream when reading image file"
+    },
+    {
+      "id": "BLD-JAPAN-PAVILION-2000",
+      "candidateIndex": 3,
+      "pageUrl": "https://lightweightarchitecture.wordpress.com/parametric-design/shigeru-ban-frei-otto-japan-pavilion-expo-2000/",
+      "imageUrl": "https://lightweightarchitecture.wordpress.com/wp-content/uploads/2012/09/shigeru-ban-frei-otto-japan-pavilion-expo-20001.jpg",
+      "error": "image too small: 546x437"
+    },
+    {
+      "id": "BLD-JAPAN-PAVILION-2000",
+      "candidateIndex": 4,
+      "pageUrl": "https://www.re-thinkingthefuture.com/articles/japan-pavilion-expo-spain/",
+      "imageUrl": "https://www.re-thinkingthefuture.com/wp-content/uploads/2024/01/13.-Japan-Pavilion-Expo-Spain-cover_900_584.jpg?w=999",
+      "error": "curl: (22) The requested URL returned error: 403\r\ncurl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "BLD-KANAZAWA-21",
+      "candidateIndex": 2,
+      "pageUrl": "https://www.behance.net/gallery/219425021/SANAA-Kanazawa-21st-Century-Museum-of-Contemporary-Art",
+      "imageUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/16d1ba219425021.67b23e3165686.jpg",
+      "error": "curl: (28) Connection timed out after 12006 milliseconds\r\ncurl: (28) Connection timed out after 12012 milliseconds"
+    },
+    {
+      "id": "BLD-KANAZAWA-21",
+      "candidateIndex": 4,
+      "pageUrl": "https://www.d2cid.co.jp/projects/kanazawa21/",
+      "imageUrl": "https://images.microcms-assets.io/assets/6bbe0606a45c4e2db0a6877aa613e213/5a001c3edeef4e05aaf262b169dbb2dd/kanazawa21-1.jpg",
+      "error": "near duplicate of primary: distance=0.24"
+    },
+    {
+      "id": "BLD-KIMBELL",
+      "candidateIndex": 4,
+      "pageUrl": "https://www.architecturalrecord.com/articles/7516-kimbell-art-museum-addition",
+      "imageUrl": "https://www.architecturalrecord.com/ext/resources/archives/projects/Building_Types_Study/museums/2013/images/Kimbell-Art-Museum-Addition-Renzo-Piano-Building-Workshop-2.jpg",
+      "error": "image too small: 650x436"
+    },
+    {
+      "id": "BLD-KUNSTHAL",
+      "candidateIndex": 4,
+      "pageUrl": "https://www.kunsthal.nl/en/about-kunsthal/building/",
+      "imageUrl": "https://www.kunsthal.nl/media/filer_public_thumbnails/filer_public/b5/e6/b5e6284b-844e-4d47-92c9-e170372a8a42/007_kunsthal_rotterdam_by_night_foto_ossip_van_duivenbode.jpg__5760.0x3840.0_q85_crop_subsampling-2_upscale.jpg",
+      "error": "curl: (28) Operation timed out after 40006 milliseconds with 458433 out of 2314826 bytes received\r\ncurl: (28) Operation timed out after 40015 milliseconds with 458433 out of 2314826 bytes received"
+    },
+    {
+      "id": "BLD-LONDON-AQUATICS",
+      "candidateIndex": 1,
+      "pageUrl": "https://www.architectmagazine.com/project-gallery/london-aquatics-centre-397/",
+      "imageUrl": "https://www.architectmagazine.com/wp-content/uploads/sites/5/2012/zha-aquaticscentre-huftoncrow-hero.jpg",
+      "error": "curl: (22) The requested URL returned error: 403\r\ncurl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "BLD-LONDON-AQUATICS",
+      "candidateIndex": 2,
+      "pageUrl": "https://archello.com/project/london-aquatics-centre",
+      "imageUrl": "https://archello.s3.eu-central-1.amazonaws.com/images/2018/01/27/ZHAAquatics-CentreHuftonCrow013.1517057626.8074.JPG",
+      "error": "broken data stream when reading image file"
+    },
+    {
+      "id": "BLD-LONDON-AQUATICS",
+      "candidateIndex": 4,
+      "pageUrl": "https://www.luxdeco.com/the-luxurist/remembering-zaha-hadid",
+      "imageUrl": "https://images.prismic.io/luxdeco-dev/NzA5NWNmZDItNDY1Zi00MDA3LWJlMzYtMTA4MTZhNjgxMDE3_1552321709_02_full_6.jpg?auto=compress%2Cformat&q=100&w=1200",
+      "error": "curl: (35) Recv failure: Connection was reset\r\ncurl: (35) Recv failure: Connection was reset"
+    },
+    {
+      "id": "BLD-LOUVRE-LENS",
+      "candidateIndex": 3,
+      "pageUrl": "https://www.chnordiste.fr/le-louvre-lens/",
+      "imageUrl": "https://www.chnordiste.fr/wp-content/uploads/2020/02/Louvre-Lens-1030x773.jpeg",
+      "error": "cannot identify image file <_io.BytesIO object at 0x000001B1B25C70A8>"
+    },
+    {
+      "id": "BLD-LOUVRE-LENS",
+      "candidateIndex": 4,
+      "pageUrl": "https://arthive.com/places/3099~Louvre_Lens",
+      "imageUrl": "https://arthive.com/res/media/img/oy800/place/00e/807353%402x.jpg",
+      "error": "curl: (28) Operation timed out after 40008 milliseconds with 507665 out of 1060430 bytes received\r\ncurl: (28) Operation timed out after 40004 milliseconds with 425745 out of 1060430 bytes received"
+    },
+    {
+      "id": "BLD-LYCEE-SCHORGE",
+      "candidateIndex": 1,
+      "pageUrl": "https://www.valentinyarchitects.com/architecture/typology/learning/2009-transformation-of-lycee-classique-diekirch-luxembourg",
+      "imageUrl": "https://www.valentinyarchitects.com/typo3temp/assets/_processed_/f/7/csm_7725_001_18f35ced42.jpg",
+      "error": "curl: (60) schannel: SEC_E_UNTRUSTED_ROOT (0x80090325) - ֤ɲεİ䷢䷢ġ\r\nMore details here: https://curl.se/docs/sslcerts.html\r\n\r\ncurl failed to verify the legitimacy of the server and therefore could not\r\nestablish a secure connection to it. To learn more about this situation and\r\nhow to fix it, please visit the webpage mentioned above.\r\ncurl: (60) schannel: SEC_E_UNTRUSTED_ROOT (0x80090325) - ֤ɲεİ䷢䷢ġ\r\nMore details here: https://curl.se/docs/sslcerts.html\r\n\r\ncurl failed to verify the legitimacy of the server and therefore could not\r\nestablish a secure connection to it. To learn more about this situation and\r\nhow to fix it, please visit the webpage mentioned above."
+    },
+    {
+      "id": "BLD-LYCEE-SCHORGE",
+      "candidateIndex": 3,
+      "pageUrl": "https://www.polaris-architects.com/projet/073/",
+      "imageUrl": "https://www.polaris-architects.com/wp-content/uploads/2022/09/073_20220708_PH_02_EC.jpg",
+      "error": "curl: (22) The requested URL returned error: 404\r\ncurl: (22) The requested URL returned error: 404"
+    },
+    {
+      "id": "BLD-MCASD",
+      "candidateIndex": 1,
+      "pageUrl": "https://lpadesignstudios.com/projects/museum-of-contemporary-art-san-diego",
+      "imageUrl": "https://s3.amazonaws.com/lpadesignstudios.com-assets/content/heros/Projects/Civic/MCASD_Selldorf_Nicholas-Venezia_01.jpg",
+      "error": "curl: (28) Operation timed out after 40012 milliseconds with 591470 out of 28133091 bytes received\r\ncurl: (28) Operation timed out after 40011 milliseconds with 453936 out of 28133091 bytes received"
+    },
+    {
+      "id": "BLD-MILLAU",
+      "candidateIndex": 2,
+      "pageUrl": "https://www.onlinekhabar.com/2016/04/410560",
+      "imageUrl": "https://www.onlinekhabar.com/wp-content/uploads/2016/04/france-road.jpg",
+      "error": "image too small: 650x433"
+    },
+    {
+      "id": "BLD-MODERN-FORT-WORTH",
+      "candidateIndex": 4,
+      "pageUrl": "https://www.forbes.com/sites/chaddscott/2025/10/12/jenny-savilles-great-and-grand-figure-paintings-at-the-modern-in-fort-worth/",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/68ead9dd487c937ea6824ae5/Modern-art-Museum-at-Fort-Worth--texas-showing-the-building-facade/1960x0.jpg?fit=bounds&height=538&width=711",
+      "error": "curl: (28) Connection timed out after 12005 milliseconds\r\ncurl: (28) Connection timed out after 12011 milliseconds"
+    },
+    {
+      "id": "BLD-MULTIHALLE",
+      "candidateIndex": 2,
+      "pageUrl": "https://commons.wikimedia.org/wiki/File%3AMultihalle07.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Multihalle07.jpg",
+      "error": "curl: (28) Connection timed out after 12003 milliseconds\r\ncurl: (28) Connection timed out after 12010 milliseconds"
+    },
+    {
+      "id": "BLD-MULTIHALLE",
+      "candidateIndex": 3,
+      "pageUrl": "https://www.proholz.at/holzbauten/architektur/multihalle-mannheim",
+      "imageUrl": "https://www.proholz.at/fileadmin/proholz/media/zuschnitt_Fotos_Plaene/multihalle_04.jpg",
+      "error": "curl: (28) Operation timed out after 40006 milliseconds with 399730 out of 738203 bytes received\r\ncurl: (28) Operation timed out after 40008 milliseconds with 495730 out of 738203 bytes received"
+    },
+    {
+      "id": "BLD-MULTIHALLE",
+      "candidateIndex": 4,
+      "pageUrl": "https://holzmagazin.com/massgeschneidertes-sanierungskonzept-multihalle-in-mannheim/",
+      "imageUrl": "https://holzmagazin.com/wp-content/uploads/2025/05/multihallemannheim-c-daniellukac-1024x683.png",
+      "error": "curl: (28) Operation timed out after 40003 milliseconds with 442127 out of 533992 bytes received\r\ncurl: (28) Operation timed out after 40001 milliseconds with 524047 out of 533992 bytes received"
+    },
+    {
+      "id": "BLD-MUNICH-OLYMPIC",
+      "candidateIndex": 1,
+      "pageUrl": "https://inhabitat.com/frei-otto-named-2015-pritzker-prize-laureate-just-one-day-after-his-death/",
+      "imageUrl": "https://inhabitat.com/wp-content/blogs.dir/1/files/2015/03/Frei-Otto-Munich-Olympics-Tensile-Structures-4-660x499.jpg",
+      "error": "curl: (22) The requested URL returned error: 403\r\ncurl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "BLD-MUNICH-OLYMPIC",
+      "candidateIndex": 2,
+      "pageUrl": "https://commons.wikimedia.org/wiki/File%3AMunich_-_Frei_Otto_Tensed_structures_-_5293.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/Munich_-_Frei_Otto_Tensed_structures_-_5293.jpg",
+      "error": "curl: (28) Connection timed out after 12017 milliseconds\r\ncurl: (28) Connection timed out after 12001 milliseconds"
+    },
+    {
+      "id": "BLD-MUNICH-OLYMPIC",
+      "candidateIndex": 3,
+      "pageUrl": "https://depositphotos.com/photos/modern-stadium-roof-design.html",
+      "imageUrl": "https://st2.depositphotos.com/2062855/9110/i/450/depositphotos_91100912-stock-photo-olympic-stadion-roof-munich-bavaria.jpg",
+      "error": "curl: (28) Connection timed out after 12001 milliseconds\r\ncurl: (28) Connection timed out after 12014 milliseconds"
+    },
+    {
+      "id": "BLD-MUNICH-OLYMPIC",
+      "candidateIndex": 4,
+      "pageUrl": "https://www.faz.net/aktuell/feuilleton/deutscher-stararchitekt-frei-otto-gestorben-13475933.html",
+      "imageUrl": "https://media0.faz.net/image/w1200h1200/1651bb1dcf93/w1306h1306x579y6/200007/1.3475936/ein-meisterwerk-der.webp",
+      "error": "curl: (28) Connection timed out after 12010 milliseconds\r\ncurl: (28) Connection timed out after 12003 milliseconds"
+    },
+    {
+      "id": "BLD-NANTES-ARCH",
+      "candidateIndex": 1,
+      "pageUrl": "https://www.architectural-review.com/today/nantes-school-of-architecture-by-lacaton-vassal-nantes-france",
+      "imageUrl": "https://cdn.ca.emap.com/wp-content/uploads/sites/12/2009/06/AR06_LAC_Panorama1.jpg",
+      "error": "broken data stream when reading image file"
+    },
+    {
+      "id": "BLD-NANTES-ARCH",
+      "candidateIndex": 2,
+      "pageUrl": "https://www.world-architects.com/zh/architecture-news/building-of-the-week/nantes-school-of-architecture",
+      "imageUrl": "https://www.world-architects.com/images/CmsPageElementImage/12/43/86/5903bd4da3e04d0fab52346367d6201c/5903bd4da3e04d0fab52346367d6201c.f5fb7444.jpg",
+      "error": "curl: (22) The requested URL returned error: 403\r\ncurl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "BLD-NANTES-ARCH",
+      "candidateIndex": 3,
+      "pageUrl": "https://www.pritzkerprize.com/laureates/anne-lacaton-and-jean-philippe-vassal",
+      "imageUrl": "https://www.pritzkerprize.com/sites/default/files/inline-files/E%CC%81cole%20Nationale%20Supe%CC%81rieure%20d%E2%80%99Architecture%20de%20Nantes%202.jpg",
+      "error": "broken data stream when reading image file"
+    },
+    {
+      "id": "BLD-NANTES-ARCH",
+      "candidateIndex": 4,
+      "pageUrl": "https://arquitecturaviva.com/obras/escuela-de-arquitectura-de-nantes",
+      "imageUrl": "https://arquitecturaviva.com/assets/uploads/obras/40174/av_imagen.webp",
+      "error": "curl: (22) The requested URL returned error: 403\r\ncurl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "BLD-NEUE-NATIONALGALERIE",
+      "candidateIndex": 1,
+      "pageUrl": "https://surfacesreporter.com/articles/72319/david-chipperfield-architects-removed-35000-individual-components-from-the-mies-van-der-rohe-neue-nationalgalerie-museum-as-a-part-of-the-overhaul",
+      "imageUrl": "https://www.surfacesreporter.com/myuploads/3neue-nationalgalerie-berline-david-chipperfield-architects-mies-van-der-rohe_surfaces-reporter.jpg",
+      "error": "curl: (28) Operation timed out after 40003 milliseconds with 425984 out of 700632 bytes received\r\ncurl: (28) Connection timed out after 12013 milliseconds"
+    },
+    {
+      "id": "BLD-NEW-MUSEUM",
+      "candidateIndex": 1,
+      "pageUrl": "https://www.archiportale.com/news/2026/03/architettura/new-museum-il-21-marzo-debutta-la-nuova-ala-firmata-oma_109606_3.html",
+      "imageUrl": "https://img.edilportale.com/News/h_09-New-Museum-Photos-by-Jason-ORear-low-res-109606_3.jpg",
+      "error": "image too small: 525x394"
+    },
+    {
+      "id": "BLD-NEW-MUSEUM",
+      "candidateIndex": 2,
+      "pageUrl": "https://news.artnet.com/art-world/new-museum-expansion-2755313",
+      "imageUrl": "https://news.artnet.com/app/news-upload/2026/03/04_New-Museum_Photos-by-Jason-ORear-768x520.jpg",
+      "error": "curl: (28) Connection timed out after 12003 milliseconds\r\ncurl: (28) Connection timed out after 12008 milliseconds"
+    },
+    {
+      "id": "BLD-NEW-MUSEUM",
+      "candidateIndex": 4,
+      "pageUrl": "https://storage.googleapis.com/dhukrwxxgnlxee/history-museum-of-modern-art-new-york.html",
+      "imageUrl": "https://stuart-lynn.com/wp-content/uploads/2014/11/New-Museum-of-Contemporary-Art.jpg",
+      "error": "curl: (22) The requested URL returned error: 403\r\ncurl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "BLD-NINGBO",
+      "candidateIndex": 1,
+      "pageUrl": "https://arky7.tistory.com/3909",
+      "imageUrl": "https://blog.kakaocdn.net/dna/FHhv9/btsNzD3al7J/AAAAAAAAAAAAAAAAAAAAALAxlU6VODGB9VWPI57kuoS1dyd69ySK0_eUFvpHl972/img.jpg?allow_ip=&allow_referer=&credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1774969199&signature=pkUKtDccdgO4mulTDzCsWl1J0qc%3D",
+      "error": "curl: (28) Connection timed out after 12011 milliseconds\r\ncurl: (28) Connection timed out after 12007 milliseconds"
+    },
+    {
+      "id": "BLD-NINGBO",
+      "candidateIndex": 2,
+      "pageUrl": "https://thechinaproject.com/2022/02/22/building-a-green-future-in-china/",
+      "imageUrl": "https://thechinaproject.com/wp-content/uploads/2022/02/ningbo-history-museum.jpeg",
+      "error": "curl: (28) Connection timed out after 12002 milliseconds\r\ncurl: (28) Connection timed out after 12003 milliseconds"
+    },
+    {
+      "id": "BLD-NINGBO",
+      "candidateIndex": 3,
+      "pageUrl": "https://c.guide/building/en/2748/ningbo-historic-museum",
+      "imageUrl": "https://api.c.guide/images/buildings/07431c9ce30a70f57f8c3995f49b10b3.jpeg",
+      "error": "near duplicate of primary: distance=0.77"
+    },
+    {
+      "id": "BLD-NINGBO",
+      "candidateIndex": 4,
+      "pageUrl": "https://en.wikiarquitectura.com/building/ningbo-historic-museum/",
+      "imageUrl": "https://en.wikiarquitectura.com/wp-content/uploads/2017/01/Museo_de_Ningbo_10.jpg",
+      "error": "curl: (22) The requested URL returned error: 403\r\ncurl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "BLD-OPERA-VILLAGE",
+      "candidateIndex": 2,
+      "pageUrl": "https://archidatum.com/projects/opera-village-laongo-k%C3%A9r%C3%A9-architecture/",
+      "imageUrl": "https://archidatum.com/ImageGen.ashx?compression=100&image=%2Fmedia%2F3075%2Fopera-village-laongo_k%C3%A9r%C3%A9-architecture-07.jpg",
+      "error": "curl: (28) Operation timed out after 40002 milliseconds with 655064 out of 835636 bytes received\r\ncurl: (28) Operation timed out after 40003 milliseconds with 622296 out of 835636 bytes received"
+    },
+    {
+      "id": "BLD-OPERA-VILLAGE",
+      "candidateIndex": 3,
+      "pageUrl": "https://arquitecturaviva.com/obras/opera-village",
+      "imageUrl": "https://arquitecturaviva.com/assets/uploads/obras/41030/av_medium__av_59671.webp?h=d0dcfffa",
+      "error": "curl: (22) The requested URL returned error: 403\r\ncurl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "BLD-PALAIS-TOKYO",
+      "candidateIndex": 1,
+      "pageUrl": "https://www.architectural-review.com/today/palais-de-tokyo-rejuvenated-in-paris-by-lacaton-vassal",
+      "imageUrl": "https://cdn.ca.emap.com/wp-content/uploads/sites/12/2012/05/Palais_de_Tokyo_1.jpg",
+      "error": "image too small: 606x422"
+    },
+    {
+      "id": "BLD-PALAIS-TOKYO",
+      "candidateIndex": 2,
+      "pageUrl": "https://www.parismania.com.br/roteiros-bairros-e-ruas-de-paris/passy-e-trocadero-no-16eme-arrondissement/",
+      "imageUrl": "https://www.parismania.com.br/wp-content/uploads/2017/01/palais-de-Tokyo-1024x681.jpeg",
+      "error": "broken data stream when reading image file"
+    },
+    {
+      "id": "BLD-PALAIS-TOKYO",
+      "candidateIndex": 3,
+      "pageUrl": "https://news.artnet.com/art-world/cameron-rowland-artwork-removed-palais-tokyo-2703738?amp=1",
+      "imageUrl": "https://news.artnet.com/app/news-upload/2022/05/GettyImages-158051349-scaled.jpg",
+      "error": "curl: (28) Connection timed out after 12014 milliseconds\r\ncurl: (28) Connection timed out after 12010 milliseconds"
+    },
+    {
+      "id": "BLD-QUNLI-PARK",
+      "candidateIndex": 1,
+      "pageUrl": "https://ww3.rics.org/uk/en/modus/natural-environment/climate-change/absorbing-cities-flood-resilient-sponge.html",
+      "imageUrl": "https://ww3.rics.org/content/dam/rics/images/modus/natural-environment/october-2022/absorbing-cities/aerial-qunli-stormwater-park_absorbing-cities_Modus_Oct_22.jpg",
+      "error": "broken data stream when reading image file"
+    },
+    {
+      "id": "BLD-QUNLI-PARK",
+      "candidateIndex": 3,
+      "pageUrl": "https://www.re-thinkingthefuture.com/designing-for-typologies/a14064-rethinking-our-cities-where-nature-and-imagination-meet/",
+      "imageUrl": "https://www.re-thinkingthefuture.com/wp-content/uploads/2025/05/A14064-Rethinking-Our-Cities-Where-Nature-and-Imagination-Meet-Image-3.jpg",
+      "error": "curl: (22) The requested URL returned error: 403\r\ncurl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "BLD-QUNLI-PARK",
+      "candidateIndex": 4,
+      "pageUrl": "https://economictimes.indiatimes.com/infrastructure/design-the-real-turning-point-of-policy-into-concrete-reality/diebedo-francis-keres-housing-project/slideshow/40737199.cms",
+      "imageUrl": "https://img.etimg.com/thumb/msid-40737201%2Cwidth-640%2Cheight-480%2Cresizemode-75%2Cimgsize-157731/stormwater-park-at-qunli-china.jpg",
+      "error": "image too small: 640x480"
+    },
+    {
+      "id": "BLD-REICHSTAG",
+      "candidateIndex": 1,
+      "pageUrl": "https://www.viviberlino.it/attrazioni-cosa-vedere/palazzo-reichstag-sede-parlamento-tedesco.html",
+      "imageUrl": "https://www.viviberlino.it/images/viviberlino/Palazzo_Reichstag/Reichstag_cupola_interno.jpg",
+      "error": "image too small: 640x426"
+    },
+    {
+      "id": "BLD-REICHSTAG",
+      "candidateIndex": 4,
+      "pageUrl": "https://banker.az/%C9%99n-muasir-memarliga-sahib-olan-s%C9%99h%C9%99rl%C9%99r/",
+      "imageUrl": "https://banker.az/wp-content/uploads/2014/03/6_Berlin_1.jpg",
+      "error": "image too small: 630x440"
+    },
+    {
+      "id": "BLD-SAGRADA",
+      "candidateIndex": 2,
+      "pageUrl": "https://www.milliyet.com.tr/pembenar/agaclardan-esinlenerek-baslamis-kadikoydeki-yamuk-kolonlu-bina-hata-mi-deha-mi-7282455",
+      "imageUrl": "https://image.milimaj.com/i/milliyet/75/770x0/67866024ae60a867bb8d4bfb.jpg",
+      "error": "image too small: 770x433"
+    },
+    {
+      "id": "BLD-SAGRADA",
+      "candidateIndex": 4,
+      "pageUrl": "https://www.travelextra.ie/wanderlist-catalonia-ten-must-see-attractions-and-some-off-the-beaten-track/",
+      "imageUrl": "https://www.travelextra.ie/wp-content/uploads/2024/06/Sagrada-Familia-in-Barcelona.jpg",
+      "error": "curl: (28) Connection timed out after 12012 milliseconds\r\ncurl: (28) Connection timed out after 12005 milliseconds"
+    },
+    {
+      "id": "BLD-SAINSBURY-WING",
+      "candidateIndex": 1,
+      "pageUrl": "https://gb.readly.com/magazines/elle-decoration-uk/2022-09-29/632f5091423f5e51c69db08b",
+      "imageUrl": "https://dt565gqrz3z7y.cloudfront.net/ce/image/C6y35u_JPw57NBdXKGCFLQ.jpg",
+      "error": "image too small: 533x566"
+    },
+    {
+      "id": "BLD-SAINSBURY-WING",
+      "candidateIndex": 4,
+      "pageUrl": "https://arquitecturaviva.com/obras/remodelacion-del-ala-sainsbury-de-la-national-gallery-de-londres",
+      "imageUrl": "https://arquitecturaviva.com/assets/uploads/obras/57790/av_292188.jpeg",
+      "error": "curl: (22) The requested URL returned error: 403\r\ncurl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "BLD-SALK",
+      "candidateIndex": 4,
+      "pageUrl": "https://afasiaarchzine.com/2014/01/louis-i-kahn/",
+      "imageUrl": "https://2.bp.blogspot.com/-N3HVYj-IDYI/UsVkHalG5BI/AAAAAAAA3o0/HrjE0sBrEdg/s1600/Louis%2BI.%2BKahn%2B.%2BSalk%2BInstitute%2B.%2BLa%2BJolla.jpg",
+      "error": "curl: (28) Connection timed out after 12005 milliseconds\r\ncurl: (28) Connection timed out after 12013 milliseconds"
+    },
+    {
+      "id": "BLD-SEAGRAM",
+      "candidateIndex": 1,
+      "pageUrl": "https://www.archaic-studio.com/journal/classics-seagram-building-mies-van-der-rohe-philip-johnson",
+      "imageUrl": "https://static1.squarespace.com/static/59cf7b252994ca305e64d591/59d01981365ffa6997302231/59d01e88365ffa699730d6d6/1506811528931/Seagram-Building-2.jpg?format=original",
+      "error": "image too small: 500x666"
+    },
+    {
+      "id": "BLD-SEAGRAM",
+      "candidateIndex": 3,
+      "pageUrl": "https://architecture-history.org/schools/INTERNATIONAL%20STYLE.html",
+      "imageUrl": "https://architecture-history.org/schools/PIC/1954-1958%2C%20Seagram%20Building%2C%20New%20York%2C%20USA%2C%20Mies%20van%20der%20Rohe.jpg",
+      "error": "image too small: 439x700"
+    },
+    {
+      "id": "BLD-SEAGRAM",
+      "candidateIndex": 4,
+      "pageUrl": "https://mana.net/%D9%81%D9%8A%D9%84%D9%8A%D8%A8-%D8%AC%D9%88%D9%86%D8%B3%D9%88%D9%86-%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D9%91-%D9%85%D8%A7-%D8%A8%D8%B9%D8%AF-%D8%A7%D9%84%D8%AD%D8%AF%D8%A7%D8%AB%D8%A9-%D8%A8/",
+      "imageUrl": "https://mana.net/wp-content/uploads/2019/11/Seagram-Building.jpg",
+      "error": "image too small: 389x500"
+    },
+    {
+      "id": "BLD-SERPENTINE-SANAA",
+      "candidateIndex": 1,
+      "pageUrl": "https://lulibula.blogspot.com/2012/07/sanaa-serpentine-pavilion-2009.html",
+      "imageUrl": "https://1.bp.blogspot.com/-ce7UAO8AULg/UAONoWmIj3I/AAAAAAAADUM/pw1skfKf9zI/s1600/Sanna-arquitectura%2B%2816%29.jpg",
+      "error": "curl: (28) Connection timed out after 12006 milliseconds\r\ncurl: (28) Connection timed out after 12002 milliseconds"
+    },
+    {
+      "id": "BLD-SERPENTINE-SANAA",
+      "candidateIndex": 3,
+      "pageUrl": "https://marcioarq.blogspot.com/2010/11/disse-que-me-disse-serpentine-pavilion.html",
+      "imageUrl": "https://2.bp.blogspot.com/_DoWeoHJtLoA/TNnbANRnDyI/AAAAAAAAEUk/uCSAVnjAUN0/s1600/serpentine_pavilion_sanaa_nw120709_20.jpg",
+      "error": "curl: (28) Connection timed out after 12004 milliseconds\r\ncurl: (28) Connection timed out after 12012 milliseconds"
+    },
+    {
+      "id": "BLD-STARTUP-LIONS",
+      "candidateIndex": 3,
+      "pageUrl": "https://www.behance.net/gallery/147962249/Startup-Lions-Campus",
+      "imageUrl": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/db6a34147962249.62cceef89ddd0.jpg",
+      "error": "curl: (28) Connection timed out after 12012 milliseconds\r\ncurl: (28) Connection timed out after 12008 milliseconds"
+    },
+    {
+      "id": "BLD-TOUR-BOIS",
+      "candidateIndex": 1,
+      "pageUrl": "https://www.archilovers.com/projects/74486/tour-bois-le-pretre.html",
+      "imageUrl": "https://cdn.archilovers.com/projects/c_383_442d025471ae4959b78c5638bef07328.jpg",
+      "error": "image too small: 472x701"
+    },
+    {
+      "id": "BLD-TOUR-BOIS",
+      "candidateIndex": 4,
+      "pageUrl": "https://www.moma.org/interactives/exhibitions/2010/smallscalebigchange/projects/transformation_of_tour_boise_le_pretre.html",
+      "imageUrl": "https://www.moma.org/interactives/exhibitions/2010/smallscalebigchange/images/projects/transformation_of_tour_boise_le_pretre/1/Slideshow/2.jpg",
+      "error": "image too small: 443x600"
+    },
+    {
+      "id": "BLD-TUWAIQ-PALACE",
+      "candidateIndex": 1,
+      "pageUrl": "https://x.com/SaudiDQ/status/1442143000507867138",
+      "imageUrl": "https://pbs.twimg.com/media/FAOFaAuXsAUGoMu.jpg",
+      "error": "curl: (35) Recv failure: Connection was reset\r\ncurl: (35) Recv failure: Connection was reset"
+    },
+    {
+      "id": "BLD-TUWAIQ-PALACE",
+      "candidateIndex": 4,
+      "pageUrl": "https://www.archnet.org/sites/2169?media_content_id=9667",
+      "imageUrl": "https://archnet-3-prod-iiif-cloud-c0fe51f0b9ac.herokuapp.com/public/resources/9e92766a-342a-4d6b-94be-1fb9136bcbe3/iiif",
+      "error": "curl: (28) Connection timed out after 12009 milliseconds\r\ncurl: (28) Connection timed out after 12014 milliseconds"
+    },
+    {
+      "id": "BLD-VANNA-VENTURI",
+      "candidateIndex": 2,
+      "pageUrl": "https://www.re-thinkingthefuture.com/rtf-fresh-perspectives/a1755-10-famous-examples-of-post-modern-architecture/",
+      "imageUrl": "https://www.re-thinkingthefuture.com/wp-content/uploads/2020/09/A1755-Examples-of-Post-Modern-Architecture-Vanna-Ventury-House-Image-1.jpg",
+      "error": "curl: (22) The requested URL returned error: 403\r\ncurl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "BLD-VANNA-VENTURI",
+      "candidateIndex": 4,
+      "pageUrl": "https://www.architecturelab.net/vanna-venturi-house-robert-venturi/",
+      "imageUrl": "https://www.architecturelab.net/wp-content/uploads/2024/12/vanna-venturi-house-robert-venturi-15.jpg",
+      "error": "curl: (22) The requested URL returned error: 403\r\ncurl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "BLD-WENZHENG-LIBRARY",
+      "candidateIndex": 3,
+      "pageUrl": "https://divisare.com/projects/192277-amateur-architecture-studio-lu-wenyu-library-of-wenzheng-college",
+      "imageUrl": "https://images.divisare.com/image/upload/c_fit%2Cf_jpg%2Cq_80%2Cw_1200/v1/project_images/3052068/wang-shu-library-wenzhang-college-01.jpg",
+      "error": "near duplicate of primary: distance=0.61"
+    },
+    {
+      "id": "BLD-XIANGSHAN",
+      "candidateIndex": 2,
+      "pageUrl": "https://m.mp.oeeee.com/a/BAAFRD000020210816566653.html",
+      "imageUrl": "https://img1.mp.oeeee.com/202108/16/1080x431_8e46d737c16a5320.jpg",
+      "error": "image too small: 1080x431"
+    },
+    {
+      "id": "BLD-XIANGSHAN",
+      "candidateIndex": 3,
+      "pageUrl": "https://forgemind.net/media/%E5%BB%BA%E7%AF%89%E5%B8%AB%E7%8E%8B%E6%BE%8D-wang-shu-%E4%B8%AD%E5%9C%8B%E7%BE%8E%E8%A1%93%E5%AD%B8%E9%99%A2%E8%B1%A1%E5%B1%B1%E6%A0%A1%E5%8D%80%E6%9D%AD%E5%B7%9E%E6%96%B0%E7%BE%8E%E8%A1%93/",
+      "imageUrl": "https://forgemind.net/images/w/WangShu-New_Academy_of_Art_Hangzhou_orig_02.jpg",
+      "error": "image too small: 698x460"
+    },
+    {
+      "id": "BLD-XIANGSHAN",
+      "candidateIndex": 4,
+      "pageUrl": "https://iida-archi.blogspot.com/2017/04/blog-post.html",
+      "imageUrl": "https://3.bp.blogspot.com/-2gpRMLjfZWs/WO3yV7b8a3I/AAAAAAAAH3k/x_GeEcBql8wLWFiWme363dp6pNPD-J1cwCK4B/s1600/IMG_4398.JPG",
+      "error": "curl: (28) Connection timed out after 12002 milliseconds\r\ncurl: (28) Connection timed out after 12010 milliseconds"
+    },
+    {
+      "id": "BLD-ZHONGSHAN-SHIPYARD",
+      "candidateIndex": 3,
+      "pageUrl": "https://dirt.asla.org/2020/10/08/kongjian-yu-wins-2020-sir-geoffrey-jellicoe-award-read-full-speech/zhongshan-shipyard-park-turenscape-08/",
+      "imageUrl": "https://dirt.asla.org/wp-content/uploads/2020/10/zhongshan-shipyard-park-turenscape-08.jpg",
+      "error": "curl: (22) The requested URL returned error: 404\r\ncurl: (22) The requested URL returned error: 404"
+    }
+  ]
+}

@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=2160, initial-scale=1" />
+    <title>ArcBTI Campaign Posters — Mobile-first 02–03</title>
+    <style>
+      @font-face {
+        font-family: "Noto Sans SC Local";
+        src: url("file:///C:/Windows/Fonts/NotoSansSC-VF.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 100 900;
+      }
+
+      @font-face {
+        font-family: "Noto Serif SC Local";
+        src: url("file:///C:/Windows/Fonts/NotoSerifSC-VF.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 100 900;
+      }
+
+      @font-face {
+        font-family: "Arial Narrow Local";
+        src: url("file:///C:/Windows/Fonts/ARIALN.TTF") format("truetype");
+        font-style: normal;
+        font-weight: 400;
+      }
+
+      @font-face {
+        font-family: "Impact Local";
+        src: url("file:///C:/Windows/Fonts/impact.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 400;
+      }
+
+      :root {
+        --paper: #f1e6d1;
+        --ink: #11110f;
+        --red: #e44a31;
+      }
+
+      * { box-sizing: border-box; }
+
+      html,
+      body {
+        width: 2160px;
+        height: 1440px;
+        margin: 0;
+        overflow: hidden;
+        background: var(--ink);
+      }
+
+      body { display: flex; }
+
+      .poster {
+        position: relative;
+        flex: 0 0 1080px;
+        width: 1080px;
+        height: 1440px;
+        overflow: hidden;
+        isolation: isolate;
+        background: var(--ink);
+      }
+
+      .fit-art {
+        position: absolute;
+        top: 0;
+        left: 60px;
+        width: 960px;
+        height: 1440px;
+        object-fit: fill;
+        z-index: -4;
+      }
+
+      .side-rail {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 60px;
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        background: var(--ink);
+        color: rgba(241, 230, 209, 0.78);
+        font-family: "Arial Narrow Local", sans-serif;
+        font-size: 10px;
+        line-height: 1;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+      }
+
+      .side-rail.left { left: 0; border-right: 1px solid rgba(241, 230, 209, 0.23); }
+      .side-rail.right { right: 0; border-left: 1px solid rgba(241, 230, 209, 0.23); }
+      .side-rail span { writing-mode: vertical-rl; white-space: nowrap; }
+      .side-rail.left span { transform: rotate(180deg); }
+      .side-rail::before,
+      .side-rail::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        width: 8px;
+        height: 8px;
+        transform: translateX(-50%);
+        background: var(--red);
+      }
+      .side-rail::before { top: 24px; }
+      .side-rail::after { bottom: 24px; }
+
+      /* 01 — Endless Type Scroll */
+      .scroll .title-band {
+        position: absolute;
+        top: 580px;
+        left: 0;
+        right: 0;
+        height: 282px;
+        z-index: 4;
+        padding: 21px 86px 20px;
+        background: rgba(15, 15, 14, 0.99);
+        border-top: 1px solid rgba(241, 230, 209, 0.42);
+        border-bottom: 1px solid rgba(241, 230, 209, 0.42);
+        color: var(--paper);
+      }
+
+      .scroll .brandrow {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 26px;
+        font-family: "Arial Narrow Local", sans-serif;
+        font-size: 12px;
+        line-height: 1;
+        letter-spacing: 2.2px;
+        text-transform: uppercase;
+        color: rgba(241, 230, 209, 0.76);
+      }
+
+      .scroll .brandrow strong {
+        color: var(--red);
+        font-weight: 400;
+      }
+
+      .scroll h1 {
+        position: relative;
+        margin: 3px 0 0;
+        width: 760px;
+        font-family: "Noto Serif SC Local", serif;
+        font-weight: 900;
+        white-space: nowrap;
+      }
+
+      .scroll h1 .line1 {
+        display: block;
+        font-size: 72px;
+        line-height: 0.98;
+        letter-spacing: -4px;
+      }
+
+      .scroll h1 .line1 .red { color: var(--red); }
+
+      .scroll h1 .line2 {
+        display: block;
+        margin-top: 1px;
+        color: var(--red);
+        font-size: 112px;
+        line-height: 0.93;
+        letter-spacing: -7px;
+      }
+
+      .scroll .question {
+        position: absolute;
+        top: 91px;
+        right: 82px;
+        padding: 12px 15px 11px;
+        background: var(--paper);
+        color: var(--ink);
+        box-shadow: 7px 7px 0 var(--red);
+        transform: rotate(3deg);
+        font-family: "Noto Sans SC Local", sans-serif;
+        font-size: 29px;
+        font-weight: 850;
+        line-height: 1;
+      }
+
+      .scroll .cta {
+        position: absolute;
+        left: 86px;
+        right: 86px;
+        bottom: 18px;
+        padding-top: 12px;
+        border-top: 1px solid rgba(241, 230, 209, 0.28);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Noto Sans SC Local", sans-serif;
+        font-size: 31px;
+        font-weight: 760;
+        line-height: 1;
+      }
+
+      .scroll .cta .red { color: var(--red); }
+      .scroll .cta .arrow { color: var(--red); font-size: 41px; transform: translateY(-2px); }
+
+      /* 03 — One Site, 16 Opinions */
+      .site { color: var(--ink); }
+
+      .site .top-copy {
+        position: absolute;
+        top: 29px;
+        left: 82px;
+        right: 82px;
+        z-index: 3;
+      }
+
+      .site .brandrow {
+        height: 39px;
+        padding-bottom: 9px;
+        border-bottom: 2px solid rgba(17, 17, 15, 0.82);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Arial Narrow Local", sans-serif;
+        font-size: 11px;
+        line-height: 1;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      .site .brand-name {
+        font-family: "Impact Local", sans-serif;
+        font-size: 30px;
+        letter-spacing: 0.5px;
+      }
+
+      .site .brand-name em {
+        margin-left: 10px;
+        padding: 4px 7px 3px;
+        background: var(--red);
+        color: var(--paper);
+        font-family: "Arial Narrow Local", sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        letter-spacing: 1.5px;
+        vertical-align: 5px;
+      }
+
+      .site h1 {
+        margin: 9px 0 0;
+        font-family: "Noto Serif SC Local", serif;
+        font-weight: 900;
+        white-space: nowrap;
+      }
+
+      .site h1 .line1 {
+        display: block;
+        font-size: 80px;
+        line-height: 0.98;
+        letter-spacing: -4px;
+      }
+
+      .site h1 .line2 {
+        display: block;
+        margin-top: -2px;
+        color: var(--red);
+        font-size: 112px;
+        line-height: 0.94;
+        letter-spacing: -7px;
+      }
+
+      .site .meme-sticker {
+        position: absolute;
+        top: 186px;
+        right: 87px;
+        z-index: 4;
+        padding: 10px 14px 9px;
+        background: var(--ink);
+        color: var(--paper);
+        box-shadow: 6px 6px 0 var(--red);
+        transform: rotate(2.5deg);
+        font-family: "Noto Sans SC Local", sans-serif;
+        font-size: 25px;
+        font-weight: 820;
+        line-height: 1;
+      }
+
+      .site .bottom-veil {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 215px;
+        z-index: 1;
+        background: linear-gradient(to bottom, transparent 0%, rgba(12, 12, 11, 0.78) 36%, #0d0d0c 100%);
+      }
+
+      .site .site-cta {
+        position: absolute;
+        left: 82px;
+        right: 82px;
+        bottom: 31px;
+        min-height: 115px;
+        z-index: 4;
+        padding: 14px 82px 13px 21px;
+        border-left: 8px solid var(--red);
+        background: rgba(15, 15, 14, 0.96);
+        color: var(--paper);
+      }
+
+      .site .cta-main {
+        font-family: "Noto Serif SC Local", serif;
+        font-size: 37px;
+        font-weight: 850;
+        line-height: 1.08;
+        letter-spacing: -0.8px;
+      }
+
+      .site .cta-main .red { color: var(--red); }
+
+      .site .cta-sub {
+        margin-top: 9px;
+        font-family: "Noto Sans SC Local", sans-serif;
+        font-size: 20px;
+        font-weight: 560;
+        line-height: 1;
+        color: rgba(241, 230, 209, 0.72);
+      }
+
+      .site .cta-arrow {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        width: 56px;
+        height: 56px;
+        transform: translateY(-50%);
+        border: 2px solid var(--paper);
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        color: var(--red);
+        font-family: "Arial Narrow Local", sans-serif;
+        font-size: 39px;
+        line-height: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="poster-scroll-mobile-v3" class="poster scroll" aria-label="ArcBTI 人格卷轴手机优先宣传海报">
+      <img class="fit-art" src="../../../public/images/campaign/xhs-posters-v2/01-endless-type-scroll-art-v2.png" alt="" />
+      <aside class="side-rail left"><span>ArcBTI · Personality Scroll · 01 / 03</span></aside>
+      <aside class="side-rail right"><span>Produced by Luke · Keep Scrolling · Sixteen Types</span></aside>
+      <section class="title-band">
+        <div class="brandrow"><span>ArcBTI · 人格卷轴</span><strong>Original by Luke · 01 / 03</strong></div>
+        <h1><span class="line1"><span class="red">16种</span>建筑人格</span><span class="line2">一卷装下！</span></h1>
+        <div class="question">你在哪一格？</div>
+        <div class="cta"><span>往下划，<span class="red">猜猜你更像谁</span></span><span class="arrow">→</span></div>
+      </section>
+    </main>
+
+    <main id="poster-site-mobile-v3" class="poster site" aria-label="ArcBTI 同一块地16种不服手机优先宣传海报">
+      <img class="fit-art" src="../../../public/images/campaign/xhs-posters-v2/03-one-site-16-opinions-art-v2.png" alt="" />
+      <aside class="side-rail left"><span>ArcBTI · One Site, Sixteen Opinions · 03 / 03</span></aside>
+      <aside class="side-rail right"><span>Produced by Luke · No Standard Answer · Keep Arguing</span></aside>
+      <section class="top-copy">
+        <div class="brandrow"><span class="brand-name">ArcBTI <em>Original by Luke</em></span><span>One Site · 16 Opinions</span></div>
+        <h1><span class="line1">同一块地，</span><span class="line2">16种不服！</span></h1>
+      </section>
+      <div class="meme-sticker">一块地，十六个“我觉得”</div>
+      <div class="bottom-veil"></div>
+      <footer class="site-cta">
+        <div class="cta-main">如果是你，会喜欢<span class="red">哪一种？</span></div>
+        <div class="cta-sub">再看看，你为什么会选它。</div>
+        <div class="cta-arrow">→</div>
+      </footer>
+    </main>
+    <script>window.__POSTER_READY__ = true;</script>
+  </body>
+</html>

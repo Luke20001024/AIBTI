@@ -16,13 +16,34 @@ export type QuestionKind = "projective" | "personality" | "aesthetic";
 export type OptionId = "A" | "B" | "C";
 export type ResultCode =
   | "GRID"
+  | "SPAN"
   | "ROOT"
+  | "EAVE"
+  | "TIDE"
   | "MASS"
   | "VOID"
+  | "RUIN"
+  | "SIGN"
   | "TECH"
+  | "VEIL"
   | "FLOW"
+  | "PLUS"
+  | "MIX"
   | "ORNA"
   | "HAND";
+
+export type ResultStory = {
+  code: ResultCode;
+  family: string;
+  heroTitle: string;
+  heroLines: readonly [string, string];
+  plainLead: string;
+  instincts: readonly [string, string, string];
+  architectHook: string;
+  architectFocus: string;
+  closing: string;
+  editorialWarning: string;
+};
 
 export type QuestionOption = {
   id: OptionId;
@@ -83,6 +104,11 @@ export type Building = {
     alt: string;
     source: SourceRef;
   };
+  gallery?: readonly {
+    src: string;
+    alt: string;
+    source: SourceRef;
+  }[];
   sources: readonly SourceRef[];
 };
 

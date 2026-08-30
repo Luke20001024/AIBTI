@@ -1,0 +1,1762 @@
+[
+  {
+    "captures": [
+      {
+        "name": "01-hero",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/grid/01-hero-0.png",
+        "y": 0
+      },
+      {
+        "name": "02-digest",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/grid/02-digest-783.png",
+        "y": 783
+      },
+      {
+        "name": "03-architect",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/grid/03-architect-1084.png",
+        "y": 1084
+      },
+      {
+        "name": "04-works-a",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/grid/04-works-a-1450.png",
+        "y": 1450
+      },
+      {
+        "name": "05-works-b",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/grid/05-works-b-2210.png",
+        "y": 2210
+      },
+      {
+        "name": "06-lineage",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/grid/06-lineage-3144.png",
+        "y": 3144
+      },
+      {
+        "name": "07-ending",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/grid/07-ending-3302.png",
+        "y": 3302
+      }
+    ],
+    "metrics": {
+      "buttonCount": 7,
+      "clientWidth": 360,
+      "imageFailures": [],
+      "innerHeight": 800,
+      "innerWidth": 360,
+      "phraseCounts": {
+        "but": 0,
+        "dontCopy": 0,
+        "not": 0
+      },
+      "scrollHeight": 4102,
+      "scrollWidth": 360,
+      "sections": [
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "32px",
+          "heading": "网格秩序者",
+          "height": 721,
+          "index": 0,
+          "lineHeight": "49.6px",
+          "top": 62
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "你的空间，喜欢各就各位",
+          "height": 301,
+          "index": 1,
+          "lineHeight": "26.7696px",
+          "top": 783
+        },
+        {
+          "background": "color(srgb 0.923922 0.927451 0.919216)",
+          "fontSize": "22.88px",
+          "heading": "最会把建筑压到只剩关系的人连空白都排得有理有据",
+          "height": 365,
+          "index": 2,
+          "lineHeight": "26.7696px",
+          "top": 1084
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "看懂 GRID 不用画网格，看三次让位就够了",
+          "height": 1660,
+          "index": 3,
+          "lineHeight": "26.7696px",
+          "top": 1450
+        },
+        {
+          "background": "color(srgb 0.923922 0.927451 0.919216)",
+          "fontSize": "22.88px",
+          "heading": "同一套判断再看两座更清楚",
+          "height": 518,
+          "index": 4,
+          "lineHeight": "26.7696px",
+          "top": 3144
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "24.8px",
+          "heading": "网格秩序者",
+          "height": 440,
+          "index": 5,
+          "lineHeight": "27.776px",
+          "top": 3661
+        }
+      ]
+    },
+    "slug": "grid"
+  },
+  {
+    "captures": [
+      {
+        "name": "01-hero",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/span/01-hero-0.png",
+        "y": 0
+      },
+      {
+        "name": "02-digest",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/span/02-digest-785.png",
+        "y": 785
+      },
+      {
+        "name": "03-architect",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/span/03-architect-1086.png",
+        "y": 1086
+      },
+      {
+        "name": "04-works-a",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/span/04-works-a-1486.png",
+        "y": 1486
+      },
+      {
+        "name": "05-works-b",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/span/05-works-b-2246.png",
+        "y": 2246
+      },
+      {
+        "name": "06-lineage",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/span/06-lineage-3071.png",
+        "y": 3071
+      },
+      {
+        "name": "07-ending",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/span/07-ending-3241.png",
+        "y": 3241
+      }
+    ],
+    "metrics": {
+      "buttonCount": 7,
+      "clientWidth": 360,
+      "imageFailures": [],
+      "innerHeight": 800,
+      "innerWidth": 360,
+      "phraseCounts": {
+        "but": 0,
+        "dontCopy": 0,
+        "not": 0
+      },
+      "scrollHeight": 4041,
+      "scrollWidth": 360,
+      "sections": [
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "32px",
+          "heading": "轻量撑场者",
+          "height": 723,
+          "index": 0,
+          "lineHeight": "49.6px",
+          "top": 62
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "你的空间，先让力找到形状",
+          "height": 301,
+          "index": 1,
+          "lineHeight": "26.7696px",
+          "top": 785
+        },
+        {
+          "background": "color(srgb 0.920392 0.932157 0.909804)",
+          "fontSize": "22.88px",
+          "heading": "最爱让肥皂泡参与设计的人形状先交给真实受力决定",
+          "height": 400,
+          "index": 2,
+          "lineHeight": "26.7696px",
+          "top": 1086
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "三次实锤，看张力怎样找到形状",
+          "height": 1551,
+          "index": 3,
+          "lineHeight": "26.7696px",
+          "top": 1486
+        },
+        {
+          "background": "color(srgb 0.920392 0.932157 0.909804)",
+          "fontSize": "22.88px",
+          "heading": "同一套判断再看两座更清楚",
+          "height": 530,
+          "index": 4,
+          "lineHeight": "26.7696px",
+          "top": 3071
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "24.8px",
+          "heading": "轻量撑场者",
+          "height": 440,
+          "index": 5,
+          "lineHeight": "27.776px",
+          "top": 3601
+        }
+      ]
+    },
+    "slug": "span"
+  },
+  {
+    "captures": [
+      {
+        "name": "01-hero",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/root/01-hero-0.png",
+        "y": 0
+      },
+      {
+        "name": "02-digest",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/root/02-digest-783.png",
+        "y": 783
+      },
+      {
+        "name": "03-architect",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/root/03-architect-1084.png",
+        "y": 1084
+      },
+      {
+        "name": "04-works-a",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/root/04-works-a-1429.png",
+        "y": 1429
+      },
+      {
+        "name": "05-works-b",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/root/05-works-b-2189.png",
+        "y": 2189
+      },
+      {
+        "name": "06-lineage",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/root/06-lineage-2959.png",
+        "y": 2959
+      },
+      {
+        "name": "07-ending",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/root/07-ending-3173.png",
+        "y": 3173
+      }
+    ],
+    "metrics": {
+      "buttonCount": 7,
+      "clientWidth": 360,
+      "imageFailures": [],
+      "innerHeight": 800,
+      "innerWidth": 360,
+      "phraseCounts": {
+        "but": 0,
+        "dontCopy": 0,
+        "not": 0
+      },
+      "scrollHeight": 3973,
+      "scrollWidth": 360,
+      "sections": [
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "32px",
+          "heading": "场所生长者",
+          "height": 721,
+          "index": 0,
+          "lineHeight": "49.6px",
+          "top": 62
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "你的空间，想从场地里长出来",
+          "height": 301,
+          "index": 1,
+          "lineHeight": "26.7696px",
+          "top": 783
+        },
+        {
+          "background": "color(srgb 0.925098 0.93098 0.89098)",
+          "fontSize": "22.88px",
+          "heading": "最不肯把房子摆在风景前的人他更喜欢让房子进入风景",
+          "height": 345,
+          "index": 2,
+          "lineHeight": "26.7696px",
+          "top": 1084
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "三座建筑，看房子怎样扎根",
+          "height": 1497,
+          "index": 3,
+          "lineHeight": "26.7696px",
+          "top": 1429
+        },
+        {
+          "background": "color(srgb 0.925098 0.93098 0.89098)",
+          "fontSize": "22.88px",
+          "heading": "同一套判断再看两座更清楚",
+          "height": 573,
+          "index": 4,
+          "lineHeight": "26.7696px",
+          "top": 2959
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "24.8px",
+          "heading": "场所生长者",
+          "height": 440,
+          "index": 5,
+          "lineHeight": "27.776px",
+          "top": 3533
+        }
+      ]
+    },
+    "slug": "root"
+  },
+  {
+    "captures": [
+      {
+        "name": "01-hero",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/eave/01-hero-0.png",
+        "y": 0
+      },
+      {
+        "name": "02-digest",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/eave/02-digest-785.png",
+        "y": 785
+      },
+      {
+        "name": "03-architect",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/eave/03-architect-1086.png",
+        "y": 1086
+      },
+      {
+        "name": "04-works-a",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/eave/04-works-a-1486.png",
+        "y": 1486
+      },
+      {
+        "name": "05-works-b",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/eave/05-works-b-2246.png",
+        "y": 2246
+      },
+      {
+        "name": "06-lineage",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/eave/06-lineage-3023.png",
+        "y": 3023
+      },
+      {
+        "name": "07-ending",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/eave/07-ending-3179.png",
+        "y": 3179
+      }
+    ],
+    "metrics": {
+      "buttonCount": 7,
+      "clientWidth": 360,
+      "imageFailures": [],
+      "innerHeight": 800,
+      "innerWidth": 360,
+      "phraseCounts": {
+        "but": 0,
+        "dontCopy": 0,
+        "not": 0
+      },
+      "scrollHeight": 3979,
+      "scrollWidth": 360,
+      "sections": [
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "32px",
+          "heading": "屋檐召集者",
+          "height": 723,
+          "index": 0,
+          "lineHeight": "49.6px",
+          "top": 62
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "你的空间，先抬起一片好屋顶",
+          "height": 301,
+          "index": 1,
+          "lineHeight": "26.7696px",
+          "top": 785
+        },
+        {
+          "background": "color(srgb 0.946275 0.920392 0.878039)",
+          "fontSize": "22.88px",
+          "heading": "最会用一片屋顶把全村叫来的人气候和建造一起上课",
+          "height": 400,
+          "index": 2,
+          "lineHeight": "26.7696px",
+          "top": 1086
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "三座建筑，看屋顶怎样真正工作",
+          "height": 1503,
+          "index": 3,
+          "lineHeight": "26.7696px",
+          "top": 1486
+        },
+        {
+          "background": "color(srgb 0.946275 0.920392 0.878039)",
+          "fontSize": "22.88px",
+          "heading": "同一套判断再看两座更清楚",
+          "height": 516,
+          "index": 4,
+          "lineHeight": "26.7696px",
+          "top": 3023
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "24.8px",
+          "heading": "屋檐召集者",
+          "height": 440,
+          "index": 5,
+          "lineHeight": "27.776px",
+          "top": 3539
+        }
+      ]
+    },
+    "slug": "eave"
+  },
+  {
+    "captures": [
+      {
+        "name": "01-hero",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/tide/01-hero-0.png",
+        "y": 0
+      },
+      {
+        "name": "02-digest",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/tide/02-digest-785.png",
+        "y": 785
+      },
+      {
+        "name": "03-architect",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/tide/03-architect-1086.png",
+        "y": 1086
+      },
+      {
+        "name": "04-works-a",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/tide/04-works-a-1486.png",
+        "y": 1486
+      },
+      {
+        "name": "05-works-b",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/tide/05-works-b-2246.png",
+        "y": 2246
+      },
+      {
+        "name": "06-lineage",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/tide/06-lineage-3072.png",
+        "y": 3072
+      },
+      {
+        "name": "07-ending",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/tide/07-ending-3263.png",
+        "y": 3263
+      }
+    ],
+    "metrics": {
+      "buttonCount": 7,
+      "clientWidth": 360,
+      "imageFailures": [],
+      "innerHeight": 800,
+      "innerWidth": 360,
+      "phraseCounts": {
+        "but": 0,
+        "dontCopy": 0,
+        "not": 0
+      },
+      "scrollHeight": 4063,
+      "scrollWidth": 360,
+      "sections": [
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "32px",
+          "heading": "雨水驯兽师",
+          "height": 723,
+          "index": 0,
+          "lineHeight": "49.6px",
+          "top": 62
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "你的空间，愿意给水留位置",
+          "height": 301,
+          "index": 1,
+          "lineHeight": "26.7696px",
+          "top": 785
+        },
+        {
+          "background": "color(srgb 0.920392 0.93098 0.908627)",
+          "fontSize": "22.88px",
+          "heading": "最会劝城市和洪水交朋友的人公园也能是一套基础设施",
+          "height": 400,
+          "index": 2,
+          "lineHeight": "26.7696px",
+          "top": 1086
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "三座公园，看水怎样重新获得路线",
+          "height": 1552,
+          "index": 3,
+          "lineHeight": "26.7696px",
+          "top": 1486
+        },
+        {
+          "background": "color(srgb 0.920392 0.93098 0.908627)",
+          "fontSize": "22.88px",
+          "heading": "同一套判断再看两座更清楚",
+          "height": 551,
+          "index": 4,
+          "lineHeight": "26.7696px",
+          "top": 3072
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "24.8px",
+          "heading": "雨水驯兽师",
+          "height": 440,
+          "index": 5,
+          "lineHeight": "27.776px",
+          "top": 3623
+        }
+      ]
+    },
+    "slug": "tide"
+  },
+  {
+    "captures": [
+      {
+        "name": "01-hero",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/mass/01-hero-0.png",
+        "y": 0
+      },
+      {
+        "name": "02-digest",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/mass/02-digest-783.png",
+        "y": 783
+      },
+      {
+        "name": "03-architect",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/mass/03-architect-1084.png",
+        "y": 1084
+      },
+      {
+        "name": "04-works-a",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/mass/04-works-a-1464.png",
+        "y": 1464
+      },
+      {
+        "name": "05-works-b",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/mass/05-works-b-2224.png",
+        "y": 2224
+      },
+      {
+        "name": "06-lineage",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/mass/06-lineage-3200.png",
+        "y": 3200
+      },
+      {
+        "name": "07-ending",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/mass/07-ending-3341.png",
+        "y": 3341
+      }
+    ],
+    "metrics": {
+      "buttonCount": 7,
+      "clientWidth": 360,
+      "imageFailures": [],
+      "innerHeight": 800,
+      "innerWidth": 360,
+      "phraseCounts": {
+        "but": 0,
+        "dontCopy": 0,
+        "not": 0
+      },
+      "scrollHeight": 4141,
+      "scrollWidth": 360,
+      "sections": [
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "32px",
+          "heading": "混凝土嘴硬者",
+          "height": 721,
+          "index": 0,
+          "lineHeight": "49.6px",
+          "top": 62
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "你的空间，愿意承担重量",
+          "height": 301,
+          "index": 1,
+          "lineHeight": "26.7696px",
+          "top": 783
+        },
+        {
+          "background": "color(srgb 0.942745 0.913333 0.880392)",
+          "fontSize": "22.88px",
+          "heading": "最会把一栋楼塞成一座城的人争议也和体量一样大",
+          "height": 380,
+          "index": 2,
+          "lineHeight": "26.7696px",
+          "top": 1084
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "三座建筑，看重量怎样获得公共理由",
+          "height": 1702,
+          "index": 3,
+          "lineHeight": "26.7696px",
+          "top": 1464
+        },
+        {
+          "background": "color(srgb 0.942745 0.913333 0.880392)",
+          "fontSize": "22.88px",
+          "heading": "同一套判断再看两座更清楚",
+          "height": 501,
+          "index": 4,
+          "lineHeight": "26.7696px",
+          "top": 3200
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "24.8px",
+          "heading": "混凝土嘴硬者",
+          "height": 440,
+          "index": 5,
+          "lineHeight": "27.776px",
+          "top": 3701
+        }
+      ]
+    },
+    "slug": "mass"
+  },
+  {
+    "captures": [
+      {
+        "name": "01-hero",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/void/01-hero-0.png",
+        "y": 0
+      },
+      {
+        "name": "02-digest",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/void/02-digest-785.png",
+        "y": 785
+      },
+      {
+        "name": "03-architect",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/void/03-architect-1064.png",
+        "y": 1064
+      },
+      {
+        "name": "04-works-a",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/void/04-works-a-1409.png",
+        "y": 1409
+      },
+      {
+        "name": "05-works-b",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/void/05-works-b-2169.png",
+        "y": 2169
+      },
+      {
+        "name": "06-lineage",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/void/06-lineage-2909.png",
+        "y": 2909
+      },
+      {
+        "name": "07-ending",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/void/07-ending-3068.png",
+        "y": 3068
+      }
+    ],
+    "metrics": {
+      "buttonCount": 7,
+      "clientWidth": 360,
+      "imageFailures": [],
+      "innerHeight": 800,
+      "innerWidth": 360,
+      "phraseCounts": {
+        "but": 0,
+        "dontCopy": 0,
+        "not": 0
+      },
+      "scrollHeight": 3868,
+      "scrollWidth": 360,
+      "sections": [
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "32px",
+          "heading": "光影留白者",
+          "height": 723,
+          "index": 0,
+          "lineHeight": "49.6px",
+          "top": 62
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "你的空间，不爱说废话",
+          "height": 280,
+          "index": 1,
+          "lineHeight": "26.7696px",
+          "top": 785
+        },
+        {
+          "background": "color(srgb 0.928627 0.925098 0.906274)",
+          "fontSize": "22.88px",
+          "heading": "建筑界最会打拳的那位偏偏最会让空间安静",
+          "height": 345,
+          "index": 2,
+          "lineHeight": "26.7696px",
+          "top": 1064
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "看懂 VOID 不用背理论，看三座建筑就够了",
+          "height": 1466,
+          "index": 3,
+          "lineHeight": "26.7696px",
+          "top": 1409
+        },
+        {
+          "background": "color(srgb 0.928627 0.925098 0.906274)",
+          "fontSize": "22.88px",
+          "heading": "同一套判断再看两座更清楚",
+          "height": 518,
+          "index": 4,
+          "lineHeight": "26.7696px",
+          "top": 2909
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "24.8px",
+          "heading": "光影留白者",
+          "height": 440,
+          "index": 5,
+          "lineHeight": "27.776px",
+          "top": 3428
+        }
+      ]
+    },
+    "slug": "void"
+  },
+  {
+    "captures": [
+      {
+        "name": "01-hero",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/ruin/01-hero-0.png",
+        "y": 0
+      },
+      {
+        "name": "02-digest",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/ruin/02-digest-785.png",
+        "y": 785
+      },
+      {
+        "name": "03-architect",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/ruin/03-architect-1103.png",
+        "y": 1103
+      },
+      {
+        "name": "04-works-a",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/ruin/04-works-a-1494.png",
+        "y": 1494
+      },
+      {
+        "name": "05-works-b",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/ruin/05-works-b-2254.png",
+        "y": 2254
+      },
+      {
+        "name": "06-lineage",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/ruin/06-lineage-3173.png",
+        "y": 3173
+      },
+      {
+        "name": "07-ending",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/ruin/07-ending-3350.png",
+        "y": 3350
+      }
+    ],
+    "metrics": {
+      "buttonCount": 7,
+      "clientWidth": 360,
+      "imageFailures": [],
+      "innerHeight": 800,
+      "innerWidth": 360,
+      "phraseCounts": {
+        "but": 0,
+        "dontCopy": 0,
+        "not": 0
+      },
+      "scrollHeight": 4150,
+      "scrollWidth": 360,
+      "sections": [
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "32px",
+          "heading": "永恒预演者",
+          "height": 723,
+          "index": 0,
+          "lineHeight": "49.6px",
+          "top": 62
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "你的空间，想和时间待久一点",
+          "height": 318,
+          "index": 1,
+          "lineHeight": "26.7696px",
+          "top": 785
+        },
+        {
+          "background": "color(srgb 0.941569 0.921569 0.875686)",
+          "fontSize": "22.88px",
+          "heading": "最会让现代建筑提前拥有遗迹感的人光一进来，墙才开始说话",
+          "height": 392,
+          "index": 2,
+          "lineHeight": "26.7696px",
+          "top": 1103
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "三座建筑，看时间感怎样被建出来",
+          "height": 1644,
+          "index": 3,
+          "lineHeight": "26.7696px",
+          "top": 1494
+        },
+        {
+          "background": "color(srgb 0.941569 0.921569 0.875686)",
+          "fontSize": "22.88px",
+          "heading": "同一套判断再看两座更清楚",
+          "height": 537,
+          "index": 4,
+          "lineHeight": "26.7696px",
+          "top": 3173
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "24.8px",
+          "heading": "永恒预演者",
+          "height": 440,
+          "index": 5,
+          "lineHeight": "27.776px",
+          "top": 3709
+        }
+      ]
+    },
+    "slug": "ruin"
+  },
+  {
+    "captures": [
+      {
+        "name": "01-hero",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/sign/01-hero-0.png",
+        "y": 0
+      },
+      {
+        "name": "02-digest",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/sign/02-digest-785.png",
+        "y": 785
+      },
+      {
+        "name": "03-architect",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/sign/03-architect-1113.png",
+        "y": 1113
+      },
+      {
+        "name": "04-works-a",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/sign/04-works-a-1518.png",
+        "y": 1518
+      },
+      {
+        "name": "05-works-b",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/sign/05-works-b-2278.png",
+        "y": 2278
+      },
+      {
+        "name": "06-lineage",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/sign/06-lineage-3211.png",
+        "y": 3211
+      },
+      {
+        "name": "07-ending",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/sign/07-ending-3439.png",
+        "y": 3439
+      }
+    ],
+    "metrics": {
+      "buttonCount": 7,
+      "clientWidth": 360,
+      "imageFailures": [],
+      "innerHeight": 800,
+      "innerWidth": 360,
+      "phraseCounts": {
+        "but": 0,
+        "dontCopy": 0,
+        "not": 0
+      },
+      "scrollHeight": 4239,
+      "scrollWidth": 360,
+      "sections": [
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "32px",
+          "heading": "建筑玩梗者",
+          "height": 723,
+          "index": 0,
+          "lineHeight": "49.6px",
+          "top": 62
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "你的空间，懂得先借一个熟悉的梗",
+          "height": 328,
+          "index": 1,
+          "lineHeight": "26.7696px",
+          "top": 785
+        },
+        {
+          "background": "color(srgb 0.945098 0.912157 0.89098)",
+          "fontSize": "22.88px",
+          "heading": "最会给严肃建筑塞梗的理论搭档普通街道也被他们请进建筑史",
+          "height": 405,
+          "index": 2,
+          "lineHeight": "26.7696px",
+          "top": 1113
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "三座建筑，看符号怎样被重新编写",
+          "height": 1660,
+          "index": 3,
+          "lineHeight": "26.7696px",
+          "top": 1518
+        },
+        {
+          "background": "color(srgb 0.945098 0.912157 0.89098)",
+          "fontSize": "22.88px",
+          "heading": "同一套判断再看两座更清楚",
+          "height": 587,
+          "index": 4,
+          "lineHeight": "26.7696px",
+          "top": 3211
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "24.8px",
+          "heading": "建筑玩梗者",
+          "height": 440,
+          "index": 5,
+          "lineHeight": "27.776px",
+          "top": 3798
+        }
+      ]
+    },
+    "slug": "sign"
+  },
+  {
+    "captures": [
+      {
+        "name": "01-hero",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/tech/01-hero-0.png",
+        "y": 0
+      },
+      {
+        "name": "02-digest",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/tech/02-digest-783.png",
+        "y": 783
+      },
+      {
+        "name": "03-architect",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/tech/03-architect-1084.png",
+        "y": 1084
+      },
+      {
+        "name": "04-works-a",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/tech/04-works-a-1450.png",
+        "y": 1450
+      },
+      {
+        "name": "05-works-b",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/tech/05-works-b-2210.png",
+        "y": 2210
+      },
+      {
+        "name": "06-lineage",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/tech/06-lineage-3373.png",
+        "y": 3373
+      },
+      {
+        "name": "07-ending",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/tech/07-ending-3582.png",
+        "y": 3582
+      }
+    ],
+    "metrics": {
+      "buttonCount": 7,
+      "clientWidth": 360,
+      "imageFailures": [],
+      "innerHeight": 800,
+      "innerWidth": 360,
+      "phraseCounts": {
+        "but": 0,
+        "dontCopy": 0,
+        "not": 0
+      },
+      "scrollHeight": 4382,
+      "scrollWidth": 360,
+      "sections": [
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "32px",
+          "heading": "系统外挂者",
+          "height": 721,
+          "index": 0,
+          "lineHeight": "49.6px",
+          "top": 62
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "你的空间，最好把系统讲清楚",
+          "height": 301,
+          "index": 1,
+          "lineHeight": "26.7696px",
+          "top": 783
+        },
+        {
+          "background": "color(srgb 0.916863 0.93451 0.91098)",
+          "fontSize": "22.88px",
+          "heading": "最会把建筑拆成一套系统的人连风水也要进入技术会议",
+          "height": 365,
+          "index": 2,
+          "lineHeight": "26.7696px",
+          "top": 1084
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "三座建筑，看系统怎样主动上场",
+          "height": 1889,
+          "index": 3,
+          "lineHeight": "26.7696px",
+          "top": 1450
+        },
+        {
+          "background": "color(srgb 0.916863 0.93451 0.91098)",
+          "fontSize": "22.88px",
+          "heading": "同一套判断再看两座更清楚",
+          "height": 569,
+          "index": 4,
+          "lineHeight": "26.7696px",
+          "top": 3373
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "24.8px",
+          "heading": "系统外挂者",
+          "height": 440,
+          "index": 5,
+          "lineHeight": "27.776px",
+          "top": 3942
+        }
+      ]
+    },
+    "slug": "tech"
+  },
+  {
+    "captures": [
+      {
+        "name": "01-hero",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/veil/01-hero-0.png",
+        "y": 0
+      },
+      {
+        "name": "02-digest",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/veil/02-digest-785.png",
+        "y": 785
+      },
+      {
+        "name": "03-architect",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/veil/03-architect-1086.png",
+        "y": 1086
+      },
+      {
+        "name": "04-works-a",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/veil/04-works-a-1513.png",
+        "y": 1513
+      },
+      {
+        "name": "05-works-b",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/veil/05-works-b-2273.png",
+        "y": 2273
+      },
+      {
+        "name": "06-lineage",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/veil/06-lineage-3033.png",
+        "y": 3033
+      },
+      {
+        "name": "07-ending",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/veil/07-ending-3319.png",
+        "y": 3319
+      }
+    ],
+    "metrics": {
+      "buttonCount": 7,
+      "clientWidth": 360,
+      "imageFailures": [],
+      "innerHeight": 800,
+      "innerWidth": 360,
+      "phraseCounts": {
+        "but": 0,
+        "dontCopy": 0,
+        "not": 0
+      },
+      "scrollHeight": 4119,
+      "scrollWidth": 360,
+      "sections": [
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "32px",
+          "heading": "边界蒸发者",
+          "height": 723,
+          "index": 0,
+          "lineHeight": "49.6px",
+          "top": 62
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "你的空间，喜欢互相借一点",
+          "height": 301,
+          "index": 1,
+          "lineHeight": "26.7696px",
+          "top": 785
+        },
+        {
+          "background": "color(srgb 0.932157 0.927451 0.912157)",
+          "fontSize": "22.88px",
+          "heading": "最会让墙像没来上班的建筑师组合每片薄墙背后都很精确",
+          "height": 427,
+          "index": 2,
+          "lineHeight": "26.7696px",
+          "top": 1086
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "三座建筑，看边界怎样逐渐变轻",
+          "height": 1486,
+          "index": 3,
+          "lineHeight": "26.7696px",
+          "top": 1513
+        },
+        {
+          "background": "color(srgb 0.932157 0.927451 0.912157)",
+          "fontSize": "22.88px",
+          "heading": "同一套判断再看两座更清楚",
+          "height": 646,
+          "index": 4,
+          "lineHeight": "26.7696px",
+          "top": 3033
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "24.8px",
+          "heading": "边界蒸发者",
+          "height": 440,
+          "index": 5,
+          "lineHeight": "27.776px",
+          "top": 3679
+        }
+      ]
+    },
+    "slug": "veil"
+  },
+  {
+    "captures": [
+      {
+        "name": "01-hero",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/flow/01-hero-0.png",
+        "y": 0
+      },
+      {
+        "name": "02-digest",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/flow/02-digest-783.png",
+        "y": 783
+      },
+      {
+        "name": "03-architect",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/flow/03-architect-1111.png",
+        "y": 1111
+      },
+      {
+        "name": "04-works-a",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/flow/04-works-a-1470.png",
+        "y": 1470
+      },
+      {
+        "name": "05-works-b",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/flow/05-works-b-2230.png",
+        "y": 2230
+      },
+      {
+        "name": "06-lineage",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/flow/06-lineage-3049.png",
+        "y": 3049
+      },
+      {
+        "name": "07-ending",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/flow/07-ending-3211.png",
+        "y": 3211
+      }
+    ],
+    "metrics": {
+      "buttonCount": 7,
+      "clientWidth": 360,
+      "imageFailures": [],
+      "innerHeight": 800,
+      "innerWidth": 360,
+      "phraseCounts": {
+        "but": 0,
+        "dontCopy": 0,
+        "not": 0
+      },
+      "scrollHeight": 4011,
+      "scrollWidth": 360,
+      "sections": [
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "32px",
+          "heading": "直线逃犯",
+          "height": 721,
+          "index": 0,
+          "lineHeight": "49.6px",
+          "top": 62
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "你的空间，像一股还没停下来的力",
+          "height": 328,
+          "index": 1,
+          "lineHeight": "26.7696px",
+          "top": 783
+        },
+        {
+          "background": "color(srgb 0.938039 0.921569 0.920392)",
+          "fontSize": "22.88px",
+          "heading": "最早把建筑画成高速运动的人后来真把它们建了出来",
+          "height": 359,
+          "index": 2,
+          "lineHeight": "26.7696px",
+          "top": 1111
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "三座建筑，看流动如何获得路线",
+          "height": 1545,
+          "index": 3,
+          "lineHeight": "26.7696px",
+          "top": 1470
+        },
+        {
+          "background": "color(srgb 0.938039 0.921569 0.920392)",
+          "fontSize": "22.88px",
+          "heading": "同一套判断再看两座更清楚",
+          "height": 522,
+          "index": 4,
+          "lineHeight": "26.7696px",
+          "top": 3049
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "24.8px",
+          "heading": "直线逃犯",
+          "height": 440,
+          "index": 5,
+          "lineHeight": "27.776px",
+          "top": 3571
+        }
+      ]
+    },
+    "slug": "flow"
+  },
+  {
+    "captures": [
+      {
+        "name": "01-hero",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/plus/01-hero-0.png",
+        "y": 0
+      },
+      {
+        "name": "02-digest",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/plus/02-digest-785.png",
+        "y": 785
+      },
+      {
+        "name": "03-architect",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/plus/03-architect-1086.png",
+        "y": 1086
+      },
+      {
+        "name": "04-works-a",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/plus/04-works-a-1466.png",
+        "y": 1466
+      },
+      {
+        "name": "05-works-b",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/plus/05-works-b-2226.png",
+        "y": 2226
+      },
+      {
+        "name": "06-lineage",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/plus/06-lineage-3092.png",
+        "y": 3092
+      },
+      {
+        "name": "07-ending",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/plus/07-ending-3266.png",
+        "y": 3266
+      }
+    ],
+    "metrics": {
+      "buttonCount": 7,
+      "clientWidth": 360,
+      "imageFailures": [],
+      "innerHeight": 800,
+      "innerWidth": 360,
+      "phraseCounts": {
+        "but": 0,
+        "dontCopy": 0,
+        "not": 0
+      },
+      "scrollHeight": 4066,
+      "scrollWidth": 360,
+      "sections": [
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "32px",
+          "heading": "拒绝拆除者",
+          "height": 723,
+          "index": 0,
+          "lineHeight": "49.6px",
+          "top": 62
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "你的空间，能不拆就先别手痒",
+          "height": 301,
+          "index": 1,
+          "lineHeight": "26.7696px",
+          "top": 785
+        },
+        {
+          "background": "color(srgb 0.920392 0.929804 0.899216)",
+          "fontSize": "22.88px",
+          "heading": "最舍不得拆楼的建筑师组合他们更愿意先给生活加一点",
+          "height": 380,
+          "index": 2,
+          "lineHeight": "26.7696px",
+          "top": 1086
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "三次改造，看加法怎样比拆除更有力",
+          "height": 1592,
+          "index": 3,
+          "lineHeight": "26.7696px",
+          "top": 1466
+        },
+        {
+          "background": "color(srgb 0.920392 0.929804 0.899216)",
+          "fontSize": "22.88px",
+          "heading": "同一套判断再看两座更清楚",
+          "height": 534,
+          "index": 4,
+          "lineHeight": "26.7696px",
+          "top": 3092
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "24.8px",
+          "heading": "拒绝拆除者",
+          "height": 440,
+          "index": 5,
+          "lineHeight": "27.776px",
+          "top": 3626
+        }
+      ]
+    },
+    "slug": "plus"
+  },
+  {
+    "captures": [
+      {
+        "name": "01-hero",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/mix/01-hero-0.png",
+        "y": 0
+      },
+      {
+        "name": "02-digest",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/mix/02-digest-785.png",
+        "y": 785
+      },
+      {
+        "name": "03-architect",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/mix/03-architect-1103.png",
+        "y": 1103
+      },
+      {
+        "name": "04-works-a",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/mix/04-works-a-1503.png",
+        "y": 1503
+      },
+      {
+        "name": "05-works-b",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/mix/05-works-b-2263.png",
+        "y": 2263
+      },
+      {
+        "name": "06-lineage",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/mix/06-lineage-3435.png",
+        "y": 3435
+      },
+      {
+        "name": "07-ending",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/mix/07-ending-3727.png",
+        "y": 3727
+      }
+    ],
+    "metrics": {
+      "buttonCount": 7,
+      "clientWidth": 360,
+      "imageFailures": [],
+      "innerHeight": 800,
+      "innerWidth": 360,
+      "phraseCounts": {
+        "but": 0,
+        "dontCopy": 0,
+        "not": 0
+      },
+      "scrollHeight": 4527,
+      "scrollWidth": 360,
+      "sections": [
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "32px",
+          "heading": "功能串台者",
+          "height": 723,
+          "index": 0,
+          "lineHeight": "49.6px",
+          "top": 62
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "你的空间，喜欢让功能当场碰面",
+          "height": 318,
+          "index": 1,
+          "lineHeight": "26.7696px",
+          "top": 785
+        },
+        {
+          "background": "color(srgb 0.945098 0.915686 0.882745)",
+          "fontSize": "22.88px",
+          "heading": "最会把冲突写进剖面图的事务所一栋楼也能像城市路口",
+          "height": 400,
+          "index": 2,
+          "lineHeight": "26.7696px",
+          "top": 1103
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "三座建筑，看程序怎样撞出新路线",
+          "height": 1898,
+          "index": 3,
+          "lineHeight": "26.7696px",
+          "top": 1503
+        },
+        {
+          "background": "color(srgb 0.945098 0.915686 0.882745)",
+          "fontSize": "22.88px",
+          "heading": "同一套判断再看两座更清楚",
+          "height": 652,
+          "index": 4,
+          "lineHeight": "26.7696px",
+          "top": 3435
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "24.8px",
+          "heading": "功能串台者",
+          "height": 440,
+          "index": 5,
+          "lineHeight": "27.776px",
+          "top": 4087
+        }
+      ]
+    },
+    "slug": "mix"
+  },
+  {
+    "captures": [
+      {
+        "name": "01-hero",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/orna/01-hero-0.png",
+        "y": 0
+      },
+      {
+        "name": "02-digest",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/orna/02-digest-783.png",
+        "y": 783
+      },
+      {
+        "name": "03-architect",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/orna/03-architect-1084.png",
+        "y": 1084
+      },
+      {
+        "name": "04-works-a",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/orna/04-works-a-1476.png",
+        "y": 1476
+      },
+      {
+        "name": "05-works-b",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/orna/05-works-b-2236.png",
+        "y": 2236
+      },
+      {
+        "name": "06-lineage",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/orna/06-lineage-3468.png",
+        "y": 3468
+      },
+      {
+        "name": "07-ending",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/orna/07-ending-3763.png",
+        "y": 3763
+      }
+    ],
+    "metrics": {
+      "buttonCount": 7,
+      "clientWidth": 360,
+      "imageFailures": [],
+      "innerHeight": 800,
+      "innerWidth": 360,
+      "phraseCounts": {
+        "but": 0,
+        "dontCopy": 0,
+        "not": 0
+      },
+      "scrollHeight": 4563,
+      "scrollWidth": 360,
+      "sections": [
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "32px",
+          "heading": "装饰上头者",
+          "height": 721,
+          "index": 0,
+          "lineHeight": "49.6px",
+          "top": 62
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "你的空间，相信丰富也能有纪律",
+          "height": 301,
+          "index": 1,
+          "lineHeight": "26.7696px",
+          "top": 783
+        },
+        {
+          "background": "color(srgb 0.95098 0.919216 0.885098)",
+          "fontSize": "22.88px",
+          "heading": "最会让石头、骨头和龙一起上班的人每个细节都有建造任务",
+          "height": 392,
+          "index": 2,
+          "lineHeight": "26.7696px",
+          "top": 1084
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "三座建筑，看丰富怎样保持主次",
+          "height": 1958,
+          "index": 3,
+          "lineHeight": "26.7696px",
+          "top": 1476
+        },
+        {
+          "background": "color(srgb 0.95098 0.919216 0.885098)",
+          "fontSize": "22.88px",
+          "heading": "同一套判断再看两座更清楚",
+          "height": 632,
+          "index": 4,
+          "lineHeight": "26.7696px",
+          "top": 3468
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "24.8px",
+          "heading": "装饰上头者",
+          "height": 463,
+          "index": 5,
+          "lineHeight": "27.776px",
+          "top": 4100
+        }
+      ]
+    },
+    "slug": "orna"
+  },
+  {
+    "captures": [
+      {
+        "name": "01-hero",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/hand/01-hero-0.png",
+        "y": 0
+      },
+      {
+        "name": "02-digest",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/hand/02-digest-783.png",
+        "y": 783
+      },
+      {
+        "name": "03-architect",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/hand/03-architect-1101.png",
+        "y": 1101
+      },
+      {
+        "name": "04-works-a",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/hand/04-works-a-1487.png",
+        "y": 1487
+      },
+      {
+        "name": "05-works-b",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/hand/05-works-b-2247.png",
+        "y": 2247
+      },
+      {
+        "name": "06-lineage",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/hand/06-lineage-2977.png",
+        "y": 2977
+      },
+      {
+        "name": "07-ending",
+        "path": "artifacts/qa/result-v7-segments-final/360x800/hand/07-ending-3149.png",
+        "y": 3149
+      }
+    ],
+    "metrics": {
+      "buttonCount": 7,
+      "clientWidth": 360,
+      "imageFailures": [],
+      "innerHeight": 800,
+      "innerWidth": 360,
+      "phraseCounts": {
+        "but": 0,
+        "dontCopy": 0,
+        "not": 0
+      },
+      "scrollHeight": 3949,
+      "scrollWidth": 360,
+      "sections": [
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "32px",
+          "heading": "旧料收藏者",
+          "height": 721,
+          "index": 0,
+          "lineHeight": "49.6px",
+          "top": 62
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "你的空间，记得材料的前半生",
+          "height": 318,
+          "index": 1,
+          "lineHeight": "26.7696px",
+          "top": 783
+        },
+        {
+          "background": "color(srgb 0.941569 0.920392 0.880392)",
+          "fontSize": "22.88px",
+          "heading": "最爱把拆迁旧瓦重新请回现场的人共同作者也必须被看见",
+          "height": 386,
+          "index": 2,
+          "lineHeight": "26.7696px",
+          "top": 1101
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "22.88px",
+          "heading": "三座建筑，看材料怎样继续活下去",
+          "height": 1456,
+          "index": 3,
+          "lineHeight": "26.7696px",
+          "top": 1487
+        },
+        {
+          "background": "color(srgb 0.941569 0.920392 0.880392)",
+          "fontSize": "22.88px",
+          "heading": "同一套判断再看两座更清楚",
+          "height": 532,
+          "index": 4,
+          "lineHeight": "26.7696px",
+          "top": 2977
+        },
+        {
+          "background": "rgb(241, 238, 229)",
+          "fontSize": "24.8px",
+          "heading": "旧料收藏者",
+          "height": 440,
+          "index": 5,
+          "lineHeight": "27.776px",
+          "top": 3509
+        }
+      ]
+    },
+    "slug": "hand"
+  }
+]

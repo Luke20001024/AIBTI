@@ -1,0 +1,339 @@
+.page {
+  min-height: 100vh;
+  background: #f3efe6;
+  color: #0b1118;
+  padding: 0 0 64px;
+}
+
+.header,
+.family,
+.footer {
+  width: min(100%, 1480px);
+  margin: 0 auto;
+  padding-inline: clamp(18px, 4vw, 56px);
+}
+
+.header {
+  padding-top: clamp(28px, 6vw, 76px);
+  padding-bottom: clamp(34px, 6vw, 72px);
+}
+
+.header h1 {
+  max-width: 900px;
+  margin: clamp(16px, 4vw, 46px) 0 12px;
+  font-size: clamp(48px, 9vw, 122px);
+  line-height: 0.92;
+  letter-spacing: -0.075em;
+}
+
+.header h1 span {
+  display: block;
+}
+
+.header > p {
+  max-width: 620px;
+  margin: 0;
+  font-size: clamp(17px, 2.2vw, 25px);
+  line-height: 1.45;
+  color: #34383a;
+}
+
+.methodLabels {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: clamp(32px, 5vw, 64px);
+  padding-top: 12px;
+  border-top: 1px solid rgba(11, 17, 24, 0.24);
+  color: #18589c;
+  font-family: var(--font-barlow-condensed), "Arial Narrow", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.families {
+  display: grid;
+  gap: clamp(46px, 7vw, 96px);
+}
+
+.familyHeading {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 9px;
+  align-items: start;
+  margin-bottom: 17px;
+}
+
+.familyHeading > span {
+  padding-top: 5px;
+  color: #18589c;
+  font-family: var(--font-barlow-condensed), "Arial Narrow", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.familyHeading h2 {
+  margin: 0;
+  font-size: clamp(26px, 3vw, 44px);
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+.familyHeading p {
+  margin: 8px 0 0;
+  color: #575958;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(10px, 1.5vw, 22px);
+}
+
+.card {
+  min-width: 0;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 180ms ease;
+}
+
+.card:focus-visible {
+  outline: 3px solid var(--persona-accent);
+  outline-offset: 5px;
+}
+
+.posterFrame {
+  position: relative;
+  background: var(--persona-soft);
+}
+
+.poster {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center;
+  transition: transform 240ms ease;
+}
+
+.posterFrameFallback {
+  aspect-ratio: 1 / 1.34;
+  overflow: hidden;
+}
+
+.posterPlan {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(14px, 2vw, 28px);
+  background:
+    linear-gradient(135deg, transparent 46%, color-mix(in srgb, var(--persona-accent) 28%, transparent) 46.2%, transparent 47%),
+    var(--persona-soft);
+}
+
+.posterPlan::after {
+  position: absolute;
+  right: -0.08em;
+  bottom: -0.25em;
+  color: color-mix(in srgb, var(--persona-accent) 28%, transparent);
+  content: attr(data-code);
+  font-family: var(--font-barlow-condensed), Impact, sans-serif;
+}
+
+.posterCode {
+  color: var(--persona-accent);
+  font-family: var(--font-barlow-condensed), Impact, sans-serif;
+  font-size: clamp(44px, 6.4vw, 90px);
+  font-weight: 800;
+  line-height: 0.82;
+  letter-spacing: -0.04em;
+}
+
+.posterName {
+  max-width: 5em;
+  font-size: clamp(22px, 2.8vw, 38px);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+}
+
+.posterLine {
+  width: 32%;
+  height: 3px;
+  background: var(--persona-accent);
+}
+
+.cardCopy {
+  padding: 13px 1px 0;
+}
+
+.cardTitleRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.cardTitleRow span {
+  color: var(--persona-accent);
+  font-family: var(--font-barlow-condensed), "Arial Narrow", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.cardTitleRow strong {
+  min-width: 0;
+  font-size: clamp(17px, 1.8vw, 23px);
+  line-height: 1.1;
+  text-align: right;
+}
+
+.language {
+  margin: 7px 0 0;
+  color: var(--persona-accent);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.judgment {
+  margin: 5px 0 0;
+  color: #575958;
+  font-size: 13px;
+  line-height: 1.42;
+}
+
+.footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: clamp(64px, 10vw, 132px);
+  padding-top: 24px;
+  border-top: 1px solid rgba(11, 17, 24, 0.32);
+}
+
+.footer p {
+  max-width: 470px;
+  margin: 0;
+  font-size: clamp(18px, 2.4vw, 30px);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+}
+
+.footer a {
+  flex: 0 0 auto;
+  padding: 12px 18px;
+  background: #0b1118;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (hover: hover) {
+  .card:hover {
+    transform: translateY(-4px);
+  }
+
+  .card:hover .poster {
+    transform: scale(1.018);
+  }
+}
+
+@media (max-width: 700px) {
+  .page {
+    padding-bottom: 42px;
+  }
+
+  .header,
+  .family,
+  .footer {
+    padding-inline: 16px;
+  }
+
+  .header {
+    padding-top: 22px;
+    padding-bottom: 38px;
+  }
+
+  .header h1 {
+    margin-top: 10px;
+    font-size: clamp(48px, 16vw, 68px);
+    line-height: 1;
+  }
+
+  .header h1 span:first-child {
+    margin-bottom: 2px;
+    font-size: 0.9em;
+  }
+
+  .header > p {
+    max-width: 19em;
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  .methodLabels {
+    margin-top: 34px;
+    font-size: 12px;
+  }
+
+  .families {
+    gap: 52px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 10px;
+  }
+
+  .posterFrameFallback {
+    aspect-ratio: 1 / 1.42;
+  }
+
+  .cardCopy {
+    padding-top: 10px;
+  }
+
+  .cardTitleRow {
+    display: block;
+  }
+
+  .cardTitleRow span,
+  .cardTitleRow strong {
+    display: block;
+    text-align: left;
+  }
+
+  .cardTitleRow strong {
+    margin-top: 1px;
+    font-size: 17px;
+  }
+
+  .judgment {
+    font-size: 12px;
+  }
+
+  .footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .footer a {
+    align-self: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .poster {
+    transition: none;
+  }
+}

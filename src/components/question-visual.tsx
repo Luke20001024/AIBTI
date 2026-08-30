@@ -37,6 +37,7 @@ export function QuestionVisual({ questionId, optionIndex }: QuestionVisualProps)
       width={1200}
       height={800}
       alt=""
+      data-media-fit="intrinsic"
       loading="eager"
       decoding="async"
     />

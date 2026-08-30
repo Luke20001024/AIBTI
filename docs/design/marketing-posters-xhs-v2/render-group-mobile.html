@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ArcBTI — The Complete Cast / Mobile First</title>
+    <style>
+      @font-face {
+        font-family: "Noto Sans SC Local";
+        src: url("file:///C:/Windows/Fonts/NotoSansSC-VF.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 100 900;
+      }
+
+      @font-face {
+        font-family: "Noto Serif SC Local";
+        src: url("file:///C:/Windows/Fonts/NotoSerifSC-VF.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 100 900;
+      }
+
+      @font-face {
+        font-family: "Arial Narrow Local";
+        src: url("file:///C:/Windows/Fonts/ARIALN.TTF") format("truetype");
+        font-style: normal;
+        font-weight: 400;
+      }
+
+      @font-face {
+        font-family: "Impact Local";
+        src: url("file:///C:/Windows/Fonts/impact.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 400;
+      }
+
+      :root {
+        --paper: #f2e8d5;
+        --ink: #11100e;
+        --red: #e44a31;
+      }
+
+      * { box-sizing: border-box; }
+
+      html,
+      body {
+        width: 1080px;
+        height: 1440px;
+        margin: 0;
+        overflow: hidden;
+        background: var(--paper);
+      }
+
+      .poster {
+        position: relative;
+        width: 1080px;
+        height: 1440px;
+        overflow: hidden;
+        isolation: isolate;
+        background: var(--paper);
+        color: var(--ink);
+      }
+
+      .paper-texture {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -4;
+      }
+
+      .art-window {
+        position: absolute;
+        top: 260px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        z-index: -2;
+      }
+
+      .art-window img {
+        position: absolute;
+        top: -180px;
+        left: 0;
+        width: 1080px;
+        height: 1440px;
+        object-fit: cover;
+      }
+
+      .art-window::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 235px;
+        background: linear-gradient(to bottom, transparent 0%, rgba(12, 12, 11, 0.72) 46%, #0d0d0c 100%);
+      }
+
+      .brandbar {
+        position: absolute;
+        top: 30px;
+        left: 44px;
+        right: 44px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid rgba(17, 16, 14, 0.85);
+        padding-bottom: 8px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .brand-name {
+        font-family: "Impact Local", sans-serif;
+        font-size: 32px;
+        line-height: 1;
+        letter-spacing: 0.6px;
+      }
+
+      .brand-chip {
+        padding: 4px 8px 3px;
+        background: var(--red);
+        color: var(--paper);
+        font-family: "Arial Narrow Local", sans-serif;
+        font-size: 11px;
+        line-height: 1;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+      }
+
+      .series {
+        font-family: "Arial Narrow Local", sans-serif;
+        font-size: 11px;
+        line-height: 1;
+        letter-spacing: 2.2px;
+        text-transform: uppercase;
+      }
+
+      .headline {
+        position: absolute;
+        top: 79px;
+        left: 44px;
+        right: 44px;
+        font-family: "Noto Serif SC Local", serif;
+        font-weight: 900;
+      }
+
+      .line-one {
+        font-size: 102px;
+        line-height: 0.98;
+        letter-spacing: -5px;
+        white-space: nowrap;
+      }
+
+      .line-one .number {
+        color: var(--red);
+      }
+
+      .line-two {
+        margin-top: -1px;
+        color: var(--red);
+        font-size: 138px;
+        line-height: 0.96;
+        letter-spacing: -8px;
+        white-space: nowrap;
+      }
+
+      .question-sticker {
+        position: absolute;
+        top: 181px;
+        right: 48px;
+        padding: 11px 16px 10px;
+        background: var(--ink);
+        color: var(--paper);
+        box-shadow: 7px 7px 0 var(--red);
+        transform: rotate(2.6deg);
+        font-family: "Noto Sans SC Local", sans-serif;
+        font-size: 29px;
+        font-weight: 850;
+        line-height: 1;
+        letter-spacing: -0.5px;
+      }
+
+      .question-sticker::before {
+        content: "?";
+        display: inline-grid;
+        place-items: center;
+        width: 31px;
+        height: 31px;
+        margin-right: 7px;
+        border-radius: 50%;
+        background: var(--red);
+        color: var(--paper);
+        font-family: "Impact Local", sans-serif;
+        font-size: 22px;
+        transform: translateY(-1px);
+      }
+
+      .mobile-cta {
+        position: absolute;
+        left: 44px;
+        right: 44px;
+        bottom: 26px;
+        min-height: 104px;
+        padding: 14px 20px 13px 25px;
+        border-left: 8px solid var(--red);
+        background: rgba(15, 15, 14, 0.96);
+        color: var(--paper);
+        display: block;
+      }
+
+      .cta-main {
+        font-family: "Noto Serif SC Local", serif;
+        font-size: 38px;
+        font-weight: 850;
+        line-height: 1.05;
+        letter-spacing: -1px;
+      }
+
+      .cta-main .red {
+        color: var(--red);
+      }
+
+      .cta-sub {
+        margin-top: 7px;
+        font-family: "Noto Sans SC Local", sans-serif;
+        font-size: 20px;
+        font-weight: 560;
+        line-height: 1;
+        letter-spacing: 0.1px;
+        color: rgba(242, 232, 213, 0.76);
+      }
+    </style>
+  </head>
+  <body>
+    <main id="poster-cast-mobile-v3" class="poster" aria-label="ArcBTI 16种建筑人格全员到齐手机优先海报">
+      <img class="paper-texture" src="../../../public/images/campaign/xhs-posters-v2/02-whole-cast-ensemble-art-v2.png" alt="" />
+      <div class="art-window">
+        <img src="../../../public/images/campaign/xhs-posters-v2/02-whole-cast-ensemble-art-v2.png" alt="" />
+      </div>
+
+      <header class="brandbar">
+        <div class="brand"><span class="brand-name">ArcBTI</span><span class="brand-chip">Original by Luke</span></div>
+        <div class="series">The Complete Cast · 16 / 16</div>
+      </header>
+
+      <section class="headline">
+        <div class="line-one"><span class="number">16种</span>建筑人格</div>
+        <div class="line-two">全员到齐！</div>
+      </section>
+
+      <div class="question-sticker">猜猜你更像谁？</div>
+
+      <footer class="mobile-cta">
+        <div class="cta-main">看看你会喜欢<span class="red">怎样的建筑</span></div>
+        <div class="cta-sub">也许，你会更明白自己为什么喜欢它。</div>
+      </footer>
+    </main>
+    <script>window.__POSTER_READY__ = true;</script>
+  </body>
+</html>

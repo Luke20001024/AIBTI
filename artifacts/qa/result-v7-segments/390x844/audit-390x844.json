@@ -1,0 +1,1906 @@
+[
+  {
+    "slug": "grid",
+    "buttonCount": 7,
+    "clientWidth": 390,
+    "dialogTriggers": 6,
+    "disabled": 0,
+    "imageCount": 7,
+    "imageFailures": [],
+    "innerHeight": 844,
+    "innerWidth": 390,
+    "overflow": false,
+    "phraseCounts": {
+      "but": 1,
+      "dontCopy": 0,
+      "not": 1
+    },
+    "scrollHeight": 4069,
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "background": "rgb(7, 16, 26)",
+        "fontSize": "32px",
+        "heading": "网格秩序者",
+        "height": 782,
+        "i": 0,
+        "lineHeight": "49.6px",
+        "top": 62
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "你的空间，喜欢各就各位",
+        "height": 304,
+        "i": 1,
+        "lineHeight": "29.4314px",
+        "top": 844
+      },
+      {
+        "background": "color(srgb 0.923922 0.927451 0.919216)",
+        "fontSize": "25.155px",
+        "heading": "最会把建筑压到只剩关系的人连空白都排得有理有据",
+        "height": 398,
+        "i": 2,
+        "lineHeight": "29.4314px",
+        "top": 1148
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "看懂 GRID 不用画网格，看三次让位就够了",
+        "height": 1506,
+        "i": 3,
+        "lineHeight": "29.4314px",
+        "top": 1546
+      },
+      {
+        "background": "color(srgb 0.923922 0.927451 0.919216)",
+        "fontSize": "25.155px",
+        "heading": "同一套判断再看两座更清楚",
+        "height": 543,
+        "i": 4,
+        "lineHeight": "29.4314px",
+        "top": 3087
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "24.8px",
+        "heading": "网格秩序者",
+        "height": 440,
+        "i": 5,
+        "lineHeight": "27.776px",
+        "top": 3630
+      }
+    ],
+    "captures": [
+      {
+        "name": "01-hero",
+        "y": 0,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\grid\\01-hero-0.png",
+        "bytes": 53092
+      },
+      {
+        "name": "02-digest",
+        "y": 844,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\grid\\02-digest-844.png",
+        "bytes": 53459
+      },
+      {
+        "name": "03-architect",
+        "y": 1148,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\grid\\03-architect-1148.png",
+        "bytes": 53962
+      },
+      {
+        "name": "04-works-a",
+        "y": 1546,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\grid\\04-works-a-1546.png",
+        "bytes": 67384
+      },
+      {
+        "name": "05-works-b",
+        "y": 2306,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\grid\\05-works-b-2306.png",
+        "bytes": 66187
+      },
+      {
+        "name": "06-lineage",
+        "y": 3087,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\grid\\06-lineage-3087.png",
+        "bytes": 50731
+      },
+      {
+        "name": "07-ending",
+        "y": 3225,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\grid\\07-ending-3225.png",
+        "bytes": 50481
+      }
+    ]
+  },
+  {
+    "slug": "span",
+    "buttonCount": 7,
+    "clientWidth": 390,
+    "dialogTriggers": 6,
+    "disabled": 0,
+    "imageCount": 7,
+    "imageFailures": [],
+    "innerHeight": 844,
+    "innerWidth": 390,
+    "overflow": false,
+    "phraseCounts": {
+      "but": 0,
+      "dontCopy": 0,
+      "not": 1
+    },
+    "scrollHeight": 4039,
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "background": "rgb(7, 16, 26)",
+        "fontSize": "32px",
+        "heading": "轻量撑场者",
+        "height": 782,
+        "i": 0,
+        "lineHeight": "49.6px",
+        "top": 62
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "你的空间，先让力找到形状",
+        "height": 304,
+        "i": 1,
+        "lineHeight": "29.4314px",
+        "top": 844
+      },
+      {
+        "background": "color(srgb 0.920392 0.932157 0.909804)",
+        "fontSize": "25.155px",
+        "heading": "最爱让肥皂泡参与设计的人形状先交给真实受力决定",
+        "height": 398,
+        "i": 2,
+        "lineHeight": "29.4314px",
+        "top": 1148
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "三次实锤，看张力怎样找到形状",
+        "height": 1476,
+        "i": 3,
+        "lineHeight": "29.4314px",
+        "top": 1546
+      },
+      {
+        "background": "color(srgb 0.920392 0.932157 0.909804)",
+        "fontSize": "25.155px",
+        "heading": "同一套判断再看两座更清楚",
+        "height": 543,
+        "i": 4,
+        "lineHeight": "29.4314px",
+        "top": 3056
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "24.8px",
+        "heading": "轻量撑场者",
+        "height": 440,
+        "i": 5,
+        "lineHeight": "27.776px",
+        "top": 3599
+      }
+    ],
+    "captures": [
+      {
+        "name": "01-hero",
+        "y": 0,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\span\\01-hero-0.png",
+        "bytes": 44723
+      },
+      {
+        "name": "02-digest",
+        "y": 844,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\span\\02-digest-844.png",
+        "bytes": 55699
+      },
+      {
+        "name": "03-architect",
+        "y": 1148,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\span\\03-architect-1148.png",
+        "bytes": 60705
+      },
+      {
+        "name": "04-works-a",
+        "y": 1546,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\span\\04-works-a-1546.png",
+        "bytes": 84096
+      },
+      {
+        "name": "05-works-b",
+        "y": 2306,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\span\\05-works-b-2306.png",
+        "bytes": 72369
+      },
+      {
+        "name": "06-lineage",
+        "y": 3056,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\span\\06-lineage-3056.png",
+        "bytes": 53219
+      },
+      {
+        "name": "07-ending",
+        "y": 3195,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\span\\07-ending-3195.png",
+        "bytes": 52083
+      }
+    ]
+  },
+  {
+    "slug": "root",
+    "buttonCount": 7,
+    "clientWidth": 390,
+    "dialogTriggers": 6,
+    "disabled": 0,
+    "imageCount": 7,
+    "imageFailures": [],
+    "innerHeight": 844,
+    "innerWidth": 390,
+    "overflow": false,
+    "phraseCounts": {
+      "but": 2,
+      "dontCopy": 0,
+      "not": 1
+    },
+    "scrollHeight": 4061,
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "background": "rgb(7, 16, 26)",
+        "fontSize": "32px",
+        "heading": "场所生长者",
+        "height": 782,
+        "i": 0,
+        "lineHeight": "49.6px",
+        "top": 62
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "你的空间，想从场地里长出来",
+        "height": 304,
+        "i": 1,
+        "lineHeight": "29.4314px",
+        "top": 844
+      },
+      {
+        "background": "color(srgb 0.925098 0.93098 0.89098)",
+        "fontSize": "25.155px",
+        "heading": "最不肯把房子摆在风景前的人他更喜欢让房子进入风景",
+        "height": 398,
+        "i": 2,
+        "lineHeight": "29.4314px",
+        "top": 1148
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "三座建筑，看房子怎样扎根",
+        "height": 1498,
+        "i": 3,
+        "lineHeight": "29.4314px",
+        "top": 1546
+      },
+      {
+        "background": "color(srgb 0.925098 0.93098 0.89098)",
+        "fontSize": "25.155px",
+        "heading": "同一套判断再看两座更清楚",
+        "height": 543,
+        "i": 4,
+        "lineHeight": "29.4314px",
+        "top": 3078
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "24.8px",
+        "heading": "场所生长者",
+        "height": 440,
+        "i": 5,
+        "lineHeight": "27.776px",
+        "top": 3621
+      }
+    ],
+    "captures": [
+      {
+        "name": "01-hero",
+        "y": 0,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\root\\01-hero-0.png",
+        "bytes": 54534
+      },
+      {
+        "name": "02-digest",
+        "y": 844,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\root\\02-digest-844.png",
+        "bytes": 57019
+      },
+      {
+        "name": "03-architect",
+        "y": 1148,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\root\\03-architect-1148.png",
+        "bytes": 65538
+      },
+      {
+        "name": "04-works-a",
+        "y": 1546,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\root\\04-works-a-1546.png",
+        "bytes": 73864
+      },
+      {
+        "name": "05-works-b",
+        "y": 2306,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\root\\05-works-b-2306.png",
+        "bytes": 51982
+      },
+      {
+        "name": "06-lineage",
+        "y": 3078,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\root\\06-lineage-3078.png",
+        "bytes": 56637
+      },
+      {
+        "name": "07-ending",
+        "y": 3217,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\root\\07-ending-3217.png",
+        "bytes": 55066
+      }
+    ]
+  },
+  {
+    "slug": "eave",
+    "buttonCount": 7,
+    "clientWidth": 390,
+    "dialogTriggers": 6,
+    "disabled": 0,
+    "imageCount": 7,
+    "imageFailures": [],
+    "innerHeight": 844,
+    "innerWidth": 390,
+    "overflow": false,
+    "phraseCounts": {
+      "but": 0,
+      "dontCopy": 0,
+      "not": 0
+    },
+    "scrollHeight": 4061,
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "background": "rgb(7, 16, 26)",
+        "fontSize": "32px",
+        "heading": "屋檐召集者",
+        "height": 782,
+        "i": 0,
+        "lineHeight": "49.6px",
+        "top": 62
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "你的空间，先抬起一片好屋顶",
+        "height": 304,
+        "i": 1,
+        "lineHeight": "29.4314px",
+        "top": 844
+      },
+      {
+        "background": "color(srgb 0.946275 0.920392 0.878039)",
+        "fontSize": "25.155px",
+        "heading": "最会用一片屋顶把全村叫来的人气候和建造一起上课",
+        "height": 398,
+        "i": 2,
+        "lineHeight": "29.4314px",
+        "top": 1148
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "三座建筑，看屋顶怎样真正工作",
+        "height": 1498,
+        "i": 3,
+        "lineHeight": "29.4314px",
+        "top": 1546
+      },
+      {
+        "background": "color(srgb 0.946275 0.920392 0.878039)",
+        "fontSize": "25.155px",
+        "heading": "同一套判断再看两座更清楚",
+        "height": 543,
+        "i": 4,
+        "lineHeight": "29.4314px",
+        "top": 3078
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "24.8px",
+        "heading": "屋檐召集者",
+        "height": 440,
+        "i": 5,
+        "lineHeight": "27.776px",
+        "top": 3621
+      }
+    ],
+    "captures": [
+      {
+        "name": "01-hero",
+        "y": 0,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\eave\\01-hero-0.png",
+        "bytes": 51500
+      },
+      {
+        "name": "02-digest",
+        "y": 844,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\eave\\02-digest-844.png",
+        "bytes": 56203
+      },
+      {
+        "name": "03-architect",
+        "y": 1148,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\eave\\03-architect-1148.png",
+        "bytes": 61075
+      },
+      {
+        "name": "04-works-a",
+        "y": 1546,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\eave\\04-works-a-1546.png",
+        "bytes": 70368
+      },
+      {
+        "name": "05-works-b",
+        "y": 2306,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\eave\\05-works-b-2306.png",
+        "bytes": 62288
+      },
+      {
+        "name": "06-lineage",
+        "y": 3078,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\eave\\06-lineage-3078.png",
+        "bytes": 49568
+      },
+      {
+        "name": "07-ending",
+        "y": 3217,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\eave\\07-ending-3217.png",
+        "bytes": 48792
+      }
+    ]
+  },
+  {
+    "slug": "tide",
+    "buttonCount": 7,
+    "clientWidth": 390,
+    "dialogTriggers": 6,
+    "disabled": 0,
+    "imageCount": 7,
+    "imageFailures": [],
+    "innerHeight": 844,
+    "innerWidth": 390,
+    "overflow": false,
+    "phraseCounts": {
+      "but": 0,
+      "dontCopy": 0,
+      "not": 0
+    },
+    "scrollHeight": 4090,
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "background": "rgb(7, 16, 26)",
+        "fontSize": "32px",
+        "heading": "雨水驯兽师",
+        "height": 782,
+        "i": 0,
+        "lineHeight": "49.6px",
+        "top": 62
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "你的空间，愿意给水留位置",
+        "height": 304,
+        "i": 1,
+        "lineHeight": "29.4314px",
+        "top": 844
+      },
+      {
+        "background": "color(srgb 0.920392 0.93098 0.908627)",
+        "fontSize": "25.155px",
+        "heading": "最会劝城市和洪水交朋友的人公园也能是一套基础设施",
+        "height": 398,
+        "i": 2,
+        "lineHeight": "29.4314px",
+        "top": 1148
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "三座公园，看水怎样重新获得路线",
+        "height": 1527,
+        "i": 3,
+        "lineHeight": "29.4314px",
+        "top": 1546
+      },
+      {
+        "background": "color(srgb 0.920392 0.93098 0.908627)",
+        "fontSize": "25.155px",
+        "heading": "同一套判断再看两座更清楚",
+        "height": 543,
+        "i": 4,
+        "lineHeight": "29.4314px",
+        "top": 3107
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "24.8px",
+        "heading": "雨水驯兽师",
+        "height": 440,
+        "i": 5,
+        "lineHeight": "27.776px",
+        "top": 3650
+      }
+    ],
+    "captures": [
+      {
+        "name": "01-hero",
+        "y": 0,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\tide\\01-hero-0.png",
+        "bytes": 59326
+      },
+      {
+        "name": "02-digest",
+        "y": 844,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\tide\\02-digest-844.png",
+        "bytes": 57132
+      },
+      {
+        "name": "03-architect",
+        "y": 1148,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\tide\\03-architect-1148.png",
+        "bytes": 63372
+      },
+      {
+        "name": "04-works-a",
+        "y": 1546,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\tide\\04-works-a-1546.png",
+        "bytes": 73437
+      },
+      {
+        "name": "05-works-b",
+        "y": 2306,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\tide\\05-works-b-2306.png",
+        "bytes": 65660
+      },
+      {
+        "name": "06-lineage",
+        "y": 3107,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\tide\\06-lineage-3107.png",
+        "bytes": 54087
+      },
+      {
+        "name": "07-ending",
+        "y": 3246,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\tide\\07-ending-3246.png",
+        "bytes": 53680
+      }
+    ]
+  },
+  {
+    "slug": "mass",
+    "buttonCount": 7,
+    "clientWidth": 390,
+    "dialogTriggers": 6,
+    "disabled": 0,
+    "imageCount": 7,
+    "imageFailures": [],
+    "innerHeight": 844,
+    "innerWidth": 390,
+    "overflow": false,
+    "phraseCounts": {
+      "but": 0,
+      "dontCopy": 0,
+      "not": 1
+    },
+    "scrollHeight": 4090,
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "background": "rgb(7, 16, 26)",
+        "fontSize": "32px",
+        "heading": "混凝土嘴硬者",
+        "height": 782,
+        "i": 0,
+        "lineHeight": "49.6px",
+        "top": 62
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "你的空间，愿意承担重量",
+        "height": 304,
+        "i": 1,
+        "lineHeight": "29.4314px",
+        "top": 844
+      },
+      {
+        "background": "color(srgb 0.942745 0.913333 0.880392)",
+        "fontSize": "25.155px",
+        "heading": "最会把一栋楼塞成一座城的人争议也和体量一样大",
+        "height": 398,
+        "i": 2,
+        "lineHeight": "29.4314px",
+        "top": 1148
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "三座建筑，看重量怎样获得公共理由",
+        "height": 1527,
+        "i": 3,
+        "lineHeight": "29.4314px",
+        "top": 1546
+      },
+      {
+        "background": "color(srgb 0.942745 0.913333 0.880392)",
+        "fontSize": "25.155px",
+        "heading": "同一套判断再看两座更清楚",
+        "height": 543,
+        "i": 4,
+        "lineHeight": "29.4314px",
+        "top": 3107
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "24.8px",
+        "heading": "混凝土嘴硬者",
+        "height": 440,
+        "i": 5,
+        "lineHeight": "27.776px",
+        "top": 3650
+      }
+    ],
+    "captures": [
+      {
+        "name": "01-hero",
+        "y": 0,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\mass\\01-hero-0.png",
+        "bytes": 50521
+      },
+      {
+        "name": "02-digest",
+        "y": 844,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\mass\\02-digest-844.png",
+        "bytes": 54526
+      },
+      {
+        "name": "03-architect",
+        "y": 1148,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\mass\\03-architect-1148.png",
+        "bytes": 57351
+      },
+      {
+        "name": "04-works-a",
+        "y": 1546,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\mass\\04-works-a-1546.png",
+        "bytes": 56356
+      },
+      {
+        "name": "05-works-b",
+        "y": 2306,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\mass\\05-works-b-2306.png",
+        "bytes": 50495
+      },
+      {
+        "name": "06-lineage",
+        "y": 3107,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\mass\\06-lineage-3107.png",
+        "bytes": 50677
+      },
+      {
+        "name": "07-ending",
+        "y": 3246,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\mass\\07-ending-3246.png",
+        "bytes": 50324
+      }
+    ]
+  },
+  {
+    "slug": "void",
+    "buttonCount": 7,
+    "clientWidth": 390,
+    "dialogTriggers": 6,
+    "disabled": 0,
+    "imageCount": 7,
+    "imageFailures": [],
+    "innerHeight": 844,
+    "innerWidth": 390,
+    "overflow": false,
+    "phraseCounts": {
+      "but": 1,
+      "dontCopy": 0,
+      "not": 1
+    },
+    "scrollHeight": 4068,
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "background": "rgb(7, 16, 26)",
+        "fontSize": "32px",
+        "heading": "光影留白者",
+        "height": 782,
+        "i": 0,
+        "lineHeight": "49.6px",
+        "top": 62
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "你的空间，不爱说废话",
+        "height": 282,
+        "i": 1,
+        "lineHeight": "29.4314px",
+        "top": 844
+      },
+      {
+        "background": "color(srgb 0.928627 0.925098 0.906274)",
+        "fontSize": "25.155px",
+        "heading": "建筑界最会打拳的那位偏偏最会让空间安静",
+        "height": 398,
+        "i": 2,
+        "lineHeight": "29.4314px",
+        "top": 1126
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "看懂 VOID 不用背理论，看三座建筑就够了",
+        "height": 1506,
+        "i": 3,
+        "lineHeight": "29.4314px",
+        "top": 1525
+      },
+      {
+        "background": "color(srgb 0.928627 0.925098 0.906274)",
+        "fontSize": "25.155px",
+        "heading": "同一套判断再看两座更清楚",
+        "height": 563,
+        "i": 4,
+        "lineHeight": "29.4314px",
+        "top": 3065
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "24.8px",
+        "heading": "光影留白者",
+        "height": 440,
+        "i": 5,
+        "lineHeight": "27.776px",
+        "top": 3628
+      }
+    ],
+    "captures": [
+      {
+        "name": "01-hero",
+        "y": 0,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\void\\01-hero-0.png",
+        "bytes": 40741
+      },
+      {
+        "name": "02-digest",
+        "y": 844,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\void\\02-digest-844.png",
+        "bytes": 51077
+      },
+      {
+        "name": "03-architect",
+        "y": 1126,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\void\\03-architect-1126.png",
+        "bytes": 46022
+      },
+      {
+        "name": "04-works-a",
+        "y": 1525,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\void\\04-works-a-1525.png",
+        "bytes": 64148
+      },
+      {
+        "name": "05-works-b",
+        "y": 2285,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\void\\05-works-b-2285.png",
+        "bytes": 51976
+      },
+      {
+        "name": "06-lineage",
+        "y": 3065,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\void\\06-lineage-3065.png",
+        "bytes": 52102
+      },
+      {
+        "name": "07-ending",
+        "y": 3224,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\void\\07-ending-3224.png",
+        "bytes": 50427
+      }
+    ]
+  },
+  {
+    "slug": "ruin",
+    "buttonCount": 7,
+    "clientWidth": 390,
+    "dialogTriggers": 6,
+    "disabled": 0,
+    "imageCount": 7,
+    "imageFailures": [],
+    "innerHeight": 844,
+    "innerWidth": 390,
+    "overflow": false,
+    "phraseCounts": {
+      "but": 0,
+      "dontCopy": 0,
+      "not": 0
+    },
+    "scrollHeight": 4156,
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "background": "rgb(7, 16, 26)",
+        "fontSize": "32px",
+        "heading": "永恒预演者",
+        "height": 782,
+        "i": 0,
+        "lineHeight": "49.6px",
+        "top": 62
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "你的空间，想和时间待久一点",
+        "height": 304,
+        "i": 1,
+        "lineHeight": "29.4314px",
+        "top": 844
+      },
+      {
+        "background": "color(srgb 0.941569 0.921569 0.875686)",
+        "fontSize": "25.155px",
+        "heading": "最会让现代建筑提前拥有遗迹感的人光一进来，墙才开始说话",
+        "height": 428,
+        "i": 2,
+        "lineHeight": "29.4314px",
+        "top": 1148
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "三座建筑，看时间感怎样被建出来",
+        "height": 1527,
+        "i": 3,
+        "lineHeight": "29.4314px",
+        "top": 1576
+      },
+      {
+        "background": "color(srgb 0.941569 0.921569 0.875686)",
+        "fontSize": "25.155px",
+        "heading": "同一套判断再看两座更清楚",
+        "height": 580,
+        "i": 4,
+        "lineHeight": "29.4314px",
+        "top": 3137
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "24.8px",
+        "heading": "永恒预演者",
+        "height": 440,
+        "i": 5,
+        "lineHeight": "27.776px",
+        "top": 3716
+      }
+    ],
+    "captures": [
+      {
+        "name": "01-hero",
+        "y": 0,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\ruin\\01-hero-0.png",
+        "bytes": 39877
+      },
+      {
+        "name": "02-digest",
+        "y": 844,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\ruin\\02-digest-844.png",
+        "bytes": 51515
+      },
+      {
+        "name": "03-architect",
+        "y": 1148,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\ruin\\03-architect-1148.png",
+        "bytes": 50272
+      },
+      {
+        "name": "04-works-a",
+        "y": 1576,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\ruin\\04-works-a-1576.png",
+        "bytes": 49867
+      },
+      {
+        "name": "05-works-b",
+        "y": 2336,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\ruin\\05-works-b-2336.png",
+        "bytes": 54433
+      },
+      {
+        "name": "06-lineage",
+        "y": 3137,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\ruin\\06-lineage-3137.png",
+        "bytes": 57433
+      },
+      {
+        "name": "07-ending",
+        "y": 3312,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\ruin\\07-ending-3312.png",
+        "bytes": 54440
+      }
+    ]
+  },
+  {
+    "slug": "sign",
+    "buttonCount": 7,
+    "clientWidth": 390,
+    "dialogTriggers": 6,
+    "disabled": 0,
+    "imageCount": 7,
+    "imageFailures": [],
+    "innerHeight": 844,
+    "innerWidth": 390,
+    "overflow": false,
+    "phraseCounts": {
+      "but": 0,
+      "dontCopy": 0,
+      "not": 0
+    },
+    "scrollHeight": 4161,
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "background": "rgb(7, 16, 26)",
+        "fontSize": "32px",
+        "heading": "建筑玩梗者",
+        "height": 782,
+        "i": 0,
+        "lineHeight": "49.6px",
+        "top": 62
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "你的空间，懂得先借一个熟悉的梗",
+        "height": 333,
+        "i": 1,
+        "lineHeight": "29.4314px",
+        "top": 844
+      },
+      {
+        "background": "color(srgb 0.945098 0.912157 0.89098)",
+        "fontSize": "25.155px",
+        "heading": "最会给严肃建筑塞梗的理论搭档普通街道也被他们请进建筑史",
+        "height": 398,
+        "i": 2,
+        "lineHeight": "29.4314px",
+        "top": 1177
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "三座建筑，看符号怎样被重新编写",
+        "height": 1527,
+        "i": 3,
+        "lineHeight": "29.4314px",
+        "top": 1576
+      },
+      {
+        "background": "color(srgb 0.945098 0.912157 0.89098)",
+        "fontSize": "25.155px",
+        "heading": "同一套判断再看两座更清楚",
+        "height": 584,
+        "i": 4,
+        "lineHeight": "29.4314px",
+        "top": 3137
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "24.8px",
+        "heading": "建筑玩梗者",
+        "height": 440,
+        "i": 5,
+        "lineHeight": "27.776px",
+        "top": 3720
+      }
+    ],
+    "captures": [
+      {
+        "name": "01-hero",
+        "y": 0,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\sign\\01-hero-0.png",
+        "bytes": 49210
+      },
+      {
+        "name": "02-digest",
+        "y": 844,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\sign\\02-digest-844.png",
+        "bytes": 59186
+      },
+      {
+        "name": "03-architect",
+        "y": 1177,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\sign\\03-architect-1177.png",
+        "bytes": 63448
+      },
+      {
+        "name": "04-works-a",
+        "y": 1576,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\sign\\04-works-a-1576.png",
+        "bytes": 61303
+      },
+      {
+        "name": "05-works-b",
+        "y": 2336,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\sign\\05-works-b-2336.png",
+        "bytes": 52598
+      },
+      {
+        "name": "06-lineage",
+        "y": 3137,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\sign\\06-lineage-3137.png",
+        "bytes": 52783
+      },
+      {
+        "name": "07-ending",
+        "y": 3317,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\sign\\07-ending-3317.png",
+        "bytes": 52830
+      }
+    ]
+  },
+  {
+    "slug": "tech",
+    "buttonCount": 7,
+    "clientWidth": 390,
+    "dialogTriggers": 6,
+    "disabled": 0,
+    "imageCount": 7,
+    "imageFailures": [],
+    "innerHeight": 844,
+    "innerWidth": 390,
+    "overflow": false,
+    "phraseCounts": {
+      "but": 1,
+      "dontCopy": 0,
+      "not": 0
+    },
+    "scrollHeight": 4044,
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "background": "rgb(7, 16, 26)",
+        "fontSize": "32px",
+        "heading": "系统外挂者",
+        "height": 782,
+        "i": 0,
+        "lineHeight": "49.6px",
+        "top": 62
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "你的空间，最好把系统讲清楚",
+        "height": 304,
+        "i": 1,
+        "lineHeight": "29.4314px",
+        "top": 844
+      },
+      {
+        "background": "color(srgb 0.916863 0.93451 0.91098)",
+        "fontSize": "25.155px",
+        "heading": "最会把建筑拆成一套系统的人连风水也要进入技术会议",
+        "height": 398,
+        "i": 2,
+        "lineHeight": "29.4314px",
+        "top": 1148
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "三座建筑，看系统怎样主动上场",
+        "height": 1498,
+        "i": 3,
+        "lineHeight": "29.4314px",
+        "top": 1546
+      },
+      {
+        "background": "color(srgb 0.916863 0.93451 0.91098)",
+        "fontSize": "25.155px",
+        "heading": "同一套判断再看两座更清楚",
+        "height": 526,
+        "i": 4,
+        "lineHeight": "29.4314px",
+        "top": 3078
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "24.8px",
+        "heading": "系统外挂者",
+        "height": 440,
+        "i": 5,
+        "lineHeight": "27.776px",
+        "top": 3604
+      }
+    ],
+    "captures": [
+      {
+        "name": "01-hero",
+        "y": 0,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\tech\\01-hero-0.png",
+        "bytes": 64928
+      },
+      {
+        "name": "02-digest",
+        "y": 844,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\tech\\02-digest-844.png",
+        "bytes": 60134
+      },
+      {
+        "name": "03-architect",
+        "y": 1148,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\tech\\03-architect-1148.png",
+        "bytes": 68246
+      },
+      {
+        "name": "04-works-a",
+        "y": 1546,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\tech\\04-works-a-1546.png",
+        "bytes": 73375
+      },
+      {
+        "name": "05-works-b",
+        "y": 2306,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\tech\\05-works-b-2306.png",
+        "bytes": 64662
+      },
+      {
+        "name": "06-lineage",
+        "y": 3078,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\tech\\06-lineage-3078.png",
+        "bytes": 58755
+      },
+      {
+        "name": "07-ending",
+        "y": 3200,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\tech\\07-ending-3200.png",
+        "bytes": 57398
+      }
+    ]
+  },
+  {
+    "slug": "veil",
+    "buttonCount": 7,
+    "clientWidth": 390,
+    "dialogTriggers": 6,
+    "disabled": 0,
+    "imageCount": 7,
+    "imageFailures": [],
+    "innerHeight": 844,
+    "innerWidth": 390,
+    "overflow": false,
+    "phraseCounts": {
+      "but": 0,
+      "dontCopy": 0,
+      "not": 1
+    },
+    "scrollHeight": 4125,
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "background": "rgb(7, 16, 26)",
+        "fontSize": "32px",
+        "heading": "边界蒸发者",
+        "height": 782,
+        "i": 0,
+        "lineHeight": "49.6px",
+        "top": 62
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "你的空间，喜欢互相借一点",
+        "height": 304,
+        "i": 1,
+        "lineHeight": "29.4314px",
+        "top": 844
+      },
+      {
+        "background": "color(srgb 0.932157 0.927451 0.912157)",
+        "fontSize": "25.155px",
+        "heading": "最会让墙像没来上班的建筑师组合每片薄墙背后都很精确",
+        "height": 428,
+        "i": 2,
+        "lineHeight": "29.4314px",
+        "top": 1148
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "三座建筑，看边界怎样逐渐变轻",
+        "height": 1512,
+        "i": 3,
+        "lineHeight": "29.4314px",
+        "top": 1576
+      },
+      {
+        "background": "color(srgb 0.932157 0.927451 0.912157)",
+        "fontSize": "25.155px",
+        "heading": "同一套判断再看两座更清楚",
+        "height": 564,
+        "i": 4,
+        "lineHeight": "29.4314px",
+        "top": 3122
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "24.8px",
+        "heading": "边界蒸发者",
+        "height": 440,
+        "i": 5,
+        "lineHeight": "27.776px",
+        "top": 3686
+      }
+    ],
+    "captures": [
+      {
+        "name": "01-hero",
+        "y": 0,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\veil\\01-hero-0.png",
+        "bytes": 40111
+      },
+      {
+        "name": "02-digest",
+        "y": 844,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\veil\\02-digest-844.png",
+        "bytes": 56516
+      },
+      {
+        "name": "03-architect",
+        "y": 1148,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\veil\\03-architect-1148.png",
+        "bytes": 51470
+      },
+      {
+        "name": "04-works-a",
+        "y": 1576,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\veil\\04-works-a-1576.png",
+        "bytes": 52021
+      },
+      {
+        "name": "05-works-b",
+        "y": 2336,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\veil\\05-works-b-2336.png",
+        "bytes": 46500
+      },
+      {
+        "name": "06-lineage",
+        "y": 3122,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\veil\\06-lineage-3122.png",
+        "bytes": 50023
+      },
+      {
+        "name": "07-ending",
+        "y": 3281,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\veil\\07-ending-3281.png",
+        "bytes": 49432
+      }
+    ]
+  },
+  {
+    "slug": "flow",
+    "buttonCount": 7,
+    "clientWidth": 390,
+    "dialogTriggers": 6,
+    "disabled": 0,
+    "imageCount": 7,
+    "imageFailures": [],
+    "innerHeight": 844,
+    "innerWidth": 390,
+    "overflow": false,
+    "phraseCounts": {
+      "but": 0,
+      "dontCopy": 0,
+      "not": 2
+    },
+    "scrollHeight": 4090,
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "background": "rgb(7, 16, 26)",
+        "fontSize": "32px",
+        "heading": "直线逃犯",
+        "height": 782,
+        "i": 0,
+        "lineHeight": "49.6px",
+        "top": 62
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "你的空间，像一股还没停下来的力",
+        "height": 333,
+        "i": 1,
+        "lineHeight": "29.4314px",
+        "top": 844
+      },
+      {
+        "background": "color(srgb 0.938039 0.921569 0.920392)",
+        "fontSize": "25.155px",
+        "heading": "最早把建筑画成高速运动的人后来真把它们建了出来",
+        "height": 398,
+        "i": 2,
+        "lineHeight": "29.4314px",
+        "top": 1177
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "三座建筑，看流动如何获得路线",
+        "height": 1498,
+        "i": 3,
+        "lineHeight": "29.4314px",
+        "top": 1576
+      },
+      {
+        "background": "color(srgb 0.938039 0.921569 0.920392)",
+        "fontSize": "25.155px",
+        "heading": "同一套判断再看两座更清楚",
+        "height": 543,
+        "i": 4,
+        "lineHeight": "29.4314px",
+        "top": 3107
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "24.8px",
+        "heading": "直线逃犯",
+        "height": 440,
+        "i": 5,
+        "lineHeight": "27.776px",
+        "top": 3650
+      }
+    ],
+    "captures": [
+      {
+        "name": "01-hero",
+        "y": 0,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\flow\\01-hero-0.png",
+        "bytes": 47595
+      },
+      {
+        "name": "02-digest",
+        "y": 844,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\flow\\02-digest-844.png",
+        "bytes": 52966
+      },
+      {
+        "name": "03-architect",
+        "y": 1177,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\flow\\03-architect-1177.png",
+        "bytes": 49541
+      },
+      {
+        "name": "04-works-a",
+        "y": 1576,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\flow\\04-works-a-1576.png",
+        "bytes": 50975
+      },
+      {
+        "name": "05-works-b",
+        "y": 2336,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\flow\\05-works-b-2336.png",
+        "bytes": 62131
+      },
+      {
+        "name": "06-lineage",
+        "y": 3107,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\flow\\06-lineage-3107.png",
+        "bytes": 51729
+      },
+      {
+        "name": "07-ending",
+        "y": 3246,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\flow\\07-ending-3246.png",
+        "bytes": 50997
+      }
+    ]
+  },
+  {
+    "slug": "plus",
+    "buttonCount": 7,
+    "clientWidth": 390,
+    "dialogTriggers": 6,
+    "disabled": 0,
+    "imageCount": 7,
+    "imageFailures": [],
+    "innerHeight": 844,
+    "innerWidth": 390,
+    "overflow": false,
+    "phraseCounts": {
+      "but": 0,
+      "dontCopy": 0,
+      "not": 1
+    },
+    "scrollHeight": 4107,
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "background": "rgb(7, 16, 26)",
+        "fontSize": "32px",
+        "heading": "拒绝拆除者",
+        "height": 782,
+        "i": 0,
+        "lineHeight": "49.6px",
+        "top": 62
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "你的空间，能不拆就先别手痒",
+        "height": 304,
+        "i": 1,
+        "lineHeight": "29.4314px",
+        "top": 844
+      },
+      {
+        "background": "color(srgb 0.920392 0.929804 0.899216)",
+        "fontSize": "25.155px",
+        "heading": "最舍不得拆楼的建筑师组合他们更愿意先给生活加一点",
+        "height": 398,
+        "i": 2,
+        "lineHeight": "29.4314px",
+        "top": 1148
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "三次改造，看加法怎样比拆除更有力",
+        "height": 1527,
+        "i": 3,
+        "lineHeight": "29.4314px",
+        "top": 1546
+      },
+      {
+        "background": "color(srgb 0.920392 0.929804 0.899216)",
+        "fontSize": "25.155px",
+        "heading": "同一套判断再看两座更清楚",
+        "height": 560,
+        "i": 4,
+        "lineHeight": "29.4314px",
+        "top": 3107
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "24.8px",
+        "heading": "拒绝拆除者",
+        "height": 440,
+        "i": 5,
+        "lineHeight": "27.776px",
+        "top": 3667
+      }
+    ],
+    "captures": [
+      {
+        "name": "01-hero",
+        "y": 0,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\plus\\01-hero-0.png",
+        "bytes": 59609
+      },
+      {
+        "name": "02-digest",
+        "y": 844,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\plus\\02-digest-844.png",
+        "bytes": 57642
+      },
+      {
+        "name": "03-architect",
+        "y": 1148,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\plus\\03-architect-1148.png",
+        "bytes": 64077
+      },
+      {
+        "name": "04-works-a",
+        "y": 1546,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\plus\\04-works-a-1546.png",
+        "bytes": 76169
+      },
+      {
+        "name": "05-works-b",
+        "y": 2306,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\plus\\05-works-b-2306.png",
+        "bytes": 61306
+      },
+      {
+        "name": "06-lineage",
+        "y": 3107,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\plus\\06-lineage-3107.png",
+        "bytes": 52790
+      },
+      {
+        "name": "07-ending",
+        "y": 3263,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\plus\\07-ending-3263.png",
+        "bytes": 51975
+      }
+    ]
+  },
+  {
+    "slug": "mix",
+    "buttonCount": 7,
+    "clientWidth": 390,
+    "dialogTriggers": 6,
+    "disabled": 0,
+    "imageCount": 7,
+    "imageFailures": [],
+    "innerHeight": 844,
+    "innerWidth": 390,
+    "overflow": false,
+    "phraseCounts": {
+      "but": 0,
+      "dontCopy": 0,
+      "not": 0
+    },
+    "scrollHeight": 4090,
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "background": "rgb(7, 16, 26)",
+        "fontSize": "32px",
+        "heading": "功能串台者",
+        "height": 782,
+        "i": 0,
+        "lineHeight": "49.6px",
+        "top": 62
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "你的空间，喜欢让功能当场碰面",
+        "height": 304,
+        "i": 1,
+        "lineHeight": "29.4314px",
+        "top": 844
+      },
+      {
+        "background": "color(srgb 0.945098 0.915686 0.882745)",
+        "fontSize": "25.155px",
+        "heading": "最会把冲突写进剖面图的事务所一栋楼也能像城市路口",
+        "height": 398,
+        "i": 2,
+        "lineHeight": "29.4314px",
+        "top": 1148
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "三座建筑，看程序怎样撞出新路线",
+        "height": 1527,
+        "i": 3,
+        "lineHeight": "29.4314px",
+        "top": 1546
+      },
+      {
+        "background": "color(srgb 0.945098 0.915686 0.882745)",
+        "fontSize": "25.155px",
+        "heading": "同一套判断再看两座更清楚",
+        "height": 543,
+        "i": 4,
+        "lineHeight": "29.4314px",
+        "top": 3107
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "24.8px",
+        "heading": "功能串台者",
+        "height": 440,
+        "i": 5,
+        "lineHeight": "27.776px",
+        "top": 3650
+      }
+    ],
+    "captures": [
+      {
+        "name": "01-hero",
+        "y": 0,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\mix\\01-hero-0.png",
+        "bytes": 56987
+      },
+      {
+        "name": "02-digest",
+        "y": 844,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\mix\\02-digest-844.png",
+        "bytes": 55730
+      },
+      {
+        "name": "03-architect",
+        "y": 1148,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\mix\\03-architect-1148.png",
+        "bytes": 66329
+      },
+      {
+        "name": "04-works-a",
+        "y": 1546,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\mix\\04-works-a-1546.png",
+        "bytes": 63631
+      },
+      {
+        "name": "05-works-b",
+        "y": 2306,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\mix\\05-works-b-2306.png",
+        "bytes": 55703
+      },
+      {
+        "name": "06-lineage",
+        "y": 3107,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\mix\\06-lineage-3107.png",
+        "bytes": 54716
+      },
+      {
+        "name": "07-ending",
+        "y": 3246,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\mix\\07-ending-3246.png",
+        "bytes": 54249
+      }
+    ]
+  },
+  {
+    "slug": "orna",
+    "buttonCount": 7,
+    "clientWidth": 390,
+    "dialogTriggers": 6,
+    "disabled": 0,
+    "imageCount": 7,
+    "imageFailures": [],
+    "innerHeight": 844,
+    "innerWidth": 390,
+    "overflow": false,
+    "phraseCounts": {
+      "but": 0,
+      "dontCopy": 0,
+      "not": 0
+    },
+    "scrollHeight": 4090,
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "background": "rgb(7, 16, 26)",
+        "fontSize": "32px",
+        "heading": "装饰上头者",
+        "height": 782,
+        "i": 0,
+        "lineHeight": "49.6px",
+        "top": 62
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "你的空间，相信丰富也能有纪律",
+        "height": 304,
+        "i": 1,
+        "lineHeight": "29.4314px",
+        "top": 844
+      },
+      {
+        "background": "color(srgb 0.95098 0.919216 0.885098)",
+        "fontSize": "25.155px",
+        "heading": "最会让石头、骨头和龙一起上班的人每个细节都有建造任务",
+        "height": 428,
+        "i": 2,
+        "lineHeight": "29.4314px",
+        "top": 1148
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "三座建筑，看丰富怎样保持主次",
+        "height": 1498,
+        "i": 3,
+        "lineHeight": "29.4314px",
+        "top": 1576
+      },
+      {
+        "background": "color(srgb 0.95098 0.919216 0.885098)",
+        "fontSize": "25.155px",
+        "heading": "同一套判断再看两座更清楚",
+        "height": 543,
+        "i": 4,
+        "lineHeight": "29.4314px",
+        "top": 3107
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "24.8px",
+        "heading": "装饰上头者",
+        "height": 440,
+        "i": 5,
+        "lineHeight": "27.776px",
+        "top": 3650
+      }
+    ],
+    "captures": [
+      {
+        "name": "01-hero",
+        "y": 0,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\orna\\01-hero-0.png",
+        "bytes": 59987
+      },
+      {
+        "name": "02-digest",
+        "y": 844,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\orna\\02-digest-844.png",
+        "bytes": 53017
+      },
+      {
+        "name": "03-architect",
+        "y": 1148,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\orna\\03-architect-1148.png",
+        "bytes": 59982
+      },
+      {
+        "name": "04-works-a",
+        "y": 1576,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\orna\\04-works-a-1576.png",
+        "bytes": 68335
+      },
+      {
+        "name": "05-works-b",
+        "y": 2336,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\orna\\05-works-b-2336.png",
+        "bytes": 65565
+      },
+      {
+        "name": "06-lineage",
+        "y": 3107,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\orna\\06-lineage-3107.png",
+        "bytes": 54589
+      },
+      {
+        "name": "07-ending",
+        "y": 3246,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\orna\\07-ending-3246.png",
+        "bytes": 54373
+      }
+    ]
+  },
+  {
+    "slug": "hand",
+    "buttonCount": 7,
+    "clientWidth": 390,
+    "dialogTriggers": 6,
+    "disabled": 0,
+    "imageCount": 7,
+    "imageFailures": [],
+    "innerHeight": 844,
+    "innerWidth": 390,
+    "overflow": false,
+    "phraseCounts": {
+      "but": 2,
+      "dontCopy": 0,
+      "not": 1
+    },
+    "scrollHeight": 4119,
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "background": "rgb(7, 16, 26)",
+        "fontSize": "32px",
+        "heading": "旧料收藏者",
+        "height": 782,
+        "i": 0,
+        "lineHeight": "49.6px",
+        "top": 62
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "你的空间，记得材料的前半生",
+        "height": 304,
+        "i": 1,
+        "lineHeight": "29.4314px",
+        "top": 844
+      },
+      {
+        "background": "color(srgb 0.941569 0.920392 0.880392)",
+        "fontSize": "25.155px",
+        "heading": "最爱把拆迁旧瓦重新请回现场的人共同作者也必须被看见",
+        "height": 428,
+        "i": 2,
+        "lineHeight": "29.4314px",
+        "top": 1148
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "25.155px",
+        "heading": "三座建筑，看材料怎样继续活下去",
+        "height": 1527,
+        "i": 3,
+        "lineHeight": "29.4314px",
+        "top": 1576
+      },
+      {
+        "background": "color(srgb 0.941569 0.920392 0.880392)",
+        "fontSize": "25.155px",
+        "heading": "同一套判断再看两座更清楚",
+        "height": 543,
+        "i": 4,
+        "lineHeight": "29.4314px",
+        "top": 3137
+      },
+      {
+        "background": "rgb(241, 238, 229)",
+        "fontSize": "24.8px",
+        "heading": "旧料收藏者",
+        "height": 440,
+        "i": 5,
+        "lineHeight": "27.776px",
+        "top": 3680
+      }
+    ],
+    "captures": [
+      {
+        "name": "01-hero",
+        "y": 0,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\hand\\01-hero-0.png",
+        "bytes": 53627
+      },
+      {
+        "name": "02-digest",
+        "y": 844,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\hand\\02-digest-844.png",
+        "bytes": 51432
+      },
+      {
+        "name": "03-architect",
+        "y": 1148,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\hand\\03-architect-1148.png",
+        "bytes": 53554
+      },
+      {
+        "name": "04-works-a",
+        "y": 1576,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\hand\\04-works-a-1576.png",
+        "bytes": 56175
+      },
+      {
+        "name": "05-works-b",
+        "y": 2336,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\hand\\05-works-b-2336.png",
+        "bytes": 62612
+      },
+      {
+        "name": "06-lineage",
+        "y": 3137,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\hand\\06-lineage-3137.png",
+        "bytes": 49762
+      },
+      {
+        "name": "07-ending",
+        "y": 3275,
+        "path": "I:\\ABTI\\void-v2-app\\artifacts\\qa\\result-v7-segments\\390x844\\hand\\07-ending-3275.png",
+        "bytes": 49676
+      }
+    ]
+  }
+]
