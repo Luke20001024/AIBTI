@@ -20,3 +20,12 @@ tmp/
 .DS_Store
 AGENTS.md
 CLAUDE.md
+/.codex/
+/xhs-mini-tool/
+/xhs-mini-tool-v2/dist/
+/xhs-mini-tool-v2/qa/
+/xhs-mini-tool-v2/bridge-qa-report.json
+/xhs-mini-tool-v2/mobile-qa-report.json
+/xhs-mini-tool-v2/optimization-report.json
+/xhs-mini-tool-v2/validation-report.json
+/public/images/interface/draw-card-back-v1.webp
