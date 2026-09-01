@@ -60,10 +60,11 @@ jobs:
       - name: Install representative mobile browsers
         run: pnpm exec playwright install --with-deps chromium webkit
 
-      - name: Verify the packaged site in a mobile browser
-        run: |
-          node xhs-mini-tool-v2/scripts/offline-smoke.mjs
-          node xhs-mini-tool-v2/scripts/web-mobile-qa.mjs
+      - name: Verify the offline web package
+        run: node xhs-mini-tool-v2/scripts/offline-smoke.mjs
+
+      - name: Verify Android and iPhone mobile compatibility
+        run: node xhs-mini-tool-v2/scripts/web-mobile-qa.mjs
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

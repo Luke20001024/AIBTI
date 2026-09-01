@@ -143,7 +143,9 @@ try {
   }
 } catch (error) {
   report.status = "failed";
-  report.errors.push(error instanceof Error ? error.message : String(error));
+  const message = error instanceof Error ? error.message : String(error);
+  report.errors.push(message);
+  console.error(`::error title=ArcBTI mobile compatibility QA::${message}`);
   process.exitCode = 1;
 } finally {
   server.close();

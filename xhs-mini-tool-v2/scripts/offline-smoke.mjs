@@ -71,6 +71,8 @@ try {
   if (broken.length) errors.push(`broken images: ${broken.join(", ")}`);
   if (await page.locator(".persona-card").count() !== 16) errors.push("persona directory count is not 16");
   await context.close();
+} catch (error) {
+  errors.push(error instanceof Error ? error.message : String(error));
 } finally {
   await browser.close();
 }
@@ -85,4 +87,7 @@ const report = {
 fs.mkdirSync(path.dirname(output), { recursive: true });
 fs.writeFileSync(output, `${JSON.stringify(report, null, 2)}\n`, "utf8");
 console.log(JSON.stringify(report, null, 2));
-if (errors.length) process.exitCode = 1;
+if (errors.length) {
+  console.error(`::error title=ArcBTI ${releaseTarget} offline smoke::${errors.join(" | ")}`);
+  process.exitCode = 1;
+}
