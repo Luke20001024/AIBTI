@@ -141,9 +141,9 @@ const openPersona = async (page, code, slug, outputName) => {
 
 try {
   for (const engine of engines) {
-    const browser = await engine.type.launch({ headless: true });
-    try {
-      for (const viewport of viewports) {
+    for (const viewport of viewports) {
+      const browser = await engine.type.launch({ headless: true });
+      try {
         currentRunLabel = `${engine.name}/${viewport.name}`;
         currentCheckpoint = "creating browser context";
         const context = await browser.newContext({
@@ -151,6 +151,7 @@ try {
           isMobile: true,
           hasTouch: true,
           locale: "zh-CN",
+          reducedMotion: "reduce",
           userAgent: engine.userAgent,
         });
         const page = await context.newPage();
@@ -177,6 +178,8 @@ try {
         await page.locator("[data-action='draw-card']").nth(2).click();
         currentCheckpoint = "waiting for drawn result";
         await page.locator(".result-screen").waitFor();
+        currentCheckpoint = "waiting for drawn card download resource";
+        await readyDownloadLink(page);
         currentCheckpoint = "opening persona directory";
         await page.getByRole("button", { name: /看看其他 15 种人格/ }).click();
         await waitForDirectory(page, runtimeErrors);
@@ -191,9 +194,9 @@ try {
         assert(runtimeErrors.length === 0, `${engine.name}/${viewport.name}: ${runtimeErrors.join(" | ")}`);
         report.runs.push({ engine: engine.name, ...viewport, status: "passed", runtimeErrors });
         await context.close();
+      } finally {
+        await browser.close();
       }
-    } finally {
-      await browser.close();
     }
   }
 } catch (error) {

@@ -178,6 +178,11 @@ const WEB_RESULT_HERO_OFFSET: Record<string, string> = {
   void: "0%",
 };
 
+const LARGE_PERSONA_POSTERS = new Set(["flow", "grid", "hand", "mass", "orna", "root", "tech"]);
+const posterSizeMarkup = (slug: string) => LARGE_PERSONA_POSTERS.has(slug)
+  ? 'width="887" height="1774"'
+  : 'width="780" height="1564"';
+
 const questionImagePath = (question: Question, optionId: string) =>
   assetPath(`/images/questions-v3/${question.id.toLowerCase()}-${optionId.toLowerCase()}.webp`);
 
@@ -570,7 +575,7 @@ const fullResultMarkup = (result: QuizResult) => {
       </header>
 
       <div class="result-hero">
-        <img src="${escapeHtml(posterPath(persona))}" alt="${escapeHtml(persona.characterAlt)}" data-persona-slug="${escapeHtml(persona.slug)}" loading="eager">
+        <img src="${escapeHtml(posterPath(persona))}" alt="${escapeHtml(persona.characterAlt)}" data-persona-slug="${escapeHtml(persona.slug)}" ${posterSizeMarkup(persona.slug)} loading="eager">
       </div>
 
       <div class="result-content editorial-result">
@@ -859,7 +864,7 @@ const renderDirectory = () => {
             style="--card-accent:${escapeHtml(persona.accent)}${IS_WEB_RELEASE ? `;--persona-poster-offset:${WEB_RESULT_HERO_OFFSET[persona.slug] ?? "0%"}` : ""}"
           >
             <span class="persona-card-visual">
-              <img src="${posterPath(persona)}" alt="${escapeHtml(persona.name)}人格海报" data-persona-slug="${escapeHtml(persona.slug)}" loading="lazy">
+              <img src="${posterPath(persona)}" alt="${escapeHtml(persona.name)}人格海报" data-persona-slug="${escapeHtml(persona.slug)}" ${posterSizeMarkup(persona.slug)} loading="lazy">
             </span>
             <span class="persona-card-copy">
               <span class="persona-card-code">${escapeHtml(persona.code)}</span>
