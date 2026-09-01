@@ -200,20 +200,37 @@ if (optimize.status !== 0) {
 
 const optimizationReport = JSON.parse(fs.readFileSync(optimizationReportPath, "utf8"));
 const assetMap = {};
-const embeddedGalleryByOutput = new Map();
+const webExternalGalleryOutputs = new Set(releaseTarget === "web"
+  ? [...new Map(
+      optimizationReport.entries
+        .filter((entry) => entry.encodedTier === "gallery")
+        .map((entry) => [entry.output, entry]),
+    ).values()]
+      .sort((left, right) => right.outputBytes - left.outputBytes)
+      .slice(0, 60)
+      .map((entry) => entry.output)
+  : []);
+const embeddedAssetByOutput = new Map();
+const embeddedOutputs = new Set();
 const embeddedGalleryOutputs = new Set();
+const embeddedHeroOutputs = new Set();
 
 for (const entry of optimizationReport.entries) {
-  if (entry.encodedTier === "gallery") {
-    let dataUri = embeddedGalleryByOutput.get(entry.output);
+  const embedGallery = entry.encodedTier === "gallery" && !webExternalGalleryOutputs.has(entry.output);
+  const embedHero = releaseTarget === "web" && entry.encodedTier === "hero";
+  if (embedGallery || embedHero) {
+    let dataUri = embeddedAssetByOutput.get(entry.output);
     if (!dataUri) {
       const relative = entry.output.replace(/^\.\//, "");
       const absolute = path.join(distRoot, relative);
-      if (!fs.existsSync(absolute)) throw new Error(`Missing gallery output before embedding: ${entry.output}`);
-      dataUri = `data:image/webp;base64,${fs.readFileSync(absolute).toString("base64")}`;
-      embeddedGalleryByOutput.set(entry.output, dataUri);
-      embeddedGalleryOutputs.add(entry.output);
+      if (!fs.existsSync(absolute)) throw new Error(`Missing output before embedding: ${entry.output}`);
+      const mime = path.extname(relative).toLowerCase() === ".png" ? "image/png" : "image/webp";
+      dataUri = `data:${mime};base64,${fs.readFileSync(absolute).toString("base64")}`;
+      embeddedAssetByOutput.set(entry.output, dataUri);
+      embeddedOutputs.add(entry.output);
     }
+    if (embedGallery) embeddedGalleryOutputs.add(entry.output);
+    if (embedHero) embeddedHeroOutputs.add(entry.output);
     assetMap[entry.key] = dataUri;
     entry.embedded = true;
     entry.embeddedIn = "./assets/app.js";
@@ -223,11 +240,11 @@ for (const entry of optimizationReport.entries) {
   }
 }
 
-const galleryDirectory = path.join(distRoot, "assets", "media", "gallery");
-if (fs.existsSync(galleryDirectory)) {
-  fs.rmSync(galleryDirectory, { recursive: true, force: true });
+for (const output of embeddedOutputs) {
+  const relative = output.replace(/^\.\//, "");
+  fs.rmSync(path.join(distRoot, relative), { force: true });
 }
-const standaloneImageFiles = optimizationReport.outputFiles - embeddedGalleryOutputs.size;
+const standaloneImageFiles = optimizationReport.outputFiles - embeddedOutputs.size;
 
 const runtime = `/* ArcBTI ${releaseTarget === "web" ? "GitHub Pages web release" : "XHS complete mini tool"} · generated classic-script bundle */
 (function () {
@@ -315,6 +332,8 @@ fs.writeFileSync(path.join(distRoot, "assets", "asset-manifest.json"), `${JSON.s
     uniqueSources: jobs.length,
     optimizedFiles: standaloneImageFiles,
     embeddedGalleryFiles: embeddedGalleryOutputs.size,
+    externalGalleryFiles: webExternalGalleryOutputs.size,
+    embeddedHeroFiles: embeddedHeroOutputs.size,
   },
   entries: optimizationReport.entries,
 }, null, 2)}\n`, "utf8");
@@ -340,4 +359,6 @@ console.log(JSON.stringify({
   megabytes: Number((bytes / 1024 / 1024).toFixed(3)),
   assets: optimizationReport.summary,
   embeddedGalleryFiles: embeddedGalleryOutputs.size,
+  externalGalleryFiles: webExternalGalleryOutputs.size,
+  embeddedHeroFiles: embeddedHeroOutputs.size,
 }, null, 2));

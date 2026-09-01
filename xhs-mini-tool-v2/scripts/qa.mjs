@@ -15,6 +15,12 @@ const viewports = [
   { name: "large", width: 430, height: 932 },
 ];
 
+const expectedWebPosterOffsets = {
+  eave: -0.0745, flow: -0.0575, grid: -0.0733, hand: 0, mass: -0.063, mix: -0.0745,
+  orna: 0, plus: 0, root: 0, ruin: -0.0745, sign: -0.0718, span: -0.0718,
+  tech: 0, tide: -0.0745, veil: -0.0745, void: 0,
+};
+
 fs.rmSync(outputRoot, { recursive: true, force: true });
 fs.mkdirSync(outputRoot, { recursive: true });
 
@@ -30,6 +36,15 @@ const report = {
 
 const assert = (condition, message) => {
   if (!condition) throw new Error(message);
+};
+
+const readyDownloadLink = async (page) => {
+  const link = page.getByRole("button", { name: "保存人格卡", exact: true });
+  await link.waitFor();
+  await page.waitForFunction(() => document.querySelector("[data-action='web-download-feedback']")?.getAttribute("aria-disabled") === "false");
+  const href = await link.getAttribute("href");
+  assert(href?.startsWith("blob:"), `download resource is not a prepared PNG blob: ${href}`);
+  return link;
 };
 
 const assertNoOverflow = async (page, label) => {
@@ -192,10 +207,11 @@ try {
 
     if (releaseTarget === "web") {
       assert(await page.getByRole("button", { name: "发小红书", exact: true }).count() === 0, `${viewport.name}: web result still exposes Xiaohongshu publishing`);
+      const saveLink = await readyDownloadLink(page);
       const downloadPromise = page.waitForEvent("download");
-      await page.getByRole("button", { name: /保存人格卡/ }).click();
+      await saveLink.click();
       const download = await downloadPromise;
-      assert(/^ArcBTI-[A-Z]+-[a-z]+\.webp$/.test(download.suggestedFilename()), `${viewport.name}: unexpected card filename ${download.suggestedFilename()}`);
+      assert(/^ArcBTI-[A-Z]+-[a-z]+\.png$/.test(download.suggestedFilename()), `${viewport.name}: unexpected card filename ${download.suggestedFilename()}`);
       await page.locator("#toast").waitFor({ state: "visible" });
       assert((await page.locator("#toast").textContent())?.includes("开始下载"), `${viewport.name}: web download feedback is unclear`);
     } else {
@@ -216,13 +232,21 @@ try {
       const imageBox = image.getBoundingClientRect();
       return {
         code: card.getAttribute("data-code"),
+        slug: image.dataset.personaSlug || "",
         imageTop: imageBox.top,
         frameTop: frameBox.top,
         marginTop: Number.parseFloat(getComputedStyle(image).marginTop),
         frameWidth: frameBox.width,
       };
     }));
-    assert(directoryPosters.every((poster) => poster && poster.marginTop < -poster.frameWidth * 0.04 && poster.imageTop < poster.frameTop), `${viewport.name}: one or more directory posters still expose blank top canvas`);
+    if (releaseTarget === "web") {
+      assert(directoryPosters.every((poster) => poster
+        && Object.hasOwn(expectedWebPosterOffsets, poster.slug)
+        && Math.abs(poster.marginTop / poster.frameWidth - expectedWebPosterOffsets[poster.slug]) < 0.002
+        && poster.imageTop <= poster.frameTop + 0.5), `${viewport.name}: one or more directory posters still expose blank top canvas`);
+    } else {
+      assert(directoryPosters.every((poster) => poster && poster.marginTop < -poster.frameWidth * 0.04 && poster.imageTop < poster.frameTop), `${viewport.name}: one or more directory posters lost the XHS trim`);
+    }
     await scrollThrough(page);
     await assertImages(page, `${viewport.name} directory`);
     await assertNoOverflow(page, `${viewport.name} directory`);
@@ -241,24 +265,20 @@ try {
         assert(await page.getByRole("button", { name: "保存人格卡", exact: true }).count() === 1, `persona ${code}: wrong save button count`);
         assert(await page.getByRole("button", { name: "发小红书", exact: true }).count() === (releaseTarget === "web" ? 0 : 1), `persona ${code}: wrong publish button count`);
         if (releaseTarget === "web") {
+          const saveLink = await readyDownloadLink(page);
           const resultHero = await page.locator(".result-hero img").evaluate((image) => ({
             marginTop: Number.parseFloat(getComputedStyle(image).marginTop),
             width: image.getBoundingClientRect().width,
-            source: image.getAttribute("src") || "",
+            personaSlug: image.dataset.personaSlug || "",
           }));
-          const expectedOffsets = {
-            eave: -0.0745, flow: -0.0575, grid: -0.0733, hand: 0, mass: -0.0282, mix: -0.0745,
-            orna: 0, plus: 0, root: 0, ruin: -0.0745, sign: -0.0718, span: -0.0718,
-            tech: 0, tide: -0.0745, veil: -0.0745, void: 0,
-          };
-          const slug = Object.keys(expectedOffsets).find((candidate) => resultHero.source.includes(candidate));
-          assert(slug, `persona ${code}: cannot identify result poster slug from ${resultHero.source}`);
+          const slug = resultHero.personaSlug;
+          assert(Object.hasOwn(expectedWebPosterOffsets, slug), `persona ${code}: cannot identify result poster slug ${slug}`);
           const actualOffset = resultHero.marginTop / resultHero.width;
-          assert(Math.abs(actualOffset - expectedOffsets[slug]) < 0.002, `persona ${code}: measured hero offset ${actualOffset} does not match ${expectedOffsets[slug]}`);
+          assert(Math.abs(actualOffset - expectedWebPosterOffsets[slug]) < 0.002, `persona ${code}: measured hero offset ${actualOffset} does not match ${expectedWebPosterOffsets[slug]}`);
           const personaDownloadPromise = page.waitForEvent("download");
-          await page.getByRole("button", { name: "保存人格卡", exact: true }).click();
+          await saveLink.click();
           const personaDownload = await personaDownloadPromise;
-          assert(personaDownload.suggestedFilename().includes(`-${slug}.webp`), `persona ${code}: downloaded wrong poster ${personaDownload.suggestedFilename()}`);
+          assert(personaDownload.suggestedFilename().includes(`-${slug}.png`), `persona ${code}: downloaded wrong poster ${personaDownload.suggestedFilename()}`);
           if (slug === "tide" || slug === "ruin") {
             await page.evaluate(() => window.scrollTo(0, 0));
             await page.screenshot({ path: path.join(outputRoot, `standard-${slug}-result-top.png`), fullPage: false });

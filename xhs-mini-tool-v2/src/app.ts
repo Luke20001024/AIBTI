@@ -129,6 +129,8 @@ const scrollTop = () => {
 
 let toastTimer: number | null = null;
 let detailOpener: HTMLElement | null = null;
+let webDownloadObjectUrl: string | null = null;
+let webDownloadGeneration = 0;
 const showToast = (message: string) => {
   toast.textContent = message;
   toast.hidden = false;
@@ -162,7 +164,7 @@ const WEB_RESULT_HERO_OFFSET: Record<string, string> = {
   flow: "-5.75%",
   grid: "-7.33%",
   hand: "0%",
-  mass: "-2.82%",
+  mass: "-6.30%",
   mix: "-7.45%",
   orna: "0%",
   plus: "0%",
@@ -214,6 +216,7 @@ const lastResultCode = () => {
 const renderHome = () => {
   clearModalState();
   clearDrawTimers();
+  revokeWebDownloadObjectUrl();
   state.view = "home";
   const communityMarkup = IS_WEB_RELEASE ? `
           <section class="github-community" aria-labelledby="github-community-title">
@@ -269,6 +272,7 @@ const renderHome = () => {
 const renderTestEntry = () => {
   clearModalState();
   clearDrawTimers();
+  revokeWebDownloadObjectUrl();
   state.view = "test-entry";
   const resume = hasResumableProgress();
   const previous = lastResultCode();
@@ -298,6 +302,7 @@ const renderTestEntry = () => {
 const renderDraw = () => {
   clearModalState();
   clearDrawTimers();
+  revokeWebDownloadObjectUrl();
   state.view = "draw";
   app.innerHTML = `
     <section class="screen draw-screen">
@@ -407,6 +412,7 @@ const optionMarkup = (question: Question) => question.options.map((option) => {
 
 const renderQuestion = () => {
   clearModalState();
+  revokeWebDownloadObjectUrl();
   state.view = "quiz";
   const question = state.sequence[state.index];
   if (!question) {
@@ -545,7 +551,7 @@ const fullResultMarkup = (result: QuizResult) => {
   const releaseClass = IS_WEB_RELEASE ? " release-web" : "";
   const heroOffset = WEB_RESULT_HERO_OFFSET[persona.slug] ?? "0%";
   const deliveryActions = IS_WEB_RELEASE ? `
-            <button class="primary-button web-download-button" type="button" data-action="save-card">保存人格卡</button>
+            <span class="web-download-slot" data-web-download-slot></span>
   ` : `
             <button class="primary-button" type="button" data-action="save-card">保存人格卡</button>
             <button class="secondary-button" type="button" data-action="post-note">发小红书</button>
@@ -564,7 +570,7 @@ const fullResultMarkup = (result: QuizResult) => {
       </header>
 
       <div class="result-hero">
-        <img src="${escapeHtml(posterPath(persona))}" alt="${escapeHtml(persona.characterAlt)}" loading="eager">
+        <img src="${escapeHtml(posterPath(persona))}" alt="${escapeHtml(persona.characterAlt)}" data-persona-slug="${escapeHtml(persona.slug)}" loading="eager">
       </div>
 
       <div class="result-content editorial-result">
@@ -792,6 +798,7 @@ const showResult = (result: QuizResult, origin: ResultOrigin = "quiz", persist =
   }
   if (persist && origin === "quiz") removeStorage(STORAGE_PROGRESS);
   app.innerHTML = fullResultMarkup(result);
+  mountWebDownloadLink();
   scrollTop();
 };
 
@@ -827,11 +834,12 @@ const showSavedResult = () => {
 const renderDirectory = () => {
   clearModalState();
   clearDrawTimers();
+  revokeWebDownloadObjectUrl();
   const returnCode = state.view === "result" ? state.result?.primaryTypeId ?? null : null;
   state.view = "directory";
   state.directoryReturnCode = returnCode;
   app.innerHTML = `
-    <section class="screen directory-screen">
+    <section class="screen directory-screen${IS_WEB_RELEASE ? " release-web" : ""}">
       <header class="masthead">
         ${logoMarkup()}
         <button class="text-button" type="button" data-action="close-directory">返回</button>
@@ -848,10 +856,10 @@ const renderDirectory = () => {
             type="button"
             data-action="preview-persona"
             data-code="${persona.code}"
-            style="--card-accent:${escapeHtml(persona.accent)}"
+            style="--card-accent:${escapeHtml(persona.accent)}${IS_WEB_RELEASE ? `;--persona-poster-offset:${WEB_RESULT_HERO_OFFSET[persona.slug] ?? "0%"}` : ""}"
           >
             <span class="persona-card-visual">
-              <img src="${posterPath(persona)}" alt="${escapeHtml(persona.name)}人格海报" loading="lazy">
+              <img src="${posterPath(persona)}" alt="${escapeHtml(persona.name)}人格海报" data-persona-slug="${escapeHtml(persona.slug)}" loading="lazy">
             </span>
             <span class="persona-card-copy">
               <span class="persona-card-code">${escapeHtml(persona.code)}</span>
@@ -892,6 +900,7 @@ const previewPersona = (code: ResultCode) => {
   state.resultOrigin = "directory";
   state.view = "result";
   app.innerHTML = fullResultMarkup(synthetic);
+  mountWebDownloadLink();
   scrollTop();
 };
 
@@ -965,23 +974,91 @@ const imageAsDataUri = (src: string) => new Promise<string>((resolve, reject) =>
   image.src = src;
 });
 
+const imageAsBlobUrl = (src: string) => new Promise<string>((resolve, reject) => {
+  const image = new Image();
+  image.onload = () => {
+    const canvas = document.createElement("canvas");
+    canvas.width = image.naturalWidth;
+    canvas.height = image.naturalHeight;
+    const context = canvas.getContext("2d");
+    if (!context) {
+      reject(new Error("Canvas is unavailable"));
+      return;
+    }
+    try {
+      context.drawImage(image, 0, 0);
+      canvas.toBlob((blob) => {
+        if (!blob) {
+          reject(new Error("PNG generation failed"));
+          return;
+        }
+        resolve(URL.createObjectURL(blob));
+      }, "image/png");
+    } catch (error) {
+      reject(error);
+    }
+  };
+  image.onerror = () => reject(new Error("Image failed to load"));
+  image.src = src;
+});
+
+const revokeWebDownloadObjectUrl = () => {
+  webDownloadGeneration += 1;
+  if (webDownloadObjectUrl) {
+    URL.revokeObjectURL(webDownloadObjectUrl);
+    webDownloadObjectUrl = null;
+  }
+};
+
+const mountWebDownloadLink = () => {
+  if (!IS_WEB_RELEASE || !state.result) return;
+  const slot = app.querySelector<HTMLElement>("[data-web-download-slot]");
+  if (!slot) return;
+
+  revokeWebDownloadObjectUrl();
+  const generation = webDownloadGeneration;
+  const persona = RESULT_BY_CODE[state.result.primaryTypeId];
+  const link = document.createElement("a");
+  link.className = "primary-button web-download-button is-preparing";
+  link.href = "#";
+  link.setAttribute("role", "button");
+  link.setAttribute("aria-label", "保存人格卡");
+  link.setAttribute("aria-disabled", "true");
+  link.dataset.action = "web-download-feedback";
+  link.textContent = "准备人格卡…";
+  slot.replaceWith(link);
+
+  const useSourceDownload = () => {
+    link.href = posterPath(persona);
+    link.setAttribute("download", `ArcBTI-${persona.code}-${persona.slug}.webp`);
+    link.setAttribute("aria-disabled", "false");
+    link.classList.remove("is-preparing");
+    link.textContent = "保存人格卡";
+  };
+
+  void imageAsBlobUrl(posterPath(persona)).then((objectUrl) => {
+    if (generation !== webDownloadGeneration || !link.isConnected) {
+      URL.revokeObjectURL(objectUrl);
+      return;
+    }
+    webDownloadObjectUrl = objectUrl;
+    link.href = objectUrl;
+    link.setAttribute("download", `ArcBTI-${persona.code}-${persona.slug}.png`);
+    link.setAttribute("aria-disabled", "false");
+    link.classList.remove("is-preparing");
+    link.textContent = "保存人格卡";
+  }).catch(() => {
+    if (generation !== webDownloadGeneration || !link.isConnected) return;
+    useSourceDownload();
+  });
+};
+
 const getMiniToolApi = () => window.xhs?.miniTool;
 
 const saveCard = async () => {
   if (!state.result) return;
   const persona = RESULT_BY_CODE[state.result.primaryTypeId];
-  if (IS_WEB_RELEASE) {
-    const anchor = document.createElement("a");
-    anchor.href = posterPath(persona);
-    anchor.setAttribute("download", `ArcBTI-${persona.code}-${persona.slug}.webp`);
-    anchor.setAttribute("aria-hidden", "true");
-    anchor.style.display = "none";
-    document.body.appendChild(anchor);
-    anchor.click();
-    anchor.remove();
-    showToast("人格卡已开始下载");
-    return;
-  }
+  if (IS_WEB_RELEASE) return;
   const api = getMiniToolApi();
   if (!api?.saveImageToPhotosAlbum) {
     showToast("请在小红书小工具中打开后保存");
@@ -1056,6 +1133,7 @@ app.addEventListener("click", (event) => {
   if (action === "close-directory") {
     if (state.directoryReturnCode && state.result) {
       app.innerHTML = fullResultMarkup(state.result);
+      mountWebDownloadLink();
       state.view = "result";
       scrollTop();
     } else {
@@ -1081,6 +1159,14 @@ app.addEventListener("click", (event) => {
     }
   }
   if (action === "close-detail") closeDetail();
+  if (action === "web-download-feedback") {
+    if (control.getAttribute("aria-disabled") === "true") {
+      event.preventDefault();
+      showToast("人格卡正在准备，请稍候");
+    } else {
+      showToast("人格卡已开始下载");
+    }
+  }
   if (action === "save-card") void saveCard();
   if (action === "post-note") void postNote();
 });

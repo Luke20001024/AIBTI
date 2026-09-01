@@ -1188,6 +1188,10 @@ h3 {
   margin-top: -5.5%;
 }
 
+.directory-screen.release-web .persona-card-visual img {
+  margin-top: var(--persona-poster-offset, 0%);
+}
+
 .persona-card-copy {
   display: block;
   padding: 12px 12px 15px;
@@ -1650,7 +1654,26 @@ h3 {
 }
 
 .release-web .ending-actions .web-download-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-column: 1 / -1;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.release-web .ending-actions .web-download-button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline: 3px solid color-mix(in srgb, var(--accent) 55%, white);
+  outline-offset: 3px;
+}
+
+.release-web .ending-actions .web-download-button.is-preparing {
+  cursor: progress;
+  opacity: 0.72;
 }
 
 .ending-actions .wide {

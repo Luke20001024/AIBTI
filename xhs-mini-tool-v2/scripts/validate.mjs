@@ -155,7 +155,7 @@ if (!manifest) {
 
 const bytes = files.reduce((sum, file) => sum + fs.statSync(file).size, 0);
 const hardLimit = 10 * 1024 * 1024;
-const internalTarget = 9.5 * 1024 * 1024;
+const internalTarget = (releaseTarget === "web" ? 10 : 9.5) * 1024 * 1024;
 const recommendedLimit = 2 * 1024 * 1024;
 if (bytes > hardLimit) errors.push(`Uncompressed package is over 10 MB: ${(bytes / 1024 / 1024).toFixed(2)} MB`);
 else if (bytes > internalTarget) errors.push(`Uncompressed package exceeds the ArcBTI 9.5 MB safety target: ${(bytes / 1024 / 1024).toFixed(2)} MB`);

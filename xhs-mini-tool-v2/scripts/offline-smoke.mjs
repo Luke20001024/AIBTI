@@ -51,11 +51,24 @@ try {
   await page.locator(".draw-page").waitFor();
   await page.locator("[data-action='draw-card']").nth(2).click();
   await page.locator(".result-screen").waitFor();
-  const saveButtons = await page.getByRole("button", { name: "保存人格卡", exact: true }).count();
+  const saveControl = page.getByRole("button", { name: "保存人格卡", exact: true });
+  const saveButtons = await saveControl.count();
   if (saveButtons !== 1) errors.push(`expected one save button; found ${saveButtons}`);
   const postButtons = await page.getByRole("button", { name: "发小红书", exact: true }).count();
   if (releaseTarget === "web" && postButtons !== 0) errors.push(`web release contains ${postButtons} Xiaohongshu publish buttons`);
   if (releaseTarget === "xhs" && postButtons !== 1) errors.push(`XHS release contains ${postButtons} publish buttons`);
+  if (releaseTarget === "web" && saveButtons === 1) {
+    const href = await saveControl.getAttribute("href");
+    const disabled = await saveControl.getAttribute("aria-disabled");
+    if (!href?.startsWith("blob:")) errors.push(`offline save link is not a prepared PNG blob: ${href}`);
+    if (disabled !== "false") errors.push(`offline save link is not ready: aria-disabled=${disabled}`);
+    const downloadPromise = page.waitForEvent("download");
+    await saveControl.click();
+    const download = await downloadPromise;
+    if (!/^ArcBTI-[A-Z]+-[a-z]+\.png$/.test(download.suggestedFilename())) {
+      errors.push(`offline save filename is incorrect: ${download.suggestedFilename()}`);
+    }
+  }
   await page.getByRole("button", { name: /看看其他 15 种人格/ }).click();
   await page.locator(".directory-screen").waitFor();
   await page.evaluate(async () => {

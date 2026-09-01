@@ -60,17 +60,53 @@ const engines = [
     type: webkit,
     userAgent: "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1",
   },
-];
+].filter((engine) => !process.env.ARCBTI_QA_ENGINE || engine.name === process.env.ARCBTI_QA_ENGINE);
 const viewports = [
   { name: "short", width: 375, height: 667 },
   { name: "standard", width: 390, height: 844 },
-];
+].filter((viewport) => !process.env.ARCBTI_QA_VIEWPORT || viewport.name === process.env.ARCBTI_QA_VIEWPORT);
 const report = { target, status: "passed", runs: [], errors: [] };
 let currentRunLabel = "startup";
 let currentCheckpoint = "initializing";
 
 const assert = (condition, message) => {
   if (!condition) throw new Error(message);
+};
+
+const readyDownloadLink = async (page) => {
+  const link = page.getByRole("button", { name: "保存人格卡", exact: true });
+  await link.waitFor();
+  await page.waitForFunction(() => document.querySelector("[data-action='web-download-feedback']")?.getAttribute("aria-disabled") === "false");
+  const href = await link.getAttribute("href");
+  assert(href?.startsWith("blob:"), `download resource is not a prepared PNG blob: ${href}`);
+  return link;
+};
+
+const waitForDirectory = async (page, runtimeErrors) => {
+  try {
+    await page.locator(".directory-screen").waitFor();
+  } catch (error) {
+    const state = await page.evaluate(() => ({
+      url: window.location.href,
+      resultVisible: Boolean(document.querySelector(".result-screen")),
+      directoryVisible: Boolean(document.querySelector(".directory-screen")),
+      openDirectoryControls: document.querySelectorAll("[data-action='open-directory']").length,
+      toast: document.querySelector("#toast")?.textContent ?? "",
+    }));
+    const detail = error instanceof Error ? error.message : String(error);
+    throw new Error(`${detail}\npage=${JSON.stringify(state)}\nruntime=${JSON.stringify(runtimeErrors)}`);
+  }
+};
+
+const assertDirectoryPosterOffset = async (page, code, expectedOffset) => {
+  const metrics = await page.locator(`.persona-card[data-code='${code}'] .persona-card-visual img`).evaluate((image) => ({
+    marginTop: Number.parseFloat(getComputedStyle(image).marginTop),
+    width: image.getBoundingClientRect().width,
+    top: image.getBoundingClientRect().top,
+    frameTop: image.parentElement?.getBoundingClientRect().top ?? 0,
+  }));
+  assert(Math.abs(metrics.marginTop / metrics.width - expectedOffset) < 0.002, `${code}: directory poster offset is incorrect`);
+  assert(metrics.top <= metrics.frameTop + 0.5, `${code}: directory poster exposes a top gap`);
 };
 
 const openPersona = async (page, code, slug, outputName) => {
@@ -81,22 +117,24 @@ const openPersona = async (page, code, slug, outputName) => {
   const metrics = await page.locator(".result-hero img").evaluate((image) => ({
     marginTop: Number.parseFloat(getComputedStyle(image).marginTop),
     width: image.getBoundingClientRect().width,
-    source: image.getAttribute("src") || "",
+    personaSlug: image.dataset.personaSlug || "",
     naturalWidth: image.naturalWidth,
     naturalHeight: image.naturalHeight,
     scrollWidth: document.documentElement.scrollWidth,
     innerWidth: window.innerWidth,
   }));
-  assert(metrics.source.includes(slug), `${code}: wrong poster source ${metrics.source}`);
+  assert(metrics.personaSlug === slug, `${code}: wrong poster slug ${metrics.personaSlug}`);
   assert(metrics.naturalWidth > 0 && metrics.naturalHeight > 0, `${code}: poster did not load`);
   assert(Math.abs(metrics.marginTop / metrics.width + 0.0745) < 0.002, `${code}: blank-canvas trim is incorrect`);
   assert(metrics.scrollWidth <= metrics.innerWidth + 1, `${code}: horizontal overflow`);
+  const saveLink = await readyDownloadLink(page);
   assert(await page.getByRole("button", { name: "保存人格卡", exact: true }).count() === 1, `${code}: save button is missing`);
   assert(await page.getByRole("button", { name: "发小红书", exact: true }).count() === 0, `${code}: publish button leaked into web release`);
+  currentCheckpoint = `downloading ${code}`;
   const downloadPromise = page.waitForEvent("download");
-  await page.getByRole("button", { name: "保存人格卡", exact: true }).click();
+  await saveLink.click();
   const download = await downloadPromise;
-  assert(download.suggestedFilename().endsWith(`-${slug}.webp`), `${code}: wrong download ${download.suggestedFilename()}`);
+  assert(download.suggestedFilename().endsWith(`-${slug}.png`), `${code}: wrong download ${download.suggestedFilename()}`);
   await page.evaluate(() => window.scrollTo(0, 0));
   await page.screenshot({ path: path.join(outputRoot, outputName), fullPage: false });
 };
@@ -141,11 +179,13 @@ try {
         await page.locator(".result-screen").waitFor();
         currentCheckpoint = "opening persona directory";
         await page.getByRole("button", { name: /看看其他 15 种人格/ }).click();
-        await page.locator(".directory-screen").waitFor();
+        await waitForDirectory(page, runtimeErrors);
+        await assertDirectoryPosterOffset(page, "TIDE", -0.0745);
+        await assertDirectoryPosterOffset(page, "RUIN", -0.0745);
         await openPersona(page, "TIDE", "tide", `${engine.name}-${viewport.name}-tide.png`);
         currentCheckpoint = "returning to directory after TIDE";
         await page.getByRole("button", { name: /看看其他 15 种人格/ }).click();
-        await page.locator(".directory-screen").waitFor();
+        await waitForDirectory(page, runtimeErrors);
         await openPersona(page, "RUIN", "ruin", `${engine.name}-${viewport.name}-ruin.png`);
 
         assert(runtimeErrors.length === 0, `${engine.name}/${viewport.name}: ${runtimeErrors.join(" | ")}`);
