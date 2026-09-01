@@ -4,8 +4,10 @@ import { chromium } from "@playwright/test";
 
 const scriptDirectory = path.dirname(new URL(import.meta.url).pathname.replace(/^\/(?:[A-Za-z]:)/, (match) => match.slice(1)));
 const miniRoot = path.resolve(scriptDirectory, "..");
-const outputRoot = path.join(miniRoot, "qa");
-const target = process.env.ARCBTI_XHS_URL || "http://127.0.0.1:4188/";
+const projectRoot = path.resolve(miniRoot, "..");
+const releaseTarget = process.env.ARCBTI_RELEASE_TARGET === "web" ? "web" : "xhs";
+const outputRoot = releaseTarget === "web" ? path.join(projectRoot, "web-release", "qa") : path.join(miniRoot, "qa");
+const target = process.env.ARCBTI_URL || process.env.ARCBTI_XHS_URL || "http://127.0.0.1:4188/";
 const viewports = [
   { name: "compact", width: 360, height: 800 },
   { name: "short", width: 375, height: 667 },
@@ -19,6 +21,7 @@ fs.mkdirSync(outputRoot, { recursive: true });
 const browser = await chromium.launch({ headless: true });
 const report = {
   target,
+  releaseTarget,
   checkedAt: new Date().toISOString(),
   status: "passed",
   viewports: [],
@@ -82,6 +85,14 @@ try {
     await assertImages(page, `${viewport.name} home`);
     assert(await page.locator(".choice-title").textContent() === "算算你上辈子是哪个建筑大师！", `${viewport.name}: home title drifted`);
     assert(await page.locator(".choice-button").count() === 2, `${viewport.name}: home must expose exactly two choices`);
+    const communityModules = await page.locator(".github-community").count();
+    assert(communityModules === (releaseTarget === "web" ? 1 : 0), `${viewport.name}: wrong GitHub community module count ${communityModules}`);
+    if (releaseTarget === "web") {
+      const communityHrefs = await page.locator(".github-community-link").evaluateAll((links) => links.map((link) => link.getAttribute("href") || ""));
+      assert(communityHrefs.length === 2, `${viewport.name}: GitHub community links are incomplete`);
+      assert(communityHrefs[0] === "https://github.com/Luke20001024/AIBTI", `${viewport.name}: star link is incorrect`);
+      assert(communityHrefs[1].includes("/issues/new?template=arcbti-feedback.yml"), `${viewport.name}: message link is incorrect`);
+    }
     const homeArtwork = await page.locator(".choice-visual img").evaluate((image) => ({
       natural: [image.naturalWidth, image.naturalHeight],
       renderedRatio: image.getBoundingClientRect().width / image.getBoundingClientRect().height,
@@ -167,16 +178,32 @@ try {
     }));
     assert(Math.abs(hero.naturalRatio - hero.renderedRatio) < 0.01, `${viewport.name}: result hero ratio changed`);
     assert(Math.abs(hero.width - hero.containerWidth) < 1, `${viewport.name}: result hero does not fill its container`);
-    assert(hero.marginTop < -hero.containerWidth * 0.04, `${viewport.name}: result poster source-canvas trim is missing`);
-    assert(hero.top < hero.containerTop, `${viewport.name}: result poster still exposes its blank top canvas`);
+    if (releaseTarget === "web") {
+      assert(hero.marginTop <= 0, `${viewport.name}: web result poster has a positive top margin`);
+      assert(hero.top <= hero.containerTop + 0.5, `${viewport.name}: web result poster exposes an added top gap`);
+    } else {
+      assert(hero.marginTop < -hero.containerWidth * 0.04, `${viewport.name}: result poster source-canvas trim is missing`);
+      assert(hero.top < hero.containerTop, `${viewport.name}: result poster still exposes its blank top canvas`);
+    }
     await page.screenshot({ path: path.join(outputRoot, `${viewport.name}-result-top.png`), fullPage: false });
     if (viewport.name === "standard") {
       await page.screenshot({ path: path.join(outputRoot, `${viewport.name}-result-full.png`), fullPage: true });
     }
 
-    await page.getByRole("button", { name: /保存人格卡/ }).click();
-    await page.locator("#toast").waitFor({ state: "visible" });
-    assert((await page.locator("#toast").textContent())?.includes("小红书小工具"), `${viewport.name}: save fallback is unclear`);
+    if (releaseTarget === "web") {
+      assert(await page.getByRole("button", { name: "发小红书", exact: true }).count() === 0, `${viewport.name}: web result still exposes Xiaohongshu publishing`);
+      const downloadPromise = page.waitForEvent("download");
+      await page.getByRole("button", { name: /保存人格卡/ }).click();
+      const download = await downloadPromise;
+      assert(/^ArcBTI-[A-Z]+-[a-z]+\.webp$/.test(download.suggestedFilename()), `${viewport.name}: unexpected card filename ${download.suggestedFilename()}`);
+      await page.locator("#toast").waitFor({ state: "visible" });
+      assert((await page.locator("#toast").textContent())?.includes("开始下载"), `${viewport.name}: web download feedback is unclear`);
+    } else {
+      assert(await page.getByRole("button", { name: "发小红书", exact: true }).count() === 1, `${viewport.name}: XHS result lost its publish button`);
+      await page.getByRole("button", { name: /保存人格卡/ }).click();
+      await page.locator("#toast").waitFor({ state: "visible" });
+      assert((await page.locator("#toast").textContent())?.includes("小红书小工具"), `${viewport.name}: save fallback is unclear`);
+    }
 
     await page.getByRole("button", { name: /看看其他 15 种人格/ }).click();
     await page.locator(".directory-screen").waitFor();
@@ -211,6 +238,32 @@ try {
         await assertImages(page, `persona ${code}`);
         await assertNoOverflow(page, `persona ${code}`);
         assert((await page.locator(".result-code").textContent())?.includes(code), `persona ${code}: wrong result content`);
+        assert(await page.getByRole("button", { name: "保存人格卡", exact: true }).count() === 1, `persona ${code}: wrong save button count`);
+        assert(await page.getByRole("button", { name: "发小红书", exact: true }).count() === (releaseTarget === "web" ? 0 : 1), `persona ${code}: wrong publish button count`);
+        if (releaseTarget === "web") {
+          const resultHero = await page.locator(".result-hero img").evaluate((image) => ({
+            marginTop: Number.parseFloat(getComputedStyle(image).marginTop),
+            width: image.getBoundingClientRect().width,
+            source: image.getAttribute("src") || "",
+          }));
+          const expectedOffsets = {
+            eave: -0.0745, flow: -0.0575, grid: -0.0733, hand: 0, mass: -0.0282, mix: -0.0745,
+            orna: 0, plus: 0, root: 0, ruin: -0.0745, sign: -0.0718, span: -0.0718,
+            tech: 0, tide: -0.0745, veil: -0.0745, void: 0,
+          };
+          const slug = Object.keys(expectedOffsets).find((candidate) => resultHero.source.includes(candidate));
+          assert(slug, `persona ${code}: cannot identify result poster slug from ${resultHero.source}`);
+          const actualOffset = resultHero.marginTop / resultHero.width;
+          assert(Math.abs(actualOffset - expectedOffsets[slug]) < 0.002, `persona ${code}: measured hero offset ${actualOffset} does not match ${expectedOffsets[slug]}`);
+          const personaDownloadPromise = page.waitForEvent("download");
+          await page.getByRole("button", { name: "保存人格卡", exact: true }).click();
+          const personaDownload = await personaDownloadPromise;
+          assert(personaDownload.suggestedFilename().includes(`-${slug}.webp`), `persona ${code}: downloaded wrong poster ${personaDownload.suggestedFilename()}`);
+          if (slug === "tide" || slug === "ruin") {
+            await page.evaluate(() => window.scrollTo(0, 0));
+            await page.screenshot({ path: path.join(outputRoot, `standard-${slug}-result-top.png`), fullPage: false });
+          }
+        }
         await page.getByRole("button", { name: /看看其他 15 种人格/ }).click();
         await page.locator(".directory-screen").waitFor();
       }

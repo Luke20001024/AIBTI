@@ -3,7 +3,19 @@ import path from "node:path";
 
 const scriptDirectory = path.dirname(new URL(import.meta.url).pathname.replace(/^\/(?:[A-Za-z]:)/, (match) => match.slice(1)));
 const miniRoot = path.resolve(scriptDirectory, "..");
-const distRoot = path.join(miniRoot, "dist");
+const projectRoot = path.resolve(miniRoot, "..");
+const releaseTarget = process.env.ARCBTI_RELEASE_TARGET === "web" ? "web" : "xhs";
+const xhsDistRoot = path.join(miniRoot, "dist");
+const webDistRoot = path.join(projectRoot, "web-release", "dist");
+const requestedOutput = process.env.ARCBTI_OUTPUT_DIR?.trim();
+const distRoot = requestedOutput ? path.resolve(projectRoot, requestedOutput) : xhsDistRoot;
+const expectedDistRoot = releaseTarget === "web" ? webDistRoot : xhsDistRoot;
+const reportPath = releaseTarget === "web"
+  ? path.join(projectRoot, "web-release", "validation-report.json")
+  : path.join(miniRoot, "validation-report.json");
+if (path.resolve(distRoot) !== path.resolve(expectedDistRoot)) {
+  throw new Error(`Refusing to validate ${releaseTarget} from unexpected output directory: ${distRoot}`);
+}
 const allowedExtensions = new Set([".html", ".css", ".js", ".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg", ".woff", ".woff2", ".json"]);
 const errors = [];
 const warnings = [];
@@ -67,8 +79,17 @@ const checks = [
   [/<base\b/i, "Base tags are forbidden"],
 ];
 
+const webContentWithoutApprovedExternalUrls = releaseTarget === "web"
+  ? combined
+      .replaceAll("https://github.com/Luke20001024/AIBTI/issues/new?template=arcbti-feedback.yml", "")
+      .replaceAll("https://github.com/Luke20001024/AIBTI", "")
+  : combined;
+
 for (const [pattern, message] of checks) {
-  if (pattern.test(combined)) errors.push(message);
+  const contentToCheck = releaseTarget === "web" && message === "External HTTP resources are forbidden"
+    ? webContentWithoutApprovedExternalUrls
+    : combined;
+  if (pattern.test(contentToCheck)) errors.push(message);
 }
 
 if (!/viewport-fit=cover/.test(index)) errors.push("Viewport must include viewport-fit=cover");
@@ -92,6 +113,9 @@ if (/^\s*(?:import|export)\s/m.test(script) || /\bimport\s*\(/.test(script)) {
 if (!manifest) {
   errors.push("Runtime asset manifest is missing");
 } else {
+  if (manifest.releaseTarget !== releaseTarget) {
+    errors.push(`Asset manifest release target must be ${releaseTarget}; found ${manifest.releaseTarget ?? "missing"}`);
+  }
   const requiredCounts = {
     personas: 16,
     hero: 16,
@@ -140,6 +164,7 @@ if (bytes > recommendedLimit) warnings.push(`Package exceeds the 2 MB recommenda
 const report = {
   status: errors.length ? "failed" : "passed",
   checkedAt: new Date().toISOString(),
+  releaseTarget,
   output: distRoot,
   fileCount: files.length,
   fileLimit: deploymentFileLimit,
@@ -151,6 +176,7 @@ const report = {
   warnings,
 };
 
-fs.writeFileSync(path.join(miniRoot, "validation-report.json"), `${JSON.stringify(report, null, 2)}\n`, "utf8");
+fs.mkdirSync(path.dirname(reportPath), { recursive: true });
+fs.writeFileSync(reportPath, `${JSON.stringify(report, null, 2)}\n`, "utf8");
 console.log(JSON.stringify(report, null, 2));
 if (errors.length) process.exitCode = 1;

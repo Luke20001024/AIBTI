@@ -7,12 +7,21 @@ const scriptDirectory = path.dirname(new URL(import.meta.url).pathname.replace(/
 const miniRoot = path.resolve(scriptDirectory, "..");
 const projectRoot = path.resolve(miniRoot, "..");
 const sourceRoot = path.join(miniRoot, "src");
-const distRoot = path.join(miniRoot, "dist");
-const tempRoot = path.join(miniRoot, ".build-temp");
-const optimizationReportPath = path.join(miniRoot, "optimization-report.json");
+const releaseTarget = process.env.ARCBTI_RELEASE_TARGET === "web" ? "web" : "xhs";
+const xhsDistRoot = path.join(miniRoot, "dist");
+const webDistRoot = path.join(projectRoot, "web-release", "dist");
+const requestedOutput = process.env.ARCBTI_OUTPUT_DIR?.trim();
+const distRoot = requestedOutput ? path.resolve(projectRoot, requestedOutput) : xhsDistRoot;
+const expectedDistRoot = releaseTarget === "web" ? webDistRoot : xhsDistRoot;
+const tempRoot = releaseTarget === "web"
+  ? path.join(projectRoot, "web-release", ".build-temp")
+  : path.join(miniRoot, ".build-temp");
+const optimizationReportPath = releaseTarget === "web"
+  ? path.join(projectRoot, "web-release", "optimization-report.json")
+  : path.join(miniRoot, "optimization-report.json");
 
-if (path.basename(distRoot) !== "dist" || path.dirname(distRoot) !== miniRoot) {
-  throw new Error("Refusing to rebuild an unexpected output directory");
+if (path.resolve(distRoot) !== path.resolve(expectedDistRoot)) {
+  throw new Error(`Refusing to build ${releaseTarget} into unexpected output directory: ${distRoot}`);
 }
 
 const pnpmRoot = path.join(projectRoot, "node_modules", ".pnpm");
@@ -56,6 +65,15 @@ const transpile = (source, filename) => ts.transpileModule(source, {
 
 const compiledModules = moduleSources.map(([id, filename]) => {
   let source = fs.readFileSync(filename, "utf8");
+  if (id === "xhs-mini-tool-v2/src/app") {
+    const repositoryUrl = releaseTarget === "web" ? "https://github.com/Luke20001024/AIBTI" : "#";
+    const messageUrl = releaseTarget === "web"
+      ? `${repositoryUrl}/issues/new?template=arcbti-feedback.yml`
+      : "#";
+    source = source
+      .replaceAll("__ARCBTI_WEB_GITHUB_REPOSITORY_URL__", repositoryUrl)
+      .replaceAll("__ARCBTI_WEB_GITHUB_MESSAGE_URL__", messageUrl);
+  }
   if (id === "src/domain/scoring") {
     source = source.replace('from "../content"', 'from "../content/xhs-core"');
   }
@@ -211,9 +229,10 @@ if (fs.existsSync(galleryDirectory)) {
 }
 const standaloneImageFiles = optimizationReport.outputFiles - embeddedGalleryOutputs.size;
 
-const runtime = `/* ArcBTI XHS complete mini tool · generated classic-script bundle */
+const runtime = `/* ArcBTI ${releaseTarget === "web" ? "GitHub Pages web release" : "XHS complete mini tool"} · generated classic-script bundle */
 (function () {
   "use strict";
+  window.__ARCBTI_RELEASE_TARGET__ = ${JSON.stringify(releaseTarget)};
   window.__ARCBTI_ASSET_MAP__ = ${JSON.stringify(assetMap)};
   var definitions = Object.create(null);
   var cache = Object.create(null);
@@ -281,7 +300,7 @@ fs.copyFileSync(path.join(sourceRoot, "styles.css"), path.join(distRoot, "assets
 fs.writeFileSync(path.join(distRoot, "assets", "app.js"), bundle, "utf8");
 fs.writeFileSync(path.join(distRoot, "assets", "asset-manifest.json"), `${JSON.stringify({
   version: 2,
-  generatedAt: new Date().toISOString(),
+  releaseTarget,
   counts: {
     personas: personaSlugs.length,
     hero: roleCount("hero"),
@@ -314,6 +333,7 @@ walk(distRoot);
 
 const bytes = files.reduce((sum, file) => sum + file.bytes, 0);
 console.log(JSON.stringify({
+  releaseTarget,
   output: distRoot,
   files: files.length,
   bytes,

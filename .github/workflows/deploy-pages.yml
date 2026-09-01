@@ -17,6 +17,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      ARCBTI_RELEASE_TARGET: web
+      ARCBTI_OUTPUT_DIR: web-release/dist
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -49,21 +52,23 @@ jobs:
       - name: Install image build dependency
         run: python -m pip install Pillow==11.3.0
 
-      - name: Build and validate the Xiaohongshu-compatible site
+      - name: Build and validate the GitHub Pages web release
         run: |
           node xhs-mini-tool-v2/scripts/build.mjs
           node xhs-mini-tool-v2/scripts/validate.mjs
 
-      - name: Install representative mobile browser
-        run: pnpm exec playwright install --with-deps chromium
+      - name: Install representative mobile browsers
+        run: pnpm exec playwright install --with-deps chromium webkit
 
       - name: Verify the packaged site in a mobile browser
-        run: node xhs-mini-tool-v2/scripts/offline-smoke.mjs
+        run: |
+          node xhs-mini-tool-v2/scripts/offline-smoke.mjs
+          node xhs-mini-tool-v2/scripts/web-mobile-qa.mjs
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./xhs-mini-tool-v2/dist
+          path: ./web-release/dist
 
   deploy:
     environment:

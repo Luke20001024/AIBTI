@@ -17,6 +17,7 @@ import {
 declare global {
   interface Window {
     __ARCBTI_ASSET_MAP__?: Record<string, string>;
+    __ARCBTI_RELEASE_TARGET__?: "xhs" | "web";
     xhs?: {
       miniTool?: {
         postNote?: (options: unknown) => Promise<unknown> | unknown;
@@ -41,6 +42,10 @@ const DRAW_CARD_BACK = "/images/interface/draw-card-back-v2-flat.png";
 const HOME_ENSEMBLE = "/images/interface/home-persona-ensemble-v1.webp";
 const HOME_EXTENSION = "/images/interface/home-persona-ensemble-extension-v1.webp";
 const DRAW_PAPER_BACKGROUND = "/images/interface/draw-paper-blueprint-v1.webp";
+const RELEASE_TARGET = window.__ARCBTI_RELEASE_TARGET__ === "web" ? "web" : "xhs";
+const IS_WEB_RELEASE = RELEASE_TARGET === "web";
+const WEB_GITHUB_REPOSITORY_URL = "__ARCBTI_WEB_GITHUB_REPOSITORY_URL__";
+const WEB_GITHUB_MESSAGE_URL = "__ARCBTI_WEB_GITHUB_MESSAGE_URL__";
 const CORE_COUNT = QUESTIONS.length;
 const MAX_QUESTION_COUNT = CORE_COUNT + 2;
 const app = document.querySelector<HTMLElement>("#app");
@@ -149,6 +154,28 @@ const homeEnsemblePath = () => assetPath(HOME_ENSEMBLE);
 const homeExtensionPath = () => assetPath(HOME_EXTENSION);
 const drawPaperBackgroundPath = () => assetPath(DRAW_PAPER_BACKGROUND);
 
+// Several source posters intentionally include a pale top margin of different heights.
+// The web result page removes only that empty margin; posters whose artwork reaches row 0
+// remain untouched. Values were measured against the 16 source images.
+const WEB_RESULT_HERO_OFFSET: Record<string, string> = {
+  eave: "-7.45%",
+  flow: "-5.75%",
+  grid: "-7.33%",
+  hand: "0%",
+  mass: "-2.82%",
+  mix: "-7.45%",
+  orna: "0%",
+  plus: "0%",
+  root: "0%",
+  ruin: "-7.45%",
+  sign: "-7.18%",
+  span: "-7.18%",
+  tech: "0%",
+  tide: "-7.45%",
+  veil: "-7.45%",
+  void: "0%",
+};
+
 const questionImagePath = (question: Question, optionId: string) =>
   assetPath(`/images/questions-v3/${question.id.toLowerCase()}-${optionId.toLowerCase()}.webp`);
 
@@ -188,8 +215,27 @@ const renderHome = () => {
   clearModalState();
   clearDrawTimers();
   state.view = "home";
+  const communityMarkup = IS_WEB_RELEASE ? `
+          <section class="github-community" aria-labelledby="github-community-title">
+            <div class="github-community-copy">
+              <p class="github-community-label">ARCBTI · OPEN PROJECT</p>
+              <h2 id="github-community-title">喜欢这个建筑人格宇宙？</h2>
+              <p>给项目一颗星，或者留下建议、勘误与下一种建筑人格的点子。</p>
+            </div>
+            <div class="github-community-actions">
+              <a class="github-community-link github-star-link" href="${escapeHtml(WEB_GITHUB_REPOSITORY_URL)}">
+                <span class="github-community-icon" aria-hidden="true">★</span>
+                <span><strong>去 GitHub 加星</strong><small>支持 ArcBTI 继续生长</small></span>
+              </a>
+              <a class="github-community-link" href="${escapeHtml(WEB_GITHUB_MESSAGE_URL)}">
+                <span class="github-community-icon github-message-icon" aria-hidden="true">•••</span>
+                <span><strong>留言与建议</strong><small>体验、勘误、建筑点子</small></span>
+              </a>
+            </div>
+          </section>
+  ` : "";
   app.innerHTML = `
-    <section class="screen home-screen">
+    <section class="screen home-screen${IS_WEB_RELEASE ? " release-web" : ""}">
       <header class="masthead">
         ${logoMarkup()}
       </header>
@@ -212,6 +258,7 @@ const renderHome = () => {
             </button>
           </div>
           <p class="choice-note">结果仅保存在当前设备</p>
+          ${communityMarkup}
         </section>
       </main>
     </section>
@@ -495,10 +542,21 @@ const compactEvidenceMarkup = (result: QuizResult) => {
 
 const fullResultMarkup = (result: QuizResult) => {
   const { persona, architect, featuredBuildings, recommendedBuildings, editorial } = resultContext(result);
+  const releaseClass = IS_WEB_RELEASE ? " release-web" : "";
+  const heroOffset = WEB_RESULT_HERO_OFFSET[persona.slug] ?? "0%";
+  const deliveryActions = IS_WEB_RELEASE ? `
+            <button class="primary-button web-download-button" type="button" data-action="save-card">保存人格卡</button>
+  ` : `
+            <button class="primary-button" type="button" data-action="save-card">保存人格卡</button>
+            <button class="secondary-button" type="button" data-action="post-note">发小红书</button>
+  `;
+  const deliveryHint = IS_WEB_RELEASE
+    ? "人格卡将直接下载到当前设备"
+    : "保存与发布需要在小红书小工具环境中使用";
   return `
     <section
-      class="screen result-screen complete-result"
-      style="--accent:${escapeHtml(persona.accent)};--accent-soft:${escapeHtml(persona.accentSoft)};--ink:${escapeHtml(persona.ink)}"
+      class="screen result-screen complete-result${releaseClass}"
+      style="--accent:${escapeHtml(persona.accent)};--accent-soft:${escapeHtml(persona.accentSoft)};--ink:${escapeHtml(persona.ink)};--result-hero-offset:${heroOffset}"
     >
       <header class="result-header">
         ${logoMarkup()}
@@ -597,12 +655,11 @@ const fullResultMarkup = (result: QuizResult) => {
           </div>
           <div class="ending-actions">
             <button class="draw-again-button" type="button" data-action="draw-again">再抽一次</button>
-            <button class="primary-button" type="button" data-action="save-card">保存人格卡</button>
-            <button class="secondary-button" type="button" data-action="post-note">发小红书</button>
+            ${deliveryActions}
             <button class="text-button wide" type="button" data-action="open-directory">看看其他 15 种人格</button>
           </div>
           <p class="social-prompt">${escapeHtml(editorial.socialPrompt)}</p>
-          <p class="button-hint">保存与发布需要在小红书小工具环境中使用</p>
+          <p class="button-hint">${deliveryHint}</p>
         </section>
       </div>
       <div id="detail-root"></div>
@@ -912,12 +969,24 @@ const getMiniToolApi = () => window.xhs?.miniTool;
 
 const saveCard = async () => {
   if (!state.result) return;
+  const persona = RESULT_BY_CODE[state.result.primaryTypeId];
+  if (IS_WEB_RELEASE) {
+    const anchor = document.createElement("a");
+    anchor.href = posterPath(persona);
+    anchor.setAttribute("download", `ArcBTI-${persona.code}-${persona.slug}.webp`);
+    anchor.setAttribute("aria-hidden", "true");
+    anchor.style.display = "none";
+    document.body.appendChild(anchor);
+    anchor.click();
+    anchor.remove();
+    showToast("人格卡已开始下载");
+    return;
+  }
   const api = getMiniToolApi();
   if (!api?.saveImageToPhotosAlbum) {
     showToast("请在小红书小工具中打开后保存");
     return;
   }
-  const persona = RESULT_BY_CODE[state.result.primaryTypeId];
   try {
     showToast("正在生成清晰人格卡");
     const data = await imageAsDataUri(posterPath(persona));
