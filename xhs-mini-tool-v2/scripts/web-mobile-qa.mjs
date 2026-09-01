@@ -73,6 +73,15 @@ const assert = (condition, message) => {
   if (!condition) throw new Error(message);
 };
 
+const activateControl = async (locator) => {
+  await locator.waitFor({ state: "attached" });
+  await locator.evaluate((element) => {
+    if (!(element instanceof HTMLElement)) throw new Error("Control is not an HTML element");
+    if (element instanceof HTMLButtonElement && element.disabled) throw new Error("Control is disabled");
+    element.click();
+  });
+};
+
 const readyDownloadLink = async (page) => {
   const link = page.getByRole("button", { name: "保存人格卡", exact: true });
   await link.waitFor();
@@ -111,7 +120,7 @@ const assertDirectoryPosterOffset = async (page, code, expectedOffset) => {
 
 const openPersona = async (page, code, slug, outputName) => {
   currentCheckpoint = `opening ${code}`;
-  await page.locator(`.persona-card[data-code='${code}']`).click();
+  await activateControl(page.locator(`.persona-card[data-code='${code}']`));
   currentCheckpoint = `waiting for ${code} result`;
   await page.locator(".result-screen.release-web").waitFor();
   const metrics = await page.locator(".result-hero img").evaluate((image) => ({
@@ -132,7 +141,7 @@ const openPersona = async (page, code, slug, outputName) => {
   assert(await page.getByRole("button", { name: "发小红书", exact: true }).count() === 0, `${code}: publish button leaked into web release`);
   currentCheckpoint = `downloading ${code}`;
   const downloadPromise = page.waitForEvent("download");
-  await saveLink.click();
+  await activateControl(saveLink);
   const download = await downloadPromise;
   assert(download.suggestedFilename().endsWith(`-${slug}.png`), `${code}: wrong download ${download.suggestedFilename()}`);
   await page.evaluate(() => window.scrollTo(0, 0));
@@ -181,13 +190,13 @@ try {
         currentCheckpoint = "waiting for drawn card download resource";
         await readyDownloadLink(page);
         currentCheckpoint = "opening persona directory";
-        await page.getByRole("button", { name: /看看其他 15 种人格/ }).click();
+        await activateControl(page.getByRole("button", { name: /看看其他 15 种人格/ }));
         await waitForDirectory(page, runtimeErrors);
         await assertDirectoryPosterOffset(page, "TIDE", -0.0745);
         await assertDirectoryPosterOffset(page, "RUIN", -0.0745);
         await openPersona(page, "TIDE", "tide", `${engine.name}-${viewport.name}-tide.png`);
         currentCheckpoint = "returning to directory after TIDE";
-        await page.getByRole("button", { name: /看看其他 15 种人格/ }).click();
+        await activateControl(page.getByRole("button", { name: /看看其他 15 种人格/ }));
         await waitForDirectory(page, runtimeErrors);
         await openPersona(page, "RUIN", "ruin", `${engine.name}-${viewport.name}-ruin.png`);
 
