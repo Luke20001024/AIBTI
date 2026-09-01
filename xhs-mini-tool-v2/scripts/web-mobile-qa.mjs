@@ -66,13 +66,17 @@ const viewports = [
   { name: "standard", width: 390, height: 844 },
 ];
 const report = { target, status: "passed", runs: [], errors: [] };
+let currentRunLabel = "startup";
+let currentCheckpoint = "initializing";
 
 const assert = (condition, message) => {
   if (!condition) throw new Error(message);
 };
 
 const openPersona = async (page, code, slug, outputName) => {
+  currentCheckpoint = `opening ${code}`;
   await page.locator(`.persona-card[data-code='${code}']`).click();
+  currentCheckpoint = `waiting for ${code} result`;
   await page.locator(".result-screen.release-web").waitFor();
   const metrics = await page.locator(".result-hero img").evaluate((image) => ({
     marginTop: Number.parseFloat(getComputedStyle(image).marginTop),
@@ -102,6 +106,8 @@ try {
     const browser = await engine.type.launch({ headless: true });
     try {
       for (const viewport of viewports) {
+        currentRunLabel = `${engine.name}/${viewport.name}`;
+        currentCheckpoint = "creating browser context";
         const context = await browser.newContext({
           viewport: { width: viewport.width, height: viewport.height },
           isMobile: true,
@@ -117,18 +123,27 @@ try {
         page.on("pageerror", (error) => runtimeErrors.push(`pageerror: ${error.message}`));
         page.on("requestfailed", (request) => runtimeErrors.push(`requestfailed: ${request.url()} ${request.failure()?.errorText ?? ""}`));
 
+        currentCheckpoint = "loading homepage";
         await page.goto(target, { waitUntil: "networkidle" });
+        currentCheckpoint = "waiting for homepage";
         await page.locator(".home-screen.release-web").waitFor();
         assert(await page.locator(".github-community-link").count() === 2, `${engine.name}/${viewport.name}: community module is incomplete`);
         const homeOverflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
         assert(homeOverflow <= 1, `${engine.name}/${viewport.name}: homepage horizontal overflow ${homeOverflow}`);
 
+        currentCheckpoint = "opening draw page";
         await page.getByRole("button", { name: /看命，直接抽卡！/ }).click();
+        await page.locator(".draw-page").waitFor();
+        await page.waitForTimeout(650);
+        currentCheckpoint = "drawing a card";
         await page.locator("[data-action='draw-card']").nth(2).click();
+        currentCheckpoint = "waiting for drawn result";
         await page.locator(".result-screen").waitFor();
+        currentCheckpoint = "opening persona directory";
         await page.getByRole("button", { name: /看看其他 15 种人格/ }).click();
         await page.locator(".directory-screen").waitFor();
         await openPersona(page, "TIDE", "tide", `${engine.name}-${viewport.name}-tide.png`);
+        currentCheckpoint = "returning to directory after TIDE";
         await page.getByRole("button", { name: /看看其他 15 种人格/ }).click();
         await page.locator(".directory-screen").waitFor();
         await openPersona(page, "RUIN", "ruin", `${engine.name}-${viewport.name}-ruin.png`);
@@ -143,7 +158,8 @@ try {
   }
 } catch (error) {
   report.status = "failed";
-  const message = error instanceof Error ? error.message : String(error);
+  const detail = error instanceof Error ? error.message : String(error);
+  const message = `${currentRunLabel} · ${currentCheckpoint}: ${detail}`;
   report.errors.push(message);
   console.error(`::error title=ArcBTI mobile compatibility QA::${message}`);
   process.exitCode = 1;
